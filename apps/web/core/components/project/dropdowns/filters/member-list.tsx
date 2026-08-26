@@ -7,6 +7,7 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 // plane imports
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 import { ChevronDownIcon } from "@plane/propel/icons";
 import { EUserProjectRoles, EUserWorkspaceRoles } from "@plane/types";
@@ -95,6 +96,8 @@ export const MemberListFilters = observer(function MemberListFilters(props: Prop
 export const MemberListFiltersDropdown = observer(function MemberListFiltersDropdown(props: Props) {
   const { appliedFilters, handleUpdate, memberType } = props;
 
+  const { t } = useTranslation();
+
   const appliedFiltersCount = appliedFilters?.length ?? 0;
 
   return (
@@ -102,7 +105,7 @@ export const MemberListFiltersDropdown = observer(function MemberListFiltersDrop
       customButton={
         <div className="relative">
           <Button variant="secondary" size="lg" className="flex items-center gap-2">
-            <span>Filters</span>
+            <span>{t("common.filters")}</span>
             <ChevronDownIcon className="h-3 w-3" />
           </Button>
           {appliedFiltersCount > 0 && (
