@@ -1,0 +1,129 @@
+name: Build & Publish (GHCR)
+
+# Builda as 6 imagens do Plane a partir DESTE código e publica no
+# GitHub Container Registry (ghcr.io) da sua conta.
+#
+# Não precisa configurar nenhum secret: o GITHUB_TOKEN é fornecido
+# automaticamente pelo Actions e a permissão `packages: write` abaixo
+# é o que autoriza o push das imagens.
+
+on:
+  push:
+    branches:
+      - preview
+      - main
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag extra para marcar esta build (ex.: v1, prod-2026-08)"
+        type: string
+        required: false
+        default: ""
+
+concurrency:
+  group: ghcr-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Apps do monorepo: contexto é a raiz (precisam dos packages/)
+          - name: plane-frontend
+            context: .
+            dockerfile: apps/web/Dockerfile.web
+          - name: plane-space
+            context: .
+            dockerfile: apps/space/Dockerfile.space
+          - name: plane-admin
+            context: .
+            dockerfile: apps/admin/Dockerfile.admin
+          - name: plane-live
+            context: .
+            dockerfile: apps/live/Dockerfile.live
+          # Backend e proxy: contexto próprio, isolado do monorepo
+          - name: plane-backend
+            context: ./apps/api
+            dockerfile: Dockerfile.api
+          - name: plane-proxy
+            context: ./apps/proxy
+            dockerfile: Dockerfile.ce
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ghcr.io exige o namespace em minúsculas
+      - name: Normalizar owner
+        id: owner
+        run: echo "value=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_OUTPUT"
+
+      - name: Configurar Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login no GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Definir tags
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ steps.owner.outputs.value }}/${{ matrix.name }}
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=ref,event=branch
+            type=sha,format=short
+            type=raw,value=${{ inputs.tag }},enable=${{ inputs.tag != '' }}
+
+      - name: Build e push
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.context }}/${{ matrix.dockerfile }}
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          provenance: false
+          # Cache por imagem: a 1ª build é lenta, as seguintes reaproveitam camadas
+          cache-from: type=gha,scope=${{ matrix.name }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.name }}
+
+  resumo:
+    name: Resumo
+    runs-on: ubuntu-latest
+    needs: build
+    if: always()
+    steps:
+      - name: Publicar resumo
+        run: |
+          OWNER="${GITHUB_REPOSITORY_OWNER,,}"
+          {
+            echo "## Imagens publicadas"
+            echo
+            echo "Resultado da build: **${{ needs.build.result }}**"
+            echo
+            echo '```'
+            for img in plane-frontend plane-space plane-admin plane-live plane-backend plane-proxy; do
+              echo "ghcr.io/$OWNER/$img:latest"
+            done
+            echo '```'
+            echo
+            echo "Na VPS, defina no \`variables.env\`:"
+            echo
+            echo '```'
+            echo "DOCKERHUB_USER=ghcr.io/$OWNER"
+            echo "APP_RELEASE=latest"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
