@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Ascunde",
+    "more": "Mai multe",
+    "saved": "Salvat",
+    "all_projects": "Toate proiectele",
+    "n_plus_projects": "{count}+ proiecte"
   },
   "chart": {
     "x_axis": "axa-X",

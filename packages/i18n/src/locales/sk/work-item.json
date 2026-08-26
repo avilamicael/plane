@@ -50,7 +50,8 @@
       "urgent": "Naliehavá",
       "high": "Vysoká",
       "medium": "Stredná",
-      "low": "Nízka"
+      "low": "Nízka",
+      "none": "Žiadna"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Kliknite pre hlasovanie dole",
       "click_to_view_upvotes": "Kliknite pre zobrazenie hlasov hore",
       "click_to_view_downvotes": "Kliknite pre zobrazenie hlasov dole"
+    },
+    "activity": {
+      "created_the_work_item": "vytvoril(a) pracovnú položku.",
+      "created_the_work_item_via": "vytvoril(a) pracovnú položku cez",
+      "deleted_a_work_item": "odstránil(a) pracovnú položku."
     }
   },
   "sub_work_item": {

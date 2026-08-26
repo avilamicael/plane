@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Sembunyikan",
+    "more": "Lainnya",
+    "saved": "Tersimpan",
+    "all_projects": "Semua proyek",
+    "n_plus_projects": "{count}+ proyek"
   },
   "chart": {
     "x_axis": "Sumbu-X",

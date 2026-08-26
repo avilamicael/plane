@@ -36,7 +36,12 @@
       "current": "現在",
       "labels": "ラベル",
       "trailing": "遅れ",
-      "leading": "リード"
+      "leading": "リード",
+      "pending_work_items": "保留中の作業項目 - {count}",
+      "pending_points": "保留中のポイント - {count}",
+      "work_items_count": "{count, plural, one {#件の作業項目} other {#件の作業項目}}",
+      "work_items_closed": "{closed}/{total} 件の作業項目が完了しました",
+      "cancelled_work_items_excluded": "{count, plural, one {#件のキャンセルされた作業項目はこのレポートから除外されています。} other {#件のキャンセルされた作業項目はこのレポートから除外されています。}}"
     },
     "upcoming_cycle": {
       "label": "今後のサイクル"

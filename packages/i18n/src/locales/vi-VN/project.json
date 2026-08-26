@@ -36,7 +36,12 @@
       "current": "Hiện tại",
       "labels": "Nhãn",
       "trailing": "Chậm tiến độ",
-      "leading": "Vượt tiến độ"
+      "leading": "Vượt tiến độ",
+      "pending_work_items": "Mục công việc đang chờ xử lý - {count}",
+      "pending_points": "Điểm đang chờ xử lý - {count}",
+      "work_items_count": "{count, plural, one {# mục công việc} other {# mục công việc}}",
+      "work_items_closed": "{closed}/{total} mục công việc đã đóng",
+      "cancelled_work_items_excluded": "{count, plural, one {# mục công việc đã hủy bị loại khỏi báo cáo này.} other {# mục công việc đã hủy bị loại khỏi báo cáo này.}}"
     },
     "upcoming_cycle": {
       "label": "Chu kỳ sắp tới"

@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "숨기기",
+    "more": "더 보기",
+    "saved": "저장됨",
+    "all_projects": "모든 프로젝트",
+    "n_plus_projects": "{count}+ 프로젝트"
   },
   "chart": {
     "x_axis": "X축",

@@ -36,7 +36,12 @@
       "current": "Aktuell",
       "labels": "Labels",
       "trailing": "Rückstand",
-      "leading": "Vorsprung"
+      "leading": "Vorsprung",
+      "pending_work_items": "Ausstehende Arbeitselemente - {count}",
+      "pending_points": "Ausstehende Punkte - {count}",
+      "work_items_count": "{count, plural, one {# Arbeitselement} other {# Arbeitselemente}}",
+      "work_items_closed": "{closed}/{total} {closed, plural, one {Arbeitselement geschlossen} other {Arbeitselemente geschlossen}}",
+      "cancelled_work_items_excluded": "{count, plural, one {# abgebrochenes Arbeitselement ist von diesem Bericht ausgeschlossen.} other {# abgebrochene Arbeitselemente sind von diesem Bericht ausgeschlossen.}}"
     },
     "upcoming_cycle": {
       "label": "Bevorstehender Zyklus"

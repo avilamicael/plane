@@ -36,7 +36,12 @@
       "current": "Actual",
       "labels": "Etiquetas",
       "trailing": "Retrasado",
-      "leading": "Adelantado"
+      "leading": "Adelantado",
+      "pending_work_items": "Elementos de trabajo pendientes - {count}",
+      "pending_points": "Puntos pendientes - {count}",
+      "work_items_count": "{count, plural, one {# elemento de trabajo} other {# elementos de trabajo}}",
+      "work_items_closed": "{closed}/{total} {closed, plural, one {elemento de trabajo cerrado} other {elementos de trabajo cerrados}}",
+      "cancelled_work_items_excluded": "{count, plural, one {# elemento de trabajo cancelado está excluido de este informe.} other {# elementos de trabajo cancelados están excluidos de este informe.}}"
     },
     "upcoming_cycle": {
       "label": "Ciclo próximo"

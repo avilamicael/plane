@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Скрыть",
+    "more": "Ещё",
+    "saved": "Сохранено",
+    "all_projects": "Все проекты",
+    "n_plus_projects": "{count}+ проектов"
   },
   "chart": {
     "x_axis": "Ось X",

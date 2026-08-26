@@ -50,7 +50,8 @@
       "urgent": "긴급",
       "high": "높음",
       "medium": "중간",
-      "low": "낮음"
+      "low": "낮음",
+      "none": "없음"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "클릭하여 비추천",
       "click_to_view_upvotes": "클릭하여 추천 목록 보기",
       "click_to_view_downvotes": "클릭하여 비추천 목록 보기"
+    },
+    "activity": {
+      "created_the_work_item": "님이 작업 항목을 만들었습니다.",
+      "created_the_work_item_via": "님이 다음을 통해 작업 항목을 만들었습니다:",
+      "deleted_a_work_item": "님이 작업 항목을 삭제했습니다."
     }
   },
   "sub_work_item": {

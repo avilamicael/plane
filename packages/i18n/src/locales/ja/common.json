@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "非表示",
+    "more": "その他",
+    "saved": "保存しました",
+    "all_projects": "すべてのプロジェクト",
+    "n_plus_projects": "{count}+ プロジェクト"
   },
   "chart": {
     "x_axis": "エックス アクシス",

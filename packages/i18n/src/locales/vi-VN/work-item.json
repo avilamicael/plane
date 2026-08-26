@@ -50,7 +50,8 @@
       "urgent": "Khẩn cấp",
       "high": "Cao",
       "medium": "Trung bình",
-      "low": "Thấp"
+      "low": "Thấp",
+      "none": "Không có"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Nhấp để bỏ phiếu chống",
       "click_to_view_upvotes": "Nhấp để xem phiếu thuận",
       "click_to_view_downvotes": "Nhấp để xem phiếu chống"
+    },
+    "activity": {
+      "created_the_work_item": "đã tạo mục công việc.",
+      "created_the_work_item_via": "đã tạo mục công việc qua",
+      "deleted_a_work_item": "đã xóa một mục công việc."
     }
   },
   "sub_work_item": {

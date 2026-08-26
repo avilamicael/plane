@@ -50,7 +50,8 @@
       "urgent": "緊急",
       "high": "高",
       "medium": "中",
-      "low": "低"
+      "low": "低",
+      "none": "無"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "點擊反對",
       "click_to_view_upvotes": "點擊查看贊成票",
       "click_to_view_downvotes": "點擊查看反對票"
+    },
+    "activity": {
+      "created_the_work_item": "建立了工作事項。",
+      "created_the_work_item_via": "透過以下方式建立了工作事項：",
+      "deleted_a_work_item": "刪除了工作事項。"
     }
   },
   "sub_work_item": {

@@ -36,7 +36,12 @@
       "current": "Current",
       "labels": "Labels",
       "trailing": "Trailing",
-      "leading": "Leading"
+      "leading": "Leading",
+      "pending_work_items": "Pending work items - {count}",
+      "pending_points": "Pending points - {count}",
+      "work_items_count": "{count, plural, one {# work item} other {# work items}}",
+      "work_items_closed": "{closed}/{total} {closed, plural, one {work item closed} other {work items closed}}",
+      "cancelled_work_items_excluded": "{count, plural, one {# cancelled work item is excluded from this report.} other {# cancelled work items are excluded from this report.}}"
     },
     "upcoming_cycle": {
       "label": "Upcoming cycle"

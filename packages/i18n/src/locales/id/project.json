@@ -36,7 +36,12 @@
       "current": "Sekarang",
       "labels": "Label",
       "trailing": "Tertinggal",
-      "leading": "Memimpin"
+      "leading": "Memimpin",
+      "pending_work_items": "Item kerja yang menunggu - {count}",
+      "pending_points": "Poin yang menunggu - {count}",
+      "work_items_count": "{count, plural, one {# item kerja} other {# item kerja}}",
+      "work_items_closed": "{closed}/{total} item kerja ditutup",
+      "cancelled_work_items_excluded": "{count, plural, one {# item kerja yang dibatalkan dikecualikan dari laporan ini.} other {# item kerja yang dibatalkan dikecualikan dari laporan ini.}}"
     },
     "upcoming_cycle": {
       "label": "Siklus mendatang"

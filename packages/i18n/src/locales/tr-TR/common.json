@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Gizle",
+    "more": "Daha fazla",
+    "saved": "Kaydedildi",
+    "all_projects": "Tüm projeler",
+    "n_plus_projects": "{count}+ proje"
   },
   "chart": {
     "x_axis": "X ekseni",

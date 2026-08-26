@@ -50,7 +50,8 @@
       "urgent": "Pilny",
       "high": "Wysoki",
       "medium": "Średni",
-      "low": "Niski"
+      "low": "Niski",
+      "none": "Brak"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Kliknij, aby zagłosować przeciw",
       "click_to_view_upvotes": "Kliknij, aby zobaczyć głosy za",
       "click_to_view_downvotes": "Kliknij, aby zobaczyć głosy przeciw"
+    },
+    "activity": {
+      "created_the_work_item": "utworzył(a) element pracy.",
+      "created_the_work_item_via": "utworzył(a) element pracy przez",
+      "deleted_a_work_item": "usunął(-ęła) element pracy."
     }
   },
   "sub_work_item": {

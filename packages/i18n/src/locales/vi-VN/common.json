@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Ẩn",
+    "more": "Thêm",
+    "saved": "Đã lưu",
+    "all_projects": "Tất cả dự án",
+    "n_plus_projects": "{count}+ dự án"
   },
   "chart": {
     "x_axis": "Trục X",

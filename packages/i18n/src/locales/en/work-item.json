@@ -50,7 +50,8 @@
       "urgent": "Urgent",
       "high": "High",
       "medium": "Medium",
-      "low": "Low"
+      "low": "Low",
+      "none": "None"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Click to downvote",
       "click_to_view_upvotes": "Click to view upvotes",
       "click_to_view_downvotes": "Click to view downvotes"
+    },
+    "activity": {
+      "created_the_work_item": "created the work item.",
+      "created_the_work_item_via": "created the work item via",
+      "deleted_a_work_item": "deleted a work item."
     }
   },
   "sub_work_item": {

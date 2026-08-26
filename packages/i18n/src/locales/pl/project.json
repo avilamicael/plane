@@ -36,7 +36,12 @@
       "current": "Obecny",
       "labels": "Etykiety",
       "trailing": "Opóźnienie",
-      "leading": "Wyprzedzenie"
+      "leading": "Wyprzedzenie",
+      "pending_work_items": "Oczekujące elementy pracy - {count}",
+      "pending_points": "Oczekujące punkty - {count}",
+      "work_items_count": "{count, plural, one {# element pracy} few {# elementy pracy} many {# elementów pracy} other {# elementu pracy}}",
+      "work_items_closed": "{closed}/{total} {closed, plural, one {element pracy zamknięty} few {elementy pracy zamknięte} many {elementów pracy zamkniętych} other {elementu pracy zamkniętego}}",
+      "cancelled_work_items_excluded": "{count, plural, one {# anulowany element pracy jest wykluczony z tego raportu.} few {# anulowane elementy pracy są wykluczone z tego raportu.} many {# anulowanych elementów pracy jest wykluczonych z tego raportu.} other {# anulowanego elementu pracy jest wykluczone z tego raportu.}}"
     },
     "upcoming_cycle": {
       "label": "Nadchodzący cykl"

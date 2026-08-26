@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Skryť",
+    "more": "Viac",
+    "saved": "Uložené",
+    "all_projects": "Všetky projekty",
+    "n_plus_projects": "{count}+ projektov"
   },
   "chart": {
     "x_axis": "Os X",

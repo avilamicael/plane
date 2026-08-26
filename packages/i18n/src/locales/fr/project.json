@@ -36,7 +36,12 @@
       "current": "Actuel",
       "labels": "Étiquettes",
       "trailing": "En retard",
-      "leading": "En avance"
+      "leading": "En avance",
+      "pending_work_items": "Éléments de travail en attente - {count}",
+      "pending_points": "Points en attente - {count}",
+      "work_items_count": "{count, plural, one {# élément de travail} many {# éléments de travail} other {# éléments de travail}}",
+      "work_items_closed": "{closed}/{total} {closed, plural, one {élément de travail fermé} many {éléments de travail fermés} other {éléments de travail fermés}}",
+      "cancelled_work_items_excluded": "{count, plural, one {# élément de travail annulé est exclu de ce rapport.} many {# éléments de travail annulés sont exclus de ce rapport.} other {# éléments de travail annulés sont exclus de ce rapport.}}"
     },
     "upcoming_cycle": {
       "label": "Cycle à venir"

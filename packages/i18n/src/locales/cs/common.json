@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Skrýt",
+    "more": "Více",
+    "saved": "Uloženo",
+    "all_projects": "Všechny projekty",
+    "n_plus_projects": "{count}+ projektů"
   },
   "chart": {
     "x_axis": "Osa X",

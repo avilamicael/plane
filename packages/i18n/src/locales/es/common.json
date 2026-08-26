@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "Ocultar",
+    "more": "Más",
+    "saved": "Guardado",
+    "all_projects": "Todos los proyectos",
+    "n_plus_projects": "{count}+ proyectos"
   },
   "chart": {
     "x_axis": "Eje X",

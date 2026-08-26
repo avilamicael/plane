@@ -50,7 +50,8 @@
       "urgent": "Терміновий",
       "high": "Високий",
       "medium": "Середній",
-      "low": "Низький"
+      "low": "Низький",
+      "none": "Немає"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Натисніть, щоб проголосувати проти",
       "click_to_view_upvotes": "Натисніть, щоб переглянути голоси за",
       "click_to_view_downvotes": "Натисніть, щоб переглянути голоси проти"
+    },
+    "activity": {
+      "created_the_work_item": "створив(ла) робочу одиницю.",
+      "created_the_work_item_via": "створив(ла) робочу одиницю через",
+      "deleted_a_work_item": "видалив(ла) робочу одиницю."
     }
   },
   "sub_work_item": {

@@ -36,7 +36,12 @@
       "current": "현재",
       "labels": "레이블",
       "trailing": "뒤처짐",
-      "leading": "앞섬"
+      "leading": "앞섬",
+      "pending_work_items": "보류 중인 작업 항목 - {count}",
+      "pending_points": "보류 중인 포인트 - {count}",
+      "work_items_count": "{count, plural, one {#개의 작업 항목} other {#개의 작업 항목}}",
+      "work_items_closed": "{closed}/{total} 개의 작업 항목이 닫혔습니다",
+      "cancelled_work_items_excluded": "{count, plural, one {#개의 취소된 작업 항목이 이 보고서에서 제외되었습니다.} other {#개의 취소된 작업 항목이 이 보고서에서 제외되었습니다.}}"
     },
     "upcoming_cycle": {
       "label": "다가오는 주기"

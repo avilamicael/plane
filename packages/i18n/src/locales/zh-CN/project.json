@@ -36,7 +36,12 @@
       "current": "当前",
       "labels": "标签",
       "trailing": "落后",
-      "leading": "领先"
+      "leading": "领先",
+      "pending_work_items": "待处理工作项 - {count}",
+      "pending_points": "待处理点数 - {count}",
+      "work_items_count": "{count, plural, one {# 个工作项} other {# 个工作项}}",
+      "work_items_closed": "{closed}/{total} 个工作项已关闭",
+      "cancelled_work_items_excluded": "{count, plural, one {# 个已取消的工作项已从此报告中排除。} other {# 个已取消的工作项已从此报告中排除。}}"
     },
     "upcoming_cycle": {
       "label": "即将到来的周期"

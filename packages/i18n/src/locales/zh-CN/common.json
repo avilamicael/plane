@@ -717,7 +717,12 @@
     "developer": "Developer",
     "work_structure": "Work structure",
     "execution": "Execution",
-    "administration": "Administration"
+    "administration": "Administration",
+    "hide": "隐藏",
+    "more": "更多",
+    "saved": "已保存",
+    "all_projects": "所有项目",
+    "n_plus_projects": "{count}+ 个项目"
   },
   "chart": {
     "x_axis": "X轴",

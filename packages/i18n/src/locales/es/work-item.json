@@ -50,7 +50,8 @@
       "urgent": "Urgente",
       "high": "Alta",
       "medium": "Media",
-      "low": "Baja"
+      "low": "Baja",
+      "none": "Ninguna"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Haz clic para votar en contra",
       "click_to_view_upvotes": "Haz clic para ver los votos a favor",
       "click_to_view_downvotes": "Haz clic para ver los votos en contra"
+    },
+    "activity": {
+      "created_the_work_item": "creó el elemento de trabajo.",
+      "created_the_work_item_via": "creó el elemento de trabajo mediante",
+      "deleted_a_work_item": "eliminó un elemento de trabajo."
     }
   },
   "sub_work_item": {

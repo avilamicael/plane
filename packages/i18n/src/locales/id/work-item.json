@@ -50,7 +50,8 @@
       "urgent": "Mendesak",
       "high": "Tinggi",
       "medium": "Sedang",
-      "low": "Rendah"
+      "low": "Rendah",
+      "none": "Tidak ada"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Klik untuk memberi suara turun",
       "click_to_view_upvotes": "Klik untuk melihat suara naik",
       "click_to_view_downvotes": "Klik untuk melihat suara turun"
+    },
+    "activity": {
+      "created_the_work_item": "membuat item kerja.",
+      "created_the_work_item_via": "membuat item kerja melalui",
+      "deleted_a_work_item": "menghapus item kerja."
     }
   },
   "sub_work_item": {

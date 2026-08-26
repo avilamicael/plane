@@ -36,7 +36,12 @@
       "current": "目前",
       "labels": "標籤",
       "trailing": "落後",
-      "leading": "領先"
+      "leading": "領先",
+      "pending_work_items": "待處理工作事項 - {count}",
+      "pending_points": "待處理點數 - {count}",
+      "work_items_count": "{count, plural, one {# 個工作事項} other {# 個工作事項}}",
+      "work_items_closed": "{closed}/{total} 個工作事項已關閉",
+      "cancelled_work_items_excluded": "{count, plural, one {# 個已取消的工作事項已從此報告中排除。} other {# 個已取消的工作事項已從此報告中排除。}}"
     },
     "upcoming_cycle": {
       "label": "即將到來的週期"

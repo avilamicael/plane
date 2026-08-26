@@ -50,7 +50,8 @@
       "urgent": "Urgentă",
       "high": "Ridicată",
       "medium": "Medie",
-      "low": "Scăzută"
+      "low": "Scăzută",
+      "none": "Niciuna"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Clic pentru a vota negativ",
       "click_to_view_upvotes": "Clic pentru a vedea voturile pozitive",
       "click_to_view_downvotes": "Clic pentru a vedea voturile negative"
+    },
+    "activity": {
+      "created_the_work_item": "a creat activitatea.",
+      "created_the_work_item_via": "a creat activitatea prin",
+      "deleted_a_work_item": "a șters o activitate."
     }
   },
   "sub_work_item": {

@@ -50,7 +50,8 @@
       "urgent": "Acil",
       "high": "Yüksek",
       "medium": "Orta",
-      "low": "Düşük"
+      "low": "Düşük",
+      "none": "Yok"
     },
     "display": {
       "properties": {
@@ -266,6 +267,11 @@
       "click_to_downvote": "Olumsuz oy vermek için tıklayın",
       "click_to_view_upvotes": "Olumlu oyları görüntülemek için tıklayın",
       "click_to_view_downvotes": "Olumsuz oyları görüntülemek için tıklayın"
+    },
+    "activity": {
+      "created_the_work_item": "iş öğesini oluşturdu.",
+      "created_the_work_item_via": "iş öğesini şu yolla oluşturdu:",
+      "deleted_a_work_item": "bir iş öğesini sildi."
     }
   },
   "sub_work_item": {
