@@ -780,7 +780,9 @@
     "search_for_projects": "Projekte suchen",
     "enter_project_name": "Projektnamen eingeben",
     "invalid_filter": "Ungültiger Filter",
-    "invalid_filter_tooltip": "Diese Filterbedingung ist nicht mehr gültig. Die Eigenschaft wurde möglicherweise gelöscht oder Ihr Zugriff darauf hat sich geändert."
+    "invalid_filter_tooltip": "Diese Filterbedingung ist nicht mehr gültig. Die Eigenschaft wurde möglicherweise gelöscht oder Ihr Zugriff darauf hat sich geändert.",
+    "add_view": "Ansicht hinzufügen",
+    "add_sticky": "Sticky hinzufügen"
   },
   "chart": {
     "x_axis": "X-Achse",
@@ -1076,5 +1078,9 @@
     "title": "Da ist wohl etwas schiefgelaufen!",
     "description": "Wir erfassen diese Fehler automatisch und arbeiten daran, alles wiederherzustellen. Falls das Problem bestehen bleibt, kontaktieren Sie uns. Versuchen Sie es zwischenzeitlich mit einem Neuladen.",
     "go_home": "Zur Startseite"
+  },
+  "not_found_page": {
+    "title": "Ups! Etwas ist schiefgelaufen.",
+    "description": "Die gesuchte Seite wurde nicht gefunden. Sie wurde möglicherweise entfernt, umbenannt oder ist vorübergehend nicht verfügbar."
   }
 }

@@ -780,7 +780,9 @@
     "search_for_projects": "Caută proiecte",
     "enter_project_name": "Introdu numele proiectului",
     "invalid_filter": "Filtru invalid",
-    "invalid_filter_tooltip": "Această condiție de filtrare nu mai este validă. Este posibil ca proprietatea să fi fost ștearsă sau ca accesul tău la ea să se fi schimbat."
+    "invalid_filter_tooltip": "Această condiție de filtrare nu mai este validă. Este posibil ca proprietatea să fi fost ștearsă sau ca accesul tău la ea să se fi schimbat.",
+    "add_view": "Adaugă vizualizare",
+    "add_sticky": "Adaugă Sticky"
   },
   "chart": {
     "x_axis": "axa-X",
@@ -1076,5 +1078,9 @@
     "title": "Se pare că ceva nu a funcționat!",
     "description": "Înregistrăm automat aceste erori și lucrăm la remedierea lor. Dacă problema persistă, contactați-ne. Între timp, încercați să reîmprospătați pagina.",
     "go_home": "Mergi la pagina principală"
+  },
+  "not_found_page": {
+    "title": "Ups! Ceva nu a funcționat.",
+    "description": "Pagina căutată nu a fost găsită. Este posibil să fi fost eliminată, redenumită sau să fie temporar indisponibilă."
   }
 }

@@ -780,7 +780,9 @@
     "search_for_projects": "Proje ara",
     "enter_project_name": "Proje adını girin",
     "invalid_filter": "Geçersiz filtre",
-    "invalid_filter_tooltip": "Bu filtre koşulu artık geçerli değil. Özellik silinmiş veya ona erişiminiz değişmiş olabilir."
+    "invalid_filter_tooltip": "Bu filtre koşulu artık geçerli değil. Özellik silinmiş veya ona erişiminiz değişmiş olabilir.",
+    "add_view": "Görünüm ekle",
+    "add_sticky": "Sticky ekle"
   },
   "chart": {
     "x_axis": "X ekseni",
@@ -1076,5 +1078,9 @@
     "title": "Bir şeyler ters gitti!",
     "description": "Bu hataları otomatik olarak kaydediyoruz ve her şeyi yeniden çalışır hale getirmek için çalışıyoruz. Sorun devam ederse bizimle iletişime geçin. Bu arada sayfayı yenilemeyi deneyin.",
     "go_home": "Ana sayfaya git"
+  },
+  "not_found_page": {
+    "title": "Hay aksi! Bir şeyler ters gitti.",
+    "description": "Aradığınız sayfa bulunamadı. Kaldırılmış, adı değiştirilmiş veya geçici olarak kullanılamıyor olabilir."
   }
 }

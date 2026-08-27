@@ -780,7 +780,9 @@
     "search_for_projects": "Cari proyek",
     "enter_project_name": "Masukkan nama proyek",
     "invalid_filter": "Filter tidak valid",
-    "invalid_filter_tooltip": "Kondisi filter ini tidak lagi valid. Properti mungkin telah dihapus atau akses Anda ke properti tersebut telah berubah."
+    "invalid_filter_tooltip": "Kondisi filter ini tidak lagi valid. Properti mungkin telah dihapus atau akses Anda ke properti tersebut telah berubah.",
+    "add_view": "Tambah tampilan",
+    "add_sticky": "Tambah Sticky"
   },
   "chart": {
     "x_axis": "Sumbu-X",
@@ -1076,5 +1078,9 @@
     "title": "Sepertinya ada yang salah!",
     "description": "Kami mencatat kesalahan ini secara otomatis dan sedang memperbaikinya. Jika masalah berlanjut, hubungi kami. Sementara itu, coba muat ulang halaman.",
     "go_home": "Ke beranda"
+  },
+  "not_found_page": {
+    "title": "Ups! Ada yang salah.",
+    "description": "Halaman yang Anda cari tidak ditemukan. Mungkin telah dihapus, diganti nama, atau sementara tidak tersedia."
   }
 }

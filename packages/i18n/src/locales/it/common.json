@@ -780,7 +780,9 @@
     "search_for_projects": "Cerca progetti",
     "enter_project_name": "Inserisci il nome del progetto",
     "invalid_filter": "Filtro non valido",
-    "invalid_filter_tooltip": "Questa condizione di filtro non è più valida. La proprietà potrebbe essere stata eliminata o il tuo accesso ad essa potrebbe essere cambiato."
+    "invalid_filter_tooltip": "Questa condizione di filtro non è più valida. La proprietà potrebbe essere stata eliminata o il tuo accesso ad essa potrebbe essere cambiato.",
+    "add_view": "Aggiungi vista",
+    "add_sticky": "Aggiungi Sticky"
   },
   "chart": {
     "x_axis": "Asse X",
@@ -1076,5 +1078,9 @@
     "title": "Sembra che qualcosa sia andato storto!",
     "description": "Registriamo questi errori automaticamente e stiamo lavorando per ripristinare tutto. Se il problema persiste, contattaci. Nel frattempo, prova ad aggiornare la pagina.",
     "go_home": "Vai alla home"
+  },
+  "not_found_page": {
+    "title": "Ops! Qualcosa è andato storto.",
+    "description": "La pagina che stai cercando non è stata trovata. Potrebbe essere stata rimossa, rinominata o essere temporaneamente non disponibile."
   }
 }

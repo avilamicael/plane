@@ -780,7 +780,9 @@
     "search_for_projects": "Search for projects",
     "enter_project_name": "Enter project name",
     "invalid_filter": "Invalid filter",
-    "invalid_filter_tooltip": "This filter condition is no longer valid. The property may have been deleted or your access to it may have changed."
+    "invalid_filter_tooltip": "This filter condition is no longer valid. The property may have been deleted or your access to it may have changed.",
+    "add_view": "Add view",
+    "add_sticky": "Add sticky"
   },
   "chart": {
     "x_axis": "X-axis",
@@ -1076,5 +1078,9 @@
     "title": "Looks like something went wrong!",
     "description": "We track these errors automatically and working on getting things back up and running. If the problem persists feel free to contact us. In the meantime, try refreshing.",
     "go_home": "Go to home"
+  },
+  "not_found_page": {
+    "title": "Oops! Something went wrong.",
+    "description": "Sorry, the page you are looking for cannot be found. It may have been removed, had its name changed, or is temporarily unavailable."
   }
 }

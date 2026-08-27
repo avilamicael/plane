@@ -780,7 +780,9 @@
     "search_for_projects": "Tìm kiếm dự án",
     "enter_project_name": "Nhập tên dự án",
     "invalid_filter": "Bộ lọc không hợp lệ",
-    "invalid_filter_tooltip": "Điều kiện lọc này không còn hợp lệ. Thuộc tính có thể đã bị xóa hoặc quyền truy cập của bạn đã thay đổi."
+    "invalid_filter_tooltip": "Điều kiện lọc này không còn hợp lệ. Thuộc tính có thể đã bị xóa hoặc quyền truy cập của bạn đã thay đổi.",
+    "add_view": "Thêm chế độ xem",
+    "add_sticky": "Thêm Sticky"
   },
   "chart": {
     "x_axis": "Trục X",
@@ -1076,5 +1078,9 @@
     "title": "Có vẻ như đã xảy ra lỗi!",
     "description": "Chúng tôi tự động ghi nhận các lỗi này và đang khắc phục. Nếu sự cố vẫn tiếp diễn, hãy liên hệ với chúng tôi. Trong lúc đó, hãy thử tải lại trang.",
     "go_home": "Về trang chủ"
+  },
+  "not_found_page": {
+    "title": "Rất tiếc! Đã xảy ra lỗi.",
+    "description": "Không tìm thấy trang bạn đang tìm. Trang có thể đã bị xóa, đổi tên hoặc tạm thời không khả dụng."
   }
 }

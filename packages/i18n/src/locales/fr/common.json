@@ -780,7 +780,9 @@
     "search_for_projects": "Rechercher des projets",
     "enter_project_name": "Saisissez le nom du projet",
     "invalid_filter": "Filtre non valide",
-    "invalid_filter_tooltip": "Cette condition de filtre n’est plus valide. La propriété a peut-être été supprimée ou votre accès à celle-ci a changé."
+    "invalid_filter_tooltip": "Cette condition de filtre n’est plus valide. La propriété a peut-être été supprimée ou votre accès à celle-ci a changé.",
+    "add_view": "Ajouter une vue",
+    "add_sticky": "Ajouter un Sticky"
   },
   "chart": {
     "x_axis": "Axe X",
@@ -1076,5 +1078,9 @@
     "title": "Il semble qu'une erreur soit survenue !",
     "description": "Nous enregistrons ces erreurs automatiquement et travaillons à rétablir le service. Si le problème persiste, contactez-nous. En attendant, essayez d'actualiser la page.",
     "go_home": "Aller à l'accueil"
+  },
+  "not_found_page": {
+    "title": "Oups ! Une erreur est survenue.",
+    "description": "La page que vous cherchez est introuvable. Elle a peut-être été supprimée, renommée ou est temporairement indisponible."
   }
 }

@@ -7,6 +7,7 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 // ui
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 import { ViewsIcon } from "@plane/propel/icons";
 import { Breadcrumbs, Header } from "@plane/ui";
@@ -20,6 +21,7 @@ import { useProject } from "@/hooks/store/use-project";
 import { CommonProjectBreadcrumbs } from "@/components/breadcrumbs/common";
 
 export const ProjectViewsHeader = observer(function ProjectViewsHeader() {
+  const { t } = useTranslation();
   const { workspaceSlug, projectId } = useParams();
   // store hooks
   const { toggleCreateViewModal } = useCommandPalette();
@@ -48,7 +50,7 @@ export const ProjectViewsHeader = observer(function ProjectViewsHeader() {
           <ViewListHeader />
           <div>
             <Button variant="primary" size="lg" onClick={() => toggleCreateViewModal(true)}>
-              Add view
+              {t("common.add_view")}
             </Button>
           </div>
         </Header.RightItem>

@@ -780,7 +780,9 @@
     "search_for_projects": "Hľadať projekty",
     "enter_project_name": "Zadajte názov projektu",
     "invalid_filter": "Neplatný filter",
-    "invalid_filter_tooltip": "Táto podmienka filtra už nie je platná. Vlastnosť mohla byť odstránená alebo sa zmenil váš prístup k nej."
+    "invalid_filter_tooltip": "Táto podmienka filtra už nie je platná. Vlastnosť mohla byť odstránená alebo sa zmenil váš prístup k nej.",
+    "add_view": "Pridať zobrazenie",
+    "add_sticky": "Pridať Sticky"
   },
   "chart": {
     "x_axis": "Os X",
@@ -1076,5 +1078,9 @@
     "title": "Zdá sa, že sa niečo pokazilo!",
     "description": "Tieto chyby zaznamenávame automaticky a pracujeme na obnovení prevádzky. Ak problém pretrváva, kontaktujte nás. Medzitým skúste stránku obnoviť.",
     "go_home": "Prejsť na domovskú stránku"
+  },
+  "not_found_page": {
+    "title": "Ejha! Niečo sa pokazilo.",
+    "description": "Hľadaná stránka sa nenašla. Mohla byť odstránená, premenovaná alebo je dočasne nedostupná."
   }
 }

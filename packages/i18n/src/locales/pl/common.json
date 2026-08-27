@@ -780,7 +780,9 @@
     "search_for_projects": "Szukaj projektów",
     "enter_project_name": "Wprowadź nazwę projektu",
     "invalid_filter": "Nieprawidłowy filtr",
-    "invalid_filter_tooltip": "Ten warunek filtra nie jest już prawidłowy. Właściwość mogła zostać usunięta lub Twój dostęp do niej mógł się zmienić."
+    "invalid_filter_tooltip": "Ten warunek filtra nie jest już prawidłowy. Właściwość mogła zostać usunięta lub Twój dostęp do niej mógł się zmienić.",
+    "add_view": "Dodaj widok",
+    "add_sticky": "Dodaj Sticky"
   },
   "chart": {
     "x_axis": "Oś X",
@@ -1076,5 +1078,9 @@
     "title": "Wygląda na to, że coś poszło nie tak!",
     "description": "Automatycznie rejestrujemy te błędy i pracujemy nad przywróceniem działania. Jeśli problem będzie się powtarzał, skontaktuj się z nami. W międzyczasie spróbuj odświeżyć stronę.",
     "go_home": "Przejdź do strony głównej"
+  },
+  "not_found_page": {
+    "title": "Ups! Coś poszło nie tak.",
+    "description": "Nie znaleziono szukanej strony. Mogła zostać usunięta, zmieniono jej nazwę lub jest tymczasowo niedostępna."
   }
 }

@@ -780,7 +780,9 @@
     "search_for_projects": "搜尋專案",
     "enter_project_name": "輸入專案名稱",
     "invalid_filter": "無效篩選器",
-    "invalid_filter_tooltip": "此篩選條件已失效。該屬性可能已被刪除，或您對它的存取權限已變更。"
+    "invalid_filter_tooltip": "此篩選條件已失效。該屬性可能已被刪除，或您對它的存取權限已變更。",
+    "add_view": "新增檢視",
+    "add_sticky": "新增 Sticky"
   },
   "chart": {
     "x_axis": "X 軸",
@@ -1076,5 +1078,9 @@
     "title": "似乎發生了問題！",
     "description": "我們會自動記錄這些錯誤並正在著手恢復。如果問題持續發生，請聯絡我們。同時，請嘗試重新整理頁面。",
     "go_home": "返回首頁"
+  },
+  "not_found_page": {
+    "title": "糟糕！發生了問題。",
+    "description": "找不到您要造訪的頁面。它可能已被刪除、更名或暫時無法使用。"
   }
 }

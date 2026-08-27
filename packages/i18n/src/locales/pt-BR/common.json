@@ -780,7 +780,9 @@
     "search_for_projects": "Pesquisar projetos",
     "enter_project_name": "Digite o nome do projeto",
     "invalid_filter": "Filtro inválido",
-    "invalid_filter_tooltip": "Esta condição de filtro não é mais válida. A propriedade pode ter sido excluída ou seu acesso a ela pode ter mudado."
+    "invalid_filter_tooltip": "Esta condição de filtro não é mais válida. A propriedade pode ter sido excluída ou seu acesso a ela pode ter mudado.",
+    "add_view": "Adicionar visualização",
+    "add_sticky": "Adicionar Sticky"
   },
   "chart": {
     "x_axis": "Eixo X",
@@ -1076,5 +1078,9 @@
     "title": "Parece que algo deu errado!",
     "description": "Registramos esses erros automaticamente e já estamos trabalhando para normalizar tudo. Se o problema continuar, entre em contato. Enquanto isso, tente atualizar a página.",
     "go_home": "Ir para a página inicial"
+  },
+  "not_found_page": {
+    "title": "Ops! Algo deu errado.",
+    "description": "A página que você procura não foi encontrada. Ela pode ter sido removida, ter mudado de nome ou estar temporariamente indisponível."
   }
 }

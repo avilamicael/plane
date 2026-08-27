@@ -780,7 +780,9 @@
     "search_for_projects": "Hledat projekty",
     "enter_project_name": "Zadejte název projektu",
     "invalid_filter": "Neplatný filtr",
-    "invalid_filter_tooltip": "Tato podmínka filtru již není platná. Vlastnost mohla být smazána nebo se změnil váš přístup k ní."
+    "invalid_filter_tooltip": "Tato podmínka filtru již není platná. Vlastnost mohla být smazána nebo se změnil váš přístup k ní.",
+    "add_view": "Přidat zobrazení",
+    "add_sticky": "Přidat Sticky"
   },
   "chart": {
     "x_axis": "Osa X",
@@ -1076,5 +1078,9 @@
     "title": "Zdá se, že se něco pokazilo!",
     "description": "Tyto chyby zaznamenáváme automaticky a pracujeme na obnovení provozu. Pokud problém přetrvává, kontaktujte nás. Mezitím zkuste stránku obnovit.",
     "go_home": "Přejít na domovskou stránku"
+  },
+  "not_found_page": {
+    "title": "Jejda! Něco se pokazilo.",
+    "description": "Hledaná stránka nebyla nalezena. Mohla být odstraněna, přejmenována nebo je dočasně nedostupná."
   }
 }
