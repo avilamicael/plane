@@ -10,6 +10,7 @@ import { useTheme } from "next-themes";
 import useSWR from "swr";
 // plane imports
 import { SPACE_BASE_PATH } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 import { PlaneLockup } from "@plane/propel/icons";
 // assets
 import PlaneBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
@@ -22,6 +23,7 @@ import { useInstance } from "@/hooks/store/use-instance";
 import { useUser } from "@/hooks/store/use-user";
 
 export const InstanceProvider = observer(function InstanceProvider({ children }: { children: React.ReactNode }) {
+  const { t } = useTranslation();
   const { fetchInstanceInfo, instance, error } = useInstance();
   const { fetchCurrentUser } = useUser();
   const { resolvedTheme } = useTheme();
@@ -58,7 +60,11 @@ export const InstanceProvider = observer(function InstanceProvider({ children }:
             </div>
           </div>
           <div className="absolute inset-0 z-0">
-            <img src={patternBackground} className="h-full w-screen object-cover" alt="Plane background pattern" />
+            <img
+              src={patternBackground}
+              className="h-full w-screen object-cover"
+              alt={t("aria_labels.common.background_pattern")}
+            />
           </div>
           <div className="relative z-10 flex-grow">
             <div className="relative mx-auto flex h-full w-full items-center justify-center overflow-y-auto px-6 py-10">

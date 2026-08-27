@@ -35,7 +35,8 @@
         "title": "멤버 초대",
         "sub_heading": "프로젝트에서 작업할 멤버를 초대하세요.",
         "select_co_worker": "동료 선택"
-      }
+      },
+      "guest_access": "게스트 접근"
     },
     "states": {
       "heading": "상태",
@@ -210,7 +211,9 @@
       },
       "switch": "견적 시스템 전환",
       "current": "현재 견적 시스템",
-      "select": "견적 시스템 선택"
+      "select": "견적 시스템 선택",
+      "list_heading": "추정치 목록",
+      "archived_heading": "보관된 추정치"
     },
     "automations": {
       "label": "자동화",

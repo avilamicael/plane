@@ -104,6 +104,25 @@
       "title": "Nu ați adăugat încă elemente de lucru la această epopeie.",
       "description": "Începeți prin a adăuga câteva elemente de lucru la această epopeie și urmăriți-le aici.",
       "cta_secondary": "Adăugați elemente de lucru"
+    },
+    "invalid_cycle": {
+      "title": "Ciclul nu există",
+      "description": "Ciclul căutat nu există sau a fost șters.",
+      "cta_primary": "Vezi alte cicluri"
+    },
+    "invalid_module": {
+      "title": "Modulul nu există",
+      "description": "Modulul căutat nu există sau a fost șters.",
+      "cta_primary": "Vezi alte module"
+    },
+    "invalid_view": {
+      "title": "Vizualizarea nu există",
+      "description": "Vizualizarea căutată nu există sau nu ai permisiunea de a o vedea.",
+      "cta_primary": "Vezi alte vizualizări"
+    },
+    "view_work_items": {
+      "title": "Activitățile din această vizualizare vor apărea aici",
+      "description": "Activitățile te ajută să urmărești fiecare parte a muncii. Cu ele știi ce se întâmplă, cine lucrează la ele și ce este gata."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Activați stările proiectului",
       "description": "Activați stările proiectului pentru a vizualiza și gestiona proprietăți precum starea, prioritatea, datele scadente și altele."
+    },
+    "invalid_view": {
+      "title": "Vizualizarea nu există",
+      "description": "Vizualizarea căutată nu există sau nu ai permisiunea de a o vedea.",
+      "cta_primary": "Mergi la Toate activitățile"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Adaugă stări",
         "description": "Selectează stările prin care progresează elementul de lucru."
       }
+    },
+    "projects": {
+      "title": "Încă nu există proiecte",
+      "description": "Proiectele reprezintă fundația muncii orientate spre obiective. Îți permit să gestionezi echipele, sarcinile și tot ce ai nevoie pentru a duce lucrurile la bun sfârșit.",
+      "cta_secondary": "Află mai multe despre proiecte"
     }
   }
 }

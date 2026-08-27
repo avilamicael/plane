@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Çalışma alanı resmi başarıyla kaldırıldı."
       }
+    },
+    "not_found": {
+      "title": "Çalışma alanı bulunamadı",
+      "description": "Bu URL için çalışma alanı bulunamadı. Mevcut olmayabilir veya görüntüleme yetkiniz olmayabilir."
+    },
+    "not_authorized": {
+      "title": "Yetkiniz yok!",
+      "description": "Bu çalışma alanının üyesi değilsiniz. Davet almak için çalışma alanı yöneticisiyle iletişime geçin veya bekleyen davetlerinizi kontrol edin.",
+      "check_pending_invites": "Bekleyen davetleri kontrol et"
+    },
+    "create_new": "Yeni çalışma alanı oluştur"
+  },
+  "workspace_invitation": {
+    "invited_title": "{workspace} çalışma alanına davet edildiniz",
+    "already_member_title": "Zaten {workspace} çalışma alanının üyesisiniz",
+    "description": "Çalışma alanınız, Plane hesabınızda proje oluşturduğunuz, iş öğeleri üzerinde iş birliği yaptığınız ve farklı iş akışlarını düzenlediğiniz yerdir.",
+    "not_found": "Davet bulunamadı",
+    "inactive_title": "Bu davet bağlantısı artık geçerli değil.",
+    "start_from_empty_project": "Ya da boş bir projeyle başlayın",
+    "actions": {
+      "accept": "Kabul et",
+      "ignore": "Yoksay",
+      "continue_to_home": "Ana sayfaya devam et",
+      "sign_in_to_continue": "Devam etmek için giriş yapın",
+      "join_community": "Aktif üreticilerden oluşan topluluğumuza katılın"
     }
   }
 }

@@ -21,7 +21,8 @@
     "in_your_timezone": "W Twojej strefie czasowej",
     "transfer_work_items": "Przenieś {count} elementów pracy",
     "transfer": {
-      "no_cycles_available": "Brak innych cykli dostępnych do przeniesienia elementów pracy."
+      "no_cycles_available": "Brak innych cykli dostępnych do przeniesienia elementów pracy.",
+      "title": "Przenieś elementy pracy"
     },
     "date_range": "Zakres dat",
     "add_date": "Dodaj datę",
@@ -140,7 +141,8 @@
         "description": "Archiwizuj ukończone cykle, aby zachować porządek."
       }
     },
-    "delete_cycle": "Usuń cykl"
+    "delete_cycle": "Usuń cykl",
+    "search_for_a_cycle": "Szukaj cyklu..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "Brak zarchiwizowanych stron",
         "description": "Archiwizuj strony do późniejszego użytku."
       }
+    },
+    "not_found": {
+      "title": "Nie znaleziono strony",
+      "description": "Strona, do której próbujesz uzyskać dostęp, nie istnieje lub nie masz uprawnień do jej wyświetlenia.",
+      "cta": "Zobacz inne strony"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Termin",
       "created_at": "Data utworzenia",
       "manual": "Ręcznie"
-    }
+    },
+    "no_matching_modules": "Brak pasujących modułów",
+    "remove_filters_to_see_all_modules": "Usuń filtry, aby wyświetlić wszystkie moduły",
+    "remove_search_criteria_to_see_all_modules": "Usuń kryteria wyszukiwania, aby wyświetlić wszystkie moduły"
   },
   "project_members": {
     "full_name": "Imię i nazwisko",

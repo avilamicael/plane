@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "ワークスペースの画像を削除しました。"
       }
+    },
+    "not_found": {
+      "title": "ワークスペースが見つかりません",
+      "description": "この URL のワークスペースは見つかりませんでした。存在しないか、閲覧する権限がない可能性があります。"
+    },
+    "not_authorized": {
+      "title": "権限がありません",
+      "description": "このワークスペースのメンバーではありません。ワークスペース管理者に招待を依頼するか、保留中の招待をご確認ください。",
+      "check_pending_invites": "保留中の招待を確認"
+    },
+    "create_new": "新しいワークスペースを作成"
+  },
+  "workspace_invitation": {
+    "invited_title": "{workspace} に招待されました",
+    "already_member_title": "すでに {workspace} のメンバーです",
+    "description": "ワークスペースは、Plane アカウントでプロジェクトを作成し、作業項目で共同作業を行い、さまざまな業務の流れを整理する場所です。",
+    "not_found": "招待が見つかりません",
+    "inactive_title": "この招待リンクは無効になりました。",
+    "start_from_empty_project": "または空のプロジェクトから始める",
+    "actions": {
+      "accept": "承認",
+      "ignore": "無視",
+      "continue_to_home": "ホームへ進む",
+      "sign_in_to_continue": "続行するにはサインインしてください",
+      "join_community": "アクティブなクリエイターのコミュニティに参加"
     }
   }
 }

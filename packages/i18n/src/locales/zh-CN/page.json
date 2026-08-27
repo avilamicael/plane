@@ -215,7 +215,8 @@
         "everything": "全部",
         "no_images": "不含图片"
       }
-    }
+    },
+    "search_placeholder": "搜索页面"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "颜色"
+    },
+    "content_limit_banner": {
+      "message": "已达到内容上限，实时同步已关闭。请新建页面或使用嵌套页面以继续同步。"
+    },
+    "ai_menu": {
+      "add_to_next_line": "添加到下一行",
+      "replace_selection": "替换所选内容",
+      "regenerate_response": "重新生成回答"
     }
   }
 }

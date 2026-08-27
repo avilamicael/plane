@@ -104,6 +104,25 @@
       "title": "Anda belum menambahkan item kerja ke epik ini.",
       "description": "Mulai dengan menambahkan beberapa item kerja ke epik ini dan lacak di sini.",
       "cta_secondary": "Tambahkan item kerja"
+    },
+    "invalid_cycle": {
+      "title": "Siklus tidak ada",
+      "description": "Siklus yang Anda cari tidak ada atau telah dihapus.",
+      "cta_primary": "Lihat siklus lainnya"
+    },
+    "invalid_module": {
+      "title": "Modul tidak ada",
+      "description": "Modul yang Anda cari tidak ada atau telah dihapus.",
+      "cta_primary": "Lihat modul lainnya"
+    },
+    "invalid_view": {
+      "title": "Tampilan tidak ada",
+      "description": "Tampilan yang Anda cari tidak ada atau Anda tidak memiliki izin untuk melihatnya.",
+      "cta_primary": "Lihat tampilan lainnya"
+    },
+    "view_work_items": {
+      "title": "Item kerja dari tampilan ini akan muncul di sini",
+      "description": "Item kerja membantu Anda melacak setiap bagian pekerjaan. Dengan item kerja, Anda tahu apa yang sedang berjalan, siapa yang mengerjakannya, dan apa yang sudah selesai."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Aktifkan status proyek",
       "description": "Aktifkan Status Proyek untuk melihat dan mengelola properti seperti status, prioritas, tanggal jatuh tempo, dan lainnya."
+    },
+    "invalid_view": {
+      "title": "Tampilan tidak ada",
+      "description": "Tampilan yang Anda cari tidak ada atau Anda tidak memiliki izin untuk melihatnya.",
+      "cta_primary": "Buka Semua item kerja"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Tambah status",
         "description": "Pilih status yang dilalui item kerja."
       }
+    },
+    "projects": {
+      "title": "Belum ada proyek",
+      "description": "Proyek menjadi fondasi bagi pekerjaan yang berorientasi tujuan. Proyek memungkinkan Anda mengelola tim, tugas, dan semua yang dibutuhkan untuk menyelesaikan pekerjaan.",
+      "cta_secondary": "Pelajari lebih lanjut tentang proyek"
     }
   }
 }

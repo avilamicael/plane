@@ -35,7 +35,8 @@
         "title": "Inviter des membres",
         "sub_heading": "Invitez des membres à travailler sur votre projet.",
         "select_co_worker": "Sélectionner un acteur"
-      }
+      },
+      "guest_access": "Accès invité"
     },
     "states": {
       "heading": "États",
@@ -210,7 +211,9 @@
       },
       "switch": "Changer de système d'estimation",
       "current": "Système d'estimation actuel",
-      "select": "Sélectionner un système d'estimation"
+      "select": "Sélectionner un système d'estimation",
+      "list_heading": "Liste des estimations",
+      "archived_heading": "Estimations archivées"
     },
     "automations": {
       "label": "Automatisations",

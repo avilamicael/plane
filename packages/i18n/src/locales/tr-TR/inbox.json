@@ -31,6 +31,9 @@
         "title": "İş öğesini sil",
         "content": "{value} iş öğesini silmek istediğinizden emin misiniz?",
         "success": "İş öğesi başarıyla silindi"
+      },
+      "select_duplicate": {
+        "title": "Çalışma öğesi seçin"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Detaylarını görüntülemek için bir iş öğesi seçin."
+      },
+      "no_request_closed": {
+        "title": "Henüz kapatılmış talep yok"
       }
     }
   }

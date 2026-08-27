@@ -31,6 +31,9 @@
         "title": "Smazat pracovní položku",
         "content": "Opravdu chcete smazat pracovní položku {value}?",
         "success": "Pracovní položka úspěšně smazána"
+      },
+      "select_duplicate": {
+        "title": "Vyberte pracovní položku"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Vyberte pracovní položku pro zobrazení podrobností."
+      },
+      "no_request_closed": {
+        "title": "Zatím nebyl uzavřen žádný požadavek"
       }
     }
   }

@@ -771,7 +771,16 @@
       "warning": "Advertencia"
     },
     "owned_by": "Propiedad de",
-    "subscriber": "Suscriptor"
+    "subscriber": "Suscriptor",
+    "set_date": "Establecer fecha",
+    "click_to_copy": "Haz clic para copiar",
+    "completion_percentage": "Porcentaje de finalización",
+    "toggle_workspace_level_search": "Alternar la búsqueda a nivel de espacio de trabajo",
+    "pro_feature": "Función Pro",
+    "search_for_projects": "Buscar proyectos",
+    "enter_project_name": "Introduce el nombre del proyecto",
+    "invalid_filter": "Filtro no válido",
+    "invalid_filter_tooltip": "Esta condición de filtro ya no es válida. Puede que la propiedad se haya eliminado o que tu acceso a ella haya cambiado."
   },
   "chart": {
     "x_axis": "Eje X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Solo se puede subir un archivo a la vez.",
     "file_size_limit": "El archivo debe tener {size}MB o menos de tamaño.",
     "drag_and_drop": "Arrastra y suelta en cualquier lugar para subir",
-    "delete": "Eliminar archivo adjunto"
+    "delete": "Eliminar archivo adjunto",
+    "click_or_drag_file": "Haz clic o arrastra un archivo aquí",
+    "drop_here": "Suelta aquí..."
   },
   "label": {
     "select": "Seleccionar etiqueta",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "No se pudieron obtener los detalles de la instancia.",
       "description": "No pudimos obtener los detalles de la instancia. No te preocupes, puede que solo sea un problema de conexión."
+    },
+    "not_ready": {
+      "title": "Bienvenido a Plane",
+      "description": "Configura tu instancia y crea tu primer espacio de trabajo para empezar a gestionar proyectos y tareas.",
+      "cta": "Comenzar"
     }
   },
   "something_went_wrong_please_try_again_later": "Algo salió mal. Inténtalo de nuevo más tarde.",
@@ -1037,5 +1053,28 @@
       "images": "Imágenes",
       "upload": "Subir"
     }
+  },
+  "no_results_found": "No se encontraron resultados",
+  "learn_more": "Más información",
+  "danger_zone": "Zona de peligro",
+  "no_value": "Sin valor",
+  "uploading": "Subiendo...",
+  "search_for_shortcuts": "Buscar atajos",
+  "visit_profile": "Ver perfil",
+  "billing": {
+    "all_plans": "Todos los planes",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "quote_on_request": "Presupuesto a consulta",
+    "per_user_per_month": "por usuario al mes",
+    "community_description": "Proyectos, elementos de trabajo, ciclos, módulos, páginas y almacenamiento ilimitados"
+  },
+  "latest_feature": {
+    "pages_facelift": "¡Las páginas tienen un nuevo aspecto! Escribe lo que quieras y usa Galileo para empezar."
+  },
+  "error_page": {
+    "title": "¡Parece que algo salió mal!",
+    "description": "Registramos estos errores automáticamente y ya trabajamos para restablecer el servicio. Si el problema continúa, contáctanos. Mientras tanto, intenta recargar la página.",
+    "go_home": "Ir al inicio"
   }
 }

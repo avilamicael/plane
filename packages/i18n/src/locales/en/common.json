@@ -771,7 +771,16 @@
       "warning": "Warning"
     },
     "owned_by": "Owned by",
-    "subscriber": "Subscriber"
+    "subscriber": "Subscriber",
+    "set_date": "Set date",
+    "click_to_copy": "Click to copy",
+    "completion_percentage": "Completion percentage",
+    "toggle_workspace_level_search": "Toggle workspace level search",
+    "pro_feature": "Pro feature",
+    "search_for_projects": "Search for projects",
+    "enter_project_name": "Enter project name",
+    "invalid_filter": "Invalid filter",
+    "invalid_filter_tooltip": "This filter condition is no longer valid. The property may have been deleted or your access to it may have changed."
   },
   "chart": {
     "x_axis": "X-axis",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Only one file can be uploaded at a time.",
     "file_size_limit": "File must be of {size}MB or less in size.",
     "drag_and_drop": "Drag and drop anywhere to upload",
-    "delete": "Delete attachment"
+    "delete": "Delete attachment",
+    "click_or_drag_file": "Click or drag a file here",
+    "drop_here": "Drop here..."
   },
   "label": {
     "select": "Add labels",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Unable to fetch instance details.",
       "description": "We were unable to fetch the details of the instance. Fret not, it might just be a connectivity issue."
+    },
+    "not_ready": {
+      "title": "Welcome to Plane",
+      "description": "Set up your instance and create your first workspace to begin managing projects and work.",
+      "cta": "Get started"
     }
   },
   "something_went_wrong_please_try_again_later": "Something went wrong. Please try again later.",
@@ -1037,5 +1053,28 @@
       "images": "Images",
       "upload": "Upload"
     }
+  },
+  "no_results_found": "No results found",
+  "learn_more": "Learn more",
+  "danger_zone": "Danger zone",
+  "no_value": "No value",
+  "uploading": "Uploading...",
+  "search_for_shortcuts": "Search for shortcuts",
+  "visit_profile": "Visit Profile",
+  "billing": {
+    "all_plans": "All plans",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "quote_on_request": "Quote on request",
+    "per_user_per_month": "per user per month",
+    "community_description": "Unlimited projects, issues, cycles, modules, pages, and storage"
+  },
+  "latest_feature": {
+    "pages_facelift": "Pages gets a facelift! Write anything and use Galileo to help you start."
+  },
+  "error_page": {
+    "title": "Looks like something went wrong!",
+    "description": "We track these errors automatically and working on getting things back up and running. If the problem persists feel free to contact us. In the meantime, try refreshing.",
+    "go_home": "Go to home"
   }
 }

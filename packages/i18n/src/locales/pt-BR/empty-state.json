@@ -104,6 +104,25 @@
       "title": "Você ainda não adicionou itens de trabalho a este épico.",
       "description": "Comece adicionando alguns itens de trabalho a este épico e acompanhe-os aqui.",
       "cta_secondary": "Adicionar itens de trabalho"
+    },
+    "invalid_cycle": {
+      "title": "O ciclo não existe",
+      "description": "O ciclo que você está procurando não existe ou foi excluído.",
+      "cta_primary": "Ver outros ciclos"
+    },
+    "invalid_module": {
+      "title": "O módulo não existe",
+      "description": "O módulo que você está procurando não existe ou foi excluído.",
+      "cta_primary": "Ver outros módulos"
+    },
+    "invalid_view": {
+      "title": "A visualização não existe",
+      "description": "A visualização que você está procurando não existe ou você não tem permissão para vê-la.",
+      "cta_primary": "Ver outras visualizações"
+    },
+    "view_work_items": {
+      "title": "Os itens de trabalho da visualização aparecerão aqui",
+      "description": "Os itens de trabalho ajudam a acompanhar cada parte do trabalho. Com eles, saiba o que está acontecendo, quem está trabalhando e o que já foi concluído."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Ativar estados do projeto",
       "description": "Ative os estados do projeto para visualizar e gerenciar propriedades como estado, prioridade, datas de vencimento e mais."
+    },
+    "invalid_view": {
+      "title": "A visualização não existe",
+      "description": "A visualização que você está procurando não existe ou você não tem permissão para vê-la.",
+      "cta_primary": "Ir para Todos os itens de trabalho"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Adicionar estados",
         "description": "Selecione os estados pelos quais o item de trabalho progride."
       }
+    },
+    "projects": {
+      "title": "Ainda não há projetos",
+      "description": "Os projetos são a base do trabalho orientado a metas. Com eles você gerencia suas equipes, tarefas e tudo o que precisa para concluir o trabalho.",
+      "cta_secondary": "Saiba mais sobre projetos"
     }
   }
 }

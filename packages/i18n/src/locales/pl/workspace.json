@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Obraz obszaru roboczego pomyślnie usunięto."
       }
+    },
+    "not_found": {
+      "title": "Nie znaleziono przestrzeni roboczej",
+      "description": "Nie znaleziono przestrzeni roboczej dla tego adresu URL. Może nie istnieć lub nie masz uprawnień, aby ją zobaczyć."
+    },
+    "not_authorized": {
+      "title": "Brak autoryzacji!",
+      "description": "Nie jesteś członkiem tej przestrzeni roboczej. Skontaktuj się z administratorem przestrzeni roboczej, aby otrzymać zaproszenie, lub sprawdź swoje oczekujące zaproszenia.",
+      "check_pending_invites": "Sprawdź oczekujące zaproszenia"
+    },
+    "create_new": "Utwórz nową przestrzeń roboczą"
+  },
+  "workspace_invitation": {
+    "invited_title": "Zostałeś zaproszony do {workspace}",
+    "already_member_title": "Jesteś już członkiem {workspace}",
+    "description": "Przestrzeń robocza to miejsce, w którym tworzysz projekty, współpracujesz nad elementami pracy i organizujesz różne nurty pracy na swoim koncie Plane.",
+    "not_found": "Nie znaleziono zaproszenia",
+    "inactive_title": "Ten link z zaproszeniem nie jest już aktywny.",
+    "start_from_empty_project": "Albo zacznij od pustego projektu",
+    "actions": {
+      "accept": "Akceptuj",
+      "ignore": "Zignoruj",
+      "continue_to_home": "Przejdź do strony głównej",
+      "sign_in_to_continue": "Zaloguj się, aby kontynuować",
+      "join_community": "Dołącz do naszej społeczności aktywnych twórców"
     }
   }
 }

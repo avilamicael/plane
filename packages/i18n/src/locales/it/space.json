@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Ahia! Non sembra affatto un bel segno.",
+      "description": "Questo ha fatto precipitare Plane, gioco di parole voluto. Nessun problema, però: i nostri tecnici sono già stati avvisati. Se hai altri dettagli, scrivi a",
+      "or_on_our": "oppure visita il nostro"
+    },
+    "not_found": {
+      "title": "Qualcosa non ha funzionato",
+      "description": "Controlla l’URL inserito nella barra degli indirizzi del browser e riprova."
+    },
+    "board_not_found": {
+      "description": "Questa bacheca pubblica non esiste. Controlla l’URL."
+    },
+    "user_logged_in": {
+      "title": "Ottimo! Manca solo un passaggio.",
+      "description": "Inserisci nella barra degli indirizzi del browser l’URL di condivisione pubblica o il link della visualizzazione o della Pagina che vuoi vedere."
     }
   }
 }

@@ -104,6 +104,25 @@
       "title": "このエピックにはまだ作業項目が追加されていません。",
       "description": "このエピックにいくつかの作業項目を追加して、ここで追跡を開始します。",
       "cta_secondary": "作業項目を追加"
+    },
+    "invalid_cycle": {
+      "title": "サイクルが存在しません",
+      "description": "お探しのサイクルは存在しないか、削除されています。",
+      "cta_primary": "他のサイクルを表示"
+    },
+    "invalid_module": {
+      "title": "モジュールが存在しません",
+      "description": "お探しのモジュールは存在しないか、削除されています。",
+      "cta_primary": "他のモジュールを表示"
+    },
+    "invalid_view": {
+      "title": "ビューが存在しません",
+      "description": "お探しのビューは存在しないか、閲覧する権限がありません。",
+      "cta_primary": "他のビューを表示"
+    },
+    "view_work_items": {
+      "title": "このビューの作業項目がここに表示されます",
+      "description": "作業項目は個々の作業を追跡するのに役立ちます。何が進行中か、誰が担当しているか、何が完了したかを把握できます。"
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "プロジェクトの状態を有効化",
       "description": "プロジェクトの状態を有効にして、状態、優先度、期日などのプロパティを表示および管理します。"
+    },
+    "invalid_view": {
+      "title": "ビューが存在しません",
+      "description": "お探しのビューは存在しないか、閲覧する権限がありません。",
+      "cta_primary": "すべての作業項目へ移動"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "ステータスを追加",
         "description": "作業項目が進行するステータスを選択します。"
       }
+    },
+    "projects": {
+      "title": "プロジェクトはまだありません",
+      "description": "プロジェクトは目標志向の仕事の土台です。チームやタスク、成果を出すために必要なすべてを管理できます。",
+      "cta_secondary": "プロジェクトについて詳しく見る"
     }
   }
 }

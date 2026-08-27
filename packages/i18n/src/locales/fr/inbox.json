@@ -31,6 +31,9 @@
         "title": "Supprimer l’élément de travail",
         "content": "Êtes-vous sûr de vouloir supprimer l’élément de travail {value} ?",
         "success": "Élément de travail supprimé avec succès"
+      },
+      "select_duplicate": {
+        "title": "Sélectionnez l'élément de travail"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Sélectionnez un élément de travail pour voir ses détails."
+      },
+      "no_request_closed": {
+        "title": "Aucune demande clôturée pour le moment"
       }
     }
   }

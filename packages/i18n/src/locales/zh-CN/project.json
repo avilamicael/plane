@@ -21,7 +21,8 @@
     "in_your_timezone": "在您的时区",
     "transfer_work_items": "转移 {count} 工作项",
     "transfer": {
-      "no_cycles_available": "没有其他可用的周期来转移工作项。"
+      "no_cycles_available": "没有其他可用的周期来转移工作项。",
+      "title": "转移工作项"
     },
     "date_range": "日期范围",
     "add_date": "添加日期",
@@ -140,7 +141,8 @@
         "description": "为了整理您的项目，归档已完成的周期。归档后可以在这里找到它们。"
       }
     },
-    "delete_cycle": "删除周期"
+    "delete_cycle": "删除周期",
+    "search_for_a_cycle": "搜索周期…"
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "尚无已归档的页面",
         "description": "归档不在您关注范围内的页面。需要时可以在这里访问它们。"
       }
+    },
+    "not_found": {
+      "title": "未找到页面",
+      "description": "你尝试访问的页面不存在，或者你没有查看权限。",
+      "cta": "查看其他页面"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "截止日期",
       "created_at": "创建日期",
       "manual": "手动"
-    }
+    },
+    "no_matching_modules": "没有匹配的模块",
+    "remove_filters_to_see_all_modules": "移除筛选器以查看所有模块",
+    "remove_search_criteria_to_see_all_modules": "移除搜索条件以查看所有模块"
   },
   "project_members": {
     "full_name": "全名",

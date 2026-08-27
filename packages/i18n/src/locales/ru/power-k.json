@@ -171,7 +171,9 @@
     "search_menu": {
       "no_results": "Ничего не найдено",
       "clear_search": "Очистить поиск",
-      "go_to_advanced_search": "Перейти к расширенному поиску"
+      "go_to_advanced_search": "Перейти к расширенному поиску",
+      "no_estimate_found": "Оценок не найдено",
+      "work_item_search_placeholder": "Поиск по ID или названию рабочей задачи"
     },
     "footer": {
       "workspace_level": "Уровень рабочего пространства"
@@ -187,6 +189,7 @@
       "miscellaneous": "Прочее",
       "preferences": "Настройки",
       "help": "Помощь"
-    }
+    },
+    "clear_context": "Очистить контекст (Backspace)"
   }
 }

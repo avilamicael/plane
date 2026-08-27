@@ -21,7 +21,8 @@
     "in_your_timezone": "내 시간대",
     "transfer_work_items": "{count}개의 작업 항목 이전",
     "transfer": {
-      "no_cycles_available": "작업 항목을 전송할 수 있는 다른 사이클이 없습니다."
+      "no_cycles_available": "작업 항목을 전송할 수 있는 다른 사이클이 없습니다.",
+      "title": "작업 항목 이전"
     },
     "date_range": "날짜 범위",
     "add_date": "날짜 추가",
@@ -140,7 +141,8 @@
         "description": "프로젝트를 정리하려면 완료된 주기를 아카이브하세요. 아카이브된 주기는 여기에서 찾을 수 있습니다."
       }
     },
-    "delete_cycle": "주기 삭제"
+    "delete_cycle": "주기 삭제",
+    "search_for_a_cycle": "주기 검색..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "아카이브된 페이지 없음",
         "description": "레이더에 없는 페이지를 아카이브하세요. 필요할 때 여기에서 접근하세요."
       }
+    },
+    "not_found": {
+      "title": "페이지를 찾을 수 없습니다",
+      "description": "접근하려는 페이지가 존재하지 않거나 볼 수 있는 권한이 없습니다.",
+      "cta": "다른 페이지 보기"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "마감일",
       "created_at": "생성일",
       "manual": "수동"
-    }
+    },
+    "no_matching_modules": "일치하는 모듈 없음",
+    "remove_filters_to_see_all_modules": "모든 모듈을 보려면 필터를 제거하세요",
+    "remove_search_criteria_to_see_all_modules": "모든 모듈을 보려면 검색 기준을 제거하세요"
   },
   "project_members": {
     "full_name": "성명",

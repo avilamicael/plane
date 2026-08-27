@@ -215,7 +215,8 @@
         "everything": "Tudo",
         "no_images": "Sem imagens"
       }
-    }
+    },
+    "search_placeholder": "Pesquisar páginas"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "Cor"
+    },
+    "content_limit_banner": {
+      "message": "Limite de conteúdo atingido e a sincronização ao vivo foi desativada. Crie uma nova página ou use páginas aninhadas para continuar sincronizando."
+    },
+    "ai_menu": {
+      "add_to_next_line": "Adicionar na linha seguinte",
+      "replace_selection": "Substituir seleção",
+      "regenerate_response": "Gerar resposta novamente"
     }
   }
 }

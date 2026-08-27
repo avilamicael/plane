@@ -31,6 +31,9 @@
         "title": "Delete work item",
         "content": "Are you sure you want to delete work item {value}?",
         "success": "Work item deleted successfully"
+      },
+      "select_duplicate": {
+        "title": "Select work item"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Select a work item to view its details."
+      },
+      "no_request_closed": {
+        "title": "No request closed yet"
       }
     }
   }

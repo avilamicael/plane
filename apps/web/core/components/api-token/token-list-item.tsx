@@ -7,6 +7,7 @@
 import { useState } from "react";
 import { XCircle } from "lucide-react";
 // plane imports
+import { useTranslation } from "@plane/i18n";
 import { Tooltip } from "@plane/propel/tooltip";
 import type { IApiToken } from "@plane/types";
 import { renderFormattedDate, calculateTimeAgo, renderFormattedTime } from "@plane/utils";
@@ -25,12 +26,13 @@ export function ApiTokenListItem(props: Props) {
   const [deleteModalOpen, setDeleteModalOpen] = useState(false);
   // hooks
   const { isMobile } = usePlatformOS();
+  const { t } = useTranslation();
 
   return (
     <>
       <DeleteApiTokenModal isOpen={deleteModalOpen} onClose={() => setDeleteModalOpen(false)} tokenId={token.id} />
       <div className="group relative flex flex-col justify-center border-b border-subtle py-3">
-        <Tooltip tooltipContent="Delete token" isMobile={isMobile}>
+        <Tooltip tooltipContent={t("workspace_settings.settings.api_tokens.delete_token")} isMobile={isMobile}>
           <button
             onClick={() => setDeleteModalOpen(true)}
             className="absolute right-4 hidden place-items-center group-hover:grid"

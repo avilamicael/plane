@@ -311,14 +311,14 @@ export const InboxIssueActionsHeader = observer(function InboxIssueActionsHeader
                 variant="secondary"
                 size="lg"
                 icon={ChevronUpIcon}
-                aria-label="Previous work item"
+                aria-label={t("aria_labels.intake.previous_work_item")}
                 onClick={() => handleInboxIssueNavigation("prev")}
               />
               <IconButton
                 variant="secondary"
                 size="lg"
                 icon={ChevronDownIcon}
-                aria-label="Next work item"
+                aria-label={t("aria_labels.intake.next_work_item")}
                 onClick={() => handleInboxIssueNavigation("next")}
               />
             </div>

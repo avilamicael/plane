@@ -104,6 +104,25 @@
       "title": "You haven't added work items to this epic yet.",
       "description": "Start by adding some work items to this epic and track them here.",
       "cta_secondary": "Add work items"
+    },
+    "invalid_cycle": {
+      "title": "Cycle does not exist",
+      "description": "The cycle you are looking for does not exist or has been deleted.",
+      "cta_primary": "View other cycles"
+    },
+    "invalid_module": {
+      "title": "Module does not exist",
+      "description": "The module you are looking for does not exist or has been deleted.",
+      "cta_primary": "View other modules"
+    },
+    "invalid_view": {
+      "title": "View does not exist",
+      "description": "The view you are looking for does not exist or you don't have permission to view it.",
+      "cta_primary": "View other views"
+    },
+    "view_work_items": {
+      "title": "View work items will appear here",
+      "description": "Work items help you track individual pieces of work. With work items, keep track of what's going on, who is working on it, and what's done."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Enable project states",
       "description": "Enable Project States to view and manage properties like state, priority, due dates and more."
+    },
+    "invalid_view": {
+      "title": "View does not exist",
+      "description": "The view you are looking for does not exist or you don't have permission to view it.",
+      "cta_primary": "Go to All work items"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Add states",
         "description": "Select the states through which the work item progresses."
       }
+    },
+    "projects": {
+      "title": "No projects yet",
+      "description": "Projects act as the foundation for goal-driven work. They let you manage your teams, tasks, and everything you need to get things done.",
+      "cta_secondary": "Learn more about projects"
     }
   }
 }

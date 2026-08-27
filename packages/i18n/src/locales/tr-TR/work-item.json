@@ -392,6 +392,10 @@
           "message": "İş öğesi başlığı açıklama oluşturmak için yeterince açıklayıcı değil. Lütfen farklı bir başlık deneyin."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Bu iş öğesi arşivlendi. Geri yüklemek için Arşivler bölümüne gidin.",
+      "action": "Arşivlere git"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "İş öğeleri güncellenemiyor",
         "message": "Bazı iş öğeleri için durum değişikliğine izin verilmiyor. Durum değişikliğine izin verildiğinden emin olun."
       }
-    }
+    },
+    "select_work_items_to_delete": "Silinecek çalışma öğelerini seçin"
   },
   "recurring_work_items": {
     "settings": {

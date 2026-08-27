@@ -104,6 +104,25 @@
       "title": "K tomuto epiku jste ještě nepřidali pracovní položky.",
       "description": "Začněte přidáním některých pracovních položek k tomuto epiku a sledujte je zde.",
       "cta_secondary": "Přidat pracovní položky"
+    },
+    "invalid_cycle": {
+      "title": "Cyklus neexistuje",
+      "description": "Cyklus, který hledáte, neexistuje nebo byl smazán.",
+      "cta_primary": "Zobrazit další cykly"
+    },
+    "invalid_module": {
+      "title": "Modul neexistuje",
+      "description": "Modul, který hledáte, neexistuje nebo byl smazán.",
+      "cta_primary": "Zobrazit další moduly"
+    },
+    "invalid_view": {
+      "title": "Pohled neexistuje",
+      "description": "Pohled, který hledáte, neexistuje nebo nemáte oprávnění jej zobrazit.",
+      "cta_primary": "Zobrazit další pohledy"
+    },
+    "view_work_items": {
+      "title": "Pracovní položky tohoto pohledu se zobrazí zde",
+      "description": "Pracovní položky vám pomáhají sledovat jednotlivé části práce. Díky nim víte, co se děje, kdo na tom pracuje a co je hotové."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Povolit stavy projektu",
       "description": "Povolte stavy projektu pro zobrazení a správu vlastností jako stav, priorita, termíny a další."
+    },
+    "invalid_view": {
+      "title": "Pohled neexistuje",
+      "description": "Pohled, který hledáte, neexistuje nebo nemáte oprávnění jej zobrazit.",
+      "cta_primary": "Přejít na Všechny pracovní položky"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Přidat stavy",
         "description": "Vyberte stavy, kterými pracovní položka prochází."
       }
+    },
+    "projects": {
+      "title": "Zatím žádné projekty",
+      "description": "Projekty tvoří základ práce zaměřené na cíle. Umožňují spravovat týmy, úkoly a vše, co potřebujete k dokončení práce.",
+      "cta_secondary": "Zjistit více o projektech"
     }
   }
 }

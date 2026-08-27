@@ -159,7 +159,9 @@
             "message": "新しいキーを再生成しました。"
           }
         },
-        "delete_webhook": "Webhookを削除"
+        "delete_webhook": "Webhookを削除",
+        "enable_webhook": "Webhookを有効にする",
+        "delete_warning": "Webhook を削除すると復元できません。今後のイベントはこの Webhook に配信されなくなります。"
       },
       "api_tokens": {
         "heading": "APIトークン",
@@ -182,7 +184,9 @@
             "message": "APIトークンを削除できませんでした"
           }
         },
-        "expiration_required": "有効期限を選択してください。"
+        "expiration_required": "有効期限を選択してください。",
+        "copy_secret_key": "シークレットキーをコピー",
+        "delete_token": "トークンを削除"
       },
       "integrations": {
         "title": "インテグレーション",

@@ -159,7 +159,9 @@
             "message": "Nowy klucz pomyślnie wygenerowano."
           }
         },
-        "delete_webhook": "Usuń webhook"
+        "delete_webhook": "Usuń webhook",
+        "enable_webhook": "Włącz webhook",
+        "delete_warning": "Po usunięciu webhooka nie można go przywrócić. Przyszłe zdarzenia nie będą już do niego dostarczane."
       },
       "api_tokens": {
         "heading": "Tokeny API",
@@ -182,7 +184,9 @@
             "message": "Usunięcie tokena nie powiodło się"
           }
         },
-        "expiration_required": "Wybierz datę wygaśnięcia."
+        "expiration_required": "Wybierz datę wygaśnięcia.",
+        "copy_secret_key": "Skopiuj tajny klucz",
+        "delete_token": "Usuń token"
       },
       "integrations": {
         "title": "Integracje",

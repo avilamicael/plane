@@ -35,7 +35,8 @@
         "title": "Pozvat členy",
         "sub_heading": "Pozvěte členy do projektu.",
         "select_co_worker": "Vybrat spolupracovníka"
-      }
+      },
+      "guest_access": "Přístup hostů"
     },
     "states": {
       "heading": "Stavy",
@@ -210,7 +211,9 @@
       },
       "switch": "Přepnout systém odhadů",
       "current": "Aktuální systém odhadů",
-      "select": "Vyberte systém odhadů"
+      "select": "Vyberte systém odhadů",
+      "list_heading": "Seznam odhadů",
+      "archived_heading": "Archivované odhady"
     },
     "automations": {
       "label": "Automatizace",

@@ -104,6 +104,25 @@
       "title": "Vous n'avez pas encore ajouté d'éléments de travail à cette épique.",
       "description": "Commencez par ajouter quelques éléments de travail à cette épique et suivez-les ici.",
       "cta_secondary": "Ajouter des éléments de travail"
+    },
+    "invalid_cycle": {
+      "title": "Le cycle n’existe pas",
+      "description": "Le cycle que vous recherchez n’existe pas ou a été supprimé.",
+      "cta_primary": "Voir les autres cycles"
+    },
+    "invalid_module": {
+      "title": "Le module n’existe pas",
+      "description": "Le module que vous recherchez n’existe pas ou a été supprimé.",
+      "cta_primary": "Voir les autres modules"
+    },
+    "invalid_view": {
+      "title": "La vue n’existe pas",
+      "description": "La vue que vous recherchez n’existe pas ou vous n’avez pas l’autorisation de la consulter.",
+      "cta_primary": "Voir les autres vues"
+    },
+    "view_work_items": {
+      "title": "Les éléments de travail de la vue apparaîtront ici",
+      "description": "Les éléments de travail vous aident à suivre chaque partie du travail. Grâce à eux, sachez ce qui se passe, qui y travaille et ce qui est terminé."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Activer les états du projet",
       "description": "Activez les états du projet pour afficher et gérer les propriétés comme l'état, la priorité, les dates d'échéance et plus encore."
+    },
+    "invalid_view": {
+      "title": "La vue n’existe pas",
+      "description": "La vue que vous recherchez n’existe pas ou vous n’avez pas l’autorisation de la consulter.",
+      "cta_primary": "Aller à Tous les éléments de travail"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Ajouter des états",
         "description": "Sélectionnez les états par lesquels passe l’élément de travail."
       }
+    },
+    "projects": {
+      "title": "Aucun projet pour le moment",
+      "description": "Les projets constituent la base du travail orienté objectifs. Ils vous permettent de gérer vos équipes, vos tâches et tout ce dont vous avez besoin pour avancer.",
+      "cta_secondary": "En savoir plus sur les projets"
     }
   }
 }

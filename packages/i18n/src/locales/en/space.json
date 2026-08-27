@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Yikes! That doesn’t look good.",
+      "description": "That crashed Plane, pun intended. No worries, though. Our engineers have been notified. If you have more details, please write to",
+      "or_on_our": "or on our"
+    },
+    "not_found": {
+      "title": "That didn’t work",
+      "description": "Check the URL you are entering in the browser’s address bar and try again."
+    },
+    "board_not_found": {
+      "description": "The public board does not exist. Please check the URL."
+    },
+    "user_logged_in": {
+      "title": "Nice! Just one more step.",
+      "description": "Enter the public-share URL or link of the view or Page you are trying to see in the browser’s address bar."
     }
   }
 }

@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Jejda! To nevypadá dobře.",
+      "description": "Tím se Plane zřítil – slovní hříčka je záměrná. Nebojte se, naši inženýři už byli informováni. Pokud máte další podrobnosti, napište na",
+      "or_on_our": "nebo navštivte naše"
+    },
+    "not_found": {
+      "title": "Nepodařilo se",
+      "description": "Zkontrolujte URL adresu zadanou v adresním řádku prohlížeče a zkuste to znovu."
+    },
+    "board_not_found": {
+      "description": "Tato veřejná nástěnka neexistuje. Zkontrolujte URL adresu."
+    },
+    "user_logged_in": {
+      "title": "Skvěle! Zbývá už jen jeden krok.",
+      "description": "Do adresního řádku prohlížeče zadejte veřejnou URL adresu sdílení nebo odkaz na pohled či Stránku, kterou chcete zobrazit."
     }
   }
 }

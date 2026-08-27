@@ -159,7 +159,9 @@
             "message": "Nueva clave regenerada correctamente."
           }
         },
-        "delete_webhook": "Eliminar webhook"
+        "delete_webhook": "Eliminar webhook",
+        "enable_webhook": "Activar webhook",
+        "delete_warning": "Una vez que se elimina un webhook, no se puede restaurar. Los eventos futuros ya no se entregarán a este webhook."
       },
       "api_tokens": {
         "heading": "Tokens de API",
@@ -182,7 +184,9 @@
             "message": "No se pudo eliminar el token de API"
           }
         },
-        "expiration_required": "Selecciona una fecha de caducidad."
+        "expiration_required": "Selecciona una fecha de caducidad.",
+        "copy_secret_key": "Copiar clave secreta",
+        "delete_token": "Eliminar token"
       },
       "integrations": {
         "title": "Integraciones",

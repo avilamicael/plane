@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Workspace picture removed successfully."
       }
+    },
+    "not_found": {
+      "title": "Workspace not found",
+      "description": "No workspace found with the URL. It may not exist or you lack authorization to view it."
+    },
+    "not_authorized": {
+      "title": "Not Authorized!",
+      "description": "You're not a member of this workspace. Please contact the workspace admin to get an invitation or check your pending invitations.",
+      "check_pending_invites": "Check pending invites"
+    },
+    "create_new": "Create new workspace"
+  },
+  "workspace_invitation": {
+    "invited_title": "You have been invited to {workspace}",
+    "already_member_title": "You are already a member of {workspace}",
+    "description": "Your workspace is where you'll create projects, collaborate on your work items, and organize different streams of work in your Plane account.",
+    "not_found": "Invitation not found",
+    "inactive_title": "This invitation link is not active anymore.",
+    "start_from_empty_project": "Or start from an empty project",
+    "actions": {
+      "accept": "Accept",
+      "ignore": "Ignore",
+      "continue_to_home": "Continue to home",
+      "sign_in_to_continue": "Sign in to continue",
+      "join_community": "Join our community of active creators"
     }
   }
 }

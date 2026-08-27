@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Eita! Isso não parece nada bom.",
+      "description": "Isso derrubou o Plane — trocadilho proposital. Mas fique tranquilo: nossos engenheiros já foram avisados. Se tiver mais detalhes, escreva para",
+      "or_on_our": "ou acesse nosso"
+    },
+    "not_found": {
+      "title": "Isso não funcionou",
+      "description": "Confira a URL digitada na barra de endereços do navegador e tente novamente."
+    },
+    "board_not_found": {
+      "description": "Este quadro público não existe. Verifique a URL."
+    },
+    "user_logged_in": {
+      "title": "Ótimo! Falta só mais um passo.",
+      "description": "Digite na barra de endereços do navegador a URL de compartilhamento público ou o link da visualização ou Página que você quer ver."
     }
   }
 }

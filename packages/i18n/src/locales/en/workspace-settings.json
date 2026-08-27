@@ -159,7 +159,9 @@
             "message": "New key regenerated successfully."
           }
         },
-        "delete_webhook": "Delete webhook"
+        "delete_webhook": "Delete webhook",
+        "enable_webhook": "Enable webhook",
+        "delete_warning": "Once a webhook is deleted, it cannot be restored. Future events will no longer be delivered to this webhook."
       },
       "api_tokens": {
         "heading": "Access Tokens",
@@ -182,7 +184,9 @@
             "message": "The token could not be deleted"
           }
         },
-        "expiration_required": "Please select an expiration date."
+        "expiration_required": "Please select an expiration date.",
+        "copy_secret_key": "Copy secret key",
+        "delete_token": "Delete token"
       },
       "integrations": {
         "title": "Integrations",

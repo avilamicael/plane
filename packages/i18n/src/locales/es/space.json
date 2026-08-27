@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "¡Vaya! Esto no pinta nada bien.",
+      "description": "Eso hizo caer a Plane, y el juego de palabras es intencionado. Pero tranquilo: nuestros ingenieros ya están avisados. Si tienes más detalles, escríbenos a",
+      "or_on_our": "o visita nuestro"
+    },
+    "not_found": {
+      "title": "Eso no funcionó",
+      "description": "Revisa la URL que escribiste en la barra de direcciones del navegador e inténtalo de nuevo."
+    },
+    "board_not_found": {
+      "description": "Este tablero público no existe. Revisa la URL."
+    },
+    "user_logged_in": {
+      "title": "¡Genial! Solo falta un paso más.",
+      "description": "Escribe en la barra de direcciones del navegador la URL de uso compartido público o el enlace de la vista o Página que quieres ver."
     }
   }
 }

@@ -31,6 +31,9 @@
         "title": "Elimina elemento di lavoro",
         "content": "Sei sicuro di voler eliminare l'elemento di lavoro {value}?",
         "success": "Elemento di lavoro eliminato con successo"
+      },
+      "select_duplicate": {
+        "title": "Seleziona l'elemento di lavoro"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Seleziona un elemento di lavoro per visualizzarne i dettagli."
+      },
+      "no_request_closed": {
+        "title": "Nessuna richiesta chiusa finora"
       }
     }
   }

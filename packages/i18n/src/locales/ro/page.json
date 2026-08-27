@@ -215,7 +215,8 @@
         "everything": "Tot",
         "no_images": "Fără imagini"
       }
-    }
+    },
+    "search_placeholder": "Caută pagini"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "Culoare"
+    },
+    "content_limit_banner": {
+      "message": "Limita de conținut a fost atinsă, iar sincronizarea în timp real este dezactivată. Creează o pagină nouă sau folosește pagini imbricate pentru a continua sincronizarea."
+    },
+    "ai_menu": {
+      "add_to_next_line": "Adaugă pe rândul următor",
+      "replace_selection": "Înlocuiește selecția",
+      "regenerate_response": "Regenerează răspunsul"
     }
   }
 }

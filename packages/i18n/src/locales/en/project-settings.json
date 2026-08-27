@@ -35,7 +35,8 @@
         "title": "Invite members",
         "sub_heading": "Invite members to work on your project.",
         "select_co_worker": "Select co-worker"
-      }
+      },
+      "guest_access": "Guest access"
     },
     "states": {
       "heading": "States",
@@ -210,7 +211,9 @@
       },
       "switch": "Switch estimate system",
       "current": "Current estimate system",
-      "select": "Select an estimate system"
+      "select": "Select an estimate system",
+      "list_heading": "Estimates list",
+      "archived_heading": "Archived estimates"
     },
     "automations": {
       "label": "Automations",

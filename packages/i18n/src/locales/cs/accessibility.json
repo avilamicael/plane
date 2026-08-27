@@ -31,6 +31,29 @@
       "hide_password": "Skrýt heslo",
       "close_alert": "Zavřít upozornění",
       "close_popover": "Zavřít vyskakovací okno"
+    },
+    "common": {
+      "plane_logo": "Logo Plane",
+      "provider_logo": "Logo {provider}",
+      "background_pattern": "Vzor pozadí Plane",
+      "instance_failure_image": "Ilustrace selhání instance",
+      "user_already_signed_in_image": "Uživatel je již přihlášen",
+      "page_not_found_image": "404 - Stránka nenalezena"
+    },
+    "intake": {
+      "previous_work_item": "Předchozí pracovní položka",
+      "next_work_item": "Další pracovní položka"
+    },
+    "sidebar": {
+      "main_sidebar": "Hlavní postranní panel",
+      "resize_sidebar": "Změnit velikost postranního panelu",
+      "peek_view": "Náhled postranního panelu"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Zavřít upozornění na limit obsahu"
+    },
+    "filters": {
+      "remove_filter": "Odebrat filtr"
     }
   }
 }

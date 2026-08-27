@@ -31,6 +31,29 @@
       "hide_password": "Ocultar contraseña",
       "close_alert": "Cerrar alerta",
       "close_popover": "Cerrar ventana emergente"
+    },
+    "common": {
+      "plane_logo": "Logotipo de Plane",
+      "provider_logo": "Logotipo de {provider}",
+      "background_pattern": "Patrón de fondo de Plane",
+      "instance_failure_image": "Ilustración de error de la instancia",
+      "user_already_signed_in_image": "Usuario con la sesión ya iniciada",
+      "page_not_found_image": "404 - Página no encontrada"
+    },
+    "intake": {
+      "previous_work_item": "Elemento de trabajo anterior",
+      "next_work_item": "Elemento de trabajo siguiente"
+    },
+    "sidebar": {
+      "main_sidebar": "Barra lateral principal",
+      "resize_sidebar": "Redimensionar barra lateral",
+      "peek_view": "Vista rápida de la barra lateral"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Descartar el aviso de límite de contenido"
+    },
+    "filters": {
+      "remove_filter": "Eliminar filtro"
     }
   }
 }

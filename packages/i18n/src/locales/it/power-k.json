@@ -171,7 +171,9 @@
     "search_menu": {
       "no_results": "Nessun risultato trovato",
       "clear_search": "Cancella ricerca",
-      "go_to_advanced_search": "Vai alla ricerca avanzata"
+      "go_to_advanced_search": "Vai alla ricerca avanzata",
+      "no_estimate_found": "Nessuna stima trovata",
+      "work_item_search_placeholder": "Cerca per ID o titolo dell'elemento di lavoro"
     },
     "footer": {
       "workspace_level": "Livello dello spazio di lavoro"
@@ -187,6 +189,7 @@
       "miscellaneous": "Varie",
       "preferences": "Preferenze",
       "help": "Aiuto"
-    }
+    },
+    "clear_context": "Cancella contesto (Backspace)"
   }
 }

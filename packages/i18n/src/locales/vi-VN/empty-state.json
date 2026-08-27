@@ -104,6 +104,25 @@
       "title": "Bạn chưa thêm mục công việc vào câu chuyện sử thi này.",
       "description": "Bắt đầu bằng cách thêm một số mục công việc vào câu chuyện sử thi này và theo dõi chúng ở đây.",
       "cta_secondary": "Thêm mục công việc"
+    },
+    "invalid_cycle": {
+      "title": "Chu kỳ không tồn tại",
+      "description": "Chu kỳ bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.",
+      "cta_primary": "Xem các chu kỳ khác"
+    },
+    "invalid_module": {
+      "title": "Mô-đun không tồn tại",
+      "description": "Mô-đun bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.",
+      "cta_primary": "Xem các mô-đun khác"
+    },
+    "invalid_view": {
+      "title": "Chế độ xem không tồn tại",
+      "description": "Chế độ xem bạn đang tìm kiếm không tồn tại hoặc bạn không có quyền xem.",
+      "cta_primary": "Xem các chế độ xem khác"
+    },
+    "view_work_items": {
+      "title": "Các mục công việc của chế độ xem sẽ hiển thị ở đây",
+      "description": "Mục công việc giúp bạn theo dõi từng phần công việc. Nhờ đó, bạn biết điều gì đang diễn ra, ai đang thực hiện và việc gì đã hoàn thành."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Kích hoạt trạng thái dự án",
       "description": "Kích hoạt Trạng thái Dự án để xem và quản lý các thuộc tính như trạng thái, mức độ ưu tiên, ngày đến hạn và hơn thế nữa."
+    },
+    "invalid_view": {
+      "title": "Chế độ xem không tồn tại",
+      "description": "Chế độ xem bạn đang tìm kiếm không tồn tại hoặc bạn không có quyền xem.",
+      "cta_primary": "Đi tới Tất cả mục công việc"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Thêm trạng thái",
         "description": "Chọn các trạng thái mà mục công việc sẽ đi qua."
       }
+    },
+    "projects": {
+      "title": "Chưa có dự án nào",
+      "description": "Dự án là nền tảng cho công việc hướng đến mục tiêu. Chúng giúp bạn quản lý đội ngũ, nhiệm vụ và mọi thứ cần thiết để hoàn thành công việc.",
+      "cta_secondary": "Tìm hiểu thêm về dự án"
     }
   }
 }

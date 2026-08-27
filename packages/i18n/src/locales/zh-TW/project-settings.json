@@ -35,7 +35,8 @@
         "title": "邀請成員",
         "sub_heading": "邀請成員參與您的專案。",
         "select_co_worker": "選擇同事"
-      }
+      },
+      "guest_access": "訪客存取權限"
     },
     "states": {
       "heading": "狀態",
@@ -210,7 +211,9 @@
       },
       "switch": "切換估算系統",
       "current": "目前估算系統",
-      "select": "選擇估算系統"
+      "select": "選擇估算系統",
+      "list_heading": "估算清單",
+      "archived_heading": "已封存的估算"
     },
     "automations": {
       "label": "自動化",

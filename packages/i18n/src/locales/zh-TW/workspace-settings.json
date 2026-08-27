@@ -159,7 +159,9 @@
             "message": "新金鑰重新產生成功。"
           }
         },
-        "delete_webhook": "刪除 Webhook"
+        "delete_webhook": "刪除 Webhook",
+        "enable_webhook": "啟用 Webhook",
+        "delete_warning": "Webhook 一旦刪除便無法復原。今後的事件將不再傳送至此 Webhook。"
       },
       "api_tokens": {
         "heading": "API 權杖",
@@ -182,7 +184,9 @@
             "message": "無法刪除 API 權杖"
           }
         },
-        "expiration_required": "請選擇到期日期。"
+        "expiration_required": "請選擇到期日期。",
+        "copy_secret_key": "複製密鑰",
+        "delete_token": "刪除權杖"
       },
       "integrations": {
         "title": "整合",

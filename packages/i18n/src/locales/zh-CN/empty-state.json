@@ -104,6 +104,25 @@
       "title": "您尚未向此史诗添加工作项。",
       "description": "开始向此史诗添加一些工作项并在此处跟踪它们。",
       "cta_secondary": "添加工作项"
+    },
+    "invalid_cycle": {
+      "title": "周期不存在",
+      "description": "您查找的周期不存在或已被删除。",
+      "cta_primary": "查看其他周期"
+    },
+    "invalid_module": {
+      "title": "模块不存在",
+      "description": "您查找的模块不存在或已被删除。",
+      "cta_primary": "查看其他模块"
+    },
+    "invalid_view": {
+      "title": "视图不存在",
+      "description": "您查找的视图不存在，或者您没有查看权限。",
+      "cta_primary": "查看其他视图"
+    },
+    "view_work_items": {
+      "title": "该视图的工作项将显示在这里",
+      "description": "工作项帮助你跟踪每一项具体工作。通过工作项，随时了解进展、负责人以及已完成的内容。"
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "启用项目状态",
       "description": "启用项目状态以查看和管理状态、优先级、截止日期等属性。"
+    },
+    "invalid_view": {
+      "title": "视图不存在",
+      "description": "您查找的视图不存在，或者您没有查看权限。",
+      "cta_primary": "前往全部工作项"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "添加状态",
         "description": "选择工作项推进过程中经历的状态。"
       }
+    },
+    "projects": {
+      "title": "暂无项目",
+      "description": "项目是目标导向工作的基础。你可以在项目中管理团队、任务以及完成工作所需的一切。",
+      "cta_secondary": "了解更多关于项目的信息"
     }
   }
 }

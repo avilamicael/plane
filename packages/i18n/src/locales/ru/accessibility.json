@@ -31,6 +31,29 @@
       "hide_password": "Скрыть пароль",
       "close_alert": "Закрыть уведомление",
       "close_popover": "Закрыть всплывающее окно"
+    },
+    "common": {
+      "plane_logo": "Логотип Plane",
+      "provider_logo": "Логотип {provider}",
+      "background_pattern": "Фоновый узор Plane",
+      "instance_failure_image": "Иллюстрация сбоя экземпляра",
+      "user_already_signed_in_image": "Пользователь уже вошёл в систему",
+      "page_not_found_image": "404 - Страница не найдена"
+    },
+    "intake": {
+      "previous_work_item": "Предыдущий рабочий элемент",
+      "next_work_item": "Следующий рабочий элемент"
+    },
+    "sidebar": {
+      "main_sidebar": "Главная боковая панель",
+      "resize_sidebar": "Изменить размер боковой панели",
+      "peek_view": "Предпросмотр боковой панели"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Закрыть предупреждение о лимите содержимого"
+    },
+    "filters": {
+      "remove_filter": "Удалить фильтр"
     }
   }
 }

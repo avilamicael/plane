@@ -392,6 +392,10 @@
           "message": "Le titre de l'élément de travail n'est pas assez explicite pour générer la description. Essayez avec un autre titre."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Cet élément de travail a été archivé. Accédez à la section Archives pour le restaurer.",
+      "action": "Aller aux Archives"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Impossible de mettre à jour les éléments de travail",
         "message": "Le changement d'état n'est pas autorisé pour certains éléments de travail. Assurez-vous que le changement d'état est autorisé."
       }
-    }
+    },
+    "select_work_items_to_delete": "Sélectionnez les éléments de travail à supprimer"
   },
   "recurring_work_items": {
     "settings": {

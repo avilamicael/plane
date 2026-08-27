@@ -392,6 +392,10 @@
           "message": "Judul item kerja kurang informatif untuk menghasilkan deskripsi. Silakan coba dengan judul lain."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Item kerja ini telah diarsipkan. Buka bagian Arsip untuk memulihkannya.",
+      "action": "Buka Arsip"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Tidak dapat memperbarui item kerja",
         "message": "Perubahan status tidak diizinkan untuk beberapa item kerja. Pastikan perubahan status diizinkan."
       }
-    }
+    },
+    "select_work_items_to_delete": "Pilih item pekerjaan yang akan dihapus"
   },
   "recurring_work_items": {
     "settings": {

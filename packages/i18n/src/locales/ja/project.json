@@ -21,7 +21,8 @@
     "in_your_timezone": "あなたのタイムゾーン",
     "transfer_work_items": "作業項目を転送 {count}",
     "transfer": {
-      "no_cycles_available": "作業アイテムを転送できる他のサイクルがありません。"
+      "no_cycles_available": "作業アイテムを転送できる他のサイクルがありません。",
+      "title": "作業項目を転送"
     },
     "date_range": "日付範囲",
     "add_date": "日付を追加",
@@ -140,7 +141,8 @@
         "description": "プロジェクトを整理するために、完了したサイクルをアーカイブします。アーカイブ後はここで確認できます。"
       }
     },
-    "delete_cycle": "サイクルを削除"
+    "delete_cycle": "サイクルを削除",
+    "search_for_a_cycle": "サイクルを検索..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "アーカイブされたページがまだありません",
         "description": "注目していないページをアーカイブします。必要な時にここでアクセスできます。"
       }
+    },
+    "not_found": {
+      "title": "ページが見つかりません",
+      "description": "アクセスしようとしているページは存在しないか、閲覧する権限がありません。",
+      "cta": "他のページを表示"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "期限",
       "created_at": "作成日",
       "manual": "手動"
-    }
+    },
+    "no_matching_modules": "一致するモジュールがありません",
+    "remove_filters_to_see_all_modules": "すべてのモジュールを表示するにはフィルターを解除してください",
+    "remove_search_criteria_to_see_all_modules": "すべてのモジュールを表示するには検索条件を解除してください"
   },
   "project_members": {
     "full_name": "氏名",

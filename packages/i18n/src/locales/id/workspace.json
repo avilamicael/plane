@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Gambar ruang kerja berhasil dihapus."
       }
+    },
+    "not_found": {
+      "title": "Ruang kerja tidak ditemukan",
+      "description": "Tidak ada ruang kerja yang ditemukan dengan URL ini. Mungkin tidak ada atau Anda tidak memiliki izin untuk melihatnya."
+    },
+    "not_authorized": {
+      "title": "Tidak diizinkan!",
+      "description": "Anda bukan anggota ruang kerja ini. Hubungi admin ruang kerja untuk mendapatkan undangan atau periksa undangan Anda yang tertunda.",
+      "check_pending_invites": "Periksa undangan tertunda"
+    },
+    "create_new": "Buat ruang kerja baru"
+  },
+  "workspace_invitation": {
+    "invited_title": "Anda telah diundang ke {workspace}",
+    "already_member_title": "Anda sudah menjadi anggota {workspace}",
+    "description": "Ruang kerja adalah tempat Anda membuat proyek, berkolaborasi pada item kerja, dan mengatur berbagai alur kerja di akun Plane Anda.",
+    "not_found": "Undangan tidak ditemukan",
+    "inactive_title": "Tautan undangan ini sudah tidak aktif.",
+    "start_from_empty_project": "Atau mulai dari proyek kosong",
+    "actions": {
+      "accept": "Terima",
+      "ignore": "Abaikan",
+      "continue_to_home": "Lanjutkan ke beranda",
+      "sign_in_to_continue": "Masuk untuk melanjutkan",
+      "join_community": "Bergabunglah dengan komunitas kreator aktif kami"
     }
   }
 }

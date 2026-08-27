@@ -771,7 +771,16 @@
       "warning": "Aviso"
     },
     "owned_by": "Pertence a",
-    "subscriber": "Assinante"
+    "subscriber": "Assinante",
+    "set_date": "Definir data",
+    "click_to_copy": "Clique para copiar",
+    "completion_percentage": "Percentual de conclusão",
+    "toggle_workspace_level_search": "Alternar busca no nível do espaço de trabalho",
+    "pro_feature": "Recurso Pro",
+    "search_for_projects": "Pesquisar projetos",
+    "enter_project_name": "Digite o nome do projeto",
+    "invalid_filter": "Filtro inválido",
+    "invalid_filter_tooltip": "Esta condição de filtro não é mais válida. A propriedade pode ter sido excluída ou seu acesso a ela pode ter mudado."
   },
   "chart": {
     "x_axis": "Eixo X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Apenas um arquivo pode ser enviado por vez.",
     "file_size_limit": "O arquivo deve ter {size}MB ou menos.",
     "drag_and_drop": "Arraste e solte em qualquer lugar para enviar",
-    "delete": "Excluir anexo"
+    "delete": "Excluir anexo",
+    "click_or_drag_file": "Clique ou arraste um arquivo aqui",
+    "drop_here": "Solte aqui..."
   },
   "label": {
     "select": "Selecionar etiqueta",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Não foi possível carregar os detalhes da instância.",
       "description": "Não conseguimos carregar os detalhes da instância. Não se preocupe, pode ser apenas um problema de conexão."
+    },
+    "not_ready": {
+      "title": "Boas-vindas ao Plane",
+      "description": "Configure sua instância e crie seu primeiro espaço de trabalho para começar a gerenciar projetos e tarefas.",
+      "cta": "Começar"
     }
   },
   "something_went_wrong_please_try_again_later": "Algo deu errado. Tente novamente mais tarde.",
@@ -1037,5 +1053,28 @@
       "images": "Imagens",
       "upload": "Enviar"
     }
+  },
+  "no_results_found": "Nenhum resultado encontrado",
+  "learn_more": "Saiba mais",
+  "danger_zone": "Zona de perigo",
+  "no_value": "Sem valor",
+  "uploading": "Enviando...",
+  "search_for_shortcuts": "Pesquisar atalhos",
+  "visit_profile": "Ver perfil",
+  "billing": {
+    "all_plans": "Todos os planos",
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "quote_on_request": "Orçamento sob consulta",
+    "per_user_per_month": "por usuário por mês",
+    "community_description": "Projetos, itens de trabalho, ciclos, módulos, páginas e armazenamento ilimitados"
+  },
+  "latest_feature": {
+    "pages_facelift": "As páginas ganharam uma nova cara! Escreva o que quiser e use o Galileo para começar."
+  },
+  "error_page": {
+    "title": "Parece que algo deu errado!",
+    "description": "Registramos esses erros automaticamente e já estamos trabalhando para normalizar tudo. Se o problema continuar, entre em contato. Enquanto isso, tente atualizar a página.",
+    "go_home": "Ir para a página inicial"
   }
 }

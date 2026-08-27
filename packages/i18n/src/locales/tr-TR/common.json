@@ -771,7 +771,16 @@
       "warning": "Uyarı"
     },
     "owned_by": "Sahibi",
-    "subscriber": "Abone"
+    "subscriber": "Abone",
+    "set_date": "Tarih belirle",
+    "click_to_copy": "Kopyalamak için tıklayın",
+    "completion_percentage": "Tamamlanma yüzdesi",
+    "toggle_workspace_level_search": "Çalışma alanı düzeyinde aramayı aç/kapat",
+    "pro_feature": "Pro özelliği",
+    "search_for_projects": "Proje ara",
+    "enter_project_name": "Proje adını girin",
+    "invalid_filter": "Geçersiz filtre",
+    "invalid_filter_tooltip": "Bu filtre koşulu artık geçerli değil. Özellik silinmiş veya ona erişiminiz değişmiş olabilir."
   },
   "chart": {
     "x_axis": "X ekseni",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Aynı anda yalnızca bir dosya yüklenebilir.",
     "file_size_limit": "Dosya boyutu {size}MB veya daha az olmalıdır.",
     "drag_and_drop": "Yüklemek için herhangi bir yere sürükleyip bırakın",
-    "delete": "Eki sil"
+    "delete": "Eki sil",
+    "click_or_drag_file": "Buraya tıklayın veya bir dosya sürükleyin",
+    "drop_here": "Buraya bırakın..."
   },
   "label": {
     "select": "Etiket seç",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Örnek bilgileri alınamadı.",
       "description": "Örnek bilgilerini alamadık. Endişelenmeyin, bu yalnızca bir bağlantı sorunu olabilir."
+    },
+    "not_ready": {
+      "title": "Plane'e hoş geldiniz",
+      "description": "Örneğinizi kurun ve projeleri yönetmeye başlamak için ilk çalışma alanınızı oluşturun.",
+      "cta": "Başlayın"
     }
   },
   "something_went_wrong_please_try_again_later": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
@@ -1037,5 +1053,28 @@
       "images": "Görseller",
       "upload": "Yükle"
     }
+  },
+  "no_results_found": "Sonuç bulunamadı",
+  "learn_more": "Daha fazla bilgi",
+  "danger_zone": "Tehlikeli alan",
+  "no_value": "Değer yok",
+  "uploading": "Yükleniyor...",
+  "search_for_shortcuts": "Kısayol ara",
+  "visit_profile": "Profili görüntüle",
+  "billing": {
+    "all_plans": "Tüm planlar",
+    "monthly": "Aylık",
+    "yearly": "Yıllık",
+    "quote_on_request": "Talep üzerine fiyat",
+    "per_user_per_month": "kullanıcı başına aylık",
+    "community_description": "Sınırsız proje, çalışma öğesi, döngü, modül, sayfa ve depolama"
+  },
+  "latest_feature": {
+    "pages_facelift": "Sayfalar yenilendi! Dilediğinizi yazın ve başlamak için Galileo'yu kullanın."
+  },
+  "error_page": {
+    "title": "Bir şeyler ters gitti!",
+    "description": "Bu hataları otomatik olarak kaydediyoruz ve her şeyi yeniden çalışır hale getirmek için çalışıyoruz. Sorun devam ederse bizimle iletişime geçin. Bu arada sayfayı yenilemeyi deneyin.",
+    "go_home": "Ana sayfaya git"
   }
 }

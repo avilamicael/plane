@@ -392,6 +392,10 @@
           "message": "O título do item de trabalho não é informativo o suficiente para gerar a descrição. Tente com outro título."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Este item de trabalho foi arquivado. Acesse a seção Arquivos para restaurá-lo.",
+      "action": "Ir para Arquivos"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Não é possível atualizar itens de trabalho",
         "message": "A mudança de estado não é permitida para alguns itens de trabalho. Certifique-se de que a mudança de estado seja permitida."
       }
-    }
+    },
+    "select_work_items_to_delete": "Selecione os itens de trabalho para excluir"
   },
   "recurring_work_items": {
     "settings": {

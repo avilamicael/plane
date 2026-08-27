@@ -215,7 +215,8 @@
         "everything": "全部",
         "no_images": "不含圖片"
       }
-    }
+    },
+    "search_placeholder": "搜尋頁面"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "顏色"
+    },
+    "content_limit_banner": {
+      "message": "已達到內容上限，即時同步已關閉。請新建頁面或使用巢狀頁面以繼續同步。"
+    },
+    "ai_menu": {
+      "add_to_next_line": "新增至下一行",
+      "replace_selection": "取代所選內容",
+      "regenerate_response": "重新產生回應"
     }
   }
 }

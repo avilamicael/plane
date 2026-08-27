@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Image de l'espace de travail supprimée avec succès."
       }
+    },
+    "not_found": {
+      "title": "Espace de travail introuvable",
+      "description": "Aucun espace de travail trouvé pour cette URL. Il n'existe peut-être pas ou vous n'avez pas l'autorisation de le consulter."
+    },
+    "not_authorized": {
+      "title": "Non autorisé !",
+      "description": "Vous n'êtes pas membre de cet espace de travail. Contactez l'administrateur de l'espace de travail pour obtenir une invitation ou consultez vos invitations en attente.",
+      "check_pending_invites": "Voir les invitations en attente"
+    },
+    "create_new": "Créer un nouvel espace de travail"
+  },
+  "workspace_invitation": {
+    "invited_title": "Vous avez été invité à rejoindre {workspace}",
+    "already_member_title": "Vous êtes déjà membre de {workspace}",
+    "description": "Votre espace de travail est l’endroit où vous créez des projets, collaborez sur vos éléments de travail et organisez différents flux de travail dans votre compte Plane.",
+    "not_found": "Invitation introuvable",
+    "inactive_title": "Ce lien d’invitation n’est plus actif.",
+    "start_from_empty_project": "Ou commencez avec un projet vide",
+    "actions": {
+      "accept": "Accepter",
+      "ignore": "Ignorer",
+      "continue_to_home": "Continuer vers l’accueil",
+      "sign_in_to_continue": "Connectez-vous pour continuer",
+      "join_community": "Rejoignez notre communauté de créateurs actifs"
     }
   }
 }

@@ -31,6 +31,9 @@
         "title": "Arbeitselement löschen",
         "content": "Möchten Sie das Arbeitselement {value} wirklich löschen?",
         "success": "Arbeitselement erfolgreich gelöscht"
+      },
+      "select_duplicate": {
+        "title": "Arbeitselement auswählen"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Wählen Sie ein Arbeitselement, um Details anzuzeigen."
+      },
+      "no_request_closed": {
+        "title": "Noch keine Anfrage abgeschlossen"
       }
     }
   }

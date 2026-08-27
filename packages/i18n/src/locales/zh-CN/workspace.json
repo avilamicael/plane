@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "工作区图片移除成功。"
       }
+    },
+    "not_found": {
+      "title": "未找到工作区",
+      "description": "未找到该 URL 对应的工作区。它可能不存在，或者你没有查看权限。"
+    },
+    "not_authorized": {
+      "title": "未授权！",
+      "description": "你不是此工作区的成员。请联系工作区管理员获取邀请，或查看你的待处理邀请。",
+      "check_pending_invites": "查看待处理邀请"
+    },
+    "create_new": "创建新工作区"
+  },
+  "workspace_invitation": {
+    "invited_title": "您已被邀请加入 {workspace}",
+    "already_member_title": "您已经是 {workspace} 的成员",
+    "description": "工作区是你在 Plane 账户中创建项目、协作处理工作项并组织各类工作流的地方。",
+    "not_found": "未找到邀请",
+    "inactive_title": "此邀请链接已失效。",
+    "start_from_empty_project": "或者从一个空项目开始",
+    "actions": {
+      "accept": "接受",
+      "ignore": "忽略",
+      "continue_to_home": "前往首页",
+      "sign_in_to_continue": "登录以继续",
+      "join_community": "加入我们活跃的创作者社区"
     }
   }
 }

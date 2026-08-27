@@ -31,6 +31,9 @@
         "title": "Șterge activitatea",
         "content": "Ești sigur că vrei să ștergi activitatea {value}?",
         "success": "Activitatea a fost ștersă cu succes"
+      },
+      "select_duplicate": {
+        "title": "Selectează elementul de lucru"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Selectează o cerere pentru a-i vedea detaliile."
+      },
+      "no_request_closed": {
+        "title": "Nicio solicitare închisă încă"
       }
     }
   }

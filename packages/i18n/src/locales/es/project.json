@@ -21,7 +21,8 @@
     "in_your_timezone": "En tu zona horaria",
     "transfer_work_items": "Transferir {count} elementos de trabajo",
     "transfer": {
-      "no_cycles_available": "No hay otros ciclos disponibles para transferir elementos de trabajo."
+      "no_cycles_available": "No hay otros ciclos disponibles para transferir elementos de trabajo.",
+      "title": "Transferir elementos de trabajo"
     },
     "date_range": "Rango de fechas",
     "add_date": "Agregar fecha",
@@ -140,7 +141,8 @@
         "description": "Para mantener ordenado tu proyecto, archiva los ciclos completados. Encuéntralos aquí una vez archivados."
       }
     },
-    "delete_cycle": "Eliminar ciclo"
+    "delete_cycle": "Eliminar ciclo",
+    "search_for_a_cycle": "Buscar un ciclo..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "Aún no hay páginas archivadas",
         "description": "Archiva las páginas que no estén en tu radar. Accede a ellas aquí cuando las necesites."
       }
+    },
+    "not_found": {
+      "title": "Página no encontrada",
+      "description": "La página a la que intentas acceder no existe o no tienes permiso para verla.",
+      "cta": "Ver otras páginas"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Fecha de vencimiento",
       "created_at": "Fecha de creación",
       "manual": "Manual"
-    }
+    },
+    "no_matching_modules": "No hay módulos coincidentes",
+    "remove_filters_to_see_all_modules": "Elimina los filtros para ver todos los módulos",
+    "remove_search_criteria_to_see_all_modules": "Elimina los criterios de búsqueda para ver todos los módulos"
   },
   "project_members": {
     "full_name": "Nombre completo",

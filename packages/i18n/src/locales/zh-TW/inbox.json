@@ -31,6 +31,9 @@
         "title": "刪除工作事項",
         "content": "您確定要刪除工作事項 {value} 嗎？",
         "success": "工作事項刪除成功"
+      },
+      "select_duplicate": {
+        "title": "選擇工作項"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "選擇工作事項以檢視其詳細資訊。"
+      },
+      "no_request_closed": {
+        "title": "暫無已關閉的請求"
       }
     }
   }

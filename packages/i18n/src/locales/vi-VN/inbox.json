@@ -31,6 +31,9 @@
         "title": "Xóa mục công việc",
         "content": "Bạn có chắc chắn muốn xóa mục công việc {value} không?",
         "success": "Đã xóa mục công việc thành công"
+      },
+      "select_duplicate": {
+        "title": "Chọn mục công việc"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Chọn một mục công việc để xem chi tiết."
+      },
+      "no_request_closed": {
+        "title": "Chưa có yêu cầu nào được đóng"
       }
     }
   }

@@ -104,6 +104,25 @@
       "title": "Aún no has agregado elementos de trabajo a esta épica.",
       "description": "Comienza agregando algunos elementos de trabajo a esta épica y rastréalos aquí.",
       "cta_secondary": "Agregar elementos de trabajo"
+    },
+    "invalid_cycle": {
+      "title": "El ciclo no existe",
+      "description": "El ciclo que buscas no existe o ha sido eliminado.",
+      "cta_primary": "Ver otros ciclos"
+    },
+    "invalid_module": {
+      "title": "El módulo no existe",
+      "description": "El módulo que buscas no existe o ha sido eliminado.",
+      "cta_primary": "Ver otros módulos"
+    },
+    "invalid_view": {
+      "title": "La vista no existe",
+      "description": "La vista que buscas no existe o no tienes permiso para verla.",
+      "cta_primary": "Ver otras vistas"
+    },
+    "view_work_items": {
+      "title": "Los elementos de trabajo de la vista aparecerán aquí",
+      "description": "Los elementos de trabajo te ayudan a seguir cada parte del trabajo. Con ellos sabrás qué está pasando, quién trabaja en ello y qué está terminado."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Habilitar estados del proyecto",
       "description": "Habilita los estados del proyecto para ver y gestionar propiedades como estado, prioridad, fechas de vencimiento y más."
+    },
+    "invalid_view": {
+      "title": "La vista no existe",
+      "description": "La vista que buscas no existe o no tienes permiso para verla.",
+      "cta_primary": "Ir a Todos los elementos de trabajo"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Agregar estados",
         "description": "Selecciona los estados por los que avanza el elemento de trabajo."
       }
+    },
+    "projects": {
+      "title": "Aún no hay proyectos",
+      "description": "Los proyectos son la base del trabajo orientado a objetivos. Con ellos gestionas tus equipos, tareas y todo lo necesario para avanzar.",
+      "cta_secondary": "Más información sobre proyectos"
     }
   }
 }

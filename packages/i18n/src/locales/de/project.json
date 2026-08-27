@@ -21,7 +21,8 @@
     "in_your_timezone": "In Ihrer Zeitzone",
     "transfer_work_items": "Übertragen von {count} Arbeitselementen",
     "transfer": {
-      "no_cycles_available": "Keine anderen Zyklen verfügbar, um Arbeitselemente zu übertragen."
+      "no_cycles_available": "Keine anderen Zyklen verfügbar, um Arbeitselemente zu übertragen.",
+      "title": "Arbeitselemente übertragen"
     },
     "date_range": "Datumsbereich",
     "add_date": "Datum hinzufügen",
@@ -140,7 +141,8 @@
         "description": "Archivieren Sie abgeschlossene Zyklen, um Ordnung zu halten."
       }
     },
-    "delete_cycle": "Zyklus löschen"
+    "delete_cycle": "Zyklus löschen",
+    "search_for_a_cycle": "Zyklus suchen ..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "Keine archivierten Seiten",
         "description": "Archivieren Sie Seiten für den späteren Zugriff."
       }
+    },
+    "not_found": {
+      "title": "Seite nicht gefunden",
+      "description": "Die Seite, auf die Sie zugreifen möchten, existiert nicht oder Sie haben keine Berechtigung, sie anzusehen.",
+      "cta": "Andere Seiten ansehen"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Fälligkeitsdatum",
       "created_at": "Erstellungsdatum",
       "manual": "Manuell"
-    }
+    },
+    "no_matching_modules": "Keine passenden Module",
+    "remove_filters_to_see_all_modules": "Entfernen Sie Filter, um alle Module anzuzeigen",
+    "remove_search_criteria_to_see_all_modules": "Entfernen Sie Suchkriterien, um alle Module anzuzeigen"
   },
   "project_members": {
     "full_name": "Vollständiger Name",

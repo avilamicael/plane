@@ -159,7 +159,9 @@
             "message": "新密钥重新生成成功。"
           }
         },
-        "delete_webhook": "删除 webhook"
+        "delete_webhook": "删除 webhook",
+        "enable_webhook": "启用 webhook",
+        "delete_warning": "Webhook 一旦删除便无法恢复。今后的事件将不再发送到此 Webhook。"
       },
       "api_tokens": {
         "heading": "API 令牌",
@@ -182,7 +184,9 @@
             "message": "无法删除 API 令牌"
           }
         },
-        "expiration_required": "请选择过期日期。"
+        "expiration_required": "请选择过期日期。",
+        "copy_secret_key": "复制密钥",
+        "delete_token": "删除令牌"
       },
       "integrations": {
         "title": "集成",

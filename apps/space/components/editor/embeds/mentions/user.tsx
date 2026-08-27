@@ -5,6 +5,8 @@
  */
 
 import { observer } from "mobx-react";
+// plane imports
+import { useTranslation } from "@plane/i18n";
 // helpers
 import { cn } from "@plane/utils";
 // hooks
@@ -17,6 +19,8 @@ type Props = {
 
 export const EditorUserMention = observer(function EditorUserMention(props: Props) {
   const { id } = props;
+  // i18n
+  const { t } = useTranslation();
   // store hooks
   const { data: currentUser } = useUser();
   const { getMemberById } = useMember();
@@ -26,7 +30,7 @@ export const EditorUserMention = observer(function EditorUserMention(props: Prop
   if (!userDetails) {
     return (
       <div className="not-prose inline rounded-sm bg-layer-1 px-1 py-0.5 text-tertiary no-underline">
-        @deactivated user
+        @{t("common.deactivated_user")}
       </div>
     );
   }

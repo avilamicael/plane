@@ -392,6 +392,10 @@
           "message": "工作项标题信息不足，无法生成描述。请换一个标题试试。"
         }
       }
+    },
+    "archived_banner": {
+      "title": "该工作项已归档。前往“归档”版块可将其还原。",
+      "action": "前往归档"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "无法更新工作项",
         "message": "某些工作项的状态更改不被允许。请确保状态更改是被允许的。"
       }
-    }
+    },
+    "select_work_items_to_delete": "选择要删除的工作项"
   },
   "recurring_work_items": {
     "settings": {

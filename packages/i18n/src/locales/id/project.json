@@ -21,7 +21,8 @@
     "in_your_timezone": "Di zona waktu Anda",
     "transfer_work_items": "Transfer {count} item kerja",
     "transfer": {
-      "no_cycles_available": "Tidak ada siklus lain yang tersedia untuk mentransfer item pekerjaan."
+      "no_cycles_available": "Tidak ada siklus lain yang tersedia untuk mentransfer item pekerjaan.",
+      "title": "Transfer item pekerjaan"
     },
     "date_range": "Rentang tanggal",
     "add_date": "Tambah tanggal",
@@ -140,7 +141,8 @@
         "description": "Untuk membersihkan proyek Anda, arsipkan siklus yang telah diselesaikan. Temukan di sini setelah diarsipkan."
       }
     },
-    "delete_cycle": "Hapus siklus"
+    "delete_cycle": "Hapus siklus",
+    "search_for_a_cycle": "Cari siklus..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "Belum ada halaman yang diarsipkan",
         "description": "Arsipkan halaman yang tidak ada dalam radar Anda. Akses di sini saat diperlukan."
       }
+    },
+    "not_found": {
+      "title": "Halaman tidak ditemukan",
+      "description": "Halaman yang Anda coba akses tidak ada atau Anda tidak memiliki izin untuk melihatnya.",
+      "cta": "Lihat halaman lain"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Tanggal jatuh tempo",
       "created_at": "Tanggal dibuat",
       "manual": "Manual"
-    }
+    },
+    "no_matching_modules": "Tidak ada modul yang cocok",
+    "remove_filters_to_see_all_modules": "Hapus filter untuk melihat semua modul",
+    "remove_search_criteria_to_see_all_modules": "Hapus kriteria pencarian untuk melihat semua modul"
   },
   "project_members": {
     "full_name": "Nama lengkap",

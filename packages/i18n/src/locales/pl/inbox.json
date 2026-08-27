@@ -31,6 +31,9 @@
         "title": "Usuń element pracy",
         "content": "Czy na pewno chcesz usunąć element pracy {value}?",
         "success": "Element pracy usunięto pomyślnie"
+      },
+      "select_duplicate": {
+        "title": "Wybierz element pracy"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Wybierz element pracy, aby zobaczyć szczegóły."
+      },
+      "no_request_closed": {
+        "title": "Brak zamkniętych zgłoszeń"
       }
     }
   }

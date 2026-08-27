@@ -159,7 +159,9 @@
             "message": "새 키가 성공적으로 재생성되었습니다."
           }
         },
-        "delete_webhook": "웹훅 삭제"
+        "delete_webhook": "웹훅 삭제",
+        "enable_webhook": "웹훅 활성화",
+        "delete_warning": "웹훅을 삭제하면 복구할 수 없습니다. 이후 이벤트는 이 웹훅으로 더 이상 전달되지 않습니다."
       },
       "api_tokens": {
         "heading": "API 토큰",
@@ -182,7 +184,9 @@
             "message": "API 토큰을 삭제할 수 없습니다"
           }
         },
-        "expiration_required": "만료 날짜를 선택해주세요."
+        "expiration_required": "만료 날짜를 선택해주세요.",
+        "copy_secret_key": "비밀 키 복사",
+        "delete_token": "토큰 삭제"
       },
       "integrations": {
         "title": "인테그레이션",

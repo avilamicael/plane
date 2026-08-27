@@ -31,6 +31,9 @@
         "title": "Hapus item kerja",
         "content": "Apakah Anda yakin ingin menghapus item kerja {value}?",
         "success": "Item kerja berhasil dihapus"
+      },
+      "select_duplicate": {
+        "title": "Pilih item pekerjaan"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Pilih item kerja untuk melihat detailnya."
+      },
+      "no_request_closed": {
+        "title": "Belum ada permintaan yang ditutup"
       }
     }
   }

@@ -21,7 +21,8 @@
     "in_your_timezone": "V časovém pásmu",
     "transfer_work_items": "Převést {count} pracovních položek",
     "transfer": {
-      "no_cycles_available": "Žádné jiné cykly nejsou k dispozici pro přenos pracovních položek."
+      "no_cycles_available": "Žádné jiné cykly nejsou k dispozici pro přenos pracovních položek.",
+      "title": "Přenos pracovních položek"
     },
     "date_range": "Období data",
     "add_date": "Přidat datum",
@@ -140,7 +141,8 @@
         "description": "Archivujte dokončené cykly pro úklid."
       }
     },
-    "delete_cycle": "Smazat cyklus"
+    "delete_cycle": "Smazat cyklus",
+    "search_for_a_cycle": "Hledat cyklus..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "Žádné archivované stránky",
         "description": "Archivujte stránky pro pozdější přístup."
       }
+    },
+    "not_found": {
+      "title": "Stránka nenalezena",
+      "description": "Stránka, na kterou se pokoušíte přistoupit, neexistuje nebo nemáte oprávnění k jejímu zobrazení.",
+      "cta": "Zobrazit další stránky"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Termín",
       "created_at": "Datum vytvoření",
       "manual": "Ručně"
-    }
+    },
+    "no_matching_modules": "Žádné odpovídající moduly",
+    "remove_filters_to_see_all_modules": "Odeberte filtry pro zobrazení všech modulů",
+    "remove_search_criteria_to_see_all_modules": "Odeberte kritéria pro zobrazení všech modulů"
   },
   "project_members": {
     "full_name": "Celé jméno",

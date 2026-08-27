@@ -6,6 +6,7 @@
 
 import { useTheme } from "next-themes";
 // plane imports
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 // assets
 import maintenanceModeDarkModeImage from "@/app/assets/instance/maintenance-mode-dark.svg?url";
@@ -37,6 +38,7 @@ interface ProdErrorComponentProps {
 }
 
 export function ProdErrorComponent({ onGoHome }: ProdErrorComponentProps) {
+  const { t } = useTranslation();
   // hooks
   const { resolvedTheme } = useTheme();
 
@@ -57,11 +59,8 @@ export function ProdErrorComponent({ onGoHome }: ProdErrorComponentProps) {
         </div>
         <div className="relative mt-4 flex w-full flex-col gap-4">
           <div className="flex flex-col gap-2.5">
-            <h1 className="text-left text-18 font-semibold text-primary">&#x1F6A7; Looks like something went wrong!</h1>
-            <span className="text-left text-14 font-medium text-secondary">
-              We track these errors automatically and working on getting things back up and running. If the problem
-              persists feel free to contact us. In the meantime, try refreshing.
-            </span>
+            <h1 className="text-left text-18 font-semibold text-primary">&#x1F6A7; {t("error_page.title")}</h1>
+            <span className="text-left text-14 font-medium text-secondary">{t("error_page.description")}</span>
           </div>
 
           <div className="mt-1 flex items-center justify-start gap-6">
@@ -81,7 +80,7 @@ export function ProdErrorComponent({ onGoHome }: ProdErrorComponentProps) {
 
           <div className="flex items-center justify-start gap-6">
             <Button variant="primary" size="lg" onClick={onGoHome}>
-              Go to home
+              {t("error_page.go_home")}
             </Button>
           </div>
         </div>

@@ -392,6 +392,10 @@
           "message": "工作事項標題資訊不足，無法產生描述。請換一個標題試試。"
         }
       }
+    },
+    "archived_banner": {
+      "title": "此工作事項已封存。前往「封存」區塊即可還原。",
+      "action": "前往封存"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "無法更新工作項目",
         "message": "某些工作項目不允許狀態變更。請確保狀態變更是允許的。"
       }
-    }
+    },
+    "select_work_items_to_delete": "選擇要刪除的工作項"
   },
   "recurring_work_items": {
     "settings": {

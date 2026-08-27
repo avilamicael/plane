@@ -159,7 +159,9 @@
             "message": "Nova chave gerada com sucesso."
           }
         },
-        "delete_webhook": "Excluir webhook"
+        "delete_webhook": "Excluir webhook",
+        "enable_webhook": "Ativar webhook",
+        "delete_warning": "Depois que um webhook é excluído, não é possível restaurá-lo. Eventos futuros deixarão de ser entregues a este webhook."
       },
       "api_tokens": {
         "heading": "Tokens de API",
@@ -182,7 +184,9 @@
             "message": "O token de API não pôde ser excluído"
           }
         },
-        "expiration_required": "Selecione uma data de expiração."
+        "expiration_required": "Selecione uma data de expiração.",
+        "copy_secret_key": "Copiar chave secreta",
+        "delete_token": "Excluir token"
       },
       "integrations": {
         "title": "Integrações",

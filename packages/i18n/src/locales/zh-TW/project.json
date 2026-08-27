@@ -21,7 +21,8 @@
     "in_your_timezone": "在您的時區",
     "transfer_work_items": "轉移 {count} 工作事項",
     "transfer": {
-      "no_cycles_available": "沒有其他可用的週期來轉移工作項目。"
+      "no_cycles_available": "沒有其他可用的週期來轉移工作項目。",
+      "title": "轉移工作項"
     },
     "date_range": "日期範圍",
     "add_date": "新增日期",
@@ -140,7 +141,8 @@
         "description": "為了整理您的專案，可以封存已完成的週期。一旦封存，您可以在這裡找到它們。"
       }
     },
-    "delete_cycle": "刪除週期"
+    "delete_cycle": "刪除週期",
+    "search_for_a_cycle": "搜尋週期…"
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "尚無已封存的頁面",
         "description": "封存不在您雷達上的頁面。需要時在這裡存取它們。"
       }
+    },
+    "not_found": {
+      "title": "找不到頁面",
+      "description": "你嘗試存取的頁面不存在，或你沒有檢視權限。",
+      "cta": "檢視其他頁面"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "截止日期",
       "created_at": "建立日期",
       "manual": "手動"
-    }
+    },
+    "no_matching_modules": "沒有符合的模組",
+    "remove_filters_to_see_all_modules": "移除篩選器以檢視所有模組",
+    "remove_search_criteria_to_see_all_modules": "移除搜尋條件以檢視所有模組"
   },
   "project_members": {
     "full_name": "全名",

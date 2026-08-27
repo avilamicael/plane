@@ -104,6 +104,25 @@
       "title": "Nie dodałeś jeszcze elementów roboczych do tego epiku.",
       "description": "Zacznij od dodania elementów roboczych do tego epiku i śledź je tutaj.",
       "cta_secondary": "Dodaj elementy robocze"
+    },
+    "invalid_cycle": {
+      "title": "Cykl nie istnieje",
+      "description": "Cykl, którego szukasz, nie istnieje lub został usunięty.",
+      "cta_primary": "Pokaż inne cykle"
+    },
+    "invalid_module": {
+      "title": "Moduł nie istnieje",
+      "description": "Moduł, którego szukasz, nie istnieje lub został usunięty.",
+      "cta_primary": "Pokaż inne moduły"
+    },
+    "invalid_view": {
+      "title": "Widok nie istnieje",
+      "description": "Widok, którego szukasz, nie istnieje lub nie masz uprawnień, aby go wyświetlić.",
+      "cta_primary": "Pokaż inne widoki"
+    },
+    "view_work_items": {
+      "title": "Elementy pracy tego widoku pojawią się tutaj",
+      "description": "Elementy pracy pomagają śledzić poszczególne części pracy. Dzięki nim wiesz, co się dzieje, kto nad tym pracuje i co jest gotowe."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Włącz stany projektu",
       "description": "Włącz stany projektu, aby wyświetlać i zarządzać właściwościami takimi jak stan, priorytet, terminy i inne."
+    },
+    "invalid_view": {
+      "title": "Widok nie istnieje",
+      "description": "Widok, którego szukasz, nie istnieje lub nie masz uprawnień, aby go wyświetlić.",
+      "cta_primary": "Przejdź do Wszystkie elementy pracy"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Dodaj stany",
         "description": "Wybierz stany, przez które przechodzi element pracy."
       }
+    },
+    "projects": {
+      "title": "Jeszcze brak projektów",
+      "description": "Projekty stanowią podstawę pracy nastawionej na cele. Pozwalają zarządzać zespołami, zadaniami i wszystkim, czego potrzebujesz, aby doprowadzić sprawy do końca.",
+      "cta_secondary": "Dowiedz się więcej o projektach"
     }
   }
 }

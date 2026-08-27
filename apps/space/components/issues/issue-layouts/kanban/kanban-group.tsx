@@ -8,6 +8,7 @@ import type { MutableRefObject } from "react";
 import { forwardRef, useCallback, useRef, useState } from "react";
 import { observer } from "mobx-react";
 //types
+import { useTranslation } from "@plane/i18n";
 import type {
   TGroupedIssues,
   IIssueDisplayProperties,
@@ -64,6 +65,8 @@ export const KanbanGroup = observer(function KanbanGroup(props: IKanbanGroup) {
     scrollableContainerRef,
   } = props;
 
+  // i18n
+  const { t } = useTranslation();
   // hooks
   const [intersectionElement, setIntersectionElement] = useState<HTMLSpanElement | null>(null);
   const columnRef = useRef<HTMLDivElement | null>(null);
@@ -101,7 +104,7 @@ export const KanbanGroup = observer(function KanbanGroup(props: IKanbanGroup) {
       role="button"
     >
       {" "}
-      Load More &darr;
+      {t("common.load_more")} &darr;
     </div>
   );
 

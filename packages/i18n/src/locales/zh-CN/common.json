@@ -771,7 +771,16 @@
       "warning": "警告"
     },
     "owned_by": "所有者",
-    "subscriber": "订阅者"
+    "subscriber": "订阅者",
+    "set_date": "设置日期",
+    "click_to_copy": "点击复制",
+    "completion_percentage": "完成百分比",
+    "toggle_workspace_level_search": "切换工作区级搜索",
+    "pro_feature": "Pro 功能",
+    "search_for_projects": "搜索项目",
+    "enter_project_name": "输入项目名称",
+    "invalid_filter": "无效筛选器",
+    "invalid_filter_tooltip": "此筛选条件已失效。该属性可能已被删除，或者您对它的访问权限已更改。"
   },
   "chart": {
     "x_axis": "X轴",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "一次只能上传一个文件。",
     "file_size_limit": "文件大小必须小于或等于 {size}MB。",
     "drag_and_drop": "拖放到任意位置以上传",
-    "delete": "删除附件"
+    "delete": "删除附件",
+    "click_or_drag_file": "点击或将文件拖到此处",
+    "drop_here": "拖放到此处..."
   },
   "label": {
     "select": "选择标签",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "无法获取实例详情。",
       "description": "我们无法获取实例的详细信息。别担心，这可能只是网络连接问题。"
+    },
+    "not_ready": {
+      "title": "欢迎使用 Plane",
+      "description": "设置您的实例并创建第一个工作空间，开始管理项目和工作。",
+      "cta": "开始使用"
     }
   },
   "something_went_wrong_please_try_again_later": "出现错误。请稍后重试。",
@@ -1037,5 +1053,28 @@
       "images": "图片",
       "upload": "上传"
     }
+  },
+  "no_results_found": "未找到结果",
+  "learn_more": "了解更多",
+  "danger_zone": "危险区域",
+  "no_value": "无值",
+  "uploading": "上传中...",
+  "search_for_shortcuts": "搜索快捷键",
+  "visit_profile": "查看个人资料",
+  "billing": {
+    "all_plans": "所有方案",
+    "monthly": "每月",
+    "yearly": "每年",
+    "quote_on_request": "价格需询价",
+    "per_user_per_month": "每用户每月",
+    "community_description": "无限的项目、工作项、周期、模块、页面和存储空间"
+  },
+  "latest_feature": {
+    "pages_facelift": "页面焕然一新！随心书写，并让 Galileo 帮你起步。"
+  },
+  "error_page": {
+    "title": "似乎出了点问题！",
+    "description": "我们会自动记录这些错误并正在着手恢复。如果问题持续存在，请联系我们。同时，请尝试刷新页面。",
+    "go_home": "返回首页"
   }
 }

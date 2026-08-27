@@ -159,7 +159,9 @@
             "message": "Nový kľúč bol úspešne vygenerovaný."
           }
         },
-        "delete_webhook": "Zmazať webhook"
+        "delete_webhook": "Zmazať webhook",
+        "enable_webhook": "Povoliť webhook",
+        "delete_warning": "Keď je webhook odstránený, nedá sa obnoviť. Budúce udalosti sa už do tohto webhooku nebudú doručovať."
       },
       "api_tokens": {
         "heading": "API Tokeny",
@@ -182,7 +184,9 @@
             "message": "Mazanie tokenu zlyhalo"
           }
         },
-        "expiration_required": "Vyberte prosím dátum vypršania platnosti."
+        "expiration_required": "Vyberte prosím dátum vypršania platnosti.",
+        "copy_secret_key": "Kopírovať tajný kľúč",
+        "delete_token": "Odstrániť token"
       },
       "integrations": {
         "title": "Integrácie",

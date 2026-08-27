@@ -35,7 +35,8 @@
         "title": "Undang anggota",
         "sub_heading": "Undang anggota untuk bekerja di proyek Anda.",
         "select_co_worker": "Pilih rekan kerja"
-      }
+      },
+      "guest_access": "Akses tamu"
     },
     "states": {
       "heading": "Status",
@@ -210,7 +211,9 @@
       },
       "switch": "Alihkan sistem estimasi",
       "current": "Sistem estimasi saat ini",
-      "select": "Pilih sistem estimasi"
+      "select": "Pilih sistem estimasi",
+      "list_heading": "Daftar estimasi",
+      "archived_heading": "Estimasi yang diarsipkan"
     },
     "automations": {
       "label": "Otomatisasi",

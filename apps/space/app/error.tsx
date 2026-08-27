@@ -4,10 +4,14 @@
  * See the LICENSE file for details.
  */
 
+// plane imports
+import { useTranslation } from "@plane/i18n";
 // ui
 import { Button } from "@plane/propel/button";
 
 function ErrorPage() {
+  const { t } = useTranslation();
+
   const handleRetry = () => {
     window.location.reload();
   };
@@ -16,26 +20,25 @@ function ErrorPage() {
     <div className="grid h-screen place-items-center bg-surface-1 p-4">
       <div className="space-y-8 text-center">
         <div className="space-y-2">
-          <h3 className="text-16 font-semibold">Yikes! That doesn{"'"}t look good.</h3>
+          <h3 className="text-16 font-semibold">{t("space.error_page.title")}</h3>
           <p className="mx-auto text-13 text-secondary md:w-1/2">
-            That crashed Plane, pun intended. No worries, though. Our engineers have been notified. If you have more
-            details, please write to{" "}
+            {t("space.error_page.description")}{" "}
             <a href="mailto:support@plane.so" className="text-accent-primary">
               support@plane.so
             </a>{" "}
-            or on our{" "}
+            {t("space.error_page.or_on_our")}{" "}
             <a href="https://forum.plane.so" target="_blank" className="text-accent-primary" rel="noopener noreferrer">
-              Forum
+              {t("forum")}
             </a>
             .
           </p>
         </div>
         <div className="flex items-center justify-center gap-2">
           <Button variant="primary" size="lg" onClick={handleRetry}>
-            Refresh
+            {t("refresh")}
           </Button>
           {/* <Button variant="secondary" size="lg" onClick={() => {}}>
-            Sign out
+            {t("sign_out")}
           </Button> */}
         </div>
       </div>

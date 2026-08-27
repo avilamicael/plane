@@ -771,7 +771,16 @@
       "warning": "Cảnh báo"
     },
     "owned_by": "Thuộc về",
-    "subscriber": "Người theo dõi"
+    "subscriber": "Người theo dõi",
+    "set_date": "Đặt ngày",
+    "click_to_copy": "Nhấp để sao chép",
+    "completion_percentage": "Phần trăm hoàn thành",
+    "toggle_workspace_level_search": "Bật/tắt tìm kiếm ở cấp không gian làm việc",
+    "pro_feature": "Tính năng Pro",
+    "search_for_projects": "Tìm kiếm dự án",
+    "enter_project_name": "Nhập tên dự án",
+    "invalid_filter": "Bộ lọc không hợp lệ",
+    "invalid_filter_tooltip": "Điều kiện lọc này không còn hợp lệ. Thuộc tính có thể đã bị xóa hoặc quyền truy cập của bạn đã thay đổi."
   },
   "chart": {
     "x_axis": "Trục X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Chỉ có thể tải lên một tệp mỗi lần.",
     "file_size_limit": "Kích thước tệp phải nhỏ hơn hoặc bằng {size}MB.",
     "drag_and_drop": "Kéo và thả vào bất kỳ đâu để tải lên",
-    "delete": "Xóa tệp đính kèm"
+    "delete": "Xóa tệp đính kèm",
+    "click_or_drag_file": "Nhấp hoặc kéo tệp vào đây",
+    "drop_here": "Thả vào đây..."
   },
   "label": {
     "select": "Chọn nhãn",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Không thể tải thông tin phiên bản.",
       "description": "Chúng tôi không thể tải thông tin phiên bản. Đừng lo, có thể chỉ là sự cố kết nối."
+    },
+    "not_ready": {
+      "title": "Chào mừng đến với Plane",
+      "description": "Thiết lập phiên bản của bạn và tạo không gian làm việc đầu tiên để bắt đầu quản lý dự án và công việc.",
+      "cta": "Bắt đầu"
     }
   },
   "something_went_wrong_please_try_again_later": "Đã xảy ra lỗi. Vui lòng thử lại sau.",
@@ -1037,5 +1053,28 @@
       "images": "Hình ảnh",
       "upload": "Tải lên"
     }
+  },
+  "no_results_found": "Không tìm thấy kết quả",
+  "learn_more": "Tìm hiểu thêm",
+  "danger_zone": "Vùng nguy hiểm",
+  "no_value": "Không có giá trị",
+  "uploading": "Đang tải lên...",
+  "search_for_shortcuts": "Tìm phím tắt",
+  "visit_profile": "Xem hồ sơ",
+  "billing": {
+    "all_plans": "Tất cả các gói",
+    "monthly": "Hàng tháng",
+    "yearly": "Hàng năm",
+    "quote_on_request": "Báo giá theo yêu cầu",
+    "per_user_per_month": "mỗi người dùng mỗi tháng",
+    "community_description": "Không giới hạn dự án, mục công việc, chu kỳ, mô-đun, trang và dung lượng lưu trữ"
+  },
+  "latest_feature": {
+    "pages_facelift": "Trang có diện mạo mới! Viết bất cứ điều gì và dùng Galileo để bắt đầu."
+  },
+  "error_page": {
+    "title": "Có vẻ như đã xảy ra lỗi!",
+    "description": "Chúng tôi tự động ghi nhận các lỗi này và đang khắc phục. Nếu sự cố vẫn tiếp diễn, hãy liên hệ với chúng tôi. Trong lúc đó, hãy thử tải lại trang.",
+    "go_home": "Về trang chủ"
   }
 }

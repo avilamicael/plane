@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "哎呀！這看起來不太妙。",
+      "description": "這讓 Plane 墜機了，雙關語是故意的。不過別擔心，我們的工程師已經收到通知。如果你有更多細節，請寫信至",
+      "or_on_our": "或造訪我們的"
+    },
+    "not_found": {
+      "title": "操作失敗",
+      "description": "請檢查你在瀏覽器網址列中輸入的 URL，然後再試一次。"
+    },
+    "board_not_found": {
+      "description": "該公開看板不存在。請檢查 URL。"
+    },
+    "user_logged_in": {
+      "title": "很好！只差最後一步。",
+      "description": "請在瀏覽器網址列中輸入你想檢視的檢視或頁面的公開分享 URL 或連結。"
     }
   }
 }

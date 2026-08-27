@@ -159,7 +159,9 @@
             "message": "Noua cheie a fost regenerată cu succes."
           }
         },
-        "delete_webhook": "Șterge punctul de notificare (webhook)"
+        "delete_webhook": "Șterge punctul de notificare (webhook)",
+        "enable_webhook": "Activează webhook-ul",
+        "delete_warning": "Odată șters, un webhook nu mai poate fi restaurat. Evenimentele viitoare nu vor mai fi livrate către acest webhook."
       },
       "api_tokens": {
         "heading": "Chei secrete API",
@@ -182,7 +184,9 @@
             "message": "Cheia secretă API nu a putut fi ștearsă"
           }
         },
-        "expiration_required": "Te rugăm să selectezi o dată de expirare."
+        "expiration_required": "Te rugăm să selectezi o dată de expirare.",
+        "copy_secret_key": "Copiază cheia secretă",
+        "delete_token": "Șterge tokenul"
       },
       "integrations": {
         "title": "Integrări",

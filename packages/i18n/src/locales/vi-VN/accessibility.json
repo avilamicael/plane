@@ -31,6 +31,29 @@
       "hide_password": "Ẩn mật khẩu",
       "close_alert": "Đóng cảnh báo",
       "close_popover": "Đóng popover"
+    },
+    "common": {
+      "plane_logo": "Logo Plane",
+      "provider_logo": "Logo {provider}",
+      "background_pattern": "Hoa văn nền Plane",
+      "instance_failure_image": "Hình minh họa lỗi phiên bản",
+      "user_already_signed_in_image": "Người dùng đã đăng nhập",
+      "page_not_found_image": "404 - Không tìm thấy trang"
+    },
+    "intake": {
+      "previous_work_item": "Mục công việc trước",
+      "next_work_item": "Mục công việc tiếp theo"
+    },
+    "sidebar": {
+      "main_sidebar": "Thanh bên chính",
+      "resize_sidebar": "Thay đổi kích thước thanh bên",
+      "peek_view": "Xem nhanh thanh bên"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Bỏ qua cảnh báo giới hạn nội dung"
+    },
+    "filters": {
+      "remove_filter": "Xóa bộ lọc"
     }
   }
 }

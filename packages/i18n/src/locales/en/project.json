@@ -21,7 +21,8 @@
     "in_your_timezone": "In your timezone",
     "transfer_work_items": "Transfer {count} work items",
     "transfer": {
-      "no_cycles_available": "No other cycles available to transfer work items to."
+      "no_cycles_available": "No other cycles available to transfer work items to.",
+      "title": "Transfer work items"
     },
     "date_range": "Date range",
     "add_date": "Add date",
@@ -140,7 +141,8 @@
         "description": "To tidy up your project, archive completed cycles. Find them here once archived."
       }
     },
-    "delete_cycle": "Delete cycle"
+    "delete_cycle": "Delete cycle",
+    "search_for_a_cycle": "Search for a cycle..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "No archived pages yet",
         "description": "Archive pages not on your radar. Access them here when needed."
       }
+    },
+    "not_found": {
+      "title": "Page not found",
+      "description": "The page you are trying to access doesn't exist or you don't have permission to view it.",
+      "cta": "View other Pages"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Due date",
       "created_at": "Created date",
       "manual": "Manual"
-    }
+    },
+    "no_matching_modules": "No matching modules",
+    "remove_filters_to_see_all_modules": "Remove the filters to see all modules",
+    "remove_search_criteria_to_see_all_modules": "Remove the search criteria to see all modules"
   },
   "project_members": {
     "full_name": "Full name",

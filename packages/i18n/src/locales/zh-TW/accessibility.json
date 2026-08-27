@@ -31,6 +31,29 @@
       "hide_password": "隱藏密碼",
       "close_alert": "關閉警告",
       "close_popover": "關閉彈出框"
+    },
+    "common": {
+      "plane_logo": "Plane 標誌",
+      "provider_logo": "{provider} 標誌",
+      "background_pattern": "Plane 背景圖樣",
+      "instance_failure_image": "執行個體錯誤插圖",
+      "user_already_signed_in_image": "使用者已登入",
+      "page_not_found_image": "404 - 找不到頁面"
+    },
+    "intake": {
+      "previous_work_item": "上一個工作事項",
+      "next_work_item": "下一個工作事項"
+    },
+    "sidebar": {
+      "main_sidebar": "主側邊欄",
+      "resize_sidebar": "調整側邊欄寬度",
+      "peek_view": "側邊欄預覽"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "關閉內容上限提醒"
+    },
+    "filters": {
+      "remove_filter": "移除篩選器"
     }
   }
 }

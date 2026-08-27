@@ -771,7 +771,16 @@
       "warning": "Varovanie"
     },
     "owned_by": "Vlastník",
-    "subscriber": "Odberateľ"
+    "subscriber": "Odberateľ",
+    "set_date": "Nastaviť dátum",
+    "click_to_copy": "Kliknite pre kopírovanie",
+    "completion_percentage": "Percento dokončenia",
+    "toggle_workspace_level_search": "Prepnúť vyhľadávanie na úrovni pracovného priestoru",
+    "pro_feature": "Funkcia Pro",
+    "search_for_projects": "Hľadať projekty",
+    "enter_project_name": "Zadajte názov projektu",
+    "invalid_filter": "Neplatný filter",
+    "invalid_filter_tooltip": "Táto podmienka filtra už nie je platná. Vlastnosť mohla byť odstránená alebo sa zmenil váš prístup k nej."
   },
   "chart": {
     "x_axis": "Os X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Je možné nahrať iba jeden súbor naraz.",
     "file_size_limit": "Súbor musí byť menší ako {size}MB.",
     "drag_and_drop": "Pretiahnite súbor kamkoľvek pre nahratie",
-    "delete": "Zmazať prílohu"
+    "delete": "Zmazať prílohu",
+    "click_or_drag_file": "Kliknite alebo sem presuňte súbor",
+    "drop_here": "Pustite sem..."
   },
   "label": {
     "select": "Vybrať štítok",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Nepodarilo sa načítať podrobnosti inštancie.",
       "description": "Nepodarilo sa nám načítať podrobnosti inštancie. Bez obáv, môže ísť len o problém s pripojením."
+    },
+    "not_ready": {
+      "title": "Vitajte v Plane",
+      "description": "Nastavte svoju inštanciu a vytvorte prvý pracovný priestor, aby ste mohli začať spravovať projekty a prácu.",
+      "cta": "Začať"
     }
   },
   "something_went_wrong_please_try_again_later": "Niečo sa pokazilo. Skúste to prosím neskôr.",
@@ -1037,5 +1053,28 @@
       "images": "Obrázky",
       "upload": "Nahrať"
     }
+  },
+  "no_results_found": "Nenašli sa žiadne výsledky",
+  "learn_more": "Zistiť viac",
+  "danger_zone": "Nebezpečná zóna",
+  "no_value": "Bez hodnoty",
+  "uploading": "Nahrávanie...",
+  "search_for_shortcuts": "Hľadať skratky",
+  "visit_profile": "Zobraziť profil",
+  "billing": {
+    "all_plans": "Všetky plány",
+    "monthly": "Mesačne",
+    "yearly": "Ročne",
+    "quote_on_request": "Cena na vyžiadanie",
+    "per_user_per_month": "za používateľa mesačne",
+    "community_description": "Neobmedzené projekty, pracovné položky, cykly, moduly, stránky a úložisko"
+  },
+  "latest_feature": {
+    "pages_facelift": "Stránky majú novú tvár! Napíšte čokoľvek a využite Galileo, aby vám pomohlo začať."
+  },
+  "error_page": {
+    "title": "Zdá sa, že sa niečo pokazilo!",
+    "description": "Tieto chyby zaznamenávame automaticky a pracujeme na obnovení prevádzky. Ak problém pretrváva, kontaktujte nás. Medzitým skúste stránku obnoviť.",
+    "go_home": "Prejsť na domovskú stránku"
   }
 }

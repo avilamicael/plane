@@ -215,7 +215,8 @@
         "everything": "전체",
         "no_images": "이미지 제외"
       }
-    }
+    },
+    "search_placeholder": "페이지 검색"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "색상"
+    },
+    "content_limit_banner": {
+      "message": "콘텐츠 한도에 도달하여 실시간 동기화가 중지되었습니다. 새 페이지를 만들거나 중첩 페이지를 사용해 동기화를 계속하세요."
+    },
+    "ai_menu": {
+      "add_to_next_line": "다음 줄에 추가",
+      "replace_selection": "선택 영역 바꾸기",
+      "regenerate_response": "응답 다시 생성"
     }
   }
 }

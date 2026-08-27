@@ -35,7 +35,8 @@
         "title": "Üyeleri davet et",
         "sub_heading": "Projenizde çalışmaları için üyeleri davet edin.",
         "select_co_worker": "İş arkadaşı seç"
-      }
+      },
+      "guest_access": "Misafir erişimi"
     },
     "states": {
       "heading": "Durumlar",
@@ -210,7 +211,9 @@
       },
       "switch": "Estimasyon sistemini değiştir",
       "current": "Mevcut estimasyon sistemi",
-      "select": "Estimasyon sistemi seç"
+      "select": "Estimasyon sistemi seç",
+      "list_heading": "Tahmin listesi",
+      "archived_heading": "Arşivlenmiş tahminler"
     },
     "automations": {
       "label": "Otomasyonlar",

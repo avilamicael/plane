@@ -104,6 +104,25 @@
       "title": "Sie haben diesem Epic noch keine Arbeitselemente hinzugefügt.",
       "description": "Beginnen Sie, indem Sie einige Arbeitselemente zu diesem Epic hinzufügen und hier verfolgen.",
       "cta_secondary": "Arbeitselemente hinzufügen"
+    },
+    "invalid_cycle": {
+      "title": "Zyklus existiert nicht",
+      "description": "Der gesuchte Zyklus existiert nicht oder wurde gelöscht.",
+      "cta_primary": "Weitere Zyklen anzeigen"
+    },
+    "invalid_module": {
+      "title": "Modul existiert nicht",
+      "description": "Das gesuchte Modul existiert nicht oder wurde gelöscht.",
+      "cta_primary": "Weitere Module anzeigen"
+    },
+    "invalid_view": {
+      "title": "Ansicht existiert nicht",
+      "description": "Die gesuchte Ansicht existiert nicht oder Sie haben keine Berechtigung, sie anzuzeigen.",
+      "cta_primary": "Weitere Ansichten anzeigen"
+    },
+    "view_work_items": {
+      "title": "Die Arbeitselemente dieser Ansicht erscheinen hier",
+      "description": "Arbeitselemente helfen Ihnen, einzelne Arbeitspakete zu verfolgen. Damit sehen Sie, was passiert, wer daran arbeitet und was erledigt ist."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Projektzustände aktivieren",
       "description": "Aktivieren Sie Projektzustände, um Eigenschaften wie Status, Priorität, Fälligkeitsdaten und mehr anzuzeigen und zu verwalten."
+    },
+    "invalid_view": {
+      "title": "Ansicht existiert nicht",
+      "description": "Die gesuchte Ansicht existiert nicht oder Sie haben keine Berechtigung, sie anzuzeigen.",
+      "cta_primary": "Zu Alle Arbeitselemente wechseln"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Zustände hinzufügen",
         "description": "Wählen Sie die Zustände aus, die das Arbeitselement durchläuft."
       }
+    },
+    "projects": {
+      "title": "Noch keine Projekte",
+      "description": "Projekte bilden die Grundlage für zielorientiertes Arbeiten. Damit verwalten Sie Ihre Teams, Aufgaben und alles, was Sie zum Erreichen Ihrer Ziele brauchen.",
+      "cta_secondary": "Mehr über Projekte erfahren"
     }
   }
 }

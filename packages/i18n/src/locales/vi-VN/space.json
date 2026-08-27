@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Ối! Trông không ổn chút nào.",
+      "description": "Điều đó đã làm Plane rơi — chơi chữ có chủ ý. Nhưng đừng lo, các kỹ sư của chúng tôi đã được thông báo. Nếu bạn có thêm chi tiết, hãy gửi thư tới",
+      "or_on_our": "hoặc truy cập"
+    },
+    "not_found": {
+      "title": "Thao tác thất bại",
+      "description": "Hãy kiểm tra URL bạn nhập trên thanh địa chỉ của trình duyệt rồi thử lại."
+    },
+    "board_not_found": {
+      "description": "Bảng công khai này không tồn tại. Vui lòng kiểm tra URL."
+    },
+    "user_logged_in": {
+      "title": "Tuyệt! Chỉ còn một bước nữa thôi.",
+      "description": "Nhập vào thanh địa chỉ trình duyệt URL chia sẻ công khai hoặc liên kết của chế độ xem hay Trang mà bạn muốn xem."
     }
   }
 }

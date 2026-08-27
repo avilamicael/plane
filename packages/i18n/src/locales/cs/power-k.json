@@ -171,7 +171,9 @@
     "search_menu": {
       "no_results": "Nenalezeny žádné výsledky",
       "clear_search": "Vymazat hledání",
-      "go_to_advanced_search": "Přejít na pokročilé hledání"
+      "go_to_advanced_search": "Přejít na pokročilé hledání",
+      "no_estimate_found": "Nebyl nalezen žádný odhad",
+      "work_item_search_placeholder": "Hledejte podle ID nebo názvu pracovní položky"
     },
     "footer": {
       "workspace_level": "Úroveň pracovního prostoru"
@@ -187,6 +189,7 @@
       "miscellaneous": "Různé",
       "preferences": "Předvolby",
       "help": "Nápověda"
-    }
+    },
+    "clear_context": "Vymazat kontext (Backspace)"
   }
 }

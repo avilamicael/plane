@@ -183,8 +183,8 @@ export const ProjectSettingsMemberDefaults = observer(function ProjectSettingsMe
       </DefaultSettingItem>
       {currentProjectDetails && (
         <DefaultSettingItem
-          title="Guest access"
-          description="This will allow guests to have view access to all the project work items."
+          title={t("project_settings.members.guest_access")}
+          description={t("project_settings.members.guest_super_permissions.sub_heading")}
         >
           <div className="flex items-center justify-end">
             <ToggleSwitch

@@ -771,7 +771,16 @@
       "warning": "Warnung"
     },
     "owned_by": "Gehört zu",
-    "subscriber": "Abonnent"
+    "subscriber": "Abonnent",
+    "set_date": "Datum festlegen",
+    "click_to_copy": "Zum Kopieren klicken",
+    "completion_percentage": "Fertigstellungsgrad",
+    "toggle_workspace_level_search": "Suche auf Arbeitsbereichsebene umschalten",
+    "pro_feature": "Pro-Funktion",
+    "search_for_projects": "Projekte suchen",
+    "enter_project_name": "Projektnamen eingeben",
+    "invalid_filter": "Ungültiger Filter",
+    "invalid_filter_tooltip": "Diese Filterbedingung ist nicht mehr gültig. Die Eigenschaft wurde möglicherweise gelöscht oder Ihr Zugriff darauf hat sich geändert."
   },
   "chart": {
     "x_axis": "X-Achse",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Es kann jeweils nur eine Datei hochgeladen werden.",
     "file_size_limit": "Die Datei muss kleiner als {size} MB sein.",
     "drag_and_drop": "Datei hierher ziehen, um sie hochzuladen",
-    "delete": "Anhang löschen"
+    "delete": "Anhang löschen",
+    "click_or_drag_file": "Klicken Sie hier oder ziehen Sie eine Datei hierher",
+    "drop_here": "Hier ablegen..."
   },
   "label": {
     "select": "Label auswählen",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Die Instanzdetails konnten nicht abgerufen werden.",
       "description": "Wir konnten die Details der Instanz nicht abrufen. Keine Sorge, es könnte nur ein Verbindungsproblem sein."
+    },
+    "not_ready": {
+      "title": "Willkommen bei Plane",
+      "description": "Richten Sie Ihre Instanz ein und erstellen Sie Ihren ersten Arbeitsbereich, um mit der Verwaltung zu beginnen.",
+      "cta": "Loslegen"
     }
   },
   "something_went_wrong_please_try_again_later": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
@@ -1037,5 +1053,28 @@
       "images": "Bilder",
       "upload": "Hochladen"
     }
+  },
+  "no_results_found": "Keine Ergebnisse gefunden",
+  "learn_more": "Mehr erfahren",
+  "danger_zone": "Gefahrenzone",
+  "no_value": "Kein Wert",
+  "uploading": "Hochladen...",
+  "search_for_shortcuts": "Nach Tastenkürzeln suchen",
+  "visit_profile": "Profil ansehen",
+  "billing": {
+    "all_plans": "Alle Tarife",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "quote_on_request": "Preis auf Anfrage",
+    "per_user_per_month": "pro Benutzer und Monat",
+    "community_description": "Unbegrenzte Projekte, Arbeitselemente, Zyklen, Module, Seiten und Speicher"
+  },
+  "latest_feature": {
+    "pages_facelift": "Seiten im neuen Look! Schreiben Sie, was Sie möchten, und lassen Sie sich von Galileo den Einstieg erleichtern."
+  },
+  "error_page": {
+    "title": "Da ist wohl etwas schiefgelaufen!",
+    "description": "Wir erfassen diese Fehler automatisch und arbeiten daran, alles wiederherzustellen. Falls das Problem bestehen bleibt, kontaktieren Sie uns. Versuchen Sie es zwischenzeitlich mit einem Neuladen.",
+    "go_home": "Zur Startseite"
   }
 }

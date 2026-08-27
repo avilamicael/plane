@@ -21,7 +21,8 @@
     "in_your_timezone": "Trong múi giờ của bạn",
     "transfer_work_items": "Chuyển {count} mục công việc",
     "transfer": {
-      "no_cycles_available": "Không có chu kỳ nào khác để chuyển mục công việc."
+      "no_cycles_available": "Không có chu kỳ nào khác để chuyển mục công việc.",
+      "title": "Chuyển các mục công việc"
     },
     "date_range": "Khoảng thời gian",
     "add_date": "Thêm ngày",
@@ -140,7 +141,8 @@
         "description": "Để tổ chức dự án của bạn, hãy lưu trữ chu kỳ đã hoàn thành. Bạn có thể tìm thấy chúng ở đây sau khi lưu trữ."
       }
     },
-    "delete_cycle": "Xóa chu kỳ"
+    "delete_cycle": "Xóa chu kỳ",
+    "search_for_a_cycle": "Tìm kiếm chu kỳ..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "Chưa có trang đã lưu trữ",
         "description": "Lưu trữ các trang không còn trong tầm nhìn của bạn. Truy cập chúng ở đây khi cần."
       }
+    },
+    "not_found": {
+      "title": "Không tìm thấy trang",
+      "description": "Trang bạn đang cố truy cập không tồn tại hoặc bạn không có quyền xem.",
+      "cta": "Xem các trang khác"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Ngày hết hạn",
       "created_at": "Ngày tạo",
       "manual": "Thủ công"
-    }
+    },
+    "no_matching_modules": "Không có mô-đun phù hợp",
+    "remove_filters_to_see_all_modules": "Xóa bộ lọc để xem tất cả mô-đun",
+    "remove_search_criteria_to_see_all_modules": "Xóa tiêu chí tìm kiếm để xem tất cả mô-đun"
   },
   "project_members": {
     "full_name": "Họ và tên",

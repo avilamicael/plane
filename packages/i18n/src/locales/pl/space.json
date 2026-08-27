@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "O nie! To nie wygląda dobrze.",
+      "description": "To sprawiło, że Plane się rozbił — gra słów zamierzona. Bez obaw, nasi inżynierowie zostali już powiadomieni. Jeśli masz więcej szczegółów, napisz na",
+      "or_on_our": "lub odwiedź nasze"
+    },
+    "not_found": {
+      "title": "Nie udało się",
+      "description": "Sprawdź adres URL wpisany w pasku adresu przeglądarki i spróbuj ponownie."
+    },
+    "board_not_found": {
+      "description": "Ta publiczna tablica nie istnieje. Sprawdź adres URL."
+    },
+    "user_logged_in": {
+      "title": "Świetnie! Został już tylko jeden krok.",
+      "description": "Wpisz w pasku adresu przeglądarki publiczny adres URL udostępniania lub link do widoku albo Strony, którą chcesz zobaczyć."
     }
   }
 }

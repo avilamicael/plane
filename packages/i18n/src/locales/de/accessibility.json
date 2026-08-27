@@ -31,6 +31,29 @@
       "hide_password": "Passwort verbergen",
       "close_alert": "Warnung schließen",
       "close_popover": "Popover schließen"
+    },
+    "common": {
+      "plane_logo": "Plane-Logo",
+      "provider_logo": "{provider}-Logo",
+      "background_pattern": "Plane-Hintergrundmuster",
+      "instance_failure_image": "Illustration eines Instanzfehlers",
+      "user_already_signed_in_image": "Benutzer ist bereits angemeldet",
+      "page_not_found_image": "404 - Seite nicht gefunden"
+    },
+    "intake": {
+      "previous_work_item": "Vorheriges Arbeitselement",
+      "next_work_item": "Nächstes Arbeitselement"
+    },
+    "sidebar": {
+      "main_sidebar": "Hauptseitenleiste",
+      "resize_sidebar": "Seitenleiste anpassen",
+      "peek_view": "Seitenleisten-Vorschau"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Warnung zum Inhaltslimit ausblenden"
+    },
+    "filters": {
+      "remove_filter": "Filter entfernen"
     }
   }
 }

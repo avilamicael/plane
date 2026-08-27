@@ -215,7 +215,8 @@
         "everything": "Vše",
         "no_images": "Bez obrázků"
       }
-    }
+    },
+    "search_placeholder": "Hledat stránky"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "Barva"
+    },
+    "content_limit_banner": {
+      "message": "Byl dosažen limit obsahu a živá synchronizace je vypnutá. Vytvořte novou stránku nebo použijte vnořené stránky, abyste mohli pokračovat v synchronizaci."
+    },
+    "ai_menu": {
+      "add_to_next_line": "Přidat na další řádek",
+      "replace_selection": "Nahradit výběr",
+      "regenerate_response": "Znovu vygenerovat odpověď"
     }
   }
 }

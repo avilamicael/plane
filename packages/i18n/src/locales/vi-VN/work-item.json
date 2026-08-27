@@ -392,6 +392,10 @@
           "message": "Tiêu đề mục công việc chưa đủ rõ ràng để tạo mô tả. Vui lòng thử với tiêu đề khác."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Mục công việc này đã được lưu trữ. Hãy vào mục Lưu trữ để khôi phục.",
+      "action": "Đi tới Lưu trữ"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Không thể cập nhật mục công việc",
         "message": "Thay đổi trạng thái không được phép cho một số mục công việc. Đảm bảo thay đổi trạng thái được cho phép."
       }
-    }
+    },
+    "select_work_items_to_delete": "Chọn các mục công việc cần xóa"
   },
   "recurring_work_items": {
     "settings": {

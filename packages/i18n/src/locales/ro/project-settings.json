@@ -35,7 +35,8 @@
         "title": "Invită membri",
         "sub_heading": "Invită membri să lucreze la proiectul tău.",
         "select_co_worker": "Selectează colegul de echipă"
-      }
+      },
+      "guest_access": "Acces pentru invitați"
     },
     "states": {
       "heading": "Stări",
@@ -210,7 +211,9 @@
       },
       "switch": "Schimbă sistemul de estimări",
       "current": "Sistemul de estimări curent",
-      "select": "Selectează un sistem de estimări"
+      "select": "Selectează un sistem de estimări",
+      "list_heading": "Lista estimărilor",
+      "archived_heading": "Estimări arhivate"
     },
     "automations": {
       "label": "Automatizări",

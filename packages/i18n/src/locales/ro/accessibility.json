@@ -31,6 +31,29 @@
       "hide_password": "Ascunde parola",
       "close_alert": "Închide alerta",
       "close_popover": "Închide popover-ul"
+    },
+    "common": {
+      "plane_logo": "Siglă Plane",
+      "provider_logo": "Siglă {provider}",
+      "background_pattern": "Model de fundal Plane",
+      "instance_failure_image": "Ilustrație privind eroarea instanței",
+      "user_already_signed_in_image": "Utilizator deja autentificat",
+      "page_not_found_image": "404 - Pagina nu a fost găsită"
+    },
+    "intake": {
+      "previous_work_item": "Activitatea anterioară",
+      "next_work_item": "Activitatea următoare"
+    },
+    "sidebar": {
+      "main_sidebar": "Bară laterală principală",
+      "resize_sidebar": "Redimensionează bara laterală",
+      "peek_view": "Previzualizare bară laterală"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Închide avertismentul privind limita de conținut"
+    },
+    "filters": {
+      "remove_filter": "Elimină filtrul"
     }
   }
 }

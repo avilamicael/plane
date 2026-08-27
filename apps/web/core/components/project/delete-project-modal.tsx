@@ -111,7 +111,7 @@ export function DeleteProjectModal(props: DeleteProjectModal) {
                 onChange={onChange}
                 ref={ref}
                 hasError={Boolean(errors.projectName)}
-                placeholder="Project name"
+                placeholder={t("common.project_name")}
                 className="mt-2 w-full"
                 autoComplete="off"
               />

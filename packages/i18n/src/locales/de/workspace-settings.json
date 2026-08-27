@@ -159,7 +159,9 @@
             "message": "Neuer Schlüssel erfolgreich neu generiert."
           }
         },
-        "delete_webhook": "Webhook löschen"
+        "delete_webhook": "Webhook löschen",
+        "enable_webhook": "Webhook aktivieren",
+        "delete_warning": "Sobald ein Webhook gelöscht wurde, kann er nicht wiederhergestellt werden. Künftige Ereignisse werden nicht mehr an diesen Webhook gesendet."
       },
       "api_tokens": {
         "heading": "API-Tokens",
@@ -182,7 +184,9 @@
             "message": "Löschen des Tokens fehlgeschlagen"
           }
         },
-        "expiration_required": "Bitte wählen Sie ein Ablaufdatum aus."
+        "expiration_required": "Bitte wählen Sie ein Ablaufdatum aus.",
+        "copy_secret_key": "Geheimen Schlüssel kopieren",
+        "delete_token": "Token löschen"
       },
       "integrations": {
         "title": "Integrationen",

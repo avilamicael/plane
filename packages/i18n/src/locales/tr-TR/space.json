@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Eyvah! Bu hiç iyi görünmüyor.",
+      "description": "Bu, Plane’i düşürdü; kelime oyunu bilinçli. Yine de endişelenmeyin, mühendislerimize haber verildi. Daha fazla ayrıntınız varsa şu adrese yazın:",
+      "or_on_our": "veya şuraya göz atın:"
+    },
+    "not_found": {
+      "title": "Bu işe yaramadı",
+      "description": "Tarayıcının adres çubuğuna girdiğiniz URL’yi kontrol edip tekrar deneyin."
+    },
+    "board_not_found": {
+      "description": "Bu herkese açık pano mevcut değil. Lütfen URL’yi kontrol edin."
+    },
+    "user_logged_in": {
+      "title": "Harika! Yalnızca bir adım kaldı.",
+      "description": "Görmek istediğiniz görünümün veya Sayfanın herkese açık paylaşım URL’sini ya da bağlantısını tarayıcının adres çubuğuna girin."
     }
   }
 }

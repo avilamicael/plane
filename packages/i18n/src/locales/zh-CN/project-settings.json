@@ -35,7 +35,8 @@
         "title": "邀请成员",
         "sub_heading": "邀请成员参与您的项目。",
         "select_co_worker": "选择同事"
-      }
+      },
+      "guest_access": "访客访问权限"
     },
     "states": {
       "heading": "状态",
@@ -210,7 +211,9 @@
       },
       "switch": "切换估算系统",
       "current": "当前估算系统",
-      "select": "选择估算系统"
+      "select": "选择估算系统",
+      "list_heading": "估算列表",
+      "archived_heading": "已归档的估算"
     },
     "automations": {
       "label": "自动化",

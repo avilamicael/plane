@@ -9,6 +9,7 @@ import type { LucideIcon } from "lucide-react";
 import { CornerDownRight, RefreshCcw, Sparkles, TriangleAlert } from "lucide-react";
 // plane editor
 import type { EditorRefApi } from "@plane/editor";
+import { useTranslation } from "@plane/i18n";
 import { ChevronRightIcon } from "@plane/propel/icons";
 // plane ui
 import { Tooltip } from "@plane/propel/tooltip";
@@ -66,6 +67,8 @@ const TONES_LIST = [
 
 export function EditorAIMenu(props: Props) {
   const { editorRef, isOpen, onClose, workspaceId, workspaceSlug } = props;
+  // translation
+  const { t } = useTranslation();
   // states
   const [activeTask, setActiveTask] = useState<AI_EDITOR_TASKS | null>(null);
   const [response, setResponse] = useState<string | undefined>(undefined);
@@ -109,7 +112,7 @@ export function EditorAIMenu(props: Props) {
   };
   // handle re-generate response
   const handleToneChange = async (key: string) => {
-    const selectedTone = TONES_LIST.find((t) => t.key === key);
+    const selectedTone = TONES_LIST.find((tone) => tone.key === key);
     const selection = editorRef?.getSelectedText();
     if (!selectedTone || !selection || !activeTask) return;
     setResponse(undefined);
@@ -232,9 +235,9 @@ export function EditorAIMenu(props: Props) {
                         className="rounded-sm p-1 text-13 font-medium text-tertiary outline-none hover:bg-layer-1"
                         onClick={() => handleInsertText(false)}
                       >
-                        Replace selection
+                        {t("page_editor.ai_menu.replace_selection")}
                       </button>
-                      <Tooltip tooltipContent="Add to next line">
+                      <Tooltip tooltipContent={t("page_editor.ai_menu.add_to_next_line")}>
                         <button
                           type="button"
                           className="grid size-6 flex-shrink-0 place-items-center rounded-sm outline-none hover:bg-layer-1"
@@ -243,7 +246,7 @@ export function EditorAIMenu(props: Props) {
                           <CornerDownRight className="size-4 text-tertiary" />
                         </button>
                       </Tooltip>
-                      <Tooltip tooltipContent="Re-generate response">
+                      <Tooltip tooltipContent={t("page_editor.ai_menu.regenerate_response")}>
                         <button
                           type="button"
                           className="grid size-6 flex-shrink-0 place-items-center rounded-sm outline-none hover:bg-layer-1"

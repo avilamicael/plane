@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Obrázek pracovního prostoru byl úspěšně odebrán."
       }
+    },
+    "not_found": {
+      "title": "Pracovní prostor nenalezen",
+      "description": "Pro tuto URL nebyl nalezen žádný pracovní prostor. Možná neexistuje nebo nemáte oprávnění jej zobrazit."
+    },
+    "not_authorized": {
+      "title": "Nemáte oprávnění!",
+      "description": "Nejste členem tohoto pracovního prostoru. Kontaktujte správce pracovního prostoru pro získání pozvánky nebo zkontrolujte své čekající pozvánky.",
+      "check_pending_invites": "Zkontrolovat čekající pozvánky"
+    },
+    "create_new": "Vytvořit nový pracovní prostor"
+  },
+  "workspace_invitation": {
+    "invited_title": "Byli jste pozváni do {workspace}",
+    "already_member_title": "Již jste členem {workspace}",
+    "description": "Pracovní prostor je místo, kde vytváříte projekty, spolupracujete na pracovních položkách a organizujete různé proudy práce ve svém účtu Plane.",
+    "not_found": "Pozvánka nenalezena",
+    "inactive_title": "Tento odkaz s pozvánkou již není aktivní.",
+    "start_from_empty_project": "Nebo začněte s prázdným projektem",
+    "actions": {
+      "accept": "Přijmout",
+      "ignore": "Ignorovat",
+      "continue_to_home": "Pokračovat na domovskou stránku",
+      "sign_in_to_continue": "Pro pokračování se přihlaste",
+      "join_community": "Připojte se k naší komunitě aktivních tvůrců"
     }
   }
 }

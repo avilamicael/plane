@@ -392,6 +392,10 @@
           "message": "Titlul elementului de lucru nu este suficient de descriptiv pentru a genera descrierea. Încearcă un alt titlu."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Această activitate a fost arhivată. Mergi la secțiunea Arhive pentru a o restaura.",
+      "action": "Mergi la Arhive"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Imposibil de actualizat elementele de lucru",
         "message": "Schimbarea stării nu este permisă pentru unele elemente de lucru. Asigură-te că schimbarea stării este permisă."
       }
-    }
+    },
+    "select_work_items_to_delete": "Selectează elementele de lucru de șters"
   },
   "recurring_work_items": {
     "settings": {

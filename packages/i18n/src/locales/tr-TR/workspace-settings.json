@@ -159,7 +159,9 @@
             "message": "Yeni anahtar başarıyla yeniden oluşturuldu."
           }
         },
-        "delete_webhook": "Webhook'u sil"
+        "delete_webhook": "Webhook'u sil",
+        "enable_webhook": "Webhook'u etkinleştir",
+        "delete_warning": "Bir webhook silindikten sonra geri alınamaz. Gelecekteki olaylar artık bu webhook'a iletilmeyecek."
       },
       "api_tokens": {
         "heading": "API Token'ları",
@@ -182,7 +184,9 @@
             "message": "API token'ı silinemedi"
           }
         },
-        "expiration_required": "Lütfen bir son kullanma tarihi seçin."
+        "expiration_required": "Lütfen bir son kullanma tarihi seçin.",
+        "copy_secret_key": "Gizli anahtarı kopyala",
+        "delete_token": "Belirteci sil"
       },
       "integrations": {
         "title": "Entegrasyonlar",

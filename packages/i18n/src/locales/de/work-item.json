@@ -392,6 +392,10 @@
           "message": "Der Titel des Arbeitselements ist nicht aussagekräftig genug, um die Beschreibung zu generieren. Bitte versuchen Sie es mit einem anderen Titel."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Dieses Arbeitselement wurde archiviert. Öffnen Sie den Bereich Archive, um es wiederherzustellen.",
+      "action": "Zu den Archiven"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Arbeitsaufgaben können nicht aktualisiert werden",
         "message": "Statusänderung ist für einige Arbeitsaufgaben nicht erlaubt. Stellen Sie sicher, dass die Statusänderung zulässig ist."
       }
-    }
+    },
+    "select_work_items_to_delete": "Wählen Sie die zu löschenden Arbeitselemente aus"
   },
   "recurring_work_items": {
     "settings": {

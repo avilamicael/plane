@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Aoleu! Asta nu arată bine.",
+      "description": "Asta a doborât Plane, jocul de cuvinte fiind intenționat. Dar nicio grijă: inginerii noștri au fost deja anunțați. Dacă ai mai multe detalii, scrie-ne la",
+      "or_on_our": "sau vizitează"
+    },
+    "not_found": {
+      "title": "Ceva nu a funcționat",
+      "description": "Verifică adresa URL introdusă în bara de adrese a browserului și încearcă din nou."
+    },
+    "board_not_found": {
+      "description": "Acest panou public nu există. Verifică adresa URL."
+    },
+    "user_logged_in": {
+      "title": "Grozav! A mai rămas doar un pas.",
+      "description": "Introdu în bara de adrese a browserului adresa URL de partajare publică sau linkul perspectivei ori al Paginii pe care vrei să o vezi."
     }
   }
 }

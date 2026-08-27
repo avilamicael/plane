@@ -31,6 +31,29 @@
       "hide_password": "Hide password",
       "close_alert": "Close alert",
       "close_popover": "Close popover"
+    },
+    "common": {
+      "plane_logo": "Plane logo",
+      "provider_logo": "{provider} logo",
+      "background_pattern": "Plane background pattern",
+      "instance_failure_image": "Instance failure illustration",
+      "user_already_signed_in_image": "User already signed in",
+      "page_not_found_image": "404 - Page not found"
+    },
+    "intake": {
+      "previous_work_item": "Previous work item",
+      "next_work_item": "Next work item"
+    },
+    "sidebar": {
+      "main_sidebar": "Main sidebar",
+      "resize_sidebar": "Resize sidebar",
+      "peek_view": "Sidebar peek view"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Dismiss content limit warning"
+    },
+    "filters": {
+      "remove_filter": "Remove filter"
     }
   }
 }

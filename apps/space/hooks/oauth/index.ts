@@ -5,12 +5,13 @@
  */
 
 // plane imports
+import { i18nInstance } from "@plane/i18n";
 import type { TOAuthConfigs } from "@plane/types";
 // local imports
 import { useCoreOAuthConfig } from "./core";
 import { useExtendedOAuthConfig } from "./extended";
 
-export const useOAuthConfig = (oauthActionText: string = "Continue"): TOAuthConfigs => {
+export const useOAuthConfig = (oauthActionText: string = i18nInstance.t("common.continue")): TOAuthConfigs => {
   const coreOAuthConfig = useCoreOAuthConfig(oauthActionText);
   const extendedOAuthConfig = useExtendedOAuthConfig(oauthActionText);
   return {

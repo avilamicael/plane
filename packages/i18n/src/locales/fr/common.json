@@ -771,7 +771,16 @@
       "warning": "Avertissement"
     },
     "owned_by": "Appartient à",
-    "subscriber": "Abonné"
+    "subscriber": "Abonné",
+    "set_date": "Définir une date",
+    "click_to_copy": "Cliquez pour copier",
+    "completion_percentage": "Pourcentage d’achèvement",
+    "toggle_workspace_level_search": "Basculer la recherche au niveau de l’espace de travail",
+    "pro_feature": "Fonctionnalité Pro",
+    "search_for_projects": "Rechercher des projets",
+    "enter_project_name": "Saisissez le nom du projet",
+    "invalid_filter": "Filtre non valide",
+    "invalid_filter_tooltip": "Cette condition de filtre n’est plus valide. La propriété a peut-être été supprimée ou votre accès à celle-ci a changé."
   },
   "chart": {
     "x_axis": "Axe X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Un seul fichier peut être téléchargé à la fois.",
     "file_size_limit": "Le fichier doit faire {size}MB ou moins.",
     "drag_and_drop": "Glissez-déposez n’importe où pour uploader",
-    "delete": "Supprimer la pièce jointe"
+    "delete": "Supprimer la pièce jointe",
+    "click_or_drag_file": "Cliquez ou faites glisser un fichier ici",
+    "drop_here": "Déposez ici..."
   },
   "label": {
     "select": "Sélectionner une étiquette",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Impossible de récupérer les détails de l’instance.",
       "description": "Nous n’avons pas pu récupérer les détails de l’instance. Pas d’inquiétude, il s’agit peut-être simplement d’un problème de connexion."
+    },
+    "not_ready": {
+      "title": "Bienvenue sur Plane",
+      "description": "Configurez votre instance et créez votre premier espace de travail pour commencer à gérer vos projets.",
+      "cta": "Commencer"
     }
   },
   "something_went_wrong_please_try_again_later": "Une erreur s'est produite. Veuillez réessayer plus tard.",
@@ -1037,5 +1053,28 @@
       "images": "Images",
       "upload": "Téléverser"
     }
+  },
+  "no_results_found": "Aucun résultat trouvé",
+  "learn_more": "En savoir plus",
+  "danger_zone": "Zone de danger",
+  "no_value": "Aucune valeur",
+  "uploading": "Téléchargement...",
+  "search_for_shortcuts": "Rechercher des raccourcis",
+  "visit_profile": "Voir le profil",
+  "billing": {
+    "all_plans": "Tous les forfaits",
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "quote_on_request": "Devis sur demande",
+    "per_user_per_month": "par utilisateur et par mois",
+    "community_description": "Projets, éléments de travail, cycles, modules, pages et stockage illimités"
+  },
+  "latest_feature": {
+    "pages_facelift": "Les pages font peau neuve ! Écrivez ce que vous voulez et utilisez Galileo pour démarrer."
+  },
+  "error_page": {
+    "title": "Il semble qu'une erreur soit survenue !",
+    "description": "Nous enregistrons ces erreurs automatiquement et travaillons à rétablir le service. Si le problème persiste, contactez-nous. En attendant, essayez d'actualiser la page.",
+    "go_home": "Aller à l'accueil"
   }
 }

@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Bild des Arbeitsbereichs erfolgreich entfernt."
       }
+    },
+    "not_found": {
+      "title": "Arbeitsbereich nicht gefunden",
+      "description": "Für diese URL wurde kein Arbeitsbereich gefunden. Möglicherweise existiert er nicht oder Sie haben keine Berechtigung, ihn anzusehen."
+    },
+    "not_authorized": {
+      "title": "Nicht autorisiert!",
+      "description": "Sie sind kein Mitglied dieses Arbeitsbereichs. Wenden Sie sich an den Administrator des Arbeitsbereichs, um eine Einladung zu erhalten, oder prüfen Sie Ihre ausstehenden Einladungen.",
+      "check_pending_invites": "Ausstehende Einladungen prüfen"
+    },
+    "create_new": "Neuen Arbeitsbereich erstellen"
+  },
+  "workspace_invitation": {
+    "invited_title": "Sie wurden zu {workspace} eingeladen",
+    "already_member_title": "Sie sind bereits Mitglied von {workspace}",
+    "description": "In Ihrem Arbeitsbereich erstellen Sie Projekte, arbeiten an Arbeitselementen zusammen und organisieren verschiedene Arbeitsstränge in Ihrem Plane-Konto.",
+    "not_found": "Einladung nicht gefunden",
+    "inactive_title": "Dieser Einladungslink ist nicht mehr aktiv.",
+    "start_from_empty_project": "Oder starten Sie mit einem leeren Projekt",
+    "actions": {
+      "accept": "Annehmen",
+      "ignore": "Ignorieren",
+      "continue_to_home": "Weiter zur Startseite",
+      "sign_in_to_continue": "Zum Fortfahren anmelden",
+      "join_community": "Treten Sie unserer Community aktiver Kreativer bei"
     }
   }
 }

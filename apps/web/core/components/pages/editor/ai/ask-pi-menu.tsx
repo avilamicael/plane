@@ -6,6 +6,8 @@
 
 import { useState } from "react";
 import { CircleArrowUp, CornerDownRight, RefreshCcw, Sparkles } from "lucide-react";
+// plane imports
+import { useTranslation } from "@plane/i18n";
 // ui
 import { Tooltip } from "@plane/propel/tooltip";
 // components
@@ -25,6 +27,8 @@ type Props = {
 
 export function AskPiMenu(props: Props) {
   const { handleInsertText, handleRegenerate, isRegenerating, response, workspaceSlug } = props;
+  // translation
+  const { t } = useTranslation();
   // states
   const [query, setQuery] = useState("");
   // store hooks
@@ -62,9 +66,9 @@ export function AskPiMenu(props: Props) {
                 className="rounded-sm p-1 text-13 font-medium text-tertiary outline-none hover:bg-layer-1"
                 onClick={() => handleInsertText(false)}
               >
-                Replace selection
+                {t("page_editor.ai_menu.replace_selection")}
               </button>
-              <Tooltip tooltipContent="Add to next line">
+              <Tooltip tooltipContent={t("page_editor.ai_menu.add_to_next_line")}>
                 <button
                   type="button"
                   className="grid size-6 flex-shrink-0 place-items-center rounded-sm outline-none hover:bg-layer-1"
@@ -73,7 +77,7 @@ export function AskPiMenu(props: Props) {
                   <CornerDownRight className="size-4 text-tertiary" />
                 </button>
               </Tooltip>
-              <Tooltip tooltipContent="Re-generate response">
+              <Tooltip tooltipContent={t("page_editor.ai_menu.regenerate_response")}>
                 <button
                   type="button"
                   className="grid size-6 flex-shrink-0 place-items-center rounded-sm outline-none hover:bg-layer-1"

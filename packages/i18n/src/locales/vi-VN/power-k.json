@@ -171,7 +171,9 @@
     "search_menu": {
       "no_results": "Không tìm thấy kết quả",
       "clear_search": "Xóa tìm kiếm",
-      "go_to_advanced_search": "Đi đến tìm kiếm nâng cao"
+      "go_to_advanced_search": "Đi đến tìm kiếm nâng cao",
+      "no_estimate_found": "Không tìm thấy ước tính",
+      "work_item_search_placeholder": "Tìm theo mã hoặc tiêu đề mục công việc"
     },
     "footer": {
       "workspace_level": "Cấp không gian làm việc"
@@ -187,6 +189,7 @@
       "miscellaneous": "Khác",
       "preferences": "Tùy chọn",
       "help": "Trợ giúp"
-    }
+    },
+    "clear_context": "Xóa ngữ cảnh (Backspace)"
   }
 }

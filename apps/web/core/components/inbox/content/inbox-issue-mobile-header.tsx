@@ -6,6 +6,7 @@
 
 import { observer } from "mobx-react";
 import { Clock, FileStack, MoreHorizontal, PanelLeft, MoveRight } from "lucide-react";
+import { useTranslation } from "@plane/i18n";
 import { IconButton, getIconButtonStyling } from "@plane/propel/icon-button";
 import {
   LinkIcon,
@@ -79,6 +80,8 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
     isProjectAdmin,
     handleActionWithPermission,
   } = props;
+  // translation
+  const { t } = useTranslation();
   const router = useAppRouter();
   const { getProjectIdentifierById } = useProject();
 
@@ -116,14 +119,14 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
             variant="secondary"
             size="lg"
             icon={ChevronUpIcon}
-            aria-label="Previous work item"
+            aria-label={t("aria_labels.intake.previous_work_item")}
             onClick={() => handleInboxIssueNavigation("prev")}
           />
           <IconButton
             variant="secondary"
             size="lg"
             icon={ChevronDownIcon}
-            aria-label="Next work item"
+            aria-label={t("aria_labels.intake.next_work_item")}
             onClick={() => handleInboxIssueNavigation("next")}
           />
         </div>

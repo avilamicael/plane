@@ -771,7 +771,16 @@
       "warning": "警告"
     },
     "owned_by": "擁有者",
-    "subscriber": "訂閱者"
+    "subscriber": "訂閱者",
+    "set_date": "設定日期",
+    "click_to_copy": "點擊複製",
+    "completion_percentage": "完成百分比",
+    "toggle_workspace_level_search": "切換工作區層級搜尋",
+    "pro_feature": "Pro 功能",
+    "search_for_projects": "搜尋專案",
+    "enter_project_name": "輸入專案名稱",
+    "invalid_filter": "無效篩選器",
+    "invalid_filter_tooltip": "此篩選條件已失效。該屬性可能已被刪除，或您對它的存取權限已變更。"
   },
   "chart": {
     "x_axis": "X 軸",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "一次只能上傳一個檔案。",
     "file_size_limit": "檔案大小必須小於或等於 {size}MB。",
     "drag_and_drop": "拖曳到任何位置以上傳",
-    "delete": "刪除附件"
+    "delete": "刪除附件",
+    "click_or_drag_file": "點擊或將檔案拖曳至此",
+    "drop_here": "拖放至此..."
   },
   "label": {
     "select": "選擇標籤",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "無法取得執行個體詳細資料。",
       "description": "我們無法取得執行個體的詳細資料。別擔心，這可能只是連線問題。"
+    },
+    "not_ready": {
+      "title": "歡迎使用 Plane",
+      "description": "設定您的執行個體並建立第一個工作空間，開始管理專案和工作。",
+      "cta": "開始使用"
     }
   },
   "something_went_wrong_please_try_again_later": "發生錯誤。請稍後再試。",
@@ -1037,5 +1053,28 @@
       "images": "圖片",
       "upload": "上傳"
     }
+  },
+  "no_results_found": "找不到結果",
+  "learn_more": "瞭解更多",
+  "danger_zone": "危險區域",
+  "no_value": "無值",
+  "uploading": "上傳中...",
+  "search_for_shortcuts": "搜尋快速鍵",
+  "visit_profile": "檢視個人檔案",
+  "billing": {
+    "all_plans": "所有方案",
+    "monthly": "每月",
+    "yearly": "每年",
+    "quote_on_request": "價格需洽詢",
+    "per_user_per_month": "每位使用者每月",
+    "community_description": "無限的專案、工作項、週期、模組、頁面與儲存空間"
+  },
+  "latest_feature": {
+    "pages_facelift": "頁面煥然一新！隨心書寫，並讓 Galileo 幫你起步。"
+  },
+  "error_page": {
+    "title": "似乎發生了問題！",
+    "description": "我們會自動記錄這些錯誤並正在著手恢復。如果問題持續發生，請聯絡我們。同時，請嘗試重新整理頁面。",
+    "go_home": "返回首頁"
   }
 }

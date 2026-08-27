@@ -392,6 +392,10 @@
           "message": "Il titolo dell'elemento di lavoro non è abbastanza descrittivo per generare la descrizione. Prova con un altro titolo."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Questo elemento di lavoro è stato archiviato. Vai alla sezione Archivi per ripristinarlo.",
+      "action": "Vai agli Archivi"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Impossibile aggiornare gli elementi di lavoro",
         "message": "Il cambiamento di stato non è consentito per alcuni elementi di lavoro. Assicurati che il cambiamento di stato sia consentito."
       }
-    }
+    },
+    "select_work_items_to_delete": "Seleziona gli elementi di lavoro da eliminare"
   },
   "recurring_work_items": {
     "settings": {

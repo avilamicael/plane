@@ -392,6 +392,10 @@
           "message": "Tytuł elementu pracy jest zbyt mało szczegółowy, aby wygenerować opis. Spróbuj z innym tytułem."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Ten element pracy został zarchiwizowany. Przejdź do sekcji Archiwa, aby go przywrócić.",
+      "action": "Przejdź do Archiwów"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Nie można zaktualizować elementów pracy",
         "message": "Zmiana stanu nie jest dozwolona dla niektórych elementów pracy. Upewnij się, że zmiana stanu jest dozwolona."
       }
-    }
+    },
+    "select_work_items_to_delete": "Wybierz elementy pracy do usunięcia"
   },
   "recurring_work_items": {
     "settings": {

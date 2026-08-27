@@ -104,6 +104,25 @@
       "title": "Bu destana henüz iş öğesi eklemediniz.",
       "description": "Bu destana bazı iş öğeleri ekleyerek başlayın ve burada takip edin.",
       "cta_secondary": "İş öğeleri ekle"
+    },
+    "invalid_cycle": {
+      "title": "Döngü mevcut değil",
+      "description": "Aradığınız döngü mevcut değil veya silinmiş.",
+      "cta_primary": "Diğer döngüleri görüntüle"
+    },
+    "invalid_module": {
+      "title": "Modül mevcut değil",
+      "description": "Aradığınız modül mevcut değil veya silinmiş.",
+      "cta_primary": "Diğer modülleri görüntüle"
+    },
+    "invalid_view": {
+      "title": "Görünüm mevcut değil",
+      "description": "Aradığınız görünüm mevcut değil veya onu görüntüleme izniniz yok.",
+      "cta_primary": "Diğer görünümleri görüntüle"
+    },
+    "view_work_items": {
+      "title": "Görünümdeki iş öğeleri burada görünecek",
+      "description": "İş öğeleri, işin her bir parçasını takip etmenize yardımcı olur. Onlarla neler olduğunu, kimin çalıştığını ve neyin tamamlandığını görürsünüz."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Proje durumlarını etkinleştir",
       "description": "Durum, öncelik, bitiş tarihleri ve daha fazlası gibi özellikleri görüntülemek ve yönetmek için Proje Durumlarını etkinleştirin."
+    },
+    "invalid_view": {
+      "title": "Görünüm mevcut değil",
+      "description": "Aradığınız görünüm mevcut değil veya onu görüntüleme izniniz yok.",
+      "cta_primary": "Tüm iş öğelerine git"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Durum ekle",
         "description": "İş öğesinin ilerlediği durumları seçin."
       }
+    },
+    "projects": {
+      "title": "Henüz proje yok",
+      "description": "Projeler, hedef odaklı çalışmanın temelini oluşturur. Ekiplerinizi, görevlerinizi ve işleri tamamlamak için ihtiyacınız olan her şeyi yönetmenizi sağlar.",
+      "cta_secondary": "Projeler hakkında daha fazla bilgi"
     }
   }
 }

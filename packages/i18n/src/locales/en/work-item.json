@@ -392,6 +392,10 @@
           "message": "Work item title isn't informative enough to generate the description. Please try with a different title."
         }
       }
+    },
+    "archived_banner": {
+      "title": "This work item has been archived. Visit the Archives section to restore it.",
+      "action": "Go to archives"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Unable to update work items",
         "message": "State change is not allowed for some work items. Ensure the state change is allowed."
       }
-    }
+    },
+    "select_work_items_to_delete": "Select work items to delete"
   },
   "recurring_work_items": {
     "settings": {

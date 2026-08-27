@@ -31,6 +31,29 @@
       "hide_password": "Приховати пароль",
       "close_alert": "Закрити сповіщення",
       "close_popover": "Закрити спливаюче вікно"
+    },
+    "common": {
+      "plane_logo": "Логотип Plane",
+      "provider_logo": "Логотип {provider}",
+      "background_pattern": "Фоновий візерунок Plane",
+      "instance_failure_image": "Ілюстрація збою екземпляра",
+      "user_already_signed_in_image": "Користувач уже увійшов",
+      "page_not_found_image": "404 - Сторінку не знайдено"
+    },
+    "intake": {
+      "previous_work_item": "Попередня робоча одиниця",
+      "next_work_item": "Наступна робоча одиниця"
+    },
+    "sidebar": {
+      "main_sidebar": "Головна бічна панель",
+      "resize_sidebar": "Змінити розмір бічної панелі",
+      "peek_view": "Попередній перегляд бічної панелі"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Закрити попередження про ліміт вмісту"
+    },
+    "filters": {
+      "remove_filter": "Видалити фільтр"
     }
   }
 }

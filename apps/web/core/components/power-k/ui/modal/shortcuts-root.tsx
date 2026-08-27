@@ -7,6 +7,7 @@
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 // plane imports
+import { useTranslation } from "@plane/i18n";
 import { CloseIcon, SearchIcon } from "@plane/propel/icons";
 import { ScrollArea } from "@plane/propel/scrollarea";
 import { Input } from "@plane/ui";
@@ -22,6 +23,8 @@ type Props = {
 
 export function ShortcutsModal(props: Props) {
   const { isOpen, onClose } = props;
+  // i18n
+  const { t } = useTranslation();
   // states
   const [query, setQuery] = useState("");
   // store hooks
@@ -64,7 +67,7 @@ export function ShortcutsModal(props: Props) {
               <Dialog.Panel className="relative flex h-full items-center justify-center">
                 <div className="flex h-[61vh] w-full flex-col space-y-4 overflow-hidden rounded-lg bg-surface-1 py-5 shadow-raised-200 transition-all sm:w-[28rem]">
                   <Dialog.Title as="h3" className="flex justify-between px-5">
-                    <span className="text-16 font-medium">Keyboard shortcuts</span>
+                    <span className="text-16 font-medium">{t("keyboard_shortcuts")}</span>
                     <button type="button" onClick={handleClose}>
                       <CloseIcon className="h-4 w-4 text-secondary hover:text-primary" aria-hidden="true" />
                     </button>
@@ -78,7 +81,7 @@ export function ShortcutsModal(props: Props) {
                         type="text"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
-                        placeholder="Search for shortcuts"
+                        placeholder={t("search_for_shortcuts")}
                         className="w-full border-none bg-transparent py-1 text-11 text-secondary outline-none"
                         autoFocus
                         tabIndex={1}

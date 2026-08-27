@@ -215,7 +215,8 @@
         "everything": "すべて",
         "no_images": "画像なし"
       }
-    }
+    },
+    "search_placeholder": "ページを検索"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "色"
+    },
+    "content_limit_banner": {
+      "message": "コンテンツの上限に達したため、ライブ同期が停止しました。新しいページを作成するか、ネストされたページを使って同期を続けてください。"
+    },
+    "ai_menu": {
+      "add_to_next_line": "次の行に追加",
+      "replace_selection": "選択範囲を置き換え",
+      "regenerate_response": "回答を再生成"
     }
   }
 }

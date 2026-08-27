@@ -8,6 +8,7 @@ import React, { useEffect, useState, useCallback } from "react";
 // plane imports
 import { TOOLBAR_ITEMS } from "@plane/editor";
 import type { ToolbarMenuItem, EditorRefApi } from "@plane/editor";
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 import { Tooltip } from "@plane/propel/tooltip";
 import { cn } from "@plane/utils";
@@ -25,6 +26,8 @@ const toolbarItems = TOOLBAR_ITEMS.lite;
 
 export function IssueCommentToolbar(props: Props) {
   const { executeCommand, handleSubmit, isCommentEmpty, editorRef, isSubmitting, showSubmitButton } = props;
+  // i18n
+  const { t } = useTranslation();
   // states
   const [activeStates, setActiveStates] = useState<Record<string, boolean>>({});
 
@@ -109,7 +112,7 @@ export function IssueCommentToolbar(props: Props) {
               disabled={isCommentEmpty}
               loading={isSubmitting}
             >
-              Comment
+              {t("common.comment")}
             </Button>
           </div>
         )}

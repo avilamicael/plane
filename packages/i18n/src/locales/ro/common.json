@@ -771,7 +771,16 @@
       "warning": "Avertisment"
     },
     "owned_by": "Deținut de",
-    "subscriber": "Abonat"
+    "subscriber": "Abonat",
+    "set_date": "Setează data",
+    "click_to_copy": "Dă clic pentru a copia",
+    "completion_percentage": "Procent de finalizare",
+    "toggle_workspace_level_search": "Comută căutarea la nivel de spațiu de lucru",
+    "pro_feature": "Funcție Pro",
+    "search_for_projects": "Caută proiecte",
+    "enter_project_name": "Introdu numele proiectului",
+    "invalid_filter": "Filtru invalid",
+    "invalid_filter_tooltip": "Această condiție de filtrare nu mai este validă. Este posibil ca proprietatea să fi fost ștearsă sau ca accesul tău la ea să se fi schimbat."
   },
   "chart": {
     "x_axis": "axa-X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Se poate încărca doar un fișier o dată.",
     "file_size_limit": "Fișierul trebuie să aibă {size}MB sau mai puțin.",
     "drag_and_drop": "Trage și plasează oriunde pentru a încărca",
-    "delete": "Șterge atașamentul"
+    "delete": "Șterge atașamentul",
+    "click_or_drag_file": "Dă clic sau trage un fișier aici",
+    "drop_here": "Eliberează aici..."
   },
   "label": {
     "select": "Selectează eticheta",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Nu s-au putut prelua detaliile instanței.",
       "description": "Nu am putut prelua detaliile instanței. Nu vă faceți griji, ar putea fi doar o problemă de conexiune."
+    },
+    "not_ready": {
+      "title": "Bine ați venit la Plane",
+      "description": "Configurați instanța și creați primul spațiu de lucru pentru a începe să gestionați proiecte și activități.",
+      "cta": "Începeți"
     }
   },
   "something_went_wrong_please_try_again_later": "Ceva nu a funcționat. Te rugăm să încerci din nou mai târziu.",
@@ -1037,5 +1053,28 @@
       "images": "Imagini",
       "upload": "Încarcă"
     }
+  },
+  "no_results_found": "Niciun rezultat găsit",
+  "learn_more": "Află mai multe",
+  "danger_zone": "Zonă periculoasă",
+  "no_value": "Fără valoare",
+  "uploading": "Se încarcă...",
+  "search_for_shortcuts": "Caută scurtături",
+  "visit_profile": "Vezi profilul",
+  "billing": {
+    "all_plans": "Toate planurile",
+    "monthly": "Lunar",
+    "yearly": "Anual",
+    "quote_on_request": "Ofertă la cerere",
+    "per_user_per_month": "pe utilizator pe lună",
+    "community_description": "Proiecte, elemente de lucru, cicluri, module, pagini și stocare nelimitate"
+  },
+  "latest_feature": {
+    "pages_facelift": "Paginile au un aspect nou! Scrie orice și folosește Galileo ca să începi."
+  },
+  "error_page": {
+    "title": "Se pare că ceva nu a funcționat!",
+    "description": "Înregistrăm automat aceste erori și lucrăm la remedierea lor. Dacă problema persistă, contactați-ne. Între timp, încercați să reîmprospătați pagina.",
+    "go_home": "Mergi la pagina principală"
   }
 }

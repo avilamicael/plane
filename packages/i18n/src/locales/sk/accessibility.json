@@ -31,6 +31,29 @@
       "hide_password": "Skryť heslo",
       "close_alert": "Zavrieť upozornenie",
       "close_popover": "Zavrieť vyskakovacie okno"
+    },
+    "common": {
+      "plane_logo": "Logo Plane",
+      "provider_logo": "Logo {provider}",
+      "background_pattern": "Vzor pozadia Plane",
+      "instance_failure_image": "Ilustrácia zlyhania inštancie",
+      "user_already_signed_in_image": "Používateľ je už prihlásený",
+      "page_not_found_image": "404 - Stránka sa nenašla"
+    },
+    "intake": {
+      "previous_work_item": "Predchádzajúca pracovná položka",
+      "next_work_item": "Ďalšia pracovná položka"
+    },
+    "sidebar": {
+      "main_sidebar": "Hlavný bočný panel",
+      "resize_sidebar": "Zmeniť veľkosť bočného panela",
+      "peek_view": "Náhľad bočného panela"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Zavrieť upozornenie na limit obsahu"
+    },
+    "filters": {
+      "remove_filter": "Odstrániť filter"
     }
   }
 }

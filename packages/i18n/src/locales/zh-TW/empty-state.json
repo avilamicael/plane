@@ -104,6 +104,25 @@
       "title": "您尚未向此史詩新增工作項。",
       "description": "開始向此史詩新增一些工作項並在此處追蹤它們。",
       "cta_secondary": "新增工作項"
+    },
+    "invalid_cycle": {
+      "title": "週期不存在",
+      "description": "您尋找的週期不存在或已被刪除。",
+      "cta_primary": "檢視其他週期"
+    },
+    "invalid_module": {
+      "title": "模組不存在",
+      "description": "您尋找的模組不存在或已被刪除。",
+      "cta_primary": "檢視其他模組"
+    },
+    "invalid_view": {
+      "title": "檢視不存在",
+      "description": "您尋找的檢視不存在，或您沒有檢視權限。",
+      "cta_primary": "查看其他檢視"
+    },
+    "view_work_items": {
+      "title": "該檢視的工作事項將顯示在這裡",
+      "description": "工作事項幫助你追蹤每一項具體工作。透過工作事項，隨時了解進度、負責人以及已完成的內容。"
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "啟用專案狀態",
       "description": "啟用專案狀態以檢視和管理狀態、優先順序、到期日等屬性。"
+    },
+    "invalid_view": {
+      "title": "檢視不存在",
+      "description": "您尋找的檢視不存在，或您沒有檢視權限。",
+      "cta_primary": "前往全部工作事項"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "新增狀態",
         "description": "選擇工作項目經過的狀態。"
       }
+    },
+    "projects": {
+      "title": "暫無專案",
+      "description": "專案是目標導向工作的基礎。你可以在專案中管理團隊、任務以及完成工作所需的一切。",
+      "cta_secondary": "了解更多關於專案的資訊"
     }
   }
 }

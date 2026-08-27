@@ -31,6 +31,9 @@
         "title": "删除工作项",
         "content": "您确定要删除工作项 {value} 吗？",
         "success": "工作项删除成功"
+      },
+      "select_duplicate": {
+        "title": "选择工作项"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "选择一个工作项以查看其详细信息。"
+      },
+      "no_request_closed": {
+        "title": "暂无已关闭的请求"
       }
     }
   }

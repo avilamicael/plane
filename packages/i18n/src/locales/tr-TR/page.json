@@ -215,7 +215,8 @@
         "everything": "Her şey",
         "no_images": "Görseller olmadan"
       }
-    }
+    },
+    "search_placeholder": "Sayfa ara"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "Renk"
+    },
+    "content_limit_banner": {
+      "message": "İçerik sınırına ulaşıldı ve canlı eşitleme kapalı. Eşitlemeye devam etmek için yeni bir sayfa oluşturun veya iç içe sayfalar kullanın."
+    },
+    "ai_menu": {
+      "add_to_next_line": "Sonraki satıra ekle",
+      "replace_selection": "Seçimi değiştir",
+      "regenerate_response": "Yanıtı yeniden oluştur"
     }
   }
 }

@@ -35,7 +35,8 @@
         "title": "Invitar miembros",
         "sub_heading": "Invita miembros para trabajar en tu proyecto.",
         "select_co_worker": "Seleccionar compañero de trabajo"
-      }
+      },
+      "guest_access": "Acceso de invitados"
     },
     "states": {
       "heading": "Estados",
@@ -210,7 +211,9 @@
       },
       "switch": "Cambiar sistema de estimaciones",
       "current": "Sistema de estimaciones actual",
-      "select": "Seleccionar un sistema de estimaciones"
+      "select": "Seleccionar un sistema de estimaciones",
+      "list_heading": "Lista de estimaciones",
+      "archived_heading": "Estimaciones archivadas"
     },
     "automations": {
       "label": "Automatizaciones",

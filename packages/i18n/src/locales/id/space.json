@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Waduh! Ini tidak terlihat bagus.",
+      "description": "Itu membuat Plane jatuh — permainan kata yang disengaja. Tapi tenang, para teknisi kami sudah diberi tahu. Jika Anda punya detail lain, kirim pesan ke",
+      "or_on_our": "atau kunjungi"
+    },
+    "not_found": {
+      "title": "Itu tidak berhasil",
+      "description": "Periksa URL yang Anda masukkan di bilah alamat browser lalu coba lagi."
+    },
+    "board_not_found": {
+      "description": "Papan publik ini tidak ada. Silakan periksa URL-nya."
+    },
+    "user_logged_in": {
+      "title": "Bagus! Tinggal satu langkah lagi.",
+      "description": "Masukkan URL berbagi publik atau tautan tampilan maupun Halaman yang ingin Anda lihat ke bilah alamat browser."
     }
   }
 }

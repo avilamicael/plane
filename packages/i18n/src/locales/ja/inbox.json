@@ -31,6 +31,9 @@
         "title": "作業項目を削除",
         "content": "作業項目{value}を削除してもよろしいですか？",
         "success": "作業項目を削除しました"
+      },
+      "select_duplicate": {
+        "title": "作業項目を選択"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "詳細を表示する作業項目を選択してください。"
+      },
+      "no_request_closed": {
+        "title": "まだ完了したリクエストはありません"
       }
     }
   }

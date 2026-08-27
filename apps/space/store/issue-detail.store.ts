@@ -9,6 +9,7 @@ import { makeObservable, observable, action, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 import { v4 as uuidv4 } from "uuid";
 // plane imports
+import { i18nInstance } from "@plane/i18n";
 import { SitesFileService, SitesIssueService } from "@plane/services";
 import type { TFileSignedURLResponse, TIssuePublicComment } from "@plane/types";
 import { EFileAssetType } from "@plane/types";
@@ -246,7 +247,7 @@ export class IssueDetailStore implements IIssueDetailStore {
       return res;
     } catch (error) {
       console.log("Error in uploading comment asset:", error);
-      throw new Error("Asset upload failed. Please try again later.");
+      throw new Error(i18nInstance.t("issue.comments.upload.error"));
     }
   };
 
@@ -263,7 +264,7 @@ export class IssueDetailStore implements IIssueDetailStore {
       return res;
     } catch (error) {
       console.log("Error in uploading comment asset:", error);
-      throw new Error("Asset upload failed. Please try again later.");
+      throw new Error(i18nInstance.t("issue.comments.upload.error"));
     }
   };
 

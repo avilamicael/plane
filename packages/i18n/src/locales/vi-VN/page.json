@@ -215,7 +215,8 @@
         "everything": "Mọi thứ",
         "no_images": "Không có hình ảnh"
       }
-    }
+    },
+    "search_placeholder": "Tìm kiếm trang"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "Màu sắc"
+    },
+    "content_limit_banner": {
+      "message": "Đã đạt giới hạn nội dung và đồng bộ trực tiếp đã tắt. Hãy tạo trang mới hoặc dùng trang lồng nhau để tiếp tục đồng bộ."
+    },
+    "ai_menu": {
+      "add_to_next_line": "Thêm vào dòng tiếp theo",
+      "replace_selection": "Thay thế vùng chọn",
+      "regenerate_response": "Tạo lại phản hồi"
     }
   }
 }

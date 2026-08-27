@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Imaginea spațiului de lucru a fost eliminată cu succes."
       }
+    },
+    "not_found": {
+      "title": "Spațiul de lucru nu a fost găsit",
+      "description": "Nu s-a găsit niciun spațiu de lucru pentru acest URL. Este posibil să nu existe sau să nu ai autorizația de a-l vedea."
+    },
+    "not_authorized": {
+      "title": "Neautorizat!",
+      "description": "Nu ești membru al acestui spațiu de lucru. Contactează administratorul spațiului de lucru pentru a primi o invitație sau verifică invitațiile în așteptare.",
+      "check_pending_invites": "Verifică invitațiile în așteptare"
+    },
+    "create_new": "Creează un spațiu de lucru nou"
+  },
+  "workspace_invitation": {
+    "invited_title": "Ai fost invitat în {workspace}",
+    "already_member_title": "Ești deja membru în {workspace}",
+    "description": "Spațiul de lucru este locul în care creezi proiecte, colaborezi la activități și organizezi diferite fluxuri de lucru în contul tău Plane.",
+    "not_found": "Invitație negăsită",
+    "inactive_title": "Acest link de invitație nu mai este activ.",
+    "start_from_empty_project": "Sau începe cu un proiect gol",
+    "actions": {
+      "accept": "Acceptă",
+      "ignore": "Ignoră",
+      "continue_to_home": "Continuă către pagina principală",
+      "sign_in_to_continue": "Autentifică-te pentru a continua",
+      "join_community": "Alătură-te comunității noastre de creatori activi"
     }
   }
 }

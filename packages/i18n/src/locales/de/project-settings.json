@@ -35,7 +35,8 @@
         "title": "Mitglieder einladen",
         "sub_heading": "Laden Sie Mitglieder in das Projekt ein.",
         "select_co_worker": "Wählen Sie einen Mitarbeiter"
-      }
+      },
+      "guest_access": "Gastzugriff"
     },
     "states": {
       "heading": "Status",
@@ -210,7 +211,9 @@
       },
       "switch": "Schätzsystem wechseln",
       "current": "Aktuelles Schätzsystem",
-      "select": "Wählen Sie ein Schätzsystem"
+      "select": "Wählen Sie ein Schätzsystem",
+      "list_heading": "Liste der Schätzungen",
+      "archived_heading": "Archivierte Schätzungen"
     },
     "automations": {
       "label": "Automatisierungen",

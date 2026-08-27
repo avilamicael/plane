@@ -21,7 +21,8 @@
     "in_your_timezone": "În fusul tău orar",
     "transfer_work_items": "Transferați {count} elemente de lucru",
     "transfer": {
-      "no_cycles_available": "Nu există alte cicluri disponibile pentru a transfera elemente de lucru."
+      "no_cycles_available": "Nu există alte cicluri disponibile pentru a transfera elemente de lucru.",
+      "title": "Transferă elemente de lucru"
     },
     "date_range": "Interval de date",
     "add_date": "Adaugă data",
@@ -140,7 +141,8 @@
         "description": "Pentru a păstra proiectul ordonat, arhivează ciclurile completate. Le vei găsi aici după arhivare."
       }
     },
-    "delete_cycle": "Șterge ciclul"
+    "delete_cycle": "Șterge ciclul",
+    "search_for_a_cycle": "Caută un ciclu..."
   },
   "project_views": {
     "empty_state": {
@@ -301,6 +303,11 @@
         "title": "Niciun document arhivat încă",
         "description": "Arhivează documentele de care nu mai ai nevoie. Le poți accesa de aici oricând."
       }
+    },
+    "not_found": {
+      "title": "Pagina nu a fost găsită",
+      "description": "Pagina pe care încerci să o accesezi nu există sau nu ai permisiunea de a o vedea.",
+      "cta": "Vezi alte pagini"
     }
   },
   "disabled_project": {
@@ -363,7 +370,10 @@
       "due_date": "Termen limită",
       "created_at": "Dată creare",
       "manual": "Manual"
-    }
+    },
+    "no_matching_modules": "Niciun modul găsit",
+    "remove_filters_to_see_all_modules": "Elimină filtrele pentru a vedea toate modulele",
+    "remove_search_criteria_to_see_all_modules": "Elimină criteriile de căutare pentru a vedea toate modulele"
   },
   "project_members": {
     "full_name": "Nume complet",

@@ -31,6 +31,29 @@
       "hide_password": "Sembunyikan kata sandi",
       "close_alert": "Tutup peringatan",
       "close_popover": "Tutup popover"
+    },
+    "common": {
+      "plane_logo": "Logo Plane",
+      "provider_logo": "Logo {provider}",
+      "background_pattern": "Pola latar belakang Plane",
+      "instance_failure_image": "Ilustrasi kegagalan instance",
+      "user_already_signed_in_image": "Pengguna sudah masuk",
+      "page_not_found_image": "404 - Halaman tidak ditemukan"
+    },
+    "intake": {
+      "previous_work_item": "Item kerja sebelumnya",
+      "next_work_item": "Item kerja berikutnya"
+    },
+    "sidebar": {
+      "main_sidebar": "Bilah sisi utama",
+      "resize_sidebar": "Ubah ukuran bilah sisi",
+      "peek_view": "Pratinjau bilah sisi"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Tutup peringatan batas konten"
+    },
+    "filters": {
+      "remove_filter": "Hapus filter"
     }
   }
 }

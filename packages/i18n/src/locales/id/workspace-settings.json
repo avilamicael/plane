@@ -159,7 +159,9 @@
             "message": "Kunci baru berhasil dibuat ulang."
           }
         },
-        "delete_webhook": "Hapus webhook"
+        "delete_webhook": "Hapus webhook",
+        "enable_webhook": "Aktifkan webhook",
+        "delete_warning": "Setelah webhook dihapus, webhook tidak dapat dipulihkan. Peristiwa berikutnya tidak akan lagi dikirim ke webhook ini."
       },
       "api_tokens": {
         "heading": "Token API",
@@ -182,7 +184,9 @@
             "message": "Token API tidak dapat dihapus"
           }
         },
-        "expiration_required": "Silakan pilih tanggal kedaluwarsa."
+        "expiration_required": "Silakan pilih tanggal kedaluwarsa.",
+        "copy_secret_key": "Salin kunci rahasia",
+        "delete_token": "Hapus token"
       },
       "integrations": {
         "title": "Integrasi",

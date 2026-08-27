@@ -104,6 +104,25 @@
       "title": "K tomuto epiku ste ešte nepridali pracovné položky.",
       "description": "Začnite pridaním niektorých pracovných položiek k tomuto epiku a sledujte ich tu.",
       "cta_secondary": "Pridať pracovné položky"
+    },
+    "invalid_cycle": {
+      "title": "Cyklus neexistuje",
+      "description": "Cyklus, ktorý hľadáte, neexistuje alebo bol zmazaný.",
+      "cta_primary": "Zobraziť ďalšie cykly"
+    },
+    "invalid_module": {
+      "title": "Modul neexistuje",
+      "description": "Modul, ktorý hľadáte, neexistuje alebo bol zmazaný.",
+      "cta_primary": "Zobraziť ďalšie moduly"
+    },
+    "invalid_view": {
+      "title": "Pohľad neexistuje",
+      "description": "Pohľad, ktorý hľadáte, neexistuje alebo nemáte oprávnenie ho zobraziť.",
+      "cta_primary": "Zobraziť ďalšie pohľady"
+    },
+    "view_work_items": {
+      "title": "Pracovné položky tohto pohľadu sa zobrazia tu",
+      "description": "Pracovné položky vám pomáhajú sledovať jednotlivé časti práce. Vďaka nim viete, čo sa deje, kto na tom pracuje a čo je hotové."
     }
   },
   "workspace_empty_state": {
@@ -194,6 +213,11 @@
     "project_overview_state_sidebar": {
       "title": "Povoliť stavy projektu",
       "description": "Povoľte stavy projektu na zobrazenie a správu vlastností ako stav, priorita, termíny a ďalšie."
+    },
+    "invalid_view": {
+      "title": "Pohľad neexistuje",
+      "description": "Pohľad, ktorý hľadáte, neexistuje alebo nemáte oprávnenie ho zobraziť.",
+      "cta_primary": "Prejsť na Všetky pracovné položky"
     }
   },
   "settings_empty_state": {
@@ -265,6 +289,11 @@
         "title": "Pridať stavy",
         "description": "Vyberte stavy, cez ktoré pracovná položka prechádza."
       }
+    },
+    "projects": {
+      "title": "Zatiaľ žiadne projekty",
+      "description": "Projekty tvoria základ práce zameranej na ciele. Umožňujú spravovať tímy, úlohy a všetko, čo potrebujete na dokončenie práce.",
+      "cta_secondary": "Zistiť viac o projektoch"
     }
   }
 }

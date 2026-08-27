@@ -109,7 +109,7 @@ export function CreateUpdateModuleLinkModal(props: Props) {
                     onChange={onChange}
                     ref={ref}
                     hasError={Boolean(errors.url)}
-                    placeholder="Type or paste a URL"
+                    placeholder={t("common.type_or_paste_a_url")}
                     className="w-full"
                   />
                 )}
@@ -131,7 +131,7 @@ export function CreateUpdateModuleLinkModal(props: Props) {
                     onChange={onChange}
                     ref={ref}
                     hasError={Boolean(errors.title)}
-                    placeholder="What you'd like to see this link as"
+                    placeholder={t("common.link_title_placeholder")}
                     className="w-full"
                   />
                 )}

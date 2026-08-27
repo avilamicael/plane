@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Aïe ! Ça n’a pas l’air bon.",
+      "description": "Cela a fait planter Plane, le jeu de mots est volontaire. Pas d’inquiétude : nos ingénieurs ont été prévenus. Si vous avez plus de détails, écrivez à",
+      "or_on_our": "ou sur notre"
+    },
+    "not_found": {
+      "title": "Cela n’a pas fonctionné",
+      "description": "Vérifiez l’URL saisie dans la barre d’adresse du navigateur et réessayez."
+    },
+    "board_not_found": {
+      "description": "Ce tableau public n’existe pas. Veuillez vérifier l’URL."
+    },
+    "user_logged_in": {
+      "title": "Parfait ! Il ne reste plus qu’une étape.",
+      "description": "Saisissez dans la barre d’adresse du navigateur l’URL de partage public ou le lien de la vue ou de la Page que vous souhaitez consulter."
     }
   }
 }

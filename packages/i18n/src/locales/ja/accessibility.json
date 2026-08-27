@@ -31,6 +31,29 @@
       "hide_password": "パスワードを非表示",
       "close_alert": "アラートを閉じる",
       "close_popover": "ポップオーバーを閉じる"
+    },
+    "common": {
+      "plane_logo": "Planeのロゴ",
+      "provider_logo": "{provider} のロゴ",
+      "background_pattern": "Plane の背景パターン",
+      "instance_failure_image": "インスタンスエラーのイラスト",
+      "user_already_signed_in_image": "ユーザーはすでにサインインしています",
+      "page_not_found_image": "404 - ページが見つかりません"
+    },
+    "intake": {
+      "previous_work_item": "前の作業項目",
+      "next_work_item": "次の作業項目"
+    },
+    "sidebar": {
+      "main_sidebar": "メインサイドバー",
+      "resize_sidebar": "サイドバーのサイズを変更",
+      "peek_view": "サイドバーのプレビュー"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "コンテンツ上限の警告を閉じる"
+    },
+    "filters": {
+      "remove_filter": "フィルターを削除"
     }
   }
 }

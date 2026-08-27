@@ -771,7 +771,16 @@
       "warning": "Peringatan"
     },
     "owned_by": "Dimiliki oleh",
-    "subscriber": "Pelanggan"
+    "subscriber": "Pelanggan",
+    "set_date": "Atur tanggal",
+    "click_to_copy": "Klik untuk menyalin",
+    "completion_percentage": "Persentase penyelesaian",
+    "toggle_workspace_level_search": "Alihkan pencarian tingkat ruang kerja",
+    "pro_feature": "Fitur Pro",
+    "search_for_projects": "Cari proyek",
+    "enter_project_name": "Masukkan nama proyek",
+    "invalid_filter": "Filter tidak valid",
+    "invalid_filter_tooltip": "Kondisi filter ini tidak lagi valid. Properti mungkin telah dihapus atau akses Anda ke properti tersebut telah berubah."
   },
   "chart": {
     "x_axis": "Sumbu-X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Hanya satu file yang dapat diunggah pada satu waktu.",
     "file_size_limit": "File harus berukuran {size}MB atau lebih kecil.",
     "drag_and_drop": "Seret dan jatuhkan di mana saja untuk mengunggah",
-    "delete": "Hapus lampiran"
+    "delete": "Hapus lampiran",
+    "click_or_drag_file": "Klik atau seret berkas ke sini",
+    "drop_here": "Lepaskan di sini..."
   },
   "label": {
     "select": "Pilih label",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Tidak dapat memuat detail instance.",
       "description": "Kami tidak dapat memuat detail instance. Jangan khawatir, mungkin hanya masalah koneksi."
+    },
+    "not_ready": {
+      "title": "Selamat datang di Plane",
+      "description": "Siapkan instance Anda dan buat ruang kerja pertama untuk mulai mengelola proyek dan pekerjaan.",
+      "cta": "Mulai"
     }
   },
   "something_went_wrong_please_try_again_later": "Terjadi kesalahan. Silakan coba lagi nanti.",
@@ -1037,5 +1053,28 @@
       "images": "Gambar",
       "upload": "Unggah"
     }
+  },
+  "no_results_found": "Tidak ada hasil ditemukan",
+  "learn_more": "Pelajari lebih lanjut",
+  "danger_zone": "Zona berbahaya",
+  "no_value": "Tanpa nilai",
+  "uploading": "Mengunggah...",
+  "search_for_shortcuts": "Cari pintasan",
+  "visit_profile": "Lihat profil",
+  "billing": {
+    "all_plans": "Semua paket",
+    "monthly": "Bulanan",
+    "yearly": "Tahunan",
+    "quote_on_request": "Penawaran berdasarkan permintaan",
+    "per_user_per_month": "per pengguna per bulan",
+    "community_description": "Proyek, item pekerjaan, siklus, modul, halaman, dan penyimpanan tanpa batas"
+  },
+  "latest_feature": {
+    "pages_facelift": "Halaman tampil dengan wajah baru! Tulis apa saja dan gunakan Galileo untuk memulai."
+  },
+  "error_page": {
+    "title": "Sepertinya ada yang salah!",
+    "description": "Kami mencatat kesalahan ini secara otomatis dan sedang memperbaikinya. Jika masalah berlanjut, hubungi kami. Sementara itu, coba muat ulang halaman.",
+    "go_home": "Ke beranda"
   }
 }

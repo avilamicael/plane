@@ -215,7 +215,8 @@
         "everything": "Everything",
         "no_images": "No images"
       }
-    }
+    },
+    "search_placeholder": "Search pages"
   },
   "page_editor": {
     "lock_control": {
@@ -230,6 +231,14 @@
     },
     "toolbar": {
       "color": "Color"
+    },
+    "content_limit_banner": {
+      "message": "Content limit reached and live sync is off. Create a new page or use nested pages to continue syncing."
+    },
+    "ai_menu": {
+      "add_to_next_line": "Add to next line",
+      "replace_selection": "Replace selection",
+      "regenerate_response": "Re-generate response"
     }
   }
 }

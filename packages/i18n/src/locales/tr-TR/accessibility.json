@@ -31,6 +31,29 @@
       "hide_password": "Şifreyi gizle",
       "close_alert": "Uyarıyı kapat",
       "close_popover": "Açılır pencereyi kapat"
+    },
+    "common": {
+      "plane_logo": "Plane logosu",
+      "provider_logo": "{provider} logosu",
+      "background_pattern": "Plane arka plan deseni",
+      "instance_failure_image": "Örnek hatası görseli",
+      "user_already_signed_in_image": "Kullanıcı zaten giriş yapmış",
+      "page_not_found_image": "404 - Sayfa bulunamadı"
+    },
+    "intake": {
+      "previous_work_item": "Önceki iş öğesi",
+      "next_work_item": "Sonraki iş öğesi"
+    },
+    "sidebar": {
+      "main_sidebar": "Ana kenar çubuğu",
+      "resize_sidebar": "Kenar çubuğunu yeniden boyutlandır",
+      "peek_view": "Kenar çubuğu önizlemesi"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "İçerik sınırı uyarısını kapat"
+    },
+    "filters": {
+      "remove_filter": "Filtreyi kaldır"
     }
   }
 }

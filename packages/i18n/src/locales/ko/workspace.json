@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "워크스페이스 이미지가 성공적으로 제거되었습니다."
       }
+    },
+    "not_found": {
+      "title": "워크스페이스를 찾을 수 없습니다",
+      "description": "이 URL에 해당하는 워크스페이스를 찾을 수 없습니다. 존재하지 않거나 볼 수 있는 권한이 없을 수 있습니다."
+    },
+    "not_authorized": {
+      "title": "권한이 없습니다!",
+      "description": "이 워크스페이스의 멤버가 아닙니다. 워크스페이스 관리자에게 초대를 요청하거나 대기 중인 초대를 확인하세요.",
+      "check_pending_invites": "대기 중인 초대 확인"
+    },
+    "create_new": "새 워크스페이스 만들기"
+  },
+  "workspace_invitation": {
+    "invited_title": "{workspace}에 초대되었습니다",
+    "already_member_title": "이미 {workspace}의 멤버입니다",
+    "description": "작업 공간은 Plane 계정에서 프로젝트를 만들고, 작업 항목에서 협업하며, 다양한 업무 흐름을 정리하는 곳입니다.",
+    "not_found": "초대를 찾을 수 없습니다",
+    "inactive_title": "이 초대 링크는 더 이상 유효하지 않습니다.",
+    "start_from_empty_project": "또는 빈 프로젝트로 시작하기",
+    "actions": {
+      "accept": "수락",
+      "ignore": "무시",
+      "continue_to_home": "홈으로 이동",
+      "sign_in_to_continue": "계속하려면 로그인하세요",
+      "join_community": "활발한 크리에이터 커뮤니티에 참여하기"
     }
   }
 }

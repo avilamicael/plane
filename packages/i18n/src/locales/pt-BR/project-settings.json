@@ -35,7 +35,8 @@
         "title": "Convidar membros",
         "sub_heading": "Convide membros para trabalhar em seu projeto.",
         "select_co_worker": "Selecionar colega de trabalho"
-      }
+      },
+      "guest_access": "Acesso de convidados"
     },
     "states": {
       "heading": "Estados",
@@ -210,7 +211,9 @@
       },
       "switch": "Alternar sistema de estimativas",
       "current": "Sistema de estimativas atual",
-      "select": "Selecione um sistema de estimativas"
+      "select": "Selecione um sistema de estimativas",
+      "list_heading": "Lista de estimativas",
+      "archived_heading": "Estimativas arquivadas"
     },
     "automations": {
       "label": "Automações",

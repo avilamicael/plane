@@ -771,7 +771,16 @@
       "warning": "Ostrzeżenie"
     },
     "owned_by": "Właściciel",
-    "subscriber": "Subskrybent"
+    "subscriber": "Subskrybent",
+    "set_date": "Ustaw datę",
+    "click_to_copy": "Kliknij, aby skopiować",
+    "completion_percentage": "Procent ukończenia",
+    "toggle_workspace_level_search": "Przełącz wyszukiwanie na poziomie przestrzeni roboczej",
+    "pro_feature": "Funkcja Pro",
+    "search_for_projects": "Szukaj projektów",
+    "enter_project_name": "Wprowadź nazwę projektu",
+    "invalid_filter": "Nieprawidłowy filtr",
+    "invalid_filter_tooltip": "Ten warunek filtra nie jest już prawidłowy. Właściwość mogła zostać usunięta lub Twój dostęp do niej mógł się zmienić."
   },
   "chart": {
     "x_axis": "Oś X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "Możesz przesłać tylko jeden plik naraz.",
     "file_size_limit": "Plik musi być mniejszy niż {size}MB.",
     "drag_and_drop": "Przeciągnij plik w dowolne miejsce, aby przesłać",
-    "delete": "Usuń załącznik"
+    "delete": "Usuń załącznik",
+    "click_or_drag_file": "Kliknij lub przeciągnij plik tutaj",
+    "drop_here": "Upuść tutaj..."
   },
   "label": {
     "select": "Wybierz etykietę",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Nie udało się pobrać szczegółów instancji.",
       "description": "Nie udało nam się pobrać szczegółów instancji. Bez obaw, to może być tylko problem z połączeniem."
+    },
+    "not_ready": {
+      "title": "Witamy w Plane",
+      "description": "Skonfiguruj instancję i utwórz pierwszy obszar roboczy, aby zacząć zarządzać projektami i pracą.",
+      "cta": "Rozpocznij"
     }
   },
   "something_went_wrong_please_try_again_later": "Coś poszło nie tak. Spróbuj ponownie później.",
@@ -1037,5 +1053,28 @@
       "images": "Obrazy",
       "upload": "Prześlij"
     }
+  },
+  "no_results_found": "Nie znaleziono wyników",
+  "learn_more": "Dowiedz się więcej",
+  "danger_zone": "Strefa zagrożenia",
+  "no_value": "Brak wartości",
+  "uploading": "Przesyłanie...",
+  "search_for_shortcuts": "Szukaj skrótów",
+  "visit_profile": "Zobacz profil",
+  "billing": {
+    "all_plans": "Wszystkie plany",
+    "monthly": "Co miesiąc",
+    "yearly": "Co roku",
+    "quote_on_request": "Wycena na życzenie",
+    "per_user_per_month": "za użytkownika miesięcznie",
+    "community_description": "Nieograniczone projekty, elementy pracy, cykle, moduły, strony i przestrzeń dyskowa"
+  },
+  "latest_feature": {
+    "pages_facelift": "Strony w nowej odsłonie! Napisz cokolwiek i skorzystaj z Galileo, aby zacząć."
+  },
+  "error_page": {
+    "title": "Wygląda na to, że coś poszło nie tak!",
+    "description": "Automatycznie rejestrujemy te błędy i pracujemy nad przywróceniem działania. Jeśli problem będzie się powtarzał, skontaktuj się z nami. W międzyczasie spróbuj odświeżyć stronę.",
+    "go_home": "Przejdź do strony głównej"
   }
 }

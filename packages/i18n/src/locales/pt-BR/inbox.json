@@ -31,6 +31,9 @@
         "title": "Excluir item de trabalho",
         "content": "Tem certeza de que deseja excluir o item de trabalho {value}?",
         "success": "Item de trabalho excluído com sucesso"
+      },
+      "select_duplicate": {
+        "title": "Selecione o item de trabalho"
       }
     },
     "errors": {
@@ -81,6 +84,9 @@
       },
       "detail": {
         "title": "Selecione um item de trabalho para visualizar seus detalhes."
+      },
+      "no_request_closed": {
+        "title": "Nenhuma solicitação encerrada ainda"
       }
     }
   }

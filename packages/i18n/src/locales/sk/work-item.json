@@ -392,6 +392,10 @@
           "message": "Názov pracovnej položky nie je dostatočne výstižný na vygenerovanie popisu. Skúste iný názov."
         }
       }
+    },
+    "archived_banner": {
+      "title": "Táto pracovná položka bola archivovaná. Prejdite do sekcie Archívy a obnovte ju.",
+      "action": "Prejsť do Archívov"
     }
   },
   "sub_work_item": {
@@ -452,7 +456,8 @@
         "title": "Nemožno aktualizovať pracovné položky",
         "message": "Zmena stavu nie je povolená pre niektoré pracovné položky. Uistite sa, že zmena stavu je povolená."
       }
-    }
+    },
+    "select_work_items_to_delete": "Vyberte pracovné položky na odstránenie"
   },
   "recurring_work_items": {
     "settings": {

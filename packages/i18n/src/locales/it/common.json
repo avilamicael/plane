@@ -771,7 +771,16 @@
       "warning": "Avviso"
     },
     "owned_by": "Di proprietà di",
-    "subscriber": "Iscritto"
+    "subscriber": "Iscritto",
+    "set_date": "Imposta data",
+    "click_to_copy": "Clicca per copiare",
+    "completion_percentage": "Percentuale di completamento",
+    "toggle_workspace_level_search": "Attiva/disattiva la ricerca a livello di spazio di lavoro",
+    "pro_feature": "Funzionalità Pro",
+    "search_for_projects": "Cerca progetti",
+    "enter_project_name": "Inserisci il nome del progetto",
+    "invalid_filter": "Filtro non valido",
+    "invalid_filter_tooltip": "Questa condizione di filtro non è più valida. La proprietà potrebbe essere stata eliminata o il tuo accesso ad essa potrebbe essere cambiato."
   },
   "chart": {
     "x_axis": "Asse X",
@@ -817,7 +826,9 @@
     "only_one_file_allowed": "È possibile caricare un solo file alla volta.",
     "file_size_limit": "Il file deve essere di {size}MB o meno.",
     "drag_and_drop": "Trascina e rilascia ovunque per caricare",
-    "delete": "Elimina allegato"
+    "delete": "Elimina allegato",
+    "click_or_drag_file": "Clicca o trascina un file qui",
+    "drop_here": "Rilascia qui..."
   },
   "label": {
     "select": "Seleziona etichetta",
@@ -966,6 +977,11 @@
     "failure": {
       "title": "Impossibile recuperare i dettagli dell’istanza.",
       "description": "Non siamo riusciti a recuperare i dettagli dell’istanza. Niente paura, potrebbe trattarsi solo di un problema di connessione."
+    },
+    "not_ready": {
+      "title": "Benvenuto in Plane",
+      "description": "Configura la tua istanza e crea la tua prima area di lavoro per iniziare a gestire progetti e attività.",
+      "cta": "Inizia"
     }
   },
   "something_went_wrong_please_try_again_later": "Qualcosa è andato storto. Riprova più tardi.",
@@ -1037,5 +1053,28 @@
       "images": "Immagini",
       "upload": "Carica"
     }
+  },
+  "no_results_found": "Nessun risultato trovato",
+  "learn_more": "Scopri di più",
+  "danger_zone": "Zona pericolosa",
+  "no_value": "Nessun valore",
+  "uploading": "Caricamento...",
+  "search_for_shortcuts": "Cerca scorciatoie",
+  "visit_profile": "Vai al profilo",
+  "billing": {
+    "all_plans": "Tutti i piani",
+    "monthly": "Mensile",
+    "yearly": "Annuale",
+    "quote_on_request": "Preventivo su richiesta",
+    "per_user_per_month": "per utente al mese",
+    "community_description": "Progetti, elementi di lavoro, cicli, moduli, pagine e spazio di archiviazione illimitati"
+  },
+  "latest_feature": {
+    "pages_facelift": "Le pagine hanno un nuovo aspetto! Scrivi quello che vuoi e usa Galileo per iniziare."
+  },
+  "error_page": {
+    "title": "Sembra che qualcosa sia andato storto!",
+    "description": "Registriamo questi errori automaticamente e stiamo lavorando per ripristinare tutto. Se il problema persiste, contattaci. Nel frattempo, prova ad aggiornare la pagina.",
+    "go_home": "Vai alla home"
   }
 }

@@ -35,7 +35,8 @@
         "title": "Zaproś członków",
         "sub_heading": "Zaproś członków do projektu.",
         "select_co_worker": "Wybierz współpracownika"
-      }
+      },
+      "guest_access": "Dostęp gościa"
     },
     "states": {
       "heading": "Stany",
@@ -210,7 +211,9 @@
       },
       "switch": "Przełącz system szacowania",
       "current": "Obecny system szacowania",
-      "select": "Wybierz system szacowania"
+      "select": "Wybierz system szacowania",
+      "list_heading": "Lista estymat",
+      "archived_heading": "Zarchiwizowane estymaty"
     },
     "automations": {
       "label": "Automatyzacja",

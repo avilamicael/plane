@@ -159,7 +159,9 @@
             "message": "Đã tạo lại khóa mới thành công."
           }
         },
-        "delete_webhook": "Xóa webhook"
+        "delete_webhook": "Xóa webhook",
+        "enable_webhook": "Bật webhook",
+        "delete_warning": "Sau khi webhook bị xóa, bạn không thể khôi phục. Các sự kiện trong tương lai sẽ không còn được gửi đến webhook này."
       },
       "api_tokens": {
         "heading": "Token API",
@@ -182,7 +184,9 @@
             "message": "Không thể xóa token API"
           }
         },
-        "expiration_required": "Vui lòng chọn ngày hết hạn."
+        "expiration_required": "Vui lòng chọn ngày hết hạn.",
+        "copy_secret_key": "Sao chép khóa bí mật",
+        "delete_token": "Xóa token"
       },
       "integrations": {
         "title": "Tích hợp",

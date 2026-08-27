@@ -7,6 +7,7 @@
 import { useParams } from "next/navigation";
 // react-hook-form
 import { Controller, useForm } from "react-hook-form";
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 import type { IProject } from "@plane/types";
 // ui
@@ -23,6 +24,8 @@ type Props = {
 
 export function SelectMonthModal({ type, initialValues, isOpen, handleClose, handleChange }: Props) {
   const { workspaceSlug, projectId } = useParams();
+  // i18n
+  const { t } = useTranslation();
 
   const {
     formState: { errors, isSubmitting },
@@ -48,7 +51,7 @@ export function SelectMonthModal({ type, initialValues, isOpen, handleClose, han
     <ModalCore isOpen={isOpen} handleClose={onClose} position={EModalPosition.CENTER} width={EModalWidth.XXL}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <h3 className="text-16 leading-6 font-medium text-primary">Customize time range</h3>
+          <h3 className="text-16 leading-6 font-medium text-primary">{t("common.customize_time_range")}</h3>
           <div className="mt-8 flex items-center gap-2">
             <div className="flex w-full flex-col justify-center gap-1">
               {type === "auto-close" ? (

@@ -383,6 +383,31 @@
       "logo_removed": {
         "message": "Imagen del espacio de trabajo eliminada correctamente."
       }
+    },
+    "not_found": {
+      "title": "Espacio de trabajo no encontrado",
+      "description": "No se encontró ningún espacio de trabajo con esta URL. Puede que no exista o que no tengas autorización para verlo."
+    },
+    "not_authorized": {
+      "title": "¡Sin autorización!",
+      "description": "No eres miembro de este espacio de trabajo. Contacta al administrador del espacio de trabajo para obtener una invitación o revisa tus invitaciones pendientes.",
+      "check_pending_invites": "Ver invitaciones pendientes"
+    },
+    "create_new": "Crear nuevo espacio de trabajo"
+  },
+  "workspace_invitation": {
+    "invited_title": "Te han invitado a {workspace}",
+    "already_member_title": "Ya eres miembro de {workspace}",
+    "description": "Tu espacio de trabajo es donde crearás proyectos, colaborarás en tus elementos de trabajo y organizarás distintos flujos de trabajo en tu cuenta de Plane.",
+    "not_found": "Invitación no encontrada",
+    "inactive_title": "Este enlace de invitación ya no está activo.",
+    "start_from_empty_project": "O empieza con un proyecto vacío",
+    "actions": {
+      "accept": "Aceptar",
+      "ignore": "Ignorar",
+      "continue_to_home": "Continuar al inicio",
+      "sign_in_to_continue": "Inicia sesión para continuar",
+      "join_community": "Únete a nuestra comunidad de creadores activos"
     }
   }
 }

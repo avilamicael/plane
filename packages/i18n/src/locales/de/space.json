@@ -62,6 +62,22 @@
           }
         }
       }
+    },
+    "error_page": {
+      "title": "Autsch! Das sieht nicht gut aus.",
+      "description": "Damit ist Plane abgestürzt – das Wortspiel ist Absicht. Keine Sorge: Unsere Entwicklerinnen und Entwickler wurden bereits benachrichtigt. Wenn Sie weitere Details haben, schreiben Sie an",
+      "or_on_our": "oder besuchen Sie unser"
+    },
+    "not_found": {
+      "title": "Das hat nicht geklappt",
+      "description": "Überprüfen Sie die URL in der Adressleiste des Browsers und versuchen Sie es erneut."
+    },
+    "board_not_found": {
+      "description": "Dieses öffentliche Board existiert nicht. Bitte überprüfen Sie die URL."
+    },
+    "user_logged_in": {
+      "title": "Super! Nur noch ein Schritt.",
+      "description": "Geben Sie in der Adressleiste des Browsers die öffentliche Freigabe-URL oder den Link der Ansicht bzw. Seite ein, die Sie ansehen möchten."
     }
   }
 }

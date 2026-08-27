@@ -31,6 +31,29 @@
       "hide_password": "Masquer le mot de passe",
       "close_alert": "Fermer l’alerte",
       "close_popover": "Fermer la fenêtre contextuelle"
+    },
+    "common": {
+      "plane_logo": "Logo Plane",
+      "provider_logo": "Logo {provider}",
+      "background_pattern": "Motif d’arrière-plan Plane",
+      "instance_failure_image": "Illustration d’échec de l’instance",
+      "user_already_signed_in_image": "Utilisateur déjà connecté",
+      "page_not_found_image": "404 - Page introuvable"
+    },
+    "intake": {
+      "previous_work_item": "Élément de travail précédent",
+      "next_work_item": "Élément de travail suivant"
+    },
+    "sidebar": {
+      "main_sidebar": "Barre latérale principale",
+      "resize_sidebar": "Redimensionner la barre latérale",
+      "peek_view": "Aperçu de la barre latérale"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "Masquer l’avertissement de limite de contenu"
+    },
+    "filters": {
+      "remove_filter": "Supprimer le filtre"
     }
   }
 }

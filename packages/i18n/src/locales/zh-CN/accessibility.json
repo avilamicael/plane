@@ -31,6 +31,29 @@
       "hide_password": "隐藏密码",
       "close_alert": "关闭警告",
       "close_popover": "关闭弹出框"
+    },
+    "common": {
+      "plane_logo": "Plane 徽标",
+      "provider_logo": "{provider} 徽标",
+      "background_pattern": "Plane 背景图案",
+      "instance_failure_image": "实例故障插图",
+      "user_already_signed_in_image": "用户已登录",
+      "page_not_found_image": "404 - 页面未找到"
+    },
+    "intake": {
+      "previous_work_item": "上一个工作项",
+      "next_work_item": "下一个工作项"
+    },
+    "sidebar": {
+      "main_sidebar": "主侧边栏",
+      "resize_sidebar": "调整侧边栏宽度",
+      "peek_view": "侧边栏预览"
+    },
+    "pages": {
+      "dismiss_content_limit_warning": "关闭内容上限提醒"
+    },
+    "filters": {
+      "remove_filter": "移除筛选器"
     }
   }
 }

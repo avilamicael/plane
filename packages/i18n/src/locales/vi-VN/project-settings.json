@@ -35,7 +35,8 @@
         "title": "Mời thành viên",
         "sub_heading": "Mời thành viên tham gia dự án của bạn.",
         "select_co_worker": "Chọn đồng nghiệp"
-      }
+      },
+      "guest_access": "Quyền truy cập của khách"
     },
     "states": {
       "heading": "Trạng thái",
@@ -210,7 +211,9 @@
       },
       "switch": "Chuyển đổi hệ thống ước tính",
       "current": "Hệ thống ước tính hiện tại",
-      "select": "Chọn hệ thống ước tính"
+      "select": "Chọn hệ thống ước tính",
+      "list_heading": "Danh sách ước lượng",
+      "archived_heading": "Ước lượng đã lưu trữ"
     },
     "automations": {
       "label": "Tự động hóa",
