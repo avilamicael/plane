@@ -1,0 +1,358 @@
+- generic [active] [ref=f13e1]:
+  - generic:
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas ciclos concluídos podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas ciclos concluídos podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas ciclos concluídos podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas ciclos concluídos podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas ciclos concluídos podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas ciclos concluídos podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas ciclos concluídos podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas ciclos concluídos podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+  - generic:
+    - region "Notifications"
+  - main [ref=f13e3]:
+    - generic [ref=f13e4]:
+      - generic [ref=f13e5]:
+        - button "Abrir seletor de espaço de trabalho" [ref=f13e8] [cursor=pointer]:
+          - generic [ref=f13e9]:
+            - generic [ref=f13e10]: V
+            - heading "Via Exata" [level=4] [ref=f13e11]
+        - button [ref=f13e18] [cursor=pointer]:
+          - textbox "Search commands..." [ref=f13e21]
+        - generic [ref=f13e23]:
+          - link [ref=f13e24] [cursor=pointer]:
+            - /url: /via-exata/notifications/
+          - button [ref=f13e29] [cursor=pointer]:
+            - button [ref=f13e30]
+          - link "Nos dê uma estrela no GitHub" [ref=f13e35] [cursor=pointer]:
+            - /url: https://github.com/makeplane/plane
+          - button [ref=f13e39] [cursor=pointer]:
+            - button "A" [ref=f13e40]
+      - generic [ref=f13e48]:
+        - complementary "Main sidebar" [ref=f13e49]:
+          - complementary [ref=f13e50]:
+            - generic [ref=f13e51]:
+              - generic [ref=f13e52]:
+                - generic [ref=f13e53]:
+                  - generic [ref=f13e54]: Projects
+                  - generic [ref=f13e55]:
+                    - button [ref=f13e56] [cursor=pointer]
+                    - button [ref=f13e59] [cursor=pointer]
+                - button "Novo item" [ref=f13e63] [cursor=pointer]
+              - generic [ref=f13e67]:
+                - link [ref=f13e68] [cursor=pointer]:
+                  - /url: /via-exata/
+                  - paragraph [ref=f13e73]: Página inicial
+                - link [ref=f13e74] [cursor=pointer]:
+                  - /url: /via-exata/drafts/
+                  - paragraph [ref=f13e79]: Rascunhos
+                - link [ref=f13e80] [cursor=pointer]:
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - paragraph [ref=f13e86]: Seu trabalho
+                - link [ref=f13e87] [cursor=pointer]:
+                  - /url: /via-exata/stickies/
+                  - paragraph [ref=f13e92]: Notas adesivas
+              - generic [ref=f13e93]:
+                - generic [ref=f13e94]:
+                  - button "Fechar menu do espaço de trabalho" [expanded] [ref=f13e95] [cursor=pointer]:
+                    - generic [ref=f13e96]: Espaço de trabalho
+                  - generic:
+                    - button "Fechar menu do espaço de trabalho" [expanded]
+                - generic [ref=f13e98]:
+                  - link [ref=f13e99] [cursor=pointer]:
+                    - /url: /via-exata/projects/
+                    - paragraph [ref=f13e104]: Projetos
+                  - button "Abrir barra lateral estendida" [ref=f13e106] [cursor=pointer]:
+                    - generic [ref=f13e111]: Mais
+              - generic [ref=f13e113]:
+                - generic [ref=f13e114]:
+                  - button "Fechar menu de projetos" [expanded] [ref=f13e115] [cursor=pointer]:
+                    - generic [ref=f13e116]: Projetos
+                  - button "Fechar menu de projetos" [ref=f13e118] [cursor=pointer]
+                - generic [ref=f13e125]:
+                  - generic [ref=f13e127]:
+                    - link [ref=f13e128] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                      - button "Fechar menu do projeto" [ref=f13e129]:
+                        - generic [ref=f13e130]: 👇
+                        - paragraph [ref=f13e132]: Via Exata
+                    - generic [ref=f13e133]:
+                      - button "Alternar menu de ações rápidas":
+                        - button
+                  - generic [ref=f13e135]:
+                    - link "Itens" [ref=f13e137] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues/
+                    - link "Ciclos" [ref=f13e144] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/
+                    - link "Módulos" [ref=f13e153] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/modules/
+                    - link "Visualizações" [ref=f13e164] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/views/
+                    - link "Páginas" [ref=f13e172] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/pages/
+              - button "Abrir modal de planos pagos" [ref=f13e181] [cursor=pointer]: Community
+            - separator "Resize sidebar" [ref=f13e182]
+        - complementary "Sidebar peek view":
+          - complementary:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Projects
+                  - generic:
+                    - button
+                    - button
+                - generic:
+                  - button "Novo item"
+              - generic:
+                - link "Página inicial":
+                  - /url: /via-exata/
+                  - generic:
+                    - generic:
+                      - paragraph: Página inicial
+                - link "Rascunhos":
+                  - /url: /via-exata/drafts/
+                  - generic:
+                    - generic:
+                      - paragraph: Rascunhos
+                - link "Seu trabalho":
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - generic:
+                    - generic:
+                      - paragraph: Seu trabalho
+                - link "Notas adesivas":
+                  - /url: /via-exata/stickies/
+                  - generic:
+                    - generic:
+                      - paragraph: Notas adesivas
+              - generic:
+                - generic:
+                  - button "Fechar menu do espaço de trabalho" [expanded]:
+                    - generic: Espaço de trabalho
+                  - generic:
+                    - button "Fechar menu do espaço de trabalho" [expanded]
+                - generic:
+                  - generic:
+                    - link "Projetos":
+                      - /url: /via-exata/projects/
+                      - generic:
+                        - generic:
+                          - paragraph: Projetos
+                    - generic:
+                      - button "Abrir barra lateral estendida":
+                        - generic: Mais
+              - generic:
+                - generic:
+                  - generic:
+                    - button "Fechar menu de projetos" [expanded]:
+                      - generic: Projetos
+                    - generic:
+                      - button "Fechar menu de projetos"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - link "Fechar menu do projeto":
+                              - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                              - button "Fechar menu do projeto":
+                                - generic: 👇
+                                - paragraph: Via Exata
+                            - generic:
+                              - button "Alternar menu de ações rápidas":
+                                - button
+                          - generic:
+                            - generic:
+                              - link "Itens":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues/
+                              - link "Ciclos":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/
+                              - link "Módulos":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/modules/
+                              - link "Visualizações":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/views/
+                              - link "Páginas":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/pages/
+              - generic:
+                - button "Abrir modal de planos pagos": Community
+            - separator "Resize sidebar"
+        - main [ref=f13e183]:
+          - generic [ref=f13e187]:
+            - generic [ref=f13e189]:
+              - button [ref=f13e192] [cursor=pointer]:
+                - button "..." [ref=f13e193]
+              - link "Ciclos" [ref=f13e202] [cursor=pointer]:
+                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/
+            - generic [ref=f13e210]:
+              - generic [ref=f13e211]:
+                - button [ref=f13e212] [cursor=pointer]
+                - button "Filtros" [ref=f13e218] [cursor=pointer]
+              - button "Adicionar ciclo" [ref=f13e219] [cursor=pointer]
+          - generic [ref=f13e225]:
+            - generic [ref=f13e226]:
+              - button "Ciclo ativo" [expanded] [ref=f13e227] [cursor=pointer]
+              - generic [ref=f13e241]:
+                - generic [ref=f13e243]:
+                  - 'link "25% Cycle 1: Getting Started with Plane" [ref=f13e245] [cursor=pointer]':
+                    - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/fcf3619c-620a-44ea-914d-c0a07d758ecb
+                    - generic [ref=f13e246]:
+                      - generic [ref=f13e247]: 25%
+                      - generic [ref=f13e253]: "Cycle 1: Getting Started with Plane"
+                  - generic [ref=f13e254]:
+                    - button "Mais detalhes" [ref=f13e255] [cursor=pointer]
+                    - generic [ref=f13e260]:
+                      - generic [ref=f13e261]: Aug 26 - Sep 09, 2026
+                      - generic [ref=f13e265]: P
+                    - button [ref=f13e267] [cursor=pointer]
+                    - button [ref=f13e271] [cursor=pointer]:
+                      - button [ref=f13e272]
+                - generic [ref=f13e278]:
+                  - generic [ref=f13e279]:
+                    - generic [ref=f13e281]:
+                      - heading "Progresso" [level=3] [ref=f13e282]
+                      - generic [ref=f13e283]: 1/4 item de trabalho fechado
+                    - generic [ref=f13e290]:
+                      - generic [ref=f13e292] [cursor=pointer]:
+                        - generic [ref=f13e293]: Concluído
+                        - generic [ref=f13e296]: 1 item de trabalho
+                      - generic [ref=f13e298] [cursor=pointer]:
+                        - generic [ref=f13e299]: Iniciado
+                        - generic [ref=f13e302]: 1 item de trabalho
+                      - generic [ref=f13e304] [cursor=pointer]:
+                        - generic [ref=f13e305]: Não iniciado
+                        - generic [ref=f13e308]: 1 item de trabalho
+                      - generic [ref=f13e310] [cursor=pointer]:
+                        - generic [ref=f13e311]: Backlog
+                        - generic [ref=f13e314]: 1 item de trabalho
+                  - generic [ref=f13e315]:
+                    - link [ref=f13e317] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/fcf3619c-620a-44ea-914d-c0a07d758ecb/
+                      - heading "Burndown de itens de trabalho" [level=3] [ref=f13e318]
+                    - link "Itens de trabalho pendentes - 3 Itens de trabalho atuais Itens de trabalho ideais" [ref=f13e319] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/fcf3619c-620a-44ea-914d-c0a07d758ecb/
+                      - generic [ref=f13e320]:
+                        - generic [ref=f13e321]: Itens de trabalho pendentes - 3
+                        - generic [ref=f13e327]:
+                          - img [ref=f13e328]:
+                            - generic [ref=f13e331]:
+                              - generic [ref=f13e332]:
+                                - generic [ref=f13e333]: Aug 28
+                                - generic [ref=f13e336]: Sep 01
+                                - generic [ref=f13e339]: Sep 05
+                                - generic [ref=f13e342]: Sep 09
+                              - generic [ref=f13e345]: Data
+                            - generic [ref=f13e346]:
+                              - generic [ref=f13e347]:
+                                - generic [ref=f13e348]: "0"
+                                - generic [ref=f13e351]: "1"
+                                - generic [ref=f13e354]: "2"
+                                - generic [ref=f13e357]: "3"
+                                - generic [ref=f13e360]: "4"
+                                - generic [ref=f13e363]: "5"
+                                - generic [ref=f13e366]: "6"
+                                - generic [ref=f13e369]: "7"
+                                - generic [ref=f13e372]: "9"
+                              - generic [ref=f13e375]: Conclusão
+                          - generic [ref=f13e421]:
+                            - generic [ref=f13e422]: Itens de trabalho atuais
+                            - generic [ref=f13e424]: Itens de trabalho ideais
+                  - generic [ref=f13e426]:
+                    - tablist [ref=f13e427]:
+                      - tab "Itens de trabalho prioritários" [ref=f13e428] [cursor=pointer]
+                      - tab "Responsáveis" [selected] [ref=f13e429] [cursor=pointer]
+                      - tab "Etiquetas" [ref=f13e430] [cursor=pointer]
+                    - tabpanel "Responsáveis" [ref=f13e431]:
+                      - generic [ref=f13e432]:
+                        - generic [ref=f13e434]:
+                          - img "User" [ref=f13e436]
+                          - generic [ref=f13e437]: Sem responsável
+                        - generic [ref=f13e438]:
+                          - generic [ref=f13e439]: 0%
+                          - generic [ref=f13e441]: of 0
+            - generic [ref=f13e442]:
+              - button "Próximo ciclo 1" [expanded] [ref=f13e443] [cursor=pointer]:
+                - generic [ref=f13e457]:
+                  - generic [ref=f13e458]: Próximo ciclo
+                  - generic [ref=f13e459]: "1"
+              - generic [ref=f13e465]:
+                - 'link "0% Cycle 2: Collaboration & Customization" [ref=f13e467] [cursor=pointer]':
+                  - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/c5ce3433-937b-49d7-b7d5-31375ba71b31
+                  - generic [ref=f13e468]:
+                    - generic [ref=f13e469]: 0%
+                    - generic [ref=f13e475]: "Cycle 2: Collaboration & Customization"
+                - generic [ref=f13e476]:
+                  - generic [ref=f13e477]: "3"
+                  - button [disabled] [ref=f13e482]:
+                    - button "Sep 10 - 24, 2026" [ref=f13e483] [cursor=pointer]
+                  - generic [ref=f13e488]: P
+                  - button [ref=f13e493] [cursor=pointer]
+                  - button [ref=f13e497] [cursor=pointer]:
+                    - button [ref=f13e498]
+            - button "Ciclo concluído 0" [ref=f13e504] [cursor=pointer]:
+              - generic [ref=f13e511]:
+                - generic [ref=f13e512]: Ciclo concluído
+                - generic [ref=f13e513]: "0"
+  - generic [ref=f13e517]: Aug 28

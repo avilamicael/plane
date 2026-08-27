@@ -41,9 +41,7 @@
       "pending_points": "Poin yang menunggu - {count}",
       "work_items_count": "{count, plural, one {# item kerja} other {# item kerja}}",
       "work_items_closed": "{closed}/{total} item kerja ditutup",
-      "cancelled_work_items_excluded": "{count, plural, one {# item kerja yang dibatalkan dikecualikan dari laporan ini.} other {# item kerja yang dibatalkan dikecualikan dari laporan ini.}}",
-      "current_plot": "{plot} saat ini",
-      "ideal_plot": "{plot} ideal"
+      "cancelled_work_items_excluded": "{count, plural, one {# item kerja yang dibatalkan dikecualikan dari laporan ini.} other {# item kerja yang dibatalkan dikecualikan dari laporan ini.}}"
     },
     "upcoming_cycle": {
       "label": "Siklus mendatang"

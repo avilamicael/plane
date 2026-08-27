@@ -15,13 +15,10 @@ type Props = {
   distribution: TModuleCompletionChartDistribution;
   totalIssues: number;
   className?: string;
-  plotTitle?: string;
 };
 
-function ProgressChart({ distribution, totalIssues, className = "", plotTitle }: Props) {
+function ProgressChart({ distribution, totalIssues, className = "" }: Props) {
   const { t } = useTranslation();
-  // sem plotTitle explícito, cai no termo traduzido em vez de um literal em inglês
-  const plot = plotTitle ?? t("common.work_items");
   const chartData: TChartData<string, string>[] = Object.keys(distribution ?? []).map((key, index) => ({
     name: renderFormattedDateWithoutYear(key),
     current: distribution[key] ?? 0,
@@ -35,7 +32,7 @@ function ProgressChart({ distribution, totalIssues, className = "", plotTitle }:
         areas={[
           {
             key: "current",
-            label: t("project_cycles.active_cycle.current_plot", { plot }),
+            label: t("project_cycles.active_cycle.current"),
             strokeColor: "#3F76FF",
             fill: "#3F76FF33",
             fillOpacity: 1,
@@ -46,7 +43,7 @@ function ProgressChart({ distribution, totalIssues, className = "", plotTitle }:
           },
           {
             key: "ideal",
-            label: t("project_cycles.active_cycle.ideal_plot", { plot }),
+            label: t("project_cycles.active_cycle.ideal"),
             strokeColor: "#A9BBD0",
             fill: "#A9BBD0",
             fillOpacity: 0,

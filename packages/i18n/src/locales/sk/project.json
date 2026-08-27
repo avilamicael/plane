@@ -41,9 +41,7 @@
       "pending_points": "Čakajúce body - {count}",
       "work_items_count": "{count, plural, one {# pracovná položka} few {# pracovné položky} many {# pracovnej položky} other {# pracovných položiek}}",
       "work_items_closed": "{closed}/{total} {closed, plural, one {pracovná položka uzavretá} few {pracovné položky uzavreté} many {pracovnej položky uzavretej} other {pracovných položiek uzavretých}}",
-      "cancelled_work_items_excluded": "{count, plural, one {# zrušená pracovná položka je vylúčená z tohto prehľadu.} few {# zrušené pracovné položky sú vylúčené z tohto prehľadu.} many {# zrušenej pracovnej položky je vylúčených z tohto prehľadu.} other {# zrušených pracovných položiek je vylúčených z tohto prehľadu.}}",
-      "current_plot": "Aktuálne {plot}",
-      "ideal_plot": "Ideálne {plot}"
+      "cancelled_work_items_excluded": "{count, plural, one {# zrušená pracovná položka je vylúčená z tohto prehľadu.} few {# zrušené pracovné položky sú vylúčené z tohto prehľadu.} many {# zrušenej pracovnej položky je vylúčených z tohto prehľadu.} other {# zrušených pracovných položiek je vylúčených z tohto prehľadu.}}"
     },
     "upcoming_cycle": {
       "label": "Nadchádzajúci cyklus"

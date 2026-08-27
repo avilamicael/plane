@@ -1,0 +1,15 @@
+[     701ms] [INFO] 🌐 i18next is made possible by our own product, Locize — consider powering your project with managed localization (AI, CDN, integrations): https://locize.com 💙 @ http://localhost/assets/dist-Bb2HPsHI.js:0
+[    1003ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Ji (http://localhost/assets/client-DbgwVzsP.js:8:31211)
+    at Lc (http://localhost/assets/client-DbgwVzsP.js:8:81698)
+    at Nu (http://localhost/assets/client-DbgwVzsP.js:8:115507)
+    at Mu (http://localhost/assets/client-DbgwVzsP.js:8:115480)
+    at ju (http://localhost/assets/client-DbgwVzsP.js:8:115342)
+    at _u (http://localhost/assets/client-DbgwVzsP.js:8:110942)
+    at ld (http://localhost/assets/client-DbgwVzsP.js:8:122794)
+    at MessagePort.ae (http://localhost/assets/client-DbgwVzsP.js:1:1634)
+[    2319ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ http://localhost/assets/document-collaborative-events-BEloDC-L-Bz5zzePG.js:96
+[    2634ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://localhost/api/instances/:0
+[   11604ms] [ERROR] Failed to load resource: the server responded with a status of 502 (Bad Gateway) @ http://localhost/api/instances/:0
+[   32800ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost/api/workspaces/via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/intake-state/:0
+[   33395ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost/api/workspaces/via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/intake-state/:0

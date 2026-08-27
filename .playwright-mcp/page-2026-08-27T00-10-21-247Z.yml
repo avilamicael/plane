@@ -1,0 +1,11 @@
+- generic [active] [ref=f12e1]:
+  - generic:
+    - region "Notifications"
+  - generic [ref=f12e3]:
+    - img "ProjectSettingImg" [ref=f12e5]
+    - generic [ref=f12e6]:
+      - generic [ref=f12e7]:
+        - heading "🚧 Looks like Plane didn't start up correctly!" [level=1] [ref=f12e8]
+        - generic [ref=f12e9]: Some services might have failed to start. Please check your container logs to identify and resolve the issue. If you're stuck, reach out to our support team for more help.
+      - link "Contact Support" [ref=f12e12] [cursor=pointer]:
+        - /url: mailto:support@plane.so

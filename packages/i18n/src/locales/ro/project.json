@@ -41,9 +41,7 @@
       "pending_points": "Puncte în așteptare - {count}",
       "work_items_count": "{count, plural, one {# activitate} few {# activități} other {# de activități}}",
       "work_items_closed": "{closed}/{total} {closed, plural, one {activitate închisă} few {activități închise} other {de activități închise}}",
-      "cancelled_work_items_excluded": "{count, plural, one {# activitate anulată este exclusă din acest raport.} few {# activități anulate sunt excluse din acest raport.} other {# de activități anulate sunt excluse din acest raport.}}",
-      "current_plot": "{plot} curente",
-      "ideal_plot": "{plot} ideale"
+      "cancelled_work_items_excluded": "{count, plural, one {# activitate anulată este exclusă din acest raport.} few {# activități anulate sunt excluse din acest raport.} other {# de activități anulate sunt excluse din acest raport.}}"
     },
     "upcoming_cycle": {
       "label": "Ciclu viitor"
