@@ -1,4 +1,5 @@
 {
+  "of_total": "dari {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Kami sedang mengerjakan ini. Jika Anda memerlukan bantuan segera,",
     "reach_out_to_us": "hubungi kami",
@@ -567,7 +568,18 @@
       },
       "required": "Bidang ini diperlukan",
       "entity_required": "{entity} diperlukan",
-      "restricted_entity": "{entity} dibatasi"
+      "restricted_entity": "{entity} dibatasi",
+      "validation": {
+        "name_required": "Nama wajib diisi",
+        "name_max_length": "Nama maksimal 50 karakter",
+        "name_special_characters": "Nama tidak boleh berisi karakter khusus seperti < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Nama hanya boleh berisi huruf, spasi, tanda hubung, dan apostrof",
+        "workspace_name_required": "Nama ruang kerja wajib diisi",
+        "workspace_name_max_length": "Nama ruang kerja maksimal 80 karakter",
+        "workspace_name_special_characters": "Nama ruang kerja tidak boleh berisi karakter khusus seperti < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Nama ruang kerja hanya boleh berisi huruf, angka, spasi, tanda hubung, dan garis bawah",
+        "workspace_name_alphanumeric_required": "Nama ruang kerja harus berisi setidaknya satu huruf atau angka"
+      }
     },
     "update_link": "Perbarui tautan",
     "attach": "Lampirkan",
@@ -757,7 +769,8 @@
       "success": "Sukses!",
       "error": "Kesalahan!",
       "warning": "Peringatan"
-    }
+    },
+    "owned_by": "Dimiliki oleh"
   },
   "chart": {
     "x_axis": "Sumbu-X",

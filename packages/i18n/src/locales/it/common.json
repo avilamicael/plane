@@ -1,4 +1,5 @@
 {
+  "of_total": "su {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Stiamo lavorando su questo. Se hai bisogno di assistenza immediata,",
     "reach_out_to_us": "contattaci",
@@ -567,7 +568,18 @@
       },
       "required": "Questo campo è obbligatorio",
       "entity_required": "{entity} è obbligatorio",
-      "restricted_entity": "{entity} è limitato"
+      "restricted_entity": "{entity} è limitato",
+      "validation": {
+        "name_required": "Il nome è obbligatorio",
+        "name_max_length": "Il nome deve contenere al massimo 50 caratteri",
+        "name_special_characters": "Il nome non può contenere caratteri speciali come < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Il nome può contenere solo lettere, spazi, trattini e apostrofi",
+        "workspace_name_required": "Il nome dello spazio di lavoro è obbligatorio",
+        "workspace_name_max_length": "Il nome dello spazio di lavoro deve contenere al massimo 80 caratteri",
+        "workspace_name_special_characters": "Il nome dello spazio di lavoro non può contenere caratteri speciali come < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Il nome dello spazio di lavoro può contenere solo lettere, numeri, spazi, trattini e trattini bassi",
+        "workspace_name_alphanumeric_required": "Il nome dello spazio di lavoro deve contenere almeno una lettera o un numero"
+      }
     },
     "update_link": "Aggiorna link",
     "attach": "Allega",
@@ -757,7 +769,8 @@
       "success": "Successo!",
       "error": "Errore!",
       "warning": "Avviso"
-    }
+    },
+    "owned_by": "Di proprietà di"
   },
   "chart": {
     "x_axis": "Asse X",

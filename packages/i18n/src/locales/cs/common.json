@@ -1,4 +1,5 @@
 {
+  "of_total": "z {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Pracujeme na tom. Pokud potřebujete okamžitou pomoc,",
     "reach_out_to_us": "kontaktujte nás",
@@ -567,7 +568,18 @@
       },
       "required": "Toto pole je povinné",
       "entity_required": "{entity} je povinná",
-      "restricted_entity": "{entity} je omezen"
+      "restricted_entity": "{entity} je omezen",
+      "validation": {
+        "name_required": "Jméno je povinné",
+        "name_max_length": "Jméno může mít nejvýše 50 znaků",
+        "name_special_characters": "Jméno nesmí obsahovat speciální znaky jako < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Jméno může obsahovat pouze písmena, mezery, pomlčky a apostrofy",
+        "workspace_name_required": "Název pracovního prostoru je povinný",
+        "workspace_name_max_length": "Název pracovního prostoru může mít nejvýše 80 znaků",
+        "workspace_name_special_characters": "Název pracovního prostoru nesmí obsahovat speciální znaky jako < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Název pracovního prostoru může obsahovat pouze písmena, číslice, mezery, pomlčky a podtržítka",
+        "workspace_name_alphanumeric_required": "Název pracovního prostoru musí obsahovat alespoň jedno písmeno nebo číslici"
+      }
     },
     "update_link": "Aktualizovat odkaz",
     "attach": "Připojit",
@@ -757,7 +769,8 @@
       "success": "Úspěch!",
       "error": "Chyba!",
       "warning": "Varování"
-    }
+    },
+    "owned_by": "Vlastník"
   },
   "chart": {
     "x_axis": "Osa X",

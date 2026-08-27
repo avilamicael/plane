@@ -46,7 +46,8 @@
       "image": {
         "title": "Hình ảnh trong Plane",
         "description": "Cho phép các thư viện hình ảnh của bên thứ ba."
-      }
+      },
+      "redirect_to_plane": "Chuyển đến Plane"
     },
     "sign_in": {
       "heading": "Quản lý phiên bản Plane của bạn",
@@ -265,6 +266,18 @@
       "description": "Xin lỗi, không tìm thấy trang bạn đang tìm. Trang có thể đã bị xóa, đổi tên hoặc tạm thời không khả dụng.",
       "action": "Đến cài đặt chung",
       "image_alt": "404 - Không tìm thấy trang"
+    },
+    "header": {
+      "segments": {
+        "image": "Hình ảnh",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Đã hoàn tất thiết lập phiên bản! Chào mừng bạn đến với cổng phiên bản Plane. Bắt đầu hành trình bằng cách tạo không gian làm việc đầu tiên của bạn."
     }
   }
 }

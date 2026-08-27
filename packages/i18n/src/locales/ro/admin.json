@@ -46,7 +46,8 @@
       "image": {
         "title": "Imagini în Plane",
         "description": "Permite biblioteci de imagini terțe."
-      }
+      },
+      "redirect_to_plane": "Mergi la Plane"
     },
     "sign_in": {
       "heading": "Gestionează-ți instanța Plane",
@@ -265,6 +266,18 @@
       "description": "Ne pare rău, pagina pe care o cauți nu a putut fi găsită. Este posibil să fi fost eliminată, redenumită sau să fie temporar indisponibilă.",
       "action": "Mergi la setările generale",
       "image_alt": "404 - Pagina nu a fost găsită"
+    },
+    "header": {
+      "segments": {
+        "image": "Imagine",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Configurarea instanței este finalizată! Bine ai venit în portalul de instanță Plane. Începe-ți parcursul creând primul tău spațiu de lucru."
     }
   }
 }

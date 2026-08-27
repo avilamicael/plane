@@ -20,9 +20,14 @@ export function SidebarPropertyListItem(props: TSidebarPropertyListItemProps) {
 
   return (
     <div className="flex items-start gap-2">
-      <div className="flex h-7.5 w-30 shrink-0 items-center gap-1.5 text-body-xs-regular text-tertiary">
+      {/* w-36: a largura anterior (w-30, 120px) foi calibrada no inglês e "Data de
+          vencimento" ocupa exatamente 120px, invadindo o campo ao lado. O truncate
+          com title garante que nenhum idioma quebre o layout. */}
+      <div className="flex h-7.5 w-36 shrink-0 items-center gap-1.5 pr-2 text-body-xs-regular text-tertiary">
         <Icon className="size-4 shrink-0" />
-        <span>{label}</span>
+        <span className="truncate" title={typeof label === "string" ? label : undefined}>
+          {label}
+        </span>
         {appendElement}
       </div>
       <div className={cn("flex grow flex-wrap items-center gap-1", childrenClassName)}>{children}</div>

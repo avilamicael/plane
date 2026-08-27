@@ -1,4 +1,5 @@
 {
+  "of_total": "/ {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Bu konuda çalışıyoruz. Acil yardıma ihtiyacınız varsa,",
     "reach_out_to_us": "bize ulaşın",
@@ -567,7 +568,18 @@
       },
       "required": "Bu alan gereklidir",
       "entity_required": "{entity} gereklidir",
-      "restricted_entity": "{entity} kısıtlanmıştır"
+      "restricted_entity": "{entity} kısıtlanmıştır",
+      "validation": {
+        "name_required": "Ad zorunludur",
+        "name_max_length": "Ad en fazla 50 karakter olabilir",
+        "name_special_characters": "Ad < > \" [ ] * ^ ! # % gibi özel karakterler içeremez",
+        "name_allowed_characters": "Ad yalnızca harf, boşluk, kısa çizgi ve kesme işareti içerebilir",
+        "workspace_name_required": "Çalışma alanı adı zorunludur",
+        "workspace_name_max_length": "Çalışma alanı adı en fazla 80 karakter olabilir",
+        "workspace_name_special_characters": "Çalışma alanı adı < > \" [ ] * ^ ! # % gibi özel karakterler içeremez",
+        "workspace_name_allowed_characters": "Çalışma alanı adı yalnızca harf, rakam, boşluk, kısa çizgi ve alt çizgi içerebilir",
+        "workspace_name_alphanumeric_required": "Çalışma alanı adı en az bir harf veya rakam içermelidir"
+      }
     },
     "update_link": "Bağlantıyı güncelle",
     "attach": "Ekle",
@@ -757,7 +769,8 @@
       "success": "Başarılı!",
       "error": "Hata!",
       "warning": "Uyarı"
-    }
+    },
+    "owned_by": "Sahibi"
   },
   "chart": {
     "x_axis": "X ekseni",

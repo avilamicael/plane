@@ -1,4 +1,5 @@
 {
+  "of_total": "trên {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Chúng tôi đang xử lý vấn đề này. Nếu bạn cần hỗ trợ ngay lập tức,",
     "reach_out_to_us": "hãy liên hệ với chúng tôi",
@@ -567,7 +568,18 @@
       },
       "required": "Trường này là bắt buộc",
       "entity_required": "{entity} là bắt buộc",
-      "restricted_entity": "{entity} bị hạn chế"
+      "restricted_entity": "{entity} bị hạn chế",
+      "validation": {
+        "name_required": "Tên là bắt buộc",
+        "name_max_length": "Tên không được vượt quá 50 ký tự",
+        "name_special_characters": "Tên không được chứa ký tự đặc biệt như < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Tên chỉ có thể chứa chữ cái, khoảng trắng, dấu gạch ngang và dấu nháy đơn",
+        "workspace_name_required": "Tên không gian làm việc là bắt buộc",
+        "workspace_name_max_length": "Tên không gian làm việc không được vượt quá 80 ký tự",
+        "workspace_name_special_characters": "Tên không gian làm việc không được chứa ký tự đặc biệt như < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Tên không gian làm việc chỉ có thể chứa chữ cái, chữ số, khoảng trắng, dấu gạch ngang và dấu gạch dưới",
+        "workspace_name_alphanumeric_required": "Tên không gian làm việc phải chứa ít nhất một chữ cái hoặc chữ số"
+      }
     },
     "update_link": "Cập nhật liên kết",
     "attach": "Đính kèm",
@@ -757,7 +769,8 @@
       "success": "Thành công!",
       "error": "Lỗi!",
       "warning": "Cảnh báo"
-    }
+    },
+    "owned_by": "Thuộc về"
   },
   "chart": {
     "x_axis": "Trục X",

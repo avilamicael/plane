@@ -46,7 +46,8 @@
       "image": {
         "title": "Images in Plane",
         "description": "Allow third-party image libraries."
-      }
+      },
+      "redirect_to_plane": "Redirect to Plane"
     },
     "sign_in": {
       "heading": "Manage your Plane instance",
@@ -265,6 +266,18 @@
       "description": "Sorry, the page you are looking for cannot be found. It may have been removed, had its name changed, or is temporarily unavailable.",
       "action": "Go to general settings",
       "image_alt": "404 - Page not found"
+    },
+    "header": {
+      "segments": {
+        "image": "Image",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Instance setup done! Welcome to Plane instance portal. Start your journey with by creating your first workspace."
     }
   }
 }

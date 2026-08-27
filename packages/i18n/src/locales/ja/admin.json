@@ -46,7 +46,8 @@
       "image": {
         "title": "Plane の画像",
         "description": "サードパーティの画像ライブラリを許可します。"
-      }
+      },
+      "redirect_to_plane": "Plane に移動"
     },
     "sign_in": {
       "heading": "Plane インスタンスを管理",
@@ -265,6 +266,18 @@
       "description": "お探しのページが見つかりません。削除されたか、名前が変更されたか、一時的に利用できない可能性があります。",
       "action": "一般設定へ移動",
       "image_alt": "404 - ページが見つかりません"
+    },
+    "header": {
+      "segments": {
+        "image": "画像",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "インスタンスのセットアップが完了しました。Plane インスタンスポータルへようこそ。最初のワークスペースを作成して始めましょう。"
     }
   }
 }

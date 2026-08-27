@@ -5,6 +5,8 @@
  */
 
 import Link from "next/link";
+// plane imports
+import { useTranslation } from "@plane/i18n";
 // types
 import type { TPageNavigationTabs } from "@plane/types";
 // helpers
@@ -16,23 +18,25 @@ type TPageTabNavigation = {
   pageType: TPageNavigationTabs;
 };
 
-// pages tab options
-const pageTabs: { key: TPageNavigationTabs; label: string }[] = [
+// pages tab options — as chaves i18n resolvem dentro do componente, porque um
+// hook nao pode ser chamado em constante de modulo
+const pageTabs: { key: TPageNavigationTabs; i18nKey: string }[] = [
   {
     key: "public",
-    label: "Public",
+    i18nKey: "common.access.public",
   },
   {
     key: "private",
-    label: "Private",
+    i18nKey: "common.access.private",
   },
   {
     key: "archived",
-    label: "Archived",
+    i18nKey: "wiki_collections.predefined.archived",
   },
 ];
 
 export function PageTabNavigation(props: TPageTabNavigation) {
+  const { t } = useTranslation();
   const { workspaceSlug, projectId, pageType } = props;
 
   const handleTabClick = (e: React.MouseEvent<HTMLAnchorElement>, tabKey: TPageNavigationTabs) => {
@@ -53,7 +57,7 @@ export function PageTabNavigation(props: TPageTabNavigation) {
               "text-accent-primary": tab.key === pageType,
             })}
           >
-            {tab.label}
+            {t(tab.i18nKey)}
           </div>
           <div
             className={cn(`w-full rounded-t border-t-2 border-transparent transition-all`, {

@@ -1,4 +1,5 @@
 {
+  "of_total": "sur {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Nous travaillons là-dessus. Si vous avez besoin d&apos;aide immédiate,",
     "reach_out_to_us": "contactez-nous",
@@ -567,7 +568,18 @@
       },
       "required": "Ce champ est obligatoire",
       "entity_required": "{entity} est requis",
-      "restricted_entity": "{entity} est restreint"
+      "restricted_entity": "{entity} est restreint",
+      "validation": {
+        "name_required": "Le nom est obligatoire",
+        "name_max_length": "Le nom ne doit pas dépasser 50 caractères",
+        "name_special_characters": "Le nom ne peut pas contenir de caractères spéciaux comme < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Le nom ne peut contenir que des lettres, des espaces, des tirets et des apostrophes",
+        "workspace_name_required": "Le nom de l’espace de travail est obligatoire",
+        "workspace_name_max_length": "Le nom de l’espace de travail ne doit pas dépasser 80 caractères",
+        "workspace_name_special_characters": "Le nom de l’espace de travail ne peut pas contenir de caractères spéciaux comme < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Le nom de l’espace de travail ne peut contenir que des lettres, des chiffres, des espaces, des tirets et des tirets bas",
+        "workspace_name_alphanumeric_required": "Le nom de l’espace de travail doit contenir au moins une lettre ou un chiffre"
+      }
     },
     "update_link": "Mettre à jour le lien",
     "attach": "Joindre",
@@ -757,7 +769,8 @@
       "success": "Succès !",
       "error": "Erreur !",
       "warning": "Avertissement"
-    }
+    },
+    "owned_by": "Appartient à"
   },
   "chart": {
     "x_axis": "Axe X",

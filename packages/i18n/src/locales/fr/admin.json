@@ -46,7 +46,8 @@
       "image": {
         "title": "Images dans Plane",
         "description": "Autorisez les bibliothèques d'images tierces."
-      }
+      },
+      "redirect_to_plane": "Aller sur Plane"
     },
     "sign_in": {
       "heading": "Gérez votre instance Plane",
@@ -265,6 +266,18 @@
       "description": "Désolé, la page que vous cherchez est introuvable. Elle a peut-être été supprimée, renommée ou est temporairement indisponible.",
       "action": "Aller aux paramètres généraux",
       "image_alt": "404 - Page introuvable"
+    },
+    "header": {
+      "segments": {
+        "image": "Image",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Configuration de l'instance terminée ! Bienvenue sur le portail d'instance Plane. Commencez votre parcours en créant votre premier espace de travail."
     }
   }
 }

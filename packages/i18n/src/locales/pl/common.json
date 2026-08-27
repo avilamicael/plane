@@ -1,4 +1,5 @@
 {
+  "of_total": "z {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Pracujemy nad tym. Jeśli potrzebujesz natychmiastowej pomocy,",
     "reach_out_to_us": "skontaktuj się z nami",
@@ -567,7 +568,18 @@
       },
       "required": "To pole jest wymagane",
       "entity_required": "{entity} jest wymagane",
-      "restricted_entity": "{entity} jest ograniczony"
+      "restricted_entity": "{entity} jest ograniczony",
+      "validation": {
+        "name_required": "Nazwa jest wymagana",
+        "name_max_length": "Nazwa może mieć maksymalnie 50 znaków",
+        "name_special_characters": "Nazwa nie może zawierać znaków specjalnych, takich jak < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Nazwa może zawierać tylko litery, spacje, myślniki i apostrofy",
+        "workspace_name_required": "Nazwa przestrzeni roboczej jest wymagana",
+        "workspace_name_max_length": "Nazwa przestrzeni roboczej może mieć maksymalnie 80 znaków",
+        "workspace_name_special_characters": "Nazwa przestrzeni roboczej nie może zawierać znaków specjalnych, takich jak < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Nazwa przestrzeni roboczej może zawierać tylko litery, cyfry, spacje, myślniki i podkreślenia",
+        "workspace_name_alphanumeric_required": "Nazwa przestrzeni roboczej musi zawierać co najmniej jedną literę lub cyfrę"
+      }
     },
     "update_link": "Zaktualizuj link",
     "attach": "Dołącz",
@@ -757,7 +769,8 @@
       "success": "Sukces!",
       "error": "Błąd!",
       "warning": "Ostrzeżenie"
-    }
+    },
+    "owned_by": "Właściciel"
   },
   "chart": {
     "x_axis": "Oś X",

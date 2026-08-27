@@ -46,7 +46,8 @@
       "image": {
         "title": "Obrazy w Plane",
         "description": "Zezwól na biblioteki obrazów innych firm."
-      }
+      },
+      "redirect_to_plane": "Przejdź do Plane"
     },
     "sign_in": {
       "heading": "Zarządzaj swoją instancją Plane",
@@ -265,6 +266,18 @@
       "description": "Niestety nie znaleźliśmy strony, której szukasz. Mogła zostać usunięta, przemianowana lub być tymczasowo niedostępna.",
       "action": "Przejdź do ustawień ogólnych",
       "image_alt": "404 - Nie znaleziono strony"
+    },
+    "header": {
+      "segments": {
+        "image": "Obraz",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Konfiguracja instancji zakończona! Witamy w portalu instancji Plane. Rozpocznij swoją przygodę, tworząc pierwszą przestrzeń roboczą."
     }
   }
 }

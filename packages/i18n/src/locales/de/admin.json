@@ -46,7 +46,8 @@
       "image": {
         "title": "Bilder in Plane",
         "description": "Bildbibliotheken von Drittanbietern zulassen."
-      }
+      },
+      "redirect_to_plane": "Zu Plane wechseln"
     },
     "sign_in": {
       "heading": "Verwalten Sie Ihre Plane-Instanz",
@@ -265,6 +266,18 @@
       "description": "Die gesuchte Seite konnte leider nicht gefunden werden. Sie wurde möglicherweise entfernt, umbenannt oder ist vorübergehend nicht verfügbar.",
       "action": "Zu den allgemeinen Einstellungen",
       "image_alt": "404 - Seite nicht gefunden"
+    },
+    "header": {
+      "segments": {
+        "image": "Bild",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Instanz-Einrichtung abgeschlossen! Willkommen im Plane-Instanzportal. Starten Sie, indem Sie Ihren ersten Arbeitsbereich erstellen."
     }
   }
 }

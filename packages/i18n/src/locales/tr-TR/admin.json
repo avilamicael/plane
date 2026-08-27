@@ -46,7 +46,8 @@
       "image": {
         "title": "Plane içindeki görseller",
         "description": "Üçüncü taraf görsel kitaplıklarına izin verin."
-      }
+      },
+      "redirect_to_plane": "Plane'e git"
     },
     "sign_in": {
       "heading": "Plane örneğinizi yönetin",
@@ -265,6 +266,18 @@
       "description": "Üzgünüz, aradığınız sayfa bulunamadı. Kaldırılmış, adı değiştirilmiş ya da geçici olarak kullanılamıyor olabilir.",
       "action": "Genel ayarlara git",
       "image_alt": "404 - Sayfa bulunamadı"
+    },
+    "header": {
+      "segments": {
+        "image": "Görsel",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Örnek kurulumu tamamlandı! Plane örnek portalına hoş geldiniz. İlk çalışma alanınızı oluşturarak yolculuğunuza başlayın."
     }
   }
 }

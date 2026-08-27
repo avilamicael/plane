@@ -1,4 +1,5 @@
 {
+  "of_total": "з {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Ми працюємо над цим. Якщо вам потрібна негайна допомога,",
     "reach_out_to_us": "зв&apos;яжіться з нами",
@@ -567,7 +568,18 @@
       },
       "required": "Це поле є обов'язковим",
       "entity_required": "{entity} є обов'язковим",
-      "restricted_entity": "{entity} обмежено"
+      "restricted_entity": "{entity} обмежено",
+      "validation": {
+        "name_required": "Ім’я обов’язкове",
+        "name_max_length": "Ім’я не повинно перевищувати 50 символів",
+        "name_special_characters": "Ім’я не може містити спеціальні символи, такі як < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Ім’я може містити лише літери, пробіли, дефіси та апострофи",
+        "workspace_name_required": "Назва робочого простору обов’язкова",
+        "workspace_name_max_length": "Назва робочого простору не повинна перевищувати 80 символів",
+        "workspace_name_special_characters": "Назва робочого простору не може містити спеціальні символи, такі як < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Назва робочого простору може містити лише літери, цифри, пробіли, дефіси та підкреслення",
+        "workspace_name_alphanumeric_required": "Назва робочого простору має містити щонайменше одну літеру або цифру"
+      }
     },
     "update_link": "Оновити посилання",
     "attach": "Прикріпити",
@@ -757,7 +769,8 @@
       "success": "Успіх!",
       "error": "Помилка!",
       "warning": "Попередження"
-    }
+    },
+    "owned_by": "Власник"
   },
   "chart": {
     "x_axis": "Вісь X",

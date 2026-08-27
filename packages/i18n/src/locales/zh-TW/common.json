@@ -1,4 +1,5 @@
 {
+  "of_total": "（共 {total} 項）",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "我們正在處理此問題。如果您需要緊急協助，",
     "reach_out_to_us": "請聯絡我們",
@@ -567,7 +568,18 @@
       },
       "required": "此欄位為必填",
       "entity_required": "{entity} 為必填",
-      "restricted_entity": "{entity}已被限制"
+      "restricted_entity": "{entity}已被限制",
+      "validation": {
+        "name_required": "請填寫名稱",
+        "name_max_length": "名稱不能超過 50 個字元",
+        "name_special_characters": "名稱不能包含 < > \" [ ] * ^ ! # % 等特殊字元",
+        "name_allowed_characters": "名稱只能包含字母、空格、連字號和撇號",
+        "workspace_name_required": "請填寫工作區名稱",
+        "workspace_name_max_length": "工作區名稱不能超過 80 個字元",
+        "workspace_name_special_characters": "工作區名稱不能包含 < > \" [ ] * ^ ! # % 等特殊字元",
+        "workspace_name_allowed_characters": "工作區名稱只能包含字母、數字、空格、連字號和底線",
+        "workspace_name_alphanumeric_required": "工作區名稱必須至少包含一個字母或數字"
+      }
     },
     "update_link": "更新連結",
     "attach": "附加",
@@ -757,7 +769,8 @@
       "success": "成功！",
       "error": "錯誤！",
       "warning": "警告"
-    }
+    },
+    "owned_by": "擁有者"
   },
   "chart": {
     "x_axis": "X 軸",

@@ -1,4 +1,5 @@
 {
+  "of_total": "из {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Мы работаем над этим. Если вам нужна немедленная помощь,",
     "reach_out_to_us": "свяжитесь с нами",
@@ -567,7 +568,18 @@
       },
       "required": "Это поле обязательно",
       "entity_required": "{entity} обязательно",
-      "restricted_entity": "{entity} ограничен"
+      "restricted_entity": "{entity} ограничен",
+      "validation": {
+        "name_required": "Укажите имя",
+        "name_max_length": "Имя не должно превышать 50 символов",
+        "name_special_characters": "Имя не может содержать специальные символы, такие как < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Имя может содержать только буквы, пробелы, дефисы и апострофы",
+        "workspace_name_required": "Укажите название рабочего пространства",
+        "workspace_name_max_length": "Название рабочего пространства не должно превышать 80 символов",
+        "workspace_name_special_characters": "Название рабочего пространства не может содержать специальные символы, такие как < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Название рабочего пространства может содержать только буквы, цифры, пробелы, дефисы и подчёркивания",
+        "workspace_name_alphanumeric_required": "Название рабочего пространства должно содержать хотя бы одну букву или цифру"
+      }
     },
     "update_link": "обновить ссылку",
     "attach": "Прикрепить",
@@ -757,7 +769,8 @@
       "success": "Успешно!",
       "error": "Ошибка!",
       "warning": "Предупреждение"
-    }
+    },
+    "owned_by": "Владелец"
   },
   "chart": {
     "x_axis": "Ось X",

@@ -5,6 +5,7 @@
  */
 
 import * as React from "react";
+import { getDefaultOptions } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import { ChevronLeftIcon } from "../icons/arrows/chevron-left";
 
@@ -13,6 +14,10 @@ import { cn } from "../utils";
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
 export function Calendar({ className, showOutsideDays = true, ...props }: CalendarProps) {
+  // O react-day-picker nao herda o default global do date-fns: sem esta prop ele
+  // renderiza meses e dias da semana sempre em ingles. O locale ativo e o que o
+  // @plane/i18n registrou via setDefaultOptions ao trocar de idioma.
+  const activeLocale = getDefaultOptions().locale;
   const currentYear = new Date().getFullYear();
   const thirtyYearsAgoFirstDay = new Date(currentYear - 30, 0, 1);
   const thirtyYearsFromNowFirstDay = new Date(currentYear + 30, 11, 31);
@@ -20,6 +25,7 @@ export function Calendar({ className, showOutsideDays = true, ...props }: Calend
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
+      locale={activeLocale}
       className={cn("p-3", className)}
       weekStartsOn={props.weekStartsOn}
       components={{

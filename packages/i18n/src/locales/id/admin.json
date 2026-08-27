@@ -46,7 +46,8 @@
       "image": {
         "title": "Gambar di Plane",
         "description": "Izinkan pustaka gambar pihak ketiga."
-      }
+      },
+      "redirect_to_plane": "Buka Plane"
     },
     "sign_in": {
       "heading": "Kelola instans Plane Anda",
@@ -265,6 +266,18 @@
       "description": "Maaf, halaman yang Anda cari tidak ditemukan. Halaman mungkin telah dihapus, diubah namanya, atau untuk sementara tidak tersedia.",
       "action": "Buka pengaturan umum",
       "image_alt": "404 - Halaman tidak ditemukan"
+    },
+    "header": {
+      "segments": {
+        "image": "Gambar",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Penyiapan instans selesai! Selamat datang di portal instans Plane. Mulai perjalanan Anda dengan membuat ruang kerja pertama Anda."
     }
   }
 }

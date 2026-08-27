@@ -1,4 +1,5 @@
 {
+  "of_total": "of {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "We're working on this. If you need immediate assistance,",
     "reach_out_to_us": "reach out to us",
@@ -567,7 +568,18 @@
       },
       "required": "This field is required",
       "entity_required": "{entity} is required",
-      "restricted_entity": "{entity} is restricted"
+      "restricted_entity": "{entity} is restricted",
+      "validation": {
+        "name_required": "Name is required",
+        "name_max_length": "Name must be 50 characters or less",
+        "name_special_characters": "Names cannot contain special characters such as < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Names can only contain letters, spaces, hyphens and apostrophes",
+        "workspace_name_required": "Workspace name is required",
+        "workspace_name_max_length": "Workspace name must be 80 characters or less",
+        "workspace_name_special_characters": "Workspace names cannot contain special characters such as < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Workspace names can only contain letters, numbers, spaces, hyphens and underscores",
+        "workspace_name_alphanumeric_required": "Workspace name must contain at least one letter or number"
+      }
     },
     "update_link": "Update link",
     "attach": "Attach",
@@ -757,7 +769,8 @@
       "success": "Success!",
       "error": "Error!",
       "warning": "Warning"
-    }
+    },
+    "owned_by": "Owned by"
   },
   "chart": {
     "x_axis": "X-axis",

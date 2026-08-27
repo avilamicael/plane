@@ -46,7 +46,8 @@
       "image": {
         "title": "Immagini in Plane",
         "description": "Consenti librerie di immagini di terze parti."
-      }
+      },
+      "redirect_to_plane": "Vai a Plane"
     },
     "sign_in": {
       "heading": "Gestisci la tua istanza di Plane",
@@ -265,6 +266,18 @@
       "description": "Spiacenti, la pagina che cerchi non è stata trovata. Potrebbe essere stata rimossa, rinominata o essere temporaneamente non disponibile.",
       "action": "Vai alle impostazioni generali",
       "image_alt": "404 - Pagina non trovata"
+    },
+    "header": {
+      "segments": {
+        "image": "Immagine",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Configurazione dell'istanza completata! Benvenuto nel portale dell'istanza di Plane. Inizia il tuo percorso creando il tuo primo spazio di lavoro."
     }
   }
 }

@@ -46,7 +46,8 @@
       "image": {
         "title": "Obrázky v Plane",
         "description": "Povolte knihovny obrázků třetích stran."
-      }
+      },
+      "redirect_to_plane": "Přejít na Plane"
     },
     "sign_in": {
       "heading": "Spravujte svou instanci Plane",
@@ -265,6 +266,18 @@
       "description": "Omlouváme se, stránku, kterou hledáte, se nepodařilo najít. Mohla být odstraněna, přejmenována nebo je dočasně nedostupná.",
       "action": "Přejít do obecného nastavení",
       "image_alt": "404 - Stránka nenalezena"
+    },
+    "header": {
+      "segments": {
+        "image": "Obrázek",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Nastavení instance je hotové! Vítejte v portálu instance Plane. Začněte vytvořením svého prvního pracovního prostoru."
     }
   }
 }

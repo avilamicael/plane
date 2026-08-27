@@ -46,7 +46,8 @@
       "image": {
         "title": "Imagens no Plane",
         "description": "Permita bibliotecas de imagens de terceiros."
-      }
+      },
+      "redirect_to_plane": "Ir para o Plane"
     },
     "sign_in": {
       "heading": "Gerencie sua instância do Plane",
@@ -265,6 +266,18 @@
       "description": "Não encontramos a página que você procura. Ela pode ter sido removida, renomeada ou estar temporariamente indisponível.",
       "action": "Ir para as configurações gerais",
       "image_alt": "404 - Página não encontrada"
+    },
+    "header": {
+      "segments": {
+        "image": "Imagem",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "Configuração da instância concluída! Boas-vindas ao portal de instância do Plane. Comece sua jornada criando seu primeiro espaço de trabalho."
     }
   }
 }

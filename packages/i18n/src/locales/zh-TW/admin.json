@@ -46,7 +46,8 @@
       "image": {
         "title": "Plane 中的圖片",
         "description": "允許第三方圖片庫。"
-      }
+      },
+      "redirect_to_plane": "前往 Plane"
     },
     "sign_in": {
       "heading": "管理你的 Plane 執行個體",
@@ -265,6 +266,18 @@
       "description": "抱歉，找不到你要的頁面。它可能已被移除、更名，或暫時無法使用。",
       "action": "前往一般設定",
       "image_alt": "404 - 找不到頁面"
+    },
+    "header": {
+      "segments": {
+        "image": "圖片",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "執行個體設定完成！歡迎使用 Plane 執行個體入口網站。建立你的第一個工作區，展開旅程吧。"
     }
   }
 }

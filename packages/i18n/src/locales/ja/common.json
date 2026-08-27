@@ -1,4 +1,5 @@
 {
+  "of_total": "（全{total}件中）",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "現在この問題に取り組んでいます。緊急のサポートが必要な場合は、",
     "reach_out_to_us": "お問い合わせください",
@@ -567,7 +568,18 @@
       },
       "required": "この項目は必須です",
       "entity_required": "{entity}は必須です",
-      "restricted_entity": "{entity} は制限されています"
+      "restricted_entity": "{entity} は制限されています",
+      "validation": {
+        "name_required": "名前は必須です",
+        "name_max_length": "名前は50文字以内で入力してください",
+        "name_special_characters": "名前に < > \" [ ] * ^ ! # % などの特殊文字は使用できません",
+        "name_allowed_characters": "名前には文字、スペース、ハイフン、アポストロフィのみ使用できます",
+        "workspace_name_required": "ワークスペース名は必須です",
+        "workspace_name_max_length": "ワークスペース名は80文字以内で入力してください",
+        "workspace_name_special_characters": "ワークスペース名に < > \" [ ] * ^ ! # % などの特殊文字は使用できません",
+        "workspace_name_allowed_characters": "ワークスペース名には文字、数字、スペース、ハイフン、アンダースコアのみ使用できます",
+        "workspace_name_alphanumeric_required": "ワークスペース名には少なくとも1つの文字または数字が必要です"
+      }
     },
     "update_link": "リンクを更新",
     "attach": "添付",
@@ -757,7 +769,8 @@
       "success": "成功！",
       "error": "エラー！",
       "warning": "警告"
-    }
+    },
+    "owned_by": "所有者"
   },
   "chart": {
     "x_axis": "エックス アクシス",

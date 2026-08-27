@@ -46,7 +46,8 @@
       "image": {
         "title": "Plane 中的图片",
         "description": "允许第三方图片库。"
-      }
+      },
+      "redirect_to_plane": "跳转到 Plane"
     },
     "sign_in": {
       "heading": "管理你的 Plane 实例",
@@ -265,6 +266,18 @@
       "description": "抱歉，找不到你要访问的页面。它可能已被删除、改名，或暂时无法访问。",
       "action": "前往常规设置",
       "image_alt": "404 - 页面未找到"
+    },
+    "header": {
+      "segments": {
+        "image": "图片",
+        "google": "Google",
+        "github": "GitHub",
+        "gitlab": "GitLab",
+        "gitea": "Gitea"
+      }
+    },
+    "new_user_popup": {
+      "description": "实例设置完成！欢迎使用 Plane 实例门户。创建你的第一个工作区，开启旅程吧。"
     }
   }
 }

@@ -1,4 +1,5 @@
 {
+  "of_total": "din {total}",
   "cloud_maintenance_message": {
     "we_are_working_on_this_if_you_need_immediate_assistance": "Lucrăm la asta. Dacă aveți nevoie de asistență imediată,",
     "reach_out_to_us": "contactați-ne",
@@ -567,7 +568,18 @@
       },
       "required": "Acest câmp este obligatoriu",
       "entity_required": "{entity} este obligatoriu",
-      "restricted_entity": "{entity} este restricționat"
+      "restricted_entity": "{entity} este restricționat",
+      "validation": {
+        "name_required": "Numele este obligatoriu",
+        "name_max_length": "Numele poate avea cel mult 50 de caractere",
+        "name_special_characters": "Numele nu poate conține caractere speciale precum < > \" [ ] * ^ ! # %",
+        "name_allowed_characters": "Numele poate conține doar litere, spații, cratime și apostrofuri",
+        "workspace_name_required": "Numele spațiului de lucru este obligatoriu",
+        "workspace_name_max_length": "Numele spațiului de lucru poate avea cel mult 80 de caractere",
+        "workspace_name_special_characters": "Numele spațiului de lucru nu poate conține caractere speciale precum < > \" [ ] * ^ ! # %",
+        "workspace_name_allowed_characters": "Numele spațiului de lucru poate conține doar litere, cifre, spații, cratime și liniuțe de subliniere",
+        "workspace_name_alphanumeric_required": "Numele spațiului de lucru trebuie să conțină cel puțin o literă sau o cifră"
+      }
     },
     "update_link": "Actualizează link-ul",
     "attach": "Atașează",
@@ -757,7 +769,8 @@
       "success": "Succes!",
       "error": "Eroare!",
       "warning": "Avertisment"
-    }
+    },
+    "owned_by": "Deținut de"
   },
   "chart": {
     "x_axis": "axa-X",
