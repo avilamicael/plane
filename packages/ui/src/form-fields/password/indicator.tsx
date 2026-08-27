@@ -7,6 +7,7 @@
 import { CircleCheck } from "lucide-react";
 import React from "react";
 import { E_PASSWORD_STRENGTH } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 import { cn, getPasswordStrength, getPasswordCriteria } from "@plane/utils";
 import { getStrengthInfo, getFragmentColor } from "./helper";
 
@@ -21,6 +22,7 @@ export function PasswordStrengthIndicator({
   showCriteria = true,
   isFocused = false,
 }: PasswordStrengthIndicatorProps) {
+  const { t } = useTranslation();
   const strength = getPasswordStrength(password);
   const criteria = getPasswordCriteria(password);
   const strengthInfo = getStrengthInfo(strength);
@@ -48,7 +50,7 @@ export function PasswordStrengthIndicator({
         </div>
 
         {/* Strength Message */}
-        {password && <p className={cn("!text-13 font-medium", strengthInfo.textColor)}>{strengthInfo.message}</p>}
+        {password && <p className={cn("!text-13 font-medium", strengthInfo.textColor)}>{t(strengthInfo.message)}</p>}
       </div>
 
       {/* Criteria list */}
@@ -70,7 +72,7 @@ export function PasswordStrengthIndicator({
                   "text-primary": !criterion.isValid,
                 })}
               >
-                {criterion.label}
+                {t(`auth.password.criteria.${criterion.key}`)}
               </span>
             </div>
           ))}
