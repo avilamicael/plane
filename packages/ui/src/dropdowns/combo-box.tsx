@@ -54,11 +54,23 @@ const ComboDropDown = forwardRef(function ComboDropDown(props: Props, ref) {
     );
   }
 
+  // Headless UI can only forward the button props (ref, aria-*, handlers) when the
+  // child is a single element capable of receiving a ref. If consumers pass a
+  // Fragment, an array, a string, etc., wrap it in a layout-neutral div instead of
+  // crashing (React 19 + Headless UI v2 throw "Passing props on Fragment!").
+  const canPassthrough = React.isValidElement(button) && button.type !== Fragment;
+
   return (
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error
     <Combobox {...rest} ref={ref}>
-      <Combobox.Button as={Fragment}>{button}</Combobox.Button>
+      {canPassthrough ? (
+        <Combobox.Button as={Fragment}>{button}</Combobox.Button>
+      ) : (
+        <Combobox.Button as="div" style={{ display: "contents" }}>
+          {button}
+        </Combobox.Button>
+      )}
       {children}
     </Combobox>
   );
