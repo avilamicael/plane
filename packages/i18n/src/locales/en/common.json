@@ -147,16 +147,7 @@
   "projects": "Projects",
   "views": "Views",
   "archives": "Archives",
-  "settings": {
-    "profile": {
-      "first_name_required": "Please enter first name",
-      "display_name_required": "Display name is required."
-    },
-    "navigation": {
-      "nested_tabs_description": "Feature tabs will appear as nested items under project and acts as accordion.",
-      "horizontal_tabs_description": "Feature tabs will appear as horizontal tabs inside a project."
-    }
-  },
+  "settings": "Settings",
   "failed_to_move_favorite": "Failed to move favorite",
   "favorites": "Favorites",
   "no_favorites_yet": "No favorites yet",
@@ -472,7 +463,10 @@
     "dates": "Dates",
     "success": "Success!",
     "something_went_wrong": "Something went wrong",
-    "error": "Error",
+    "error": {
+      "label": "Error!",
+      "message": "Some error occurred. Please try again."
+    },
     "group_by": "Group by",
     "epic": "Epic",
     "epics": "Epics",
@@ -1290,5 +1284,14 @@
     "profile_created": "Profile - Created",
     "profile_subscribed": "Profile - Subscribed",
     "profile_activity": "Profile - Activity"
+  },
+  "go_to_changelog": "Go to changelog",
+  "profile_form": {
+    "first_name_required": "Please enter first name",
+    "display_name_required": "Display name is required."
+  },
+  "navigation_settings": {
+    "nested_tabs_description": "Feature tabs will appear as nested items under project and acts as accordion.",
+    "horizontal_tabs_description": "Feature tabs will appear as horizontal tabs inside a project."
   }
 }

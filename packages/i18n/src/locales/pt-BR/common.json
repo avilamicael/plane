@@ -147,16 +147,7 @@
   "projects": "Projetos",
   "views": "Visualizações",
   "archives": "Arquivos",
-  "settings": {
-    "profile": {
-      "first_name_required": "Digite o nome",
-      "display_name_required": "O nome de exibição é obrigatório."
-    },
-    "navigation": {
-      "nested_tabs_description": "As abas de recursos aparecem aninhadas sob o projeto, em formato de acordeão.",
-      "horizontal_tabs_description": "As abas de recursos aparecem como abas horizontais dentro do projeto."
-    }
-  },
+  "settings": "Configurações",
   "failed_to_move_favorite": "Falha ao mover o favorito",
   "favorites": "Favoritos",
   "no_favorites_yet": "Nenhum favorito ainda",
@@ -472,7 +463,10 @@
     "dates": "Datas",
     "success": "Sucesso!",
     "something_went_wrong": "Algo deu errado",
-    "error": "Erro",
+    "error": {
+      "label": "Erro!",
+      "message": "Ocorreu um erro. Tente novamente."
+    },
     "group_by": "Agrupar por",
     "epic": "Épico",
     "epics": "Épicos",
@@ -1290,5 +1284,14 @@
     "profile_created": "Perfil - Criados",
     "profile_subscribed": "Perfil - Inscritos",
     "profile_activity": "Perfil - Atividade"
+  },
+  "go_to_changelog": "Ver o changelog",
+  "profile_form": {
+    "first_name_required": "Digite o nome",
+    "display_name_required": "O nome de exibição é obrigatório."
+  },
+  "navigation_settings": {
+    "nested_tabs_description": "As abas de recursos aparecem aninhadas sob o projeto, em formato de acordeão.",
+    "horizontal_tabs_description": "As abas de recursos aparecem como abas horizontais dentro do projeto."
   }
 }
