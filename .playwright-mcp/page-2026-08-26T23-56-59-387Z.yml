@@ -1,9 +1,0 @@
-- generic [active] [ref=f4e1]:
-  - generic:
-    - region "Notifications":
-      - dialog [ref=f4e103]:
-        - button [ref=f4e104] [cursor=pointer]
-        - generic [ref=f4e113]:
-          - heading "Success" [level=2] [ref=f4e114]
-          - paragraph [ref=f4e115]: Workspace created successfully
-  - main [ref=f4e6]
