@@ -16,9 +16,19 @@ import { isNumber } from "lodash-es";
  * @example renderFormattedDate("2024-01-01", "MM-DD-YYYY") // Jan 01, 2024
  * @example renderFormattedDate("2024-01-01") // Jan 01, 2024
  */
+/**
+ * Idioma atual da interface, gravado em <html lang> por setLanguage() do @plane/i18n.
+ * Usado só onde o date-fns não tem token localizado (mês + dia sem ano).
+ * Retorna undefined fora do browser, o que faz o Intl cair no default do ambiente.
+ */
+const getUiLocale = (): string | undefined => {
+  if (typeof document === "undefined") return undefined;
+  return document.documentElement.lang || undefined;
+};
+
 export const renderFormattedDate = (
   date: string | Date | undefined | null,
-  formatToken: string = "MMM dd, yyyy"
+  formatToken: string = "PP"
 ): string | undefined => {
   // Parse the date to check if it is valid
   const parsedDate = getDate(date);
@@ -31,8 +41,8 @@ export const renderFormattedDate = (
     // Format the date in the format provided or default format (MMM dd, yyyy)
     formattedDate = format(parsedDate, formatToken);
   } catch (_e) {
-    // Format the date in format (MMM dd, yyyy) in case of any error
-    formattedDate = format(parsedDate, "MMM dd, yyyy");
+    // Em caso de token inválido, cai no formato localizado padrão
+    formattedDate = format(parsedDate, "PP");
   }
   return formattedDate;
 };
@@ -50,9 +60,13 @@ export const renderFormattedDateWithoutYear = (date: string | Date): string => {
   if (!parsedDate) return "";
   // Check if the parsed date is valid before formatting
   if (!isValid(parsedDate)) return ""; // Return empty string for invalid dates
-  // Format the date in short format (MMM dd)
-  const formattedDate = format(parsedDate, "MMM dd");
-  return formattedDate;
+  // O date-fns não tem token localizado para "mês + dia sem ano", então a ordem
+  // (Sep 05 vs 05 de set.) tem de vir do Intl.
+  try {
+    return new Intl.DateTimeFormat(getUiLocale(), { month: "short", day: "numeric" }).format(parsedDate);
+  } catch (_e) {
+    return format(parsedDate, "MMM dd");
+  }
 };
 
 /**

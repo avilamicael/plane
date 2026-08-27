@@ -10,6 +10,7 @@ import ICU from "i18next-icu";
 import resourcesToBackend from "i18next-resources-to-backend";
 import { SUPPORTED_LANGUAGES, FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "../constants/language";
 import { NAMESPACES, DEFAULT_NAMESPACE } from "../constants/namespaces";
+import { syncDateFnsLocale } from "./date-locale";
 
 import type { i18n as I18nInstance } from "i18next";
 
@@ -22,6 +23,12 @@ i18nInstance
 
 const initialLng =
   typeof window !== "undefined" ? localStorage.getItem(LANGUAGE_STORAGE_KEY) || FALLBACK_LANGUAGE : FALLBACK_LANGUAGE;
+
+// Mantém o locale do date-fns alinhado ao idioma da interface. Cobre tanto
+// setLanguage() quanto changeLanguage() do hook, porque ambos passam por aqui.
+i18nInstance.on("languageChanged", (lng: string) => {
+  void syncDateFnsLocale(lng);
+});
 
 export const initPromise = i18nInstance
   .init({
@@ -49,4 +56,7 @@ export const initPromise = i18nInstance
   // Eagerly pre-load all namespaces for the initial language so they're cached
   // before any component renders. This prevents the re-render cascade that occurs
   // when react-i18next triggers concurrent async loads for unloaded namespaces.
-  .then(() => i18nInstance.loadNamespaces(NAMESPACES));
+  .then(() => i18nInstance.loadNamespaces(NAMESPACES))
+  // O locale do date-fns entra na mesma cadeia: se ficasse fora, o primeiro
+  // render sairia com datas em inglês e piscaria para o idioma certo depois.
+  .then(() => syncDateFnsLocale(initialLng));

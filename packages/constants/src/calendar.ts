@@ -107,6 +107,60 @@ export const DAYS_LIST: {
   },
 };
 
+/**
+ * Idioma da interface, gravado em <html lang> por setLanguage() do @plane/i18n.
+ */
+const getUiLocale = (): string | undefined => {
+  if (typeof document === "undefined") return undefined;
+  return document.documentElement.lang || undefined;
+};
+
+/**
+ * MONTHS_LIST e DAYS_LIST acima são fixas em inglês, então todo calendário e
+ * date picker exibia "January"/"Sunday" independentemente do idioma. Estas
+ * funções montam a mesma estrutura a partir do Intl, seguindo o idioma atual.
+ *
+ * As constantes originais seguem exportadas como fallback e para quem precisa
+ * das chaves em inglês.
+ */
+export const getLocalizedMonthsList = (): typeof MONTHS_LIST => {
+  const locale = getUiLocale();
+  try {
+    const long = new Intl.DateTimeFormat(locale, { month: "long" });
+    const short = new Intl.DateTimeFormat(locale, { month: "short" });
+    const result: typeof MONTHS_LIST = {};
+    for (let month = 1; month <= 12; month++) {
+      // dia 15 evita qualquer efeito de fuso empurrar para o mês vizinho
+      const sample = new Date(2024, month - 1, 15);
+      result[month] = { shortTitle: short.format(sample), title: long.format(sample) };
+    }
+    return result;
+  } catch (_e) {
+    return MONTHS_LIST;
+  }
+};
+
+export const getLocalizedDaysList = (): typeof DAYS_LIST => {
+  const locale = getUiLocale();
+  try {
+    const long = new Intl.DateTimeFormat(locale, { weekday: "long" });
+    const short = new Intl.DateTimeFormat(locale, { weekday: "short" });
+    const result: typeof DAYS_LIST = {};
+    for (let index = 1; index <= 7; index++) {
+      // 2024-09-01 é um domingo, que é o índice 1 de DAYS_LIST
+      const sample = new Date(2024, 8, index);
+      result[index] = {
+        shortTitle: short.format(sample),
+        title: long.format(sample),
+        value: DAYS_LIST[index].value,
+      };
+    }
+    return result;
+  } catch (_e) {
+    return DAYS_LIST;
+  }
+};
+
 export const CALENDAR_LAYOUTS: {
   [layout in TCalendarLayouts]: {
     key: TCalendarLayouts;

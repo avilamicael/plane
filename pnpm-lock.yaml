@@ -1484,6 +1484,9 @@ importers:
 
   packages/i18n:
     dependencies:
+      date-fns:
+        specifier: 'catalog:'
+        version: 4.1.0
       i18next:
         specifier: 'catalog:'
         version: 25.10.9(typescript@5.8.3)

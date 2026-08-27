@@ -127,7 +127,7 @@ export const LinkCreateUpdateModal = observer(function LinkCreateUpdateModal(pro
         </div>
         <div className="flex items-center justify-end gap-2 border-t-[0.5px] border-subtle px-5 py-4">
           <Button variant="secondary" size="lg" onClick={onClose}>
-            {t("Cancel")}
+            {t("common.cancel")}
           </Button>
           <Button variant="primary" size="lg" type="submit" loading={isSubmitting}>
             {preloadedData?.id ? (isSubmitting ? t("updating") : t("update")) : isSubmitting ? t("adding") : t("add")}{" "}
