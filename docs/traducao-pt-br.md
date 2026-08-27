@@ -15,12 +15,12 @@ as chaves internas de `en/` existem em `pt-BR/`. Nenhuma chave faltando, nenhuma
 Ou seja: o que ainda aparece em inglês **não se resolve traduzindo os JSONs**. O problema está
 distribuído em quatro categorias, e só uma delas é editar locale.
 
-| Cat. | Natureza | Itens | Onde se corrige |
-| --- | --- | --- | --- |
-| A | Dados semeados pelo backend | 6 estados + conteúdo demo | JSON de seed / modelo Django |
-| B | Strings hardcoded no frontend | 21 pontos de código | Componentes `.tsx` |
-| C | Chave existe, valor pt-BR ficou em inglês | 22 chaves (17 a traduzir) | `pt-BR/*.json` |
-| D | Chave inexistente / namespace errado | 4 chaves, 8 pontos | `.tsx` + `accessibility.json` |
+| Cat. | Natureza                                  | Itens                     | Onde se corrige               |
+| ---- | ----------------------------------------- | ------------------------- | ----------------------------- |
+| A    | Dados semeados pelo backend               | 6 estados + conteúdo demo | JSON de seed / modelo Django  |
+| B    | Strings hardcoded no frontend             | 21 pontos de código       | Componentes `.tsx`            |
+| C    | Chave existe, valor pt-BR ficou em inglês | 22 chaves (17 a traduzir) | `pt-BR/*.json`                |
+| D    | Chave inexistente / namespace errado      | 4 chaves, 8 pontos        | `.tsx` + `accessibility.json` |
 
 ---
 
@@ -34,30 +34,30 @@ em que o projeto nasce. Traduzir o locale não muda nada aqui.
 
 ### Origem
 
-| Arquivo | O que semeia |
-| --- | --- |
-| `apps/api/plane/db/models/state.py` (`DEFAULT_STATES`, linhas 24-62) | Estados de **todo projeto novo** |
-| `apps/api/plane/seeds/data/states.json` | Estados do **projeto demo** |
-| `apps/api/plane/seeds/data/issues.json` | Itens demo ("Welcome to Plane 👋", …) |
-| `apps/api/plane/seeds/data/cycles.json` | "Cycle 1: Getting Started with Plane", … |
-| `apps/api/plane/seeds/data/modules.json` | "Core Workflow (System)", … |
-| `apps/api/plane/seeds/data/{pages,views,labels,projects}.json` | Demais conteúdos demo |
+| Arquivo                                                              | O que semeia                             |
+| -------------------------------------------------------------------- | ---------------------------------------- |
+| `apps/api/plane/db/models/state.py` (`DEFAULT_STATES`, linhas 24-62) | Estados de **todo projeto novo**         |
+| `apps/api/plane/seeds/data/states.json`                              | Estados do **projeto demo**              |
+| `apps/api/plane/seeds/data/issues.json`                              | Itens demo ("Welcome to Plane 👋", …)    |
+| `apps/api/plane/seeds/data/cycles.json`                              | "Cycle 1: Getting Started with Plane", … |
+| `apps/api/plane/seeds/data/modules.json`                             | "Core Workflow (System)", …              |
+| `apps/api/plane/seeds/data/{pages,views,labels,projects}.json`       | Demais conteúdos demo                    |
 
 ### Renomeação proposta
 
-| Grupo | Nome atual | Proposto |
-| --- | --- | --- |
-| `backlog` | Backlog | Backlog *(manter — termo consagrado)* |
-| `unstarted` | Todo | A fazer |
-| `started` | In Progress | Em andamento |
-| `completed` | Done | Concluído |
-| `cancelled` | Cancelled | Cancelado |
-| `triage` | Triage | Triagem |
+| Grupo       | Nome atual  | Proposto                              |
+| ----------- | ----------- | ------------------------------------- |
+| `backlog`   | Backlog     | Backlog _(manter — termo consagrado)_ |
+| `unstarted` | Todo        | A fazer                               |
+| `started`   | In Progress | Em andamento                          |
+| `completed` | Done        | Concluído                             |
+| `cancelled` | Cancelled   | Cancelado                             |
+| `triage`    | Triage      | Triagem                               |
 
 ### Duas ressalvas importantes
 
 1. **São dados do usuário, editáveis pela UI.** Qualquer pessoa pode renomear em
-   *Configurações do projeto → Estados*. Mexer no seed muda apenas o ponto de partida.
+   _Configurações do projeto → Estados_. Mexer no seed muda apenas o ponto de partida.
 2. **Só afeta projetos criados depois da mudança.** Projetos existentes mantêm os nomes atuais;
    precisariam de uma data migration à parte, que é decisão de produto — renomear dados que o
    usuário já pode ter customizado é destrutivo e não deve ser feito automaticamente.
@@ -75,24 +75,24 @@ quebra a edição livre do nome pelo usuário.
 Textos escritos direto no JSX, sem passar por `t()`. Estes são correções limpas e sem efeito
 colateral.
 
-| # | Arquivo:linha | String atual | Chave a usar | pt-BR |
-| --- | --- | --- | --- | --- |
-| 1 | `apps/web/core/components/issues/header.tsx:72` | `label="Work Items"` | `common.work_items` ✅ existe | Itens de trabalho |
-| 2 | `apps/web/app/(all)/[workspaceSlug]/(projects)/browse/[workItem]/work-item-header.tsx:47` | `label="Work Items"` | `common.work_items` ✅ | Itens de trabalho |
-| 3 | `.../projects/(detail)/[projectId]/cycles/(list)/header.tsx:50` | `label="Cycles"` | `common.cycles` ✅ | Ciclos |
-| 4 | `.../projects/(detail)/[projectId]/cycles/(detail)/header.tsx:144` | `label="Cycles"` | `common.cycles` ✅ | Ciclos |
-| 5 | `.../projects/(detail)/[projectId]/modules/(list)/header.tsx:54` | `label="Modules"` | `common.modules` ✅ | Módulos |
-| 6 | `.../projects/(detail)/[projectId]/modules/(detail)/header.tsx:141` | `label="Modules"` | `common.modules` ✅ | Módulos |
-| 7 | `apps/web/core/components/workspace/sidebar/sidebar-menu-items.tsx:173` | `{... ? "Hide" : "More"}` | **criar** `common.hide` / `common.more` | Ocultar / Mais |
-| 8 | `apps/web/core/components/workspace/sidebar/projects-list.tsx:265` | `{... ? "Hide" : "More"}` | **criar** `common.hide` / `common.more` | Ocultar / Mais |
-| 9 | `apps/web/core/components/issues/issue-update-status.tsx:30` | `"Saving..." : "Saved"` | `common.saving` ✅ + **criar** `common.saved` | Salvando… / Salvo |
-| 10 | `apps/web/core/components/exporter/export-modal.tsx:139`<br>`apps/web/core/components/exporter/export-form.tsx:172`<br>`apps/web/core/components/analytics/select/project.tsx:62` | `"All projects"` | **criar** `common.all_projects` | Todos os projetos |
-| 11 | `apps/web/core/components/common/quick-actions-helper.tsx:82` | `"Only completed cycles can be archived"` | **criar** | Apenas ciclos concluídos podem ser arquivados |
-| 12 | `apps/web/core/components/common/quick-actions-helper.tsx:107` | `"Only completed or cancelled modules can be archived"` | **criar** | Apenas módulos concluídos ou cancelados podem ser arquivados |
-| 13 | `apps/web/core/components/inbox/inbox-filter/root.tsx:25`<br>`apps/web/core/components/project/dropdowns/filters/member-list.tsx:105` | `<span>Filters</span>` | `common.filters` ✅ | Filtros |
-| 14 | `apps/web/core/components/cycles/active-cycle/productivity.tsx:69` | `` `Pending work items - ${n}` `` | **criar** (com placeholder) | Itens pendentes — {count} |
-| 15 | `apps/web/core/components/core/sidebar/progress-chart.tsx:60` | `label: "Completion"` | **criar** | Conclusão |
-| 16 | `.../issue-detail/issue-activity/activity/actions/default.tsx:41,45` | `created the work item.` | **criar** | criou o item de trabalho. |
+| #   | Arquivo:linha                                                                                                                                                                     | String atual                                            | Chave a usar                                  | pt-BR                                                        |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------ |
+| 1   | `apps/web/core/components/issues/header.tsx:72`                                                                                                                                   | `label="Work Items"`                                    | `common.work_items` ✅ existe                 | Itens de trabalho                                            |
+| 2   | `apps/web/app/(all)/[workspaceSlug]/(projects)/browse/[workItem]/work-item-header.tsx:47`                                                                                         | `label="Work Items"`                                    | `common.work_items` ✅                        | Itens de trabalho                                            |
+| 3   | `.../projects/(detail)/[projectId]/cycles/(list)/header.tsx:50`                                                                                                                   | `label="Cycles"`                                        | `common.cycles` ✅                            | Ciclos                                                       |
+| 4   | `.../projects/(detail)/[projectId]/cycles/(detail)/header.tsx:144`                                                                                                                | `label="Cycles"`                                        | `common.cycles` ✅                            | Ciclos                                                       |
+| 5   | `.../projects/(detail)/[projectId]/modules/(list)/header.tsx:54`                                                                                                                  | `label="Modules"`                                       | `common.modules` ✅                           | Módulos                                                      |
+| 6   | `.../projects/(detail)/[projectId]/modules/(detail)/header.tsx:141`                                                                                                               | `label="Modules"`                                       | `common.modules` ✅                           | Módulos                                                      |
+| 7   | `apps/web/core/components/workspace/sidebar/sidebar-menu-items.tsx:173`                                                                                                           | `{... ? "Hide" : "More"}`                               | **criar** `common.hide` / `common.more`       | Ocultar / Mais                                               |
+| 8   | `apps/web/core/components/workspace/sidebar/projects-list.tsx:265`                                                                                                                | `{... ? "Hide" : "More"}`                               | **criar** `common.hide` / `common.more`       | Ocultar / Mais                                               |
+| 9   | `apps/web/core/components/issues/issue-update-status.tsx:30`                                                                                                                      | `"Saving..." : "Saved"`                                 | `common.saving` ✅ + **criar** `common.saved` | Salvando… / Salvo                                            |
+| 10  | `apps/web/core/components/exporter/export-modal.tsx:139`<br>`apps/web/core/components/exporter/export-form.tsx:172`<br>`apps/web/core/components/analytics/select/project.tsx:62` | `"All projects"`                                        | **criar** `common.all_projects`               | Todos os projetos                                            |
+| 11  | `apps/web/core/components/common/quick-actions-helper.tsx:82`                                                                                                                     | `"Only completed cycles can be archived"`               | **criar**                                     | Apenas ciclos concluídos podem ser arquivados                |
+| 12  | `apps/web/core/components/common/quick-actions-helper.tsx:107`                                                                                                                    | `"Only completed or cancelled modules can be archived"` | **criar**                                     | Apenas módulos concluídos ou cancelados podem ser arquivados |
+| 13  | `apps/web/core/components/inbox/inbox-filter/root.tsx:25`<br>`apps/web/core/components/project/dropdowns/filters/member-list.tsx:105`                                             | `<span>Filters</span>`                                  | `common.filters` ✅                           | Filtros                                                      |
+| 14  | `apps/web/core/components/cycles/active-cycle/productivity.tsx:69`                                                                                                                | `` `Pending work items - ${n}` ``                       | **criar** (com placeholder)                   | Itens pendentes — {count}                                    |
+| 15  | `apps/web/core/components/core/sidebar/progress-chart.tsx:60`                                                                                                                     | `label: "Completion"`                                   | **criar**                                     | Conclusão                                                    |
+| 16  | `.../issue-detail/issue-activity/activity/actions/default.tsx:41,45`                                                                                                              | `created the work item.`                                | **criar**                                     | criou o item de trabalho.                                    |
 
 > O item 13 é visível lado a lado: na tela de **Ciclos** o botão aparece como "Filtros"
 > (traduzido) e na de **Módulos** como "Filters" (hardcoded). Mesmo botão, dois comportamentos.
@@ -105,22 +105,21 @@ colateral.
 <div className="px-1 text-14 font-medium text-secondary capitalize">{groupKey}</div>
 ```
 
-O slug do grupo vai direto para a tela. Em *Configurações do projeto → Estados* lê-se
+O slug do grupo vai direto para a tela. Em _Configurações do projeto → Estados_ lê-se
 `backlog`, `unstarted`, `started`, `completed`, `cancelled` — em minúsculas, só maquiados pelo
 CSS `capitalize`. O mesmo vaza no painel de progresso do ciclo ativo.
 
 As chaves **já existem e já estão traduzidas**:
 
-| Chave | pt-BR |
-| --- | --- |
-| `workspace_projects.state.backlog` | Backlog |
+| Chave                                | pt-BR        |
+| ------------------------------------ | ------------ |
+| `workspace_projects.state.backlog`   | Backlog      |
 | `workspace_projects.state.unstarted` | Não iniciado |
-| `workspace_projects.state.started` | Iniciado |
-| `workspace_projects.state.completed` | Concluído |
-| `workspace_projects.state.cancelled` | Cancelado |
+| `workspace_projects.state.started`   | Iniciado     |
+| `workspace_projects.state.completed` | Concluído    |
+| `workspace_projects.state.cancelled` | Cancelado    |
 
-Correção: trocar `{groupKey}` por `{t(\`workspace_projects.state.${groupKey}\`)}` e remover o
-`capitalize`.
+Correção: trocar `{groupKey}` por `{t(\`workspace_projects.state.${groupKey}\`)}`e remover o`capitalize`.
 
 ### 18. Prioridades ignoram as chaves traduzidas
 
@@ -131,13 +130,13 @@ inglês ("Urgent", "High", "Medium", "Low", "None"), e
 
 Enquanto isso, as chaves traduzidas existem e ficam sem uso:
 
-| Chave | pt-BR |
-| --- | --- |
-| `issue.priority.urgent` | Urgente |
-| `issue.priority.high` | Alta |
-| `issue.priority.medium` | Média |
-| `issue.priority.low` | Baixa |
-| `issue.priority.none` | ⚠️ **não existe** — criar ("Nenhuma") |
+| Chave                   | pt-BR                                 |
+| ----------------------- | ------------------------------------- |
+| `issue.priority.urgent` | Urgente                               |
+| `issue.priority.high`   | Alta                                  |
+| `issue.priority.medium` | Média                                 |
+| `issue.priority.low`    | Baixa                                 |
+| `issue.priority.none`   | ⚠️ **não existe** — criar ("Nenhuma") |
 
 Correção: trocar `title: string` por uma chave i18n na constante e resolver com `t()` no
 componente. Note que `none` precisa ser criada em `en` e em todos os locales.
@@ -152,44 +151,44 @@ Correção direta em `packages/i18n/src/locales/pt-BR/*.json`. São 22 chaves.
 
 O caso mais visível: a sidebar destoa do resto do app, que **já traduz esses mesmos conceitos**.
 
-| Chave | Atual (pt-BR) | Proposto | Já traduzido assim em |
-| --- | --- | --- | --- |
-| `sidebar.home` | Home | Início | — |
-| `sidebar.inbox` | Inbox | Caixa de entrada | `notification.json` |
-| `sidebar.workspace` | Workspace | Espaço de trabalho | `common.json:660` |
-| `sidebar.analytics` | Analytics | Análises | `common.json:139` |
-| `sidebar.intake` | Intake | Admissão | `common.json:218` |
-| `sidebar.plane_pro` | Plane Pro | *manter* | nome de produto |
+| Chave               | Atual (pt-BR) | Proposto           | Já traduzido assim em |
+| ------------------- | ------------- | ------------------ | --------------------- |
+| `sidebar.home`      | Home          | Início             | —                     |
+| `sidebar.inbox`     | Inbox         | Caixa de entrada   | `notification.json`   |
+| `sidebar.workspace` | Workspace     | Espaço de trabalho | `common.json:660`     |
+| `sidebar.analytics` | Analytics     | Análises           | `common.json:139`     |
+| `sidebar.intake`    | Intake        | Admissão           | `common.json:218`     |
+| `sidebar.plane_pro` | Plane Pro     | _manter_           | nome de produto       |
 
 ### `common.json`
 
-| Chave | Atual | Proposto |
-| --- | --- | --- |
-| `common.work_structure` | Work structure | Estrutura de trabalho |
-| `common.execution` | Execution | Execução |
-| `common.administration` | Administration | Administração |
-| `common.developer` | Developer | Desenvolvedor |
-| `common.your_profile` | Your profile | Seu perfil |
-| `common.completed_on` | Completed on | Concluído em |
-| `compare_burndowns` | Compare burndowns. | Compare os burndowns. |
-| `forum` | Forum | **Fórum** — falta o acento; `power-k.json:144` já grafa "Fórum" |
+| Chave                   | Atual              | Proposto                                                        |
+| ----------------------- | ------------------ | --------------------------------------------------------------- |
+| `common.work_structure` | Work structure     | Estrutura de trabalho                                           |
+| `common.execution`      | Execution          | Execução                                                        |
+| `common.administration` | Administration     | Administração                                                   |
+| `common.developer`      | Developer          | Desenvolvedor                                                   |
+| `common.your_profile`   | Your profile       | Seu perfil                                                      |
+| `common.completed_on`   | Completed on       | Concluído em                                                    |
+| `compare_burndowns`     | Compare burndowns. | Compare os burndowns.                                           |
+| `forum`                 | Forum              | **Fórum** — falta o acento; `power-k.json:144` já grafa "Fórum" |
 
 > `work_structure`, `execution` e `administration` aparecem lado a lado com itens traduzidos no
-> menu de *Configurações do projeto*: "Administrador", "Geral", "Membros" em português e
+> menu de _Configurações do projeto_: "Administrador", "Geral", "Membros" em português e
 > "Work structure", "Execution" em inglês, na mesma coluna.
 
 ### Demais arquivos
 
-| Arquivo | Chave | Atual | Proposto |
-| --- | --- | --- | --- |
-| `auth.json` | `auth.common.email.label` | Email | E-mail |
-| `automation.json` | `automations.trigger.schedule.minute_suffix` | min | min *(manter)* |
-| `page.json` | `page_navigation_pane.tabs.info.label` | Info | Informação *(já usado em `common.json:14`)* |
-| `power-k.json` | `power_k.group_titles.contextual` | Contextual | Contextual *(manter — igual nos dois idiomas)* |
-| `integration.json` | `gitlab_enterprise_integration.client_secret_title` | Client Secret | Segredo do cliente |
-| `integration.json` | `gitlab_enterprise_integration.webhook_secret_title` | Webhook Secret | Segredo do webhook |
-| `integration.json` | `oauth_bridge_integration.provider_form.audience_placeholder` | `api://my-app-id` | *manter (placeholder técnico)* |
-| `integration.json` | `oauth_bridge_integration.provider_form.rate_limit_placeholder` | `120/minute` | *manter (formato técnico)* |
+| Arquivo            | Chave                                                           | Atual             | Proposto                                       |
+| ------------------ | --------------------------------------------------------------- | ----------------- | ---------------------------------------------- |
+| `auth.json`        | `auth.common.email.label`                                       | Email             | E-mail                                         |
+| `automation.json`  | `automations.trigger.schedule.minute_suffix`                    | min               | min _(manter)_                                 |
+| `page.json`        | `page_navigation_pane.tabs.info.label`                          | Info              | Informação _(já usado em `common.json:14`)_    |
+| `power-k.json`     | `power_k.group_titles.contextual`                               | Contextual        | Contextual _(manter — igual nos dois idiomas)_ |
+| `integration.json` | `gitlab_enterprise_integration.client_secret_title`             | Client Secret     | Segredo do cliente                             |
+| `integration.json` | `gitlab_enterprise_integration.webhook_secret_title`            | Webhook Secret    | Segredo do webhook                             |
+| `integration.json` | `oauth_bridge_integration.provider_form.audience_placeholder`   | `api://my-app-id` | _manter (placeholder técnico)_                 |
+| `integration.json` | `oauth_bridge_integration.provider_form.rate_limit_placeholder` | `120/minute`      | _manter (formato técnico)_                     |
 
 ### Duas chaves vazias
 
@@ -204,11 +203,11 @@ vazias em pt-BR — **mas também estão vazias em `en`**. Não é falha de trad
 `aria_labels.projects_sidebar.*`. Como a chave não resolve, o texto literal vai para o atributo
 `aria-label` — leitores de tela anunciam `aria_labels.app_sidebar.close_workspace_menu`.
 
-| Arquivo:linha | Chave chamada | Situação |
-| --- | --- | --- |
+| Arquivo:linha                            | Chave chamada                                                                                   | Situação                              |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------- |
 | `sidebar-menu-items.tsx:114,115,128,129` | `aria_labels.app_sidebar.close_workspace_menu`<br>`aria_labels.app_sidebar.open_workspace_menu` | ❌ não existe em **nenhum** namespace |
-| `sidebar-menu-items.tsx:168,169` | `aria_labels.app_sidebar.{close,open}_extended_sidebar` | ⚠️ existe, mas em `projects_sidebar` |
-| `projects-list.tsx:260,261` | `aria_labels.app_sidebar.{close,open}_extended_sidebar` | ⚠️ existe, mas em `projects_sidebar` |
+| `sidebar-menu-items.tsx:168,169`         | `aria_labels.app_sidebar.{close,open}_extended_sidebar`                                         | ⚠️ existe, mas em `projects_sidebar`  |
+| `projects-list.tsx:260,261`              | `aria_labels.app_sidebar.{close,open}_extended_sidebar`                                         | ⚠️ existe, mas em `projects_sidebar`  |
 
 Correção em dois passos:
 

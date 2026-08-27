@@ -196,7 +196,9 @@
         "models_docs_aria": "OpenAI models documentation",
         "api_keys_page_aria": "OpenAI API keys page",
         "updated_successfully": "AI Settings updated successfully",
-        "chatgpt_note": "If you use ChatGPT, this is for you."
+        "chatgpt_note": "If you use ChatGPT, this is for you.",
+        "vendor_note_prefix": "If you have a preferred AI models vendor, please get in",
+        "vendor_note_link": "touch with us."
       },
       "image": {
         "title": "Third-party image libraries",

@@ -973,7 +973,9 @@
     "date": "Date",
     "cover_image_alt": "Cover image",
     "create_account": "Create account",
-    "create_one": "Create one"
+    "create_one": "Create one",
+    "in_project": "in project:",
+    "leave_workspace_confirm": "Are you sure you want to leave the workspace? You will no longer have access to this"
   },
   "chart": {
     "x_axis": "X-axis",

@@ -1000,7 +1000,9 @@
       },
       "a_user_per_month": "a user per month",
       "upgrade_to_one": "Upgrade to One",
-      "free_price": "$0 per user per month"
+      "free_price": "$0 per user per month",
+      "sla_description_prefix": "Get business-friendly SLAs with higher plans. SLAs are by priority of work item and tiers",
+      "sla_description_link": "can be requested"
     }
   }
 }

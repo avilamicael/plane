@@ -322,7 +322,44 @@
       "connector_for": "em",
       "connector_to": "em",
       "connector_from": "de",
-      "connector_of": "de"
+      "connector_of": "de",
+      "restored": "restaurou",
+      "archived": "arquivou",
+      "created": "criou",
+      "deleted": "excluiu",
+      "converted": "converteu",
+      "to_an_epic": "em um épico",
+      "to_a_work_item": "em um item de trabalho",
+      "added_this": "adicionou este",
+      "updated_the": "atualizou o",
+      "removed_this": "removeu este",
+      "added": "adicionou",
+      "removed": "removeu",
+      "this_work_item": "este item de trabalho",
+      "to_the_cycle": "ao ciclo",
+      "from_the_cycle": "do ciclo",
+      "to_the_module": "ao módulo",
+      "from_the_module": "do módulo",
+      "set_the_module_to_short": "definiu o módulo como",
+      "set_the_title_to": "definiu o título como",
+      "inbox": {
+        "declined_work_item": "recusou o item de trabalho",
+        "snoozed_work_item": "adiou o item de trabalho",
+        "accepted_work_item": "aceitou o item de trabalho"
+      },
+      "marked_that_relates_to": "marcou que este item de trabalho se relaciona com",
+      "relation": {
+        "marked": "marcou",
+        "removed": "removeu",
+        "relates_to_suffix": "como relacionado a",
+        "blocking_suffix": "como bloqueando o item de trabalho",
+        "blocked_by_suffix": "como bloqueado por",
+        "duplicate_suffix": "como duplicado de",
+        "removed_relation_suffix": "a relação com",
+        "removed_blocking_suffix": "como bloqueando o item de trabalho",
+        "removed_blocked_by_suffix": "como bloqueado pelo item de trabalho",
+        "removed_duplicate_suffix": "como duplicado de"
+      }
     },
     "toasts": {
       "reaction": {

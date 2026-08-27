@@ -88,8 +88,8 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
   const workspaceDetail = store.workspaceRoot.getWorkspaceById(activity.workspace);
 
   const getBooleanActionText = (value: string | undefined) => {
-    if (value === "true") return "enabled";
-    if (value === "false") return "disabled";
+    if (value === "true") return i18nInstance.t("project.activity.enabled");
+    if (value === "false") return i18nInstance.t("project.activity.disabled");
     return verb;
   };
 
@@ -98,26 +98,33 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
       return {
         message: (
           <>
-            set the priority to <span className="font-medium text-primary">{newValue || "none"}</span>
+            {i18nInstance.t("project.activity.set_the_priority_to")}{" "}
+            <span className="font-medium text-primary">{newValue || i18nInstance.t("none")}</span>
           </>
         ),
       };
     case "archived_at":
       return {
-        message: newValue === "restore" ? "restored the project" : "archived the project",
+        message:
+          newValue === "restore"
+            ? i18nInstance.t("project.activity.restored_the_project")
+            : i18nInstance.t("project.activity.archived_the_project"),
         customUserName: newValue === "archive" ? "Plane" : undefined,
       };
     case "name":
       return {
         message: (
           <>
-            renamed the project to <span className="font-medium text-primary">{newValue}</span>
+            {i18nInstance.t("project.activity.renamed_the_project_to")}{" "}
+            <span className="font-medium text-primary">{newValue}</span>
           </>
         ),
       };
     case "description":
       return {
-        message: newValue ? "updated the project description" : "removed the project description",
+        message: newValue
+          ? i18nInstance.t("project.activity.updated_the_description")
+          : i18nInstance.t("project.activity.removed_the_description"),
       };
     case "start_date":
       return {
@@ -125,10 +132,11 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
           <>
             {newValue ? (
               <>
-                set the start date to <span className="font-medium text-primary">{newValue}</span>
+                {i18nInstance.t("project.activity.set_the_start_date_to")}{" "}
+                <span className="font-medium text-primary">{newValue}</span>
               </>
             ) : (
-              "removed the start date"
+              i18nInstance.t("project.activity.removed_the_start_date")
             )}
           </>
         ),
@@ -139,10 +147,11 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
           <>
             {newValue ? (
               <>
-                set the target date to <span className="font-medium text-primary">{newValue}</span>
+                {i18nInstance.t("project.activity.set_the_target_date_to")}{" "}
+                <span className="font-medium text-primary">{newValue}</span>
               </>
             ) : (
-              "removed the target date"
+              i18nInstance.t("project.activity.removed_the_target_date")
             )}
           </>
         ),
@@ -151,7 +160,8 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
       return {
         message: (
           <>
-            set the state to <span className="font-medium text-primary">{newValue || "none"}</span>
+            {i18nInstance.t("project.activity.set_the_state_to")}{" "}
+            <span className="font-medium text-primary">{newValue || i18nInstance.t("none")}</span>
           </>
         ),
       };
@@ -161,11 +171,12 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
           <>
             {newValue ? (
               <>
-                set the estimate point to <span className="font-medium text-primary">{newValue}</span>
+                {i18nInstance.t("project.activity.set_the_estimate_point_to")}{" "}
+                <span className="font-medium text-primary">{newValue}</span>
               </>
             ) : (
               <>
-                removed the estimate point
+                {i18nInstance.t("project.activity.removed_the_estimate_point")}
                 {oldValue && (
                   <>
                     {" "}
@@ -182,7 +193,10 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
         message: (
           <>
             <span>
-              {verb} this project {verb === "removed" ? "from" : "to"} the cycle{" "}
+              {verb}{" "}
+              {verb === "removed"
+                ? i18nInstance.t("project.activity.this_project_from_the_cycle")
+                : i18nInstance.t("project.activity.this_project_to_the_cycle")}{" "}
             </span>
             {verb !== "removed" ? (
               <a
@@ -206,7 +220,10 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
         message: (
           <>
             <span>
-              {verb} this project {verb === "removed" ? "from" : "to"} the module{" "}
+              {verb}{" "}
+              {verb === "removed"
+                ? i18nInstance.t("project.activity.this_project_from_the_module")
+                : i18nInstance.t("project.activity.this_project_to_the_module")}{" "}
             </span>
             <span className="font-medium text-primary">
               {verb === "removed" ? oldValue : newValue || i18nInstance.t("common.unknown_module")}
@@ -218,7 +235,7 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
       return {
         message: (
           <>
-            {verb} the label{" "}
+            {verb} {i18nInstance.t("project.activity.the_label")}{" "}
             <span className="font-medium text-primary">
               {newValue || oldValue || i18nInstance.t("common.untitled_label")}
             </span>
@@ -227,13 +244,20 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
       };
     case "inbox":
       return {
-        message: <>{newValue ? "enabled" : "disabled"} inbox</>,
+        message: (
+          <>
+            {newValue ? i18nInstance.t("project.activity.enabled") : i18nInstance.t("project.activity.disabled")}{" "}
+            {i18nInstance.t("project.activity.inbox")}
+          </>
+        ),
       };
     case "page":
       return {
         message: (
           <>
-            {newValue ? "created" : "removed"} the project page{" "}
+            {newValue
+              ? i18nInstance.t("project.activity.created_the_page")
+              : i18nInstance.t("project.activity.removed_the_page")}{" "}
             <span className="font-medium text-primary">
               {newValue || oldValue || i18nInstance.t("common.untitled_page")}
             </span>
@@ -242,13 +266,19 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
       };
     case "network":
       return {
-        message: <>{newValue ? "enabled" : "disabled"} network access</>,
+        message: (
+          <>
+            {newValue ? i18nInstance.t("project.activity.enabled") : i18nInstance.t("project.activity.disabled")}{" "}
+            {i18nInstance.t("project.activity.network_access")}
+          </>
+        ),
       };
     case "identifier":
       return {
         message: (
           <>
-            updated project identifier to <span className="font-medium text-primary">{newValue || "none"}</span>
+            {i18nInstance.t("project.activity.updated_identifier_to")}{" "}
+            <span className="font-medium text-primary">{newValue || i18nInstance.t("none")}</span>
           </>
         ),
       };
@@ -256,7 +286,10 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
       return {
         message: (
           <>
-            changed project timezone to <span className="font-medium text-primary">{newValue || "default"}</span>
+            {i18nInstance.t("project.activity.changed_timezone_to")}{" "}
+            <span className="font-medium text-primary">
+              {newValue || i18nInstance.t("project.activity.default_value")}
+            </span>
           </>
         ),
       };
@@ -268,29 +301,50 @@ export const messages = (activity: TProjectActivity): { message: string | ReactN
       return {
         message: (
           <>
-            {getBooleanActionText(newValue)} {activityType.replace(/_view$/, "").replace(/_/g, " ")} view
+            {getBooleanActionText(newValue)} {i18nInstance.t("project.activity.view_suffix")}{" "}
+            {i18nInstance.t(`project.activity.views.${activityType.replace(/_view$/, "")}`)}
           </>
         ),
       };
     case "is_project_updates_enabled":
       return {
-        message: <>{getBooleanActionText(newValue)} project updates</>,
+        message: (
+          <>
+            {getBooleanActionText(newValue)} {i18nInstance.t("project.activity.project_updates")}
+          </>
+        ),
       };
     case "is_epic_enabled":
       return {
-        message: <>{getBooleanActionText(newValue)} epics</>,
+        message: (
+          <>
+            {getBooleanActionText(newValue)} {i18nInstance.t("project.activity.epics")}
+          </>
+        ),
       };
     case "is_workflow_enabled":
       return {
-        message: <>{getBooleanActionText(newValue)} custom workflow</>,
+        message: (
+          <>
+            {getBooleanActionText(newValue)} {i18nInstance.t("project.activity.custom_workflow")}
+          </>
+        ),
       };
     case "is_time_tracking_enabled":
       return {
-        message: <>{getBooleanActionText(newValue)} time tracking</>,
+        message: (
+          <>
+            {getBooleanActionText(newValue)} {i18nInstance.t("project.activity.time_tracking")}
+          </>
+        ),
       };
     case "is_issue_type_enabled":
       return {
-        message: <>{getBooleanActionText(newValue)} work item types</>,
+        message: (
+          <>
+            {getBooleanActionText(newValue)} {i18nInstance.t("project.activity.work_item_types")}
+          </>
+        ),
       };
     default:
       return {

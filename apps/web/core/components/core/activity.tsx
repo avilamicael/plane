@@ -119,35 +119,41 @@ const LabelPill = observer(function LabelPill({ labelId, workspaceSlug }: { labe
 
 const inboxActivityMessage = {
   declined: {
-    showIssue: "declined work item",
-    noIssue: "declined this work item from intake.",
+    showIssue: "issue.activity.inbox.declined_work_item",
+    noIssue: "issue.activity.declined_this_work_item_from_intake",
   },
   snoozed: {
-    showIssue: "snoozed work item",
-    noIssue: "snoozed this work item.",
+    showIssue: "issue.activity.inbox.snoozed_work_item",
+    noIssue: "issue.activity.snoozed_this_work_item",
   },
   accepted: {
-    showIssue: "accepted work item",
-    noIssue: "accepted this work item from intake.",
+    showIssue: "issue.activity.inbox.accepted_work_item",
+    noIssue: "issue.activity.accepted_this_work_item_from_intake",
   },
   markedDuplicate: {
-    showIssue: "declined work item",
-    noIssue: "declined this work item from intake by marking a duplicate work item.",
+    showIssue: "issue.activity.inbox.declined_work_item",
+    noIssue: "issue.activity.declined_this_work_item_from_intake_as_duplicate",
   },
 };
 
 const getInboxUserActivityMessage = (activity: IIssueActivity, showIssue: boolean) => {
   switch (activity.verb) {
     case "-1":
-      return showIssue ? inboxActivityMessage.declined.showIssue : inboxActivityMessage.declined.noIssue;
+      return i18nInstance.t(
+        showIssue ? inboxActivityMessage.declined.showIssue : inboxActivityMessage.declined.noIssue
+      );
     case "0":
-      return showIssue ? inboxActivityMessage.snoozed.showIssue : inboxActivityMessage.snoozed.noIssue;
+      return i18nInstance.t(showIssue ? inboxActivityMessage.snoozed.showIssue : inboxActivityMessage.snoozed.noIssue);
     case "1":
-      return showIssue ? inboxActivityMessage.accepted.showIssue : inboxActivityMessage.accepted.noIssue;
+      return i18nInstance.t(
+        showIssue ? inboxActivityMessage.accepted.showIssue : inboxActivityMessage.accepted.noIssue
+      );
     case "2":
-      return showIssue ? inboxActivityMessage.markedDuplicate.showIssue : inboxActivityMessage.markedDuplicate.noIssue;
+      return i18nInstance.t(
+        showIssue ? inboxActivityMessage.markedDuplicate.showIssue : inboxActivityMessage.markedDuplicate.noIssue
+      );
     default:
-      return "updated intake work item status.";
+      return i18nInstance.t("issue.activity.updated_intake_work_item_status");
   }
 };
 
@@ -162,11 +168,11 @@ const activityDetails: {
       if (activity.old_value === "")
         return (
           <>
-            added a new assignee <UserLink activity={activity} />
+            {i18nInstance.t("issue.activity.added_a_new_assignee")} <UserLink activity={activity} />
             {showIssue && (
               <>
                 {" "}
-                to <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_to")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -174,11 +180,11 @@ const activityDetails: {
       else
         return (
           <>
-            removed the assignee <UserLink activity={activity} />
+            {i18nInstance.t("issue.activity.removed_the_assignee")} <UserLink activity={activity} />
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -191,13 +197,13 @@ const activityDetails: {
       if (activity.new_value === "restore")
         return (
           <>
-            restored <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.restored")} <IssueLink activity={activity} />
           </>
         );
       else
         return (
           <>
-            archived <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.archived")} <IssueLink activity={activity} />
           </>
         );
     },
@@ -208,11 +214,11 @@ const activityDetails: {
       if (activity.verb === "created")
         return (
           <>
-            uploaded a new attachment
+            {i18nInstance.t("issue.activity.uploaded_a_new_attachment")}
             {showIssue && (
               <>
                 {" "}
-                to <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_to")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -220,11 +226,11 @@ const activityDetails: {
       else
         return (
           <>
-            removed an attachment
+            {i18nInstance.t("issue.activity.removed_an_attachment")}
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -235,11 +241,11 @@ const activityDetails: {
   description: {
     message: (activity, showIssue) => (
       <>
-        updated the description
+        {i18nInstance.t("issue.activity.updated_the_description")}
         {showIssue && (
           <>
             {" "}
-            of <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.connector_of")} <IssueLink activity={activity} />
           </>
         )}
       </>
@@ -251,11 +257,11 @@ const activityDetails: {
       if (!activity.new_value)
         return (
           <>
-            removed the estimate point
+            {i18nInstance.t("issue.activity.removed_the_estimate_point")}
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -263,11 +269,11 @@ const activityDetails: {
       else
         return (
           <>
-            set the estimate point to {activity.new_value}
+            {i18nInstance.t("issue.activity.set_the_estimate_point_to")} {activity.new_value}
             {showIssue && (
               <>
                 {" "}
-                for <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_for")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -280,19 +286,20 @@ const activityDetails: {
       if (activity.verb === "created")
         return (
           <>
-            created <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.created")} <IssueLink activity={activity} />
           </>
         );
       else if (activity.verb === "converted")
         return (
           <>
-            converted <IssueLink activity={activity} /> to an epic
+            {i18nInstance.t("issue.activity.converted")} <IssueLink activity={activity} />{" "}
+            {i18nInstance.t("issue.activity.to_an_epic")}
           </>
         );
       else
         return (
           <>
-            deleted <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.deleted")} <IssueLink activity={activity} />
           </>
         );
     },
@@ -303,19 +310,20 @@ const activityDetails: {
       if (activity.verb === "created")
         return (
           <>
-            created <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.created")} <IssueLink activity={activity} />
           </>
         );
       else if (activity.verb === "converted")
         return (
           <>
-            converted <IssueLink activity={activity} /> to a work item
+            {i18nInstance.t("issue.activity.converted")} <IssueLink activity={activity} />{" "}
+            {i18nInstance.t("issue.activity.to_a_work_item")}
           </>
         );
       else
         return (
           <>
-            deleted <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.deleted")} <IssueLink activity={activity} />
           </>
         );
     },
@@ -326,7 +334,7 @@ const activityDetails: {
       if (activity.old_value === "")
         return (
           <span className="overflow-hidden">
-            added a new label{" "}
+            {i18nInstance.t("issue.activity.added_a_new_label")}{" "}
             <span className="inline-flex items-center gap-2 rounded-full border border-strong px-2 py-0.5 text-11">
               <LabelPill labelId={activity.new_identifier ?? ""} workspaceSlug={workspaceSlug} />
               <span className="line-clamp-1 flex-shrink font-medium break-all text-primary">{activity.new_value}</span>
@@ -334,7 +342,7 @@ const activityDetails: {
             {showIssue && (
               <span className="">
                 {" "}
-                to <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_to")} <IssueLink activity={activity} />
               </span>
             )}
           </span>
@@ -342,7 +350,7 @@ const activityDetails: {
       else
         return (
           <>
-            removed the label{" "}
+            {i18nInstance.t("issue.activity.removed_the_label")}{" "}
             <span className="inline-flex items-center gap-2 rounded-full border border-strong px-2 py-0.5 text-11">
               <LabelPill labelId={activity.old_identifier ?? ""} workspaceSlug={workspaceSlug} />
               <span className="line-clamp-1 flex-shrink font-medium break-all text-primary">{activity.old_value}</span>
@@ -350,7 +358,7 @@ const activityDetails: {
             {showIssue && (
               <span>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </span>
             )}
           </>
@@ -363,7 +371,7 @@ const activityDetails: {
       if (activity.verb === "created")
         return (
           <>
-            added this{" "}
+            {i18nInstance.t("issue.activity.added_this")}{" "}
             <a
               href={`${activity.new_value}`}
               target="_blank"
@@ -375,7 +383,7 @@ const activityDetails: {
             {showIssue && (
               <>
                 {" "}
-                to <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_to")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -383,7 +391,7 @@ const activityDetails: {
       else if (activity.verb === "updated")
         return (
           <>
-            updated the{" "}
+            {i18nInstance.t("issue.activity.updated_the")}{" "}
             <a
               href={`${activity.old_value}`}
               target="_blank"
@@ -395,7 +403,7 @@ const activityDetails: {
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -403,7 +411,7 @@ const activityDetails: {
       else
         return (
           <>
-            removed this{" "}
+            {i18nInstance.t("issue.activity.removed_this")}{" "}
             <a
               href={`${activity.old_value}`}
               target="_blank"
@@ -415,7 +423,7 @@ const activityDetails: {
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -429,8 +437,9 @@ const activityDetails: {
         return (
           <>
             <span className="flex-shrink-0">
-              added {showIssue ? <IssueLink activity={activity} /> : "this work item"}{" "}
-              <span className="whitespace-nowrap">to the cycle</span>{" "}
+              {i18nInstance.t("issue.activity.added")}{" "}
+              {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+              <span className="whitespace-nowrap">{i18nInstance.t("issue.activity.to_the_cycle")}</span>{" "}
             </span>
             <a
               href={`/${workspaceSlug}/projects/${activity.project}/cycles/${activity.new_identifier}`}
@@ -445,7 +454,9 @@ const activityDetails: {
       else if (activity.verb === "updated")
         return (
           <>
-            <span className="flex-shrink-0 whitespace-nowrap">set the cycle to </span>
+            <span className="flex-shrink-0 whitespace-nowrap">
+              {i18nInstance.t("issue.activity.set_the_cycle_to")}{" "}
+            </span>
             <a
               href={`/${workspaceSlug}/projects/${activity.project}/cycles/${activity.new_identifier}`}
               target="_blank"
@@ -459,7 +470,8 @@ const activityDetails: {
       else
         return (
           <>
-            removed <IssueLink activity={activity} /> from the cycle{" "}
+            {i18nInstance.t("issue.activity.removed")} <IssueLink activity={activity} />{" "}
+            {i18nInstance.t("issue.activity.from_the_cycle")}{" "}
             <a
               href={`/${workspaceSlug}/projects/${activity.project}/cycles/${activity.old_identifier}`}
               target="_blank"
@@ -478,7 +490,9 @@ const activityDetails: {
       if (activity.verb === "created")
         return (
           <>
-            added {showIssue ? <IssueLink activity={activity} /> : "this work item"} to the module{" "}
+            {i18nInstance.t("issue.activity.added")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.to_the_module")}{" "}
             <a
               href={`/${workspaceSlug}/projects/${activity.project}/modules/${activity.new_identifier}`}
               target="_blank"
@@ -492,7 +506,7 @@ const activityDetails: {
       else if (activity.verb === "updated")
         return (
           <>
-            set the module to{" "}
+            {i18nInstance.t("issue.activity.set_the_module_to_short")}{" "}
             <a
               href={`/${workspaceSlug}/projects/${activity.project}/modules/${activity.new_identifier}`}
               target="_blank"
@@ -506,7 +520,8 @@ const activityDetails: {
       else
         return (
           <>
-            removed <IssueLink activity={activity} /> from the module{" "}
+            {i18nInstance.t("issue.activity.removed")} <IssueLink activity={activity} />{" "}
+            {i18nInstance.t("issue.activity.from_the_module")}{" "}
             <a
               href={`/${workspaceSlug}/projects/${activity.project}/modules/${activity.old_identifier}`}
               target="_blank"
@@ -523,11 +538,11 @@ const activityDetails: {
   name: {
     message: (activity, showIssue) => (
       <>
-        set the title to <span className="break-all">{activity.new_value}</span>
+        {i18nInstance.t("issue.activity.set_the_title_to")} <span className="break-all">{activity.new_value}</span>
         {showIssue && (
           <>
             {" "}
-            of <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.connector_of")} <IssueLink activity={activity} />
           </>
         )}
       </>
@@ -539,11 +554,12 @@ const activityDetails: {
       if (!activity.new_value)
         return (
           <>
-            removed the parent <span className="font-medium whitespace-nowrap text-primary">{activity.old_value}</span>
+            {i18nInstance.t("issue.activity.removed_the_parent")}{" "}
+            <span className="font-medium whitespace-nowrap text-primary">{activity.old_value}</span>
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -551,11 +567,12 @@ const activityDetails: {
       else
         return (
           <>
-            set the parent to <span className="font-medium whitespace-nowrap text-primary">{activity.new_value}</span>
+            {i18nInstance.t("issue.activity.set_the_parent_to")}{" "}
+            <span className="font-medium whitespace-nowrap text-primary">{activity.new_value}</span>
             {showIssue && (
               <>
                 {" "}
-                for <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_for")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -566,14 +583,14 @@ const activityDetails: {
   priority: {
     message: (activity, showIssue) => (
       <>
-        set the priority to{" "}
+        {i18nInstance.t("issue.activity.set_the_priority_to")}{" "}
         <span className="font-medium text-primary">
           {activity.new_value ? capitalizeFirstLetter(activity.new_value) : i18nInstance.t("none")}
         </span>
         {showIssue && (
           <>
             {" "}
-            for <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.connector_for")} <IssueLink activity={activity} />
           </>
         )}
       </>
@@ -585,14 +602,18 @@ const activityDetails: {
       if (activity.old_value === "")
         return (
           <>
-            marked that {showIssue ? <IssueLink activity={activity} /> : "this work item"} relates to{" "}
+            {i18nInstance.t("issue.activity.relation.marked")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.relates_to_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.new_value}</span>.
           </>
         );
       else
         return (
           <>
-            removed the relation from{" "}
+            {i18nInstance.t("issue.activity.relation.removed")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.removed_relation_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.old_value}</span>.
           </>
         );
@@ -604,14 +625,18 @@ const activityDetails: {
       if (activity.old_value === "")
         return (
           <>
-            marked {showIssue ? <IssueLink activity={activity} /> : "this work item"} is blocking work item{" "}
+            {i18nInstance.t("issue.activity.relation.marked")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.blocking_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.new_value}</span>.
           </>
         );
       else
         return (
           <>
-            removed the blocking work item{" "}
+            {i18nInstance.t("issue.activity.relation.removed")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.removed_blocking_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.old_value}</span>.
           </>
         );
@@ -623,14 +648,18 @@ const activityDetails: {
       if (activity.old_value === "")
         return (
           <>
-            marked {showIssue ? <IssueLink activity={activity} /> : "this work item"} is being blocked by{" "}
+            {i18nInstance.t("issue.activity.relation.marked")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.blocked_by_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.new_value}</span>.
           </>
         );
       else
         return (
           <>
-            removed {showIssue ? <IssueLink activity={activity} /> : "this work item"} being blocked by work item{" "}
+            {i18nInstance.t("issue.activity.relation.removed")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.removed_blocked_by_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.old_value}</span>.
           </>
         );
@@ -642,14 +671,18 @@ const activityDetails: {
       if (activity.old_value === "")
         return (
           <>
-            marked {showIssue ? <IssueLink activity={activity} /> : "this work item"} as duplicate of{" "}
+            {i18nInstance.t("issue.activity.relation.marked")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.duplicate_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.new_value}</span>.
           </>
         );
       else
         return (
           <>
-            removed {showIssue ? <IssueLink activity={activity} /> : "this work item"} as a duplicate of{" "}
+            {i18nInstance.t("issue.activity.relation.removed")}{" "}
+            {showIssue ? <IssueLink activity={activity} /> : i18nInstance.t("issue.activity.this_work_item")}{" "}
+            {i18nInstance.t("issue.activity.relation.removed_duplicate_suffix")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">{activity.old_value}</span>.
           </>
         );
@@ -659,11 +692,12 @@ const activityDetails: {
   state: {
     message: (activity, showIssue) => (
       <>
-        set the state to <span className="font-medium break-all text-primary">{activity.new_value}</span>
+        {i18nInstance.t("issue.activity.set_the_state_to")}{" "}
+        <span className="font-medium break-all text-primary">{activity.new_value}</span>
         {showIssue && (
           <>
             {" "}
-            for <IssueLink activity={activity} />
+            {i18nInstance.t("issue.activity.connector_for")} <IssueLink activity={activity} />
           </>
         )}
       </>
@@ -675,11 +709,11 @@ const activityDetails: {
       if (!activity.new_value)
         return (
           <>
-            removed the start date
+            {i18nInstance.t("issue.activity.removed_the_start_date")}
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -687,14 +721,14 @@ const activityDetails: {
       else
         return (
           <>
-            set the start date to{" "}
+            {i18nInstance.t("issue.activity.set_the_start_date_to")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">
               {renderFormattedDate(activity.new_value)}
             </span>
             {showIssue && (
               <>
                 {" "}
-                for <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_for")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -707,11 +741,11 @@ const activityDetails: {
       if (!activity.new_value)
         return (
           <>
-            removed the due date
+            {i18nInstance.t("issue.activity.removed_the_due_date")}
             {showIssue && (
               <>
                 {" "}
-                from <IssueLink activity={activity} />
+                {i18nInstance.t("issue.activity.connector_from")} <IssueLink activity={activity} />
               </>
             )}
           </>
@@ -719,7 +753,7 @@ const activityDetails: {
       else
         return (
           <>
-            set the due date to{" "}
+            {i18nInstance.t("issue.activity.set_the_due_date_to")}{" "}
             <span className="font-medium whitespace-nowrap text-primary">
               {renderFormattedDate(activity.new_value)}
             </span>

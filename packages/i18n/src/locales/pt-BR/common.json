@@ -973,7 +973,9 @@
     "date": "Data",
     "cover_image_alt": "Imagem de capa",
     "create_account": "Criar conta",
-    "create_one": "Crie uma"
+    "create_one": "Crie uma",
+    "in_project": "no projeto:",
+    "leave_workspace_confirm": "Tem certeza de que deseja sair do espaço de trabalho? Você deixará de ter acesso a este"
   },
   "chart": {
     "x_axis": "Eixo X",

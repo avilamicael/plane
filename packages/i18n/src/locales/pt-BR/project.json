@@ -546,6 +546,48 @@
     },
     "features": {
       "pages_description_short": "Escreva o que quiser, do jeito que quiser."
+    },
+    "activity": {
+      "set_the_priority_to": "definiu a prioridade como",
+      "restored_the_project": "restaurou o projeto",
+      "archived_the_project": "arquivou o projeto",
+      "renamed_the_project_to": "renomeou o projeto para",
+      "updated_the_description": "atualizou a descrição do projeto",
+      "removed_the_description": "removeu a descrição do projeto",
+      "set_the_start_date_to": "definiu a data de início como",
+      "removed_the_start_date": "removeu a data de início",
+      "set_the_target_date_to": "definiu a data de entrega como",
+      "removed_the_target_date": "removeu a data de entrega",
+      "set_the_state_to": "definiu o estado como",
+      "set_the_estimate_point_to": "definiu o ponto de estimativa como",
+      "removed_the_estimate_point": "removeu o ponto de estimativa",
+      "updated_identifier_to": "atualizou o identificador do projeto para",
+      "changed_timezone_to": "alterou o fuso horário do projeto para",
+      "enabled": "ativou",
+      "disabled": "desativou",
+      "this_project_to_the_cycle": "este projeto ao ciclo",
+      "this_project_from_the_cycle": "este projeto do ciclo",
+      "this_project_to_the_module": "este projeto ao módulo",
+      "this_project_from_the_module": "este projeto do módulo",
+      "the_label": "a etiqueta",
+      "inbox": "a admissão",
+      "network_access": "o acesso à rede",
+      "created_the_page": "criou a página do projeto",
+      "removed_the_page": "removeu a página do projeto",
+      "project_updates": "as atualizações do projeto",
+      "epics": "os épicos",
+      "custom_workflow": "o fluxo de trabalho personalizado",
+      "time_tracking": "o controle de tempo",
+      "work_item_types": "os tipos de item de trabalho",
+      "view_suffix": "a visualização de",
+      "views": {
+        "module": "módulos",
+        "cycle": "ciclos",
+        "issue_views": "visualizações",
+        "page": "páginas",
+        "intake": "admissão"
+      },
+      "default_value": "padrão"
     }
   }
 }

@@ -75,7 +75,7 @@ export const ConfirmWorkspaceMemberRemove = observer(function ConfirmWorkspaceMe
                       <div className="mt-2">
                         {currentUser?.id === userDetails.id ? (
                           <p className="text-13 text-secondary">
-                            Are you sure you want to leave the workspace? You will no longer have access to this
+                            {t("common.leave_workspace_confirm")}
                             workspace. This action cannot be undone.
                           </p>
                         ) : (

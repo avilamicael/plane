@@ -1,18 +1,18 @@
 [
-    {
-        "id": 1,
-        "name": "Ciclo 1: Primeiros passos no Plane",
-        "project_id": 1,
-        "sort_order": 1,
-        "timezone": "UTC",
-        "type": "CURRENT"
-    },
-    {
-        "id": 2,
-        "name": "Ciclo 2: Colaboração e personalização",
-        "project_id": 1,
-        "sort_order": 2,
-        "timezone": "UTC",
-        "type": "UPCOMING"
-    }
+  {
+    "id": 1,
+    "name": "Ciclo 1: Primeiros passos no Plane",
+    "project_id": 1,
+    "sort_order": 1,
+    "timezone": "UTC",
+    "type": "CURRENT"
+  },
+  {
+    "id": 2,
+    "name": "Ciclo 2: Colaboração e personalização",
+    "project_id": 1,
+    "sort_order": 2,
+    "timezone": "UTC",
+    "type": "UPCOMING"
+  }
 ]

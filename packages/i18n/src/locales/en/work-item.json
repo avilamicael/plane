@@ -322,7 +322,44 @@
       "connector_for": "for",
       "connector_to": "to",
       "connector_from": "from",
-      "connector_of": "of"
+      "connector_of": "of",
+      "restored": "restored",
+      "archived": "archived",
+      "created": "created",
+      "deleted": "deleted",
+      "converted": "converted",
+      "to_an_epic": "to an epic",
+      "to_a_work_item": "to a work item",
+      "added_this": "added this",
+      "updated_the": "updated the",
+      "removed_this": "removed this",
+      "added": "added",
+      "removed": "removed",
+      "this_work_item": "this work item",
+      "to_the_cycle": "to the cycle",
+      "from_the_cycle": "from the cycle",
+      "to_the_module": "to the module",
+      "from_the_module": "from the module",
+      "set_the_module_to_short": "set the module to",
+      "set_the_title_to": "set the title to",
+      "inbox": {
+        "declined_work_item": "declined work item",
+        "snoozed_work_item": "snoozed work item",
+        "accepted_work_item": "accepted work item"
+      },
+      "marked_that_relates_to": "marked that this work item relates to",
+      "relation": {
+        "marked": "marked",
+        "removed": "removed",
+        "relates_to_suffix": "relates to",
+        "blocking_suffix": "is blocking work item",
+        "blocked_by_suffix": "is being blocked by",
+        "duplicate_suffix": "as duplicate of",
+        "removed_relation_suffix": "relation from",
+        "removed_blocking_suffix": "as blocking work item",
+        "removed_blocked_by_suffix": "being blocked by work item",
+        "removed_duplicate_suffix": "as a duplicate of"
+      }
     },
     "toasts": {
       "reaction": {

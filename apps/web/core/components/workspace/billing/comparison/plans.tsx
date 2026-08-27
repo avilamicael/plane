@@ -1231,9 +1231,9 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         title: <T k="billing.plans.f.sla.title" />,
         description: (
           <>
-            Get business-friendly SLAs with higher plans. SLAs are by priority of work item and tiers{" "}
+            <T k="billing.plans.sla_description_prefix" />{" "}
             <a href="https://plane.so/talk-to-sales" target="_blank" rel="noopener noreferrer" className="underline">
-              can be requested
+              <T k="billing.plans.sla_description_link" />
             </a>
             .
           </>

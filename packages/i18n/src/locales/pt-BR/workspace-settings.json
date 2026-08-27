@@ -1000,7 +1000,9 @@
       },
       "a_user_per_month": "por usuário por mês",
       "upgrade_to_one": "Fazer upgrade para o One",
-      "free_price": "US$ 0 por usuário por mês"
+      "free_price": "US$ 0 por usuário por mês",
+      "sla_description_prefix": "Tenha SLAs adequados ao negócio nos planos superiores. Os SLAs são por prioridade do item de trabalho e os níveis",
+      "sla_description_link": "podem ser solicitados"
     }
   }
 }

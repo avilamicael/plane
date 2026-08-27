@@ -196,7 +196,9 @@
         "models_docs_aria": "Documentação dos modelos da OpenAI",
         "api_keys_page_aria": "Página de chaves de API da OpenAI",
         "updated_successfully": "Configurações de IA atualizadas com sucesso",
-        "chatgpt_note": "Se você usa o ChatGPT, isto é para você."
+        "chatgpt_note": "Se você usa o ChatGPT, isto é para você.",
+        "vendor_note_prefix": "Se você tem um fornecedor de modelos de IA preferido, entre em",
+        "vendor_note_link": "contato conosco."
       },
       "image": {
         "title": "Bibliotecas de imagens de terceiros",

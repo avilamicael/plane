@@ -546,6 +546,48 @@
     },
     "features": {
       "pages_description_short": "Write anything like you write anything."
+    },
+    "activity": {
+      "set_the_priority_to": "set the priority to",
+      "restored_the_project": "restored the project",
+      "archived_the_project": "archived the project",
+      "renamed_the_project_to": "renamed the project to",
+      "updated_the_description": "updated the project description",
+      "removed_the_description": "removed the project description",
+      "set_the_start_date_to": "set the start date to",
+      "removed_the_start_date": "removed the start date",
+      "set_the_target_date_to": "set the target date to",
+      "removed_the_target_date": "removed the target date",
+      "set_the_state_to": "set the state to",
+      "set_the_estimate_point_to": "set the estimate point to",
+      "removed_the_estimate_point": "removed the estimate point",
+      "updated_identifier_to": "updated project identifier to",
+      "changed_timezone_to": "changed project timezone to",
+      "enabled": "enabled",
+      "disabled": "disabled",
+      "this_project_to_the_cycle": "this project to the cycle",
+      "this_project_from_the_cycle": "this project from the cycle",
+      "this_project_to_the_module": "this project to the module",
+      "this_project_from_the_module": "this project from the module",
+      "the_label": "the label",
+      "inbox": "inbox",
+      "network_access": "network access",
+      "created_the_page": "created the project page",
+      "removed_the_page": "removed the project page",
+      "project_updates": "project updates",
+      "epics": "epics",
+      "custom_workflow": "custom workflow",
+      "time_tracking": "time tracking",
+      "work_item_types": "work item types",
+      "view_suffix": "view",
+      "views": {
+        "module": "modules",
+        "cycle": "cycles",
+        "issue_views": "views",
+        "page": "pages",
+        "intake": "intake"
+      },
+      "default_value": "default"
     }
   }
 }
