@@ -14,7 +14,7 @@ import { Button } from "@plane/propel/button";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { IUser } from "@plane/types";
 import { EOnboardingSteps } from "@plane/types";
-import { cn, getFileURL, getPasswordStrength, validatePersonName } from "@plane/utils";
+import { cn, getFileURL, getPasswordStrength, getPersonNameErrorKey } from "@plane/utils";
 import { useTranslation } from "@plane/i18n";
 // components
 import { UserImageUploadModal } from "@/components/core/modals/user-image-upload-modal";
@@ -216,7 +216,10 @@ export const ProfileSetupStep = observer(function ProfileSetupStep({ handleStepC
             name="first_name"
             rules={{
               required: t("name_is_required"),
-              validate: validatePersonName,
+              validate: (value) => {
+                const errorKey = getPersonNameErrorKey(value);
+                return errorKey ? t(errorKey) : true;
+              },
               maxLength: {
                 value: 50,
                 message: t("onboarding.profile.errors.name_length"),

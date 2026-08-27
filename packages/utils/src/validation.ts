@@ -56,6 +56,34 @@ export const HAS_ALPHANUMERIC_REGEX = /[\p{L}\p{N}]/u;
 export const SLUG_REGEX = /^[\p{L}\p{N}_-]+$/u;
 
 // =============================================================================
+// ERROR MESSAGES
+// =============================================================================
+
+/**
+ * English fallback for every validation error key.
+ *
+ * The `validate*` helpers below are consumed by forms that have no access to the
+ * i18n instance, so they keep returning a ready-to-render sentence. Localized
+ * screens should call the matching `get*ErrorKey` helper and pass the key to `t()`.
+ */
+const VALIDATION_ERROR_MESSAGES: Record<string, string> = {
+  "common.errors.validation.name_required": "Name is required",
+  "common.errors.validation.name_max_length": "Name must be 50 characters or less",
+  "common.errors.validation.name_special_characters":
+    "Names cannot contain special characters like < > ' \" { } [ ] * ^ ! # %",
+  "common.errors.validation.name_allowed_characters":
+    "Names can only contain letters, spaces, hyphens, and apostrophes",
+  "common.errors.validation.workspace_name_required": "Workspace name is required",
+  "common.errors.validation.workspace_name_max_length": "Workspace name must be 80 characters or less",
+  "common.errors.validation.workspace_name_special_characters":
+    "Workspace name cannot contain special characters like < > ' \" { } [ ] * ^ ! # %",
+  "common.errors.validation.workspace_name_allowed_characters":
+    "Workspace name can only contain letters, numbers, spaces, hyphens, and underscores",
+  "common.errors.validation.workspace_name_alphanumeric_required":
+    "Workspace name must contain at least one letter or number",
+};
+
+// =============================================================================
 // VALIDATION FUNCTIONS
 // =============================================================================
 
@@ -70,23 +98,34 @@ export const SLUG_REGEX = /^[\p{L}\p{N}_-]+$/u;
  * validatePersonName("John<script>") // returns error message
  */
 export const validatePersonName = (name: string): boolean | string => {
+  const errorKey = getPersonNameErrorKey(name);
+  return errorKey ? VALIDATION_ERROR_MESSAGES[errorKey] : true;
+};
+
+/**
+ * @description Same rules as {@link validatePersonName}, but returns the i18n key of the
+ * error instead of a hard-coded English sentence, so the caller can run it through `t()`.
+ * @param {string} name - Name to validate
+ * @returns {string | undefined} translation key of the error, or undefined when the name is valid
+ */
+export const getPersonNameErrorKey = (name: string): string | undefined => {
   if (!name || name.trim() === "") {
-    return "Name is required";
+    return "common.errors.validation.name_required";
   }
 
   if (name.length > 50) {
-    return "Name must be 50 characters or less";
+    return "common.errors.validation.name_max_length";
   }
 
   if (hasInjectionRiskChars(name)) {
-    return "Names cannot contain special characters like < > ' \" { } [ ] * ^ ! # %";
+    return "common.errors.validation.name_special_characters";
   }
 
   if (!PERSON_NAME_REGEX.test(name)) {
-    return "Names can only contain letters, spaces, hyphens, and apostrophes";
+    return "common.errors.validation.name_allowed_characters";
   }
 
-  return true;
+  return undefined;
 };
 
 /**
@@ -164,27 +203,39 @@ export const validateCompanyName = (companyName: string, required: boolean = fal
  * validateWorkspaceName("Acme{Corp}") // returns error message
  */
 export const validateWorkspaceName = (workspaceName: string, required: boolean = false): boolean | string => {
+  const errorKey = getWorkspaceNameErrorKey(workspaceName, required);
+  return errorKey ? VALIDATION_ERROR_MESSAGES[errorKey] : true;
+};
+
+/**
+ * @description Same rules as {@link validateWorkspaceName}, but returns the i18n key of the
+ * error instead of a hard-coded English sentence, so the caller can run it through `t()`.
+ * @param {string} workspaceName - Workspace name to validate
+ * @param {boolean} required - Whether the field is required
+ * @returns {string | undefined} translation key of the error, or undefined when the name is valid
+ */
+export const getWorkspaceNameErrorKey = (workspaceName: string, required: boolean = false): string | undefined => {
   if (!workspaceName || workspaceName.trim() === "") {
-    return required ? "Workspace name is required" : true;
+    return required ? "common.errors.validation.workspace_name_required" : undefined;
   }
 
   if (workspaceName.length > 80) {
-    return "Workspace name must be 80 characters or less";
+    return "common.errors.validation.workspace_name_max_length";
   }
 
   if (hasInjectionRiskChars(workspaceName)) {
-    return "Workspace name cannot contain special characters like < > ' \" { } [ ] * ^ ! # %";
+    return "common.errors.validation.workspace_name_special_characters";
   }
 
   if (!COMPANY_NAME_REGEX.test(workspaceName)) {
-    return "Workspace name can only contain letters, numbers, spaces, hyphens, and underscores";
+    return "common.errors.validation.workspace_name_allowed_characters";
   }
 
   if (!HAS_ALPHANUMERIC_REGEX.test(workspaceName)) {
-    return "Workspace name must contain at least one letter or number";
+    return "common.errors.validation.workspace_name_alphanumeric_required";
   }
 
-  return true;
+  return undefined;
 };
 
 /**

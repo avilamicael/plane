@@ -8,6 +8,7 @@ import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 import { Menu, Settings } from "lucide-react";
 // icons
+import { useTranslation } from "@plane/i18n";
 import { Breadcrumbs } from "@plane/ui";
 // components
 import { BreadcrumbLink } from "../breadcrumb-link";
@@ -37,15 +38,16 @@ const HEADER_SEGMENT_LABELS = {
 };
 
 // Function to dynamically generate breadcrumb items based on pathname
-const generateBreadcrumbItems = (pathname: string) => {
+const generateBreadcrumbItems = (pathname: string, t: (key: string) => string) => {
   const pathSegments = pathname.split("/").slice(1); // removing the first empty string.
   pathSegments.pop();
 
   let currentUrl = "";
   const breadcrumbItems = pathSegments.map((segment) => {
     currentUrl += "/" + segment;
+    const labelKey = HEADER_SEGMENT_LABELS[segment];
     return {
-      title: HEADER_SEGMENT_LABELS[segment] ?? segment.toUpperCase(),
+      title: labelKey ? t(labelKey) : segment.toUpperCase(),
       href: currentUrl,
     };
   });
@@ -54,8 +56,10 @@ const generateBreadcrumbItems = (pathname: string) => {
 
 export const AdminHeader = observer(function AdminHeader() {
   const pathName = usePathname();
+  // i18n
+  const { t } = useTranslation();
 
-  const breadcrumbItems = generateBreadcrumbItems(pathName || "");
+  const breadcrumbItems = generateBreadcrumbItems(pathName || "", t);
 
   return (
     <div className="relative z-10 flex h-header w-full flex-shrink-0 flex-row items-center justify-between gap-x-2 gap-y-4 border-b border-subtle bg-surface-1 p-4">
@@ -67,7 +71,7 @@ export const AdminHeader = observer(function AdminHeader() {
               component={
                 <BreadcrumbLink
                   href="/general/"
-                  label="Settings"
+                  label={t("settings")}
                   icon={<Settings className="h-4 w-4 text-tertiary" />}
                 />
               }

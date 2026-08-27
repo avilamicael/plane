@@ -770,7 +770,8 @@
       "error": "Chyba!",
       "warning": "Varovanie"
     },
-    "owned_by": "Vlastník"
+    "owned_by": "Vlastník",
+    "subscriber": "Odberateľ"
   },
   "chart": {
     "x_axis": "Os X",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Tento filter nie je správne nastavený a nedá sa použiť"
+        "message": "Tento filter nie je správne nastavený a nedá sa použiť",
+        "title": "Neplatný filter"
       }
-    }
+    },
+    "all_filters_applied": "Všetky filtre použité"
   },
   "ai_assistant": {
     "toasts": {

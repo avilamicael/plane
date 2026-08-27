@@ -15,7 +15,7 @@ import { Button } from "@plane/propel/button";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { IUser, IWorkspace } from "@plane/types";
 import { Spinner } from "@plane/ui";
-import { cn, validateWorkspaceName, validateSlug } from "@plane/utils";
+import { cn, getWorkspaceNameErrorKey, validateSlug } from "@plane/utils";
 // hooks
 import { useInstance } from "@/hooks/store/use-instance";
 import { useWorkspace } from "@/hooks/store/use-workspace";
@@ -149,7 +149,10 @@ export const WorkspaceCreateStep = observer(function WorkspaceCreateStep({
             name="name"
             rules={{
               required: t("common.errors.required"),
-              validate: (value) => validateWorkspaceName(value, true),
+              validate: (value) => {
+                const errorKey = getWorkspaceNameErrorKey(value, true);
+                return errorKey ? t(errorKey) : true;
+              },
               maxLength: {
                 value: 80,
                 message: t("workspace_creation.errors.validation.name_length"),

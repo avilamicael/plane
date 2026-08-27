@@ -770,7 +770,8 @@
       "error": "錯誤！",
       "warning": "警告"
     },
-    "owned_by": "擁有者"
+    "owned_by": "擁有者",
+    "subscriber": "訂閱者"
   },
   "chart": {
     "x_axis": "X 軸",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "此篩選條件設定不正確，無法套用"
+        "message": "此篩選條件設定不正確，無法套用",
+        "title": "篩選條件無效"
       }
-    }
+    },
+    "all_filters_applied": "已套用所有篩選條件"
   },
   "ai_assistant": {
     "toasts": {

@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 // plane imports
+import { useTranslation } from "@plane/i18n";
 import { OAuthOptions } from "@plane/ui";
 // helpers
 import type { TAuthErrorInfo } from "@/helpers/authentication.helper";
@@ -41,6 +42,8 @@ export const AuthRoot = observer(function AuthRoot(props: TAuthRoot) {
   const error_code = searchParams.get("error_code");
   // props
   const { authMode: currentAuthMode } = props;
+  // i18n
+  const { t } = useTranslation();
   // states
   const [authMode, setAuthMode] = useState<EAuthModes | undefined>(undefined);
   const [authStep, setAuthStep] = useState<EAuthSteps>(EAuthSteps.EMAIL);
@@ -106,8 +109,8 @@ export const AuthRoot = observer(function AuthRoot(props: TAuthRoot) {
     return (
       <AuthContainer>
         <AuthHeaderBase
-          header="No authentication methods available"
-          subHeader="Please contact your administrator to enable authentication for your instance."
+          header={t("auth.common.no_auth_methods.title")}
+          subHeader={t("auth.common.no_auth_methods.description")}
         />
       </AuthContainer>
     );

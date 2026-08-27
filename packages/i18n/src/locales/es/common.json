@@ -770,7 +770,8 @@
       "error": "¡Error!",
       "warning": "Advertencia"
     },
-    "owned_by": "Propiedad de"
+    "owned_by": "Propiedad de",
+    "subscriber": "Suscriptor"
   },
   "chart": {
     "x_axis": "Eje X",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Este filtro no está configurado correctamente y no se puede aplicar"
+        "message": "Este filtro no está configurado correctamente y no se puede aplicar",
+        "title": "Filtro no válido"
       }
-    }
+    },
+    "all_filters_applied": "Todos los filtros aplicados"
   },
   "ai_assistant": {
     "toasts": {

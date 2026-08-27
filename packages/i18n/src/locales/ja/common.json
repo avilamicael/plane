@@ -770,7 +770,8 @@
       "error": "エラー！",
       "warning": "警告"
     },
-    "owned_by": "所有者"
+    "owned_by": "所有者",
+    "subscriber": "購読者"
   },
   "chart": {
     "x_axis": "エックス アクシス",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "このフィルターは正しく設定されていないため適用できません"
+        "message": "このフィルターは正しく設定されていないため適用できません",
+        "title": "無効なフィルター"
       }
-    }
+    },
+    "all_filters_applied": "すべてのフィルターが適用されています"
   },
   "ai_assistant": {
     "toasts": {

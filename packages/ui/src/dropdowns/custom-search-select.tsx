@@ -10,6 +10,7 @@ import React, { useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { useOutsideClickDetector } from "@plane/hooks";
+import { useTranslation } from "@plane/i18n";
 import { CheckIcon, SearchIcon, ChevronDownIcon } from "@plane/propel/icons";
 // plane imports
 // local imports
@@ -40,9 +41,11 @@ export function CustomSearchSelect(props: ICustomSearchSelectProps) {
     optionsClassName = "",
     value,
     tabIndex,
-    noResultsMessage = "No matches found",
+    noResultsMessage,
     defaultOpen = false,
   } = props;
+  // i18n
+  const { t } = useTranslation();
   const [query, setQuery] = useState("");
 
   const [referenceElement, setReferenceElement] = useState<HTMLButtonElement | null>(null);
@@ -159,7 +162,7 @@ export function CustomSearchSelect(props: ICustomSearchSelectProps) {
                         className="w-full bg-transparent py-1 text-11 text-secondary placeholder:text-placeholder focus:outline-none"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
-                        placeholder="Search"
+                        placeholder={t("common.search.label")}
                         displayValue={(assigned: any) => assigned?.name}
                       />
                     </div>
@@ -214,10 +217,12 @@ export function CustomSearchSelect(props: ICustomSearchSelectProps) {
                             </Combobox.Option>
                           ))
                         ) : (
-                          <p className="px-1.5 py-1 text-placeholder italic">{noResultsMessage}</p>
+                          <p className="px-1.5 py-1 text-placeholder italic">
+                            {noResultsMessage ?? t("common.search.no_matches_found")}
+                          </p>
                         )
                       ) : (
-                        <p className="px-1.5 py-1 text-placeholder italic">Loading...</p>
+                        <p className="px-1.5 py-1 text-placeholder italic">{t("common.loading")}...</p>
                       )}
                     </div>
                     {footerOption}

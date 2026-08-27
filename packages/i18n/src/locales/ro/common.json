@@ -770,7 +770,8 @@
       "error": "Eroare!",
       "warning": "Avertisment"
     },
-    "owned_by": "Deținut de"
+    "owned_by": "Deținut de",
+    "subscriber": "Abonat"
   },
   "chart": {
     "x_axis": "axa-X",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Acest filtru nu este configurat corect și nu poate fi aplicat"
+        "message": "Acest filtru nu este configurat corect și nu poate fi aplicat",
+        "title": "Filtru nevalid"
       }
-    }
+    },
+    "all_filters_applied": "Toate filtrele aplicate"
   },
   "ai_assistant": {
     "toasts": {

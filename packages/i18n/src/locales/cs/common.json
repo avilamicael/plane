@@ -770,7 +770,8 @@
       "error": "Chyba!",
       "warning": "Varování"
     },
-    "owned_by": "Vlastník"
+    "owned_by": "Vlastník",
+    "subscriber": "Odběratel"
   },
   "chart": {
     "x_axis": "Osa X",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Tento filtr není správně nastaven a nelze jej použít"
+        "message": "Tento filtr není správně nastaven a nelze jej použít",
+        "title": "Neplatný filtr"
       }
-    }
+    },
+    "all_filters_applied": "Všechny filtry použity"
   },
   "ai_assistant": {
     "toasts": {

@@ -770,7 +770,8 @@
       "error": "오류!",
       "warning": "경고"
     },
-    "owned_by": "소유자"
+    "owned_by": "소유자",
+    "subscriber": "구독자"
   },
   "chart": {
     "x_axis": "X축",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "이 필터는 올바르게 구성되지 않아 적용할 수 없습니다"
+        "message": "이 필터는 올바르게 구성되지 않아 적용할 수 없습니다",
+        "title": "잘못된 필터"
       }
-    }
+    },
+    "all_filters_applied": "모든 필터가 적용되었습니다"
   },
   "ai_assistant": {
     "toasts": {

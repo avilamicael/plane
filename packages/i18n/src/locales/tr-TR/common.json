@@ -770,7 +770,8 @@
       "error": "Hata!",
       "warning": "Uyarı"
     },
-    "owned_by": "Sahibi"
+    "owned_by": "Sahibi",
+    "subscriber": "Abone"
   },
   "chart": {
     "x_axis": "X ekseni",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Bu filtre doğru yapılandırılmadığı için uygulanamıyor"
+        "message": "Bu filtre doğru yapılandırılmadığı için uygulanamıyor",
+        "title": "Geçersiz filtre"
       }
-    }
+    },
+    "all_filters_applied": "Tüm filtreler uygulandı"
   },
   "ai_assistant": {
     "toasts": {

@@ -770,7 +770,8 @@
       "error": "Kesalahan!",
       "warning": "Peringatan"
     },
-    "owned_by": "Dimiliki oleh"
+    "owned_by": "Dimiliki oleh",
+    "subscriber": "Pelanggan"
   },
   "chart": {
     "x_axis": "Sumbu-X",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Filter ini tidak dikonfigurasi dengan benar dan tidak dapat diterapkan"
+        "message": "Filter ini tidak dikonfigurasi dengan benar dan tidak dapat diterapkan",
+        "title": "Filter tidak valid"
       }
-    }
+    },
+    "all_filters_applied": "Semua filter diterapkan"
   },
   "ai_assistant": {
     "toasts": {

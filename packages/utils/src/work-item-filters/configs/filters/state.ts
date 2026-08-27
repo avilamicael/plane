@@ -17,7 +17,10 @@ import { createFilterConfig, getMultiSelectConfig, createOperatorConfigEntry } f
 /**
  * State group filter specific params
  */
-export type TCreateStateGroupFilterParams = TCreateFilterConfigParams & IFilterIconConfig<TStateGroups>;
+export type TCreateStateGroupFilterParams = TCreateFilterConfigParams &
+  IFilterIconConfig<TStateGroups> & {
+    getOptionLabel?: (stateGroup: TStateGroups) => string; // optional display label override for the state group options (e.g. translated labels)
+  };
 
 /**
  * Helper to get the state group multi select config
@@ -32,7 +35,7 @@ export const getStateGroupMultiSelectConfig = (
     {
       items: Object.values(STATE_GROUPS),
       getId: (state) => state.key,
-      getLabel: (state) => state.label,
+      getLabel: (state) => params.getOptionLabel?.(state.key) ?? state.label,
       getValue: (state) => state.key,
       getIconData: (state) => state.key,
     },
@@ -56,8 +59,8 @@ export const getStateGroupFilterConfig =
   (params: TCreateStateGroupFilterParams) =>
     createFilterConfig<P>({
       id: key,
-      label: "State Group",
       ...params,
+      label: params.label ?? "State Group",
       icon: params.filterIcon,
       supportedOperatorConfigsMap: new Map([
         createOperatorConfigEntry(COLLECTION_OPERATOR.IN, params, (updatedParams) =>
@@ -110,8 +113,8 @@ export const getStateFilterConfig =
   (params: TCreateStateFilterParams) =>
     createFilterConfig<P>({
       id: key,
-      label: "State",
       ...params,
+      label: params.label ?? "State",
       icon: params.filterIcon,
       supportedOperatorConfigsMap: new Map([
         createOperatorConfigEntry(COLLECTION_OPERATOR.IN, params, (updatedParams) =>

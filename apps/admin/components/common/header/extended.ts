@@ -4,4 +4,5 @@
  * See the LICENSE file for details.
  */
 
+// Values are i18n keys, resolved with `t()` where the breadcrumb is rendered.
 export const EXTENDED_HEADER_SEGMENT_LABELS: Record<string, string> = {};

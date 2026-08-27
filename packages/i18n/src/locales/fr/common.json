@@ -770,7 +770,8 @@
       "error": "Erreur !",
       "warning": "Avertissement"
     },
-    "owned_by": "Appartient à"
+    "owned_by": "Appartient à",
+    "subscriber": "Abonné"
   },
   "chart": {
     "x_axis": "Axe X",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Ce filtre n'est pas correctement configuré et ne peut pas être appliqué"
+        "message": "Ce filtre n'est pas correctement configuré et ne peut pas être appliqué",
+        "title": "Filtre invalide"
       }
-    }
+    },
+    "all_filters_applied": "Tous les filtres sont appliqués"
   },
   "ai_assistant": {
     "toasts": {

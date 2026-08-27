@@ -29,8 +29,8 @@ export const getAssigneeFilterConfig =
   (params: TCreateAssigneeFilterParams) =>
     createFilterConfig<P>({
       id: key,
-      label: "Assignees",
       ...params,
+      label: params.label ?? "Assignees",
       icon: params.filterIcon,
       supportedOperatorConfigsMap: new Map([
         createOperatorConfigEntry(COLLECTION_OPERATOR.IN, params, (updatedParams) =>
@@ -57,8 +57,8 @@ export const getMentionFilterConfig =
   (params: TCreateMentionFilterParams) =>
     createFilterConfig<P>({
       id: key,
-      label: "Mentions",
       ...params,
+      label: params.label ?? "Mentions",
       icon: params.filterIcon,
       supportedOperatorConfigsMap: new Map([
         createOperatorConfigEntry(COLLECTION_OPERATOR.IN, params, (updatedParams) =>
@@ -85,8 +85,8 @@ export const getCreatedByFilterConfig =
   (params: TCreateCreatedByFilterParams) =>
     createFilterConfig<P>({
       id: key,
-      label: "Created by",
       ...params,
+      label: params.label ?? "Created by",
       icon: params.filterIcon,
       supportedOperatorConfigsMap: new Map([
         createOperatorConfigEntry(COLLECTION_OPERATOR.IN, params, (updatedParams) =>
@@ -113,8 +113,8 @@ export const getSubscriberFilterConfig =
   (params: TCreateSubscriberFilterParams) =>
     createFilterConfig<P>({
       id: key,
-      label: "Subscriber",
       ...params,
+      label: params.label ?? "Subscriber",
       icon: params.filterIcon,
       supportedOperatorConfigsMap: new Map([
         createOperatorConfigEntry(COLLECTION_OPERATOR.IN, params, (updatedParams) =>

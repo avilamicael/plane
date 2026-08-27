@@ -770,7 +770,8 @@
       "error": "Lỗi!",
       "warning": "Cảnh báo"
     },
-    "owned_by": "Thuộc về"
+    "owned_by": "Thuộc về",
+    "subscriber": "Người theo dõi"
   },
   "chart": {
     "x_axis": "Trục X",
@@ -1005,9 +1006,11 @@
   "rich_filters": {
     "toasts": {
       "invalid_filter": {
-        "message": "Bộ lọc này chưa được cấu hình đúng và không thể áp dụng"
+        "message": "Bộ lọc này chưa được cấu hình đúng và không thể áp dụng",
+        "title": "Bộ lọc không hợp lệ"
       }
-    }
+    },
+    "all_filters_applied": "Đã áp dụng tất cả bộ lọc"
   },
   "ai_assistant": {
     "toasts": {
