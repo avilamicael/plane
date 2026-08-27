@@ -57,14 +57,14 @@ export function IssueLinkRoot(props: TIssueLinkRoot) {
           setToast({
             message: t("links.toasts.created.message"),
             type: TOAST_TYPE.SUCCESS,
-            title: "Link created",
+            title: t("links.toasts.created.title"),
           });
           toggleIssueLinkModal(false);
         } catch (error: any) {
           setToast({
-            message: error?.data?.error ?? "The link could not be created",
+            message: error?.data?.error ?? t("links.toasts.not_created.message"),
             type: TOAST_TYPE.ERROR,
-            title: "Link not created",
+            title: t("links.toasts.not_created.title"),
           });
           throw error;
         }
@@ -76,14 +76,14 @@ export function IssueLinkRoot(props: TIssueLinkRoot) {
           setToast({
             message: t("links.toasts.updated.message"),
             type: TOAST_TYPE.SUCCESS,
-            title: "Link updated",
+            title: t("links.toasts.updated.title"),
           });
           toggleIssueLinkModal(false);
         } catch (error) {
           setToast({
             message: t("links.toasts.not_updated.message"),
             type: TOAST_TYPE.ERROR,
-            title: "Link not updated",
+            title: t("links.toasts.not_updated.title"),
           });
           throw error;
         }
@@ -95,14 +95,14 @@ export function IssueLinkRoot(props: TIssueLinkRoot) {
           setToast({
             message: t("links.toasts.removed.message"),
             type: TOAST_TYPE.SUCCESS,
-            title: "Link removed",
+            title: t("links.toasts.removed.title"),
           });
           toggleIssueLinkModal(false);
         } catch {
           setToast({
             message: t("links.toasts.not_removed.message"),
             type: TOAST_TYPE.ERROR,
-            title: "Link not removed",
+            title: t("links.toasts.not_removed.title"),
           });
         }
       },

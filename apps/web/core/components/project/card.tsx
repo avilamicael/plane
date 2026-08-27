@@ -320,7 +320,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
                   >
                     <div className="flex items-center gap-1.5">
                       <ArchiveRestoreIcon className="h-3.5 w-3.5" />
-                      Restore
+                      {t("common.actions.restore")}
                     </div>
                   </div>
                   <div
@@ -351,7 +351,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
                   ) : (
                     <span className="flex items-center gap-1 text-13 text-placeholder">
                       <CheckIcon className="h-3.5 w-3.5" />
-                      Joined
+                      {t("common.joined")}
                     </span>
                   ))}
                 {!isMemberOfProject && (
@@ -365,7 +365,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
                         setJoinProjectModal(true);
                       }}
                     >
-                      Join
+                      {t("common.join")}
                     </Button>
                   </div>
                 )}

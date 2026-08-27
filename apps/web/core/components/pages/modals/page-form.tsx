@@ -126,9 +126,7 @@ export function PageForm(props: Props) {
               autoFocus
             />
             {isTitleLengthMoreThan255Character && (
-              <span className="text-11 text-danger-primary">
-                Max length of the name should be less than 255 characters
-              </span>
+              <span className="text-11 text-danger-primary">{t("common.name_max_length")}</span>
             )}
           </div>
         </div>
@@ -145,7 +143,7 @@ export function PageForm(props: Props) {
         </div>
         <div className="flex items-center justify-end gap-2">
           <Button variant="secondary" size="lg" onClick={handleModalClose} tabIndex={getIndex("cancel")}>
-            Cancel
+            {t("common.cancel")}
           </Button>
           <Button
             variant="primary"

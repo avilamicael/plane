@@ -58,7 +58,7 @@ export function TableDragHandleDropdownColorSelector(props: Props) {
           <>
             <span className="flex items-center gap-2">
               <Palette className="size-3 shrink-0" />
-              Color
+              {t("editor_ui.colors.color")}
             </span>
             <ChevronRightIcon
               className={cn("size-3 shrink-0 transition-transform duration-200", {

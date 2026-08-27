@@ -8,6 +8,7 @@ import { useState } from "react";
 // ui
 import { Button } from "@plane/propel/button";
 import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   isOpen: boolean;
@@ -17,6 +18,7 @@ type Props = {
 };
 
 export function ConfirmIssueDiscard(props: Props) {
+  const { t } = useTranslation();
   const { isOpen, handleClose, onDiscard, onConfirm } = props;
 
   const [isLoading, setIsLoading] = useState(false);
@@ -49,12 +51,12 @@ export function ConfirmIssueDiscard(props: Props) {
       <div className="flex justify-between gap-2 p-4 sm:px-6">
         <div>
           <Button variant="secondary" onClick={onDiscard}>
-            Discard
+            {t("common.discard")}
           </Button>
         </div>
         <div className="flex items-center gap-2">
           <Button variant="secondary" onClick={onClose}>
-            Cancel
+            {t("common.cancel")}
           </Button>
           <Button variant="primary" onClick={handleDeletion} loading={isLoading}>
             {isLoading ? "Saving" : "Save to Drafts"}

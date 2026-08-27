@@ -10,6 +10,7 @@ import { Banner } from "@plane/propel/banner";
 import { Button } from "@plane/propel/button";
 import { Card, ECardVariant } from "@plane/propel/card";
 import { InfoFillIcon } from "@plane/propel/icons";
+import { useTranslation } from "@plane/i18n";
 
 interface ErrorActionsProps {
   onGoHome: () => void;
@@ -17,14 +18,15 @@ interface ErrorActionsProps {
 }
 
 function ErrorActions({ onGoHome, onReload }: ErrorActionsProps) {
+  const { t } = useTranslation();
   return (
     <div className="flex gap-3 pt-2">
       <Button variant="primary" size="lg" onClick={onGoHome}>
-        Go to home
+        {t("error_page.go_home")}
       </Button>
       {onReload && (
         <Button variant="secondary" size="lg" onClick={onReload}>
-          Reload page
+          {t("common.reload_page")}
         </Button>
       )}
     </div>

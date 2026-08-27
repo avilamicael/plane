@@ -7,6 +7,9 @@
       "create": {
         "success": {
           "message": "Módulo criado com sucesso."
+        },
+        "error": {
+          "message": "Não foi possível criar o módulo. Tente novamente."
         }
       },
       "update": {
@@ -19,7 +22,8 @@
       },
       "archive": {
         "success": {
-          "message": "Seus arquivos podem ser encontrados nos arquivos do projeto."
+          "message": "Seus arquivos podem ser encontrados nos arquivos do projeto.",
+          "title": "Módulo arquivado"
         },
         "error": {
           "message": "Não foi possível arquivar o módulo. Tente novamente."
@@ -27,7 +31,8 @@
       },
       "restore": {
         "success": {
-          "message": "Seu módulo pode ser encontrado nos módulos do projeto."
+          "message": "Seu módulo pode ser encontrado nos módulos do projeto.",
+          "title": "Módulo restaurado"
         },
         "error": {
           "message": "Não foi possível restaurar o módulo. Tente novamente."
@@ -48,6 +53,9 @@
           "success": {
             "message": "Link do módulo excluído com sucesso."
           }
+        },
+        "error": {
+          "message": "Ocorreu um erro. Tente novamente."
         }
       },
       "add_work_items": {
@@ -57,9 +65,33 @@
         "error": {
           "message": "Não foi possível adicionar os itens de trabalho selecionados ao módulo. Tente novamente."
         }
+      },
+      "favorite": {
+        "add": {
+          "loading": "Adicionando o módulo aos favoritos...",
+          "success": "Módulo adicionado aos favoritos.",
+          "error": "Não foi possível adicionar o módulo aos favoritos. Tente novamente."
+        },
+        "remove": {
+          "loading": "Removendo o módulo dos favoritos...",
+          "success": "Módulo removido dos favoritos.",
+          "error": "Não foi possível remover o módulo dos favoritos. Tente novamente."
+        }
       }
     },
     "no_lead": "Sem líder",
-    "work_items_progress": "{completed}/{total} {total, plural, one {item de trabalho} many {itens de trabalho} other {itens de trabalho}}"
+    "work_items_progress": "{completed}/{total} {total, plural, one {item de trabalho} many {itens de trabalho} other {itens de trabalho}}",
+    "link_modal": {
+      "add_title": "Adicionar link",
+      "update_title": "Atualizar link",
+      "adding": "Adicionando link",
+      "updating": "Atualizando link",
+      "url_required": "A URL é obrigatória",
+      "optional": "Opcional"
+    },
+    "archive_modal": {
+      "title": "Arquivar o módulo {name}",
+      "description": "Tem certeza de que deseja arquivar o módulo? Tudo o que você arquiva pode ser restaurado depois."
+    }
   }
 }

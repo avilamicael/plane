@@ -190,6 +190,19 @@
       "preferences": "Preferências",
       "help": "Ajuda"
     },
-    "clear_context": "Limpar contexto (Backspace)"
+    "clear_context": "Limpar contexto (Backspace)",
+    "menus": {
+      "no_cycles_found": "Nenhum ciclo encontrado",
+      "no_modules_found": "Nenhum módulo encontrado",
+      "no_views_found": "Nenhuma visualização encontrada",
+      "no_labels_found": "Nenhuma etiqueta encontrada",
+      "no_workspaces_found": "Nenhum espaço de trabalho encontrado",
+      "no_projects_found": "Nenhum projeto encontrado",
+      "no_settings_found": "Nenhuma configuração encontrada",
+      "some_error_occurred": "Ocorreu um erro"
+    },
+    "preferences": {
+      "theme_updated": "Tema atualizado"
+    }
   }
 }

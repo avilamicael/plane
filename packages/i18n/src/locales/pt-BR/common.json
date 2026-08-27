@@ -794,7 +794,16 @@
     "leaving": "Saindo...",
     "restoring": "Restaurando",
     "removing": "Removendo...",
-    "project_name_max_length": "O nome do projeto deve ter menos de 255 caracteres"
+    "project_name_max_length": "O nome do projeto deve ter menos de 255 caracteres",
+    "try_again": "Tentar novamente",
+    "joined": "Participando",
+    "suspended": "Suspenso",
+    "favorite": "Favorito",
+    "reload_page": "Recarregar a página",
+    "light_mode": "Modo claro",
+    "dark_mode": "Modo escuro",
+    "full_width": "Largura total",
+    "name_max_length": "O nome deve ter menos de 255 caracteres"
   },
   "chart": {
     "x_axis": "Eixo X",

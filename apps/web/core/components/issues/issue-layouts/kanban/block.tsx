@@ -13,6 +13,7 @@ import { useParams } from "next/navigation";
 // plane helpers
 import { MoreHorizontal } from "lucide-react";
 import { useOutsideClickDetector } from "@plane/hooks";
+import { useTranslation } from "@plane/i18n";
 // types
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import { Tooltip } from "@plane/propel/tooltip";
@@ -155,6 +156,8 @@ export const KanbanIssueBlock = observer(function KanbanIssueBlock(props: IssueB
     shouldRenderByDefault,
     isEpic = false,
   } = props;
+  // translation
+  const { t } = useTranslation();
 
   const cardRef = useRef<HTMLAnchorElement | null>(null);
   // router
@@ -249,10 +252,10 @@ export const KanbanIssueBlock = observer(function KanbanIssueBlock(props: IssueB
           else {
             setToast({
               type: TOAST_TYPE.WARNING,
-              title: "Cannot move work item",
+              title: t("issue.drag.cannot_move.title"),
               message: !canEditIssueProperties
-                ? "You are not allowed to move this work item"
-                : "Drag and drop is disabled for the current grouping",
+                ? t("issue.drag.cannot_move.not_allowed")
+                : t("issue.drag.cannot_move.grouping_disabled"),
             });
           }
         }}

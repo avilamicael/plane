@@ -190,6 +190,19 @@
       "preferences": "Preferences",
       "help": "Help"
     },
-    "clear_context": "Clear context (Backspace)"
+    "clear_context": "Clear context (Backspace)",
+    "menus": {
+      "no_cycles_found": "No cycles found",
+      "no_modules_found": "No modules found",
+      "no_views_found": "No views found",
+      "no_labels_found": "No labels found",
+      "no_workspaces_found": "No workspaces found",
+      "no_projects_found": "No projects found",
+      "no_settings_found": "No settings found",
+      "some_error_occurred": "Some error occurred"
+    },
+    "preferences": {
+      "theme_updated": "Theme updated"
+    }
   }
 }

@@ -12,7 +12,7 @@ import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { EIssuesStoreType, TIssue } from "@plane/types";
 import type { TContextMenuItem } from "@plane/ui";
 import { copyUrlToClipboard, generateWorkItemLink } from "@plane/utils";
-import { useTranslation } from "@plane/i18n";
+import { i18nInstance, useTranslation } from "@plane/i18n";
 import { createCopyMenuWithDuplication } from "./copy-menu-helper";
 
 // Generic helper function to handle optional function calls gracefully
@@ -44,8 +44,8 @@ export function handleOptionalAction<T>(
   } else {
     setToast({
       type: TOAST_TYPE.ERROR,
-      title: "Action not available",
-      message: `${actionName} action is not implemented.`,
+      title: i18nInstance.t("issue.actions.not_available.title"),
+      message: i18nInstance.t("issue.actions.not_available.message", { action: actionName }),
     });
   }
 }
@@ -118,7 +118,7 @@ export const useIssueActionHandlers = (props: MenuItemFactoryProps) => {
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Restore success",
+          title: t("issue.restore.success.title"),
           message: t("issue.restore.success.message"),
         });
       })

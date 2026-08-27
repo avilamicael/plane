@@ -17,6 +17,7 @@ import { renderFormattedDate, renderFormattedTime } from "@plane/utils";
 import type { EPageStoreType } from "@/hooks/store";
 // local imports
 import type { TVersionEditorProps } from "./editor";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   activeVersion: string | null;
@@ -30,6 +31,7 @@ type Props = {
 };
 
 export const PageVersionsMainContent = observer(function PageVersionsMainContent(props: Props) {
+  const { t } = useTranslation();
   const {
     activeVersion,
     editorComponent,
@@ -60,14 +62,14 @@ export const PageVersionsMainContent = observer(function PageVersionsMainContent
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Page version restored.",
+          title: t("page_version.toasts.restored.title"),
         });
         handleClose();
       })
       .catch(() =>
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Failed to restore page version.",
+          title: t("page_version.toasts.restore_failed.title"),
         })
       )
       .finally(() => setIsRestoring(false));
@@ -90,11 +92,11 @@ export const PageVersionsMainContent = observer(function PageVersionsMainContent
               <TriangleAlert className="size-10" />
             </span>
             <div>
-              <h6 className="text-16 font-semibold">Something went wrong!</h6>
-              <p className="text-13 text-tertiary">The version could not be loaded, please try again.</p>
+              <h6 className="text-16 font-semibold">{t("page_version.error.title")}</h6>
+              <p className="text-13 text-tertiary">{t("page_version.error.description")}</p>
             </div>
             <Button variant="link" onClick={handleRetry} loading={isRetrying}>
-              Try again
+              {t("common.try_again")}
             </Button>
           </div>
         </div>
@@ -105,16 +107,16 @@ export const PageVersionsMainContent = observer(function PageVersionsMainContent
               <h6 className="text-14 font-medium">
                 {versionDetails
                   ? `${renderFormattedDate(versionDetails.last_saved_at)} ${renderFormattedTime(versionDetails.last_saved_at)}`
-                  : "Loading version details"}
+                  : t("page_version.loading_details")}
               </h6>
               <span className="flex flex-shrink-0 items-center gap-1 rounded-sm bg-accent-primary/20 px-1.5 py-1 text-11 font-medium text-accent-primary">
                 <EyeIcon className="size-3 flex-shrink-0" />
-                View only
+                {t("page_version.view_only")}
               </span>
             </div>
             {restoreEnabled && (
               <Button variant="primary" className="flex-shrink-0" onClick={handleRestoreVersion} loading={isRestoring}>
-                {isRestoring ? "Restoring" : "Restore"}
+                {isRestoring ? t("common.restoring") : t("common.actions.restore")}
               </Button>
             )}
           </div>

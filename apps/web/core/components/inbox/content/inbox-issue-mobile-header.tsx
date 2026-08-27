@@ -146,7 +146,7 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
               <CustomMenu.MenuItem onClick={handleCopyIssueLink}>
                 <div className="flex items-center gap-2">
                   <LinkIcon width={14} height={14} strokeWidth={2} />
-                  Copy work item link
+                  {t("inbox_issue.actions.copy")}
                 </div>
               </CustomMenu.MenuItem>
             )}
@@ -154,7 +154,7 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
               <CustomMenu.MenuItem onClick={() => router.push(workItemLink)}>
                 <div className="flex items-center gap-2">
                   <NewTabIcon width={14} height={14} strokeWidth={2} />
-                  Open work item
+                  {t("inbox_issue.actions.open")}
                 </div>
               </CustomMenu.MenuItem>
             )}
@@ -186,7 +186,7 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
               >
                 <div className="flex items-center gap-2">
                   <FileStack size={14} strokeWidth={2} />
-                  Mark as duplicate
+                  {t("inbox_issue.actions.mark_as_duplicate")}
                 </div>
               </CustomMenu.MenuItem>
             )}
@@ -202,7 +202,7 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
               >
                 <div className="flex items-center gap-2 text-success-secondary">
                   <CheckCircleFilledIcon width={14} height={14} />
-                  Accept
+                  {t("inbox_issue.actions.accept")}
                 </div>
               </CustomMenu.MenuItem>
             )}
@@ -218,7 +218,7 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
               >
                 <div className="flex items-center gap-2 text-danger-secondary">
                   <CloseCircleFilledIcon width={14} height={14} />
-                  Decline
+                  {t("inbox_issue.actions.decline")}
                 </div>
               </CustomMenu.MenuItem>
             )}
@@ -226,7 +226,7 @@ export const InboxIssueActionsMobileHeader = observer(function InboxIssueActions
               <CustomMenu.MenuItem onClick={() => setDeleteIssueModal(true)}>
                 <div className="flex items-center gap-2 text-danger-primary">
                   <TrashIcon height={14} width={14} strokeWidth={2} />
-                  Delete
+                  {t("common.actions.delete")}
                 </div>
               </CustomMenu.MenuItem>
             )}

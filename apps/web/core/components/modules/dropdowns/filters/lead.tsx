@@ -87,7 +87,7 @@ export const FilterLead = observer(function FilterLead(props: Props) {
                           size="md"
                         />
                       }
-                      title={currentUser?.id === member.id ? "You" : member?.display_name}
+                      title={currentUser?.id === member.id ? t("common.you") : member?.display_name}
                     />
                   );
                 })}
@@ -97,7 +97,7 @@ export const FilterLead = observer(function FilterLead(props: Props) {
                     className="ml-8 text-11 font-medium text-accent-primary"
                     onClick={handleViewToggle}
                   >
-                    {itemsToRender === sortedOptions.length ? "View less" : "View all"}
+                    {itemsToRender === sortedOptions.length ? t("common.view_less") : t("common.view_all")}
                   </button>
                 )}
               </>

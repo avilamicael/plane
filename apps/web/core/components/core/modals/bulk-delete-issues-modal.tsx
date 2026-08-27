@@ -202,7 +202,7 @@ export const BulkDeleteIssuesModal = observer(function BulkDeleteIssuesModal(pro
         {issues.length > 0 && (
           <div className="flex items-center justify-end gap-2 p-3">
             <Button variant="secondary" size="lg" onClick={handleClose}>
-              Cancel
+              {t("common.cancel")}
             </Button>
             <Button variant="error-fill" size="lg" onClick={handleSubmit(handleDelete)} loading={isSubmitting}>
               {isSubmitting ? "Deleting..." : "Delete selected work items"}

@@ -231,7 +231,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
                       className="h-8 rounded-sm bg-layer-3 px-3 py-2 text-11 font-medium hover:bg-layer-3-hover"
                       onClick={handleCopyLink}
                     >
-                      Copy link
+                      {t("common.actions.copy_link")}
                     </button>
                   </div>
                 </div>
@@ -323,7 +323,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
           {!fetchSettingsLoader && (
             <div className="relative flex items-center gap-2">
               <Button variant="secondary" size="lg" onClick={handleClose}>
-                Cancel
+                {t("common.cancel")}
               </Button>
               {isProjectPublished ? (
                 isDirty && (

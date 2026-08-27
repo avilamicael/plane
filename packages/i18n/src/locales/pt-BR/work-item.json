@@ -178,7 +178,7 @@
     },
     "restore": {
       "success": {
-        "title": "Sucesso ao restaurar",
+        "title": "Item restaurado",
         "message": "Seu item de trabalho pode ser encontrado nos itens de trabalho do projeto."
       },
       "failed": {
@@ -346,10 +346,23 @@
       "attachment": {
         "remove": {
           "success": {
-            "message": "O anexo foi removido com sucesso"
+            "message": "O anexo foi removido com sucesso",
+            "title": "Anexo removido"
           },
           "error": {
-            "message": "Não foi possível remover o anexo"
+            "message": "Não foi possível remover o anexo",
+            "title": "Anexo não removido"
+          }
+        },
+        "upload": {
+          "loading": "Enviando anexo...",
+          "success": {
+            "title": "Anexo enviado",
+            "message": "O anexo foi enviado com sucesso"
+          },
+          "error": {
+            "title": "Anexo não enviado",
+            "message": "Não foi possível enviar o anexo"
           }
         }
       },
@@ -391,11 +404,31 @@
         "insufficient_title": {
           "message": "O título do item de trabalho não é informativo o suficiente para gerar a descrição. Tente com outro título."
         }
+      },
+      "id_copied": {
+        "title": "ID do item de trabalho copiado"
       }
     },
     "archived_banner": {
       "title": "Este item de trabalho foi arquivado. Acesse a seção Arquivos para restaurá-lo.",
       "action": "Ir para Arquivos"
+    },
+    "drag": {
+      "cannot_move": {
+        "title": "Não é possível mover o item de trabalho",
+        "not_allowed": "Você não tem permissão para mover este item de trabalho",
+        "grouping_disabled": "Arrastar e soltar está desativado para o agrupamento atual"
+      }
+    },
+    "selection": {
+      "only_current_project_prefix": "Só é possível selecionar itens de trabalho",
+      "only_current_project_suffix": "do projeto atual."
+    },
+    "actions": {
+      "not_available": {
+        "title": "Ação indisponível",
+        "message": "A ação {action} não foi implementada."
+      }
     }
   },
   "sub_work_item": {

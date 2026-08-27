@@ -14,6 +14,7 @@ import { BasePaidPlanCard, TalkToSalesCard } from "@/components/license";
 // local components
 import type { TCheckoutParams } from "./checkout-button";
 import { PlanCheckoutButton } from "./checkout-button";
+import { useTranslation } from "@plane/i18n";
 
 export type PlanUpgradeCardProps = {
   planVariant: EProductSubscriptionEnum;
@@ -31,6 +32,7 @@ export type PlanUpgradeCardProps = {
 };
 
 export const PlanUpgradeCard = observer(function PlanUpgradeCard(props: PlanUpgradeCardProps) {
+  const { t } = useTranslation();
   const {
     planVariant,
     features,
@@ -75,7 +77,7 @@ export const PlanUpgradeCard = observer(function PlanUpgradeCard(props: PlanUpgr
       {price.recurring === "month" && "Monthly"}
       {price.recurring === "year" && (
         <>
-          Yearly
+          {t("billing.yearly")}
           {yearlyDiscount > 0 && (
             <span className="text-caption-sm ml-1 rounded-full bg-accent-primary px-1.5 py-0.5 text-on-color">
               -{yearlyDiscount}%

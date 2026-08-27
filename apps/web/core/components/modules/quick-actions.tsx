@@ -72,7 +72,7 @@ export const ModuleQuickActions = observer(function ModuleQuickActions(props: Pr
       await restoreModule(workspaceSlug, projectId, moduleId);
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Restore success",
+        title: t("module.toasts.restore.success.title"),
         message: t("module.toasts.restore.success.message"),
       });
       router.push(`/${workspaceSlug}/projects/${projectId}/archives/modules`);

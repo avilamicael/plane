@@ -230,7 +230,10 @@
       "label": "Offline"
     },
     "toolbar": {
-      "color": "Color"
+      "color": "Color",
+      "copy_markdown": "Copy markdown",
+      "version_history": "Version history",
+      "export": "Export"
     },
     "content_limit_banner": {
       "message": "Content limit reached and live sync is off. Create a new page or use nested pages to continue syncing."
@@ -239,6 +242,33 @@
       "add_to_next_line": "Add to next line",
       "replace_selection": "Replace selection",
       "regenerate_response": "Re-generate response"
+    },
+    "syncing_badge": {
+      "syncing": "Syncing...",
+      "connection_lost": "Connection lost",
+      "syncing_tooltip": "Your changes are being synced with the server. You can continue making changes.",
+      "connection_lost_tooltip": "We're having trouble connecting to the websocket server. Your changes will be synced and saved every 10 seconds."
+    },
+    "order_by": {
+      "name": "Name",
+      "date_created": "Date created",
+      "date_modified": "Date modified"
     }
+  },
+  "page_version": {
+    "toasts": {
+      "restored": {
+        "title": "Page version restored."
+      },
+      "restore_failed": {
+        "title": "Failed to restore page version."
+      }
+    },
+    "error": {
+      "title": "Something went wrong!",
+      "description": "The version could not be loaded, please try again."
+    },
+    "loading_details": "Loading version details",
+    "view_only": "View only"
   }
 }

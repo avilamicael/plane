@@ -12,6 +12,7 @@ import type { IFormattedInstanceConfiguration, TInstanceImageConfigurationKeys }
 import { ControllerInput } from "@/components/common/controller-input";
 // hooks
 import { useInstance } from "@/hooks/store";
+import { useTranslation } from "@plane/i18n";
 
 type IInstanceImageConfigForm = {
   config: IFormattedInstanceConfiguration;
@@ -20,6 +21,7 @@ type IInstanceImageConfigForm = {
 type ImageConfigFormValues = Record<TInstanceImageConfigurationKeys, string>;
 
 export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
+  const { t } = useTranslation();
   const { config } = props;
   // store hooks
   const { updateInstanceConfigurations } = useInstance();
@@ -66,7 +68,7 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
                 rel="noreferrer"
                 aria-label="Unsplash developer account documentation"
               >
-                Learn more.
+                {t("learn_more")}
               </a>
             </>
           }

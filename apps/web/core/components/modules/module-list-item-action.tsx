@@ -70,14 +70,14 @@ export const ModuleListItemAction = observer(function ModuleListItemAction(props
     );
 
     setPromiseToast(addToFavoritePromise, {
-      loading: "Adding module to favorites...",
+      loading: t("module.toasts.favorite.add.loading"),
       success: {
         title: t("common.toast.success"),
-        message: () => "Module added to favorites.",
+        message: () => t("module.toasts.favorite.add.success"),
       },
       error: {
         title: t("common.toast.error"),
-        message: () => "Couldn't add the module to favorites. Please try again.",
+        message: () => t("module.toasts.favorite.add.error"),
       },
     });
   };
@@ -94,14 +94,14 @@ export const ModuleListItemAction = observer(function ModuleListItemAction(props
     );
 
     setPromiseToast(removeFromFavoritePromise, {
-      loading: "Removing module from favorites...",
+      loading: t("module.toasts.favorite.remove.loading"),
       success: {
         title: t("common.toast.success"),
-        message: () => "Module removed from favorites.",
+        message: () => t("module.toasts.favorite.remove.success"),
       },
       error: {
         title: t("common.toast.error"),
-        message: () => "Couldn't remove the module from favorites. Please try again.",
+        message: () => t("module.toasts.favorite.remove.error"),
       },
     });
   };
@@ -121,7 +121,7 @@ export const ModuleListItemAction = observer(function ModuleListItemAction(props
         setToast({
           type: TOAST_TYPE.ERROR,
           title: t("common.toast.error"),
-          message: err?.detail ?? "Module could not be updated. Please try again.",
+          message: err?.detail ?? t("module.toasts.update.error.message"),
         });
       });
   };

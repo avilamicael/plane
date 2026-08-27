@@ -230,7 +230,10 @@
       "label": "Off-line"
     },
     "toolbar": {
-      "color": "Cor"
+      "color": "Cor",
+      "copy_markdown": "Copiar markdown",
+      "version_history": "Histórico de versões",
+      "export": "Exportar"
     },
     "content_limit_banner": {
       "message": "Limite de conteúdo atingido e a sincronização ao vivo foi desativada. Crie uma nova página ou use páginas aninhadas para continuar sincronizando."
@@ -239,6 +242,33 @@
       "add_to_next_line": "Adicionar na linha seguinte",
       "replace_selection": "Substituir seleção",
       "regenerate_response": "Gerar resposta novamente"
+    },
+    "syncing_badge": {
+      "syncing": "Sincronizando...",
+      "connection_lost": "Conexão perdida",
+      "syncing_tooltip": "Suas alterações estão sendo sincronizadas com o servidor. Você pode continuar editando.",
+      "connection_lost_tooltip": "Estamos com dificuldade para conectar ao servidor de websocket. Suas alterações serão sincronizadas e salvas a cada 10 segundos."
+    },
+    "order_by": {
+      "name": "Nome",
+      "date_created": "Data de criação",
+      "date_modified": "Data de modificação"
     }
+  },
+  "page_version": {
+    "toasts": {
+      "restored": {
+        "title": "Versão da página restaurada."
+      },
+      "restore_failed": {
+        "title": "Não foi possível restaurar a versão da página."
+      }
+    },
+    "error": {
+      "title": "Algo deu errado!",
+      "description": "Não foi possível carregar a versão. Tente novamente."
+    },
+    "loading_details": "Carregando detalhes da versão",
+    "view_only": "Somente leitura"
   }
 }

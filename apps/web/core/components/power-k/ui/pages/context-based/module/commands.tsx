@@ -76,10 +76,10 @@ export const usePowerKModuleContextBasedActions = (): TPowerKCommandConfig[] => 
     } catch {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Some error occurred",
+        title: t("power_k.menus.some_error_occurred"),
       });
     }
-  }, [addModuleToFavorites, removeModuleFromFavorites, workspaceSlug, moduleDetails, isFavorite]);
+  }, [addModuleToFavorites, removeModuleFromFavorites, workspaceSlug, moduleDetails, isFavorite, t]);
 
   const copyModuleUrlToClipboard = useCallback(() => {
     const url = new URL(window.location.href);

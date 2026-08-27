@@ -11,12 +11,14 @@ import { Button } from "@plane/propel/button";
 import { AuthHeader } from "@/app/(all)/(home)/auth-header";
 import InstanceFailureDarkImage from "@/app/assets/instance/instance-failure-dark.svg?url";
 import InstanceFailureImage from "@/app/assets/instance/instance-failure.svg?url";
+import { useTranslation } from "@plane/i18n";
 
 const handleRetry = () => {
   window.location.reload();
 };
 
 export const InstanceFailureView = observer(function InstanceFailureView() {
+  const { t } = useTranslation();
   const { resolvedTheme } = useTheme();
 
   const instanceImage = resolvedTheme === "dark" ? InstanceFailureDarkImage : InstanceFailureImage;
@@ -35,7 +37,7 @@ export const InstanceFailureView = observer(function InstanceFailureView() {
           </div>
           <div className="flex justify-center">
             <Button size="lg" onClick={handleRetry}>
-              Retry
+              {t("common.retry")}
             </Button>
           </div>
         </div>

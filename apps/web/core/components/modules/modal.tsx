@@ -73,7 +73,7 @@ export const CreateUpdateModuleModal = observer(function CreateUpdateModuleModal
         setToast({
           type: TOAST_TYPE.ERROR,
           title: t("common.toast.error"),
-          message: err?.detail ?? err?.error ?? "Module could not be created. Please try again.",
+          message: err?.detail ?? err?.error ?? t("module.toasts.create.error.message"),
         });
       });
   };
@@ -96,7 +96,7 @@ export const CreateUpdateModuleModal = observer(function CreateUpdateModuleModal
         setToast({
           type: TOAST_TYPE.ERROR,
           title: t("common.toast.error"),
-          message: err?.detail ?? err?.error ?? "Module could not be updated. Please try again.",
+          message: err?.detail ?? err?.error ?? t("module.toasts.update.error.message"),
         });
       });
   };

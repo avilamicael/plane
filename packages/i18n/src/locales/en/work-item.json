@@ -346,10 +346,23 @@
       "attachment": {
         "remove": {
           "success": {
-            "message": "The attachment has been successfully removed"
+            "message": "The attachment has been successfully removed",
+            "title": "Attachment removed"
           },
           "error": {
-            "message": "The attachment could not be removed"
+            "message": "The attachment could not be removed",
+            "title": "Attachment not removed"
+          }
+        },
+        "upload": {
+          "loading": "Uploading attachment...",
+          "success": {
+            "title": "Attachment uploaded",
+            "message": "The attachment has been successfully uploaded"
+          },
+          "error": {
+            "title": "Attachment not uploaded",
+            "message": "The attachment could not be uploaded"
           }
         }
       },
@@ -391,11 +404,31 @@
         "insufficient_title": {
           "message": "Work item title isn't informative enough to generate the description. Please try with a different title."
         }
+      },
+      "id_copied": {
+        "title": "Work item ID copied to clipboard"
       }
     },
     "archived_banner": {
       "title": "This work item has been archived. Visit the Archives section to restore it.",
       "action": "Go to archives"
+    },
+    "drag": {
+      "cannot_move": {
+        "title": "Cannot move work item",
+        "not_allowed": "You are not allowed to move this work item",
+        "grouping_disabled": "Drag and drop is disabled for the current grouping"
+      }
+    },
+    "selection": {
+      "only_current_project_prefix": "Only work items within the current",
+      "only_current_project_suffix": "project can be selected."
+    },
+    "actions": {
+      "not_available": {
+        "title": "Action not available",
+        "message": "{action} action is not implemented."
+      }
     }
   },
   "sub_work_item": {

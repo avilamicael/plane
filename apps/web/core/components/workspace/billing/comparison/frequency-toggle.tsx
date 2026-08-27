@@ -8,6 +8,7 @@
 import { observer } from "mobx-react";
 import type { EProductSubscriptionEnum, TBillingFrequency } from "@plane/types";
 import { calculateYearlyDiscount, cn } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 
 type TPlanFrequencyToggleProps = {
   subscriptionType: EProductSubscriptionEnum;
@@ -18,6 +19,7 @@ type TPlanFrequencyToggleProps = {
 };
 
 export const PlanFrequencyToggle = observer(function PlanFrequencyToggle(props: TPlanFrequencyToggleProps) {
+  const { t } = useTranslation();
   const { monthlyPrice, yearlyPrice, selectedFrequency, setSelectedFrequency } = props;
   // derived values
   const yearlyDiscount = calculateYearlyDiscount(monthlyPrice, yearlyPrice);
@@ -35,7 +37,7 @@ export const PlanFrequencyToggle = observer(function PlanFrequencyToggle(props: 
               : "text-tertiary hover:text-secondary"
           )}
         >
-          Monthly
+          {t("billing.monthly")}
         </button>
         <button
           type="button"
@@ -47,7 +49,7 @@ export const PlanFrequencyToggle = observer(function PlanFrequencyToggle(props: 
               : "text-tertiary hover:text-secondary"
           )}
         >
-          Yearly
+          {t("billing.yearly")}
           {yearlyDiscount > 0 && (
             <span className="ml-1.5 rounded-full bg-accent-primary px-1 py-0.5 text-caption-xs-regular text-on-color">
               -{yearlyDiscount}%

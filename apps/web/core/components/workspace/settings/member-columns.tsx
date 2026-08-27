@@ -140,7 +140,7 @@ export const AccountTypeColumn = observer(function AccountTypeColumn(props: Acco
       {isSuspended ? (
         <div className="flex w-32">
           <Pill variant={EPillVariant.DEFAULT} size={EPillSize.SM} className="border-none">
-            Suspended
+            {t("common.suspended")}
           </Pill>
         </div>
       ) : isRoleNonEditable ? (

@@ -14,6 +14,7 @@ import type { TControllerInputFormField } from "@/components/common/controller-i
 import { ControllerInput } from "@/components/common/controller-input";
 // hooks
 import { useInstance } from "@/hooks/store";
+import { useTranslation } from "@plane/i18n";
 
 type IInstanceAIForm = {
   config: IFormattedInstanceConfiguration;
@@ -22,6 +23,7 @@ type IInstanceAIForm = {
 type AIFormValues = Record<TInstanceAIConfigurationKeys, string>;
 
 export function InstanceAIForm(props: IInstanceAIForm) {
+  const { t } = useTranslation();
   const { config } = props;
   // store
   const { updateInstanceConfigurations } = useInstance();
@@ -52,7 +54,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
             rel="noreferrer"
             aria-label="OpenAI models documentation"
           >
-            Learn more
+            {t("learn_more")}
           </a>
         </>
       ),

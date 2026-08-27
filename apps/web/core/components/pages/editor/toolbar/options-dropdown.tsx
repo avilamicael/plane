@@ -57,7 +57,7 @@ export const PageOptionsDropdown = observer(function PageOptionsDropdown(props: 
           action: () => handleFullWidth(!isFullWidth),
           customContent: (
             <>
-              Full width
+              {t("common.full_width")}
               <ToggleSwitch value={isFullWidth} onChange={() => {}} />
             </>
           ),
@@ -86,7 +86,7 @@ export const PageOptionsDropdown = observer(function PageOptionsDropdown(props: 
               message: t("markdown_copied_to_clipboard"),
             });
           },
-          title: "Copy markdown",
+          title: t("page_editor.toolbar.copy_markdown"),
           icon: Clipboard,
           shouldRender: true,
         },
@@ -101,7 +101,7 @@ export const PageOptionsDropdown = observer(function PageOptionsDropdown(props: 
             });
             router.push(updatedRoute);
           },
-          title: "Version history",
+          title: t("page_editor.toolbar.version_history"),
           icon: History,
           shouldRender: true,
         },

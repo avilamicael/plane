@@ -7,6 +7,9 @@
       "create": {
         "success": {
           "message": "Module created successfully."
+        },
+        "error": {
+          "message": "Module could not be created. Please try again."
         }
       },
       "update": {
@@ -19,7 +22,8 @@
       },
       "archive": {
         "success": {
-          "message": "Your archives can be found in project archives."
+          "message": "Your archives can be found in project archives.",
+          "title": "Archive success"
         },
         "error": {
           "message": "Module could not be archived. Please try again."
@@ -27,7 +31,8 @@
       },
       "restore": {
         "success": {
-          "message": "Your module can be found in project modules."
+          "message": "Your module can be found in project modules.",
+          "title": "Restore success"
         },
         "error": {
           "message": "Module could not be restored. Please try again."
@@ -48,6 +53,9 @@
           "success": {
             "message": "Module link deleted successfully."
           }
+        },
+        "error": {
+          "message": "Some error occurred. Please try again."
         }
       },
       "add_work_items": {
@@ -57,9 +65,33 @@
         "error": {
           "message": "Selected work items could not be added to the module. Please try again."
         }
+      },
+      "favorite": {
+        "add": {
+          "loading": "Adding module to favorites...",
+          "success": "Module added to favorites.",
+          "error": "Couldn't add the module to favorites. Please try again."
+        },
+        "remove": {
+          "loading": "Removing module from favorites...",
+          "success": "Module removed from favorites.",
+          "error": "Couldn't remove the module from favorites. Please try again."
+        }
       }
     },
     "no_lead": "No lead",
-    "work_items_progress": "{completed}/{total} {total, plural, one {work item} other {work items}}"
+    "work_items_progress": "{completed}/{total} {total, plural, one {work item} other {work items}}",
+    "link_modal": {
+      "add_title": "Add link",
+      "update_title": "Update link",
+      "adding": "Adding link",
+      "updating": "Updating link",
+      "url_required": "URL is required",
+      "optional": "Optional"
+    },
+    "archive_modal": {
+      "title": "Archive module {name}",
+      "description": "Are you sure you want to archive the module? All your archives can be restored later."
+    }
   }
 }

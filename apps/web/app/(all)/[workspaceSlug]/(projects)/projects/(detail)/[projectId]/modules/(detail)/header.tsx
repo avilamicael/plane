@@ -241,7 +241,7 @@ export const ModuleIssuesHeader = observer(function ModuleIssuesHeader() {
                   toggleCreateIssueModal(true, EIssuesStoreType.MODULE);
                 }}
               >
-                Add work item
+                {t("add_work_item")}
               </Button>
             </>
           ) : (

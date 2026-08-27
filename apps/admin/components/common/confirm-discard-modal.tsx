@@ -10,6 +10,7 @@ import Link from "next/link";
 import { Dialog, Transition } from "@headlessui/react";
 // ui
 import { Button, getButtonStyling } from "@plane/propel/button";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   isOpen: boolean;
@@ -18,6 +19,7 @@ type Props = {
 };
 
 export function ConfirmDiscardModal(props: Props) {
+  const { t } = useTranslation();
   const { isOpen, handleClose, onDiscardHref } = props;
 
   return (
@@ -65,7 +67,7 @@ export function ConfirmDiscardModal(props: Props) {
                     Keep editing
                   </Button>
                   <Link href={onDiscardHref} className={getButtonStyling("primary", "base")}>
-                    Go back
+                    {t("common.go_back")}
                   </Link>
                 </div>
               </Dialog.Panel>

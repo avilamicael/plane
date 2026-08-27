@@ -66,7 +66,7 @@ export function BubbleMenuLinkSelector(props: Props) {
       getReferenceProps={getReferenceProps}
       menuButton={
         <>
-          Link
+          {t("common.link")}
           <LinkIcon className="size-3 shrink-0" />
         </>
       }
@@ -122,7 +122,7 @@ export function BubbleMenuLinkSelector(props: Props) {
         </div>
         {error && (
           <p className="animate-in fade-in slide-in-from-top-0 pointer-events-none my-1 px-2 text-11 text-danger-primary">
-            Please enter a valid URL
+            {t("externalEmbedComponent.error.not_valid_link")}
           </p>
         )}
       </div>

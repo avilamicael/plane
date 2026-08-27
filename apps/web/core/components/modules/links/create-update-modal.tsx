@@ -73,7 +73,7 @@ export function CreateUpdateModuleLinkModal(props: Props) {
       setToast({
         type: TOAST_TYPE.ERROR,
         title: t("common.toast.error"),
-        message: error?.data?.error ?? "Some error occurred. Please try again.",
+        message: error?.data?.error ?? t("module.toasts.link.error.message"),
       });
     }
   };
@@ -89,7 +89,9 @@ export function CreateUpdateModuleLinkModal(props: Props) {
     <ModalCore isOpen={isOpen} handleClose={onClose}>
       <form onSubmit={handleSubmit(handleFormSubmit)}>
         <div className="space-y-5 p-5">
-          <h3 className="text-18 font-medium text-secondary">{data ? "Update" : "Add"} link</h3>
+          <h3 className="text-18 font-medium text-secondary">
+            {data ? t("module.link_modal.update_title") : t("module.link_modal.add_title")}
+          </h3>
           <div className="mt-2 space-y-3">
             <div>
               <label htmlFor="url" className="mb-2 text-secondary">
@@ -99,7 +101,7 @@ export function CreateUpdateModuleLinkModal(props: Props) {
                 control={control}
                 name="url"
                 rules={{
-                  required: "URL is required",
+                  required: t("module.link_modal.url_required"),
                 }}
                 render={({ field: { value, onChange, ref } }) => (
                   <Input
@@ -117,8 +119,8 @@ export function CreateUpdateModuleLinkModal(props: Props) {
             </div>
             <div>
               <label htmlFor="title" className="mb-2 text-secondary">
-                Display title
-                <span className="block text-10">Optional</span>
+                {t("common.display_title")}
+                <span className="block text-10">{t("module.link_modal.optional")}</span>
               </label>
               <Controller
                 control={control}
@@ -141,10 +143,16 @@ export function CreateUpdateModuleLinkModal(props: Props) {
         </div>
         <div className="flex items-center justify-end gap-2 border-t-[0.5px] border-subtle px-5 py-4">
           <Button variant="secondary" size="lg" onClick={onClose}>
-            Cancel
+            {t("common.cancel")}
           </Button>
           <Button variant="primary" size="lg" type="submit" loading={isSubmitting}>
-            {data ? (isSubmitting ? "Updating link" : "Update link") : isSubmitting ? "Adding link" : "Add link"}
+            {data
+              ? isSubmitting
+                ? t("module.link_modal.updating")
+                : t("module.link_modal.update_title")
+              : isSubmitting
+                ? t("module.link_modal.adding")
+                : t("module.link_modal.add_title")}
           </Button>
         </div>
       </form>
