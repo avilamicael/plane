@@ -112,7 +112,7 @@ export const useExportColumns = () => {
             )}
           </>
         ) : (
-          <div className="text-11 text-danger-primary">Expired</div>
+          <div className="text-11 text-danger-primary">{t("common.expired")}</div>
         ),
     },
   ];

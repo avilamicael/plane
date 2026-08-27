@@ -56,6 +56,7 @@ import { ISSUE_FILTER_DEFAULT_DATA } from "@/store/issue/helpers/base-issues.sto
 import { DEFAULT_DISPLAY_PROPERTIES } from "@/store/issue/issue-details/sub_issues_filter.store";
 // constants
 import { ISSUE_GROUP_BY_OPTIONS } from "@plane/constants";
+import { i18nInstance } from "@plane/i18n";
 // components
 import {
   SpreadsheetAssigneeColumn,
@@ -136,7 +137,7 @@ export const getGroupByColumns = ({
     return [
       {
         id: "All Issues",
-        name: `All ${isEpic ? t("common.epics") : "work items"}`,
+        name: isEpic ? t("common.all_epics") : t("common.all_work_items"),
         payload: {},
         icon: undefined,
       },
@@ -213,7 +214,7 @@ const getCycleColumns = (): IGroupByColumn[] | undefined => {
   });
   cycles.push({
     id: "None",
-    name: "None",
+    name: i18nInstance.t("none"),
     icon: <CycleIcon className="h-3.5 w-3.5" />,
     payload: {},
   });
@@ -240,7 +241,7 @@ const getModuleColumns = (): IGroupByColumn[] | undefined => {
   });
   modules.push({
     id: "None",
-    name: "None",
+    name: i18nInstance.t("none"),
     icon: <ModuleIcon className="h-3.5 w-3.5" />,
     payload: {},
   });
@@ -295,7 +296,7 @@ const getLabelsColumns = ({ isWorkspaceLevel }: TGetColumns): IGroupByColumn[] =
   // map labels to group by columns
   const labels = [
     ...(isWorkspaceLevel ? workspaceLabels || [] : projectLabels || []),
-    { id: "None", name: "None", color: "#666" },
+    { id: "None", name: i18nInstance.t("none"), color: "#666" },
   ];
   // map labels to group by columns
   return labels.map((label) => ({
@@ -328,7 +329,7 @@ const getAssigneeColumns = ({ isWorkspaceLevel, projectId }: TGetColumns): IGrou
     });
   });
   if (includeNone) {
-    assigneeColumns.push({ id: "None", name: "None", icon: <Avatar size="md" />, payload: {} });
+    assigneeColumns.push({ id: "None", name: i18nInstance.t("none"), icon: <Avatar size="md" />, payload: {} });
   }
 
   return assigneeColumns;

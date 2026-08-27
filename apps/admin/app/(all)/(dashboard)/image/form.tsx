@@ -43,7 +43,7 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
       .then(() =>
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success",
+          title: t("admin.common.success"),
           message: t("admin.settings.image.updated_successfully"),
         })
       )

@@ -206,7 +206,7 @@ const errorCodeMessages: {
           className="font-medium underline underline-offset-4 transition-all hover:font-bold"
           href={`/${email ? `?email=${encodeURIComponent(email)}` : ``}`}
         >
-          Create one
+          {i18nInstance.t("common.create_one")}
         </Link>
         &nbsp;to get started.
       </div>

@@ -17,6 +17,7 @@ import { cn } from "@plane/utils";
 import { TimeLineTypeContext } from "@/components/gantt-chart/contexts";
 import { GanttChartRoot } from "@/components/gantt-chart/root";
 import { BaseGanttSidebar } from "./sidebar";
+import { useTranslation } from "@plane/i18n";
 
 export const BaseGanttLayout = observer(function BaseGanttLayout<T extends IBaseLayoutsGanttItem>(
   props: IBaseLayoutsGanttProps<T>
@@ -39,7 +40,7 @@ export const BaseGanttLayout = observer(function BaseGanttLayout<T extends IBase
     showAllBlocks = false,
     showToday = true,
     border = false,
-    title = "Items",
+    title,
     loaderTitle = "items",
     quickAdd,
     loadMoreItems,
@@ -47,6 +48,8 @@ export const BaseGanttLayout = observer(function BaseGanttLayout<T extends IBase
     className,
     timelineType: timelineTypeKey = GANTT_TIMELINE_TYPE.ISSUE,
   } = props;
+  // translation
+  const { t } = useTranslation();
 
   // Flatten all grouped item IDs into a single array for gantt
   // Gantt doesn't typically show groups, it shows all items on a timeline
@@ -120,7 +123,7 @@ export const BaseGanttLayout = observer(function BaseGanttLayout<T extends IBase
       <div className={cn("h-full w-full", className)}>
         <GanttChartRoot
           border={border}
-          title={title}
+          title={title ?? t("common.items")}
           loaderTitle={loaderTitle}
           blockIds={blockIds}
           blockUpdateHandler={handleBlockUpdate}

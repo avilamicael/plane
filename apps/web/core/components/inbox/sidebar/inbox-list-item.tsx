@@ -94,7 +94,7 @@ export const InboxIssueListItem = observer(function InboxIssueListItem(props: In
               <div className="rounded-full border-2 border-strong-1" />
 
               {issue.priority && (
-                <Tooltip tooltipHeading={t("priority")} tooltipContent={`${issue.priority ?? "None"}`}>
+                <Tooltip tooltipHeading={t("priority")} tooltipContent={`${issue.priority ?? t("none")}`}>
                   <PriorityIcon priority={issue.priority} withContainer className="h-3 w-3" />
                 </Tooltip>
               )}

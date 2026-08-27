@@ -93,7 +93,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
       .then(() =>
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success",
+          title: t("admin.common.success"),
           message: t("admin.settings.ai.updated_successfully"),
         })
       )

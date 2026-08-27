@@ -152,7 +152,9 @@
         "updated_successfully": "Email settings updated successfully",
         "receiver_email_placeholder": "Receiver email",
         "test_email_hint": "If you still cannot find it, recheck your SMTP configuration and trigger a new test email.",
-        "send_failed": "Failed to send email"
+        "send_failed": "Failed to send email",
+        "send_email": "Send email",
+        "sending_email": "Sending email"
       },
       "workspace": {
         "title": "Workspaces on this instance",
@@ -292,7 +294,15 @@
       },
       "administrator": "administrator",
       "generic_title": "Error",
-      "generic_message": "Something went wrong. Please try again."
+      "generic_message": "Something went wrong. Please try again.",
+      "dev": {
+        "route_error": "Route Error Response",
+        "error_data": "Error Data",
+        "runtime_error": "Runtime Error",
+        "stack_trace": "Stack Trace",
+        "development_mode": "Development Mode",
+        "unknown_error": "Unknown Error"
+      }
     },
     "not_found": {
       "title": "Oops! Something went wrong.",

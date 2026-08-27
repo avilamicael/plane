@@ -99,7 +99,7 @@ export function SendTestEmailModal(props: Props) {
                     ? t("admin.settings.email.send_test_email")
                     : sendEmailStep === ESendEmailSteps.SUCCESS
                       ? "Email send"
-                      : "Failed"}{" "}
+                      : t("common.failed")}{" "}
                 </h3>
                 <div className="pt-6 pb-2">
                   {sendEmailStep === ESendEmailSteps.SEND_EMAIL && (
@@ -129,7 +129,7 @@ export function SendTestEmailModal(props: Props) {
                     </Button>
                     {sendEmailStep === ESendEmailSteps.SEND_EMAIL && (
                       <Button variant="primary" size="lg" loading={isLoading} onClick={handleSubmit} tabIndex={0}>
-                        {isLoading ? "Sending email" : "Send email"}
+                        {isLoading ? t("admin.settings.email.sending_email") : t("admin.settings.email.send_email")}
                       </Button>
                     )}
                   </div>

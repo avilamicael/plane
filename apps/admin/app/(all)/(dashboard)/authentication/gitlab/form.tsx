@@ -34,7 +34,7 @@ type GitlabConfigFormValues = Record<TInstanceGitlabAuthenticationConfigurationK
 
 const GITLAB_FORM_SWITCH_FIELD: TControllerSwitchFormField<GitlabConfigFormValues> = {
   name: "ENABLE_GITLAB_SYNC",
-  label: "Gitlab",
+  label: "GitLab",
 };
 
 const PROVIDER = "GitLab";

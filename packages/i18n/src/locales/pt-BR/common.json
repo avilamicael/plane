@@ -967,7 +967,13 @@
       "october": "outubro",
       "november": "novembro",
       "december": "dezembro"
-    }
+    },
+    "all_work_items": "Todos os itens de trabalho",
+    "all_epics": "Todos os épicos",
+    "date": "Data",
+    "cover_image_alt": "Imagem de capa",
+    "create_account": "Criar conta",
+    "create_one": "Crie uma"
   },
   "chart": {
     "x_axis": "Eixo X",

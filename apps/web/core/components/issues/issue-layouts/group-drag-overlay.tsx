@@ -67,7 +67,7 @@ export function GroupDragOverlay(props: Props) {
           {dropErrorMessage ? (
             <div className="flex items-center">
               <AlertCircle width={13} height={13} /> &nbsp;
-              <span>{dropErrorMessage}</span>
+              <span>{t(dropErrorMessage)}</span>
             </div>
           ) : (
             <>

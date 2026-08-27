@@ -44,6 +44,7 @@ type AccountTypeProps = {
 };
 
 export function NameColumn(props: NameProps) {
+  const { t } = useTranslation();
   const { rowData, workspaceSlug, isAdmin, currentUser, setRemoveMemberModal } = props;
   // derived values
   const { avatar_url, display_name, email, first_name, id, last_name } = rowData.member;
@@ -100,7 +101,8 @@ export function NameColumn(props: NameProps) {
                       }
                     }}
                   >
-                    <TrashIcon className="size-3.5 align-middle" /> {id === currentUser?.id ? "Leave " : "Remove "}
+                    <TrashIcon className="size-3.5 align-middle" />{" "}
+                    {id === currentUser?.id ? t("leave") : t("common.remove")}
                   </div>
                 )}
               />

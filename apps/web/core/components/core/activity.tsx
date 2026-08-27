@@ -39,6 +39,7 @@ import { renderFormattedDate, generateWorkItemLink, capitalizeFirstLetter } from
 // helpers
 import { useLabel } from "@/hooks/store/use-label";
 import { usePlatformOS } from "@/hooks/use-platform-os";
+import { i18nInstance } from "@plane/i18n";
 // types
 
 export function IssueLink({ activity }: { activity: IIssueActivity }) {
@@ -567,7 +568,7 @@ const activityDetails: {
       <>
         set the priority to{" "}
         <span className="font-medium text-primary">
-          {activity.new_value ? capitalizeFirstLetter(activity.new_value) : "None"}
+          {activity.new_value ? capitalizeFirstLetter(activity.new_value) : i18nInstance.t("none")}
         </span>
         {showIssue && (
           <>

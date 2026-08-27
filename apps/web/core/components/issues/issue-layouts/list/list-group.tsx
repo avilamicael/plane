@@ -222,7 +222,7 @@ export const ListGroup = observer(function ListGroup(props: Props) {
               setToast({
                 type: TOAST_TYPE.WARNING,
                 title: t("common.warning"),
-                message: group.dropErrorMessage,
+                message: t(group.dropErrorMessage),
               });
             return;
           }

@@ -152,7 +152,9 @@
         "updated_successfully": "Configurações de e-mail atualizadas com sucesso",
         "receiver_email_placeholder": "E-mail do destinatário",
         "test_email_hint": "Se ainda assim não encontrar, revise a configuração de SMTP e dispare um novo e-mail de teste.",
-        "send_failed": "Não foi possível enviar o e-mail"
+        "send_failed": "Não foi possível enviar o e-mail",
+        "send_email": "Enviar e-mail",
+        "sending_email": "Enviando e-mail"
       },
       "workspace": {
         "title": "Espaços de trabalho nesta instância",
@@ -292,7 +294,15 @@
       },
       "administrator": "o administrador",
       "generic_title": "Erro",
-      "generic_message": "Algo deu errado. Tente novamente."
+      "generic_message": "Algo deu errado. Tente novamente.",
+      "dev": {
+        "route_error": "Resposta de erro de rota",
+        "error_data": "Dados do erro",
+        "runtime_error": "Erro de execução",
+        "stack_trace": "Pilha de execução",
+        "development_mode": "Modo de desenvolvimento",
+        "unknown_error": "Erro desconhecido"
+      }
     },
     "not_found": {
       "title": "Ops! Algo deu errado.",

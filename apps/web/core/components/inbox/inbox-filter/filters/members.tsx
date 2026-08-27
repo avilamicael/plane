@@ -29,9 +29,10 @@ type Props = {
 };
 
 export const FilterMember = observer(function FilterMember(props: Props) {
-  const { filterKey, label = "Members", memberIds, searchQuery } = props;
+  const { filterKey, label, memberIds, searchQuery } = props;
   // i18n
   const { t } = useTranslation();
+  const resolvedLabel = label ?? t("members");
   // hooks
   const { inboxFilters, handleInboxIssueFilters } = useProjectInbox();
   const { getUserDetails } = useMember();
@@ -69,7 +70,7 @@ export const FilterMember = observer(function FilterMember(props: Props) {
   return (
     <>
       <FilterHeader
-        title={`${label} ${appliedFiltersCount > 0 ? ` (${appliedFiltersCount})` : ""}`}
+        title={`${resolvedLabel} ${appliedFiltersCount > 0 ? ` (${appliedFiltersCount})` : ""}`}
         isPreviewEnabled={previewEnabled}
         handleIsPreviewEnabled={() => setPreviewEnabled(!previewEnabled)}
       />
