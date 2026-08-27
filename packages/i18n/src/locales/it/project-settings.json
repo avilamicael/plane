@@ -24,7 +24,7 @@
       "project_lead": "Responsabile del progetto",
       "project_lead_description": "Seleziona il responsabile del progetto.",
       "default_assignee": "Assegnatario predefinito",
-      "default_assignee_description": "Seleziona l’assegnatario predefinito del progetto.",
+      "default_assignee_description": "Seleziona l'assegnatario predefinito del progetto.",
       "project_subscribers": "Iscritti al progetto",
       "project_subscribers_description": "Seleziona i membri che riceveranno le notifiche per questo progetto.",
       "guest_super_permissions": {

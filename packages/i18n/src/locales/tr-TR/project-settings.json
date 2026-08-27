@@ -22,9 +22,9 @@
     "members": {
       "label": "Üyeler",
       "project_lead": "Proje lideri",
-      "project_lead_description": "Proje için proje liderini seçin.",
+      "project_lead_description": "Proje sorumlusunu seçin.",
       "default_assignee": "Varsayılan atanan",
-      "default_assignee_description": "Proje için varsayılan atanacak kişiyi seçin.",
+      "default_assignee_description": "Proje için varsayılan atanan kişiyi seçin.",
       "project_subscribers": "Proje aboneleri",
       "project_subscribers_description": "Bu proje için bildirim alacak üyeleri seçin.",
       "guest_super_permissions": {

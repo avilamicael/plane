@@ -22,9 +22,9 @@
     "members": {
       "label": "Membri",
       "project_lead": "Lider de proiect",
-      "project_lead_description": "Selectați liderul proiectului.",
+      "project_lead_description": "Selectați responsabilul de proiect.",
       "default_assignee": "Persoană atribuită implicit",
-      "default_assignee_description": "Selectați persoana implicită atribuită proiectului.",
+      "default_assignee_description": "Selectați persoana desemnată implicit pentru proiect.",
       "project_subscribers": "Abonații proiectului",
       "project_subscribers_description": "Selectați membrii care vor primi notificări pentru acest proiect.",
       "guest_super_permissions": {

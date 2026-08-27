@@ -22,9 +22,9 @@
     "members": {
       "label": "Mitglieder",
       "project_lead": "Projektleitung",
-      "project_lead_description": "Wählen Sie den Projektleiter für das Projekt aus.",
+      "project_lead_description": "Wählen Sie die Projektleitung aus.",
       "default_assignee": "Standardzuweisung",
-      "default_assignee_description": "Wählen Sie den Standard-Zuständigen für das Projekt aus.",
+      "default_assignee_description": "Wählen Sie den Standardbearbeiter für das Projekt aus.",
       "project_subscribers": "Projektabonnenten",
       "project_subscribers_description": "Wählen Sie Mitglieder aus, die Benachrichtigungen für dieses Projekt erhalten.",
       "guest_super_permissions": {

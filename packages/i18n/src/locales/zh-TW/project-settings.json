@@ -22,9 +22,9 @@
     "members": {
       "label": "成員",
       "project_lead": "專案負責人",
-      "project_lead_description": "請選擇該專案的專案負責人。",
+      "project_lead_description": "選擇專案負責人。",
       "default_assignee": "預設指派對象",
-      "default_assignee_description": "請選擇該專案的預設指派人。",
+      "default_assignee_description": "選擇專案的預設負責人。",
       "project_subscribers": "專案訂閱者",
       "project_subscribers_description": "請選擇將接收此專案通知的成員。",
       "guest_super_permissions": {

@@ -22,9 +22,9 @@
     "members": {
       "label": "Anggota",
       "project_lead": "Pemimpin proyek",
-      "project_lead_description": "Pilih pimpinan proyek untuk proyek ini.",
+      "project_lead_description": "Pilih penanggung jawab proyek.",
       "default_assignee": "Penugas default",
-      "default_assignee_description": "Pilih penerima tugas default untuk proyek ini.",
+      "default_assignee_description": "Pilih penerima tugas default untuk proyek.",
       "project_subscribers": "Pelanggan proyek",
       "project_subscribers_description": "Pilih anggota yang akan menerima notifikasi untuk proyek ini.",
       "guest_super_permissions": {

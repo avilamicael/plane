@@ -22,9 +22,9 @@
     "members": {
       "label": "Membros",
       "project_lead": "Líder do projeto",
-      "project_lead_description": "Selecione o líder do projeto.",
+      "project_lead_description": "Escolha o responsável pelo projeto.",
       "default_assignee": "Responsável padrão",
-      "default_assignee_description": "Selecione o responsável padrão do projeto.",
+      "default_assignee_description": "Escolha o responsável padrão do projeto.",
       "project_subscribers": "Assinantes do projeto",
       "project_subscribers_description": "Selecione os membros que receberão notificações deste projeto.",
       "guest_super_permissions": {

@@ -22,9 +22,9 @@
     "members": {
       "label": "Członkowie",
       "project_lead": "Lider projektu",
-      "project_lead_description": "Wybierz lidera projektu.",
+      "project_lead_description": "Wybierz kierownika projektu.",
       "default_assignee": "Domyślnie przypisany",
-      "default_assignee_description": "Wybierz domyślnego przypisanego do projektu.",
+      "default_assignee_description": "Wybierz domyślną osobę przypisaną do projektu.",
       "project_subscribers": "Subskrybenci projektu",
       "project_subscribers_description": "Wybierz członków, którzy będą otrzymywać powiadomienia dotyczące tego projektu.",
       "guest_super_permissions": {

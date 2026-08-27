@@ -24,7 +24,7 @@
       "project_lead": "Vedúci projektu",
       "project_lead_description": "Vyberte vedúceho projektu.",
       "default_assignee": "Predvolené priradenie",
-      "default_assignee_description": "Vyberte predvoleného priradeného pre projekt.",
+      "default_assignee_description": "Vyberte predvoleného riešiteľa projektu.",
       "project_subscribers": "Odberatelia projektu",
       "project_subscribers_description": "Vyberte členov, ktorí budú dostávať upozornenia pre tento projekt.",
       "guest_super_permissions": {

@@ -22,9 +22,9 @@
     "members": {
       "label": "メンバー",
       "project_lead": "プロジェクトリーダー",
-      "project_lead_description": "プロジェクトのプロジェクトリーダーを選択してください。",
+      "project_lead_description": "プロジェクトの責任者を選択してください。",
       "default_assignee": "デフォルトの担当者",
-      "default_assignee_description": "プロジェクトのデフォルトの担当者を選択してください。",
+      "default_assignee_description": "プロジェクトの既定の担当者を選択してください。",
       "project_subscribers": "プロジェクトの購読者",
       "project_subscribers_description": "このプロジェクトの通知を受け取るメンバーを選択してください。",
       "guest_super_permissions": {

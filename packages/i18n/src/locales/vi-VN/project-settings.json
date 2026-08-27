@@ -22,7 +22,7 @@
     "members": {
       "label": "Thành viên",
       "project_lead": "Người phụ trách dự án",
-      "project_lead_description": "Chọn trưởng dự án cho dự án.",
+      "project_lead_description": "Chọn người phụ trách dự án.",
       "default_assignee": "Người nhận mặc định",
       "default_assignee_description": "Chọn người được giao mặc định cho dự án.",
       "project_subscribers": "Người theo dõi dự án",
