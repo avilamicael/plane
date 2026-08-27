@@ -407,7 +407,8 @@
       },
       "id_copied": {
         "title": "ID do item de trabalho copiado"
-      }
+      },
+      "deleted_work_item": "Este item de trabalho foi excluído"
     },
     "archived_banner": {
       "title": "Este item de trabalho foi arquivado. Acesse a seção Arquivos para restaurá-lo.",
@@ -418,7 +419,9 @@
         "title": "Não é possível mover o item de trabalho",
         "not_allowed": "Você não tem permissão para mover este item de trabalho",
         "grouping_disabled": "Arrastar e soltar está desativado para o agrupamento atual"
-      }
+      },
+      "cannot_move_to_completed_cycle": "Não é possível mover o item de trabalho para ciclos concluídos",
+      "drop_here_to_delete": "Solte aqui para excluir o item de trabalho."
     },
     "selection": {
       "only_current_project_prefix": "Só é possível selecionar itens de trabalho",
@@ -429,7 +432,14 @@
         "title": "Ação indisponível",
         "message": "A ação {action} não foi implementada."
       }
-    }
+    },
+    "draft": {
+      "save_this_draft": "Salvar este rascunho?"
+    },
+    "bulk_delete": {
+      "confirm": "Excluir os itens de trabalho selecionados"
+    },
+    "no_sibling_work_items": "Nenhum item de trabalho irmão"
   },
   "sub_work_item": {
     "update": {

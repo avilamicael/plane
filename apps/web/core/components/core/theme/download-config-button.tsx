@@ -59,7 +59,7 @@ export const CustomThemeDownloadConfigButton = observer(function CustomThemeDown
 
   return (
     <Button variant="secondary" size="lg" type="button" onClick={handleDownloadConfig}>
-      Download config
+      {t("common.theme.download_config")}
     </Button>
   );
 });

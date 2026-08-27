@@ -17,6 +17,7 @@ import { Input } from "@plane/ui";
 // ui
 // types
 import type { TLabelOperations } from "./root";
+import { useTranslation } from "@plane/i18n";
 
 type ILabelCreate = {
   workspaceSlug: string;
@@ -33,6 +34,7 @@ const defaultValues: Partial<IIssueLabel> = {
 };
 
 export function LabelCreate(props: ILabelCreate) {
+  const { t } = useTranslation();
   const { workspaceSlug, projectId, issueId, values, labelOperations, disabled = false } = props;
   // state
   const [isCreateToggle, setIsCreateToggle] = useState(false);
@@ -142,7 +144,7 @@ export function LabelCreate(props: ILabelCreate) {
                 onChange={onChange}
                 ref={ref}
                 hasError={Boolean(errors.name)}
-                placeholder="Title"
+                placeholder={t("title")}
                 className="w-full px-1.5 py-1 text-11"
                 disabled={isSubmitting}
               />

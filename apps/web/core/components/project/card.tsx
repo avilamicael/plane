@@ -283,7 +283,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
             <div className="flex items-center justify-center gap-2">
               <Tooltip
                 isMobile={isMobile}
-                tooltipHeading="Members"
+                tooltipHeading={t("members")}
                 tooltipContent={
                   project.members && project.members.length > 0 ? `${project.members.length} Members` : "No Member"
                 }
@@ -305,7 +305,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
                   <span className="text-13 text-placeholder italic">{t("project.card.no_members_yet")}</span>
                 )}
               </Tooltip>
-              {isArchived && <div className="text-11 font-medium text-placeholder">Archived</div>}
+              {isArchived && <div className="text-11 font-medium text-placeholder">{t("common.archived")}</div>}
             </div>
             {isArchived ? (
               hasAdminRole && (

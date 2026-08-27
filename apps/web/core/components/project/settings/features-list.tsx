@@ -59,7 +59,7 @@ const PROJECT_FEATURES_LIST = {
     key: "pages",
     property: "page_view",
     title: "Pages",
-    description: "Write anything like you write anything.",
+    description: "project.features.pages_description_short",
     icon: <PageIcon className="h-5 w-5 flex-shrink-0 text-tertiary" />,
     isPro: false,
     isEnabled: true,

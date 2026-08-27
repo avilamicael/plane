@@ -188,7 +188,7 @@ export function GptAssistantPopover(props: Props) {
         onClose();
       }}
     >
-      Use this response
+      {t("common.ai.use_this_response")}
     </Button>
   );
 
@@ -225,7 +225,7 @@ export function GptAssistantPopover(props: Props) {
           <div className="vertical-scroll-enable max-h-72 space-y-4 overflow-y-auto">
             {prompt && (
               <div className="text-13">
-                Content:
+                {t("common.ai.content_label")}
                 <RichTextEditor
                   editable={false}
                   id="ai-assistant-content"
@@ -240,7 +240,7 @@ export function GptAssistantPopover(props: Props) {
             )}
             {response !== "" && (
               <div className="page-block-section max-h-[8rem] text-13">
-                Response:
+                {t("common.ai.response_label")}
                 <RichTextEditor
                   editable={false}
                   id="ai-assistant-response"

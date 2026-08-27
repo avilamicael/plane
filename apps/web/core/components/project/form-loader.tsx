@@ -48,7 +48,7 @@ export function ProjectDetailsFormLoader() {
         </div>
         <div className="flex w-full items-center justify-between gap-10">
           <div className="flex w-1/2 flex-col gap-1">
-            <h4 className="text-13">Identifier</h4>
+            <h4 className="text-13">{t("common.identifier")}</h4>
             <Loader>
               <Loader.Item height="36px" width="100%" />
             </Loader>

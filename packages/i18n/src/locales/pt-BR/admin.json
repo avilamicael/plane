@@ -321,6 +321,21 @@
       "title": "Você tem alterações não salvas",
       "description": "As alterações feitas serão perdidas se você voltar. Deseja voltar mesmo assim?",
       "keep_editing": "Continuar editando"
+    },
+    "page_titles": {
+      "home": "Administração – Configuração da instância e login",
+      "home_description": "Configure sua instância do Plane ou entre no portal de administração.",
+      "general": "Configurações gerais - God Mode",
+      "workspace_create": "Criar espaço de trabalho - God Mode",
+      "workspace": "Gestão de espaços de trabalho - God Mode",
+      "authentication": "Configurações de autenticação - Plane Web",
+      "auth_gitea": "Autenticação Gitea - God Mode",
+      "auth_google": "Autenticação Google - God Mode",
+      "auth_gitlab": "Autenticação GitLab - God Mode",
+      "auth_github": "Autenticação GitHub - God Mode",
+      "ai": "Configurações de inteligência artificial - God Mode",
+      "email": "Configurações de e-mail - God Mode",
+      "image": "Configurações de imagens - God Mode"
     }
   }
 }

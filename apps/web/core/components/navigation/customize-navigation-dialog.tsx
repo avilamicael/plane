@@ -281,9 +281,7 @@ export const CustomizeNavigationDialog = observer(function CustomizeNavigationDi
                     />
                     <div className="flex-1">
                       <div className="text-13 text-primary">{t("accordion_navigation_control")}</div>
-                      <div className="text-11 text-secondary">
-                        Feature tabs will appear as nested items under project and acts as accordion.
-                      </div>
+                      <div className="text-11 text-secondary">{t("settings.navigation.nested_tabs_description")}</div>
                     </div>
                   </label>
 
@@ -300,7 +298,7 @@ export const CustomizeNavigationDialog = observer(function CustomizeNavigationDi
                     <div className="flex-1">
                       <div className="text-13 text-primary">{t("horizontal_navigation_bar")}</div>
                       <div className="text-11 text-secondary">
-                        Feature tabs will appear as horizontal tabs inside a project.
+                        {t("settings.navigation.horizontal_tabs_description")}
                       </div>
                     </div>
                   </label>

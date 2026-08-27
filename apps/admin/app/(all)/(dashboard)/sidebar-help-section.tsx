@@ -74,10 +74,10 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
             {!isSidebarCollapsed && t("admin.sidebar.redirect_to_plane")}
           </a>
         </Tooltip>
-        <Tooltip tooltipContent="Help" position={isSidebarCollapsed ? "right" : "top"} className="ml-4">
+        <Tooltip tooltipContent={t("common.help")} position={isSidebarCollapsed ? "right" : "top"} className="ml-4">
           <button
             type="button"
-            aria-label="Help"
+            aria-label={t("common.help")}
             className={`ml-auto grid place-items-center rounded-md p-1.5 text-secondary outline-none hover:bg-layer-1-hover hover:text-primary ${
               isSidebarCollapsed ? "w-full" : ""
             }`}

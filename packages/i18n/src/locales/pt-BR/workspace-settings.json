@@ -106,7 +106,10 @@
               "message": "A exportação não foi bem-sucedida. Tente novamente."
             }
           }
-        }
+        },
+        "exported_by": "Exportado por",
+        "exported_on": "Exportado em",
+        "exported_projects": "Projetos exportados"
       },
       "webhooks": {
         "heading": "Webhooks",
@@ -171,13 +174,21 @@
         },
         "delete_webhook": "Excluir webhook",
         "enable_webhook": "Ativar webhook",
-        "delete_warning": "Depois que um webhook é excluído, não é possível restaurá-lo. Eventos futuros deixarão de ser entregues a este webhook."
+        "delete_warning": "Depois que um webhook é excluído, não é possível restaurá-lo. Eventos futuros deixarão de ser entregues a este webhook.",
+        "events": {
+          "project": "Projeto criado, atualizado ou excluído",
+          "cycle": "Ciclo criado, atualizado ou excluído",
+          "module": "Módulo criado, atualizado ou excluído",
+          "comment": "Comentário publicado, atualizado ou excluído",
+          "work_item_comments": "Comentários em itens de trabalho",
+          "work_item": "Item de trabalho criado, atualizado, excluído ou adicionado a um ciclo ou módulo"
+        }
       },
       "api_tokens": {
         "heading": "Tokens de API",
         "description": "Gere tokens de API seguros para integrar seus dados com sistemas e aplicativos externos.",
         "title": "Tokens de API",
-        "add_token": "Adicionar token de acesso",
+        "add_token": "Adicionar token",
         "create_token": "Criar token",
         "never_expires": "Nunca expira",
         "generate_token": "Gerar token",
@@ -196,7 +207,11 @@
         },
         "expiration_required": "Selecione uma data de expiração.",
         "copy_secret_key": "Copiar chave secreta",
-        "delete_token": "Excluir token"
+        "delete_token": "Excluir token",
+        "no_tokens": "Nenhum token de API",
+        "set_expiration": "Definir data de expiração",
+        "custom_date": "Data personalizada",
+        "view_secret_key": "Ver a chave secreta"
       },
       "integrations": {
         "title": "Integrações",
@@ -510,6 +525,10 @@
         "heading": "Scripts",
         "new_script": "Novo Script",
         "description": "Automatize seus fluxos de trabalho com scripts personalizados e regras de automação."
+      },
+      "views": {
+        "edit_view": "Editar visualização",
+        "delete_view": "Excluir visualização"
       }
     },
     "empty_state": {

@@ -6,9 +6,10 @@
 
 import { Outlet } from "react-router";
 import type { Route } from "./+types/layout";
+import { i18nInstance } from "@plane/i18n";
 
 export default function CreateWorkspaceLayout() {
   return <Outlet />;
 }
 
-export const meta: Route.MetaFunction = () => [{ title: "Create Workspace" }];
+export const meta: Route.MetaFunction = () => [{ title: i18nInstance.t("page_titles.create_workspace") }];

@@ -407,7 +407,8 @@
       },
       "id_copied": {
         "title": "Work item ID copied to clipboard"
-      }
+      },
+      "deleted_work_item": "This work item has been deleted"
     },
     "archived_banner": {
       "title": "This work item has been archived. Visit the Archives section to restore it.",
@@ -418,7 +419,9 @@
         "title": "Cannot move work item",
         "not_allowed": "You are not allowed to move this work item",
         "grouping_disabled": "Drag and drop is disabled for the current grouping"
-      }
+      },
+      "cannot_move_to_completed_cycle": "Work item cannot be moved to completed cycles",
+      "drop_here_to_delete": "Drop here to delete the work item."
     },
     "selection": {
       "only_current_project_prefix": "Only work items within the current",
@@ -429,7 +432,14 @@
         "title": "Action not available",
         "message": "{action} action is not implemented."
       }
-    }
+    },
+    "draft": {
+      "save_this_draft": "Save this draft?"
+    },
+    "bulk_delete": {
+      "confirm": "Delete selected work items"
+    },
+    "no_sibling_work_items": "No sibling work items"
   },
   "sub_work_item": {
     "update": {

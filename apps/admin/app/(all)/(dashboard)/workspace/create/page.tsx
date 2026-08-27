@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { i18nInstance, useTranslation } from "@plane/i18n";
 // components
 import { PageWrapper } from "@/components/common/page-wrapper";
 // types
@@ -28,6 +28,6 @@ const WorkspaceCreatePage = observer(function WorkspaceCreatePage(_props: Route.
   );
 });
 
-export const meta: Route.MetaFunction = () => [{ title: "Create Workspace - God Mode" }];
+export const meta: Route.MetaFunction = () => [{ title: i18nInstance.t("admin.page_titles.workspace_create") }];
 
 export default WorkspaceCreatePage;

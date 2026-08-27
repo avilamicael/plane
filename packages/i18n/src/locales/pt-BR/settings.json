@@ -156,6 +156,10 @@
         "title": "Nenhum item de trabalho ainda",
         "description": "Inscreva-se nos itens de trabalho nos quais você está interessado, rastreie todos eles aqui."
       }
+    },
+    "workload": {
+      "not_started": "Não iniciado",
+      "working_on": "Em andamento"
     }
   },
   "themes": {

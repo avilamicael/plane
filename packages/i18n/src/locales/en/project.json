@@ -492,7 +492,12 @@
       "allow_comments": "Allow comments",
       "allow_reactions": "Allow reactions",
       "allow_voting": "Allow voting",
-      "anyone_with_link_can_access": "Anyone with the link can access"
+      "anyone_with_link_can_access": "Anyone with the link can access",
+      "unpublish": "Unpublish",
+      "unpublishing": "Unpublishing",
+      "publishing": "Publishing",
+      "update_settings": "Update settings",
+      "live_on_web": "This project is now live on web"
     },
     "join": {
       "title": "Join project?",
@@ -503,7 +508,8 @@
     },
     "card": {
       "created_on": "Created on {date}",
-      "no_members_yet": "No member yet"
+      "no_members_yet": "No member yet",
+      "no_member": "No Member"
     },
     "delete_modal": {
       "confirm_prefix": "To confirm, type",
@@ -516,7 +522,8 @@
       "enter_project_name_suffix": "to continue:",
       "confirm_phrase": "Leave Project",
       "confirm_placeholder": "Enter 'leave project'",
-      "project_name_required": "Project name is required"
+      "project_name_required": "Project name is required",
+      "are_you_sure_prefix": "Are you sure you want to leave the project -"
     },
     "archive_restore_modal": {
       "archive_title": "Archive {name}",
@@ -531,6 +538,14 @@
       "leave_description_suffix": "project? You will be able to join the project if invited again or if it's public.",
       "remove_description_prefix": "Are you sure you want to remove member-",
       "remove_description_suffix": "? They will no longer have access to this project. This action cannot be undone."
+    },
+    "integration": {
+      "select_github_repo": "Select GitHub repository to enable sync.",
+      "select_repository": "Select Repository",
+      "slack_description": "Get regular updates and control which notification you want to receive."
+    },
+    "features": {
+      "pages_description_short": "Write anything like you write anything."
     }
   }
 }

@@ -321,6 +321,21 @@
       "title": "You have unsaved changes",
       "description": "Changes you made will be lost if you go back. Do you wish to go back?",
       "keep_editing": "Keep editing"
+    },
+    "page_titles": {
+      "home": "Admin – Instance Setup & Sign-In",
+      "home_description": "Configure your Plane instance or sign in to the admin portal.",
+      "general": "General Settings - God Mode",
+      "workspace_create": "Create Workspace - God Mode",
+      "workspace": "Workspace Management - God Mode",
+      "authentication": "Authentication Settings - Plane Web",
+      "auth_gitea": "Gitea Authentication - God Mode",
+      "auth_google": "Google Authentication - God Mode",
+      "auth_gitlab": "GitLab Authentication - God Mode",
+      "auth_github": "GitHub Authentication - God Mode",
+      "ai": "Artificial Intelligence Settings - God Mode",
+      "email": "Email Settings - God Mode",
+      "image": "Images Settings - God Mode"
     }
   }
 }

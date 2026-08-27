@@ -170,7 +170,7 @@ const errorCodeMessages: {
           className="font-medium underline underline-offset-4 transition-all hover:font-bold"
           href={`/sign-in${email ? `?email=${encodeURIComponent(email)}` : ``}`}
         >
-          Sign In
+          {i18nInstance.t("auth.common.sign_in")}
         </Link>
         &nbsp;now.
       </div>
@@ -350,7 +350,7 @@ const errorCodeMessages: {
       <div>
         Admin user already exists.&nbsp;
         <Link className="font-medium underline underline-offset-4 transition-all hover:font-bold" href={`/admin`}>
-          Sign In
+          {i18nInstance.t("auth.common.sign_in")}
         </Link>
         &nbsp;now.
       </div>
@@ -362,7 +362,7 @@ const errorCodeMessages: {
       <div>
         Admin user does not exist.&nbsp;
         <Link className="font-medium underline underline-offset-4 transition-all hover:font-bold" href={`/admin`}>
-          Sign In
+          {i18nInstance.t("auth.common.sign_in")}
         </Link>
         &nbsp;now.
       </div>

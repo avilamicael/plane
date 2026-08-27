@@ -492,7 +492,12 @@
       "allow_comments": "Permitir comentários",
       "allow_reactions": "Permitir reações",
       "allow_voting": "Permitir votação",
-      "anyone_with_link_can_access": "Qualquer pessoa com o link pode acessar"
+      "anyone_with_link_can_access": "Qualquer pessoa com o link pode acessar",
+      "unpublish": "Cancelar publicação",
+      "unpublishing": "Cancelando publicação",
+      "publishing": "Publicando",
+      "update_settings": "Atualizar configurações",
+      "live_on_web": "Este projeto agora está no ar na web"
     },
     "join": {
       "title": "Entrar no projeto?",
@@ -503,7 +508,8 @@
     },
     "card": {
       "created_on": "Criado em {date}",
-      "no_members_yet": "Ainda sem membros"
+      "no_members_yet": "Ainda sem membros",
+      "no_member": "Sem membros"
     },
     "delete_modal": {
       "confirm_prefix": "Para confirmar, digite",
@@ -516,7 +522,8 @@
       "enter_project_name_suffix": "para continuar:",
       "confirm_phrase": "Sair do projeto",
       "confirm_placeholder": "Digite \"Sair do projeto\"",
-      "project_name_required": "O nome do projeto é obrigatório"
+      "project_name_required": "O nome do projeto é obrigatório",
+      "are_you_sure_prefix": "Tem certeza de que deseja sair do projeto -"
     },
     "archive_restore_modal": {
       "archive_title": "Arquivar {name}",
@@ -531,6 +538,14 @@
       "leave_description_suffix": "? Você poderá entrar novamente se for convidado ou se o projeto for público.",
       "remove_description_prefix": "Tem certeza de que deseja remover o membro",
       "remove_description_suffix": "? Essa pessoa deixará de ter acesso a este projeto. Esta ação não pode ser desfeita."
+    },
+    "integration": {
+      "select_github_repo": "Selecione o repositório do GitHub para ativar a sincronização.",
+      "select_repository": "Selecionar repositório",
+      "slack_description": "Receba atualizações regulares e escolha quais notificações quer receber."
+    },
+    "features": {
+      "pages_description_short": "Escreva o que quiser, do jeito que quiser."
     }
   }
 }

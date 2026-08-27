@@ -81,7 +81,9 @@
           }
         }
       },
-      "delete_state": "Delete state"
+      "delete_state": "Delete state",
+      "cannot_delete_default": "Cannot delete the default state.",
+      "marking_as_default": "Marking as default"
     },
     "labels": {
       "heading": "Labels",
@@ -223,7 +225,10 @@
       "current": "Current estimate system",
       "select": "Select an estimate system",
       "list_heading": "Estimates list",
-      "archived_heading": "Archived estimates"
+      "archived_heading": "Archived estimates",
+      "search": "Estimate Search",
+      "delete_system": "Delete Estimate System",
+      "delete": "Delete Estimate"
     },
     "automations": {
       "label": "Automations",

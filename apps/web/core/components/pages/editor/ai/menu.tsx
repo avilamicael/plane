@@ -40,7 +40,7 @@ const MENU_ITEMS: {
   {
     key: AI_EDITOR_TASKS.ASK_ANYTHING,
     icon: Sparkles,
-    label: "Ask Pi",
+    label: "common.ai.ask_pi",
   },
 ];
 
@@ -180,7 +180,7 @@ export function EditorAIMenu(props: Props) {
               >
                 <span className="flex flex-shrink-0 items-center gap-2 truncate">
                   <item.icon className="size-3 flex-shrink-0" />
-                  {item.label}
+                  {t(item.label)}
                 </span>
                 <ChevronRightIcon
                   className={cn("pointer-events-none size-3 flex-shrink-0 opacity-0 transition-opacity", {

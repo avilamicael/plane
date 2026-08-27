@@ -36,7 +36,7 @@ export const StartOfWeekPreference = observer(function StartOfWeekPreference(pro
         message: t("account_settings.preferences.toasts.start_of_week.success"),
       });
     } catch (_error) {
-      setToast({ type: TOAST_TYPE.ERROR, title: "Update failed", message: t("please_try_again_later") });
+      setToast({ type: TOAST_TYPE.ERROR, title: t("common.update_failed"), message: t("please_try_again_later") });
     }
   };
 

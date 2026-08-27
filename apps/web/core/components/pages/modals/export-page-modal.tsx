@@ -70,15 +70,15 @@ const PAGE_FORMATS: {
   },
   {
     key: "LETTER",
-    label: "Letter",
+    label: "common.paper_size.letter",
   },
   {
     key: "LEGAL",
-    label: "Legal",
+    label: "common.paper_size.legal",
   },
   {
     key: "TABLOID",
-    label: "Tabloid",
+    label: "common.paper_size.tabloid",
   },
 ];
 
@@ -268,7 +268,10 @@ export function ExportPageModal(props: Props) {
                   name="page_format"
                   render={({ field: { onChange, value } }) => (
                     <CustomSelect
-                      label={PAGE_FORMATS.find((format) => format.key === value)?.label}
+                      label={(() => {
+                        const found = PAGE_FORMATS.find((format) => format.key === value);
+                        return found ? t(found.label) : undefined;
+                      })()}
                       buttonClassName="border-none"
                       value={value}
                       onChange={(val: TPageFormats) => onChange(val)}
@@ -277,7 +280,7 @@ export function ExportPageModal(props: Props) {
                     >
                       {PAGE_FORMATS.map((format) => (
                         <CustomSelect.Option key={format.key.toString()} value={format.key}>
-                          {format.label}
+                          {t(format.label)}
                         </CustomSelect.Option>
                       ))}
                     </CustomSelect>

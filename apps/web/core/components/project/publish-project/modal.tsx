@@ -44,8 +44,8 @@ const VIEW_OPTIONS: {
   key: TProjectPublishLayouts;
   label: string;
 }[] = [
-  { key: "list", label: "List" },
-  { key: "kanban", label: "Kanban" },
+  { key: "list", label: "issue.layouts.list" },
+  { key: "kanban", label: "common.kanban" },
 ];
 
 export const PublishProjectModal = observer(function PublishProjectModal(props: Props) {
@@ -240,7 +240,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
                     <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent-primary opacity-75" />
                     <span className="relative inline-flex size-1.5 rounded-full bg-accent-primary" />
                   </span>
-                  This project is now live on web
+                  {t("project.publish.live_on_web")}
                 </p>
               </>
             )}
@@ -272,7 +272,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
                           value={option.key}
                           className="flex items-center justify-between gap-2"
                         >
-                          {option.label}
+                          {t(option.label)}
                           {selectedLayouts.includes(option.key) && <CheckIcon className="size-3.5 flex-shrink-0" />}
                         </CustomSelect.Option>
                       ))}

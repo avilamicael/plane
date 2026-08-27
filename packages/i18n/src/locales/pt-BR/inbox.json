@@ -50,7 +50,8 @@
       "delete": "Excluir",
       "open": "Abrir item de trabalho",
       "mark_as_duplicate": "Marcar como duplicado",
-      "move": "Mover {value} para os itens de trabalho do projeto"
+      "move": "Mover {value} para os itens de trabalho do projeto",
+      "un_snooze": "Reativar"
     },
     "source": {
       "in-app": "no aplicativo"
@@ -88,6 +89,7 @@
       "no_request_closed": {
         "title": "Nenhuma solicitação encerrada ainda"
       }
-    }
+    },
+    "form_user": "Usuário do formulário de admissão"
   }
 }

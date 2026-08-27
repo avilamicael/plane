@@ -18,6 +18,7 @@ import type { ICustomMenuItem } from "./label-block/label-item-block";
 import { LabelItemBlock } from "./label-block/label-item-block";
 import { LabelDndHOC } from "./label-drag-n-drop-HOC";
 import { ProjectSettingLabelItem } from "./project-setting-label-item";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   label: IIssueLabel;
@@ -37,6 +38,7 @@ type Props = {
 };
 
 export const ProjectSettingLabelGroup = observer(function ProjectSettingLabelGroup(props: Props) {
+  const { t } = useTranslation();
   const {
     label,
     labelChildren,
@@ -60,7 +62,7 @@ export const ProjectSettingLabelGroup = observer(function ProjectSettingLabelGro
         setIsUpdating(true);
       },
       isVisible: true,
-      text: "Edit label",
+      text: t("common.edit_label"),
       key: "edit_label",
     },
     {

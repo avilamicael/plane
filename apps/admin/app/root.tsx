@@ -20,6 +20,7 @@ import "@fontsource-variable/inter";
 import interVariableWoff2 from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 import "@fontsource/material-symbols-rounded";
 import "@fontsource/ibm-plex-mono";
+import { useTranslation } from "@plane/i18n";
 
 const APP_TITLE = "Plane | Simple, extensible, open-source project management tool.";
 const APP_DESCRIPTION =
@@ -89,9 +90,11 @@ export function HydrateFallback() {
 }
 
 export function ErrorBoundary({ error: _error }: Route.ErrorBoundaryProps) {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <p>Something went wrong.</p>
+      <p>{t("admin.common.something_went_wrong")}</p>
     </div>
   );
 }

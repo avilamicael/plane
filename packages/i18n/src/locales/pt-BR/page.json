@@ -202,7 +202,19 @@
         "error": {
           "message": "Não foi possível exportar a página. Tente novamente mais tarde."
         }
-      }
+      },
+      "public": {
+        "error": {
+          "message": "Não foi possível tornar a página pública. Tente novamente mais tarde."
+        }
+      },
+      "private": {
+        "error": {
+          "message": "Não foi possível tornar a página privada. Tente novamente mais tarde."
+        }
+      },
+      "load_failed": "Não foi possível carregar a página",
+      "save_failed": "Não foi possível salvar a página"
     },
     "create_page": "Criar página",
     "delete_page": "Excluir página",
@@ -233,7 +245,8 @@
       "color": "Cor",
       "copy_markdown": "Copiar markdown",
       "version_history": "Histórico de versões",
-      "export": "Exportar"
+      "export": "Exportar",
+      "sticky_toolbar": "Barra de ferramentas fixa"
     },
     "content_limit_banner": {
       "message": "Limite de conteúdo atingido e a sincronização ao vivo foi desativada. Crie uma nova página ou use páginas aninhadas para continuar sincronizando."
@@ -253,6 +266,9 @@
       "name": "Nome",
       "date_created": "Data de criação",
       "date_modified": "Data de modificação"
+    },
+    "favorite": {
+      "remove": "Remover dos favoritos"
     }
   },
   "page_version": {

@@ -81,7 +81,9 @@
           }
         }
       },
-      "delete_state": "Excluir estado"
+      "delete_state": "Excluir estado",
+      "cannot_delete_default": "Não é possível excluir o estado padrão.",
+      "marking_as_default": "Definindo como padrão"
     },
     "labels": {
       "heading": "Etiquetas",
@@ -223,7 +225,10 @@
       "current": "Sistema de estimativas atual",
       "select": "Selecione um sistema de estimativas",
       "list_heading": "Lista de estimativas",
-      "archived_heading": "Estimativas arquivadas"
+      "archived_heading": "Estimativas arquivadas",
+      "search": "Buscar estimativa",
+      "delete_system": "Excluir sistema de estimativas",
+      "delete": "Excluir estimativa"
     },
     "automations": {
       "label": "Automações",

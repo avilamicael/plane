@@ -10,6 +10,7 @@ import { Button } from "@plane/propel/button";
 import type { IExportData } from "@plane/types";
 // helpers
 import { getDate, renderFormattedDate } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // types
 
 type Props = {
@@ -18,6 +19,7 @@ type Props = {
 };
 
 export function SingleExport({ service, refreshing }: Props) {
+  const { t } = useTranslation();
   const provider = service.provider;
 
   const [isLoading] = useState(false);
@@ -74,7 +76,7 @@ export function SingleExport({ service, refreshing }: Props) {
           )}
         </>
       ) : (
-        <div className="text-11 text-danger-primary">Expired</div>
+        <div className="text-11 text-danger-primary">{t("common.expired")}</div>
       )}
     </div>
   );

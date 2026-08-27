@@ -147,7 +147,16 @@
   "projects": "Projetos",
   "views": "Visualizações",
   "archives": "Arquivos",
-  "settings": "Configurações",
+  "settings": {
+    "profile": {
+      "first_name_required": "Digite o nome",
+      "display_name_required": "O nome de exibição é obrigatório."
+    },
+    "navigation": {
+      "nested_tabs_description": "As abas de recursos aparecem aninhadas sob o projeto, em formato de acordeão.",
+      "horizontal_tabs_description": "As abas de recursos aparecem como abas horizontais dentro do projeto."
+    }
+  },
   "failed_to_move_favorite": "Falha ao mover o favorito",
   "favorites": "Favoritos",
   "no_favorites_yet": "Nenhum favorito ainda",
@@ -463,10 +472,7 @@
     "dates": "Datas",
     "success": "Sucesso!",
     "something_went_wrong": "Algo deu errado",
-    "error": {
-      "label": "Erro!",
-      "message": "Ocorreu algum erro. Por favor, tente novamente."
-    },
+    "error": "Erro",
     "group_by": "Agrupar por",
     "epic": "Épico",
     "epics": "Épicos",
@@ -825,12 +831,19 @@
     "theme": {
       "updated": "Tema atualizado",
       "reloading": "Recarregando para aplicar as alterações...",
-      "update_failed": "Não foi possível atualizar o tema. Tente novamente."
+      "update_failed": "Não foi possível atualizar o tema. Tente novamente.",
+      "download_config": "Baixar configuração",
+      "import_config": "Importar configuração",
+      "import_failed": "Não foi possível importar a configuração de tema",
+      "brand_color_required": "A cor da marca é obrigatória",
+      "neutral_color_required": "A cor neutra é obrigatória"
     },
     "layouts": {
       "list": "Layout de lista",
       "gallery": "Layout de galeria",
-      "timeline": "Layout de linha do tempo"
+      "timeline": "Layout de linha do tempo",
+      "board": "Layout de quadro",
+      "gantt": "Layout de Gantt"
     },
     "view_not_found": "Não encontramos essa visualização",
     "role_update_failed": "Ocorreu um erro ao atualizar o cargo do membro. Tente novamente.",
@@ -850,7 +863,97 @@
       "remove_failed": "Não foi possível remover o projeto dos favoritos. Tente novamente."
     },
     "add_property": "Adicionar propriedade",
-    "add_metric": "Adicionar métrica"
+    "add_metric": "Adicionar métrica",
+    "status": "Situação",
+    "failed": "Falhou",
+    "custom": "Personalizado",
+    "download": "Baixar",
+    "downloading": "Baixando...",
+    "select_a_timezone": "Selecione um fuso horário",
+    "legal": "Ofício",
+    "clear_filters": "Limpar filtros",
+    "dropdown": "Lista suspensa",
+    "authentication": "Autenticação",
+    "help": "Ajuda",
+    "email": "E-mail",
+    "admin": "Administrador",
+    "guest": "Convidado",
+    "archived": "Arquivado",
+    "exporting": "Exportando",
+    "generating": "Gerando",
+    "refreshing": "Atualizando...",
+    "untitled": "Sem título",
+    "submitting": "Enviando...",
+    "uninstall": "Desinstalar",
+    "uninstalling": "Desinstalando...",
+    "format": "Formato",
+    "never_expires": "Nunca expira",
+    "create_workspace": "Criar espaço de trabalho",
+    "ai": {
+      "is_answering": "A IA está respondendo...",
+      "ask_anything": "Pergunte qualquer coisa à IA...",
+      "tell_what_to_do": "Diga à IA o que fazer...",
+      "tell_action_on_content": "Diga à IA o que fazer com este conteúdo...",
+      "ask_pi": "Perguntar ao Pi",
+      "pi_is_writing": "O Pi está escrevendo",
+      "use_this_response": "Usar esta resposta",
+      "generate_response": "Gerar resposta",
+      "generate_again": "Gerar de novo",
+      "generating_response": "Gerando resposta...",
+      "content_label": "Conteúdo:",
+      "response_label": "Resposta:",
+      "generate_description": "Gere uma descrição adequada para este item de trabalho."
+    },
+    "add_related_work_items": "Adicionar itens de trabalho relacionados",
+    "count": "Contagem",
+    "expired": "Expirado",
+    "identifier": "Identificador",
+    "items": "Itens",
+    "kanban": "Kanban",
+    "new": "Novo",
+    "user": "Usuário",
+    "save_as": "Salvar como",
+    "sub_group_by": "Subagrupar por",
+    "this_is_required": "Este campo é obrigatório",
+    "contact_support": "Falar com o suporte",
+    "copied_link": "Link copiado",
+    "click_to_load_more": "Clique para carregar mais...",
+    "no_permission_for_action": "Você não tem permissão para fazer isso",
+    "not_authorized_page": "Você não tem autorização para acessar esta página.",
+    "not_authorized_view_page": "Ops! Você não tem autorização para ver esta página",
+    "filter_type_not_supported": "Tipo de filtro não suportado",
+    "update_failed": "Não foi possível atualizar",
+    "select_a_language": "Selecione um idioma",
+    "comparison_line": "Linha de comparação",
+    "remove_from_group": "Remover do grupo",
+    "edit_label": "Editar etiqueta",
+    "months": "Meses",
+    "enter_months": "Digite os meses",
+    "paper_size": {
+      "letter": "Carta",
+      "legal": "Ofício",
+      "tabloid": "Tabloide"
+    },
+    "months_short": {
+      "jan": "Jan",
+      "feb": "Fev",
+      "mar": "Mar",
+      "apr": "Abr",
+      "may": "Mai",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Ago",
+      "sep": "Set",
+      "oct": "Out",
+      "nov": "Nov",
+      "dec": "Dez"
+    },
+    "quarters": {
+      "q1": "Jan - Mar",
+      "q2": "Abr - Jun",
+      "q3": "Jul - Set",
+      "q4": "Out - Dez"
+    }
   },
   "chart": {
     "x_axis": "Eixo X",
@@ -1150,5 +1253,20 @@
   "not_found_page": {
     "title": "Ops! Algo deu errado.",
     "description": "A página que você procura não foi encontrada. Ela pode ter sido removida, ter mudado de nome ou estar temporariamente indisponível."
+  },
+  "page_titles": {
+    "not_found": "404 - Página não encontrada",
+    "onboarding": "Primeiros passos",
+    "set_password": "Definir senha - Plane",
+    "reset_password": "Redefinir senha - Plane",
+    "forgot_password": "Esqueci a senha - Plane",
+    "sign_up": "Criar conta - Plane",
+    "invitations": "Convites",
+    "workspace_invitations": "Convites do espaço de trabalho",
+    "create_workspace": "Criar espaço de trabalho",
+    "profile_assigned": "Perfil - Atribuídos",
+    "profile_created": "Perfil - Criados",
+    "profile_subscribed": "Perfil - Inscritos",
+    "profile_activity": "Perfil - Atividade"
   }
 }

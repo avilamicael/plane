@@ -202,7 +202,19 @@
         "error": {
           "message": "Page could not be exported. Please try again later."
         }
-      }
+      },
+      "public": {
+        "error": {
+          "message": "Page could not be made public. Please try again later."
+        }
+      },
+      "private": {
+        "error": {
+          "message": "Page could not be made private. Please try again later."
+        }
+      },
+      "load_failed": "Failed to load page",
+      "save_failed": "Failed to save page"
     },
     "create_page": "Create page",
     "delete_page": "Delete page",
@@ -233,7 +245,8 @@
       "color": "Color",
       "copy_markdown": "Copy markdown",
       "version_history": "Version history",
-      "export": "Export"
+      "export": "Export",
+      "sticky_toolbar": "Sticky toolbar"
     },
     "content_limit_banner": {
       "message": "Content limit reached and live sync is off. Create a new page or use nested pages to continue syncing."
@@ -253,6 +266,9 @@
       "name": "Name",
       "date_created": "Date created",
       "date_modified": "Date modified"
+    },
+    "favorite": {
+      "remove": "Remove favorite"
     }
   },
   "page_version": {

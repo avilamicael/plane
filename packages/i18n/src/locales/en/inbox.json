@@ -50,7 +50,8 @@
       "delete": "Delete",
       "open": "Open work item",
       "mark_as_duplicate": "Mark as duplicate",
-      "move": "Move {value} to project work items"
+      "move": "Move {value} to project work items",
+      "un_snooze": "Un-snooze"
     },
     "source": {
       "in-app": "in-app"
@@ -88,6 +89,7 @@
       "no_request_closed": {
         "title": "No request closed yet"
       }
-    }
+    },
+    "form_user": "Intake Form user"
   }
 }

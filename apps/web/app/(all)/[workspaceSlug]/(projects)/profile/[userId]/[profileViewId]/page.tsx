@@ -9,11 +9,12 @@ import React from "react";
 import { PageHead } from "@/components/core/page-title";
 import { ProfileIssuesPage } from "@/components/profile/profile-issues";
 import type { Route } from "./+types/page";
+import { useTranslation } from "@plane/i18n";
 
 const ProfilePageHeader = {
-  assigned: "Profile - Assigned",
-  created: "Profile - Created",
-  subscribed: "Profile - Subscribed",
+  assigned: "page_titles.profile_assigned",
+  created: "page_titles.profile_created",
+  subscribed: "page_titles.profile_subscribed",
 };
 
 function isValidProfileViewId(viewId: string): viewId is keyof typeof ProfilePageHeader {
@@ -21,11 +22,12 @@ function isValidProfileViewId(viewId: string): viewId is keyof typeof ProfilePag
 }
 
 function ProfileIssuesTypePage({ params }: Route.ComponentProps) {
+  const { t } = useTranslation();
   const { profileViewId } = params;
 
   if (!isValidProfileViewId(profileViewId)) return null;
 
-  const header = ProfilePageHeader[profileViewId];
+  const header = t(ProfilePageHeader[profileViewId]);
 
   return (
     <>

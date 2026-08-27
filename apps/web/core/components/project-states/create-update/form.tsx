@@ -80,7 +80,7 @@ export function StateForm(props: TStateForm) {
           id="name"
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder={t("name")}
           value={formData?.name}
           onChange={(e) => handleFormData("name", e.target.value)}
           hasError={(errors && Boolean(errors.name)) || false}

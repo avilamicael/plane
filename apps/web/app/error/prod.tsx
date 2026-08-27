@@ -6,7 +6,7 @@
 
 import { useTheme } from "next-themes";
 // plane imports
-import { useTranslation } from "@plane/i18n";
+import { i18nInstance, useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 // assets
 import maintenanceModeDarkModeImage from "@/app/assets/instance/maintenance-mode-dark.svg?url";
@@ -17,12 +17,12 @@ import DefaultLayout from "@/layouts/default-layout";
 const linkMap = [
   {
     key: "mail_to",
-    label: "Contact Support",
+    label: i18nInstance.t("common.contact_support"),
     value: "mailto:support@plane.so",
   },
   {
     key: "status",
-    label: "Status Page",
+    label: i18nInstance.t("cloud_maintenance_message.status_page"),
     value: "https://status.plane.so/",
   },
   {

@@ -106,7 +106,10 @@
               "message": "Export was unsuccessful. Please try again."
             }
           }
-        }
+        },
+        "exported_by": "Exported By",
+        "exported_on": "Exported On",
+        "exported_projects": "Exported projects"
       },
       "webhooks": {
         "heading": "Webhooks",
@@ -171,13 +174,21 @@
         },
         "delete_webhook": "Delete webhook",
         "enable_webhook": "Enable webhook",
-        "delete_warning": "Once a webhook is deleted, it cannot be restored. Future events will no longer be delivered to this webhook."
+        "delete_warning": "Once a webhook is deleted, it cannot be restored. Future events will no longer be delivered to this webhook.",
+        "events": {
+          "project": "Project created, updated, or deleted",
+          "cycle": "Cycle created, updated, or deleted",
+          "module": "Module created, updated, or deleted",
+          "comment": "Comment posted, updated, or deleted",
+          "work_item_comments": "Work item comments",
+          "work_item": "Work item created, updated, deleted, added to a cycle or module"
+        }
       },
       "api_tokens": {
         "heading": "Access Tokens",
         "description": "Generate secure API tokens to integrate your data with external systems and applications.",
         "title": "Access Tokens",
-        "add_token": "Add access token",
+        "add_token": "Add token",
         "create_token": "Create token",
         "never_expires": "Never expires",
         "generate_token": "Generate token",
@@ -196,7 +207,11 @@
         },
         "expiration_required": "Please select an expiration date.",
         "copy_secret_key": "Copy secret key",
-        "delete_token": "Delete token"
+        "delete_token": "Delete token",
+        "no_tokens": "No API tokens",
+        "set_expiration": "Set expiration date",
+        "custom_date": "Custom date",
+        "view_secret_key": "View secret key"
       },
       "integrations": {
         "title": "Integrations",
@@ -510,6 +525,10 @@
         "heading": "Scripts",
         "new_script": "New Script",
         "description": "Automate your workflows with custom scripts and automation rules."
+      },
+      "views": {
+        "edit_view": "Edit View",
+        "delete_view": "Delete View"
       }
     },
     "empty_state": {

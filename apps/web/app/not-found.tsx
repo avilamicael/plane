@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 // ui
-import { useTranslation } from "@plane/i18n";
+import { i18nInstance, useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 // images
 import Image404 from "@/app/assets/404.svg?url";
@@ -14,7 +14,7 @@ import Image404 from "@/app/assets/404.svg?url";
 import type { Route } from "./+types/not-found";
 
 export const meta: Route.MetaFunction = () => [
-  { title: "404 - Page Not Found" },
+  { title: i18nInstance.t("page_titles.not_found") },
   { name: "robots", content: "noindex, nofollow" },
 ];
 

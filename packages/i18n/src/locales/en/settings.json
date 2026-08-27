@@ -156,6 +156,10 @@
         "title": "No work items yet",
         "description": "Subscribe to work items you are interested in, track all of them here."
       }
+    },
+    "workload": {
+      "not_started": "Not started",
+      "working_on": "Working on"
     }
   },
   "themes": {

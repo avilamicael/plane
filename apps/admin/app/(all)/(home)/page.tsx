@@ -14,6 +14,7 @@ import { useInstance } from "@/hooks/store";
 // components
 import type { Route } from "./+types/page";
 import { InstanceSignInForm } from "./sign-in-form";
+import { i18nInstance } from "@plane/i18n";
 
 function HomePage() {
   // store hooks
@@ -45,6 +46,6 @@ function HomePage() {
 export default observer(HomePage);
 
 export const meta: Route.MetaFunction = () => [
-  { title: "Admin – Instance Setup & Sign-In" },
-  { name: "description", content: "Configure your Plane instance or sign in to the admin portal." },
+  { title: i18nInstance.t("admin.page_titles.home") },
+  { name: "description", content: i18nInstance.t("admin.page_titles.home_description") },
 ];
