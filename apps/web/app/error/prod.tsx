@@ -4,33 +4,16 @@
  * See the LICENSE file for details.
  */
 
+import { useMemo } from "react";
 import { useTheme } from "next-themes";
 // plane imports
-import { i18nInstance, useTranslation } from "@plane/i18n";
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 // assets
 import maintenanceModeDarkModeImage from "@/app/assets/instance/maintenance-mode-dark.svg?url";
 import maintenanceModeLightModeImage from "@/app/assets/instance/maintenance-mode-light.svg?url";
 // layouts
 import DefaultLayout from "@/layouts/default-layout";
-
-const linkMap = [
-  {
-    key: "mail_to",
-    label: i18nInstance.t("common.contact_support"),
-    value: "mailto:support@plane.so",
-  },
-  {
-    key: "status",
-    label: i18nInstance.t("cloud_maintenance_message.status_page"),
-    value: "https://status.plane.so/",
-  },
-  {
-    key: "twitter_handle",
-    label: "@planepowers",
-    value: "https://x.com/planepowers",
-  },
-];
 
 // Production Error Component
 interface ProdErrorComponentProps {
@@ -41,6 +24,29 @@ export function ProdErrorComponent({ onGoHome }: ProdErrorComponentProps) {
   const { t } = useTranslation();
   // hooks
   const { resolvedTheme } = useTheme();
+
+  // Os rótulos são resolvidos aqui, e não numa constante de módulo: no momento do
+  // import o i18n ainda não carregou os recursos e t() devolveria a própria chave.
+  const linkMap = useMemo(
+    () => [
+      {
+        key: "mail_to",
+        label: t("common.contact_support"),
+        value: "mailto:support@plane.so",
+      },
+      {
+        key: "status",
+        label: t("cloud_maintenance_message.status_page"),
+        value: "https://status.plane.so/",
+      },
+      {
+        key: "twitter_handle",
+        label: "@planepowers",
+        value: "https://x.com/planepowers",
+      },
+    ],
+    [t]
+  );
 
   // derived values
   const maintenanceModeImage = resolvedTheme === "dark" ? maintenanceModeDarkModeImage : maintenanceModeLightModeImage;

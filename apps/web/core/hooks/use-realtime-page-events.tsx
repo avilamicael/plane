@@ -67,9 +67,10 @@ export const useRealtimePageEvents = ({
     [getUserDetails]
   );
 
+  const { t } = useTranslation();
+
   const ACTION_HANDLERS = useMemo(
     function ACTION_HANDLERS() {
-      const { t } = useTranslation();
       return {
         archived: ({ pageIds, data }: { pageIds: string[]; data: EventToPayloadMap["archived"] }) => {
           pageIds.forEach((pageId) => {
@@ -176,7 +177,7 @@ export const useRealtimePageEvents = ({
         ...customRealtimeEventHandlers,
       };
     },
-    [getPageById, removePage, page, currentUser, getUserDisplayText, router, handlers, customRealtimeEventHandlers]
+    [getPageById, removePage, page, currentUser, getUserDisplayText, router, handlers, customRealtimeEventHandlers, t]
   );
 
   // The main function that will be returned from this hook

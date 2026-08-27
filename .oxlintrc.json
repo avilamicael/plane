@@ -48,6 +48,15 @@
         "destructuredArrayIgnorePattern": "^_",
         "ignoreRestSiblings": true
       }
-    ]
-  }
+    ],
+    "react/rules-of-hooks": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.tsx"],
+      "rules": {
+        "react/rules-of-hooks": "off"
+      }
+    }
+  ]
 }
