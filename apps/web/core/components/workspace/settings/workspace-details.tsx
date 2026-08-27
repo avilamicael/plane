@@ -110,7 +110,7 @@ export const WorkspaceDetails = observer(function WorkspaceDetails() {
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Workspace URL copied to the clipboard.",
+          title: t("workspace_settings.settings.general.url_copied"),
         });
         return undefined;
       })
@@ -154,7 +154,7 @@ export const WorkspaceDetails = observer(function WorkspaceDetails() {
                   <img
                     src={getFileURL(workspaceLogo)}
                     className="absolute top-0 left-0 size-full rounded-md object-cover"
-                    alt="Workspace Logo"
+                    alt={t("workspace_settings.settings.general.logo_alt")}
                   />
                 </div>
               ) : (

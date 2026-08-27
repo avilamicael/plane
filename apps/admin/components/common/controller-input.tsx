@@ -12,6 +12,7 @@ import { Eye, EyeOff } from "lucide-react";
 // plane internal packages
 import { Input } from "@plane/ui";
 import { cn } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 
 // Generic over the form's values because react-hook-form's Control is invariant: its
 // `_options.validate` narrows `name` to a keyof union, so `Control<any>` no longer
@@ -38,6 +39,7 @@ export type TControllerInputFormField<TFieldValues extends FieldValues = FieldVa
 };
 
 export function ControllerInput<TFieldValues extends FieldValues = FieldValues>(props: Props<TFieldValues>) {
+  const { t } = useTranslation();
   const { name, control, type, label, description, placeholder, error, required } = props;
   // states
   const [showPassword, setShowPassword] = useState(false);
@@ -70,7 +72,7 @@ export function ControllerInput<TFieldValues extends FieldValues = FieldValues>(
           (showPassword ? (
             <button
               type="button"
-              aria-label="Hide password"
+              aria-label={t("admin.common.hide_password")}
               className="absolute top-2.5 right-3 flex items-center justify-center text-placeholder"
               onClick={() => setShowPassword(false)}
             >
@@ -79,7 +81,7 @@ export function ControllerInput<TFieldValues extends FieldValues = FieldValues>(
           ) : (
             <button
               type="button"
-              aria-label="Show password"
+              aria-label={t("admin.common.show_password")}
               className="absolute top-2.5 right-3 flex items-center justify-center text-placeholder"
               onClick={() => setShowPassword(true)}
             >

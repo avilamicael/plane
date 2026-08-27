@@ -126,7 +126,7 @@ export const BaseCalendarRoot = observer(function BaseCalendarRoot(props: IBaseC
       setToast({
         title: t("common.toast.error"),
         type: TOAST_TYPE.ERROR,
-        message: err?.detail ?? "Failed to perform this action",
+        message: err?.detail ?? t("common.errors.action_failed"),
       });
     });
   };

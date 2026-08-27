@@ -140,13 +140,13 @@ export const IssueDescriptionEditor = observer(function IssueDescriptionEditor(p
           setToast({
             type: TOAST_TYPE.ERROR,
             title: t("common.toast.error"),
-            message: error || "You have reached the maximum number of requests of 50 requests per month per user.",
+            message: error || t("common.errors.ai_request_limit"),
           });
         else
           setToast({
             type: TOAST_TYPE.ERROR,
             title: t("common.toast.error"),
-            message: error || "Some error occurred. Please try again.",
+            message: error || t("common.errors.some_error_occurred"),
           });
       })
       .finally(() => setIAmFeelingLucky(false));

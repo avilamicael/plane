@@ -70,7 +70,7 @@ export const UserImageUploadModal = observer(function UserImageUploadModal(props
       setToast({
         type: TOAST_TYPE.ERROR,
         title: t("common.toast.error"),
-        message: error?.toString() ?? "Something went wrong. Please try again.",
+        message: error?.toString() ?? t("common.errors.default.message"),
       });
       throw new Error("Error in uploading file.");
     } finally {

@@ -44,7 +44,7 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
         setToast({
           type: TOAST_TYPE.SUCCESS,
           title: "Success",
-          message: "Image Configuration Settings updated successfully",
+          message: t("admin.settings.image.updated_successfully"),
         })
       )
       .catch((err) => console.error(err));
@@ -57,7 +57,7 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
           control={control}
           type="password"
           name="UNSPLASH_ACCESS_KEY"
-          label="Access key from your Unsplash account"
+          label={t("admin.settings.image.access_key_label")}
           description={
             <>
               You will find your access key in your Unsplash developer console.&nbsp;
@@ -66,7 +66,7 @@ export function InstanceImageConfigForm(props: IInstanceImageConfigForm) {
                 target="_blank"
                 className="text-accent-primary hover:underline"
                 rel="noreferrer"
-                aria-label="Unsplash developer account documentation"
+                aria-label={t("admin.settings.image.unsplash_docs_aria")}
               >
                 {t("learn_more")}
               </a>

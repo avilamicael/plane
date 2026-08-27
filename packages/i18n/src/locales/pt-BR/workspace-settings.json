@@ -26,7 +26,13 @@
           "success_title": "Espaço de trabalho excluído.",
           "success_message": "Em breve, você irá para a página do seu perfil.",
           "error_title": "Isso não funcionou.",
-          "error_message": "Tente novamente, por favor."
+          "error_message": "Tente novamente, por favor.",
+          "about_to_delete_prefix": "Você está prestes a excluir o espaço de trabalho",
+          "about_to_delete_suffix": ". Se confirmar, você perderá o acesso a todos os dados de trabalho deste espaço, sem nenhuma forma de recuperá-los. Tenha muito cuidado.",
+          "type_name": "Digite o nome deste espaço de trabalho para continuar.",
+          "final_confirmation_prefix": "Para a confirmação final, digite",
+          "final_confirmation_suffix": "abaixo.",
+          "confirm_phrase": "excluir meu espaço de trabalho"
         },
         "errors": {
           "name": {
@@ -37,7 +43,9 @@
             "required": "O tamanho da empresa é obrigatório",
             "select_a_range": "Selecione o tamanho da organização"
           }
-        }
+        },
+        "url_copied": "URL do espaço de trabalho copiada.",
+        "logo_alt": "Logotipo do espaço de trabalho"
       },
       "members": {
         "title": "Membros",
@@ -64,7 +72,9 @@
             "invalid": "E-mail inválido"
           }
         },
-        "invitation_removed": "Convite removido com sucesso."
+        "invitation_removed": "Convite removido com sucesso.",
+        "leave_workspace_title": "Sair do espaço de trabalho?",
+        "role_required": "O cargo é obrigatório."
       },
       "billing_and_plans": {
         "heading": "Faturamento e planos",
@@ -519,6 +529,459 @@
         "title": "Nenhuma importação ainda",
         "description": "Encontre todas as suas importações anteriores aqui e baixe-as."
       }
+    }
+  },
+  "billing": {
+    "plans": {
+      "f": {
+        "project_work_tracking": {
+          "title": "Projetos + acompanhamento do trabalho"
+        },
+        "projects": {
+          "title": "Projetos",
+          "description": "Crie projetos para abrigar itens de trabalho, ciclos e módulos."
+        },
+        "work_items": {
+          "title": "Itens de trabalho",
+          "description": "Registre o trabalho em itens, defina propriedades para acompanhá-lo e\nadicione-o a ciclos ou módulos."
+        },
+        "comments": {
+          "title": "Comentários",
+          "description": "Responda a itens de trabalho, @mencione pessoas e pense junto\nsem sair do Plane."
+        },
+        "cycles": {
+          "title": "Ciclos",
+          "description": "Acompanhe o trabalho em períodos de duração variável."
+        },
+        "modules": {
+          "title": "Módulos",
+          "description": "Agrupe trabalho repetível em módulos com líderes\npróprios."
+        },
+        "intake": {
+          "title": "Admissão",
+          "description": "Veja sugestões e feedback de visitantes e\nconvidados antes de decidir adicioná-los ao\nseu projeto."
+        },
+        "estimates": {
+          "title": "Estimativas",
+          "description": "Meça o esforço em pontos, num sistema que funcione\npara você."
+        },
+        "project_work_management": {
+          "title": "Projetos + gestão do trabalho"
+        },
+        "bulk_ops": {
+          "title": "Operações em massa",
+          "description": "Adicione vários itens de trabalho a ciclos ou módulos, transfira-os\nou edite suas propriedades."
+        },
+        "time_tracking_worklogs": {
+          "title": "Controle de tempo + registros de trabalho",
+          "description": "Controle o tempo por item de trabalho, veja relatórios consolidados e\nfiltre conforme a necessidade."
+        },
+        "active_cycles": {
+          "title": "Ciclos ativos",
+          "description": "Veja todos os ciclos em andamento em todos os projetos ou, em breve, em\num único projeto."
+        },
+        "work_item_types": {
+          "title": "Tipos de item de trabalho",
+          "description": "Crie seus próprios tipos de item de trabalho com suas\npróprias propriedades."
+        },
+        "custom_properties": {
+          "title": "Propriedades personalizadas",
+          "description": "Crie suas próprias propriedades e aplique-as ao seu\nespaço de trabalho ou projeto."
+        },
+        "dependencies_in_gantt": {
+          "title": "Dependências no Gantt",
+          "description": "Ajuste visualmente os prazos de itens de trabalho dependentes\nno layout de Gantt."
+        },
+        "work_item_transfers": {
+          "title": "Transferência de itens de trabalho",
+          "description": "Mova um item de trabalho de um projeto ou ciclo para\noutro."
+        },
+        "auto_transfer_cycle_work_items": {
+          "title": "Transferência automática entre ciclos",
+          "description": "Transfira itens de trabalho incompletos de um ciclo concluído\npara o ciclo seguinte ou para o estado padrão do projeto. "
+        },
+        "epics": {
+          "title": "Épicos",
+          "description": "Organize trabalho de longo prazo em épicos que abrigam itens de trabalho,\nciclos e módulos."
+        },
+        "initiatives": {
+          "title": "Iniciativas",
+          "description": "Crie iniciativas para reunir vários épicos."
+        },
+        "checkpoints": {
+          "title": "Marcos",
+          "description": "Adicione marcos a projetos, épicos e iniciativas para manter sua\nequipe no rumo e reportar o progresso."
+        },
+        "module_overview": {
+          "title": "Visão geral do módulo",
+          "description": "Como nas visões gerais de ciclo, veja os detalhes relevantes e os\ngráficos de progresso de cada módulo."
+        },
+        "auto_assignment_in_modules": {
+          "title": "Atribuição automática em módulos",
+          "description": "Escolha as regras de atribuição dos itens de trabalho de um\nmódulo: linear, rodízio ou capacidade."
+        },
+        "public_private_and_secret_projects": {
+          "title": "Projetos públicos, privados e secretos",
+          "description": "Projetos públicos são visíveis e acessíveis a\ntodos. Os privados são visíveis, mas exigem aprovação\npara entrar. Os secretos não são visíveis nem acessíveis."
+        },
+        "state_of_projects": {
+          "title": "Situação dos projetos",
+          "description": "Veja todos os projetos distribuídos por estados, destacando\nos que precisam de atenção e os que estão no rumo certo."
+        },
+        "pre_defined_work_item_templates": {
+          "title": "Modelos prontos de item de trabalho",
+          "description": "Escolha entre os modelos de item de trabalho disponíveis, que\npersonalizam tipos e propriedades para diversos\ncasos de uso."
+        },
+        "teamspace_cycles": {
+          "title": "Ciclos de equipe",
+          "description": "Veja vários ciclos de vários projetos de uma só vez."
+        },
+        "project_templates": {
+          "title": "Modelos de projeto",
+          "description": "Salve estados, fluxos, automações e outras configurações\nde projeto em modelos."
+        },
+        "baselines_and_deviations": {
+          "title": "Linhas de base e desvios",
+          "description": "Defina linhas de base para o avanço dos seus projetos\ne foque nos desvios."
+        },
+        "scheduled_comms": {
+          "title": "Comunicações agendadas",
+          "description": "Agende relatórios, notificações e mensagens para\nferramentas de terceiros."
+        },
+        "intake_assignees": {
+          "title": "Responsáveis pela admissão",
+          "description": "Atribua por padrão os itens de trabalho aprovados na admissão a um\nmembro."
+        },
+        "custom_slas": {
+          "title": "SLAs personalizados",
+          "description": "Defina matrizes de SLA para itens de trabalho sensíveis ao tempo."
+        },
+        "intake_forms": {
+          "title": "Formulários de admissão",
+          "description": "Receba itens de trabalho de admissão a partir de formulários web\nacessíveis externamente."
+        },
+        "emails_for_intake": {
+          "title": "E-mails para admissão",
+          "description": "Tenha um endereço de e-mail para registrar itens de trabalho\ndiretamente na admissão de um projeto."
+        },
+        "visualization": {
+          "title": "Visualização"
+        },
+        "layouts": {
+          "title": "Layouts",
+          "description": "Escolha entre os layouts de lista, quadro, calendário,\nGantt ou planilha para seus itens de trabalho."
+        },
+        "views": {
+          "title": "Visualizações",
+          "description": "Salve as opções de ordenação, filtro e exibição de um layout numa\nvisualização."
+        },
+        "shared_views": {
+          "title": "Visualizações compartilhadas",
+          "description": "Escolha algumas pessoas para compartilhar uma visualização."
+        },
+        "publish_views": {
+          "title": "Publicar visualizações",
+          "description": "Coloque uma visualização na internet e deixe seus clientes\ninteragirem com ela."
+        },
+        "dashboards_and_widgets": {
+          "title": "Painéis e widgets",
+          "description": "Crie seus próprios painéis com widgets personalizados\ne tipos de dados próprios."
+        },
+        "analytics_reports": {
+          "title": "Análises + relatórios"
+        },
+        "progress_charts": {
+          "title": "Gráficos de progresso",
+          "description": "Acompanhe o progresso em ciclos, módulos e visões gerais\nem todo o Plane, sem precisar ir aos painéis\nou às análises."
+        },
+        "cycle_reports": {
+          "title": "Relatórios de ciclo",
+          "description": "Gere relatórios de ciclo sob demanda durante e depois de um\nciclo. Revisite os relatórios quando quiser por links permanentes."
+        },
+        "insights": {
+          "title": "Insights",
+          "description": "Retrospectivas, insights sob demanda e projeções."
+        },
+        "advanced_pages_analytics": {
+          "title": "Análises avançadas de páginas",
+          "description": "Veja quem está visualizando, compartilhando e comentando\nsuas páginas, além de outras informações úteis."
+        },
+        "custom_reports": {
+          "title": "Relatórios personalizados",
+          "description": "Gere relatórios por qualquer dimensão e métrica\nno seu projeto ou espaço de trabalho."
+        },
+        "navigation": {
+          "title": "Navegação"
+        },
+        "power_k": {
+          "title": "Power K",
+          "description": "Tenha um atalho de teclado para quase tudo\nno Plane."
+        },
+        "pql": {
+          "title": "PQL",
+          "description": "Escreva Plane Query Language na busca, com suporte\na operadores booleanos. Em breve, você poderá escrever consultas\nem linguagem natural."
+        },
+        "workspace_and_user_management": {
+          "title": "Gestão do espaço de trabalho e de usuários"
+        },
+        "member_limit": {
+          "title": "Limite de membros",
+          "description": "Número de assentos que podem usar os recursos de gestão de projetos e trabalho",
+          "self_hosted_description": "Número de usuários que nossa infraestrutura padrão suporta\nAmplie a infraestrutura para ter mais usuários"
+        },
+        "roles": {
+          "title": "Cargos",
+          "description": "Escolha um dos quatro cargos predefinidos ou crie\ncargos personalizados com RBAC."
+        },
+        "guests": {
+          "title": "Convidados",
+          "description": "Deixe alguns usuários verem tudo ou apenas os itens de trabalho deles\nnum projeto."
+        },
+        "approvals": {
+          "title": "Aprovações",
+          "description": "Defina aprovações de espaço de trabalho, projeto e tipo de item de trabalho para\nadministradores designados."
+        },
+        "admin_interface": {
+          "title": "Interface de administração",
+          "description": "Tenha uma visão administrativa para gerenciar as configurações do espaço de trabalho\ne dos projetos."
+        },
+        "workspace_activity_logs": {
+          "title": "Registros de atividade do espaço de trabalho",
+          "description": "Veja registros de atividade filtráveis de todo o seu\nespaço de trabalho."
+        },
+        "api_enabled_audit_logs": {
+          "title": "Registros de auditoria via API",
+          "description": "Veja um registro de auditoria de todo o espaço de trabalho e use APIs para sinalizar\natividade do Plane em sistemas de conformidade."
+        },
+        "automations_and_workflows": {
+          "title": "Automações e fluxos de trabalho"
+        },
+        "trigger_and_action": {
+          "title": "Gatilho e ação",
+          "description": "Escolha um gatilho e uma ação correspondente por\nfluxo de automação."
+        },
+        "decisions_and_loops_automation": {
+          "title": "Automação com decisões e laços",
+          "description": "Use ações como gatilhos indefinidamente num\nfluxo de automação."
+        },
+        "number_of_automations": {
+          "title": "Número de automações",
+          "description": "Número total de fluxos de automação no seu\nespaço de trabalho"
+        },
+        "knowledge_management": {
+          "title": "Gestão de conhecimento"
+        },
+        "pages": {
+          "title": "Páginas",
+          "description": "Monte bases de conhecimento para suas equipes, acessíveis\ne compartilháveis."
+        },
+        "real_time_collab": {
+          "title": "Colaboração em tempo real",
+          "description": "Edite uma página junto com pessoas do seu projeto,\nequipe ou espaço de trabalho."
+        },
+        "work_item_embeds": {
+          "title": "Itens de trabalho incorporados",
+          "description": "Incorpore itens de trabalho de qualquer projeto do qual você\nfaça parte."
+        },
+        "link_to_work_items": {
+          "title": "Vínculo com itens de trabalho",
+          "description": "Vincule páginas a itens de trabalho numa seção separada dos detalhes\ndo item."
+        },
+        "publish": {
+          "title": "Publicar",
+          "description": "Coloque suas páginas na web para usuários externos e deixe\nque comentem sem entrar no seu espaço de trabalho."
+        },
+        "wiki": {
+          "title": "Wiki",
+          "description": "Crie wikis ou bases de conhecimento para toda a empresa\nsem precisar criar um projeto."
+        },
+        "exports": {
+          "title": "Exportações",
+          "description": "Exporte o conteúdo das páginas para PDF ou documentos\ncompatíveis com o Word."
+        },
+        "templates": {
+          "title": "Modelos",
+          "description": "Use páginas como modelos para seu projeto, equipe ou\nespaço de trabalho."
+        },
+        "versions": {
+          "title": "Versões",
+          "description": "Veja versões restauráveis das edições das suas páginas."
+        },
+        "databases_formulas": {
+          "title": "Bancos de dados + fórmulas",
+          "description": "Coloque bancos de dados e fórmulas numa página sem\nse preocupar em perder texto, imagens ou outros tipos\nde conteúdo."
+        },
+        "nested_pages": {
+          "title": "Páginas aninhadas",
+          "description": "Páginas dentro de páginas: organize suas páginas\ncomo achar melhor, com divulgação\nprogressiva."
+        },
+        "importers": {
+          "title": "Importadores"
+        },
+        "jira": {
+          "title": "Jira",
+          "description": "Importe seus itens de trabalho e membros do Jira."
+        },
+        "github": {
+          "title": "GitHub",
+          "description": "Importe seus itens de trabalho e membros do GitHub."
+        },
+        "integrations": {
+          "title": "Integrações"
+        },
+        "github_2": {
+          "description": "Sincronize itens de trabalho e estados do Plane com issues e estados do GitHub.\nAtualize o GitHub automaticamente com a atividade\ndo Plane e vice-versa."
+        },
+        "slack": {
+          "title": "Slack",
+          "description": "Receba a atividade do Plane no Slack e use comandos / no\nSlack para fazer alterações no Plane."
+        },
+        "zapier": {
+          "title": "Zapier",
+          "description": "Execute automações se-então-senão usando o Zapier."
+        },
+        "zendesk": {
+          "title": "Zendesk",
+          "description": "Crie itens de trabalho do Plane a partir de tíquetes do Zendesk."
+        },
+        "freshdesk": {
+          "title": "Freshdesk",
+          "description": "Crie itens de trabalho do Plane a partir de tíquetes do Freshdesk."
+        },
+        "storage": {
+          "title": "Armazenamento"
+        },
+        "space": {
+          "title": "Espaço",
+          "description": "Armazenamento total permitido por espaço de trabalho"
+        },
+        "max_file_size": {
+          "title": "Tamanho máximo de arquivo",
+          "description": "Limite para uploads no seu espaço de trabalho"
+        },
+        "security": {
+          "title": "Segurança"
+        },
+        "saml": {
+          "title": "SAML",
+          "description": "Tenha a implementação oficial de SAML\ne torne o Plane seguro com qualquer IdP."
+        },
+        "oidc": {
+          "title": "OIDC",
+          "description": "Tenha a implementação oficial de OIDC\ne torne o Plane seguro com qualquer IdP."
+        },
+        "domain_security": {
+          "title": "Segurança de domínio",
+          "description": "Escolha outros domínios que podem autenticar no\nseu espaço de trabalho do Plane ou restrinja a apenas um domínio."
+        },
+        "two_factor_authentication_and_passkeys": {
+          "title": "Autenticação em duas etapas e chaves de acesso",
+          "description": "Proteja seu espaço de trabalho do Plane com autenticação em duas\netapas vinculada ao dispositivo e com chaves de acesso. "
+        },
+        "password_policy": {
+          "title": "Política de senhas",
+          "description": "Defina políticas de senha personalizadas alinhadas aos seus\nrequisitos de conformidade."
+        },
+        "ldap": {
+          "title": "LDAP",
+          "description": "Tenha nossa implementação oficial de LDAP e proteja\nseu espaço de trabalho do Plane com seu servidor LDAP."
+        },
+        "self_hosted": {
+          "title": "Auto-hospedado"
+        },
+        "god_mode": {
+          "title": "God Mode",
+          "description": "Gerencie melhor sua instância auto-hospedada do Plane com\numa interface de administração da instância."
+        },
+        "one_click_deployment": {
+          "title": "Implantação com um clique",
+          "description": "Instale e implante seu Plane auto-hospedado em qualquer nuvem\nprivada com um único comando."
+        },
+        "digital_ocean_marketplace_app": {
+          "title": "App no Digital Ocean Marketplace",
+          "description": "Tenha nosso app compatível com a Digital Ocean no\nmarketplace deles."
+        },
+        "heroku_platform_app": {
+          "title": "App na plataforma Heroku",
+          "description": "Tenha nosso app compatível com a plataforma Heroku e implante\nno Heroku com facilidade."
+        },
+        "aws_ami": {
+          "title": "AWS AMI",
+          "description": "Tenha nosso app compatível com AMI no marketplace\nda AWS."
+        },
+        "private_deployments": {
+          "title": "Implantações privadas",
+          "description": "Tenha nosso app na nuvem hospedado numa nuvem privada\ngerenciada por nós."
+        },
+        "support": {
+          "title": "Suporte"
+        },
+        "channels": {
+          "title": "Canais",
+          "description": "Tenha acesso a um ou mais canais de suporte,\nconforme o seu plano."
+        },
+        "sla": {
+          "title": "SLA"
+        }
+      },
+      "coming_soon": "EM BREVE",
+      "work_item_transfers_conversions": "Transferência e conversão de itens de trabalho",
+      "values": {
+        "basic": "Básico",
+        "advanced": "Avançado",
+        "unlimited": "Ilimitado",
+        "custom": "Personalizado",
+        "limited_props": "Propriedades limitadas",
+        "all_props": "Todas as propriedades",
+        "with_custom_props": "Com propriedades personalizadas",
+        "without_custom_props": "Sem propriedades personalizadas",
+        "historical_timesheets": "Histórico de apontamentos",
+        "linear": "Linear",
+        "round_robin_capacity": "Rodízio e capacidade",
+        "pre_defined_roles": "Cargos predefinidos",
+        "queued_downloads": "Downloads em fila"
+      },
+      "highlights_label": "Destaques",
+      "compare_all_features": "Comparar todos os recursos",
+      "collapse_comparison": "Recolher a comparação",
+      "quote_on_request": "Orçamento sob consulta",
+      "popular": "Popular",
+      "your_plan": "Seu plano",
+      "talk_to_sales": "Falar com vendas",
+      "community": "Comunidade",
+      "see_full_features_list": "Ver a lista completa de recursos",
+      "upgrade_cta": "Faça upgrade para um plano pago e libere os recursos que faltam.",
+      "per_user_per_month": "por usuário por mês",
+      "redirecting_to_stripe": "Redirecionando para o Stripe",
+      "per_workspace": "por espaço de trabalho",
+      "billed_monthly": "cobrado mensalmente",
+      "billed_yearly": "cobrado anualmente",
+      "upgrade": "Fazer upgrade",
+      "highlights": {
+        "free_1": "Até 12 usuários",
+        "free_2": "Páginas",
+        "free_3": "Projetos ilimitados",
+        "free_4": "Ciclos e módulos ilimitados",
+        "one_1": "Até 50 usuários",
+        "one_2": "OIDC e SAML",
+        "one_3": "Ciclos ativos",
+        "one_4": "Controle de tempo limitado",
+        "pro_1": "Usuários ilimitados",
+        "pro_2": "Itens de trabalho e propriedades personalizados",
+        "pro_3": "Modelos de item de trabalho",
+        "pro_4": "Controle de tempo completo",
+        "business_1": "RBAC",
+        "business_2": "Modelos de projeto",
+        "business_3": "Linhas de base e desvios",
+        "business_4": "Relatórios personalizados",
+        "enterprise_1": "Implantações privadas e gerenciadas",
+        "enterprise_2": "GAC",
+        "enterprise_3": "Suporte a LDAP",
+        "enterprise_4": "Bancos de dados + fórmulas"
+      },
+      "a_user_per_month": "por usuário por mês",
+      "upgrade_to_one": "Fazer upgrade para o One",
+      "free_price": "US$ 0 por usuário por mês"
     }
   }
 }

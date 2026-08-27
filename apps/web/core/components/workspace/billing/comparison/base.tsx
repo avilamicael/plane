@@ -14,6 +14,7 @@ import type { TPlanePlans } from "@/components/workspace/billing/comparison/plan
 import { ComingSoonBadge, PLANE_PLANS, PLANS_LIST } from "@/components/workspace/billing/comparison/plans";
 // local imports
 import { PlanFeatureDetail } from "./feature-detail";
+import { useTranslation } from "@plane/i18n";
 
 type TPlansComparisonBaseProps = {
   planeDetails: React.ReactNode;
@@ -32,6 +33,8 @@ export const shouldRenderPlanDetail = (planKey: TPlanePlans) => {
 
 export const PlansComparisonBase = observer(function PlansComparisonBase(props: TPlansComparisonBaseProps) {
   const { planeDetails, isSelfManaged, isCompareAllFeaturesSectionOpen, setIsCompareAllFeaturesSectionOpen } = props;
+  // translation
+  const { t } = useTranslation();
   // plan details
   const { planDetails, planHighlights, planComparison } = PLANE_PLANS;
   const numberOfPlansToRender = Object.keys(planDetails).filter((planKey) =>
@@ -60,14 +63,14 @@ export const PlansComparisonBase = observer(function PlansComparisonBase(props: 
               className="text-caption-md grid gap-3 rounded-xs py-1 text-secondary even:bg-surface-2"
               style={{ gridTemplateColumns: `repeat(${numberOfPlansToRender + 1}, minmax(0, 1fr))` }}
             >
-              <div className="col-span-1 p-3 text-body-sm-medium">Highlights</div>
+              <div className="col-span-1 p-3 text-body-sm-medium">{t("billing.plans.highlights_label")}</div>
               {Object.entries(planHighlights).map(
                 ([planKey, highlights]) =>
                   shouldRenderPlanDetail(planKey as TPlanePlans) && (
                     <div key={planKey} className="col-span-1 p-3">
                       <ul className="list-disc space-y-1 text-body-xs-regular">
                         {highlights.map((highlight, index) => (
-                          <li key={index}>{highlight}</li>
+                          <li key={index}>{t(highlight)}</li>
                         ))}
                       </ul>
                     </div>
@@ -132,7 +135,9 @@ export const PlansComparisonBase = observer(function PlansComparisonBase(props: 
             }}
             appendIcon={isCompareAllFeaturesSectionOpen ? <ArrowUp /> : <ArrowDown />}
           >
-            {isCompareAllFeaturesSectionOpen ? "Collapse comparison" : "Compare all features"}
+            {isCompareAllFeaturesSectionOpen
+              ? t("billing.plans.collapse_comparison")
+              : t("billing.plans.compare_all_features")}
           </Button>
         </div>
       </div>

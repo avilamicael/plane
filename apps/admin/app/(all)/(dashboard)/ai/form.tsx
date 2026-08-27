@@ -43,7 +43,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
     {
       key: "LLM_MODEL",
       type: "text",
-      label: "LLM Model",
+      label: t("admin.settings.ai.llm_model"),
       description: (
         <>
           Choose an OpenAI engine.{" "}
@@ -52,7 +52,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
             target="_blank"
             className="text-accent-primary hover:underline"
             rel="noreferrer"
-            aria-label="OpenAI models documentation"
+            aria-label={t("admin.settings.ai.models_docs_aria")}
           >
             {t("learn_more")}
           </a>
@@ -65,7 +65,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
     {
       key: "LLM_API_KEY",
       type: "password",
-      label: "API key",
+      label: t("admin.settings.ai.api_key"),
       description: (
         <>
           You will find your API key{" "}
@@ -74,7 +74,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
             target="_blank"
             className="text-accent-primary hover:underline"
             rel="noreferrer"
-            aria-label="OpenAI API keys page"
+            aria-label={t("admin.settings.ai.api_keys_page_aria")}
           >
             here.
           </a>
@@ -94,7 +94,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
         setToast({
           type: TOAST_TYPE.SUCCESS,
           title: "Success",
-          message: "AI Settings updated successfully",
+          message: t("admin.settings.ai.updated_successfully"),
         })
       )
       .catch((err) => console.error(err));
@@ -105,7 +105,7 @@ export function InstanceAIForm(props: IInstanceAIForm) {
       <div className="space-y-3">
         <div>
           <div className="pb-1 text-18 font-medium text-primary">OpenAI</div>
-          <div className="text-13 font-regular text-tertiary">If you use ChatGPT, this is for you.</div>
+          <div className="text-13 font-regular text-tertiary">{t("admin.settings.ai.chatgpt_note")}</div>
         </div>
         <div className="grid-col grid w-full grid-cols-1 items-center justify-between gap-x-12 gap-y-8 lg:grid-cols-3">
           {aiFormFields.map((field) => (

@@ -581,7 +581,13 @@
         "workspace_name_alphanumeric_required": "Workspace name must contain at least one letter or number"
       },
       "cover_image_process_failed": "Failed to process cover image",
-      "cover_image_upload_failed": "Failed to upload cover image"
+      "cover_image_upload_failed": "Failed to upload cover image",
+      "generic": "An error occurred",
+      "action_failed": "Failed to perform this action",
+      "some_error_occurred": "Some error occurred. Please try again.",
+      "ai_request_limit": "You have reached the maximum number of requests of 50 requests per month per user.",
+      "invalid_hex_code": "Enter a valid hex code",
+      "permission_denied": "Permission denied"
     },
     "update_link": "Update link",
     "attach": "Attach",
@@ -770,7 +776,8 @@
     "toast": {
       "success": "Success!",
       "error": "Error!",
-      "warning": "Warning"
+      "warning": "Warning",
+      "copy_failed": "Copy failed"
     },
     "owned_by": "Owned by",
     "subscriber": "Subscriber",
@@ -803,7 +810,47 @@
     "light_mode": "Light mode",
     "dark_mode": "Dark mode",
     "full_width": "Full width",
-    "name_max_length": "Max length of the name should be less than 255 characters"
+    "name_max_length": "Max length of the name should be less than 255 characters",
+    "reload_confirmation": "Are you sure you want to leave? Changes you made may not be saved.",
+    "unknown_cycle": "Unknown cycle",
+    "unknown_module": "Unknown module",
+    "untitled_label": "Untitled label",
+    "untitled_page": "Untitled page",
+    "save_view": "Save view",
+    "update_view": "Update view",
+    "oops": "Oops!",
+    "deleted_successfully": "Deleted successfully!",
+    "image_not_uploaded": "Image not uploaded",
+    "image_upload_failed": "The image could not be uploaded",
+    "theme": {
+      "updated": "Theme updated",
+      "reloading": "Reloading to apply changes...",
+      "update_failed": "Failed to update theme. Please try again."
+    },
+    "layouts": {
+      "list": "List layout",
+      "gallery": "Gallery layout",
+      "timeline": "Timeline layout"
+    },
+    "view_not_found": "We couldn't find the view",
+    "role_update_failed": "An error occurred while updating member role. Please try again.",
+    "work_item_update_failed": "Work item update failed",
+    "work_item_update_error": "Error while updating work item",
+    "state_create_failed": "State could not be created. Please try again.",
+    "label_delete_failed": "Label could not be deleted. Please try again.",
+    "page_create_failed": "Page could not be created. Please try again.",
+    "page_deleted": "Page deleted",
+    "estimate_deleted": "Estimate deleted",
+    "estimate_create_failed": "Estimate creation failed",
+    "cycle_details_fetch_failed": "Unable to fetch cycle details",
+    "project_favorite": {
+      "added": "Project added to favorites.",
+      "add_failed": "Couldn't add the project to favorites. Please try again.",
+      "removed": "Project removed from favorites.",
+      "remove_failed": "Couldn't remove the project from favorites. Please try again."
+    },
+    "add_property": "Add Property",
+    "add_metric": "Add Metric"
   },
   "chart": {
     "x_axis": "X-axis",

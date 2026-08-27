@@ -39,7 +39,7 @@ export const useProjectActions = ({ workspaceSlug, projectId, activeItem }: UseP
     } catch (_error) {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Copy failed",
+        title: t("common.toast.copy_failed"),
         message: t("copy_link_failed"),
       });
     }

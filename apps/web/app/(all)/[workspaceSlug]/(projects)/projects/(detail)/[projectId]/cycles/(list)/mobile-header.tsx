@@ -25,25 +25,25 @@ const CYCLE_VIEW_LAYOUTS: {
   {
     key: "list",
     icon: ListLayoutIcon,
-    title: "List layout",
+    title: "common.layouts.list",
   },
   {
     key: "board",
     icon: GridLayoutIcon,
-    title: "Gallery layout",
+    title: "common.layouts.gallery",
   },
   {
     key: "gantt",
     icon: TimelineLayoutIcon,
-    title: "Timeline layout",
+    title: "common.layouts.timeline",
   },
 ];
 
 export const CyclesListMobileHeader = observer(function CyclesListMobileHeader() {
+  const { t } = useTranslation();
   const { currentProjectDetails } = useProject();
   // hooks
   const { updateDisplayFilters } = useCycleFilter();
-  const { t } = useTranslation();
   return (
     <div className="flex justify-center sm:hidden">
       <CustomMenu
@@ -72,7 +72,7 @@ export const CyclesListMobileHeader = observer(function CyclesListMobileHeader()
               className="flex items-center gap-2"
             >
               <layout.icon className="h-3 w-3" />
-              <div className="text-tertiary">{layout.title}</div>
+              <div className="text-tertiary">{t(layout.title)}</div>
             </CustomMenu.MenuItem>
           );
         })}

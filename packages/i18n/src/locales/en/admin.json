@@ -16,7 +16,13 @@
       "configuration_saved_successfully": "Configuration saved successfully",
       "failed_to_save_configuration": "Failed to save configuration",
       "learn_more": "Learn more",
-      "here": "here."
+      "here": "here.",
+      "copied_to_clipboard": "Copied to clipboard",
+      "toggle_sidebar": "Toggle sidebar",
+      "dismiss_banner": "Dismiss banner",
+      "plane_icon_alt": "Plane icon",
+      "something_went_wrong": "Something went wrong.",
+      "retry": "Retry"
     },
     "sidebar": {
       "instance_admin": "Instance admin",
@@ -47,7 +53,13 @@
         "title": "Images in Plane",
         "description": "Allow third-party image libraries."
       },
-      "redirect_to_plane": "Redirect to Plane"
+      "redirect_to_plane": "Redirect to Plane",
+      "help": {
+        "documentation": "Documentation",
+        "forum": "Join our Forum",
+        "report_bug": "Report a bug",
+        "label": "Help"
+      }
     },
     "sign_in": {
       "heading": "Manage your Plane instance",
@@ -137,7 +149,10 @@
         "authentication": "Authentication",
         "authentication_description": "This is optional, but we recommend setting up a username and a password for your SMTP server.",
         "send_test_email": "Send test email",
-        "updated_successfully": "Email settings updated successfully"
+        "updated_successfully": "Email settings updated successfully",
+        "receiver_email_placeholder": "Receiver email",
+        "test_email_hint": "If you still cannot find it, recheck your SMTP configuration and trigger a new test email.",
+        "send_failed": "Failed to send email"
       },
       "workspace": {
         "title": "Workspaces on this instance",
@@ -162,15 +177,31 @@
         "created_message": "Workspace created successfully.",
         "create_error_title": "Error!",
         "create_error_message": "Workspace could not be created. Please try again.",
-        "create_generic_error": "Some error occurred while creating the workspace. Please try again."
+        "create_generic_error": "Some error occurred while creating the workspace. Please try again.",
+        "unique_url_tooltip": "The unique URL of your workspace",
+        "logo_alt": "Workspace Logo",
+        "owned_by": "Owned by:",
+        "total_projects": "Total projects:",
+        "total_members": "Total members:",
+        "create_heading": "Create a new workspace on this instance.",
+        "create_sub_heading": "You will need to invite users from Workspace Settings after you create this workspace."
       },
       "ai": {
         "title": "AI features for all your workspaces",
-        "description": "Configure your AI API credentials so Plane AI features are turned on for all your workspaces."
+        "description": "Configure your AI API credentials so Plane AI features are turned on for all your workspaces.",
+        "llm_model": "LLM Model",
+        "api_key": "API key",
+        "models_docs_aria": "OpenAI models documentation",
+        "api_keys_page_aria": "OpenAI API keys page",
+        "updated_successfully": "AI Settings updated successfully",
+        "chatgpt_note": "If you use ChatGPT, this is for you."
       },
       "image": {
         "title": "Third-party image libraries",
-        "description": "Let your users search and choose images from third-party libraries"
+        "description": "Let your users search and choose images from third-party libraries",
+        "access_key_label": "Access key from your Unsplash account",
+        "unsplash_docs_aria": "Unsplash developer account documentation",
+        "updated_successfully": "Image Configuration Settings updated successfully"
       }
     },
     "oauth": {
@@ -214,7 +245,9 @@
       "gitlab_paste_redirect_suffix": "field of your",
       "gitlab_app_link": "GitLab OAuth application",
       "gitea_host_label": "Gitea host",
-      "gitea_host_description": "Use the URL of your Gitea instance. For the official Gitea instance, use \"https://gitea.com\"."
+      "gitea_host_description": "Use the URL of your Gitea instance. For the official Gitea instance, use \"https://gitea.com\".",
+      "edit": "Edit",
+      "configure": "Configure"
     },
     "errors": {
       "admin_already_exist": {
@@ -278,6 +311,16 @@
     },
     "new_user_popup": {
       "description": "Instance setup done! Welcome to Plane instance portal. Start your journey with by creating your first workspace."
+    },
+    "instance": {
+      "failure_illustration_alt": "Instance failure illustration",
+      "unable_to_fetch": "Unable to fetch instance details.",
+      "fetch_failed": "Failed to fetch the instance info"
+    },
+    "confirm_discard": {
+      "title": "You have unsaved changes",
+      "description": "Changes you made will be lost if you go back. Do you wish to go back?",
+      "keep_editing": "Keep editing"
     }
   }
 }

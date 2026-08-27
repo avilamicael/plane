@@ -16,7 +16,13 @@
       "configuration_saved_successfully": "Configuração salva com sucesso",
       "failed_to_save_configuration": "Falha ao salvar a configuração",
       "learn_more": "Saiba mais",
-      "here": "aqui."
+      "here": "aqui.",
+      "copied_to_clipboard": "Copiado para a área de transferência",
+      "toggle_sidebar": "Alternar a barra lateral",
+      "dismiss_banner": "Dispensar o aviso",
+      "plane_icon_alt": "Ícone do Plane",
+      "something_went_wrong": "Algo deu errado.",
+      "retry": "Tentar novamente"
     },
     "sidebar": {
       "instance_admin": "Administrador da instância",
@@ -47,7 +53,13 @@
         "title": "Imagens no Plane",
         "description": "Permita bibliotecas de imagens de terceiros."
       },
-      "redirect_to_plane": "Ir para o Plane"
+      "redirect_to_plane": "Ir para o Plane",
+      "help": {
+        "documentation": "Documentação",
+        "forum": "Participe do nosso fórum",
+        "report_bug": "Relatar um problema",
+        "label": "Ajuda"
+      }
     },
     "sign_in": {
       "heading": "Gerencie sua instância do Plane",
@@ -137,7 +149,10 @@
         "authentication": "Autenticação",
         "authentication_description": "Isto é opcional, mas recomendamos configurar um nome de usuário e uma senha para o seu servidor SMTP.",
         "send_test_email": "Enviar e-mail de teste",
-        "updated_successfully": "Configurações de e-mail atualizadas com sucesso"
+        "updated_successfully": "Configurações de e-mail atualizadas com sucesso",
+        "receiver_email_placeholder": "E-mail do destinatário",
+        "test_email_hint": "Se ainda assim não encontrar, revise a configuração de SMTP e dispare um novo e-mail de teste.",
+        "send_failed": "Não foi possível enviar o e-mail"
       },
       "workspace": {
         "title": "Espaços de trabalho nesta instância",
@@ -162,15 +177,31 @@
         "created_message": "Espaço de trabalho criado com sucesso.",
         "create_error_title": "Erro!",
         "create_error_message": "Não foi possível criar o espaço de trabalho. Tente novamente.",
-        "create_generic_error": "Ocorreu um erro ao criar o espaço de trabalho. Tente novamente."
+        "create_generic_error": "Ocorreu um erro ao criar o espaço de trabalho. Tente novamente.",
+        "unique_url_tooltip": "A URL exclusiva do seu espaço de trabalho",
+        "logo_alt": "Logotipo do espaço de trabalho",
+        "owned_by": "Pertence a:",
+        "total_projects": "Total de projetos:",
+        "total_members": "Total de membros:",
+        "create_heading": "Crie um novo espaço de trabalho nesta instância.",
+        "create_sub_heading": "Depois de criar este espaço de trabalho, você precisará convidar as pessoas em Configurações do espaço de trabalho."
       },
       "ai": {
         "title": "Recursos de IA para todos os seus espaços de trabalho",
-        "description": "Configure suas credenciais de API de IA para ativar os recursos do Plane AI em todos os seus espaços de trabalho."
+        "description": "Configure suas credenciais de API de IA para ativar os recursos do Plane AI em todos os seus espaços de trabalho.",
+        "llm_model": "Modelo de LLM",
+        "api_key": "Chave de API",
+        "models_docs_aria": "Documentação dos modelos da OpenAI",
+        "api_keys_page_aria": "Página de chaves de API da OpenAI",
+        "updated_successfully": "Configurações de IA atualizadas com sucesso",
+        "chatgpt_note": "Se você usa o ChatGPT, isto é para você."
       },
       "image": {
         "title": "Bibliotecas de imagens de terceiros",
-        "description": "Deixe seus usuários pesquisarem e escolherem imagens em bibliotecas de terceiros"
+        "description": "Deixe seus usuários pesquisarem e escolherem imagens em bibliotecas de terceiros",
+        "access_key_label": "Chave de acesso da sua conta do Unsplash",
+        "unsplash_docs_aria": "Documentação da conta de desenvolvedor do Unsplash",
+        "updated_successfully": "Configurações de imagem atualizadas com sucesso"
       }
     },
     "oauth": {
@@ -214,7 +245,9 @@
       "gitlab_paste_redirect_suffix": "da sua",
       "gitlab_app_link": "aplicação OAuth do GitLab",
       "gitea_host_label": "Host do Gitea",
-      "gitea_host_description": "Use a URL da sua instância do Gitea. Para a instância oficial do Gitea, use \"https://gitea.com\"."
+      "gitea_host_description": "Use a URL da sua instância do Gitea. Para a instância oficial do Gitea, use \"https://gitea.com\".",
+      "edit": "Editar",
+      "configure": "Configurar"
     },
     "errors": {
       "admin_already_exist": {
@@ -278,6 +311,16 @@
     },
     "new_user_popup": {
       "description": "Configuração da instância concluída! Boas-vindas ao portal de instância do Plane. Comece sua jornada criando seu primeiro espaço de trabalho."
+    },
+    "instance": {
+      "failure_illustration_alt": "Ilustração de falha da instância",
+      "unable_to_fetch": "Não foi possível obter os detalhes da instância.",
+      "fetch_failed": "Não foi possível obter as informações da instância"
+    },
+    "confirm_discard": {
+      "title": "Você tem alterações não salvas",
+      "description": "As alterações feitas serão perdidas se você voltar. Deseja voltar mesmo assim?",
+      "keep_editing": "Continuar editando"
     }
   }
 }

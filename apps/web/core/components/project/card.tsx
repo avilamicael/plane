@@ -84,7 +84,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
       loading: "Adding project to favorites...",
       success: {
         title: t("common.toast.success"),
-        message: () => "Project added to favorites.",
+        message: () => t("common.project_favorite.added"),
         actionItems: () => {
           if (!isFavoriteMenuOpen) toggleFavoriteMenu(true);
           return <></>;
@@ -92,7 +92,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
       },
       error: {
         title: t("common.toast.error"),
-        message: () => "Couldn't add the project to favorites. Please try again.",
+        message: () => t("common.project_favorite.add_failed"),
       },
     });
   };
@@ -105,11 +105,11 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
       loading: "Removing project from favorites...",
       success: {
         title: t("common.toast.success"),
-        message: () => "Project removed from favorites.",
+        message: () => t("common.project_favorite.removed"),
       },
       error: {
         title: t("common.toast.error"),
-        message: () => "Couldn't remove the project from favorites. Please try again.",
+        message: () => t("common.project_favorite.remove_failed"),
       },
     });
   };

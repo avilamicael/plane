@@ -36,7 +36,7 @@ export const GoogleConfiguration = observer(function GoogleConfiguration(props: 
       {isGoogleConfigured ? (
         <div className="flex items-center gap-4">
           <Link href="/authentication/google" className={cn(getButtonStyling("link", "base"), "font-medium")}>
-            {t("edit")}
+            {t("admin.oauth.edit")}
           </Link>
           <ToggleSwitch
             value={Boolean(parseInt(enableGoogleConfig))}
@@ -51,7 +51,7 @@ export const GoogleConfiguration = observer(function GoogleConfiguration(props: 
       ) : (
         <Link href="/authentication/google" className={cn(getButtonStyling("secondary", "base"), "text-tertiary")}>
           <Settings2 className="h-4 w-4 p-0.5 text-tertiary" />
-          {t("integrations.configure")}
+          {t("admin.oauth.configure")}
         </Link>
       )}
     </>

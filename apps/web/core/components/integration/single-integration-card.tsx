@@ -94,7 +94,7 @@ export const SingleIntegrationCard = observer(function SingleIntegrationCard({ i
 
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Deleted successfully!",
+          title: t("common.deleted_successfully"),
           message: `${integration.title} integration deleted successfully.`,
         });
       })

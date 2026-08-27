@@ -5,12 +5,14 @@
  */
 
 import { useCallback, useEffect, useState } from "react";
+import { useTranslation } from "@plane/i18n";
 
 //TODO: remove temp flag isActive later and use showAlert as the source of truth
 const useReloadConfirmations = (isActive = true, message?: string, defaultShowAlert = false, onLeave?: () => void) => {
+  const { t } = useTranslation();
   const [showAlert, setShowAlert] = useState(defaultShowAlert);
 
-  const alertMessage = message ?? "Are you sure you want to leave? Changes you made may not be saved.";
+  const alertMessage = message ?? t("common.reload_confirmation");
 
   const handleBeforeUnload = useCallback(
     (event: BeforeUnloadEvent) => {

@@ -75,7 +75,7 @@ function WebhookDetailsPage({ params }: Route.ComponentProps) {
       setToast({
         type: TOAST_TYPE.ERROR,
         title: t("common.toast.error"),
-        message: error?.error ?? "Something went wrong. Please try again.",
+        message: error?.error ?? t("common.errors.default.message"),
       });
     }
   };

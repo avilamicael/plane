@@ -67,7 +67,7 @@ export const useGroupIssuesDragNDrop = (
     const errorToastProps = {
       type: TOAST_TYPE.ERROR,
       title: t("common.toast.error"),
-      message: "Error while updating work item",
+      message: t("common.work_item_update_error"),
     };
     const moduleKey = ISSUE_FILTER_DEFAULT_DATA["module"];
     const cycleKey = ISSUE_FILTER_DEFAULT_DATA["cycle"];
@@ -122,7 +122,7 @@ export const useGroupIssuesDragNDrop = (
       setToast({
         title: t("common.toast.error"),
         type: TOAST_TYPE.ERROR,
-        message: err?.detail ?? "Failed to perform this action",
+        message: err?.detail ?? t("common.errors.action_failed"),
       });
     });
   };

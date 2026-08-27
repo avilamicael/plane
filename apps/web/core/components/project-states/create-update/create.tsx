@@ -58,7 +58,7 @@ export const StateCreate = observer(function StateCreate(props: TStateCreate) {
         setToast({
           type: TOAST_TYPE.ERROR,
           title: t("common.toast.error"),
-          message: errorStatus.data.error ?? "State could not be created. Please try again.",
+          message: errorStatus.data.error ?? t("common.state_create_failed"),
         });
         return { status: "error" };
       }

@@ -10,12 +10,14 @@ import { Controller } from "react-hook-form";
 // plane imports
 import type { IUserTheme } from "@plane/types";
 import { InputColorPicker } from "@plane/ui";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   control: Control<IUserTheme>;
 };
 
 export const CustomThemeColorInputs = observer(function CustomThemeColorInputs(props: Props) {
+  const { t } = useTranslation();
   const { control } = props;
 
   const handleValueChange = (val: string | undefined, onChange: (...args: unknown[]) => void) => {
@@ -40,7 +42,7 @@ export const CustomThemeColorInputs = observer(function CustomThemeColorInputs(p
               required: "Neutral color is required",
               pattern: {
                 value: /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/,
-                message: "Enter a valid hex code",
+                message: t("common.errors.invalid_hex_code"),
               },
             }}
             render={({ field: { value, onChange } }) => (
@@ -73,7 +75,7 @@ export const CustomThemeColorInputs = observer(function CustomThemeColorInputs(p
               required: "Brand color is required",
               pattern: {
                 value: /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/,
-                message: "Enter a valid hex code",
+                message: t("common.errors.invalid_hex_code"),
               },
             }}
             render={({ field: { value, onChange } }) => (

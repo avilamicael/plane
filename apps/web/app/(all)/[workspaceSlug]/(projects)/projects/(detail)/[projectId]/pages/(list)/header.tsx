@@ -56,7 +56,7 @@ export const PagesListHeader = observer(function PagesListHeader() {
         setToast({
           type: TOAST_TYPE.ERROR,
           title: t("common.toast.error"),
-          message: err?.data?.error || "Page could not be created. Please try again.",
+          message: err?.data?.error || t("common.page_create_failed"),
         });
       })
       .finally(() => setIsCreatingPage(false));

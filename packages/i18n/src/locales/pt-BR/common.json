@@ -581,7 +581,13 @@
         "workspace_name_alphanumeric_required": "O nome do espaço de trabalho deve conter pelo menos uma letra ou um número"
       },
       "cover_image_process_failed": "Não foi possível processar a imagem de capa",
-      "cover_image_upload_failed": "Não foi possível enviar a imagem de capa"
+      "cover_image_upload_failed": "Não foi possível enviar a imagem de capa",
+      "generic": "Ocorreu um erro",
+      "action_failed": "Não foi possível concluir esta ação",
+      "some_error_occurred": "Ocorreu um erro. Tente novamente.",
+      "ai_request_limit": "Você atingiu o limite de 50 solicitações por mês por usuário.",
+      "invalid_hex_code": "Digite um código hexadecimal válido",
+      "permission_denied": "Permissão negada"
     },
     "update_link": "Atualizar link",
     "attach": "Anexar",
@@ -770,7 +776,8 @@
     "toast": {
       "success": "Sucesso!",
       "error": "Erro!",
-      "warning": "Aviso"
+      "warning": "Aviso",
+      "copy_failed": "Não foi possível copiar"
     },
     "owned_by": "Pertence a",
     "subscriber": "Assinante",
@@ -803,7 +810,47 @@
     "light_mode": "Modo claro",
     "dark_mode": "Modo escuro",
     "full_width": "Largura total",
-    "name_max_length": "O nome deve ter menos de 255 caracteres"
+    "name_max_length": "O nome deve ter menos de 255 caracteres",
+    "reload_confirmation": "Tem certeza de que deseja sair? As alterações feitas podem não ser salvas.",
+    "unknown_cycle": "Ciclo desconhecido",
+    "unknown_module": "Módulo desconhecido",
+    "untitled_label": "Etiqueta sem título",
+    "untitled_page": "Página sem título",
+    "save_view": "Salvar visualização",
+    "update_view": "Atualizar visualização",
+    "oops": "Ops!",
+    "deleted_successfully": "Excluído com sucesso!",
+    "image_not_uploaded": "Imagem não enviada",
+    "image_upload_failed": "Não foi possível enviar a imagem",
+    "theme": {
+      "updated": "Tema atualizado",
+      "reloading": "Recarregando para aplicar as alterações...",
+      "update_failed": "Não foi possível atualizar o tema. Tente novamente."
+    },
+    "layouts": {
+      "list": "Layout de lista",
+      "gallery": "Layout de galeria",
+      "timeline": "Layout de linha do tempo"
+    },
+    "view_not_found": "Não encontramos essa visualização",
+    "role_update_failed": "Ocorreu um erro ao atualizar o cargo do membro. Tente novamente.",
+    "work_item_update_failed": "Não foi possível atualizar o item de trabalho",
+    "work_item_update_error": "Erro ao atualizar o item de trabalho",
+    "state_create_failed": "Não foi possível criar o estado. Tente novamente.",
+    "label_delete_failed": "Não foi possível excluir a etiqueta. Tente novamente.",
+    "page_create_failed": "Não foi possível criar a página. Tente novamente.",
+    "page_deleted": "Página excluída",
+    "estimate_deleted": "Estimativa excluída",
+    "estimate_create_failed": "Não foi possível criar a estimativa",
+    "cycle_details_fetch_failed": "Não foi possível obter os detalhes do ciclo",
+    "project_favorite": {
+      "added": "Projeto adicionado aos favoritos.",
+      "add_failed": "Não foi possível adicionar o projeto aos favoritos. Tente novamente.",
+      "removed": "Projeto removido dos favoritos.",
+      "remove_failed": "Não foi possível remover o projeto dos favoritos. Tente novamente."
+    },
+    "add_property": "Adicionar propriedade",
+    "add_metric": "Adicionar métrica"
   },
   "chart": {
     "x_axis": "Eixo X",

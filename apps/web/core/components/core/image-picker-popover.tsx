@@ -146,9 +146,9 @@ function ImagePickerPopoverComponent<TFieldValues extends FieldValues = FieldVal
           console.error("Error uploading user cover image:", error);
           setIsImageUploading(false);
           setToast({
-            message: error?.error ?? "The image could not be uploaded",
+            message: error?.error ?? t("common.image_upload_failed"),
             type: TOAST_TYPE.ERROR,
-            title: "Image not uploaded",
+            title: t("common.image_not_uploaded"),
           });
         });
     } else {
@@ -167,9 +167,9 @@ function ImagePickerPopoverComponent<TFieldValues extends FieldValues = FieldVal
           console.error("Error uploading project cover image:", error);
           setIsImageUploading(false);
           setToast({
-            message: error?.error ?? "The image could not be uploaded",
+            message: error?.error ?? t("common.image_upload_failed"),
             type: TOAST_TYPE.ERROR,
-            title: "Image not uploaded",
+            title: t("common.image_not_uploaded"),
           });
         });
     }

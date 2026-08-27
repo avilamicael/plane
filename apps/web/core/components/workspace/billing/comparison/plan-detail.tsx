@@ -38,7 +38,9 @@ export const PlanDetail = observer(function PlanDetail(props: TPlanDetailProps) 
   const isSubscriptionActive = planDetail.isActive;
   // pricing details
   const displayPrice = billingFrequency === "month" ? planDetail.monthlyPrice : planDetail.yearlyPrice;
-  const pricingDescription = isSubscriptionActive ? "a user per month" : "Quote on request";
+  const pricingDescription = isSubscriptionActive
+    ? t("billing.plans.a_user_per_month")
+    : t("billing.plans.quote_on_request");
   const pricingSecondaryDescription =
     billingFrequency === "month"
       ? planDetail.monthlyPriceSecondaryDescription
@@ -60,7 +62,7 @@ export const PlanDetail = observer(function PlanDetail(props: TPlanDetailProps) 
           <span>{subscriptionName}</span>
           {subscriptionType === EProductSubscriptionEnum.PRO && (
             <span className="rounded-sm bg-accent-primary px-2 py-0.5 text-caption-sm-medium text-on-color">
-              Popular
+              {t("billing.plans.popular")}
             </span>
           )}
         </div>

@@ -19,11 +19,12 @@ import { CORE_HEADER_SEGMENT_LABELS } from "./core";
 import { EXTENDED_HEADER_SEGMENT_LABELS } from "./extended";
 
 export const HamburgerToggle = observer(function HamburgerToggle() {
+  const { t } = useTranslation();
   const { isSidebarCollapsed, toggleSidebar } = useTheme();
   return (
     <button
       type="button"
-      aria-label="Toggle sidebar"
+      aria-label={t("admin.common.toggle_sidebar")}
       className="group flex size-7 cursor-pointer items-center justify-center rounded-sm bg-layer-1 transition-all hover:bg-layer-1-hover md:hidden"
       onClick={() => toggleSidebar(!isSidebarCollapsed)}
     >

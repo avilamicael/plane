@@ -103,7 +103,7 @@ export const InboxIssueMainContent = observer(function InboxIssueMainContent(pro
           await inboxIssue.updateIssue(data);
         } catch (_error) {
           setToast({
-            title: "Work item update failed",
+            title: t("common.work_item_update_failed"),
             type: TOAST_TYPE.ERROR,
             message: t("issue.toasts.update.error.message"),
           });

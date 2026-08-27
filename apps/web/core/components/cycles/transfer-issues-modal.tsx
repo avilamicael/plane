@@ -68,7 +68,7 @@ export const TransferIssuesModal = observer(function TransferIssuesModal(props: 
       setToast({
         type: TOAST_TYPE.ERROR,
         title: t("common.toast.error"),
-        message: error.error || "Unable to fetch cycle details",
+        message: error.error || t("common.cycle_details_fetch_failed"),
       });
     });
   };

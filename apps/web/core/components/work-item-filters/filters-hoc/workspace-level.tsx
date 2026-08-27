@@ -126,7 +126,7 @@ export const WorkspaceLevelWorkItemFiltersHOC = observer(function WorkspaceLevel
       if (!viewDetails) {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "We couldn't find the view",
+          title: t("common.view_not_found"),
           message: t("view.toasts.not_found.message"),
         });
 

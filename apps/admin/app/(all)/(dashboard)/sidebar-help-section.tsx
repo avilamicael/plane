@@ -21,17 +21,17 @@ import { useInstance, useTheme } from "@/hooks/store";
 
 const helpOptions = [
   {
-    name: "Documentation",
+    i18nKey: "admin.sidebar.help.documentation",
     href: "https://docs.plane.so/",
     Icon: PageIcon,
   },
   {
-    name: "Join our Forum",
+    i18nKey: "admin.sidebar.help.forum",
     href: "https://forum.plane.so",
     Icon: MessageSquare,
   },
   {
-    name: "Report a bug",
+    i18nKey: "admin.sidebar.help.report_bug",
     href: "https://github.com/makeplane/plane/issues/new/choose",
     Icon: GithubIcon,
   },
@@ -86,10 +86,14 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
             <HelpCircle className="size-4" />
           </button>
         </Tooltip>
-        <Tooltip tooltipContent="Toggle sidebar" position={isSidebarCollapsed ? "right" : "top"} className="ml-4">
+        <Tooltip
+          tooltipContent={t("admin.common.toggle_sidebar")}
+          position={isSidebarCollapsed ? "right" : "top"}
+          className="ml-4"
+        >
           <button
             type="button"
-            aria-label="Toggle sidebar"
+            aria-label={t("admin.common.toggle_sidebar")}
             className={`grid place-items-center rounded-md p-1.5 text-secondary outline-none hover:bg-layer-1-hover hover:text-primary ${
               isSidebarCollapsed ? "w-full" : ""
             }`}
@@ -117,29 +121,29 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
             ref={helpOptionsRef}
           >
             <div className="space-y-1 pb-2">
-              {helpOptions.map(({ name, Icon, href }) => {
+              {helpOptions.map(({ i18nKey, Icon, href }) => {
                 if (href)
                   return (
-                    <Link href={href} key={name} target="_blank">
+                    <Link href={href} key={i18nKey} target="_blank">
                       <div className="flex items-center gap-x-2 rounded-sm px-2 py-1 text-11 hover:bg-layer-1-hover">
                         <div className="grid flex-shrink-0 place-items-center">
                           <Icon className="h-3.5 w-3.5 text-secondary" />
                         </div>
-                        <span className="text-11">{name}</span>
+                        <span className="text-11">{t(i18nKey)}</span>
                       </div>
                     </Link>
                   );
                 else
                   return (
                     <button
-                      key={name}
+                      key={i18nKey}
                       type="button"
                       className="flex w-full items-center gap-x-2 rounded-sm px-2 py-1 text-11 hover:bg-layer-1"
                     >
                       <div className="grid flex-shrink-0 place-items-center">
                         <Icon className="h-3.5 w-3.5 text-secondary" />
                       </div>
-                      <span className="text-11">{name}</span>
+                      <span className="text-11">{t(i18nKey)}</span>
                     </button>
                   );
               })}

@@ -151,7 +151,7 @@ export const AccountTypeColumn = observer(function AccountTypeColumn(props: Acco
         <Controller
           name="role"
           control={control}
-          rules={{ required: "Role is required." }}
+          rules={{ required: t("workspace_settings.settings.members.role_required") }}
           render={({ field: { value } }) => (
             <CustomSelect
               value={value as EUserPermissions}
@@ -168,7 +168,7 @@ export const AccountTypeColumn = observer(function AccountTypeColumn(props: Acco
                   setToast({
                     type: TOAST_TYPE.ERROR,
                     title: t("common.toast.error"),
-                    message: errorString ?? "An error occurred while updating member role. Please try again.",
+                    message: errorString ?? t("common.role_update_failed"),
                   });
                 }
               }}

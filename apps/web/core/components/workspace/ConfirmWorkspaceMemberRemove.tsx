@@ -69,7 +69,7 @@ export const ConfirmWorkspaceMemberRemove = observer(function ConfirmWorkspaceMe
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <Dialog.Title as="h3" className="text-16 leading-6 font-medium text-primary">
                         {currentUser?.id === userDetails.id
-                          ? "Leave workspace?"
+                          ? t("workspace_settings.settings.members.leave_workspace_title")
                           : `Remove ${userDetails?.display_name}?`}
                       </Dialog.Title>
                       <div className="mt-2">

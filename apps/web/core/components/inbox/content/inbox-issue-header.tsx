@@ -217,7 +217,7 @@ export const InboxIssueActionsHeader = observer(function InboxIssueActionsHeader
     else {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Permission denied",
+        title: t("common.errors.permission_denied"),
         message: errorMessage,
       });
     }

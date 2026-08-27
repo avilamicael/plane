@@ -26,7 +26,13 @@
           "success_title": "Workspace deleted.",
           "success_message": "You will soon go to your profile page.",
           "error_title": "That didn't work.",
-          "error_message": "Try again, please."
+          "error_message": "Try again, please.",
+          "about_to_delete_prefix": "You are about to delete the workspace",
+          "about_to_delete_suffix": ". If you confirm, you will lose access to all your work data in this workspace without any way to restore it. Tread very carefully.",
+          "type_name": "Type in this workspace's name to continue.",
+          "final_confirmation_prefix": "For final confirmation, type",
+          "final_confirmation_suffix": "below.",
+          "confirm_phrase": "delete my workspace"
         },
         "errors": {
           "name": {
@@ -37,7 +43,9 @@
             "required": "Company size is required",
             "select_a_range": "Select organization size"
           }
-        }
+        },
+        "url_copied": "Workspace URL copied to the clipboard.",
+        "logo_alt": "Workspace Logo"
       },
       "members": {
         "title": "Members",
@@ -64,7 +72,9 @@
             "invalid": "Email is invalid"
           }
         },
-        "invitation_removed": "Invitation removed successfully."
+        "invitation_removed": "Invitation removed successfully.",
+        "leave_workspace_title": "Leave workspace?",
+        "role_required": "Role is required."
       },
       "billing_and_plans": {
         "heading": "Billing & Plans",
@@ -519,6 +529,459 @@
         "title": "No imports yet",
         "description": "Find all your previous imports here and download them."
       }
+    }
+  },
+  "billing": {
+    "plans": {
+      "f": {
+        "project_work_tracking": {
+          "title": "Project + work tracking"
+        },
+        "projects": {
+          "title": "Projects",
+          "description": "Add projects to house work items, cycles, and modules."
+        },
+        "work_items": {
+          "title": "Work items",
+          "description": "Add work via work items, set properties for tracking, and add to\ncycles or modules."
+        },
+        "comments": {
+          "title": "Comments",
+          "description": "Respond to work items, @mention members, and brainstorm\ntogether without leaving Plane."
+        },
+        "cycles": {
+          "title": "Cycles",
+          "description": "Track work in timeboxes with differing frequency."
+        },
+        "modules": {
+          "title": "Modules",
+          "description": "Group replicable work in modules with their own\nleads."
+        },
+        "intake": {
+          "title": "Intake",
+          "description": "See suggestions and feedback from viewers and\nguests before you decide to add them to your\nproject."
+        },
+        "estimates": {
+          "title": "Estimates",
+          "description": "Measure effort in points in a system that works for\nyou."
+        },
+        "project_work_management": {
+          "title": "Project + work management"
+        },
+        "bulk_ops": {
+          "title": "Bulk Ops",
+          "description": "Add several work items to cycles or modules, transfer\nthem, or edit their properties."
+        },
+        "time_tracking_worklogs": {
+          "title": "Time Tracking + Worklogs",
+          "description": "Track time per work item, see aggregated reports, and\nfilter by need."
+        },
+        "active_cycles": {
+          "title": "Active Cycles",
+          "description": "See all running cycles across all projects, or soon, in\na single project."
+        },
+        "work_item_types": {
+          "title": "Work item Types",
+          "description": "Create your own work item types with your own\nproperties."
+        },
+        "custom_properties": {
+          "title": "Custom Properties",
+          "description": "Create your own properties and apply them to your\nworkspace or project."
+        },
+        "dependencies_in_gantt": {
+          "title": "Dependencies in Gantt",
+          "description": "Adjust timelines for dependent work items visually on\nour Gantt layout."
+        },
+        "work_item_transfers": {
+          "title": "Work item Transfers",
+          "description": "Move a work item from a project or a cycle to\nanother."
+        },
+        "auto_transfer_cycle_work_items": {
+          "title": "Auto-transfer Cycle Work items",
+          "description": "Transfer incomplete work items from a completed cycle\nto the next cycle or to the default project state. "
+        },
+        "epics": {
+          "title": "Epics",
+          "description": "Organize long-term work in epics that house work items,\ncycles, and modules."
+        },
+        "initiatives": {
+          "title": "Initiatives",
+          "description": "Create initiatives to roll up several epics."
+        },
+        "checkpoints": {
+          "title": "Checkpoints",
+          "description": "Add markers to Projects, Epics and Initiatives to keep your\nteam on track and report on progress."
+        },
+        "module_overview": {
+          "title": "Module Overview",
+          "description": "Like Cycle Overviews, see relevant details and\nprogress charts for each module."
+        },
+        "auto_assignment_in_modules": {
+          "title": "Auto-assignment In Modules",
+          "description": "Choose assignment rules for work items in a\nmodule including Linear, Round Robin, or Capacity."
+        },
+        "public_private_and_secret_projects": {
+          "title": "Public, Private, and Secret projects",
+          "description": "Public projects are visible and accessible to\neveryone. Private ones are visible but need approval\nto join. Secret projects aren't visible or accessible."
+        },
+        "state_of_projects": {
+          "title": "State Of Projects",
+          "description": "See all projects laid across states that highlight\nthose that need attention and those on track."
+        },
+        "pre_defined_work_item_templates": {
+          "title": "Pre-defined work item Templates",
+          "description": "Choose from our available work item templates that\ncustomize work item types and properties for several\nuse cases."
+        },
+        "teamspace_cycles": {
+          "title": "Teamspace Cycles",
+          "description": "See multiple cycles in multiple projects at once."
+        },
+        "project_templates": {
+          "title": "Project Templates",
+          "description": "Save states, workflows, automation, and other project\nsettings into templates."
+        },
+        "baselines_and_deviations": {
+          "title": "Baselines And Deviations",
+          "description": "Declare baselines for how your projects progress\nand zoom in on deviations."
+        },
+        "scheduled_comms": {
+          "title": "Scheduled Comms",
+          "description": "Schedule reports, notifications, and messages to\nthird-party tools."
+        },
+        "intake_assignees": {
+          "title": "Intake Assignees",
+          "description": "Assign approved Intake work items to a member by\ndefault."
+        },
+        "custom_slas": {
+          "title": "Custom SLAs",
+          "description": "Set SLA matrices for time-sensitive work items."
+        },
+        "intake_forms": {
+          "title": "Intake Forms",
+          "description": "Take Intake work items from externally accessible web\nforms."
+        },
+        "emails_for_intake": {
+          "title": "Emails For Intake",
+          "description": "Get an email address for reporting work items\ndirectly into a project's Intake."
+        },
+        "visualization": {
+          "title": "Visualization"
+        },
+        "layouts": {
+          "title": "Layouts",
+          "description": "Choose from the List, the Board, the Calendar, the\nGantt, or the Spreadsheet layout for your work items."
+        },
+        "views": {
+          "title": "Views",
+          "description": "Save sort, filter, and display options on a layout to a\nview."
+        },
+        "shared_views": {
+          "title": "Shared Views",
+          "description": "Choose a few members to share a view with."
+        },
+        "publish_views": {
+          "title": "Publish Views",
+          "description": "Put a view on the Internet and let your customers\ninteract with them."
+        },
+        "dashboards_and_widgets": {
+          "title": "Dashboards and Widgets",
+          "description": "Create your own dashboards with custom widgets\nand data types."
+        },
+        "analytics_reports": {
+          "title": "Analytics + reports"
+        },
+        "progress_charts": {
+          "title": "Progress Charts",
+          "description": "Track progress in cycles, modules, and overviews\nthroughout Plane without switching to dashboards\nor Analytics."
+        },
+        "cycle_reports": {
+          "title": "Cycle Reports",
+          "description": "Get on-demand cycle reports during and after a\ncycle. Revisit reports anytime from permalinks."
+        },
+        "insights": {
+          "title": "Insights",
+          "description": "Hindsight, On-demand insights, Foresights."
+        },
+        "advanced_pages_analytics": {
+          "title": "Advanced Pages Analytics",
+          "description": "See who's viewing, sharing, and commenting on\nyour pages along with other useful info."
+        },
+        "custom_reports": {
+          "title": "Custom Reports",
+          "description": "Generate reports by any dimension and metric\nacross your project or workspace."
+        },
+        "navigation": {
+          "title": "Navigation"
+        },
+        "power_k": {
+          "title": "Power K",
+          "description": "Access a keyboard-first gateway to almost anything\nin Plane."
+        },
+        "pql": {
+          "title": "PQL",
+          "description": "Write Plane Query Language in search with support\nfor Boolean operators. Soon, you can write natural\nlanguage queries."
+        },
+        "workspace_and_user_management": {
+          "title": "Workspace and user management"
+        },
+        "member_limit": {
+          "title": "Member limit",
+          "description": "Number of seats that can use project and work management features",
+          "self_hosted_description": "Number of users that our standard infra supports\nIncrease infra to get more users"
+        },
+        "roles": {
+          "title": "Roles",
+          "description": "Choose from one of four pre-defined roles or create\ncustom ones with RBAC."
+        },
+        "guests": {
+          "title": "Guests",
+          "description": "Let some users see everything or just their work items in\na project."
+        },
+        "approvals": {
+          "title": "Approvals",
+          "description": "Set workspace, project, and work item type approvals to\ndesignated admins."
+        },
+        "admin_interface": {
+          "title": "Admin Interface",
+          "description": "Get an admin overview to manage workspace and\nproject settings."
+        },
+        "workspace_activity_logs": {
+          "title": "Workspace Activity Logs",
+          "description": "See filterable activity logs for your entire\nworkspace."
+        },
+        "api_enabled_audit_logs": {
+          "title": "API-enabled Audit Logs",
+          "description": "See a full-workspace audit log and use APIs to flag\nPlane activity in compliance systems."
+        },
+        "automations_and_workflows": {
+          "title": "Automations and workflows"
+        },
+        "trigger_and_action": {
+          "title": "Trigger And Action",
+          "description": "Choose a trigger and a corresponding action per\nautomation flow."
+        },
+        "decisions_and_loops_automation": {
+          "title": "Decisions And Loops Automation",
+          "description": "Use actions as triggers indefinitely in an\nautomation flow."
+        },
+        "number_of_automations": {
+          "title": "Number of automations",
+          "description": "Total number of automation flows in your\nworkspace"
+        },
+        "knowledge_management": {
+          "title": "Knowledge management"
+        },
+        "pages": {
+          "title": "Pages",
+          "description": "Build knowledge bases for your teams which are\naccessible & shareable."
+        },
+        "real_time_collab": {
+          "title": "Real-time Collab",
+          "description": "Edit a page together with members in your project,\nteam, or workspace."
+        },
+        "work_item_embeds": {
+          "title": "Work item Embeds",
+          "description": "Embed work items from any project you are a member\nof."
+        },
+        "link_to_work_items": {
+          "title": "Link-to-work items",
+          "description": "Link pages in work items in a separate section in work item\ndetails."
+        },
+        "publish": {
+          "title": "Publish",
+          "description": "Put your pages on the web for external users and let\nthem comment without signing into your workspace."
+        },
+        "wiki": {
+          "title": "Wiki",
+          "description": "Create company-wide wikis or knowledge bases\nwithout creating a project."
+        },
+        "exports": {
+          "title": "Exports",
+          "description": "Export page content into PDFs or Word-compatible\ndocs."
+        },
+        "templates": {
+          "title": "Templates",
+          "description": "Use pages as templates for your project, team, or\nworkspace."
+        },
+        "versions": {
+          "title": "Versions",
+          "description": "See restorable version of edits to your pages."
+        },
+        "databases_formulas": {
+          "title": "Databases + Formulas",
+          "description": "Put databases and formulas into a page without\nworrying about losing text, images, or other content\ntypes."
+        },
+        "nested_pages": {
+          "title": "Nested Pages",
+          "description": "Pages inside a page, organize your pages\nas you see fit for the progressive\ndisclosure."
+        },
+        "importers": {
+          "title": "Importers"
+        },
+        "jira": {
+          "title": "Jira",
+          "description": "Import your work items and members from Jira."
+        },
+        "github": {
+          "title": "GitHub",
+          "description": "Import your work items and members from GitHub."
+        },
+        "integrations": {
+          "title": "Integrations"
+        },
+        "github_2": {
+          "description": "Sync Plane work items and states to GitHub work items and\nstates. Update GitHub automatically with activity\nfrom Plane and vice-versa."
+        },
+        "slack": {
+          "title": "Slack",
+          "description": "Get Plane activity in Slack and use / commands in\nSlack to make changes in Plane."
+        },
+        "zapier": {
+          "title": "Zapier",
+          "description": "Run if-then-else automations using Zapier."
+        },
+        "zendesk": {
+          "title": "Zendesk",
+          "description": "Create Plane work items from Zendesk tickets."
+        },
+        "freshdesk": {
+          "title": "Freshdesk",
+          "description": "Create Plane work items from Freshdesk tickets."
+        },
+        "storage": {
+          "title": "Storage"
+        },
+        "space": {
+          "title": "Space",
+          "description": "Total storage allowed per workspace"
+        },
+        "max_file_size": {
+          "title": "Max file size",
+          "description": "Limit for uploads to your workspace"
+        },
+        "security": {
+          "title": "Security"
+        },
+        "saml": {
+          "title": "SAML",
+          "description": "Get the officially supported SAML implementation\nand make Plane secure with any IdP."
+        },
+        "oidc": {
+          "title": "OIDC",
+          "description": "Get the officially supported OIDC implementation\nand make Plane secure with any IdP."
+        },
+        "domain_security": {
+          "title": "Domain Security",
+          "description": "Choose other domains that can authenticate into\nyour Plane workspace or restrict all but one domain."
+        },
+        "two_factor_authentication_and_passkeys": {
+          "title": "Two-factor authentication and passkeys",
+          "description": "Secure your Plane workspace with device-\ndependent two-factor authentication and passkeys. "
+        },
+        "password_policy": {
+          "title": "Password Policy",
+          "description": "Set custom password policies in line with your\ncompliance requirements."
+        },
+        "ldap": {
+          "title": "LDAP",
+          "description": "Get our official LDAP implementation and secure\nyour Plane workspace with your LDAP server."
+        },
+        "self_hosted": {
+          "title": "Self-hosted"
+        },
+        "god_mode": {
+          "title": "God Mode",
+          "description": "Manage your self-hosted Plane instance better with\nan instance admin interface."
+        },
+        "one_click_deployment": {
+          "title": "One-click Deployment",
+          "description": "Install and deploy your self-hosted Plane to any\nprivate cloud with a single-line command."
+        },
+        "digital_ocean_marketplace_app": {
+          "title": "Digital Ocean Marketplace app",
+          "description": "Get our Digital Ocean-compatible app on their\nmarketplace."
+        },
+        "heroku_platform_app": {
+          "title": "Heroku Platform app",
+          "description": "Get our Heroku Platform-compatible app and deploy\nto Heroku easily."
+        },
+        "aws_ami": {
+          "title": "AWS AMI",
+          "description": "Get our AMI-compatible app from the AWS\nmarketplace."
+        },
+        "private_deployments": {
+          "title": "Private deployments",
+          "description": "Get our hosted Cloud app on a private Cloud\nmanaged by us."
+        },
+        "support": {
+          "title": "Support"
+        },
+        "channels": {
+          "title": "Channels",
+          "description": "Get access to one or more Support channels\nby your plan."
+        },
+        "sla": {
+          "title": "SLA"
+        }
+      },
+      "coming_soon": "COMING SOON",
+      "work_item_transfers_conversions": "Work item transfers and conversions",
+      "values": {
+        "basic": "Basic",
+        "advanced": "Advanced",
+        "unlimited": "Unlimited",
+        "custom": "Custom",
+        "limited_props": "Limited props",
+        "all_props": "All props",
+        "with_custom_props": "With custom props",
+        "without_custom_props": "Without custom props",
+        "historical_timesheets": "Historical timesheets",
+        "linear": "Linear",
+        "round_robin_capacity": "Round-robin and Capacity",
+        "pre_defined_roles": "Pre-defined roles",
+        "queued_downloads": "Queued downloads"
+      },
+      "highlights_label": "Highlights",
+      "compare_all_features": "Compare all features",
+      "collapse_comparison": "Collapse comparison",
+      "quote_on_request": "Quote on request",
+      "popular": "Popular",
+      "your_plan": "Your plan",
+      "talk_to_sales": "Talk to Sales",
+      "community": "Community",
+      "see_full_features_list": "See full features list",
+      "upgrade_cta": "Upgrade to a paid plan and unlock missing features.",
+      "per_user_per_month": "per user per month",
+      "redirecting_to_stripe": "Redirecting to Stripe",
+      "per_workspace": "per workspace",
+      "billed_monthly": "billed monthly",
+      "billed_yearly": "billed yearly",
+      "upgrade": "Upgrade",
+      "highlights": {
+        "free_1": "Upto 12 users",
+        "free_2": "Pages",
+        "free_3": "Unlimited projects",
+        "free_4": "Unlimited cycles and modules",
+        "one_1": "Upto 50 users",
+        "one_2": "OIDC and SAML",
+        "one_3": "Active cycles",
+        "one_4": "Limited time tracking",
+        "pro_1": "Unlimited users",
+        "pro_2": "Custom work items + Properties",
+        "pro_3": "Work item templates",
+        "pro_4": "Full Time Tracking",
+        "business_1": "RBAC",
+        "business_2": "Project Templates",
+        "business_3": "Baselines And Deviations",
+        "business_4": "Custom Reports",
+        "enterprise_1": "Private + managed deployments",
+        "enterprise_2": "GAC",
+        "enterprise_3": "LDAP support",
+        "enterprise_4": "Databases + Formulas"
+      },
+      "a_user_per_month": "a user per month",
+      "upgrade_to_one": "Upgrade to One",
+      "free_price": "$0 per user per month"
     }
   }
 }

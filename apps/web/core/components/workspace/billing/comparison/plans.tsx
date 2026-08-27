@@ -5,6 +5,7 @@
  */
 
 import { Mail, MessageCircle, MessageSquare } from "lucide-react";
+import { useTranslation } from "@plane/i18n";
 import { EProductSubscriptionEnum } from "@plane/types";
 // plane imports
 import { cn } from "@plane/utils";
@@ -50,11 +51,19 @@ type PlanePlans = {
   planComparison: TPlansComparisonDetails[];
 };
 
+/** Rótulo traduzido — os campos abaixo são ReactNode, então a tradução só acontece no render. */
+function T({ k }: { k: string }) {
+  const { t } = useTranslation();
+  return <>{t(k)}</>;
+}
+
 function ForumIcon({ className }: { className?: string }) {
   return <MessageSquare className={cn(className, "size-5 text-secondary")} />;
 }
 
 export function ComingSoonBadge({ className }: { className?: string }) {
+  const { t } = useTranslation();
+
   return (
     <span
       className={cn(
@@ -62,7 +71,7 @@ export function ComingSoonBadge({ className }: { className?: string }) {
         className
       )}
     >
-      COMING SOON
+      {t("billing.plans.coming_soon")}
     </span>
   );
 }
@@ -72,11 +81,11 @@ export const PLANS_LIST: TPlanePlans[] = ["free", "one", "pro", "business", "ent
 export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   {
     id: "project-work-tracking",
-    title: "Project + work tracking",
+    title: <T k="billing.plans.f.project_work_tracking.title" />,
     features: [
       {
-        title: "Projects",
-        description: "Add projects to house work items, cycles, and modules.",
+        title: <T k="billing.plans.f.projects.title" />,
+        description: <T k="billing.plans.f.projects.description" />,
         cloud: {
           free: true,
           one: true,
@@ -86,8 +95,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Work items",
-        description: "Add work via work items, set properties for tracking, and add to\ncycles or modules.",
+        title: <T k="billing.plans.f.work_items.title" />,
+        description: <T k="billing.plans.f.work_items.description" />,
         cloud: {
           free: true,
           one: true,
@@ -97,8 +106,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Comments",
-        description: "Respond to work items, @mention members, and brainstorm\ntogether without leaving Plane.",
+        title: <T k="billing.plans.f.comments.title" />,
+        description: <T k="billing.plans.f.comments.description" />,
         cloud: {
           free: true,
           one: true,
@@ -108,8 +117,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Cycles",
-        description: "Track work in timeboxes with differing frequency.",
+        title: <T k="billing.plans.f.cycles.title" />,
+        description: <T k="billing.plans.f.cycles.description" />,
         cloud: {
           free: true,
           one: true,
@@ -119,8 +128,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Modules",
-        description: "Group replicable work in modules with their own\nleads.",
+        title: <T k="billing.plans.f.modules.title" />,
+        description: <T k="billing.plans.f.modules.description" />,
         cloud: {
           free: true,
           one: true,
@@ -130,9 +139,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Intake",
-        description:
-          "See suggestions and feedback from viewers and\nguests before you decide to add them to your\nproject.",
+        title: <T k="billing.plans.f.intake.title" />,
+        description: <T k="billing.plans.f.intake.description" />,
         cloud: {
           free: true,
           one: true,
@@ -142,57 +150,57 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Estimates",
-        description: "Measure effort in points in a system that works for\nyou.",
+        title: <T k="billing.plans.f.estimates.title" />,
+        description: <T k="billing.plans.f.estimates.description" />,
         cloud: {
-          free: "Basic",
-          one: "Basic",
-          pro: "Advanced",
-          business: "Advanced",
-          enterprise: "Advanced",
+          free: <T k="billing.plans.values.basic" />,
+          one: <T k="billing.plans.values.basic" />,
+          pro: <T k="billing.plans.values.advanced" />,
+          business: <T k="billing.plans.values.advanced" />,
+          enterprise: <T k="billing.plans.values.advanced" />,
         },
       },
     ],
   },
   {
     id: "project-work-management",
-    title: "Project + work management",
+    title: <T k="billing.plans.f.project_work_management.title" />,
     features: [
       {
-        title: "Bulk Ops",
-        description: "Add several work items to cycles or modules, transfer\nthem, or edit their properties.",
+        title: <T k="billing.plans.f.bulk_ops.title" />,
+        description: <T k="billing.plans.f.bulk_ops.description" />,
         cloud: {
           free: false,
-          one: "Limited props",
-          pro: "All props",
+          one: <T k="billing.plans.values.limited_props" />,
+          pro: <T k="billing.plans.values.all_props" />,
           business: (
             <span className="flex flex-col items-end gap-1 lg:items-center">
               <ComingSoonBadge />
-              Work item transfers and conversions
+              <T k="billing.plans.work_item_transfers_conversions" />
             </span>
           ),
           enterprise: (
             <span className="flex flex-col items-end gap-1 lg:items-center">
               <ComingSoonBadge />
-              Work item transfers and conversions
+              <T k="billing.plans.work_item_transfers_conversions" />
             </span>
           ),
         },
       },
       {
-        title: "Time Tracking + Worklogs",
-        description: "Track time per work item, see aggregated reports, and\nfilter by need.",
+        title: <T k="billing.plans.f.time_tracking_worklogs.title" />,
+        description: <T k="billing.plans.f.time_tracking_worklogs.description" />,
         cloud: {
           free: false,
-          one: "Basic",
-          pro: "Historical timesheets",
+          one: <T k="billing.plans.values.basic" />,
+          pro: <T k="billing.plans.values.historical_timesheets" />,
           business: "Historical timesheets\nand approvals",
           enterprise: "Historical timesheets\nand approvals",
         },
       },
       {
-        title: "Active Cycles",
-        description: "See all running cycles across all projects, or soon, in\na single project.",
+        title: <T k="billing.plans.f.active_cycles.title" />,
+        description: <T k="billing.plans.f.active_cycles.description" />,
         cloud: {
           free: false,
           one: true,
@@ -202,8 +210,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Work item Types",
-        description: "Create your own work item types with your own\nproperties.",
+        title: <T k="billing.plans.f.work_item_types.title" />,
+        description: <T k="billing.plans.f.work_item_types.description" />,
         cloud: {
           free: false,
           one: false,
@@ -213,8 +221,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Custom Properties",
-        description: "Create your own properties and apply them to your\nworkspace or project.",
+        title: <T k="billing.plans.f.custom_properties.title" />,
+        description: <T k="billing.plans.f.custom_properties.description" />,
         cloud: {
           free: false,
           one: false,
@@ -224,8 +232,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Dependencies in Gantt",
-        description: "Adjust timelines for dependent work items visually on\nour Gantt layout.",
+        title: <T k="billing.plans.f.dependencies_in_gantt.title" />,
+        description: <T k="billing.plans.f.dependencies_in_gantt.description" />,
         cloud: {
           free: false,
           one: false,
@@ -235,8 +243,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Work item Transfers",
-        description: "Move a work item from a project or a cycle to\nanother.",
+        title: <T k="billing.plans.f.work_item_transfers.title" />,
+        description: <T k="billing.plans.f.work_item_transfers.description" />,
         cloud: {
           free: false,
           one: false,
@@ -246,9 +254,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Auto-transfer Cycle Work items",
-        description:
-          "Transfer incomplete work items from a completed cycle\nto the next cycle or to the default project state. ",
+        title: <T k="billing.plans.f.auto_transfer_cycle_work_items.title" />,
+        description: <T k="billing.plans.f.auto_transfer_cycle_work_items.description" />,
         cloud: {
           free: false,
           one: false,
@@ -258,8 +265,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Epics",
-        description: "Organize long-term work in epics that house work items,\ncycles, and modules.",
+        title: <T k="billing.plans.f.epics.title" />,
+        description: <T k="billing.plans.f.epics.description" />,
         cloud: {
           free: false,
           one: false,
@@ -269,8 +276,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Initiatives",
-        description: "Create initiatives to roll up several epics.",
+        title: <T k="billing.plans.f.initiatives.title" />,
+        description: <T k="billing.plans.f.initiatives.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -281,9 +288,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Checkpoints",
-        description:
-          "Add markers to Projects, Epics and Initiatives to keep your\nteam on track and report on progress.",
+        title: <T k="billing.plans.f.checkpoints.title" />,
+        description: <T k="billing.plans.f.checkpoints.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -294,8 +300,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Module Overview",
-        description: "Like Cycle Overviews, see relevant details and\nprogress charts for each module.",
+        title: <T k="billing.plans.f.module_overview.title" />,
+        description: <T k="billing.plans.f.module_overview.description" />,
         cloud: {
           free: false,
           one: false,
@@ -305,14 +311,14 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Auto-assignment In Modules",
-        description: "Choose assignment rules for work items in a\nmodule including Linear, Round Robin, or Capacity.",
+        title: <T k="billing.plans.f.auto_assignment_in_modules.title" />,
+        description: <T k="billing.plans.f.auto_assignment_in_modules.description" />,
         cloud: {
           free: false,
           one: false,
-          pro: "Linear",
-          business: "Round-robin and Capacity",
-          enterprise: "Round-robin and Capacity",
+          pro: <T k="billing.plans.values.linear" />,
+          business: <T k="billing.plans.values.round_robin_capacity" />,
+          enterprise: <T k="billing.plans.values.round_robin_capacity" />,
         },
       },
       // {
@@ -328,9 +334,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       //   },
       // },
       {
-        title: "Public, Private, and Secret projects",
-        description:
-          "Public projects are visible and accessible to\neveryone. Private ones are visible but need approval\nto join. Secret projects aren't visible or accessible.",
+        title: <T k="billing.plans.f.public_private_and_secret_projects.title" />,
+        description: <T k="billing.plans.f.public_private_and_secret_projects.description" />,
         cloud: {
           free: false,
           one: false,
@@ -340,9 +345,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "State Of Projects",
-        description:
-          "See all projects laid across states that highlight\nthose that need attention and those on track.",
+        title: <T k="billing.plans.f.state_of_projects.title" />,
+        description: <T k="billing.plans.f.state_of_projects.description" />,
         cloud: {
           free: false,
           one: false,
@@ -365,9 +369,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       //   },
       // },
       {
-        title: "Pre-defined work item Templates",
-        description:
-          "Choose from our available work item templates that\ncustomize work item types and properties for several\nuse cases.",
+        title: <T k="billing.plans.f.pre_defined_work_item_templates.title" />,
+        description: <T k="billing.plans.f.pre_defined_work_item_templates.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -378,8 +381,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Teamspace Cycles",
-        description: "See multiple cycles in multiple projects at once.",
+        title: <T k="billing.plans.f.teamspace_cycles.title" />,
+        description: <T k="billing.plans.f.teamspace_cycles.description" />,
         cloud: {
           free: false,
           one: false,
@@ -389,8 +392,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Project Templates",
-        description: "Save states, workflows, automation, and other project\nsettings into templates.",
+        title: <T k="billing.plans.f.project_templates.title" />,
+        description: <T k="billing.plans.f.project_templates.description" />,
         cloud: {
           free: false,
           one: false,
@@ -400,8 +403,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Baselines And Deviations",
-        description: "Declare baselines for how your projects progress\nand zoom in on deviations.",
+        title: <T k="billing.plans.f.baselines_and_deviations.title" />,
+        description: <T k="billing.plans.f.baselines_and_deviations.description" />,
         cloud: {
           free: false,
           one: false,
@@ -411,8 +414,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Scheduled Comms",
-        description: "Schedule reports, notifications, and messages to\nthird-party tools.",
+        title: <T k="billing.plans.f.scheduled_comms.title" />,
+        description: <T k="billing.plans.f.scheduled_comms.description" />,
         cloud: {
           free: false,
           one: false,
@@ -422,8 +425,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Intake Assignees",
-        description: "Assign approved Intake work items to a member by\ndefault.",
+        title: <T k="billing.plans.f.intake_assignees.title" />,
+        description: <T k="billing.plans.f.intake_assignees.description" />,
         cloud: {
           free: false,
           one: false,
@@ -433,8 +436,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Custom SLAs",
-        description: "Set SLA matrices for time-sensitive work items.",
+        title: <T k="billing.plans.f.custom_slas.title" />,
+        description: <T k="billing.plans.f.custom_slas.description" />,
         cloud: {
           free: false,
           one: false,
@@ -444,8 +447,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Intake Forms",
-        description: "Take Intake work items from externally accessible web\nforms.",
+        title: <T k="billing.plans.f.intake_forms.title" />,
+        description: <T k="billing.plans.f.intake_forms.description" />,
         cloud: {
           free: false,
           one: false,
@@ -455,8 +458,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Emails For Intake",
-        description: "Get an email address for reporting work items\ndirectly into a project's Intake.",
+        title: <T k="billing.plans.f.emails_for_intake.title" />,
+        description: <T k="billing.plans.f.emails_for_intake.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -470,12 +473,11 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "visualization",
-    title: "Visualization",
+    title: <T k="billing.plans.f.visualization.title" />,
     features: [
       {
-        title: "Layouts",
-        description:
-          "Choose from the List, the Board, the Calendar, the\nGantt, or the Spreadsheet layout for your work items.",
+        title: <T k="billing.plans.f.layouts.title" />,
+        description: <T k="billing.plans.f.layouts.description" />,
         cloud: {
           free: true,
           one: true,
@@ -485,8 +487,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Views",
-        description: "Save sort, filter, and display options on a layout to a\nview.",
+        title: <T k="billing.plans.f.views.title" />,
+        description: <T k="billing.plans.f.views.description" />,
         cloud: {
           free: true,
           one: true,
@@ -496,8 +498,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Shared Views",
-        description: "Choose a few members to share a view with.",
+        title: <T k="billing.plans.f.shared_views.title" />,
+        description: <T k="billing.plans.f.shared_views.description" />,
         cloud: {
           free: false,
           one: false,
@@ -507,8 +509,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Publish Views",
-        description: "Put a view on the Internet and let your customers\ninteract with them.",
+        title: <T k="billing.plans.f.publish_views.title" />,
+        description: <T k="billing.plans.f.publish_views.description" />,
         cloud: {
           free: false,
           one: false,
@@ -518,8 +520,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Dashboards and Widgets",
-        description: "Create your own dashboards with custom widgets\nand data types.",
+        title: <T k="billing.plans.f.dashboards_and_widgets.title" />,
+        description: <T k="billing.plans.f.dashboards_and_widgets.description" />,
         cloud: {
           free: false,
           one: false,
@@ -532,12 +534,11 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "analytics-reports",
-    title: "Analytics + reports",
+    title: <T k="billing.plans.f.analytics_reports.title" />,
     features: [
       {
-        title: "Progress Charts",
-        description:
-          "Track progress in cycles, modules, and overviews\nthroughout Plane without switching to dashboards\nor Analytics.",
+        title: <T k="billing.plans.f.progress_charts.title" />,
+        description: <T k="billing.plans.f.progress_charts.description" />,
         cloud: {
           free: false,
           one: false,
@@ -547,8 +548,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Cycle Reports",
-        description: "Get on-demand cycle reports during and after a\ncycle. Revisit reports anytime from permalinks.",
+        title: <T k="billing.plans.f.cycle_reports.title" />,
+        description: <T k="billing.plans.f.cycle_reports.description" />,
         cloud: {
           free: false,
           one: false,
@@ -558,8 +559,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Insights",
-        description: "Hindsight, On-demand insights, Foresights.",
+        title: <T k="billing.plans.f.insights.title" />,
+        description: <T k="billing.plans.f.insights.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -582,8 +583,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       //   },
       // },
       {
-        title: "Advanced Pages Analytics",
-        description: "See who's viewing, sharing, and commenting on\nyour pages along with other useful info.",
+        title: <T k="billing.plans.f.advanced_pages_analytics.title" />,
+        description: <T k="billing.plans.f.advanced_pages_analytics.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -594,8 +595,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Custom Reports",
-        description: "Generate reports by any dimension and metric\nacross your project or workspace.",
+        title: <T k="billing.plans.f.custom_reports.title" />,
+        description: <T k="billing.plans.f.custom_reports.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -609,11 +610,11 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "navigation",
-    title: "Navigation",
+    title: <T k="billing.plans.f.navigation.title" />,
     features: [
       {
-        title: "Power K",
-        description: "Access a keyboard-first gateway to almost anything\nin Plane.",
+        title: <T k="billing.plans.f.power_k.title" />,
+        description: <T k="billing.plans.f.power_k.description" />,
         cloud: {
           free: true,
           one: true,
@@ -631,7 +632,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       //     pro: (
       //       <span className="flex flex-col items-end lg:items-center gap-1">
       //         <span className="bg-[#3f76ff] text-on-color font-semibold text-9 p-0.5 w-fit whitespace-nowrap rounded-xs">
-      //           COMING SOON
+      //           {t("billing.plans.coming_soon")}
       //         </span>
       //         Operator capsules from text or PQL
       //       </span>
@@ -639,7 +640,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       //     business: (
       //       <span className="flex flex-col items-end lg:items-center gap-1">
       //         <span className="bg-[#3f76ff] text-on-color font-semibold text-9 p-0.5 w-fit whitespace-nowrap rounded-xs">
-      //           COMING SOON
+      //           {t("billing.plans.coming_soon")}
       //         </span>
       //         Operator capsules from text or PQL
       //       </span>
@@ -647,7 +648,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       //     enterprise: (
       //       <span className="flex flex-col items-end lg:items-center gap-1">
       //         <span className="bg-[#3f76ff] text-on-color font-semibold text-9 p-0.5 w-fit whitespace-nowrap rounded-xs">
-      //           COMING SOON
+      //           {t("billing.plans.coming_soon")}
       //         </span>
       //         Operator capsules from text or PQL
       //       </span>
@@ -655,9 +656,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       //   },
       // },
       {
-        title: "PQL",
-        description:
-          "Write Plane Query Language in search with support\nfor Boolean operators. Soon, you can write natural\nlanguage queries.",
+        title: <T k="billing.plans.f.pql.title" />,
+        description: <T k="billing.plans.f.pql.description" />,
         cloud: {
           free: false,
           one: false,
@@ -670,41 +670,41 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "workspace-user-management",
-    title: "Workspace and user management",
+    title: <T k="billing.plans.f.workspace_and_user_management.title" />,
     features: [
       {
-        title: "Member limit",
-        description: "Number of seats that can use project and work management features",
-        selfHostedDescription: "Number of users that our standard infra supports\nIncrease infra to get more users",
+        title: <T k="billing.plans.f.member_limit.title" />,
+        description: <T k="billing.plans.f.member_limit.description" />,
+        selfHostedDescription: <T k="billing.plans.f.member_limit.self_hosted_description" />,
         cloud: {
           free: "12",
           one: "",
-          pro: "Unlimited",
-          business: "Unlimited",
-          enterprise: "Unlimited",
+          pro: <T k="billing.plans.values.unlimited" />,
+          business: <T k="billing.plans.values.unlimited" />,
+          enterprise: <T k="billing.plans.values.unlimited" />,
         },
         "self-hosted": {
           free: "~50",
           one: "~50",
           pro: "~200",
           business: "~200",
-          enterprise: "Unlimited",
+          enterprise: <T k="billing.plans.values.unlimited" />,
         },
       },
       {
-        title: "Roles",
-        description: "Choose from one of four pre-defined roles or create\ncustom ones with RBAC.",
+        title: <T k="billing.plans.f.roles.title" />,
+        description: <T k="billing.plans.f.roles.description" />,
         cloud: {
-          free: "Basic",
-          one: "Basic",
-          pro: "Pre-defined roles",
+          free: <T k="billing.plans.values.basic" />,
+          one: <T k="billing.plans.values.basic" />,
+          pro: <T k="billing.plans.values.pre_defined_roles" />,
           business: "RBAC",
           enterprise: "GAC",
         },
       },
       {
-        title: "Guests",
-        description: "Let some users see everything or just their work items in\na project.",
+        title: <T k="billing.plans.f.guests.title" />,
+        description: <T k="billing.plans.f.guests.description" />,
         cloud: {
           free: false,
           one: "5 per paid member",
@@ -714,8 +714,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Approvals",
-        description: "Set workspace, project, and work item type approvals to\ndesignated admins.",
+        title: <T k="billing.plans.f.approvals.title" />,
+        description: <T k="billing.plans.f.approvals.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -726,8 +726,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Admin Interface",
-        description: "Get an admin overview to manage workspace and\nproject settings.",
+        title: <T k="billing.plans.f.admin_interface.title" />,
+        description: <T k="billing.plans.f.admin_interface.description" />,
         cloud: {
           free: false,
           one: false,
@@ -737,8 +737,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Workspace Activity Logs",
-        description: "See filterable activity logs for your entire\nworkspace.",
+        title: <T k="billing.plans.f.workspace_activity_logs.title" />,
+        description: <T k="billing.plans.f.workspace_activity_logs.description" />,
         cloud: {
           free: false,
           one: false,
@@ -748,8 +748,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "API-enabled Audit Logs",
-        description: "See a full-workspace audit log and use APIs to flag\nPlane activity in compliance systems.",
+        title: <T k="billing.plans.f.api_enabled_audit_logs.title" />,
+        description: <T k="billing.plans.f.api_enabled_audit_logs.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -763,11 +763,11 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "automations-workflows",
-    title: "Automations and workflows",
+    title: <T k="billing.plans.f.automations_and_workflows.title" />,
     features: [
       {
-        title: "Trigger And Action",
-        description: "Choose a trigger and a corresponding action per\nautomation flow.",
+        title: <T k="billing.plans.f.trigger_and_action.title" />,
+        description: <T k="billing.plans.f.trigger_and_action.description" />,
         cloud: {
           free: false,
           one: false,
@@ -777,8 +777,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Decisions And Loops Automation",
-        description: "Use actions as triggers indefinitely in an\nautomation flow.",
+        title: <T k="billing.plans.f.decisions_and_loops_automation.title" />,
+        description: <T k="billing.plans.f.decisions_and_loops_automation.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -789,25 +789,25 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Number of automations",
-        description: "Total number of automation flows in your\nworkspace",
+        title: <T k="billing.plans.f.number_of_automations.title" />,
+        description: <T k="billing.plans.f.number_of_automations.description" />,
         cloud: {
           free: false,
           one: false,
           pro: "5,000",
           business: "10,000",
-          enterprise: "Unlimited",
+          enterprise: <T k="billing.plans.values.unlimited" />,
         },
       },
     ],
   },
   {
     id: "knowledge-management",
-    title: "Knowledge management",
+    title: <T k="billing.plans.f.knowledge_management.title" />,
     features: [
       {
-        title: "Pages",
-        description: "Build knowledge bases for your teams which are\naccessible & shareable.",
+        title: <T k="billing.plans.f.pages.title" />,
+        description: <T k="billing.plans.f.pages.description" />,
         cloud: {
           free: true,
           one: true,
@@ -817,8 +817,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Real-time Collab",
-        description: "Edit a page together with members in your project,\nteam, or workspace.",
+        title: <T k="billing.plans.f.real_time_collab.title" />,
+        description: <T k="billing.plans.f.real_time_collab.description" />,
         cloud: {
           free: false,
           one: true,
@@ -828,8 +828,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Work item Embeds",
-        description: "Embed work items from any project you are a member\nof.",
+        title: <T k="billing.plans.f.work_item_embeds.title" />,
+        description: <T k="billing.plans.f.work_item_embeds.description" />,
         cloud: {
           free: false,
           one: true,
@@ -839,8 +839,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Link-to-work items",
-        description: "Link pages in work items in a separate section in work item\ndetails.",
+        title: <T k="billing.plans.f.link_to_work_items.title" />,
+        description: <T k="billing.plans.f.link_to_work_items.description" />,
         cloud: {
           free: false,
           one: true,
@@ -850,9 +850,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Publish",
-        description:
-          "Put your pages on the web for external users and let\nthem comment without signing into your workspace.",
+        title: <T k="billing.plans.f.publish.title" />,
+        description: <T k="billing.plans.f.publish.description" />,
         cloud: {
           free: false,
           one: true,
@@ -862,8 +861,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Wiki",
-        description: "Create company-wide wikis or knowledge bases\nwithout creating a project.",
+        title: <T k="billing.plans.f.wiki.title" />,
+        description: <T k="billing.plans.f.wiki.description" />,
         cloud: {
           free: false,
           one: true,
@@ -873,19 +872,19 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Exports",
-        description: "Export page content into PDFs or Word-compatible\ndocs.",
+        title: <T k="billing.plans.f.exports.title" />,
+        description: <T k="billing.plans.f.exports.description" />,
         cloud: {
           free: false,
           one: false,
           pro: "One download\nat a time",
-          business: "Queued downloads",
-          enterprise: "Queued downloads",
+          business: <T k="billing.plans.values.queued_downloads" />,
+          enterprise: <T k="billing.plans.values.queued_downloads" />,
         },
       },
       {
-        title: "Templates",
-        description: "Use pages as templates for your project, team, or\nworkspace.",
+        title: <T k="billing.plans.f.templates.title" />,
+        description: <T k="billing.plans.f.templates.description" />,
         cloud: {
           free: false,
           one: false,
@@ -895,20 +894,19 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Versions",
-        description: "See restorable version of edits to your pages.",
+        title: <T k="billing.plans.f.versions.title" />,
+        description: <T k="billing.plans.f.versions.description" />,
         cloud: {
           free: false,
           one: false,
           pro: "2 days",
           business: "3 months",
-          enterprise: "Unlimited",
+          enterprise: <T k="billing.plans.values.unlimited" />,
         },
       },
       {
-        title: "Databases + Formulas",
-        description:
-          "Put databases and formulas into a page without\nworrying about losing text, images, or other content\ntypes.",
+        title: <T k="billing.plans.f.databases_formulas.title" />,
+        description: <T k="billing.plans.f.databases_formulas.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -919,8 +917,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Nested Pages",
-        description: "Pages inside a page, organize your pages\nas you see fit for the progressive\ndisclosure.",
+        title: <T k="billing.plans.f.nested_pages.title" />,
+        description: <T k="billing.plans.f.nested_pages.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -934,41 +932,40 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "importers",
-    title: "Importers",
+    title: <T k="billing.plans.f.importers.title" />,
     features: [
       {
-        title: "Jira",
-        description: "Import your work items and members from Jira.",
+        title: <T k="billing.plans.f.jira.title" />,
+        description: <T k="billing.plans.f.jira.description" />,
         cloud: {
-          free: "Without custom props",
-          one: "Without custom props",
-          pro: "With custom props",
-          business: "With custom props",
-          enterprise: "With custom props",
+          free: <T k="billing.plans.values.without_custom_props" />,
+          one: <T k="billing.plans.values.without_custom_props" />,
+          pro: <T k="billing.plans.values.with_custom_props" />,
+          business: <T k="billing.plans.values.with_custom_props" />,
+          enterprise: <T k="billing.plans.values.with_custom_props" />,
         },
       },
       {
-        title: "GitHub",
-        description: "Import your work items and members from GitHub.",
+        title: <T k="billing.plans.f.github.title" />,
+        description: <T k="billing.plans.f.github.description" />,
         cloud: {
-          free: "Without custom props",
-          one: "Without custom props",
-          pro: "With custom props",
-          business: "With custom props",
-          enterprise: "With custom props",
+          free: <T k="billing.plans.values.without_custom_props" />,
+          one: <T k="billing.plans.values.without_custom_props" />,
+          pro: <T k="billing.plans.values.with_custom_props" />,
+          business: <T k="billing.plans.values.with_custom_props" />,
+          enterprise: <T k="billing.plans.values.with_custom_props" />,
         },
       },
     ],
   },
   {
     id: "integrations",
-    title: "Integrations",
+    title: <T k="billing.plans.f.integrations.title" />,
     comingSoon: true,
     features: [
       {
-        title: "GitHub",
-        description:
-          "Sync Plane work items and states to GitHub work items and\nstates. Update GitHub automatically with activity\nfrom Plane and vice-versa.",
+        title: <T k="billing.plans.f.github.title" />,
+        description: <T k="billing.plans.f.github_2.description" />,
         cloud: {
           free: false,
           one: false,
@@ -978,8 +975,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Slack",
-        description: "Get Plane activity in Slack and use / commands in\nSlack to make changes in Plane.",
+        title: <T k="billing.plans.f.slack.title" />,
+        description: <T k="billing.plans.f.slack.description" />,
         cloud: {
           free: false,
           one: false,
@@ -989,8 +986,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Zapier",
-        description: "Run if-then-else automations using Zapier.",
+        title: <T k="billing.plans.f.zapier.title" />,
+        description: <T k="billing.plans.f.zapier.description" />,
         cloud: {
           free: false,
           one: false,
@@ -1000,8 +997,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Zendesk",
-        description: "Create Plane work items from Zendesk tickets.",
+        title: <T k="billing.plans.f.zendesk.title" />,
+        description: <T k="billing.plans.f.zendesk.description" />,
         cloud: {
           free: false,
           one: false,
@@ -1011,8 +1008,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Freshdesk",
-        description: "Create Plane work items from Freshdesk tickets.",
+        title: <T k="billing.plans.f.freshdesk.title" />,
+        description: <T k="billing.plans.f.freshdesk.description" />,
         cloud: {
           free: false,
           one: false,
@@ -1025,40 +1022,40 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "storage",
-    title: "Storage",
+    title: <T k="billing.plans.f.storage.title" />,
     cloudOnly: true,
     features: [
       {
-        title: "Space",
-        description: "Total storage allowed per workspace",
+        title: <T k="billing.plans.f.space.title" />,
+        description: <T k="billing.plans.f.space.description" />,
         cloud: {
           free: "5GB",
           one: false,
           pro: "1 TB",
           business: "5 TB",
-          enterprise: "Custom",
+          enterprise: <T k="billing.plans.values.custom" />,
         },
       },
       {
-        title: "Max file size",
-        description: "Limit for uploads to your workspace",
+        title: <T k="billing.plans.f.max_file_size.title" />,
+        description: <T k="billing.plans.f.max_file_size.description" />,
         cloud: {
           free: "5 MB",
           one: false,
           pro: "100 MB",
           business: "200 MB",
-          enterprise: "Custom",
+          enterprise: <T k="billing.plans.values.custom" />,
         },
       },
     ],
   },
   {
     id: "security",
-    title: "Security",
+    title: <T k="billing.plans.f.security.title" />,
     features: [
       {
-        title: "SAML",
-        description: "Get the officially supported SAML implementation\nand make Plane secure with any IdP.",
+        title: <T k="billing.plans.f.saml.title" />,
+        description: <T k="billing.plans.f.saml.description" />,
         cloud: {
           free: false,
           one: true,
@@ -1068,8 +1065,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "OIDC",
-        description: "Get the officially supported OIDC implementation\nand make Plane secure with any IdP.",
+        title: <T k="billing.plans.f.oidc.title" />,
+        description: <T k="billing.plans.f.oidc.description" />,
         selfHostedOnly: true,
         cloud: {
           free: false,
@@ -1080,9 +1077,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Domain Security",
-        description:
-          "Choose other domains that can authenticate into\nyour Plane workspace or restrict all but one domain.",
+        title: <T k="billing.plans.f.domain_security.title" />,
+        description: <T k="billing.plans.f.domain_security.description" />,
         cloud: {
           free: false,
           one: false,
@@ -1092,8 +1088,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Two-factor authentication and passkeys",
-        description: "Secure your Plane workspace with device-\ndependent two-factor authentication and passkeys. ",
+        title: <T k="billing.plans.f.two_factor_authentication_and_passkeys.title" />,
+        description: <T k="billing.plans.f.two_factor_authentication_and_passkeys.description" />,
         cloud: {
           free: false,
           one: false,
@@ -1103,8 +1099,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Password Policy",
-        description: "Set custom password policies in line with your\ncompliance requirements.",
+        title: <T k="billing.plans.f.password_policy.title" />,
+        description: <T k="billing.plans.f.password_policy.description" />,
         cloud: {
           free: false,
           one: false,
@@ -1114,8 +1110,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "LDAP",
-        description: "Get our official LDAP implementation and secure\nyour Plane workspace with your LDAP server.",
+        title: <T k="billing.plans.f.ldap.title" />,
+        description: <T k="billing.plans.f.ldap.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -1129,12 +1125,12 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "self-hosted",
-    title: "Self-hosted",
+    title: <T k="billing.plans.f.self_hosted.title" />,
     selfHostedOnly: true,
     features: [
       {
-        title: "God Mode",
-        description: "Manage your self-hosted Plane instance better with\nan instance admin interface.",
+        title: <T k="billing.plans.f.god_mode.title" />,
+        description: <T k="billing.plans.f.god_mode.description" />,
         cloud: {
           free: true,
           one: true,
@@ -1144,8 +1140,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "One-click Deployment",
-        description: "Install and deploy your self-hosted Plane to any\nprivate cloud with a single-line command.",
+        title: <T k="billing.plans.f.one_click_deployment.title" />,
+        description: <T k="billing.plans.f.one_click_deployment.description" />,
         cloud: {
           free: false,
           one: true,
@@ -1155,8 +1151,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Digital Ocean Marketplace app",
-        description: "Get our Digital Ocean-compatible app on their\nmarketplace.",
+        title: <T k="billing.plans.f.digital_ocean_marketplace_app.title" />,
+        description: <T k="billing.plans.f.digital_ocean_marketplace_app.description" />,
         cloud: {
           free: false,
           one: true,
@@ -1166,8 +1162,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Heroku Platform app",
-        description: "Get our Heroku Platform-compatible app and deploy\nto Heroku easily.",
+        title: <T k="billing.plans.f.heroku_platform_app.title" />,
+        description: <T k="billing.plans.f.heroku_platform_app.description" />,
         cloud: {
           free: false,
           one: true,
@@ -1177,8 +1173,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "AWS AMI",
-        description: "Get our AMI-compatible app from the AWS\nmarketplace.",
+        title: <T k="billing.plans.f.aws_ami.title" />,
+        description: <T k="billing.plans.f.aws_ami.description" />,
         cloud: {
           free: false,
           one: true,
@@ -1188,8 +1184,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Private deployments",
-        description: "Get our hosted Cloud app on a private Cloud\nmanaged by us.",
+        title: <T k="billing.plans.f.private_deployments.title" />,
+        description: <T k="billing.plans.f.private_deployments.description" />,
         comingSoon: true,
         cloud: {
           free: false,
@@ -1203,11 +1199,11 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
   },
   {
     id: "support",
-    title: "Support",
+    title: <T k="billing.plans.f.support.title" />,
     features: [
       {
-        title: "Channels",
-        description: "Get access to one or more Support channels\nby your plan.",
+        title: <T k="billing.plans.f.channels.title" />,
+        description: <T k="billing.plans.f.channels.description" />,
         cloud: {
           free: (
             <>
@@ -1232,7 +1228,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "SLA",
+        title: <T k="billing.plans.f.sla.title" />,
         description: (
           <>
             Get business-friendly SLAs with higher plans. SLAs are by priority of work item and tiers{" "}
@@ -1268,9 +1264,9 @@ export const PLANE_PLANS: PlanePlans = {
       name: "One",
       monthlyPrice: 799,
       yearlyPrice: 799,
-      monthlyPriceSecondaryDescription: "per workspace",
-      yearlyPriceSecondaryDescription: "per workspace",
-      buttonCTA: "Upgrade",
+      monthlyPriceSecondaryDescription: <T k="billing.plans.per_workspace" />,
+      yearlyPriceSecondaryDescription: <T k="billing.plans.per_workspace" />,
+      buttonCTA: <T k="billing.plans.upgrade" />,
       isActive: false,
     },
     pro: {
@@ -1278,34 +1274,59 @@ export const PLANE_PLANS: PlanePlans = {
       name: "Pro",
       monthlyPrice: 8,
       yearlyPrice: 6,
-      monthlyPriceSecondaryDescription: "billed monthly",
-      yearlyPriceSecondaryDescription: "billed yearly",
-      buttonCTA: "Upgrade",
+      monthlyPriceSecondaryDescription: <T k="billing.plans.billed_monthly" />,
+      yearlyPriceSecondaryDescription: <T k="billing.plans.billed_yearly" />,
+      buttonCTA: <T k="billing.plans.upgrade" />,
       isActive: true,
     },
     business: {
       id: EProductSubscriptionEnum.BUSINESS,
       name: "Business",
-      monthlyPriceSecondaryDescription: "billed monthly",
-      yearlyPriceSecondaryDescription: "billed yearly",
-      buttonCTA: "Talk to Sales",
+      monthlyPriceSecondaryDescription: <T k="billing.plans.billed_monthly" />,
+      yearlyPriceSecondaryDescription: <T k="billing.plans.billed_yearly" />,
+      buttonCTA: <T k="billing.plans.talk_to_sales" />,
       isActive: false,
     },
     enterprise: {
       id: EProductSubscriptionEnum.ENTERPRISE,
       name: "Enterprise",
-      monthlyPriceSecondaryDescription: "billed monthly",
-      yearlyPriceSecondaryDescription: "billed yearly",
-      buttonCTA: "Talk to Sales",
+      monthlyPriceSecondaryDescription: <T k="billing.plans.billed_monthly" />,
+      yearlyPriceSecondaryDescription: <T k="billing.plans.billed_yearly" />,
+      buttonCTA: <T k="billing.plans.talk_to_sales" />,
       isActive: false,
     },
   },
   planHighlights: {
-    free: ["Upto 12 users", "Pages", "Unlimited projects", "Unlimited cycles and modules"],
-    one: ["Upto 50 users", "OIDC and SAML", "Active cycles", "Limited time tracking"],
-    pro: ["Unlimited users", "Custom work items + Properties", "Work item templates", "Full Time Tracking"],
-    business: ["RBAC", "Project Templates", "Baselines And Deviations", "Custom Reports"],
-    enterprise: ["Private + managed deployments", "GAC", "LDAP support", "Databases + Formulas"],
+    free: [
+      "billing.plans.highlights.free_1",
+      "billing.plans.highlights.free_2",
+      "billing.plans.highlights.free_3",
+      "billing.plans.highlights.free_4",
+    ],
+    one: [
+      "billing.plans.highlights.one_1",
+      "billing.plans.highlights.one_2",
+      "billing.plans.highlights.one_3",
+      "billing.plans.highlights.one_4",
+    ],
+    pro: [
+      "billing.plans.highlights.pro_1",
+      "billing.plans.highlights.pro_2",
+      "billing.plans.highlights.pro_3",
+      "billing.plans.highlights.pro_4",
+    ],
+    business: [
+      "billing.plans.highlights.business_1",
+      "billing.plans.highlights.business_2",
+      "billing.plans.highlights.business_3",
+      "billing.plans.highlights.business_4",
+    ],
+    enterprise: [
+      "billing.plans.highlights.enterprise_1",
+      "billing.plans.highlights.enterprise_2",
+      "billing.plans.highlights.enterprise_3",
+      "billing.plans.highlights.enterprise_4",
+    ],
   },
   planComparison: PLANS_COMPARISON_LIST,
 };
