@@ -37,11 +37,38 @@
         "states": {
           "sending": "Enviando…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Foto de perfil excluída com sucesso.",
+        "picture_delete_error": "Ocorreu um erro ao excluir sua foto de perfil. Tente novamente.",
+        "deactivated": "Conta desativada com sucesso."
+      },
+      "general_form": {
+        "first_name_placeholder": "Digite seu nome",
+        "last_name_placeholder": "Digite seu sobrenome",
+        "display_name_placeholder": "Digite seu nome de exibição"
       }
     },
     "preferences": {
       "heading": "Preferências",
-      "description": "Personalize sua experiência no aplicativo do jeito que você trabalha"
+      "description": "Personalize sua experiência no aplicativo do jeito que você trabalha",
+      "toasts": {
+        "timezone": {
+          "success": "Fuso horário atualizado com sucesso",
+          "error": "Falha ao atualizar o fuso horário"
+        },
+        "language": {
+          "success": "Idioma atualizado com sucesso",
+          "error": "Falha ao atualizar o idioma"
+        },
+        "start_of_week": {
+          "success": "Primeiro dia da semana atualizado com sucesso"
+        }
+      },
+      "start_of_week": {
+        "title": "Primeiro dia da semana",
+        "description": "Isso muda a aparência de todos os calendários do seu aplicativo."
+      }
     },
     "notifications": {
       "heading": "Notificações por e-mail",

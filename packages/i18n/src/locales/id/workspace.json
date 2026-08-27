@@ -373,6 +373,16 @@
           "message": "Terjadi kesalahan."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Ruang kerja berhasil diperbarui"
+        }
+      },
+      "logo_removed": {
+        "message": "Gambar ruang kerja berhasil dihapus."
+      }
     }
   }
 }

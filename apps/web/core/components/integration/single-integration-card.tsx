@@ -21,6 +21,7 @@ import GithubLogo from "@/app/assets/services/github.png?url";
 import SlackLogo from "@/app/assets/services/slack.png?url";
 // constants
 import { WORKSPACE_INTEGRATIONS } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { useInstance } from "@/hooks/store/use-instance";
 import { useUserPermissions } from "@/hooks/store/user";
@@ -51,6 +52,8 @@ const integrationService = new IntegrationService();
 
 export const SingleIntegrationCard = observer(function SingleIntegrationCard({ integration }: Props) {
   // states
+  const { t } = useTranslation();
+
   const [deletingIntegration, setDeletingIntegration] = useState(false);
   // router
   const { workspaceSlug } = useParams();
@@ -100,7 +103,7 @@ export const SingleIntegrationCard = observer(function SingleIntegrationCard({ i
 
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
+          title: t("common.toast.error"),
           message: `${integration.title} integration could not be deleted. Please try again.`,
         });
       });

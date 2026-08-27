@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {サイクル} other {サイクル}}",
-    "no_cycle": "サイクルなし"
+    "no_cycle": "サイクルなし",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "サイクルを作成しました。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "サイクルを削除しました。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "アーカイブはプロジェクトのアーカイブで確認できます。"
+        },
+        "error": {
+          "message": "サイクルをアーカイブできませんでした。もう一度お試しください。"
+        }
+      },
+      "date_conflict": {
+        "message": "指定された日付には既にサイクルがあります。下書きのサイクルを作成する場合は、日付を削除してください。"
+      },
+      "transfer": {
+        "success": {
+          "message": "作業項目を転送しました"
+        },
+        "error": {
+          "message": "作業項目を転送できませんでした。もう一度お試しください。"
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "作業項目をサイクルに追加しました。"
+        },
+        "error": {
+          "message": "選択した作業項目をサイクルに追加できませんでした。もう一度お試しください。"
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

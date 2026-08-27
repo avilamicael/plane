@@ -18,6 +18,7 @@ import { cn, renderFormattedPayloadDate } from "@plane/utils";
 import { highlightIssueOnDrop } from "@/components/issues/issue-layouts/utils";
 // helpers
 import { getLocalizedMonthsList } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 // helpers
 // types
 import type { ICycleIssuesFilter } from "@/store/issue/cycle";
@@ -54,6 +55,8 @@ type Props = {
 };
 
 export const CalendarDayTile = observer(function CalendarDayTile(props: Props) {
+  const { t } = useTranslation();
+
   const {
     issuesFilterStore,
     date,
@@ -112,8 +115,8 @@ export const CalendarDayTile = observer(function CalendarDayTile(props: Props) {
             if (diffInDays < 0) {
               setToast({
                 type: TOAST_TYPE.ERROR,
-                title: "Error!",
-                message: "Due date cannot be before the start date of the work item.",
+                title: t("common.toast.error"),
+                message: t("issue.toasts.due_date_before_start_date.message"),
               });
               return;
             }

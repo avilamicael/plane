@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Hata",
+          "message": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+        },
+        "template": {
+          "try_again": "{reason}. Lütfen tekrar deneyin.",
+          "contact_admin": "{reason}. Lütfen yöneticinizle iletişime geçin."
+        },
+        "reason": {
+          "instance_not_configured": "Örnek yapılandırılmamış",
+          "signup_disabled": "Kayıt devre dışı",
+          "invalid_password": "Geçersiz şifre",
+          "smtp_not_configured": "SMTP yapılandırılmamış",
+          "invalid_email": "Geçersiz e-posta",
+          "email_required": "E-posta gerekli",
+          "email_and_password_required": "E-posta ve şifre gerekli",
+          "email_and_code_required": "E-posta ve kod gerekli",
+          "authentication_failed": "Kimlik doğrulama başarısız",
+          "invalid_magic_code": "Geçersiz sihirli kod",
+          "expired_magic_code": "Sihirli kodun süresi doldu",
+          "oauth_not_configured": "OAuth yapılandırılmamış",
+          "google_not_configured": "Google yapılandırılmamış",
+          "github_not_configured": "GitHub yapılandırılmamış",
+          "gitlab_not_configured": "GitLab yapılandırılmamış",
+          "google_oauth_provider_error": "Google OAuth sağlayıcı hatası",
+          "github_oauth_provider_error": "GitHub OAuth sağlayıcı hatası",
+          "gitlab_oauth_provider_error": "GitLab OAuth sağlayıcı hatası",
+          "invalid_password_token": "Geçersiz şifre belirteci",
+          "expired_password_token": "Şifre belirtecinin süresi doldu",
+          "password_required": "Şifre gerekli",
+          "incorrect_old_password": "Eski şifre yanlış",
+          "invalid_new_password": "Geçersiz yeni şifre",
+          "password_already_set": "Şifre zaten belirlenmiş",
+          "admin_already_exist": "Yönetici zaten mevcut",
+          "admin_email_password_first_name_required": "E-posta, şifre ve ad gerekli",
+          "invalid_admin_email": "Geçersiz yönetici e-postası",
+          "invalid_admin_password": "Geçersiz yönetici şifresi"
+        },
+        "title": {
+          "user_already_exist": "Kullanıcı zaten mevcut",
+          "user_does_not_exist": "Kullanıcı mevcut değil",
+          "user_account_deactivated": "Kullanıcı hesabı devre dışı bırakıldı",
+          "bot_user_login_forbidden": "Girişe izin verilmiyor",
+          "admin_user_already_exist": "Yönetici kullanıcı zaten mevcut",
+          "admin_user_does_not_exist": "Yönetici kullanıcı mevcut değil"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Bu hesap giriş yapmak için kullanılamaz. Lütfen kişisel bir hesap kullanın.",
+          "user_account_deactivated": "Kullanıcı hesabı devre dışı bırakıldı. Lütfen {contact} ile iletişime geçin.",
+          "default_contact": "yöneticiniz",
+          "user_already_exist": "Hesabınız zaten kayıtlı.",
+          "user_does_not_exist": "Hesap bulunamadı.",
+          "admin_user_already_exist": "Yönetici kullanıcı zaten mevcut.",
+          "admin_user_does_not_exist": "Yönetici kullanıcı mevcut değil.",
+          "link": {
+            "sign_in_now": "Şimdi giriş yapın",
+            "create_one": "Başlamak için bir hesap oluşturun"
+          }
+        }
+      }
+    }
+  }
+}

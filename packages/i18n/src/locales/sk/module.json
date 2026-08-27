@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Modul} few {Moduly} other {Modulov}}",
     "no_module": "Žiadny modul",
-    "select": "Pridať moduly"
+    "select": "Pridať moduly",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Modul bol úspešne vytvorený."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Modul bol úspešne aktualizovaný."
+        },
+        "error": {
+          "message": "Modul sa nepodarilo aktualizovať. Skúste to prosím znova."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Vaše archívy nájdete v archívoch projektu."
+        },
+        "error": {
+          "message": "Modul sa nepodarilo archivovať. Skúste to prosím znova."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Váš modul nájdete v moduloch projektu."
+        },
+        "error": {
+          "message": "Modul sa nepodarilo obnoviť. Skúste to prosím znova."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Odkaz na modul bol úspešne vytvorený."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Odkaz na modul bol úspešne aktualizovaný."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Odkaz na modul bol úspešne zmazaný."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Pracovné položky boli úspešne pridané do modulu."
+        },
+        "error": {
+          "message": "Vybrané pracovné položky sa nepodarilo pridať do modulu. Skúste to prosím znova."
+        }
+      }
+    },
+    "no_lead": "Bez vedúceho",
+    "work_items_progress": "{completed}/{total} {total, plural, one {pracovná položka} few {pracovné položky} many {pracovnej položky} other {pracovných položiek}}"
   }
 }

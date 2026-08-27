@@ -37,11 +37,38 @@
         "states": {
           "sending": "전송 중…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "프로필 사진이 성공적으로 삭제되었습니다.",
+        "picture_delete_error": "프로필 사진을 삭제하는 중 오류가 발생했습니다. 다시 시도해주세요.",
+        "deactivated": "계정이 성공적으로 비활성화되었습니다."
+      },
+      "general_form": {
+        "first_name_placeholder": "이름을 입력하세요",
+        "last_name_placeholder": "성을 입력하세요",
+        "display_name_placeholder": "표시 이름을 입력하세요"
       }
     },
     "preferences": {
       "heading": "환경 설정",
-      "description": "작업 방식에 맞게 앱 환경을 사용자 정의하세요"
+      "description": "작업 방식에 맞게 앱 환경을 사용자 정의하세요",
+      "toasts": {
+        "timezone": {
+          "success": "시간대가 성공적으로 업데이트되었습니다",
+          "error": "시간대 업데이트에 실패했습니다"
+        },
+        "language": {
+          "success": "언어가 성공적으로 업데이트되었습니다",
+          "error": "언어 업데이트에 실패했습니다"
+        },
+        "start_of_week": {
+          "success": "주의 첫째 날이 성공적으로 업데이트되었습니다"
+        }
+      },
+      "start_of_week": {
+        "title": "주 시작 요일",
+        "description": "앱의 모든 캘린더 표시 방식이 변경됩니다."
+      }
     },
     "notifications": {
       "heading": "이메일 알림",

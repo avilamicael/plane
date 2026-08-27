@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "save_changes": "変更を保存",
+      "saving": "保存中",
+      "go_back": "戻る",
+      "success": "成功",
+      "error": "エラー",
+      "done": "完了しました。",
+      "show_password": "パスワードを表示",
+      "hide_password": "パスワードを非表示",
+      "settings_updated_successfully": "設定を更新しました",
+      "saving_configuration": "設定を保存しています",
+      "configuration_saved_successfully": "設定を保存しました",
+      "failed_to_save_configuration": "設定を保存できませんでした",
+      "learn_more": "詳細",
+      "here": "こちら。"
+    },
+    "sidebar": {
+      "instance_admin": "インスタンス管理者",
+      "sign_out": "サインアウト",
+      "switch_to_light_mode": "ライトモードに切り替え",
+      "switch_to_dark_mode": "ダークモードに切り替え",
+      "general": {
+        "title": "一般",
+        "description": "インスタンスを識別し、主要な情報を確認します。"
+      },
+      "email": {
+        "title": "メール",
+        "description": "SMTP の設定を行います。"
+      },
+      "workspace": {
+        "title": "ワークスペース",
+        "description": "このインスタンスのすべてのワークスペースを管理します。"
+      },
+      "authentication": {
+        "title": "認証",
+        "description": "認証方法を設定します。"
+      },
+      "ai": {
+        "title": "人工知能",
+        "description": "OpenAI の認証情報を設定します。"
+      },
+      "image": {
+        "title": "Plane の画像",
+        "description": "サードパーティの画像ライブラリを許可します。"
+      }
+    },
+    "sign_in": {
+      "heading": "Plane インスタンスを管理",
+      "sub_heading": "インスタンス全体の設定を行い、インスタンスを保護します",
+      "email_placeholder": "name@company.com",
+      "password_placeholder": "パスワードを入力",
+      "submit": "サインイン"
+    },
+    "setup": {
+      "heading": "Plane インスタンスをセットアップ",
+      "sub_heading": "セットアップ後、この Plane インスタンスを管理できるようになります。",
+      "first_name": "名",
+      "last_name": "姓",
+      "company_name": "会社名",
+      "company_name_placeholder": "会社名",
+      "set_password": "パスワードを設定",
+      "new_password_placeholder": "新しいパスワード",
+      "confirm_password": "パスワードの確認",
+      "confirm_password_placeholder": "パスワードの確認",
+      "passwords_dont_match": "パスワードが一致しません",
+      "telemetry_consent": "Plane が利用状況を匿名で収集することを許可する。",
+      "see_more": "詳細",
+      "submit": "続ける"
+    },
+    "settings": {
+      "general": {
+        "title": "一般設定",
+        "description": "インスタンス名とインスタンス管理者のメールアドレスを変更します。インスタンスのテレメトリーを有効または無効にします。",
+        "instance_details": "インスタンスの詳細",
+        "name_of_instance": "インスタンス名",
+        "instance_name_placeholder": "インスタンス名",
+        "admin_email_placeholder": "管理者のメールアドレス",
+        "instance_id": "インスタンス ID",
+        "telemetry": "テレメトリー",
+        "telemetry_toggle_title": "Plane が匿名の利用データを収集することを許可する",
+        "telemetry_toggle_description": "個人情報は収集されません。この匿名化されたデータは、Plane の使われ方を把握し、次のポリシーに沿って新機能を開発するために利用されます:",
+        "telemetry_policy": "テレメトリーポリシー。"
+      },
+      "authentication": {
+        "title": "インスタンスの認証方法を管理",
+        "description": "チームの認証方法を設定し、サインアップを招待制に制限します。",
+        "allow_signup_title": "招待がなくても誰でもサインアップできるようにする",
+        "allow_signup_description": "これをオフにすると、招待されたユーザーのみがサインアップできます。",
+        "available_modes": "利用可能な認証方法",
+        "cannot_disable_title": "認証を無効にできません",
+        "cannot_disable_message": "少なくとも 1 つの認証方法を有効にしておく必要があります。これを無効にする前に、別の方法を有効にしてください。",
+        "modes": {
+          "unique_codes": {
+            "name": "ワンタイムコード",
+            "description": "メールで送られるコードを使って Plane にサインインまたはサインアップします。この方法を使うには SMTP の設定が必要です。"
+          },
+          "passwords": {
+            "name": "パスワード",
+            "description": "メンバーがパスワード付きのアカウントを作成し、メールアドレスでサインインできるようにします。"
+          },
+          "google": {
+            "description": "メンバーが Google アカウントで Plane にサインインまたはサインアップできるようにします。"
+          },
+          "github": {
+            "description": "メンバーが GitHub アカウントで Plane にサインインまたはサインアップできるようにします。"
+          },
+          "gitlab": {
+            "description": "メンバーが GitLab アカウントで Plane にサインインまたはサインアップできるようにします。"
+          },
+          "gitea": {
+            "description": "メンバーが Gitea アカウントで Plane にサインインまたはサインアップできるようにします。"
+          }
+        }
+      },
+      "email": {
+        "title": "自分のインスタンスから安全にメールを送信",
+        "description": "Plane はインターネットに接続することなく、あなた自身のインスタンスからあなたとユーザーに役立つメールを送信できます。",
+        "description_secondary": "以下で設定し、保存する前に設定内容をテストしてください。",
+        "description_warning": "設定を誤ると、メールの不達やエラーの原因になります。",
+        "disabled_title": "メール機能を無効にしました",
+        "disabled_message": "メール機能が無効になりました",
+        "disable_error_title": "メールの無効化に失敗しました",
+        "disable_error_message": "メール機能を無効にできませんでした。もう一度お試しください。",
+        "host": "ホスト",
+        "port": "ポート",
+        "sender_email": "送信者のメールアドレス",
+        "sender_email_description": "このインスタンスからのメールを受け取ったときにユーザーに表示されるメールアドレスです。このアドレスの認証が必要です。",
+        "username": "ユーザー名",
+        "password_placeholder": "パスワード",
+        "security": "メールのセキュリティ",
+        "security_none": "メールのセキュリティなし",
+        "authentication": "認証",
+        "authentication_description": "任意ですが、SMTP サーバーにはユーザー名とパスワードを設定することをおすすめします。",
+        "send_test_email": "テストメールを送信",
+        "updated_successfully": "メール設定を更新しました"
+      },
+      "workspace": {
+        "title": "このインスタンスのワークスペース",
+        "description": "すべてのワークスペースを確認し、誰が作成できるかを管理します。",
+        "prevent_creation_title": "他のユーザーによるワークスペースの作成を禁止する。",
+        "prevent_creation_description": "これをオンにすると、ワークスペースを作成できるのはあなただけになります。新しいワークスペースにはユーザーを招待する必要があります。",
+        "all_workspaces": "このインスタンスのすべてのワークスペース",
+        "list_description": "ワークスペースはまだ削除できません。また、管理者またはメンバーであるワークスペースにのみ移動できます。",
+        "create": "ワークスペースを作成",
+        "creating": "ワークスペースを作成しています",
+        "load_more": "さらに読み込む",
+        "name_label": "ワークスペースに名前を付ける",
+        "name_placeholder": "馴染みがあって分かりやすい名前が最適です。",
+        "url_label": "ワークスペースの URL を設定",
+        "url_placeholder": "workspace-name",
+        "url_taken": "この URL は使用されています。別の URL をお試しください。",
+        "url_invalid": "URL に使用できるのは ( - )、( _ )、英数字のみです。",
+        "size_label": "このワークスペースは何人で利用しますか?",
+        "size_placeholder": "範囲を選択",
+        "required_field": "この項目は必須です。",
+        "created_title": "成功しました。",
+        "created_message": "ワークスペースを作成しました。",
+        "create_error_title": "エラー",
+        "create_error_message": "ワークスペースを作成できませんでした。もう一度お試しください。",
+        "create_generic_error": "ワークスペースの作成中にエラーが発生しました。もう一度お試しください。"
+      },
+      "ai": {
+        "title": "すべてのワークスペースで使える AI 機能",
+        "description": "AI の API 認証情報を設定して、すべてのワークスペースで Plane AI 機能を有効にします。"
+      },
+      "image": {
+        "title": "サードパーティの画像ライブラリ",
+        "description": "ユーザーがサードパーティのライブラリから画像を検索・選択できるようにします"
+      }
+    },
+    "oauth": {
+      "client_id": "クライアント ID",
+      "client_secret": "クライアントシークレット",
+      "application_id": "アプリケーション ID",
+      "secret": "シークレット",
+      "organization_id": "組織 ID",
+      "organization_id_description": "組織の GitHub ID です。",
+      "host": "ホスト",
+      "origin_url": "オリジン URL",
+      "callback_uri": "コールバック URI",
+      "callback_url": "コールバック URL",
+      "web": "ウェブ",
+      "provider_details_for_plane": "Plane 用に {provider} が提供する情報",
+      "plane_details_for_provider": "{provider} 用に Plane が提供する情報",
+      "configured_message": "{provider} 認証を設定しました。次はテストしてみましょう。",
+      "configuration_saved": "設定を保存しました",
+      "auth_now_active": "{provider} 認証が有効になりました。",
+      "auth_now_disabled": "{provider} 認証が無効になりました。",
+      "get_this_from_settings": "この値は次の場所で取得できます:",
+      "secret_also_in_settings": "クライアントシークレットも次の場所にあります:",
+      "app_settings_link": "{provider} の OAuth アプリケーション設定。",
+      "app_settings_link_no_period": "{provider} の OAuth アプリケーション設定",
+      "autogenerated_paste_origin": "この値は自動生成されます。次のフィールドに貼り付けてください:",
+      "autogenerated_paste_callback": "この値は自動生成されます。次のフィールドに貼り付けてください:",
+      "field_word": "—",
+      "authorized_origin_url": "承認済みのオリジン URL",
+      "authorized_callback_uri": "承認済みのコールバック URI",
+      "authorized_js_origins": "承認済みの JavaScript 生成元",
+      "authorized_redirect_uri": "承認済みのリダイレクト URI",
+      "redirect_uri": "リダイレクト URI",
+      "for_this_oauth_client": "— この OAuth クライアントについては",
+      "google_client_id_description": "クライアント ID は Google API Console にあります。",
+      "google_client_secret_description": "クライアントシークレットも Google API Console にあります。",
+      "gitlab_host_description_prefix": "https://gitlab.com か、GitLab をホストしている",
+      "gitlab_host_description_suffix": "のいずれかです。",
+      "gitlab_get_this_from": "この値は次の場所で取得できます:",
+      "gitlab_secret_also_in": "クライアントシークレットも次の場所にあります:",
+      "gitlab_paste_redirect_prefix": "この値は自動生成されます。次のフィールドに貼り付けてください:",
+      "gitlab_paste_redirect_suffix": "—",
+      "gitlab_app_link": "GitLab の OAuth アプリケーション",
+      "gitea_host_label": "Gitea ホスト",
+      "gitea_host_description": "お使いの Gitea インスタンスの URL を指定します。公式の Gitea インスタンスの場合は「https://gitea.com」を使用します。"
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "管理者はすでに存在します",
+        "message": "管理者はすでに存在します。もう一度お試しください。"
+      },
+      "required_admin_email_password_first_name": {
+        "title": "メールアドレス、パスワード、名が必要です",
+        "message": "メールアドレス、パスワード、名が必要です。もう一度お試しください。"
+      },
+      "invalid_admin_email": {
+        "title": "管理者のメールアドレスが無効です",
+        "message": "管理者のメールアドレスが無効です。もう一度お試しください。"
+      },
+      "invalid_admin_password": {
+        "title": "管理者のパスワードが無効です",
+        "message": "管理者のパスワードが無効です。もう一度お試しください。"
+      },
+      "required_admin_email_password": {
+        "title": "メールアドレスとパスワードが必要です",
+        "message": "メールアドレスとパスワードが必要です。もう一度お試しください。"
+      },
+      "admin_authentication_failed": {
+        "title": "認証に失敗しました",
+        "message": "認証に失敗しました。もう一度お試しください。"
+      },
+      "admin_user_already_exist": {
+        "title": "管理者ユーザーはすでに存在します",
+        "message": "管理者ユーザーはすでに存在します。",
+        "sign_in_now": "今すぐサインイン",
+        "now": "してください。"
+      },
+      "admin_user_does_not_exist": {
+        "title": "管理者ユーザーが存在しません",
+        "message": "管理者ユーザーが存在しません。",
+        "sign_in_now": "今すぐサインイン",
+        "now": "してください。"
+      },
+      "admin_user_deactivated": {
+        "title": "ユーザーアカウントが無効化されています",
+        "message": "ユーザーアカウントが無効化されています。{contact} にお問い合わせください。"
+      },
+      "administrator": "管理者",
+      "generic_title": "エラー",
+      "generic_message": "問題が発生しました。もう一度お試しください。"
+    },
+    "not_found": {
+      "title": "問題が発生しました。",
+      "description": "お探しのページが見つかりません。削除されたか、名前が変更されたか、一時的に利用できない可能性があります。",
+      "action": "一般設定へ移動",
+      "image_alt": "404 - ページが見つかりません"
+    }
+  }
+}

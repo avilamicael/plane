@@ -37,11 +37,38 @@
         "states": {
           "sending": "Sending"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Profile picture deleted successfully.",
+        "picture_delete_error": "There was some error in deleting your profile picture. Please try again.",
+        "deactivated": "Account deactivated successfully."
+      },
+      "general_form": {
+        "first_name_placeholder": "Enter your first name",
+        "last_name_placeholder": "Enter your last name",
+        "display_name_placeholder": "Enter your display name"
       }
     },
     "preferences": {
       "heading": "Preferences",
-      "description": "Customize your app experience the way you work"
+      "description": "Customize your app experience the way you work",
+      "toasts": {
+        "timezone": {
+          "success": "Timezone updated successfully",
+          "error": "Failed to update timezone"
+        },
+        "language": {
+          "success": "Language updated successfully",
+          "error": "Failed to update language"
+        },
+        "start_of_week": {
+          "success": "First day of the week updated successfully"
+        }
+      },
+      "start_of_week": {
+        "title": "First day of the week",
+        "description": "This will change how all calendars in your app look."
+      }
     },
     "notifications": {
       "heading": "Email notifications",

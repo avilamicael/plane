@@ -37,11 +37,38 @@
         "states": {
           "sending": "Mengirim…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Foto profil berhasil dihapus.",
+        "picture_delete_error": "Terjadi kesalahan saat menghapus foto profil Anda. Silakan coba lagi.",
+        "deactivated": "Akun berhasil dinonaktifkan."
+      },
+      "general_form": {
+        "first_name_placeholder": "Masukkan nama depan Anda",
+        "last_name_placeholder": "Masukkan nama belakang Anda",
+        "display_name_placeholder": "Masukkan nama tampilan Anda"
       }
     },
     "preferences": {
       "heading": "Preferensi",
-      "description": "Sesuaikan pengalaman aplikasi Anda dengan cara kerja Anda"
+      "description": "Sesuaikan pengalaman aplikasi Anda dengan cara kerja Anda",
+      "toasts": {
+        "timezone": {
+          "success": "Zona waktu berhasil diperbarui",
+          "error": "Gagal memperbarui zona waktu"
+        },
+        "language": {
+          "success": "Bahasa berhasil diperbarui",
+          "error": "Gagal memperbarui bahasa"
+        },
+        "start_of_week": {
+          "success": "Hari pertama dalam seminggu berhasil diperbarui"
+        }
+      },
+      "start_of_week": {
+        "title": "Hari pertama dalam seminggu",
+        "description": "Ini akan mengubah tampilan semua kalender di aplikasi Anda."
+      }
     },
     "notifications": {
       "heading": "Notifikasi email",

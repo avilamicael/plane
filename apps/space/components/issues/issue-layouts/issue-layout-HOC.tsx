@@ -6,6 +6,7 @@
 
 import { observer } from "mobx-react";
 // plane imports
+import { useTranslation } from "@plane/i18n";
 import type { TLoader } from "@plane/types";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
@@ -22,6 +23,8 @@ interface Props {
 
 export const IssueLayoutHOC = observer(function IssueLayoutHOC(props: Props) {
   const { getIssueLoader, getGroupIssueCount } = props;
+  // i18n
+  const { t } = useTranslation();
 
   const issueCount = getGroupIssueCount(undefined, undefined, false);
 
@@ -34,7 +37,11 @@ export const IssueLayoutHOC = observer(function IssueLayoutHOC(props: Props) {
   }
 
   if (getGroupIssueCount(undefined, undefined, false) === 0) {
-    return <div className="grid size-full place-items-center text-secondary">No work items found</div>;
+    return (
+      <div className="grid size-full place-items-center text-secondary">
+        {t("issue_relation.empty_state.no_issues.title")}
+      </div>
+    );
   }
 
   return <>{props.children}</>;

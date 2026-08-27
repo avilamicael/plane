@@ -191,5 +191,173 @@
       "title": "Objevte, proč týmy přecházejí na Plane",
       "description": "Porovnejte Plane s nástroji, které dnes používáte, a uvidíte rozdíl."
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "nebo",
+      "skip": "Přeskočit",
+      "select_one": "Vyberte jednu možnost",
+      "select_one_or_more": "Vyberte jednu nebo více možností",
+      "steps_progress": "{current} z {total, plural, one {# kroku} few {# kroků} many {# kroku} other {# kroků}}",
+      "errors": {
+        "field_required": "Toto pole je povinné",
+        "select_at_least_one": "Vyberte alespoň jednu možnost"
+      }
+    },
+    "profile": {
+      "heading": "Vytvořte svůj profil.",
+      "subheading": "Takto se budete zobrazovat v Plane.",
+      "upload_image": "Nahrát obrázek",
+      "change_image": "Změnit obrázek",
+      "choose_image": "Vybrat obrázek",
+      "name_placeholder": "Zadejte své celé jméno",
+      "marketing_consent": "Souhlasím se zasíláním marketingových sdělení od Plane",
+      "role_question": "V jaké roli pracujete? Vyberte jednu.",
+      "domain_question": "Jaká je vaše odbornost? Vyberte jednu nebo více.",
+      "roles": {
+        "individual_contributor": "Samostatný specialista",
+        "senior_leader": "Senior lídr",
+        "manager": "Manažer",
+        "executive": "Vedoucí pracovník",
+        "freelancer": "Freelancer",
+        "student": "Student"
+      },
+      "domains": {
+        "engineering": "Vývoj",
+        "product": "Produkt",
+        "marketing": "Marketing",
+        "sales": "Prodej",
+        "operations": "Provoz",
+        "legal": "Právo",
+        "finance": "Finance",
+        "human_resources": "Lidské zdroje",
+        "project": "Projekty",
+        "other": "Jiné"
+      },
+      "errors": {
+        "name_length": "Jméno může mít nejvýše 50 znaků.",
+        "first_name_required": "Jméno je povinné",
+        "first_name_length": "Jméno může mít nejvýše 50 znaků.",
+        "last_name_required": "Příjmení je povinné",
+        "last_name_length": "Příjmení může mít nejvýše 50 znaků."
+      },
+      "toast": {
+        "completed": "Profil je nastaven!",
+        "failed": "Nastavení profilu se nezdařilo. Zkuste to prosím znovu!",
+        "details_failed": "Aktualizace vašich údajů se nezdařila. Zkuste to prosím znovu!"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "Nové heslo...",
+      "match": "Hesla se shodují",
+      "mismatch": "Hesla se neshodují"
+    },
+    "role": {
+      "heading": "Jaká je vaše role?",
+      "subheading": "Nastavme Plane podle toho, jak pracujete.",
+      "options": {
+        "product_manager": "Produktový manažer",
+        "engineering_manager": "Engineering manažer",
+        "designer": "Designér",
+        "developer": "Vývojář",
+        "founder_executive": "Zakladatel/Vedoucí pracovník",
+        "operations_manager": "Provozní manažer",
+        "others": "Ostatní"
+      }
+    },
+    "usecase": {
+      "heading": "Co vás přivádí do Plane?",
+      "subheading": "Řekněte nám o svých cílech a velikosti týmu.",
+      "options": {
+        "plan_and_track_product_roadmaps": "Plánovat a sledovat produktové roadmapy",
+        "manage_engineering_sprints": "Řídit vývojářské sprinty",
+        "coordinate_cross_functional_projects": "Koordinovat mezioborové projekty",
+        "replace_our_current_tool": "Nahradit náš současný nástroj",
+        "just_exploring": "Jen se rozhlížím"
+      }
+    },
+    "workspace": {
+      "heading": "Vytvořte svůj pracovní prostor",
+      "subheading": "Veškerá vaše práce na jednom místě.",
+      "join_heading": "Přijměte pozvánky nebo vytvořte pracovní prostor",
+      "join_existing": "Připojit se ke stávajícímu pracovnímu prostoru",
+      "create_new": "Vytvořit nový pracovní prostor",
+      "join_invited_cta": "Chci se připojit k pracovním prostorům, do kterých mám pozvánku",
+      "creation_disabled": "Zdá se, že nemáte žádné pozvánky do pracovního prostoru a správce vaší instance omezil vytváření nových pracovních prostorů. Požádejte vlastníka nebo správce, aby vás do pracovního prostoru pozval, a vraťte se na tuto obrazovku.",
+      "organization_size": {
+        "just_myself": "Jen já"
+      }
+    },
+    "invitations": {
+      "heading": "Máte pozvánku!",
+      "subheading": "Přijměte pozvánky a spolupracujte se svým týmem.",
+      "continue_to_workspace": "Přejít do pracovního prostoru",
+      "create_own_workspace": "Vytvořit vlastní pracovní prostor",
+      "empty": "Nebyly nalezeny žádné pozvánky"
+    },
+    "team": {
+      "heading": "Pozvěte své kolegy",
+      "subheading": "Práce v Plane funguje nejlépe s týmem. Pozvěte je hned a využijte Plane naplno.",
+      "add_another": "Přidat další",
+      "do_it_later": "Udělám to později",
+      "errors": {
+        "invalid_email": "Neplatné ID e-mailu",
+        "not_an_email": "Tohle nevypadá jako e-mailová adresa."
+      },
+      "toast": {
+        "invitations_sent": "Pozvánky byly úspěšně odeslány."
+      }
+    },
+    "switch_account": {
+      "wrong_email": "Špatná e-mailová adresa?",
+      "title": "Přepnout účet",
+      "description_prefix": "Pokud jste se omylem zaregistrovali přes",
+      "description_suffix": "můžete zde přepnout na jiný účet.",
+      "switching": "Přepínání...",
+      "sign_out_failed": "Odhlášení se nezdařilo. Zkuste to prosím znovu."
+    },
+    "toast": {
+      "finish_failed": "Úvodní nastavení se nepodařilo dokončit. Zkuste to prosím později."
+    },
+    "tour": {
+      "welcome": {
+        "title": "Vítejte v Plane, {name}",
+        "description": "Jsme rádi, že jste se rozhodli vyzkoušet Plane. Nyní můžete své projekty spravovat snadno. Začněte vytvořením projektu.",
+        "take_tour": "Projít prohlídku produktu",
+        "skip": "Ne, díky, prozkoumám to sám"
+      },
+      "sidebar": {
+        "title": "Pojďme na to!",
+        "subtitle": "Získejte z Plane víc.",
+        "work_items": "Pracovní položky",
+        "cycles": "Cykly",
+        "modules": "Moduly",
+        "views": "Zobrazení",
+        "pages": "Stránky"
+      },
+      "steps": {
+        "work_items": {
+          "title": "Plánujte s pracovními položkami",
+          "description": "Pracovní položka je základním stavebním kamenem Plane. Většina konceptů v Plane souvisí s pracovními položkami a jejich vlastnostmi."
+        },
+        "cycles": {
+          "title": "Postupujte vpřed s cykly",
+          "description": "Cykly pomáhají vám i vašemu týmu postupovat rychleji, podobně jako sprinty v agilním vývoji."
+        },
+        "modules": {
+          "title": "Rozdělte na moduly",
+          "description": "Moduly rozdělí váš velký záměr na projekty nebo funkce, abyste se lépe zorganizovali."
+        },
+        "views": {
+          "title": "Zobrazení",
+          "description": "Vytvářejte vlastní filtry a zobrazujte jen ty pracovní položky, na kterých vám záleží. Filtry uložíte a nasdílíte na pár kliknutí."
+        },
+        "pages": {
+          "title": "Dokumentujte na stránkách",
+          "description": "Použijte stránky k rychlému zapsání pracovních položek na schůzce nebo na začátku dne."
+        }
+      },
+      "create_first_project": "Vytvořit první projekt"
+    }
   }
 }

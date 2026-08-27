@@ -25,6 +25,7 @@ import { Tooltip } from "@plane/propel/tooltip";
 import type { IModule } from "@plane/types";
 import { Card, FavoriteStar, LinearProgressIndicator } from "@plane/ui";
 import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";
@@ -42,6 +43,8 @@ type Props = {
 };
 
 export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
+  const { t } = useTranslation();
+
   const { moduleId } = props;
   // refs
   const parentRef = useRef(null);
@@ -80,11 +83,11 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
     setPromiseToast(addToFavoritePromise, {
       loading: "Adding module to favorites...",
       success: {
-        title: "Success!",
+        title: t("common.toast.success"),
         message: () => "Module added to favorites.",
       },
       error: {
-        title: "Error!",
+        title: t("common.toast.error"),
         message: () => "Couldn't add the module to favorites. Please try again.",
       },
     });
@@ -104,11 +107,11 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
     setPromiseToast(removeFromFavoritePromise, {
       loading: "Removing module from favorites...",
       success: {
-        title: "Success!",
+        title: t("common.toast.success"),
         message: () => "Module removed from favorites.",
       },
       error: {
-        title: "Error!",
+        title: t("common.toast.error"),
         message: () => "Couldn't remove the module from favorites. Please try again.",
       },
     });
@@ -126,14 +129,14 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Module updated successfully.",
+          title: t("common.toast.success"),
+          message: t("module.toasts.update.success.message"),
         });
       })
       .catch((err) => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
+          title: t("common.toast.error"),
           message: err?.detail ?? "Module could not be updated. Please try again.",
         });
       });
@@ -166,13 +169,10 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
 
   const moduleStatus = MODULE_STATUS.find((status) => status.value === moduleDetails.status);
 
-  const issueCount = moduleDetails
-    ? !moduleTotalIssues || moduleTotalIssues === 0
-      ? `0 work items`
-      : moduleTotalIssues === moduleCompletedIssues
-        ? `${moduleTotalIssues} Work item${moduleTotalIssues > 1 ? `s` : ``}`
-        : `${moduleCompletedIssues}/${moduleTotalIssues} Work items`
-    : `0 work items`;
+  const issueCount =
+    moduleTotalIssues > 0 && moduleTotalIssues !== moduleCompletedIssues
+      ? t("module.work_items_progress", { completed: moduleCompletedIssues, total: moduleTotalIssues })
+      : t("project_cycles.active_cycle.work_items_count", { count: moduleTotalIssues });
 
   const moduleLeadDetails = moduleDetails.lead_id ? getUserDetails(moduleDetails.lead_id) : undefined;
 
@@ -210,14 +210,14 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-1.5 text-secondary">
                 <WorkItemsIcon className="h-4 w-4 text-tertiary" />
-                <span className="text-11 text-tertiary">{issueCount ?? "0 Work item"}</span>
+                <span className="text-11 text-tertiary">{issueCount}</span>
               </div>
               {moduleLeadDetails ? (
                 <span className="cursor-default">
                   <ButtonAvatars showTooltip={false} userIds={moduleLeadDetails?.id} />
                 </span>
               ) : (
-                <Tooltip tooltipContent="No lead">
+                <Tooltip tooltipContent={t("module.no_lead")}>
                   <SquareUser className="mx-1 h-4 w-4 text-tertiary" />
                 </Tooltip>
               )}

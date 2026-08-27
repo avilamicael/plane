@@ -6,6 +6,7 @@
 
 import { useMemo } from "react";
 import { setToast, TOAST_TYPE } from "@plane/propel/toast";
+import { useTranslation } from "@plane/i18n";
 import { useMember } from "@/hooks/store/use-member";
 import { useUser } from "@/hooks/store/user";
 import { DEFAULT_TAB_KEY } from "./tab-navigation-utils";
@@ -28,6 +29,8 @@ export type TTabPreferencesHook = {
  * @returns Tab preferences state and handlers
  */
 export const useTabPreferences = (workspaceSlug: string, projectId: string): TTabPreferencesHook => {
+  const { t } = useTranslation();
+
   const {
     project: { getProjectUserProperties, updateProjectUserProperties },
   } = useMember();
@@ -79,16 +82,16 @@ export const useTabPreferences = (workspaceSlug: string, projectId: string): TTa
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Default tab updated successfully.",
+          title: t("common.toast.success"),
+          message: t("navigation_tabs.toasts.default_tab.success.message"),
         });
         return;
       })
       .catch(() => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Failed to update default tab. Please try again later.",
+          title: t("common.toast.error"),
+          message: t("navigation_tabs.toasts.default_tab.error.message"),
         });
       });
   };
@@ -107,8 +110,8 @@ export const useTabPreferences = (workspaceSlug: string, projectId: string): TTa
       console.error("Error hiding tab:", error);
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
-        message: "Failed to hide tab. Please try again later.",
+        title: t("common.toast.error"),
+        message: t("navigation_tabs.toasts.hide_tab.error.message"),
       });
     }
   };
@@ -127,8 +130,8 @@ export const useTabPreferences = (workspaceSlug: string, projectId: string): TTa
       console.error("Error showing tab:", error);
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
-        message: "Something went wrong. Please try again later.",
+        title: t("common.toast.error"),
+        message: t("something_went_wrong_please_try_again_later"),
       });
     }
   };

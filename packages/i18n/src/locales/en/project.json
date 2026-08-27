@@ -139,7 +139,8 @@
         "title": "No archived cycles yet",
         "description": "To tidy up your project, archive completed cycles. Find them here once archived."
       }
-    }
+    },
+    "delete_cycle": "Delete cycle"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Something went wrong."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Project deleted successfully."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Project could not be archived. Please try again."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Project could not be restored. Please try again."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Please confirm leaving the project by typing the 'Leave Project'."
+        },
+        "project_name": {
+          "message": "Please enter the project name as shown in the description."
+        },
+        "fill_all_fields": {
+          "message": "Please fill all fields."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Repository could not be synced with the project. Please try again."
+        }
+      },
+      "members_added": {
+        "message": "Members added successfully."
+      },
+      "publish": {
+        "success": {
+          "message": "Publish settings updated successfully!"
+        },
+        "unpublish_error": {
+          "message": "Something went wrong while unpublishing the project."
+        },
+        "select_layout": {
+          "message": "Please select at least one view layout to publish the project."
+        },
+        "link_copied": {
+          "message": "Published page link copied successfully."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Allow comments",
+      "allow_reactions": "Allow reactions",
+      "allow_voting": "Allow voting",
+      "anyone_with_link_can_access": "Anyone with the link can access"
+    },
+    "join": {
+      "title": "Join project?"
+    },
+    "card": {
+      "created_on": "Created on {date}",
+      "no_members_yet": "No member yet"
     }
   }
 }

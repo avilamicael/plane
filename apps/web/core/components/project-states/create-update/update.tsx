@@ -8,6 +8,7 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { IState, TStateOperationsCallbacks } from "@plane/types";
+import { useTranslation } from "@plane/i18n";
 // components
 import { StateForm } from "@/components/project-states";
 
@@ -18,6 +19,8 @@ type TStateUpdate = {
 };
 
 export const StateUpdate = observer(function StateUpdate(props: TStateUpdate) {
+  const { t } = useTranslation();
+
   const { state, updateStateCallback, handleClose } = props;
   // states
   const [loader, setLoader] = useState(false);
@@ -34,8 +37,8 @@ export const StateUpdate = observer(function StateUpdate(props: TStateUpdate) {
       await updateStateCallback(state.id, formData);
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success!",
-        message: "State updated successfully.",
+        title: t("common.toast.success"),
+        message: t("project_settings.states.toasts.update.success.message"),
       });
       handleClose();
       return { status: "success" };
@@ -44,15 +47,15 @@ export const StateUpdate = observer(function StateUpdate(props: TStateUpdate) {
       if (errorStatus?.status === 400) {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Another state exists with the same name. Please try again with another name.",
+          title: t("common.toast.error"),
+          message: t("project_settings.states.toasts.update.error.name_exists"),
         });
         return { status: "already_exists" };
       } else {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "State could not be updated. Please try again.",
+          title: t("common.toast.error"),
+          message: t("project_settings.states.toasts.update.error.message"),
         });
         return { status: "error" };
       }

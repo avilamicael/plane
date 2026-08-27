@@ -139,7 +139,8 @@
         "title": "Brak zarchiwizowanych cykli",
         "description": "Archiwizuj ukończone cykle, aby zachować porządek."
       }
-    }
+    },
+    "delete_cycle": "Usuń cykl"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Coś poszło nie tak."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Projekt pomyślnie usunięto."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Nie udało się zarchiwizować projektu. Spróbuj ponownie."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Nie udało się przywrócić projektu. Spróbuj ponownie."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Potwierdź opuszczenie projektu, wpisując „Leave Project”."
+        },
+        "project_name": {
+          "message": "Wpisz nazwę projektu dokładnie tak, jak podano w opisie."
+        },
+        "fill_all_fields": {
+          "message": "Wypełnij wszystkie pola."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Nie udało się zsynchronizować repozytorium z projektem. Spróbuj ponownie."
+        }
+      },
+      "members_added": {
+        "message": "Członków pomyślnie dodano."
+      },
+      "publish": {
+        "success": {
+          "message": "Ustawienia publikacji pomyślnie zaktualizowano!"
+        },
+        "unpublish_error": {
+          "message": "Coś poszło nie tak podczas cofania publikacji projektu."
+        },
+        "select_layout": {
+          "message": "Wybierz co najmniej jeden układ widoku, aby opublikować projekt."
+        },
+        "link_copied": {
+          "message": "Link do opublikowanej strony pomyślnie skopiowano."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Zezwalaj na komentarze",
+      "allow_reactions": "Zezwalaj na reakcje",
+      "allow_voting": "Zezwalaj na głosowanie",
+      "anyone_with_link_can_access": "Każdy, kto ma link, może uzyskać dostęp"
+    },
+    "join": {
+      "title": "Dołączyć do projektu?"
+    },
+    "card": {
+      "created_on": "Utworzono {date}",
+      "no_members_yet": "Brak członków"
     }
   }
 }

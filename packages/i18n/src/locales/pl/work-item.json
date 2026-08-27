@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Zaloguj się, aby dodać komentarz"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Kliknij, aby zagłosować za",
       "click_to_downvote": "Kliknij, aby zagłosować przeciw",
       "click_to_view_upvotes": "Kliknij, aby zobaczyć głosy za",
-      "click_to_view_downvotes": "Kliknij, aby zobaczyć głosy przeciw"
+      "click_to_view_downvotes": "Kliknij, aby zobaczyć głosy przeciw",
+      "no_upvotes": "Brak głosów na tak",
+      "no_downvotes": "Brak głosów na nie",
+      "and_more": "i {count} więcej"
     },
     "activity": {
       "created_the_work_item": "utworzył(a) element pracy.",
       "created_the_work_item_via": "utworzył(a) element pracy przez",
-      "deleted_a_work_item": "usunął(-ęła) element pracy."
+      "deleted_a_work_item": "usunął(-ęła) element pracy.",
+      "set_the_name_to": "ustawił(a) nazwę na",
+      "updated_the_description": "zaktualizował(a) opis",
+      "set_the_state_to": "ustawił(a) stan na",
+      "set_the_priority_to": "ustawił(a) priorytet na",
+      "added_a_new_assignee": "dodał(a) nową osobę przypisaną",
+      "removed_the_assignee": "usunął(-ęła) osobę przypisaną",
+      "added_a_new_label": "dodał(a) nową etykietę",
+      "removed_the_label": "usunął(-ęła) etykietę",
+      "set_the_start_date_to": "ustawił(a) datę rozpoczęcia na",
+      "removed_the_start_date": "usunął(-ęła) datę rozpoczęcia",
+      "set_the_due_date_to": "ustawił(a) termin na",
+      "removed_the_due_date": "usunął(-ęła) termin",
+      "set_the_parent_to": "ustawił(a) element nadrzędny na",
+      "removed_the_parent": "usunął(-ęła) element nadrzędny",
+      "set_the_estimate_point_to": "ustawił(a) punkt szacowania na",
+      "removed_the_estimate_point": "usunął(-ęła) punkt szacowania",
+      "added_this_work_item_to_the_cycle": "dodał(a) ten element pracy do cyklu",
+      "set_the_cycle_to": "ustawił(a) cykl na",
+      "removed_the_work_item_from_the_cycle": "usunął(-ęła) element pracy z cyklu",
+      "added_this_work_item_to_the_module": "dodał(a) ten element pracy do modułu",
+      "set_the_module_to": "ustawił(a) moduł na",
+      "removed_the_work_item_from_the_module": "usunął(-ęła) element pracy z modułu",
+      "added_the_link": "dodał(a)",
+      "updated_the_link": "zaktualizował(a)",
+      "removed_the_link": "usunął(-ęła)",
+      "link_noun": "link",
+      "uploaded_a_new_attachment": "przesłał(a) nowy załącznik",
+      "removed_an_attachment": "usunął(-ęła) załącznik",
+      "restored_the_work_item": "przywrócił(a) element pracy",
+      "archived_the_work_item": "zarchiwizował(a) element pracy",
+      "declined_this_work_item_from_intake": "odrzucił(a) ten element pracy w Intake.",
+      "snoozed_this_work_item": "odłożył(a) ten element pracy.",
+      "accepted_this_work_item_from_intake": "zaakceptował(a) ten element pracy w Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "odrzucił(a) ten element pracy w Intake, oznaczając go jako duplikat.",
+      "updated_intake_work_item_status": "zaktualizował(a) stan elementu pracy w Intake.",
+      "marked_this_work_item_is_blocking_work_item": "oznaczył(a), że ten element pracy blokuje element pracy",
+      "removed_the_blocking_work_item": "usunął(-ęła) blokadę elementu pracy",
+      "marked_this_work_item_is_being_blocked_by": "oznaczył(a), że ten element pracy jest blokowany przez",
+      "removed_this_work_item_being_blocked_by_work_item": "usunął(-ęła) blokadę tego elementu pracy przez",
+      "marked_this_work_item_as_duplicate_of": "oznaczył(a) ten element pracy jako duplikat",
+      "removed_this_work_item_as_a_duplicate_of": "usunął(-ęła) oznaczenie tego elementu pracy jako duplikatu",
+      "marked_that_this_work_item_relates_to": "oznaczył(a), że ten element pracy jest powiązany z",
+      "removed_the_relation_from": "usunął(-ęła) powiązanie z",
+      "connector_for": "w",
+      "connector_to": "do",
+      "connector_from": "z",
+      "connector_of": "w"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reakcję pomyślnie dodano"
+          },
+          "error": {
+            "message": "Nie udało się dodać reakcji"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reakcję pomyślnie usunięto"
+          },
+          "error": {
+            "message": "Nie udało się usunąć reakcji"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Załącznik został pomyślnie usunięty"
+          },
+          "error": {
+            "message": "Nie udało się usunąć załącznika"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Wybierz co najmniej jeden element pracy."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Elementy pracy pomyślnie usunięto!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Termin nie może być wcześniejszy niż data rozpoczęcia elementu pracy."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Błąd podczas aktualizacji dat elementu pracy. Spróbuj ponownie później."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Nie udało się przenieść elementu pracy do projektu. Spróbuj ponownie."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Nie udało się usunąć elementu pracy"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Nie udało się zaktualizować elementu pracy"
+        }
+      },
+      "editor_processing": {
+        "message": "Edytor nadal przetwarza zmiany. Poczekaj przed kontynuowaniem."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Tytuł elementu pracy jest zbyt mało szczegółowy, aby wygenerować opis. Spróbuj z innym tytułem."
+        }
+      }
     }
   },
   "sub_work_item": {

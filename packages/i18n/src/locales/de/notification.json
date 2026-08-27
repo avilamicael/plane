@@ -52,7 +52,17 @@
       "5_days": "5 Tage",
       "1_week": "1 Woche",
       "2_weeks": "2 Wochen",
-      "custom": "Benutzerdefiniert"
+      "custom": "Benutzerdefiniert",
+      "modal": {
+        "title": "Erinnerungszeit anpassen",
+        "pick_a_date": "Datum auswählen",
+        "select_date": "Datum wählen",
+        "pick_a_time": "Uhrzeit auswählen",
+        "select_a_time": "Uhrzeit wählen",
+        "no_available_time": "Für dieses Datum ist keine Uhrzeit verfügbar.",
+        "date_required": "Bitte wählen Sie ein Datum",
+        "time_required": "Bitte wählen Sie eine Uhrzeit"
+      }
     }
   }
 }

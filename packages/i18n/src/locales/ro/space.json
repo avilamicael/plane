@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Eroare",
+          "message": "Ceva nu a mers bine. Te rugăm să încerci din nou."
+        },
+        "template": {
+          "try_again": "{reason}. Te rugăm să încerci din nou.",
+          "contact_admin": "{reason}. Te rugăm să contactezi administratorul."
+        },
+        "reason": {
+          "instance_not_configured": "Instanța nu este configurată",
+          "signup_disabled": "Înregistrarea este dezactivată",
+          "invalid_password": "Parolă invalidă",
+          "smtp_not_configured": "SMTP nu este configurat",
+          "invalid_email": "Email invalid",
+          "email_required": "Emailul este obligatoriu",
+          "email_and_password_required": "Emailul și parola sunt obligatorii",
+          "email_and_code_required": "Emailul și codul sunt obligatorii",
+          "authentication_failed": "Autentificare eșuată",
+          "invalid_magic_code": "Cod magic invalid",
+          "expired_magic_code": "Cod magic expirat",
+          "oauth_not_configured": "OAuth nu este configurat",
+          "google_not_configured": "Google nu este configurat",
+          "github_not_configured": "GitHub nu este configurat",
+          "gitlab_not_configured": "GitLab nu este configurat",
+          "google_oauth_provider_error": "Eroare la furnizorul OAuth Google",
+          "github_oauth_provider_error": "Eroare la furnizorul OAuth GitHub",
+          "gitlab_oauth_provider_error": "Eroare la furnizorul OAuth GitLab",
+          "invalid_password_token": "Token de parolă invalid",
+          "expired_password_token": "Token de parolă expirat",
+          "password_required": "Parola este obligatorie",
+          "incorrect_old_password": "Parola veche este incorectă",
+          "invalid_new_password": "Parolă nouă invalidă",
+          "password_already_set": "Parola este deja setată",
+          "admin_already_exist": "Administratorul există deja",
+          "admin_email_password_first_name_required": "Emailul, parola și prenumele sunt obligatorii",
+          "invalid_admin_email": "Email de administrator invalid",
+          "invalid_admin_password": "Parolă de administrator invalidă"
+        },
+        "title": {
+          "user_already_exist": "Utilizatorul există deja",
+          "user_does_not_exist": "Utilizatorul nu există",
+          "user_account_deactivated": "Cont de utilizator dezactivat",
+          "bot_user_login_forbidden": "Autentificare nepermisă",
+          "admin_user_already_exist": "Utilizatorul administrator există deja",
+          "admin_user_does_not_exist": "Utilizatorul administrator nu există"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Acest cont nu poate fi folosit pentru autentificare. Te rugăm să folosești un cont personal.",
+          "user_account_deactivated": "Cont de utilizator dezactivat. Te rugăm să contactezi {contact}.",
+          "default_contact": "administratorul",
+          "user_already_exist": "Contul tău este deja înregistrat.",
+          "user_does_not_exist": "Nu a fost găsit niciun cont.",
+          "admin_user_already_exist": "Utilizatorul administrator există deja.",
+          "admin_user_does_not_exist": "Utilizatorul administrator nu există.",
+          "link": {
+            "sign_in_now": "Autentifică-te acum",
+            "create_one": "Creează unul pentru a începe"
+          }
+        }
+      }
+    }
+  }
+}

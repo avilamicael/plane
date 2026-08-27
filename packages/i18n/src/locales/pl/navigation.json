@@ -30,5 +30,39 @@
     "upgrade_plan": "Apgrejduj plan",
     "plane_pro": "Plejn Pro",
     "business": "Biznes"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Domyślną kartę pomyślnie zaktualizowano."
+        },
+        "error": {
+          "message": "Nie udało się zaktualizować domyślnej karty. Spróbuj ponownie później."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Nie udało się ukryć karty. Spróbuj ponownie później."
+        }
+      }
+    },
+    "actions": {
+      "show": "Pokaż",
+      "hide_in_more_menu": "Ukryj w menu Więcej",
+      "set_as_default": "Ustaw jako domyślne",
+      "clear_default": "Wyczyść domyślne"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Szukaj poleceń..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Tylko ikona",
+      "icon_with_name": "Ikona z nazwą"
+    },
+    "dock": "Zadokuj pasek aplikacji",
+    "undock": "Oddokuj pasek aplikacji"
   }
 }

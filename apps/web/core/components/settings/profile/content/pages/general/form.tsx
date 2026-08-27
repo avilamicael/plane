@@ -98,8 +98,8 @@ export const GeneralProfileSettingsForm = observer(function GeneralProfileSettin
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Profile picture deleted successfully.",
+          title: t("common.toast.success"),
+          message: t("account_settings.profile.toasts.picture_deleted"),
         });
         setValue("avatar_url", "");
         return;
@@ -107,8 +107,8 @@ export const GeneralProfileSettingsForm = observer(function GeneralProfileSettin
       .catch(() => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "There was some error in deleting your profile picture. Please try again.",
+          title: t("common.toast.error"),
+          message: t("account_settings.profile.toasts.picture_delete_error"),
         });
       })
       .finally(() => {
@@ -178,11 +178,11 @@ export const GeneralProfileSettingsForm = observer(function GeneralProfileSettin
     setPromiseToast(updatePromise, {
       loading: "Updating...",
       success: {
-        title: "Success!",
+        title: t("common.toast.success"),
         message: () => `Profile updated successfully.`,
       },
       error: {
-        title: "Error!",
+        title: t("common.toast.error"),
         message: () => `There was some error in updating your profile. Please try again.`,
       },
     });
@@ -287,7 +287,7 @@ export const GeneralProfileSettingsForm = observer(function GeneralProfileSettin
                       onChange={onChange}
                       ref={ref}
                       hasError={Boolean(errors.first_name)}
-                      placeholder="Enter your first name"
+                      placeholder={t("account_settings.profile.general_form.first_name_placeholder")}
                       className={`w-full rounded-md ${errors.first_name ? "border-danger-strong" : ""}`}
                       maxLength={50}
                       autoComplete="on"
@@ -313,7 +313,7 @@ export const GeneralProfileSettingsForm = observer(function GeneralProfileSettin
                       onChange={onChange}
                       ref={ref}
                       hasError={Boolean(errors.last_name)}
-                      placeholder="Enter your last name"
+                      placeholder={t("account_settings.profile.general_form.last_name_placeholder")}
                       className="w-full rounded-md"
                       maxLength={50}
                       autoComplete="on"
@@ -343,7 +343,7 @@ export const GeneralProfileSettingsForm = observer(function GeneralProfileSettin
                       onChange={onChange}
                       ref={ref}
                       hasError={Boolean(errors?.display_name)}
-                      placeholder="Enter your display name"
+                      placeholder={t("account_settings.profile.general_form.display_name_placeholder")}
                       className={`w-full ${errors?.display_name ? "border-danger-strong" : ""}`}
                       maxLength={50}
                     />
@@ -372,7 +372,7 @@ export const GeneralProfileSettingsForm = observer(function GeneralProfileSettin
                       value={value}
                       ref={ref}
                       hasError={Boolean(errors.email)}
-                      placeholder="Enter your email"
+                      placeholder={t("account_settings.profile.change_email_modal.form.email.placeholder")}
                       className={`w-full cursor-not-allowed rounded-md !bg-surface-2 ${
                         errors.email ? "border-danger-strong" : ""
                       }`}

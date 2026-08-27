@@ -307,6 +307,9 @@
   "end_date": "Data zakończenia",
   "due_date": "Termin",
   "target_date": "Data docelowa",
+  "created_date": "Data utworzenia",
+  "updated_date": "Data aktualizacji",
+  "last_updated_date": "Data ostatniej aktualizacji",
   "estimate": "Szacowanie",
   "change_parent_issue": "Zmień element nadrzędny",
   "remove_parent_issue": "Usuń element nadrzędny",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL został pomyślnie skopiowany do schowka",
   "toast": {
     "success": "Sukces!",
-    "error": "Błąd!"
+    "error": "Błąd!",
+    "warning": "Ostrzeżenie!",
+    "info": "Informacja!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Szacowanie",
     "created_at": "Utworzono dnia",
     "updated_at": "Zaktualizowano dnia",
+    "select_cycle": "Wybierz cykl",
+    "select_modules": "Wybierz moduły",
     "completed_at": "Zakończono dnia",
     "layout": "Układ",
     "filters": "Filtry",
@@ -464,6 +471,10 @@
     "epics": "Epiki",
     "work_item": "Element pracy",
     "work_items": "Elementy pracy",
+    "work_items_in_project_count": "{count, plural, one{W tym projekcie jest # element pracy} few{W tym projekcie są # elementy pracy} many{W tym projekcie jest # elementów pracy} other{W tym projekcie jest # elementów pracy}}",
+    "work_items_in_archives_count": "{count, plural, one{W archiwum tego projektu jest # element pracy} few{W archiwum tego projektu są # elementy pracy} many{W archiwum tego projektu jest # elementów pracy} other{W archiwum tego projektu jest # elementów pracy}}",
+    "work_items_in_cycle_count": "{count, plural, one{W tym cyklu jest # element pracy} few{W tym cyklu są # elementy pracy} many{W tym cyklu jest # elementów pracy} other{W tym cyklu jest # elementów pracy}}",
+    "work_items_in_module_count": "{count, plural, one{W tym module jest # element pracy} few{W tym module są # elementy pracy} many{W tym module jest # elementów pracy} other{W tym module jest # elementów pracy}}",
     "sub_work_item": "Podrzędny element pracy",
     "views": "Widoki",
     "pages": "Strony",
@@ -619,7 +630,11 @@
       "enable": "Włącz",
       "disable": "Wyłącz",
       "copy_markdown": "Kopiuj markdown",
-      "reply": "Odpowiedz"
+      "reply": "Odpowiedz",
+      "move": "Przenieś",
+      "remove_from_cycle": "Usuń z cyklu",
+      "remove_from_module": "Usuń z modułu",
+      "rename_folder": "Zmień nazwę folderu"
     },
     "name": "Nazwa",
     "discard": "Odrzuć",
@@ -722,12 +737,33 @@
     "more": "Więcej",
     "saved": "Zapisano",
     "all_projects": "Wszystkie projekty",
-    "n_plus_projects": "{count}+ projektów"
+    "n_plus_projects": "{count}+ projektów",
+    "and": "i",
+    "view_all": "Pokaż wszystkie",
+    "view_less": "Pokaż mniej",
+    "empty": "Puste",
+    "no_date": "Brak daty",
+    "no_cycle": "Brak cyklu",
+    "no_modules": "Brak modułów",
+    "no_labels": "Brak etykiet",
+    "no_assignees": "Brak przypisanych",
+    "labels_count": "{count, plural, one{# etykieta} few{# etykiety} many{# etykiet} other{# etykiety}}",
+    "modules_count": "{count, plural, one{# moduł} few{# moduły} many{# modułów} other{# modułu}}",
+    "not_found": {
+      "title": "Ups! Coś poszło nie tak.",
+      "description": "Niestety nie można znaleźć szukanej strony. Mogła zostać usunięta, mieć zmienioną nazwę lub być tymczasowo niedostępna."
+    },
+    "toast": {
+      "success": "Sukces!",
+      "error": "Błąd!",
+      "warning": "Ostrzeżenie"
+    }
   },
   "chart": {
     "x_axis": "Oś X",
     "y_axis": "Oś Y",
-    "metric": "Metryka"
+    "metric": "Metryka",
+    "week_of_month": "{month}, tydzień {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Zaktualizuj widok"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Widok pomyślnie utworzono."
+        },
+        "error": {
+          "message": "Nie udało się utworzyć widoku. Spróbuj ponownie."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Widok pomyślnie zaktualizowano."
+        },
+        "error": {
+          "message": "Nie udało się zaktualizować widoku. Spróbuj ponownie."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Widok pomyślnie usunięto."
+        },
+        "error": {
+          "message": "Nie udało się usunąć widoku. Spróbuj ponownie."
+        }
+      },
+      "not_found": {
+        "message": "Widok, który próbujesz zaktualizować, nie istnieje."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Twój widok został pomyślnie zaktualizowany."
+        },
+        "error": {
+          "message": "Nie udało się zaktualizować Twojego widoku. Spróbuj ponownie."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Eksportuj elementy do pliku JSON.",
       "short_description": "Eksportuj jako JSON"
+    }
+  },
+  "sign_in": "Zaloguj się",
+  "powered_by_plane_publish": "Oparte na Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Nie udało się pobrać szczegółów instancji.",
+      "description": "Nie udało nam się pobrać szczegółów instancji. Bez obaw, to może być tylko problem z połączeniem."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Coś poszło nie tak. Spróbuj ponownie później.",
+  "please_try_again_later": "Spróbuj ponownie później.",
+  "some_error_occurred": "Wystąpił błąd",
+  "markdown_copied_to_clipboard": "Markdown skopiowano do schowka.",
+  "reloading_to_apply_changes": "Przeładowywanie w celu zastosowania zmian...",
+  "copy_link_failed": "Nie udało się skopiować linku. Spróbuj ponownie.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Konfigurację motywu pomyślnie pobrano."
+        },
+        "error": {
+          "message": "Nie udało się pobrać konfiguracji motywu."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Konfigurację motywu pomyślnie zaimportowano"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Przeciąganie i upuszczanie działa tylko przy sortowaniu ręcznym"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Coś poszło nie tak podczas aktualizacji dat bloku"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Ten filtr nie jest poprawnie skonfigurowany i nie można go zastosować"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Wpisz zadanie, aby uzyskać pomoc AI."
+      }
+    }
+  },
+  "text_colors": "Kolory tekstu",
+  "background_colors": "Kolory tła",
+  "submitting": "Wysyłanie...",
+  "image_upload": {
+    "title": "Prześlij obraz",
+    "drag_and_drop": "Przeciągnij i upuść obraz tutaj",
+    "drop_here": "Upuść obraz tutaj, aby go przesłać",
+    "file_too_large": "Rozmiar obrazu nie może przekraczać 5 MB.",
+    "invalid_format": "Prześlij plik w prawidłowym formacie.",
+    "supported_formats": "Obsługiwane formaty plików: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Prześlij i zapisz",
+    "uploading": "Przesyłanie",
+    "search_for_images": "Szukaj obrazów",
+    "no_images_found": "Nie znaleziono obrazów.",
+    "tabs": {
+      "images": "Obrazy",
+      "upload": "Prześlij"
     }
   }
 }

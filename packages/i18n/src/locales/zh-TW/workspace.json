@@ -373,6 +373,16 @@
           "message": "發生錯誤。"
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "工作區更新成功"
+        }
+      },
+      "logo_removed": {
+        "message": "工作區圖片移除成功。"
+      }
     }
   }
 }

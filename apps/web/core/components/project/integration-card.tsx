@@ -16,6 +16,7 @@ import { SelectChannel } from "@/components/integration/slack/select-channel";
 import { SelectRepository } from "@/components/integration/github/select-repository";
 // constants
 import { PROJECT_GITHUB_REPOSITORY } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 // services
 import { ProjectService } from "@/services/project";
 
@@ -38,6 +39,8 @@ const integrationDetails: { [key: string]: any } = {
 const projectService = new ProjectService();
 
 export function IntegrationCard({ integration }: Props) {
+  const { t } = useTranslation();
+
   const { workspaceSlug, projectId } = useParams();
 
   const { data: syncedGithubRepository } = useSWR(projectId ? PROJECT_GITHUB_REPOSITORY(projectId) : null, () =>
@@ -68,7 +71,7 @@ export function IntegrationCard({ integration }: Props) {
 
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
+          title: t("common.toast.success"),
           message: `${login}/${name} repository synced with the project successfully.`,
         });
       })
@@ -76,8 +79,8 @@ export function IntegrationCard({ integration }: Props) {
         console.error(err);
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Repository could not be synced with the project. Please try again.",
+          title: t("common.toast.error"),
+          message: t("project.toasts.integration.sync_error.message"),
         });
       });
   };

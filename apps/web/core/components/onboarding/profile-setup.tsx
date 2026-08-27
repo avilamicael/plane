@@ -72,6 +72,29 @@ const USER_DOMAIN = [
   "Other",
 ];
 
+// The stored value stays in English so existing profiles keep matching; only the label is localized.
+const USER_ROLE_I18N_LABELS: Record<string, string> = {
+  "Individual contributor": "onboarding.profile.roles.individual_contributor",
+  "Senior Leader": "onboarding.profile.roles.senior_leader",
+  Manager: "onboarding.profile.roles.manager",
+  Executive: "onboarding.profile.roles.executive",
+  Freelancer: "onboarding.profile.roles.freelancer",
+  Student: "onboarding.profile.roles.student",
+};
+
+const USER_DOMAIN_I18N_LABELS: Record<string, string> = {
+  Engineering: "onboarding.profile.domains.engineering",
+  Product: "onboarding.profile.domains.product",
+  Marketing: "onboarding.profile.domains.marketing",
+  Sales: "onboarding.profile.domains.sales",
+  Operations: "onboarding.profile.domains.operations",
+  Legal: "onboarding.profile.domains.legal",
+  Finance: "onboarding.profile.domains.finance",
+  "Human Resources": "onboarding.profile.domains.human_resources",
+  Project: "onboarding.profile.domains.project",
+  Other: "onboarding.profile.domains.other",
+};
+
 const authService = new AuthService();
 
 export const ProfileSetup = observer(function ProfileSetup(props: Props) {
@@ -137,8 +160,8 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
       ]);
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success",
-        message: "Profile setup completed!",
+        title: t("common.toast.success"),
+        message: t("onboarding.toasts.profile_setup.success.message"),
       });
       // For Invited Users, they will skip all other steps and finish onboarding.
       if (totalSteps <= 2) {
@@ -147,8 +170,8 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
     } catch {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error",
-        message: "Profile setup failed. Please try again!",
+        title: t("common.toast.error"),
+        message: t("onboarding.toasts.profile_setup.error.message"),
       });
     }
   };
@@ -172,8 +195,8 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
     } catch {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error",
-        message: "User details update failed. Please try again!",
+        title: t("common.toast.error"),
+        message: t("onboarding.toasts.user_details.error.message"),
       });
     }
   };
@@ -190,8 +213,8 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
       ]);
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success",
-        message: "Profile setup completed!",
+        title: t("common.toast.success"),
+        message: t("onboarding.toasts.profile_setup.success.message"),
       });
       // For Invited Users, they will skip all other steps and finish onboarding.
       if (totalSteps <= 2) {
@@ -200,8 +223,8 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
     } catch {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error",
-        message: "Profile setup failed. Please try again!",
+        title: t("common.toast.error"),
+        message: t("onboarding.toasts.profile_setup.error.message"),
       });
     }
   };
@@ -275,7 +298,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                         </div>
                       </div>
                       <div className="pt-1 text-13 font-medium text-accent-secondary hover:text-tertiary">
-                        Choose image
+                        {t("onboarding.profile.choose_image")}
                       </div>
                     </div>
                   ) : (
@@ -296,17 +319,17 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                     className="text-13 font-medium text-tertiary after:ml-0.5 after:text-danger-primary after:content-['*']"
                     htmlFor="first_name"
                   >
-                    First name
+                    {t("first_name")}
                   </label>
                   <Controller
                     control={control}
                     name="first_name"
                     rules={{
-                      required: "First name is required",
+                      required: t("onboarding.profile.errors.first_name_required"),
                       validate: validatePersonName,
                       maxLength: {
                         value: 50,
-                        message: "First name must be within 50 characters.",
+                        message: t("onboarding.profile.errors.first_name_length"),
                       },
                     }}
                     render={({ field: { value, onChange, ref } }) => (
@@ -334,17 +357,17 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                     className="text-13 font-medium text-tertiary after:ml-0.5 after:text-danger-primary after:content-['*']"
                     htmlFor="last_name"
                   >
-                    Last name
+                    {t("last_name")}
                   </label>
                   <Controller
                     control={control}
                     name="last_name"
                     rules={{
-                      required: "Last name is required",
+                      required: t("onboarding.profile.errors.last_name_required"),
                       validate: validatePersonName,
                       maxLength: {
                         value: 50,
-                        message: "Last name must be within 50 characters.",
+                        message: t("onboarding.profile.errors.last_name_length"),
                       },
                     }}
                     render={({ field: { value, onChange, ref } }) => (
@@ -371,7 +394,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                 <>
                   <div className="space-y-1">
                     <label className="text-13 font-medium text-tertiary" htmlFor="password">
-                      Set a password ({t("common.optional")})
+                      {t("auth.common.password.set_password")} ({t("common.optional")})
                     </label>
                     <Controller
                       control={control}
@@ -388,7 +411,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                             onChange={onChange}
                             ref={ref}
                             hasError={Boolean(errors.password)}
-                            placeholder="New password..."
+                            placeholder={t("onboarding.password.new_password_placeholder")}
                             className="w-full border-[0.5px] border-subtle pr-12 placeholder:text-placeholder"
                             onFocus={() => setIsPasswordInputFocused(true)}
                             onBlur={() => setIsPasswordInputFocused(false)}
@@ -420,7 +443,11 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                       rules={{
                         required: watch("password") ? true : false,
                         validate: (value) =>
-                          watch("password") ? (value === watch("password") ? true : "Passwords don't match") : true,
+                          watch("password")
+                            ? value === watch("password")
+                              ? true
+                              : t("auth.common.password.errors.match")
+                            : true,
                       }}
                       render={({ field: { value, onChange, ref } }) => (
                         <div className="relative flex items-center rounded-md">
@@ -466,13 +493,13 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                   className="text-13 font-medium text-tertiary after:ml-0.5 after:text-danger-primary after:content-['*']"
                   htmlFor="role"
                 >
-                  What role are you working on? Choose one.
+                  {t("onboarding.profile.role_question")}
                 </label>
                 <Controller
                   control={control}
                   name="role"
                   rules={{
-                    required: "This field is required",
+                    required: t("onboarding.common.errors.field_required"),
                   }}
                   render={({ field: { value, onChange } }) => (
                     <div className="flex flex-wrap gap-2 overflow-auto py-2 break-all">
@@ -488,7 +515,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                           )}
                           onClick={() => onChange(userRole)}
                         >
-                          {userRole}
+                          {USER_ROLE_I18N_LABELS[userRole] ? t(USER_ROLE_I18N_LABELS[userRole]) : userRole}
                         </div>
                       ))}
                     </div>
@@ -501,14 +528,15 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                   className="text-13 font-medium text-tertiary after:ml-0.5 after:text-danger-primary after:content-['*']"
                   htmlFor="use_case"
                 >
-                  What is your domain expertise? Choose one or more.
+                  {t("onboarding.profile.domain_question")}
                 </label>
                 <Controller
                   control={control}
                   name="use_case"
                   rules={{
-                    required: "Please select at least one option",
-                    validate: (value) => (value && value.length > 0) || "Please select at least one option",
+                    required: t("onboarding.common.errors.select_at_least_one"),
+                    validate: (value) =>
+                      (value && value.length > 0) || t("onboarding.common.errors.select_at_least_one"),
                   }}
                   render={({ field: { value, onChange } }) => (
                     <div className="flex flex-wrap gap-2 overflow-auto py-2 break-all">
@@ -529,7 +557,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
                               }
                             }}
                           >
-                            {userDomain}
+                            {USER_DOMAIN_I18N_LABELS[userDomain] ? t(USER_DOMAIN_I18N_LABELS[userDomain]) : userDomain}
                           </div>
                         );
                       })}
@@ -541,7 +569,7 @@ export const ProfileSetup = observer(function ProfileSetup(props: Props) {
             </>
           )}
           <Button variant="primary" type="submit" size="xl" className="w-full" disabled={isButtonDisabled}>
-            {isSubmitting ? <Spinner height="20px" width="20px" /> : "Continue"}
+            {isSubmitting ? <Spinner height="20px" width="20px" /> : t("common.continue")}
           </Button>
         </form>
       </div>

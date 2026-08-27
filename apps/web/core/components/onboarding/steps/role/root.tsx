@@ -13,6 +13,7 @@ import { CheckIcon, ViewsIcon } from "@plane/propel/icons";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { TUserProfile } from "@plane/types";
 import { EOnboardingSteps } from "@plane/types";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { useUserProfile } from "@/hooks/store/user";
 // local components
@@ -24,13 +25,13 @@ type Props = {
 };
 
 const ROLES = [
-  { id: "product-manager", label: "Product Manager", icon: Box },
-  { id: "engineering-manager", label: "Engineering Manager", icon: ViewsIcon },
-  { id: "designer", label: "Designer", icon: PenTool },
-  { id: "developer", label: "Developer", icon: Monitor },
-  { id: "founder-executive", label: "Founder/Executive", icon: Rocket },
-  { id: "operations-manager", label: "Operations Manager", icon: RefreshCw },
-  { id: "others", label: "Others", icon: Box },
+  { id: "product-manager", i18n_label: "onboarding.role.options.product_manager", icon: Box },
+  { id: "engineering-manager", i18n_label: "onboarding.role.options.engineering_manager", icon: ViewsIcon },
+  { id: "designer", i18n_label: "onboarding.role.options.designer", icon: PenTool },
+  { id: "developer", i18n_label: "onboarding.role.options.developer", icon: Monitor },
+  { id: "founder-executive", i18n_label: "onboarding.role.options.founder_executive", icon: Rocket },
+  { id: "operations-manager", i18n_label: "onboarding.role.options.operations_manager", icon: RefreshCw },
+  { id: "others", i18n_label: "onboarding.role.options.others", icon: Box },
 ];
 
 const defaultValues = {
@@ -39,6 +40,8 @@ const defaultValues = {
 
 export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange }: Props) {
   // store hooks
+  const { t } = useTranslation();
+
   const { data: profile, updateUserProfile } = useUserProfile();
   // form info
   const {
@@ -65,14 +68,14 @@ export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange 
       ]);
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success",
-        message: "Profile setup completed!",
+        title: t("common.toast.success"),
+        message: t("onboarding.toasts.profile_setup.success.message"),
       });
     } catch {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error",
-        message: "Profile setup failed. Please try again!",
+        title: t("common.toast.error"),
+        message: t("onboarding.toasts.profile_setup.error.message"),
       });
     }
   };
@@ -92,15 +95,15 @@ export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10">
       {/* Header */}
-      <CommonOnboardingHeader title="What's your role?" description="Let's set up Plane for how you work." />
+      <CommonOnboardingHeader title={t("onboarding.role.heading")} description={t("onboarding.role.subheading")} />
       {/* Role Selection */}
       <div className="flex flex-col gap-3">
-        <p className="text-body-sm-semibold text-placeholder">Select one</p>
+        <p className="text-body-sm-semibold text-placeholder">{t("onboarding.common.select_one")}</p>
         <Controller
           control={control}
           name="role"
           rules={{
-            required: "This field is required",
+            required: t("onboarding.common.errors.field_required"),
           }}
           render={({ field: { value, onChange } }) => (
             <div className="flex flex-col gap-3">
@@ -124,7 +127,7 @@ export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange 
                   >
                     <div className="flex items-center space-x-3">
                       <Icon className="size-3.5" />
-                      <span className="text-body-sm-semibold">{role.label}</span>
+                      <span className="text-body-sm-semibold">{t(role.i18n_label)}</span>
                     </div>
                     {isSelected && (
                       <>
@@ -146,10 +149,10 @@ export const RoleSetupStep = observer(function RoleSetupStep({ handleStepChange 
       {/* Action Buttons */}
       <div className="space-y-3">
         <Button variant="primary" type="submit" className="w-full" size="xl" disabled={isButtonDisabled}>
-          Continue
+          {t("common.continue")}
         </Button>
         <Button variant="ghost" onClick={handleSkip} className="w-full text-tertiary" size="xl">
-          Skip
+          {t("onboarding.common.skip")}
         </Button>
       </div>
     </form>

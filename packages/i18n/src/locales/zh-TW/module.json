@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {模組} other {模組}}",
     "no_module": "無模組",
-    "select": "新增模組"
+    "select": "新增模組",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "模組建立成功。"
+        }
+      },
+      "update": {
+        "success": {
+          "message": "模組更新成功。"
+        },
+        "error": {
+          "message": "無法更新模組。請再試一次。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "您的封存可以在專案封存中找到。"
+        },
+        "error": {
+          "message": "無法封存模組。請再試一次。"
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "您的模組可以在專案模組中找到。"
+        },
+        "error": {
+          "message": "無法還原模組。請再試一次。"
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "模組連結建立成功。"
+          }
+        },
+        "update": {
+          "success": {
+            "message": "模組連結更新成功。"
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "模組連結刪除成功。"
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "工作事項已成功新增至模組。"
+        },
+        "error": {
+          "message": "無法將所選工作事項新增至模組。請再試一次。"
+        }
+      }
+    },
+    "no_lead": "無負責人",
+    "work_items_progress": "{completed}/{total} {total, plural, one {工作事項} other {工作事項}}"
   }
 }

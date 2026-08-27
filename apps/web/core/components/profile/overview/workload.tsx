@@ -39,7 +39,7 @@ export function ProfileWorkload({ stateDistribution }: Props) {
                       ? "Not started"
                       : group.state_group === "started"
                         ? "Working on"
-                        : STATE_GROUPS[group.state_group].label}
+                        : t(`workspace_projects.state.${group.state_group}`)}
                   </span>
                   <p className="text-18 font-semibold">{group.state_count}</p>
                 </div>

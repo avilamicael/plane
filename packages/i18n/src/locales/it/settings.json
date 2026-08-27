@@ -37,11 +37,38 @@
         "states": {
           "sending": "Invio…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Immagine del profilo eliminata con successo.",
+        "picture_delete_error": "Si è verificato un errore durante l'eliminazione della tua immagine del profilo. Riprova.",
+        "deactivated": "Account disattivato con successo."
+      },
+      "general_form": {
+        "first_name_placeholder": "Inserisci il tuo nome",
+        "last_name_placeholder": "Inserisci il tuo cognome",
+        "display_name_placeholder": "Inserisci il tuo nome visualizzato"
       }
     },
     "preferences": {
       "heading": "Preferenze",
-      "description": "Personalizza la tua esperienza dell'app al modo in cui lavori"
+      "description": "Personalizza la tua esperienza dell'app al modo in cui lavori",
+      "toasts": {
+        "timezone": {
+          "success": "Fuso orario aggiornato con successo",
+          "error": "Aggiornamento del fuso orario non riuscito"
+        },
+        "language": {
+          "success": "Lingua aggiornata con successo",
+          "error": "Aggiornamento della lingua non riuscito"
+        },
+        "start_of_week": {
+          "success": "Primo giorno della settimana aggiornato con successo"
+        }
+      },
+      "start_of_week": {
+        "title": "Primo giorno della settimana",
+        "description": "Questo cambierà l'aspetto di tutti i calendari nella tua app."
+      }
     },
     "notifications": {
       "heading": "Notifiche via email",

@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "Email",
+      "password": "Kata sandi",
+      "save_changes": "Simpan perubahan",
+      "saving": "Menyimpan",
+      "go_back": "Kembali",
+      "success": "Berhasil",
+      "error": "Kesalahan",
+      "done": "Selesai!",
+      "show_password": "Tampilkan kata sandi",
+      "hide_password": "Sembunyikan kata sandi",
+      "settings_updated_successfully": "Pengaturan berhasil diperbarui",
+      "saving_configuration": "Menyimpan konfigurasi",
+      "configuration_saved_successfully": "Konfigurasi berhasil disimpan",
+      "failed_to_save_configuration": "Gagal menyimpan konfigurasi",
+      "learn_more": "Pelajari lebih lanjut",
+      "here": "di sini."
+    },
+    "sidebar": {
+      "instance_admin": "Admin instans",
+      "sign_out": "Keluar",
+      "switch_to_light_mode": "Beralih ke mode terang",
+      "switch_to_dark_mode": "Beralih ke mode gelap",
+      "general": {
+        "title": "Umum",
+        "description": "Kenali instans Anda dan lihat detail utamanya."
+      },
+      "email": {
+        "title": "Email",
+        "description": "Konfigurasikan pengaturan SMTP Anda."
+      },
+      "workspace": {
+        "title": "Ruang kerja",
+        "description": "Kelola semua ruang kerja di instans ini."
+      },
+      "authentication": {
+        "title": "Autentikasi",
+        "description": "Konfigurasikan metode autentikasi."
+      },
+      "ai": {
+        "title": "Kecerdasan buatan",
+        "description": "Konfigurasikan kredensial OpenAI Anda."
+      },
+      "image": {
+        "title": "Gambar di Plane",
+        "description": "Izinkan pustaka gambar pihak ketiga."
+      }
+    },
+    "sign_in": {
+      "heading": "Kelola instans Plane Anda",
+      "sub_heading": "Konfigurasikan pengaturan seluruh instans untuk mengamankan instans Anda",
+      "email_placeholder": "nama@perusahaan.com",
+      "password_placeholder": "Masukkan kata sandi Anda",
+      "submit": "Masuk"
+    },
+    "setup": {
+      "heading": "Siapkan instans Plane Anda",
+      "sub_heading": "Setelah penyiapan, Anda dapat mengelola instans Plane ini.",
+      "first_name": "Nama depan",
+      "last_name": "Nama belakang",
+      "company_name": "Nama perusahaan",
+      "company_name_placeholder": "Nama perusahaan",
+      "set_password": "Atur kata sandi",
+      "new_password_placeholder": "Kata sandi baru",
+      "confirm_password": "Konfirmasi kata sandi",
+      "confirm_password_placeholder": "Konfirmasi kata sandi",
+      "passwords_dont_match": "Kata sandi tidak cocok",
+      "telemetry_consent": "Izinkan Plane mengumpulkan peristiwa penggunaan secara anonim.",
+      "see_more": "Pelajari lebih lanjut",
+      "submit": "Lanjutkan"
+    },
+    "settings": {
+      "general": {
+        "title": "Pengaturan umum",
+        "description": "Ubah nama instans Anda dan alamat email admin instans. Aktifkan atau nonaktifkan telemetri di instans Anda.",
+        "instance_details": "Detail instans",
+        "name_of_instance": "Nama instans",
+        "instance_name_placeholder": "Nama instans",
+        "admin_email_placeholder": "Email admin",
+        "instance_id": "ID instans",
+        "telemetry": "Telemetri",
+        "telemetry_toggle_title": "Izinkan Plane mengumpulkan data penggunaan anonim",
+        "telemetry_toggle_description": "Tidak ada data pribadi yang dikumpulkan. Data anonim ini digunakan untuk memahami cara Anda memakai Plane dan membangun fitur baru sesuai dengan",
+        "telemetry_policy": "Kebijakan Telemetri kami."
+      },
+      "authentication": {
+        "title": "Kelola metode autentikasi untuk instans Anda",
+        "description": "Konfigurasikan metode autentikasi untuk tim Anda dan batasi pendaftaran hanya lewat undangan.",
+        "allow_signup_title": "Izinkan siapa pun mendaftar meski tanpa undangan",
+        "allow_signup_description": "Menonaktifkan opsi ini membuat hanya pengguna yang diundang yang dapat mendaftar.",
+        "available_modes": "Metode autentikasi yang tersedia",
+        "cannot_disable_title": "Autentikasi tidak dapat dinonaktifkan",
+        "cannot_disable_message": "Setidaknya satu metode autentikasi harus tetap aktif. Aktifkan metode lain sebelum menonaktifkan yang ini.",
+        "modes": {
+          "unique_codes": {
+            "name": "Kode unik",
+            "description": "Masuk atau daftar ke Plane menggunakan kode yang dikirim lewat email. Anda perlu menyiapkan SMTP untuk memakai metode ini."
+          },
+          "passwords": {
+            "name": "Kata sandi",
+            "description": "Izinkan anggota membuat akun dengan kata sandi dan masuk menggunakan alamat email mereka."
+          },
+          "google": {
+            "description": "Izinkan anggota masuk atau mendaftar ke Plane dengan akun Google mereka."
+          },
+          "github": {
+            "description": "Izinkan anggota masuk atau mendaftar ke Plane dengan akun GitHub mereka."
+          },
+          "gitlab": {
+            "description": "Izinkan anggota masuk atau mendaftar ke Plane dengan akun GitLab mereka."
+          },
+          "gitea": {
+            "description": "Izinkan anggota masuk atau mendaftar ke Plane dengan akun Gitea mereka."
+          }
+        }
+      },
+      "email": {
+        "title": "Email aman dari instans Anda sendiri",
+        "description": "Plane dapat mengirim email yang berguna kepada Anda dan pengguna Anda dari instans Anda sendiri tanpa berkomunikasi dengan Internet.",
+        "description_secondary": "Siapkan di bawah ini dan uji pengaturan Anda sebelum menyimpannya.",
+        "description_warning": "Kesalahan konfigurasi dapat menyebabkan email terpental dan galat.",
+        "disabled_title": "Fitur email dinonaktifkan",
+        "disabled_message": "Fitur email telah dinonaktifkan",
+        "disable_error_title": "Gagal menonaktifkan email",
+        "disable_error_message": "Fitur email gagal dinonaktifkan. Silakan coba lagi.",
+        "host": "Host",
+        "port": "Port",
+        "sender_email": "Alamat email pengirim",
+        "sender_email_description": "Ini adalah alamat email yang akan dilihat pengguna Anda saat menerima email dari instans ini. Anda perlu memverifikasi alamat ini.",
+        "username": "Nama pengguna",
+        "password_placeholder": "Kata sandi",
+        "security": "Keamanan email",
+        "security_none": "Tanpa keamanan email",
+        "authentication": "Autentikasi",
+        "authentication_description": "Ini opsional, tetapi kami menyarankan untuk menyiapkan nama pengguna dan kata sandi bagi server SMTP Anda.",
+        "send_test_email": "Kirim email uji",
+        "updated_successfully": "Pengaturan email berhasil diperbarui"
+      },
+      "workspace": {
+        "title": "Ruang kerja di instans ini",
+        "description": "Lihat semua ruang kerja dan kendalikan siapa yang boleh membuatnya.",
+        "prevent_creation_title": "Cegah orang lain membuat ruang kerja.",
+        "prevent_creation_description": "Mengaktifkan opsi ini membuat hanya Anda yang dapat membuat ruang kerja. Anda harus mengundang pengguna ke ruang kerja baru.",
+        "all_workspaces": "Semua ruang kerja di instans ini",
+        "list_description": "Anda belum dapat menghapus ruang kerja, dan hanya dapat membuka ruang kerja jika Anda admin atau anggota di sana.",
+        "create": "Buat ruang kerja",
+        "creating": "Membuat ruang kerja",
+        "load_more": "Muat lebih banyak",
+        "name_label": "Beri nama ruang kerja Anda",
+        "name_placeholder": "Sesuatu yang familier dan mudah dikenali selalu paling baik.",
+        "url_label": "Tetapkan URL ruang kerja Anda",
+        "url_placeholder": "nama-ruang-kerja",
+        "url_taken": "URL ini sudah dipakai. Coba yang lain.",
+        "url_invalid": "URL hanya boleh berisi ( - ), ( _ ) dan karakter alfanumerik.",
+        "size_label": "Berapa banyak orang yang akan memakai ruang kerja ini?",
+        "size_placeholder": "Pilih rentang",
+        "required_field": "Kolom ini wajib diisi.",
+        "created_title": "Berhasil!",
+        "created_message": "Ruang kerja berhasil dibuat.",
+        "create_error_title": "Kesalahan!",
+        "create_error_message": "Ruang kerja tidak dapat dibuat. Silakan coba lagi.",
+        "create_generic_error": "Terjadi kesalahan saat membuat ruang kerja. Silakan coba lagi."
+      },
+      "ai": {
+        "title": "Fitur AI untuk semua ruang kerja Anda",
+        "description": "Konfigurasikan kredensial API AI Anda agar fitur Plane AI aktif untuk semua ruang kerja Anda."
+      },
+      "image": {
+        "title": "Pustaka gambar pihak ketiga",
+        "description": "Biarkan pengguna Anda mencari dan memilih gambar dari pustaka pihak ketiga"
+      }
+    },
+    "oauth": {
+      "client_id": "Client ID",
+      "client_secret": "Client secret",
+      "application_id": "ID aplikasi",
+      "secret": "Secret",
+      "organization_id": "ID organisasi",
+      "organization_id_description": "ID GitHub organisasi tersebut.",
+      "host": "Host",
+      "origin_url": "URL asal",
+      "callback_uri": "URI callback",
+      "callback_url": "URL callback",
+      "web": "Web",
+      "provider_details_for_plane": "Detail dari {provider} untuk Plane",
+      "plane_details_for_provider": "Detail dari Plane untuk {provider}",
+      "configured_message": "Autentikasi {provider} Anda sudah dikonfigurasi. Sekarang sebaiknya Anda mengujinya.",
+      "configuration_saved": "Konfigurasi disimpan",
+      "auth_now_active": "Autentikasi {provider} kini aktif.",
+      "auth_now_disabled": "Autentikasi {provider} kini dinonaktifkan.",
+      "get_this_from_settings": "Anda akan mendapatkannya di",
+      "secret_also_in_settings": "Client secret Anda juga ada di",
+      "app_settings_link": "pengaturan aplikasi OAuth {provider}.",
+      "app_settings_link_no_period": "pengaturan aplikasi OAuth {provider}",
+      "autogenerated_paste_origin": "Kami membuatnya otomatis. Tempelkan ke kolom",
+      "autogenerated_paste_callback": "Kami membuatnya otomatis. Tempelkan ke kolom",
+      "field_word": "—",
+      "authorized_origin_url": "URL asal yang diizinkan",
+      "authorized_callback_uri": "URI callback yang diizinkan",
+      "authorized_js_origins": "Asal JavaScript yang diizinkan",
+      "authorized_redirect_uri": "URI pengalihan yang diizinkan",
+      "redirect_uri": "URI pengalihan",
+      "for_this_oauth_client": "— untuk klien OAuth ini,",
+      "google_client_id_description": "Client ID Anda ada di Google API Console.",
+      "google_client_secret_description": "Client secret Anda juga seharusnya ada di Google API Console.",
+      "gitlab_host_description_prefix": "Ini bisa https://gitlab.com atau",
+      "gitlab_host_description_suffix": "tempat Anda menghosting GitLab.",
+      "gitlab_get_this_from": "Dapatkan ini di",
+      "gitlab_secret_also_in": "Client secret juga ada di",
+      "gitlab_paste_redirect_prefix": "Kami membuatnya otomatis. Tempelkan ke kolom",
+      "gitlab_paste_redirect_suffix": "milik",
+      "gitlab_app_link": "aplikasi OAuth GitLab Anda",
+      "gitea_host_label": "Host Gitea",
+      "gitea_host_description": "Gunakan URL instans Gitea Anda. Untuk instans Gitea resmi, gunakan \"https://gitea.com\"."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "Admin sudah ada",
+        "message": "Admin sudah ada. Silakan coba lagi."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "Email, kata sandi, dan nama depan wajib diisi",
+        "message": "Email, kata sandi, dan nama depan wajib diisi. Silakan coba lagi."
+      },
+      "invalid_admin_email": {
+        "title": "Email admin tidak valid",
+        "message": "Email admin tidak valid. Silakan coba lagi."
+      },
+      "invalid_admin_password": {
+        "title": "Kata sandi admin tidak valid",
+        "message": "Kata sandi admin tidak valid. Silakan coba lagi."
+      },
+      "required_admin_email_password": {
+        "title": "Email dan kata sandi wajib diisi",
+        "message": "Email dan kata sandi wajib diisi. Silakan coba lagi."
+      },
+      "admin_authentication_failed": {
+        "title": "Autentikasi gagal",
+        "message": "Autentikasi gagal. Silakan coba lagi."
+      },
+      "admin_user_already_exist": {
+        "title": "Pengguna admin sudah ada",
+        "message": "Pengguna admin sudah ada.",
+        "sign_in_now": "Masuk",
+        "now": "sekarang."
+      },
+      "admin_user_does_not_exist": {
+        "title": "Pengguna admin tidak ada",
+        "message": "Pengguna admin tidak ada.",
+        "sign_in_now": "Masuk",
+        "now": "sekarang."
+      },
+      "admin_user_deactivated": {
+        "title": "Akun pengguna dinonaktifkan",
+        "message": "Akun pengguna dinonaktifkan. Silakan hubungi {contact}."
+      },
+      "administrator": "administrator",
+      "generic_title": "Kesalahan",
+      "generic_message": "Terjadi kesalahan. Silakan coba lagi."
+    },
+    "not_found": {
+      "title": "Ups! Terjadi kesalahan.",
+      "description": "Maaf, halaman yang Anda cari tidak ditemukan. Halaman mungkin telah dihapus, diubah namanya, atau untuk sementara tidak tersedia.",
+      "action": "Buka pengaturan umum",
+      "image_alt": "404 - Halaman tidak ditemukan"
+    }
+  }
+}

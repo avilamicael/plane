@@ -52,7 +52,17 @@
       "5_days": "5 hari",
       "1_week": "1 minggu",
       "2_weeks": "2 minggu",
-      "custom": "Kustom"
+      "custom": "Kustom",
+      "modal": {
+        "title": "Sesuaikan waktu tunda",
+        "pick_a_date": "Pilih tanggal",
+        "select_date": "Pilih tanggal",
+        "pick_a_time": "Pilih waktu",
+        "select_a_time": "Pilih waktu",
+        "no_available_time": "Tidak ada waktu tersedia untuk tanggal ini.",
+        "date_required": "Silakan pilih tanggal",
+        "time_required": "Silakan pilih waktu"
+      }
     }
   }
 }

@@ -19,6 +19,7 @@ import type { TProjectPublishLayouts, TProjectPublishSettings } from "@plane/typ
 import { Loader, ToggleSwitch, CustomSelect, ModalCore, EModalWidth } from "@plane/ui";
 // helpers
 import { copyTextToClipboard } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { useProjectPublish } from "@/hooks/store/use-project-publish";
 
@@ -48,6 +49,8 @@ const VIEW_OPTIONS: {
 ];
 
 export const PublishProjectModal = observer(function PublishProjectModal(props: Props) {
+  const { t } = useTranslation();
+
   const { isOpen, onClose, projectId } = props;
   // states
   const [isUnPublishing, setIsUnPublishing] = useState(false);
@@ -100,8 +103,8 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
     await updatePublishSettings(workspaceSlug.toString(), projectId, payload.id, payload).then((res) => {
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success!",
-        message: "Publish settings updated successfully!",
+        title: t("common.toast.success"),
+        message: t("project.toasts.publish.success.message"),
       });
 
       handleClose();
@@ -118,8 +121,8 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
       .catch(() =>
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Something went wrong while unpublishing the project.",
+          title: t("common.toast.error"),
+          message: t("project.toasts.publish.unpublish_error.message"),
         })
       )
       .finally(() => setIsUnPublishing(false));
@@ -136,8 +139,8 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
     if (!selectedLayouts || selectedLayouts.length === 0) {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
-        message: "Please select at least one view layout to publish the project.",
+        title: t("common.toast.error"),
+        message: t("project.toasts.publish.select_layout.message"),
       });
       return;
     }
@@ -172,7 +175,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
       setToast({
         type: TOAST_TYPE.SUCCESS,
         title: "",
-        message: "Published page link copied successfully.",
+        message: t("project.toasts.publish.link_copied.message"),
       })
     );
 
@@ -180,7 +183,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
     <ModalCore isOpen={isOpen} handleClose={handleClose} width={EModalWidth.XXL}>
       <form onSubmit={handleSubmit(handleFormSubmit)}>
         <div className="flex items-center justify-between gap-2 p-5">
-          <h5 className="text-18 font-medium text-secondary">Publish project</h5>
+          <h5 className="text-18 font-medium text-secondary">{t("publish_project")}</h5>
           {isProjectPublished && (
             <Button
               variant="error-fill"
@@ -243,7 +246,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
             )}
             <div className="space-y-4">
               <div className="relative flex items-center justify-between gap-2">
-                <div className="text-13">Views</div>
+                <div className="text-13">{t("common.views")}</div>
                 <Controller
                   control={control}
                   name="view_props"
@@ -278,7 +281,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
                 />
               </div>
               <div className="relative flex items-center justify-between gap-2">
-                <div className="text-13">Allow comments</div>
+                <div className="text-13">{t("project.publish.allow_comments")}</div>
                 <Controller
                   control={control}
                   name="is_comments_enabled"
@@ -288,7 +291,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
                 />
               </div>
               <div className="relative flex items-center justify-between gap-2">
-                <div className="text-13">Allow reactions</div>
+                <div className="text-13">{t("project.publish.allow_reactions")}</div>
                 <Controller
                   control={control}
                   name="is_reactions_enabled"
@@ -298,7 +301,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
                 />
               </div>
               <div className="relative flex items-center justify-between gap-2">
-                <div className="text-13">Allow voting</div>
+                <div className="text-13">{t("project.publish.allow_voting")}</div>
                 <Controller
                   control={control}
                   name="is_votes_enabled"
@@ -315,7 +318,7 @@ export const PublishProjectModal = observer(function PublishProjectModal(props: 
         <div className="relative mt-4 flex items-center justify-between border-t border-subtle px-5 py-4">
           <div className="flex items-center gap-1 text-13 text-placeholder">
             <GlobeIcon className="size-3.5" />
-            <div className="text-13">Anyone with the link can access</div>
+            <div className="text-13">{t("project.publish.anyone_with_link_can_access")}</div>
           </div>
           {!fetchSettingsLoader && (
             <div className="relative flex items-center gap-2">

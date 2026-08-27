@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Увійдіть, щоб залишити коментар"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Натисніть, щоб проголосувати за",
       "click_to_downvote": "Натисніть, щоб проголосувати проти",
       "click_to_view_upvotes": "Натисніть, щоб переглянути голоси за",
-      "click_to_view_downvotes": "Натисніть, щоб переглянути голоси проти"
+      "click_to_view_downvotes": "Натисніть, щоб переглянути голоси проти",
+      "no_upvotes": "Поки немає голосів «за»",
+      "no_downvotes": "Поки немає голосів «проти»",
+      "and_more": "і ще {count}"
     },
     "activity": {
       "created_the_work_item": "створив(ла) робочу одиницю.",
       "created_the_work_item_via": "створив(ла) робочу одиницю через",
-      "deleted_a_work_item": "видалив(ла) робочу одиницю."
+      "deleted_a_work_item": "видалив(ла) робочу одиницю.",
+      "set_the_name_to": "змінив(ла) назву на",
+      "updated_the_description": "оновив(ла) опис",
+      "set_the_state_to": "змінив(ла) стан на",
+      "set_the_priority_to": "змінив(ла) пріоритет на",
+      "added_a_new_assignee": "додав(ла) нового виконавця",
+      "removed_the_assignee": "видалив(ла) виконавця",
+      "added_a_new_label": "додав(ла) нову мітку",
+      "removed_the_label": "видалив(ла) мітку",
+      "set_the_start_date_to": "змінив(ла) дату початку на",
+      "removed_the_start_date": "видалив(ла) дату початку",
+      "set_the_due_date_to": "змінив(ла) крайній термін на",
+      "removed_the_due_date": "видалив(ла) крайній термін",
+      "set_the_parent_to": "змінив(ла) батьківський елемент на",
+      "removed_the_parent": "видалив(ла) батьківський елемент",
+      "set_the_estimate_point_to": "змінив(ла) оцінку на",
+      "removed_the_estimate_point": "видалив(ла) оцінку",
+      "added_this_work_item_to_the_cycle": "додав(ла) цю робочу одиницю до циклу",
+      "set_the_cycle_to": "змінив(ла) цикл на",
+      "removed_the_work_item_from_the_cycle": "видалив(ла) робочу одиницю з циклу",
+      "added_this_work_item_to_the_module": "додав(ла) цю робочу одиницю до модуля",
+      "set_the_module_to": "змінив(ла) модуль на",
+      "removed_the_work_item_from_the_module": "видалив(ла) робочу одиницю з модуля",
+      "added_the_link": "додав(ла)",
+      "updated_the_link": "оновив(ла)",
+      "removed_the_link": "видалив(ла)",
+      "link_noun": "посилання",
+      "uploaded_a_new_attachment": "завантажив(ла) нове вкладення",
+      "removed_an_attachment": "видалив(ла) вкладення",
+      "restored_the_work_item": "відновив(ла) робочу одиницю",
+      "archived_the_work_item": "заархівував(ла) робочу одиницю",
+      "declined_this_work_item_from_intake": "відхилив(ла) цю робочу одиницю в Intake.",
+      "snoozed_this_work_item": "відклав(ла) цю робочу одиницю.",
+      "accepted_this_work_item_from_intake": "прийняв(ла) цю робочу одиницю в Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "відхилив(ла) цю робочу одиницю в Intake, позначивши її як дублікат.",
+      "updated_intake_work_item_status": "оновив(ла) стан робочої одиниці в Intake.",
+      "marked_this_work_item_is_blocking_work_item": "позначив(ла), що ця робоча одиниця блокує робочу одиницю",
+      "removed_the_blocking_work_item": "зняв(ла) блокування з робочої одиниці",
+      "marked_this_work_item_is_being_blocked_by": "позначив(ла), що ця робоча одиниця заблокована одиницею",
+      "removed_this_work_item_being_blocked_by_work_item": "зняв(ла) блокування цієї робочої одиниці одиницею",
+      "marked_this_work_item_as_duplicate_of": "позначив(ла) цю робочу одиницю як дублікат одиниці",
+      "removed_this_work_item_as_a_duplicate_of": "зняв(ла) з цієї робочої одиниці позначку дубліката одиниці",
+      "marked_that_this_work_item_relates_to": "позначив(ла), що ця робоча одиниця пов’язана з одиницею",
+      "removed_the_relation_from": "видалив(ла) зв’язок з одиницею",
+      "connector_for": "в",
+      "connector_to": "в",
+      "connector_from": "з",
+      "connector_of": "в"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Реакцію успішно додано"
+          },
+          "error": {
+            "message": "Не вдалося додати реакцію"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Реакцію успішно видалено"
+          },
+          "error": {
+            "message": "Не вдалося видалити реакцію"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Вкладення успішно видалено"
+          },
+          "error": {
+            "message": "Не вдалося видалити вкладення"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Виберіть щонайменше одну робочу одиницю."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Робочі одиниці успішно видалено!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Дата виконання не може бути раніше за дату початку робочої одиниці."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Помилка під час оновлення дат робочої одиниці. Спробуйте пізніше."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Не вдалося перемістити робочу одиницю до проєкту. Спробуйте ще раз."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Не вдалося видалити робочу одиницю"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Не вдалося оновити робочу одиницю"
+        }
+      },
+      "editor_processing": {
+        "message": "Редактор ще обробляє зміни. Зачекайте, перш ніж продовжити."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Назва робочої одиниці недостатньо інформативна для створення опису. Спробуйте іншу назву."
+        }
+      }
     }
   },
   "sub_work_item": {

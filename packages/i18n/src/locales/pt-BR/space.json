@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Erro",
+          "message": "Algo deu errado. Tente novamente."
+        },
+        "template": {
+          "try_again": "{reason}. Tente novamente.",
+          "contact_admin": "{reason}. Entre em contato com o administrador."
+        },
+        "reason": {
+          "instance_not_configured": "Instância não configurada",
+          "signup_disabled": "Cadastro desativado",
+          "invalid_password": "Senha inválida",
+          "smtp_not_configured": "SMTP não configurado",
+          "invalid_email": "E-mail inválido",
+          "email_required": "E-mail obrigatório",
+          "email_and_password_required": "E-mail e senha obrigatórios",
+          "email_and_code_required": "E-mail e código obrigatórios",
+          "authentication_failed": "Falha na autenticação",
+          "invalid_magic_code": "Código mágico inválido",
+          "expired_magic_code": "Código mágico expirado",
+          "oauth_not_configured": "OAuth não configurado",
+          "google_not_configured": "Google não configurado",
+          "github_not_configured": "GitHub não configurado",
+          "gitlab_not_configured": "GitLab não configurado",
+          "google_oauth_provider_error": "Erro no provedor OAuth do Google",
+          "github_oauth_provider_error": "Erro no provedor OAuth do GitHub",
+          "gitlab_oauth_provider_error": "Erro no provedor OAuth do GitLab",
+          "invalid_password_token": "Token de senha inválido",
+          "expired_password_token": "Token de senha expirado",
+          "password_required": "Senha obrigatória",
+          "incorrect_old_password": "Senha antiga incorreta",
+          "invalid_new_password": "Nova senha inválida",
+          "password_already_set": "Senha já definida",
+          "admin_already_exist": "O administrador já existe",
+          "admin_email_password_first_name_required": "E-mail, senha e nome obrigatórios",
+          "invalid_admin_email": "E-mail de administrador inválido",
+          "invalid_admin_password": "Senha de administrador inválida"
+        },
+        "title": {
+          "user_already_exist": "O usuário já existe",
+          "user_does_not_exist": "O usuário não existe",
+          "user_account_deactivated": "Conta de usuário desativada",
+          "bot_user_login_forbidden": "Entrada não permitida",
+          "admin_user_already_exist": "O usuário administrador já existe",
+          "admin_user_does_not_exist": "O usuário administrador não existe"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Esta conta não pode ser usada para entrar. Use uma conta pessoal.",
+          "user_account_deactivated": "Conta de usuário desativada. Entre em contato com {contact}.",
+          "default_contact": "o administrador",
+          "user_already_exist": "Sua conta já está cadastrada.",
+          "user_does_not_exist": "Nenhuma conta encontrada.",
+          "admin_user_already_exist": "O usuário administrador já existe.",
+          "admin_user_does_not_exist": "O usuário administrador não existe.",
+          "link": {
+            "sign_in_now": "Entre agora",
+            "create_one": "Crie uma para começar"
+          }
+        }
+      }
+    }
+  }
+}

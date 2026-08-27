@@ -6,6 +6,7 @@
 
 import { observer } from "mobx-react";
 // hooks
+import { useTranslation } from "@plane/i18n";
 import { IntakeIcon } from "@plane/propel/icons";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // components
@@ -20,21 +21,22 @@ export const IssueInboxActivity = observer(function IssueInboxActivity(props: TI
   const {
     activity: { getActivityById },
   } = useIssueDetail();
+  const { t } = useTranslation();
 
   const activity = getActivityById(activityId);
 
   const getInboxActivityMessage = () => {
     switch (activity?.verb) {
       case "-1":
-        return "declined this work item from intake.";
+        return t("issue.activity.declined_this_work_item_from_intake");
       case "0":
-        return "snoozed this work item.";
+        return t("issue.activity.snoozed_this_work_item");
       case "1":
-        return "accepted this work item from intake.";
+        return t("issue.activity.accepted_this_work_item_from_intake");
       case "2":
-        return "declined this work item from intake by marking a duplicate work item.";
+        return t("issue.activity.declined_this_work_item_from_intake_as_duplicate");
       default:
-        return "updated intake work item status.";
+        return t("issue.activity.updated_intake_work_item_status");
     }
   };
 

@@ -11,6 +11,7 @@ import { useForm } from "react-hook-form";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { IModule } from "@plane/types";
 import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { useTranslation } from "@plane/i18n";
 // components
 import { ModuleForm } from "@/components/modules";
 // hooks
@@ -36,6 +37,8 @@ const defaultValues: Partial<IModule> = {
 };
 
 export const CreateUpdateModuleModal = observer(function CreateUpdateModuleModal(props: Props) {
+  const { t } = useTranslation();
+
   const { isOpen, onClose, data, workspaceSlug, projectId } = props;
   // states
   const [activeProject, setActiveProject] = useState<string | null>(null);
@@ -62,14 +65,14 @@ export const CreateUpdateModuleModal = observer(function CreateUpdateModuleModal
         handleClose();
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Module created successfully.",
+          title: t("common.toast.success"),
+          message: t("module.toasts.create.success.message"),
         });
       })
       .catch((err) => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
+          title: t("common.toast.error"),
           message: err?.detail ?? err?.error ?? "Module could not be created. Please try again.",
         });
       });
@@ -85,14 +88,14 @@ export const CreateUpdateModuleModal = observer(function CreateUpdateModuleModal
 
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Module updated successfully.",
+          title: t("common.toast.success"),
+          message: t("module.toasts.update.success.message"),
         });
       })
       .catch((err) => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
+          title: t("common.toast.error"),
           message: err?.detail ?? err?.error ?? "Module could not be updated. Please try again.",
         });
       });

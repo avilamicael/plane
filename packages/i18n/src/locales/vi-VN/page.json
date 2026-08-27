@@ -110,6 +110,126 @@
       "label": "Xóa khỏi bộ sưu tập",
       "success_message": "Đã xóa trang khỏi bộ sưu tập.",
       "error_message": "Không thể xóa trang khỏi bộ sưu tập. Vui lòng thử lại."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Đã sao chép liên kết trang vào bảng tạm."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Đã nhân bản trang thành công."
+        },
+        "error": {
+          "message": "Không thể nhân bản trang. Vui lòng thử lại sau."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Đã khôi phục trang thành công."
+        },
+        "error": {
+          "message": "Không thể khôi phục trang. Vui lòng thử lại sau."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Đã lưu trữ trang thành công."
+        },
+        "error": {
+          "message": "Không thể lưu trữ trang. Vui lòng thử lại sau."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Đã thêm trang vào mục yêu thích."
+        },
+        "error": {
+          "message": "Không thể thêm trang vào mục yêu thích. Vui lòng thử lại sau."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Đã xóa trang khỏi mục yêu thích."
+        },
+        "error": {
+          "message": "Không thể xóa trang khỏi mục yêu thích. Vui lòng thử lại sau."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Đã khóa trang thành công."
+        },
+        "error": {
+          "message": "Không thể khóa trang. Vui lòng thử lại sau."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Đã mở khóa trang thành công."
+        },
+        "error": {
+          "message": "Không thể mở khóa trang. Vui lòng thử lại sau."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "Trang đã được đánh dấu là công khai và chuyển sang mục công khai."
+        },
+        "error": {
+          "message": "Không thể đánh dấu trang là công khai. Vui lòng thử lại."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "Trang đã được đánh dấu là riêng tư và chuyển sang mục riêng tư."
+        },
+        "error": {
+          "message": "Không thể đánh dấu trang là riêng tư. Vui lòng thử lại."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Đã xóa trang thành công."
+        },
+        "error": {
+          "message": "Không thể xóa trang. Vui lòng thử lại."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Đã xuất trang thành công."
+        },
+        "error": {
+          "message": "Không thể xuất trang. Vui lòng thử lại sau."
+        }
+      }
+    },
+    "create_page": "Tạo trang",
+    "delete_page": "Xóa trang",
+    "export": {
+      "title": "Xuất trang",
+      "format": "Định dạng xuất",
+      "include_content": "Nội dung đưa vào",
+      "page_format": "Khổ trang",
+      "content_variety": {
+        "everything": "Mọi thứ",
+        "no_images": "Không có hình ảnh"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Khóa",
+      "locked": "Đã khóa",
+      "unlocked": "Đã mở khóa"
+    },
+    "offline_badge": {
+      "heading": "Bạn đang ngoại tuyến.",
+      "description": "Bạn có thể tiếp tục chỉnh sửa. Các thay đổi sẽ được đồng bộ khi bạn trực tuyến trở lại.",
+      "label": "Ngoại tuyến"
+    },
+    "toolbar": {
+      "color": "Màu sắc"
     }
   }
 }

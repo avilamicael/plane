@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 import { CircleCheck, XCircle } from "lucide-react";
 // plane imports
 import { API_BASE_URL } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 import { AuthService } from "@plane/services";
 import { Input, Spinner } from "@plane/ui";
@@ -39,6 +40,8 @@ const defaultValues: TUniqueCodeFormValues = {
 
 export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
   const { mode, email, nextPath, handleEmailClear, generateEmailUniqueCode } = props;
+  // i18n
+  const { t } = useTranslation();
   // derived values
   const defaultResetTimerValue = 5;
   // states
@@ -87,7 +90,7 @@ export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
       <input type="hidden" value={nextPath} name="next_path" />
       <div className="space-y-1">
         <label className="text-13 font-medium text-tertiary" htmlFor="email">
-          Email
+          {t("auth.common.email.label")}
         </label>
         <div className={`relative flex items-center rounded-md border border-subtle bg-surface-1`}>
           <Input
@@ -96,7 +99,7 @@ export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
             type="email"
             value={uniqueCodeFormData.email}
             onChange={(e) => handleFormChange("email", e.target.value)}
-            placeholder="name@company.com"
+            placeholder={t("auth.common.email.placeholder")}
             className={`h-10 w-full border-0 disable-autofill-style placeholder:text-placeholder`}
             autoComplete="off"
             disabled
@@ -112,13 +115,13 @@ export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
 
       <div className="space-y-1">
         <label className="text-13 font-medium text-tertiary" htmlFor="code">
-          Unique code
+          {t("auth.common.unique_code.label")}
         </label>
         <Input
           name="code"
           value={uniqueCodeFormData.code}
           onChange={(e) => handleFormChange("code", e.target.value)}
-          placeholder="123456"
+          placeholder={t("auth.common.unique_code.placeholder")}
           className="h-10 w-full border border-subtle !bg-surface-1 pr-12 disable-autofill-style placeholder:text-placeholder"
           autoComplete="off"
           autoFocus
@@ -126,7 +129,7 @@ export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
         <div className="flex w-full items-center justify-between px-1 pt-1 text-11">
           <p className="flex items-center gap-1 font-medium text-success-primary">
             <CircleCheck height={12} width={12} />
-            Paste the code sent to your email
+            {t("auth.common.unique_code.paste_code")}
           </p>
           <button
             type="button"
@@ -139,17 +142,23 @@ export function AuthUniqueCodeForm(props: TAuthUniqueCodeForm) {
             disabled={isRequestNewCodeDisabled}
           >
             {resendTimerCode > 0
-              ? `Resend in ${resendTimerCode}s`
+              ? t("auth.common.resend_in", { seconds: resendTimerCode })
               : isRequestingNewCode
-                ? "Requesting new code"
-                : "Resend"}
+                ? t("auth.common.unique_code.requesting_new_code")
+                : t("common.resend")}
           </button>
         </div>
       </div>
 
       <div className="space-y-2.5">
         <Button type="submit" variant="primary" className="w-full" size="xl" disabled={isButtonDisabled}>
-          {isRequestingNewCode ? "Sending code" : isSubmitting ? <Spinner height="20px" width="20px" /> : "Continue"}
+          {isRequestingNewCode ? (
+            t("auth.common.unique_code.sending_code")
+          ) : isSubmitting ? (
+            <Spinner height="20px" width="20px" />
+          ) : (
+            t("common.continue")
+          )}
         </Button>
       </div>
     </form>

@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "E-mail",
+      "password": "Parolă",
+      "save_changes": "Salvează modificările",
+      "saving": "Se salvează",
+      "go_back": "Înapoi",
+      "success": "Succes",
+      "error": "Eroare",
+      "done": "Gata!",
+      "show_password": "Arată parola",
+      "hide_password": "Ascunde parola",
+      "settings_updated_successfully": "Setările au fost actualizate cu succes",
+      "saving_configuration": "Se salvează configurația",
+      "configuration_saved_successfully": "Configurația a fost salvată cu succes",
+      "failed_to_save_configuration": "Configurația nu a putut fi salvată",
+      "learn_more": "Află mai multe",
+      "here": "aici."
+    },
+    "sidebar": {
+      "instance_admin": "Administratorul instanței",
+      "sign_out": "Deconectare",
+      "switch_to_light_mode": "Comută la modul luminos",
+      "switch_to_dark_mode": "Comută la modul întunecat",
+      "general": {
+        "title": "General",
+        "description": "Identifică-ți instanțele și vezi detaliile esențiale."
+      },
+      "email": {
+        "title": "E-mail",
+        "description": "Configurează setările SMTP."
+      },
+      "workspace": {
+        "title": "Spații de lucru",
+        "description": "Gestionează toate spațiile de lucru din această instanță."
+      },
+      "authentication": {
+        "title": "Autentificare",
+        "description": "Configurează modurile de autentificare."
+      },
+      "ai": {
+        "title": "Inteligență artificială",
+        "description": "Configurează-ți credențialele OpenAI."
+      },
+      "image": {
+        "title": "Imagini în Plane",
+        "description": "Permite biblioteci de imagini terțe."
+      }
+    },
+    "sign_in": {
+      "heading": "Gestionează-ți instanța Plane",
+      "sub_heading": "Configurează setările valabile pentru toată instanța pentru a o securiza",
+      "email_placeholder": "nume@companie.com",
+      "password_placeholder": "Introdu parola",
+      "submit": "Conectare"
+    },
+    "setup": {
+      "heading": "Configurează-ți instanța Plane",
+      "sub_heading": "După configurare vei putea gestiona această instanță Plane.",
+      "first_name": "Prenume",
+      "last_name": "Nume",
+      "company_name": "Numele companiei",
+      "company_name_placeholder": "Numele companiei",
+      "set_password": "Setează o parolă",
+      "new_password_placeholder": "Parolă nouă",
+      "confirm_password": "Confirmă parola",
+      "confirm_password_placeholder": "Confirmă parola",
+      "passwords_dont_match": "Parolele nu coincid",
+      "telemetry_consent": "Permite Plane să colecteze anonim evenimente de utilizare.",
+      "see_more": "Află mai multe",
+      "submit": "Continuă"
+    },
+    "settings": {
+      "general": {
+        "title": "Setări generale",
+        "description": "Schimbă numele instanței și adresele de e-mail ale administratorilor. Activează sau dezactivează telemetria în instanța ta.",
+        "instance_details": "Detaliile instanței",
+        "name_of_instance": "Numele instanței",
+        "instance_name_placeholder": "Numele instanței",
+        "admin_email_placeholder": "E-mailul administratorului",
+        "instance_id": "ID-ul instanței",
+        "telemetry": "Telemetrie",
+        "telemetry_toggle_title": "Permite Plane să colecteze date de utilizare anonime",
+        "telemetry_toggle_description": "Nu se colectează date cu caracter personal. Aceste date anonimizate ne ajută să înțelegem cum folosești Plane și să construim funcții noi în conformitate cu",
+        "telemetry_policy": "Politica noastră de telemetrie."
+      },
+      "authentication": {
+        "title": "Gestionează modurile de autentificare ale instanței tale",
+        "description": "Configurează modurile de autentificare pentru echipa ta și limitează înscrierile doar la invitații.",
+        "allow_signup_title": "Permite oricui să se înscrie chiar și fără invitație",
+        "allow_signup_description": "Dezactivând această opțiune, se vor putea înscrie doar utilizatorii invitați.",
+        "available_modes": "Moduri de autentificare disponibile",
+        "cannot_disable_title": "Autentificarea nu poate fi dezactivată",
+        "cannot_disable_message": "Cel puțin o metodă de autentificare trebuie să rămână activă. Activează altă metodă înainte de a o dezactiva pe aceasta.",
+        "modes": {
+          "unique_codes": {
+            "name": "Coduri unice",
+            "description": "Conectează-te sau înscrie-te în Plane cu coduri trimise prin e-mail. Pentru această metodă trebuie să ai SMTP configurat."
+          },
+          "passwords": {
+            "name": "Parole",
+            "description": "Permite membrilor să creeze conturi cu parolă și să se conecteze cu adresele lor de e-mail."
+          },
+          "google": {
+            "description": "Permite membrilor să se conecteze sau să se înscrie în Plane cu conturile lor Google."
+          },
+          "github": {
+            "description": "Permite membrilor să se conecteze sau să se înscrie în Plane cu conturile lor GitHub."
+          },
+          "gitlab": {
+            "description": "Permite membrilor să se conecteze sau să se înscrie în Plane cu conturile lor GitLab."
+          },
+          "gitea": {
+            "description": "Permite membrilor să se conecteze sau să se înscrie în Plane cu conturile lor Gitea."
+          }
+        }
+      },
+      "email": {
+        "title": "E-mailuri sigure din propria ta instanță",
+        "description": "Plane îți poate trimite ție și utilizatorilor tăi e-mailuri utile din propria ta instanță, fără a comunica cu internetul.",
+        "description_secondary": "Configurează mai jos și testează setările înainte de a le salva.",
+        "description_warning": "Configurările greșite pot duce la e-mailuri respinse și erori.",
+        "disabled_title": "Funcția de e-mail dezactivată",
+        "disabled_message": "Funcția de e-mail a fost dezactivată",
+        "disable_error_title": "Eroare la dezactivarea e-mailului",
+        "disable_error_message": "Funcția de e-mail nu a putut fi dezactivată. Încearcă din nou.",
+        "host": "Host",
+        "port": "Port",
+        "sender_email": "Adresa de e-mail a expeditorului",
+        "sender_email_description": "Aceasta este adresa de e-mail pe care o vor vedea utilizatorii tăi când primesc mesaje din această instanță. Va trebui să o verifici.",
+        "username": "Nume de utilizator",
+        "password_placeholder": "Parolă",
+        "security": "Securitatea e-mailului",
+        "security_none": "Fără securitate pentru e-mail",
+        "authentication": "Autentificare",
+        "authentication_description": "Este opțional, dar recomandăm să configurezi un nume de utilizator și o parolă pentru serverul tău SMTP.",
+        "send_test_email": "Trimite un e-mail de test",
+        "updated_successfully": "Setările de e-mail au fost actualizate cu succes"
+      },
+      "workspace": {
+        "title": "Spații de lucru din această instanță",
+        "description": "Vezi toate spațiile de lucru și controlează cine le poate crea.",
+        "prevent_creation_title": "Împiedică alte persoane să creeze spații de lucru.",
+        "prevent_creation_description": "Dacă activezi această opțiune, doar tu vei putea crea spații de lucru. Va trebui să inviți utilizatorii în spațiile noi.",
+        "all_workspaces": "Toate spațiile de lucru din această instanță",
+        "list_description": "Încă nu poți șterge spații de lucru și poți accesa un spațiu doar dacă ești administrator sau membru în el.",
+        "create": "Creează spațiu de lucru",
+        "creating": "Se creează spațiul de lucru",
+        "load_more": "Încarcă mai multe",
+        "name_label": "Dă un nume spațiului tău de lucru",
+        "name_placeholder": "Ceva familiar și ușor de recunoscut este întotdeauna cea mai bună alegere.",
+        "url_label": "Setează URL-ul spațiului tău de lucru",
+        "url_placeholder": "nume-spatiu-de-lucru",
+        "url_taken": "Acest URL este deja folosit. Încearcă altul.",
+        "url_invalid": "URL-urile pot conține doar ( - ), ( _ ) și caractere alfanumerice.",
+        "size_label": "Câte persoane vor folosi acest spațiu de lucru?",
+        "size_placeholder": "Selectează un interval",
+        "required_field": "Acest câmp este obligatoriu.",
+        "created_title": "Succes!",
+        "created_message": "Spațiul de lucru a fost creat cu succes.",
+        "create_error_title": "Eroare!",
+        "create_error_message": "Spațiul de lucru nu a putut fi creat. Încearcă din nou.",
+        "create_generic_error": "A apărut o eroare la crearea spațiului de lucru. Încearcă din nou."
+      },
+      "ai": {
+        "title": "Funcții de IA pentru toate spațiile tale de lucru",
+        "description": "Configurează credențialele API de IA pentru ca funcțiile Plane AI să fie active în toate spațiile tale de lucru."
+      },
+      "image": {
+        "title": "Biblioteci de imagini terțe",
+        "description": "Permite utilizatorilor tăi să caute și să aleagă imagini din biblioteci terțe"
+      }
+    },
+    "oauth": {
+      "client_id": "ID client",
+      "client_secret": "Secret client",
+      "application_id": "ID aplicație",
+      "secret": "Secret",
+      "organization_id": "ID organizație",
+      "organization_id_description": "ID-ul organizației pe GitHub.",
+      "host": "Host",
+      "origin_url": "URL de origine",
+      "callback_uri": "URI de callback",
+      "callback_url": "URL de callback",
+      "web": "Web",
+      "provider_details_for_plane": "Detalii furnizate de {provider} pentru Plane",
+      "plane_details_for_provider": "Detalii furnizate de Plane pentru {provider}",
+      "configured_message": "Autentificarea {provider} este configurată. Acum ar trebui să o testezi.",
+      "configuration_saved": "Configurație salvată",
+      "auth_now_active": "Autentificarea {provider} este acum activă.",
+      "auth_now_disabled": "Autentificarea {provider} este acum dezactivată.",
+      "get_this_from_settings": "Vei obține acest lucru din",
+      "secret_also_in_settings": "Secretul de client se găsește tot în",
+      "app_settings_link": "setările aplicației OAuth {provider}.",
+      "app_settings_link_no_period": "setările aplicației OAuth {provider}",
+      "autogenerated_paste_origin": "Îl generăm automat. Lipește-l în câmpul",
+      "autogenerated_paste_callback": "Îl generăm automat. Lipește-l în câmpul tău",
+      "field_word": "—",
+      "authorized_origin_url": "URL de origine autorizat",
+      "authorized_callback_uri": "URI de callback autorizat",
+      "authorized_js_origins": "Origini JavaScript autorizate",
+      "authorized_redirect_uri": "URI de redirecționare autorizat",
+      "redirect_uri": "URI de redirecționare",
+      "for_this_oauth_client": "pentru acest client OAuth",
+      "google_client_id_description": "ID-ul tău de client se află în Google API Console.",
+      "google_client_secret_description": "Secretul tău de client ar trebui să se afle tot în Google API Console.",
+      "gitlab_host_description_prefix": "Este fie https://gitlab.com, fie",
+      "gitlab_host_description_suffix": "pe care găzduiești GitLab.",
+      "gitlab_get_this_from": "Obține acest lucru din",
+      "gitlab_secret_also_in": "Secretul de client se găsește tot în",
+      "gitlab_paste_redirect_prefix": "Îl generăm automat. Lipește-l în câmpul",
+      "gitlab_paste_redirect_suffix": "al",
+      "gitlab_app_link": "aplicației tale OAuth GitLab",
+      "gitea_host_label": "Host Gitea",
+      "gitea_host_description": "Folosește URL-ul instanței tale Gitea. Pentru instanța oficială Gitea, folosește „https://gitea.com”."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "Administratorul există deja",
+        "message": "Administratorul există deja. Încearcă din nou."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "E-mailul, parola și prenumele sunt obligatorii",
+        "message": "E-mailul, parola și prenumele sunt obligatorii. Încearcă din nou."
+      },
+      "invalid_admin_email": {
+        "title": "E-mail de administrator nevalid",
+        "message": "E-mail de administrator nevalid. Încearcă din nou."
+      },
+      "invalid_admin_password": {
+        "title": "Parolă de administrator nevalidă",
+        "message": "Parolă de administrator nevalidă. Încearcă din nou."
+      },
+      "required_admin_email_password": {
+        "title": "E-mailul și parola sunt obligatorii",
+        "message": "E-mailul și parola sunt obligatorii. Încearcă din nou."
+      },
+      "admin_authentication_failed": {
+        "title": "Autentificare eșuată",
+        "message": "Autentificare eșuată. Încearcă din nou."
+      },
+      "admin_user_already_exist": {
+        "title": "Utilizatorul administrator există deja",
+        "message": "Utilizatorul administrator există deja.",
+        "sign_in_now": "Conectează-te",
+        "now": "acum."
+      },
+      "admin_user_does_not_exist": {
+        "title": "Utilizatorul administrator nu există",
+        "message": "Utilizatorul administrator nu există.",
+        "sign_in_now": "Conectează-te",
+        "now": "acum."
+      },
+      "admin_user_deactivated": {
+        "title": "Cont de utilizator dezactivat",
+        "message": "Cont de utilizator dezactivat. Contactează {contact}."
+      },
+      "administrator": "administratorul",
+      "generic_title": "Eroare",
+      "generic_message": "Ceva nu a mers bine. Încearcă din nou."
+    },
+    "not_found": {
+      "title": "Ups! Ceva nu a mers bine.",
+      "description": "Ne pare rău, pagina pe care o cauți nu a putut fi găsită. Este posibil să fi fost eliminată, redenumită sau să fie temporar indisponibilă.",
+      "action": "Mergi la setările generale",
+      "image_alt": "404 - Pagina nu a fost găsită"
+    }
+  }
+}

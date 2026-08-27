@@ -8,6 +8,8 @@ import React from "react";
 import { observer } from "mobx-react";
 import { MoveRight } from "lucide-react";
 import { Listbox, Transition } from "@headlessui/react";
+// plane imports
+import { useTranslation } from "@plane/i18n";
 // ui
 import { LinkIcon, CenterPanelIcon, FullScreenPanelIcon, SidePanelIcon } from "@plane/propel/icons";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
@@ -27,24 +29,25 @@ type Props = {
 const PEEK_MODES: {
   key: IPeekMode;
   icon: any;
-  label: string;
+  i18n_label: string;
 }[] = [
-  { key: "side", icon: SidePanelIcon, label: "Side Peek" },
+  { key: "side", icon: SidePanelIcon, i18n_label: "common.side_peek" },
   {
     key: "modal",
     icon: CenterPanelIcon,
-    label: "Modal",
+    i18n_label: "common.modal",
   },
   {
     key: "full",
     icon: FullScreenPanelIcon,
-    label: "Full Screen",
+    i18n_label: "common.full_screen",
   },
 ];
 
 export const PeekOverviewHeader = observer(function PeekOverviewHeader(props: Props) {
   const { handleClose } = props;
 
+  const { t } = useTranslation();
   const { peekMode, setPeekMode } = useIssueDetails();
   const isClipboardWriteAllowed = useClipboardWritePermission();
 
@@ -54,8 +57,8 @@ export const PeekOverviewHeader = observer(function PeekOverviewHeader(props: Pr
     copyTextToClipboard(urlToCopy).then(() => {
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Link copied!",
-        message: "Work item link copied to clipboard.",
+        title: t("common.link_copied"),
+        message: t("common.copied_to_clipboard"),
       });
     });
   };
@@ -110,7 +113,7 @@ export const PeekOverviewHeader = observer(function PeekOverviewHeader(props: Pr
                     >
                       <div className="flex items-center gap-1.5">
                         <mode.icon className="-my-1 h-4 w-4 flex-shrink-0" />
-                        {mode.label}
+                        {t(mode.i18n_label)}
                       </div>
                     </Listbox.Option>
                   ))}

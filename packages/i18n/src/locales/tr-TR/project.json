@@ -139,7 +139,8 @@
         "title": "Henüz arşivlenmiş döngü yok",
         "description": "Projenizi düzenli tutmak için tamamlanmış döngüleri arşivleyin. Arşivlendikten sonra burada bulabilirsiniz."
       }
-    }
+    },
+    "delete_cycle": "Döngüyü sil"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Bir şeyler ters gitti."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Proje başarıyla silindi."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Proje arşivlenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Proje geri yüklenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Projeden ayrılmayı onaylamak için 'Leave Project' yazın."
+        },
+        "project_name": {
+          "message": "Lütfen proje adını açıklamada gösterildiği gibi girin."
+        },
+        "fill_all_fields": {
+          "message": "Lütfen tüm alanları doldurun."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Depo projeyle senkronize edilemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "members_added": {
+        "message": "Üyeler başarıyla eklendi."
+      },
+      "publish": {
+        "success": {
+          "message": "Yayınlama ayarları başarıyla güncellendi!"
+        },
+        "unpublish_error": {
+          "message": "Projenin yayından kaldırılması sırasında bir hata oluştu."
+        },
+        "select_layout": {
+          "message": "Projeyi yayınlamak için lütfen en az bir görünüm düzeni seçin."
+        },
+        "link_copied": {
+          "message": "Yayınlanan sayfa bağlantısı başarıyla kopyalandı."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Yorumlara izin ver",
+      "allow_reactions": "Tepkilere izin ver",
+      "allow_voting": "Oylamaya izin ver",
+      "anyone_with_link_can_access": "Bağlantıya sahip herkes erişebilir"
+    },
+    "join": {
+      "title": "Projeye katılınsın mı?"
+    },
+    "card": {
+      "created_on": "{date} tarihinde oluşturuldu",
+      "no_members_yet": "Henüz üye yok"
     }
   }
 }

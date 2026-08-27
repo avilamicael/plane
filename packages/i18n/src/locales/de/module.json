@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Modul} few {Module} other {Module}}",
     "no_module": "Kein Modul",
-    "select": "Module hinzufügen"
+    "select": "Module hinzufügen",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Modul erfolgreich erstellt."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Modul erfolgreich aktualisiert."
+        },
+        "error": {
+          "message": "Das Modul konnte nicht aktualisiert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Ihre archivierten Elemente finden Sie in den Projektarchiven."
+        },
+        "error": {
+          "message": "Das Modul konnte nicht archiviert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Ihr Modul finden Sie in den Projektmodulen."
+        },
+        "error": {
+          "message": "Das Modul konnte nicht wiederhergestellt werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Modul-Link erfolgreich erstellt."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Modul-Link erfolgreich aktualisiert."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Modul-Link erfolgreich gelöscht."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Arbeitselemente erfolgreich zum Modul hinzugefügt."
+        },
+        "error": {
+          "message": "Die ausgewählten Arbeitselemente konnten nicht zum Modul hinzugefügt werden. Bitte versuchen Sie es erneut."
+        }
+      }
+    },
+    "no_lead": "Keine Leitung",
+    "work_items_progress": "{completed}/{total} {total, plural, one {Arbeitselement} other {Arbeitselemente}}"
   }
 }

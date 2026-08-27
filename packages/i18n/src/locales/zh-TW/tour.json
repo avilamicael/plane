@@ -191,5 +191,173 @@
       "title": "了解團隊為何切換到Plane",
       "description": "將Plane與您今天使用的工具進行比較，看看差異。"
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "或",
+      "skip": "略過",
+      "select_one": "選擇一項",
+      "select_one_or_more": "選擇一項或多項",
+      "steps_progress": "第 {current} 步，共 {total, plural, one {# 步} other {# 步}}",
+      "errors": {
+        "field_required": "此欄位為必填",
+        "select_at_least_one": "請至少選擇一項"
+      }
+    },
+    "profile": {
+      "heading": "建立你的個人檔案。",
+      "subheading": "這是你在 Plane 中顯示的樣子。",
+      "upload_image": "上傳圖片",
+      "change_image": "更換圖片",
+      "choose_image": "選擇圖片",
+      "name_placeholder": "請輸入你的全名",
+      "marketing_consent": "我同意接收 Plane 的行銷資訊",
+      "role_question": "你從事什麼職位？請選擇一項。",
+      "domain_question": "你的專業領域是什麼？請選擇一項或多項。",
+      "roles": {
+        "individual_contributor": "個人貢獻者",
+        "senior_leader": "資深主管",
+        "manager": "經理",
+        "executive": "高階主管",
+        "freelancer": "自由工作者",
+        "student": "學生"
+      },
+      "domains": {
+        "engineering": "工程",
+        "product": "產品",
+        "marketing": "行銷",
+        "sales": "業務",
+        "operations": "營運",
+        "legal": "法務",
+        "finance": "財務",
+        "human_resources": "人力資源",
+        "project": "專案",
+        "other": "其他"
+      },
+      "errors": {
+        "name_length": "名稱不能超過 50 個字元。",
+        "first_name_required": "名字為必填欄位",
+        "first_name_length": "名字不能超過 50 個字元。",
+        "last_name_required": "姓氏為必填欄位",
+        "last_name_length": "姓氏不能超過 50 個字元。"
+      },
+      "toast": {
+        "completed": "個人檔案設定完成！",
+        "failed": "個人檔案設定失敗，請再試一次！",
+        "details_failed": "更新使用者資料失敗，請再試一次！"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "新密碼...",
+      "match": "密碼相符",
+      "mismatch": "密碼不相符"
+    },
+    "role": {
+      "heading": "你的職位是什麼？",
+      "subheading": "讓我們依照你的工作方式來設定 Plane。",
+      "options": {
+        "product_manager": "產品經理",
+        "engineering_manager": "工程經理",
+        "designer": "設計師",
+        "developer": "開發者",
+        "founder_executive": "創辦人/高階主管",
+        "operations_manager": "營運經理",
+        "others": "其他"
+      }
+    },
+    "usecase": {
+      "heading": "什麼原因讓你選擇 Plane？",
+      "subheading": "告訴我們你的目標與團隊規模。",
+      "options": {
+        "plan_and_track_product_roadmaps": "規劃並追蹤產品路線圖",
+        "manage_engineering_sprints": "管理工程衝刺",
+        "coordinate_cross_functional_projects": "協調跨職能專案",
+        "replace_our_current_tool": "取代我們目前的工具",
+        "just_exploring": "只是先看看"
+      }
+    },
+    "workspace": {
+      "heading": "建立你的工作區",
+      "subheading": "所有工作，集中一處。",
+      "join_heading": "接受邀請或建立工作區",
+      "join_existing": "加入現有工作區",
+      "create_new": "建立新工作區",
+      "join_invited_cta": "我想加入受邀的工作區",
+      "creation_disabled": "你似乎沒有收到任何工作區邀請，而且執行個體管理員限制了建立新工作區。請先請工作區擁有者或管理員邀請你，再回到這個畫面加入。",
+      "organization_size": {
+        "just_myself": "只有我"
+      }
+    },
+    "invitations": {
+      "heading": "你收到了邀請！",
+      "subheading": "接受邀請，與你的團隊一起協作。",
+      "continue_to_workspace": "進入工作區",
+      "create_own_workspace": "建立我自己的工作區",
+      "empty": "找不到邀請"
+    },
+    "team": {
+      "heading": "邀請你的團隊成員",
+      "subheading": "在 Plane 中，與團隊一起工作效果最好。現在就邀請他們，充分發揮 Plane 的潛力。",
+      "add_another": "再新增一個",
+      "do_it_later": "稍後再說",
+      "errors": {
+        "invalid_email": "電子郵件地址無效",
+        "not_an_email": "這看起來不像電子郵件地址。"
+      },
+      "toast": {
+        "invitations_sent": "邀請已成功寄出。"
+      }
+    },
+    "switch_account": {
+      "wrong_email": "電子郵件地址有誤？",
+      "title": "切換帳戶",
+      "description_prefix": "如果你誤用",
+      "description_suffix": "註冊，可以在此切換到其他帳戶。",
+      "switching": "切換中...",
+      "sign_out_failed": "登出失敗，請再試一次。"
+    },
+    "toast": {
+      "finish_failed": "無法完成初始設定，請稍後再試。"
+    },
+    "tour": {
+      "welcome": {
+        "title": "歡迎使用 Plane，{name}",
+        "description": "很高興你決定試用 Plane。現在你可以輕鬆管理專案了。先建立一個專案開始吧。",
+        "take_tour": "查看產品導覽",
+        "skip": "不用了，我想自己探索"
+      },
+      "sidebar": {
+        "title": "開始吧！",
+        "subtitle": "更充分地運用 Plane。",
+        "work_items": "工作項目",
+        "cycles": "週期",
+        "modules": "模組",
+        "views": "檢視",
+        "pages": "頁面"
+      },
+      "steps": {
+        "work_items": {
+          "title": "用工作項目進行規劃",
+          "description": "工作項目是 Plane 的基本構成單位。Plane 中大多數概念都與工作項目及其屬性相關。"
+        },
+        "cycles": {
+          "title": "用週期推進",
+          "description": "週期幫助你和團隊更快推進，類似敏捷開發中常用的衝刺。"
+        },
+        "modules": {
+          "title": "拆分為模組",
+          "description": "模組把龐大的目標拆分為專案或功能，幫助你更好地組織工作。"
+        },
+        "views": {
+          "title": "檢視",
+          "description": "建立自訂篩選器，只顯示你在意的工作項目。只要幾次點擊就能儲存並分享篩選器。"
+        },
+        "pages": {
+          "title": "用頁面記錄",
+          "description": "開會時或一天開始時，用頁面快速記下工作項目。"
+        }
+      },
+      "create_first_project": "建立你的第一個專案"
+    }
   }
 }

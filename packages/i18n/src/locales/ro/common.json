@@ -307,6 +307,9 @@
   "end_date": "Data de sfârșit",
   "due_date": "Data limită",
   "target_date": "Data țintă",
+  "created_date": "Data creării",
+  "updated_date": "Data actualizării",
+  "last_updated_date": "Data ultimei actualizări",
   "estimate": "Estimare",
   "change_parent_issue": "Schimbă activitatea părinte",
   "remove_parent_issue": "Elimină activitatea părinte",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL-ul a fost copiat cu succes în clipboard",
   "toast": {
     "success": "Succes!",
-    "error": "Eroare!"
+    "error": "Eroare!",
+    "warning": "Avertisment!",
+    "info": "Informații!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Estimare",
     "created_at": "Creat la",
     "updated_at": "Actualizat la",
+    "select_cycle": "Selectează ciclul",
+    "select_modules": "Selectează modulele",
     "completed_at": "Finalizat la",
     "layout": "Aspect",
     "filters": "Filtre",
@@ -464,6 +471,10 @@
     "epics": "Epice",
     "work_item": "Activitate",
     "work_items": "Activități",
+    "work_items_in_project_count": "{count, plural, one{Există # activitate în acest proiect} few{Există # activități în acest proiect} other{Există # de activități în acest proiect}}",
+    "work_items_in_archives_count": "{count, plural, one{Există # activitate în arhiva acestui proiect} few{Există # activități în arhiva acestui proiect} other{Există # de activități în arhiva acestui proiect}}",
+    "work_items_in_cycle_count": "{count, plural, one{Există # activitate în acest ciclu} few{Există # activități în acest ciclu} other{Există # de activități în acest ciclu}}",
+    "work_items_in_module_count": "{count, plural, one{Există # activitate în acest modul} few{Există # activități în acest modul} other{Există # de activități în acest modul}}",
     "sub_work_item": "Sub-activitate",
     "views": "Perspective",
     "pages": "Documentație",
@@ -619,7 +630,11 @@
       "enable": "Activează",
       "disable": "Dezactivează",
       "copy_markdown": "Copiază markdown",
-      "reply": "Răspunde"
+      "reply": "Răspunde",
+      "move": "Mută",
+      "remove_from_cycle": "Elimină din ciclu",
+      "remove_from_module": "Elimină din modul",
+      "rename_folder": "Redenumește dosarul"
     },
     "name": "Nume",
     "discard": "Renunță",
@@ -722,12 +737,33 @@
     "more": "Mai multe",
     "saved": "Salvat",
     "all_projects": "Toate proiectele",
-    "n_plus_projects": "{count}+ proiecte"
+    "n_plus_projects": "{count}+ proiecte",
+    "and": "și",
+    "view_all": "Vezi toate",
+    "view_less": "Vezi mai puține",
+    "empty": "Gol",
+    "no_date": "Fără dată",
+    "no_cycle": "Fără ciclu",
+    "no_modules": "Fără module",
+    "no_labels": "Fără etichete",
+    "no_assignees": "Fără responsabili",
+    "labels_count": "{count, plural, one{# etichetă} few{# etichete} other{# de etichete}}",
+    "modules_count": "{count, plural, one{# modul} few{# module} other{# de module}}",
+    "not_found": {
+      "title": "Hopa! Ceva nu a funcționat.",
+      "description": "Ne pare rău, pagina căutată nu a fost găsită. Este posibil să fi fost ștearsă, redenumită sau să fie temporar indisponibilă."
+    },
+    "toast": {
+      "success": "Succes!",
+      "error": "Eroare!",
+      "warning": "Avertisment"
+    }
   },
   "chart": {
     "x_axis": "axa-X",
     "y_axis": "axa-Y",
-    "metric": "Indicator"
+    "metric": "Indicator",
+    "week_of_month": "{month}, săptămâna {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Actualizează perspectiva"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Perspectiva a fost creată cu succes."
+        },
+        "error": {
+          "message": "Perspectiva nu a putut fi creată. Te rugăm să încerci din nou."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Perspectiva a fost actualizată cu succes."
+        },
+        "error": {
+          "message": "Perspectiva nu a putut fi actualizată. Te rugăm să încerci din nou."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Perspectiva a fost ștearsă cu succes."
+        },
+        "error": {
+          "message": "Perspectiva nu a putut fi ștearsă. Te rugăm să încerci din nou."
+        }
+      },
+      "not_found": {
+        "message": "Perspectiva pe care încerci să o actualizezi nu există."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Perspectiva ta a fost actualizată cu succes."
+        },
+        "error": {
+          "message": "Perspectiva ta nu a putut fi actualizată. Te rugăm să încerci din nou."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Exportă activitățile într-un fișier JSON.",
       "short_description": "Exportă ca JSON"
+    }
+  },
+  "sign_in": "Autentificare",
+  "powered_by_plane_publish": "Oferit de Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Nu s-au putut prelua detaliile instanței.",
+      "description": "Nu am putut prelua detaliile instanței. Nu vă faceți griji, ar putea fi doar o problemă de conexiune."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Ceva nu a funcționat. Te rugăm să încerci din nou mai târziu.",
+  "please_try_again_later": "Te rugăm să încerci din nou mai târziu.",
+  "some_error_occurred": "A apărut o eroare",
+  "markdown_copied_to_clipboard": "Markdown a fost copiat în memoria temporară.",
+  "reloading_to_apply_changes": "Se reîncarcă pentru a aplica modificările...",
+  "copy_link_failed": "Nu am putut copia link-ul. Te rugăm să încerci din nou.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Configurația temei a fost descărcată cu succes."
+        },
+        "error": {
+          "message": "Descărcarea configurației temei a eșuat."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Configurația temei a fost importată cu succes"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Glisarea și fixarea funcționează doar la sortarea manuală"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Ceva nu a funcționat la actualizarea datelor blocului"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Acest filtru nu este configurat corect și nu poate fi aplicat"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Te rugăm să introduci o sarcină pentru a primi asistență AI."
+      }
+    }
+  },
+  "text_colors": "Culori de text",
+  "background_colors": "Culori de fundal",
+  "submitting": "Se trimite...",
+  "image_upload": {
+    "title": "Încarcă imaginea",
+    "drag_and_drop": "Trage și plasează imaginea aici",
+    "drop_here": "Plasează imaginea aici pentru a o încărca",
+    "file_too_large": "Dimensiunea imaginii nu poate depăși 5 MB.",
+    "invalid_format": "Încarcă un fișier într-un format valid.",
+    "supported_formats": "Formate de fișier acceptate: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Încarcă și salvează",
+    "uploading": "Se încarcă",
+    "search_for_images": "Caută imagini",
+    "no_images_found": "Nu s-au găsit imagini.",
+    "tabs": {
+      "images": "Imagini",
+      "upload": "Încarcă"
     }
   }
 }

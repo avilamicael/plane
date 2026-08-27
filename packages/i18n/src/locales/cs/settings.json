@@ -37,11 +37,38 @@
         "states": {
           "sending": "Odesílání…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Profilový obrázek byl úspěšně smazán.",
+        "picture_delete_error": "Při mazání profilového obrázku došlo k chybě. Zkuste to prosím znovu.",
+        "deactivated": "Účet byl úspěšně deaktivován."
+      },
+      "general_form": {
+        "first_name_placeholder": "Zadejte své jméno",
+        "last_name_placeholder": "Zadejte své příjmení",
+        "display_name_placeholder": "Zadejte své zobrazované jméno"
       }
     },
     "preferences": {
       "heading": "Předvolby",
-      "description": "Přizpůsobte si prostředí aplikace podle toho, jak pracujete"
+      "description": "Přizpůsobte si prostředí aplikace podle toho, jak pracujete",
+      "toasts": {
+        "timezone": {
+          "success": "Časové pásmo bylo úspěšně aktualizováno",
+          "error": "Aktualizace časového pásma se nezdařila"
+        },
+        "language": {
+          "success": "Jazyk byl úspěšně aktualizován",
+          "error": "Aktualizace jazyka se nezdařila"
+        },
+        "start_of_week": {
+          "success": "První den v týdnu byl úspěšně aktualizován"
+        }
+      },
+      "start_of_week": {
+        "title": "První den v týdnu",
+        "description": "Změní to vzhled všech kalendářů v aplikaci."
+      }
     },
     "notifications": {
       "heading": "E-mailová oznámení",

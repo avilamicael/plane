@@ -37,11 +37,38 @@
         "states": {
           "sending": "送信中…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "プロフィール画像を削除しました。",
+        "picture_delete_error": "プロフィール画像の削除中にエラーが発生しました。もう一度お試しください。",
+        "deactivated": "アカウントを無効化しました。"
+      },
+      "general_form": {
+        "first_name_placeholder": "名を入力してください",
+        "last_name_placeholder": "姓を入力してください",
+        "display_name_placeholder": "表示名を入力してください"
       }
     },
     "preferences": {
       "heading": "環境設定",
-      "description": "あなたの働き方に合わせてアプリの体験をカスタマイズします"
+      "description": "あなたの働き方に合わせてアプリの体験をカスタマイズします",
+      "toasts": {
+        "timezone": {
+          "success": "タイムゾーンを更新しました",
+          "error": "タイムゾーンの更新に失敗しました"
+        },
+        "language": {
+          "success": "言語を更新しました",
+          "error": "言語の更新に失敗しました"
+        },
+        "start_of_week": {
+          "success": "週の開始日を更新しました"
+        }
+      },
+      "start_of_week": {
+        "title": "週の開始日",
+        "description": "アプリ内のすべてのカレンダーの表示が変わります。"
+      }
     },
     "notifications": {
       "heading": "メール通知",

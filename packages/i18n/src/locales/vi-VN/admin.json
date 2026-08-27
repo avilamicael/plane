@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "Email",
+      "password": "Mật khẩu",
+      "save_changes": "Lưu thay đổi",
+      "saving": "Đang lưu",
+      "go_back": "Quay lại",
+      "success": "Thành công",
+      "error": "Lỗi",
+      "done": "Xong!",
+      "show_password": "Hiện mật khẩu",
+      "hide_password": "Ẩn mật khẩu",
+      "settings_updated_successfully": "Đã cập nhật cài đặt thành công",
+      "saving_configuration": "Đang lưu cấu hình",
+      "configuration_saved_successfully": "Đã lưu cấu hình thành công",
+      "failed_to_save_configuration": "Không lưu được cấu hình",
+      "learn_more": "Tìm hiểu thêm",
+      "here": "tại đây."
+    },
+    "sidebar": {
+      "instance_admin": "Quản trị viên phiên bản",
+      "sign_out": "Đăng xuất",
+      "switch_to_light_mode": "Chuyển sang chế độ sáng",
+      "switch_to_dark_mode": "Chuyển sang chế độ tối",
+      "general": {
+        "title": "Chung",
+        "description": "Nhận diện các phiên bản của bạn và xem thông tin chính."
+      },
+      "email": {
+        "title": "Email",
+        "description": "Cấu hình các thiết lập SMTP."
+      },
+      "workspace": {
+        "title": "Không gian làm việc",
+        "description": "Quản lý tất cả không gian làm việc trên phiên bản này."
+      },
+      "authentication": {
+        "title": "Xác thực",
+        "description": "Cấu hình các phương thức xác thực."
+      },
+      "ai": {
+        "title": "Trí tuệ nhân tạo",
+        "description": "Cấu hình thông tin đăng nhập OpenAI của bạn."
+      },
+      "image": {
+        "title": "Hình ảnh trong Plane",
+        "description": "Cho phép các thư viện hình ảnh của bên thứ ba."
+      }
+    },
+    "sign_in": {
+      "heading": "Quản lý phiên bản Plane của bạn",
+      "sub_heading": "Cấu hình các thiết lập toàn phiên bản để bảo mật phiên bản của bạn",
+      "email_placeholder": "ten@congty.com",
+      "password_placeholder": "Nhập mật khẩu của bạn",
+      "submit": "Đăng nhập"
+    },
+    "setup": {
+      "heading": "Thiết lập phiên bản Plane của bạn",
+      "sub_heading": "Sau khi thiết lập, bạn sẽ có thể quản lý phiên bản Plane này.",
+      "first_name": "Tên",
+      "last_name": "Họ",
+      "company_name": "Tên công ty",
+      "company_name_placeholder": "Tên công ty",
+      "set_password": "Đặt mật khẩu",
+      "new_password_placeholder": "Mật khẩu mới",
+      "confirm_password": "Xác nhận mật khẩu",
+      "confirm_password_placeholder": "Xác nhận mật khẩu",
+      "passwords_dont_match": "Mật khẩu không khớp",
+      "telemetry_consent": "Cho phép Plane thu thập ẩn danh các sự kiện sử dụng.",
+      "see_more": "Tìm hiểu thêm",
+      "submit": "Tiếp tục"
+    },
+    "settings": {
+      "general": {
+        "title": "Cài đặt chung",
+        "description": "Thay đổi tên phiên bản và địa chỉ email của quản trị viên phiên bản. Bật hoặc tắt telemetry trên phiên bản của bạn.",
+        "instance_details": "Thông tin phiên bản",
+        "name_of_instance": "Tên phiên bản",
+        "instance_name_placeholder": "Tên phiên bản",
+        "admin_email_placeholder": "Email quản trị viên",
+        "instance_id": "ID phiên bản",
+        "telemetry": "Telemetry",
+        "telemetry_toggle_title": "Cho phép Plane thu thập dữ liệu sử dụng ẩn danh",
+        "telemetry_toggle_description": "Không thu thập thông tin cá nhân. Dữ liệu ẩn danh này giúp chúng tôi hiểu cách bạn dùng Plane và xây dựng tính năng mới theo",
+        "telemetry_policy": "Chính sách Telemetry của chúng tôi."
+      },
+      "authentication": {
+        "title": "Quản lý các phương thức xác thực cho phiên bản của bạn",
+        "description": "Cấu hình các phương thức xác thực cho nhóm của bạn và giới hạn đăng ký chỉ dành cho người được mời.",
+        "allow_signup_title": "Cho phép bất kỳ ai đăng ký kể cả khi không có lời mời",
+        "allow_signup_description": "Tắt tùy chọn này thì chỉ những người dùng được mời mới có thể đăng ký.",
+        "available_modes": "Các phương thức xác thực khả dụng",
+        "cannot_disable_title": "Không thể tắt xác thực",
+        "cannot_disable_message": "Phải giữ bật ít nhất một phương thức xác thực. Hãy bật một phương thức khác trước khi tắt phương thức này.",
+        "modes": {
+          "unique_codes": {
+            "name": "Mã dùng một lần",
+            "description": "Đăng nhập hoặc đăng ký Plane bằng mã gửi qua email. Bạn cần thiết lập SMTP để dùng phương thức này."
+          },
+          "passwords": {
+            "name": "Mật khẩu",
+            "description": "Cho phép thành viên tạo tài khoản có mật khẩu và đăng nhập bằng địa chỉ email của họ."
+          },
+          "google": {
+            "description": "Cho phép thành viên đăng nhập hoặc đăng ký Plane bằng tài khoản Google của họ."
+          },
+          "github": {
+            "description": "Cho phép thành viên đăng nhập hoặc đăng ký Plane bằng tài khoản GitHub của họ."
+          },
+          "gitlab": {
+            "description": "Cho phép thành viên đăng nhập hoặc đăng ký Plane bằng tài khoản GitLab của họ."
+          },
+          "gitea": {
+            "description": "Cho phép thành viên đăng nhập hoặc đăng ký Plane bằng tài khoản Gitea của họ."
+          }
+        }
+      },
+      "email": {
+        "title": "Email an toàn từ chính phiên bản của bạn",
+        "description": "Plane có thể gửi những email hữu ích cho bạn và người dùng của bạn từ chính phiên bản của bạn mà không cần kết nối Internet.",
+        "description_secondary": "Hãy thiết lập bên dưới và kiểm thử các thiết lập trước khi lưu.",
+        "description_warning": "Cấu hình sai có thể gây trả lại email và phát sinh lỗi.",
+        "disabled_title": "Đã tắt tính năng email",
+        "disabled_message": "Tính năng email đã bị tắt",
+        "disable_error_title": "Lỗi khi tắt email",
+        "disable_error_message": "Không tắt được tính năng email. Vui lòng thử lại.",
+        "host": "Máy chủ",
+        "port": "Cổng",
+        "sender_email": "Địa chỉ email người gửi",
+        "sender_email_description": "Đây là địa chỉ email mà người dùng của bạn sẽ thấy khi nhận email từ phiên bản này. Bạn sẽ cần xác minh địa chỉ này.",
+        "username": "Tên người dùng",
+        "password_placeholder": "Mật khẩu",
+        "security": "Bảo mật email",
+        "security_none": "Không bảo mật email",
+        "authentication": "Xác thực",
+        "authentication_description": "Đây là tùy chọn, nhưng chúng tôi khuyến nghị thiết lập tên người dùng và mật khẩu cho máy chủ SMTP của bạn.",
+        "send_test_email": "Gửi email thử",
+        "updated_successfully": "Đã cập nhật cài đặt email thành công"
+      },
+      "workspace": {
+        "title": "Không gian làm việc trên phiên bản này",
+        "description": "Xem tất cả không gian làm việc và kiểm soát ai được tạo chúng.",
+        "prevent_creation_title": "Ngăn người khác tạo không gian làm việc.",
+        "prevent_creation_description": "Bật tùy chọn này thì chỉ mình bạn được tạo không gian làm việc. Bạn sẽ phải mời người dùng vào các không gian mới.",
+        "all_workspaces": "Tất cả không gian làm việc trên phiên bản này",
+        "list_description": "Bạn chưa thể xóa không gian làm việc, và chỉ có thể vào một không gian nếu bạn là quản trị viên hoặc thành viên ở đó.",
+        "create": "Tạo không gian làm việc",
+        "creating": "Đang tạo không gian làm việc",
+        "load_more": "Tải thêm",
+        "name_label": "Đặt tên cho không gian làm việc của bạn",
+        "name_placeholder": "Một cái tên quen thuộc và dễ nhận biết luôn là lựa chọn tốt nhất.",
+        "url_label": "Đặt URL cho không gian làm việc của bạn",
+        "url_placeholder": "ten-khong-gian",
+        "url_taken": "URL này đã được dùng. Hãy thử URL khác.",
+        "url_invalid": "URL chỉ có thể chứa ( - ), ( _ ) và ký tự chữ và số.",
+        "size_label": "Bao nhiêu người sẽ dùng không gian làm việc này?",
+        "size_placeholder": "Chọn một khoảng",
+        "required_field": "Đây là trường bắt buộc.",
+        "created_title": "Thành công!",
+        "created_message": "Đã tạo không gian làm việc thành công.",
+        "create_error_title": "Lỗi!",
+        "create_error_message": "Không tạo được không gian làm việc. Vui lòng thử lại.",
+        "create_generic_error": "Đã xảy ra lỗi khi tạo không gian làm việc. Vui lòng thử lại."
+      },
+      "ai": {
+        "title": "Tính năng AI cho tất cả không gian làm việc của bạn",
+        "description": "Cấu hình thông tin đăng nhập API AI để các tính năng Plane AI được bật cho tất cả không gian làm việc của bạn."
+      },
+      "image": {
+        "title": "Thư viện hình ảnh của bên thứ ba",
+        "description": "Cho phép người dùng của bạn tìm và chọn hình ảnh từ các thư viện của bên thứ ba"
+      }
+    },
+    "oauth": {
+      "client_id": "Client ID",
+      "client_secret": "Client secret",
+      "application_id": "ID ứng dụng",
+      "secret": "Secret",
+      "organization_id": "ID tổ chức",
+      "organization_id_description": "ID GitHub của tổ chức.",
+      "host": "Máy chủ",
+      "origin_url": "URL nguồn",
+      "callback_uri": "URI callback",
+      "callback_url": "URL callback",
+      "web": "Web",
+      "provider_details_for_plane": "Thông tin do {provider} cung cấp cho Plane",
+      "plane_details_for_provider": "Thông tin do Plane cung cấp cho {provider}",
+      "configured_message": "Đã cấu hình xác thực {provider}. Bây giờ bạn nên kiểm thử nó.",
+      "configuration_saved": "Đã lưu cấu hình",
+      "auth_now_active": "Xác thực {provider} hiện đang hoạt động.",
+      "auth_now_disabled": "Xác thực {provider} hiện đã bị tắt.",
+      "get_this_from_settings": "Bạn sẽ lấy được giá trị này trong",
+      "secret_also_in_settings": "Client secret của bạn cũng nằm trong",
+      "app_settings_link": "cài đặt ứng dụng OAuth {provider}.",
+      "app_settings_link_no_period": "cài đặt ứng dụng OAuth {provider}",
+      "autogenerated_paste_origin": "Chúng tôi tạo tự động giá trị này. Hãy dán vào trường",
+      "autogenerated_paste_callback": "Chúng tôi tạo tự động giá trị này. Hãy dán vào trường",
+      "field_word": "—",
+      "authorized_origin_url": "URL nguồn được ủy quyền",
+      "authorized_callback_uri": "URI callback được ủy quyền",
+      "authorized_js_origins": "Nguồn JavaScript được ủy quyền",
+      "authorized_redirect_uri": "URI chuyển hướng được ủy quyền",
+      "redirect_uri": "URI chuyển hướng",
+      "for_this_oauth_client": "— với OAuth client này,",
+      "google_client_id_description": "Client ID của bạn nằm trong Google API Console.",
+      "google_client_secret_description": "Client secret của bạn cũng nằm trong Google API Console.",
+      "gitlab_host_description_prefix": "Đây là https://gitlab.com hoặc",
+      "gitlab_host_description_suffix": "nơi bạn tự vận hành GitLab.",
+      "gitlab_get_this_from": "Lấy giá trị này trong",
+      "gitlab_secret_also_in": "Client secret cũng nằm trong",
+      "gitlab_paste_redirect_prefix": "Chúng tôi tạo tự động giá trị này. Hãy dán vào trường",
+      "gitlab_paste_redirect_suffix": "của",
+      "gitlab_app_link": "ứng dụng OAuth GitLab của bạn",
+      "gitea_host_label": "Máy chủ Gitea",
+      "gitea_host_description": "Dùng URL của phiên bản Gitea của bạn. Với phiên bản Gitea chính thức, hãy dùng \"https://gitea.com\"."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "Quản trị viên đã tồn tại",
+        "message": "Quản trị viên đã tồn tại. Vui lòng thử lại."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "Bắt buộc nhập email, mật khẩu và tên",
+        "message": "Bắt buộc nhập email, mật khẩu và tên. Vui lòng thử lại."
+      },
+      "invalid_admin_email": {
+        "title": "Email quản trị viên không hợp lệ",
+        "message": "Email quản trị viên không hợp lệ. Vui lòng thử lại."
+      },
+      "invalid_admin_password": {
+        "title": "Mật khẩu quản trị viên không hợp lệ",
+        "message": "Mật khẩu quản trị viên không hợp lệ. Vui lòng thử lại."
+      },
+      "required_admin_email_password": {
+        "title": "Bắt buộc nhập email và mật khẩu",
+        "message": "Bắt buộc nhập email và mật khẩu. Vui lòng thử lại."
+      },
+      "admin_authentication_failed": {
+        "title": "Xác thực thất bại",
+        "message": "Xác thực thất bại. Vui lòng thử lại."
+      },
+      "admin_user_already_exist": {
+        "title": "Người dùng quản trị đã tồn tại",
+        "message": "Người dùng quản trị đã tồn tại.",
+        "sign_in_now": "Đăng nhập",
+        "now": "ngay bây giờ."
+      },
+      "admin_user_does_not_exist": {
+        "title": "Người dùng quản trị không tồn tại",
+        "message": "Người dùng quản trị không tồn tại.",
+        "sign_in_now": "Đăng nhập",
+        "now": "ngay bây giờ."
+      },
+      "admin_user_deactivated": {
+        "title": "Tài khoản người dùng đã bị vô hiệu hóa",
+        "message": "Tài khoản người dùng đã bị vô hiệu hóa. Vui lòng liên hệ {contact}."
+      },
+      "administrator": "quản trị viên",
+      "generic_title": "Lỗi",
+      "generic_message": "Đã xảy ra sự cố. Vui lòng thử lại."
+    },
+    "not_found": {
+      "title": "Rất tiếc! Đã xảy ra sự cố.",
+      "description": "Xin lỗi, không tìm thấy trang bạn đang tìm. Trang có thể đã bị xóa, đổi tên hoặc tạm thời không khả dụng.",
+      "action": "Đến cài đặt chung",
+      "image_alt": "404 - Không tìm thấy trang"
+    }
+  }
+}

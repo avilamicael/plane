@@ -191,5 +191,173 @@
       "title": "Descubre por qué los equipos cambian a Plane",
       "description": "Compara Plane con las herramientas que usas hoy y ve la diferencia."
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "o",
+      "skip": "Omitir",
+      "select_one": "Selecciona una opción",
+      "select_one_or_more": "Selecciona una o varias opciones",
+      "steps_progress": "{current} de {total, plural, one {# paso} other {# pasos}}",
+      "errors": {
+        "field_required": "Este campo es obligatorio",
+        "select_at_least_one": "Selecciona al menos una opción"
+      }
+    },
+    "profile": {
+      "heading": "Crea tu perfil.",
+      "subheading": "Así es como aparecerás en Plane.",
+      "upload_image": "Subir imagen",
+      "change_image": "Cambiar imagen",
+      "choose_image": "Elegir imagen",
+      "name_placeholder": "Escribe tu nombre completo",
+      "marketing_consent": "Acepto recibir comunicaciones de marketing de Plane",
+      "role_question": "¿En qué función trabajas? Elige una.",
+      "domain_question": "¿Cuál es tu área de especialidad? Elige una o varias.",
+      "roles": {
+        "individual_contributor": "Colaborador individual",
+        "senior_leader": "Líder sénior",
+        "manager": "Gerente",
+        "executive": "Directivo",
+        "freelancer": "Freelance",
+        "student": "Estudiante"
+      },
+      "domains": {
+        "engineering": "Ingeniería",
+        "product": "Producto",
+        "marketing": "Marketing",
+        "sales": "Ventas",
+        "operations": "Operaciones",
+        "legal": "Legal",
+        "finance": "Finanzas",
+        "human_resources": "Recursos humanos",
+        "project": "Proyectos",
+        "other": "Otro"
+      },
+      "errors": {
+        "name_length": "El nombre no puede superar los 50 caracteres.",
+        "first_name_required": "El nombre es obligatorio",
+        "first_name_length": "El nombre no puede superar los 50 caracteres.",
+        "last_name_required": "El apellido es obligatorio",
+        "last_name_length": "El apellido no puede superar los 50 caracteres."
+      },
+      "toast": {
+        "completed": "¡Perfil configurado!",
+        "failed": "No se pudo configurar el perfil. ¡Inténtalo de nuevo!",
+        "details_failed": "No se pudieron actualizar tus datos. ¡Inténtalo de nuevo!"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "Nueva contraseña...",
+      "match": "Las contraseñas coinciden",
+      "mismatch": "Las contraseñas no coinciden"
+    },
+    "role": {
+      "heading": "¿Cuál es tu función?",
+      "subheading": "Configuremos Plane según tu forma de trabajar.",
+      "options": {
+        "product_manager": "Gerente de Producto",
+        "engineering_manager": "Gerente de Ingeniería",
+        "designer": "Diseñador",
+        "developer": "Desarrollador",
+        "founder_executive": "Fundador/Directivo",
+        "operations_manager": "Gerente de Operaciones",
+        "others": "Otros"
+      }
+    },
+    "usecase": {
+      "heading": "¿Qué te trae a Plane?",
+      "subheading": "Cuéntanos tus objetivos y el tamaño de tu equipo.",
+      "options": {
+        "plan_and_track_product_roadmaps": "Planificar y seguir hojas de ruta de producto",
+        "manage_engineering_sprints": "Gestionar sprints de ingeniería",
+        "coordinate_cross_functional_projects": "Coordinar proyectos multidisciplinares",
+        "replace_our_current_tool": "Sustituir nuestra herramienta actual",
+        "just_exploring": "Solo estoy explorando"
+      }
+    },
+    "workspace": {
+      "heading": "Crea tu espacio de trabajo",
+      "subheading": "Todo tu trabajo, unificado.",
+      "join_heading": "Acepta invitaciones o crea un espacio de trabajo",
+      "join_existing": "Unirme a un espacio de trabajo existente",
+      "create_new": "Crear nuevo espacio de trabajo",
+      "join_invited_cta": "Quiero unirme a los espacios de trabajo a los que me invitaron",
+      "creation_disabled": "Parece que no tienes invitaciones a ningún espacio de trabajo y el administrador de tu instancia ha restringido la creación de espacios nuevos. Pide a un propietario o administrador que te invite a un espacio de trabajo y vuelve a esta pantalla para unirte.",
+      "organization_size": {
+        "just_myself": "Solo yo"
+      }
+    },
+    "invitations": {
+      "heading": "¡Te han invitado!",
+      "subheading": "Acepta las invitaciones para colaborar con tu equipo.",
+      "continue_to_workspace": "Ir al espacio de trabajo",
+      "create_own_workspace": "Crear mi propio espacio de trabajo",
+      "empty": "No se encontraron invitaciones"
+    },
+    "team": {
+      "heading": "Invita a tu equipo",
+      "subheading": "El trabajo en Plane funciona mejor con tu equipo. Invítalos ahora para aprovechar todo el potencial de Plane.",
+      "add_another": "Añadir otro",
+      "do_it_later": "Lo haré más tarde",
+      "errors": {
+        "invalid_email": "ID de correo electrónico no válido",
+        "not_an_email": "Eso no parece una dirección de correo electrónico."
+      },
+      "toast": {
+        "invitations_sent": "Invitaciones enviadas correctamente."
+      }
+    },
+    "switch_account": {
+      "wrong_email": "¿Dirección de correo incorrecta?",
+      "title": "Cambiar de cuenta",
+      "description_prefix": "Si te registraste con",
+      "description_suffix": "sin querer, puedes cambiar a otra cuenta desde aquí.",
+      "switching": "Cambiando...",
+      "sign_out_failed": "No se pudo cerrar la sesión. Inténtalo de nuevo."
+    },
+    "toast": {
+      "finish_failed": "No se pudo completar la configuración inicial. Inténtalo de nuevo más tarde."
+    },
+    "tour": {
+      "welcome": {
+        "title": "Te damos la bienvenida a Plane, {name}",
+        "description": "Nos alegra que hayas decidido probar Plane. Ahora puedes gestionar tus proyectos con facilidad. Empieza creando un proyecto.",
+        "take_tour": "Hacer el tour del producto",
+        "skip": "No, gracias. Prefiero explorarlo por mi cuenta"
+      },
+      "sidebar": {
+        "title": "¡Empecemos!",
+        "subtitle": "Saca más partido a Plane.",
+        "work_items": "Elementos de trabajo",
+        "cycles": "Ciclos",
+        "modules": "Módulos",
+        "views": "Vistas",
+        "pages": "Páginas"
+      },
+      "steps": {
+        "work_items": {
+          "title": "Planifica con elementos de trabajo",
+          "description": "El elemento de trabajo es la pieza básica de Plane. La mayoría de los conceptos de Plane están asociados a elementos de trabajo y sus propiedades."
+        },
+        "cycles": {
+          "title": "Avanza con ciclos",
+          "description": "Los ciclos os ayudan a ti y a tu equipo a avanzar más rápido, igual que los sprints habituales del desarrollo ágil."
+        },
+        "modules": {
+          "title": "Divide en módulos",
+          "description": "Los módulos dividen tu gran objetivo en proyectos o funcionalidades, para ayudarte a organizarte mejor."
+        },
+        "views": {
+          "title": "Vistas",
+          "description": "Crea filtros personalizados para mostrar solo los elementos de trabajo que te importan. Guarda y comparte tus filtros en unos pocos clics."
+        },
+        "pages": {
+          "title": "Documenta con páginas",
+          "description": "Usa las páginas para anotar elementos de trabajo rápidamente durante una reunión o al empezar el día."
+        }
+      },
+      "create_first_project": "Crear tu primer proyecto"
+    }
   }
 }

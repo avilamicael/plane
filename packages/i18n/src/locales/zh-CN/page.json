@@ -110,6 +110,126 @@
       "label": "从集合中移除",
       "success_message": "页面已从集合中移除。",
       "error_message": "无法将页面从集合中移除。请重试。"
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "页面链接已复制到剪贴板。"
+      },
+      "duplicate": {
+        "success": {
+          "message": "页面复制成功。"
+        },
+        "error": {
+          "message": "无法复制页面。请稍后重试。"
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "页面恢复成功。"
+        },
+        "error": {
+          "message": "无法恢复页面。请稍后重试。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "页面归档成功。"
+        },
+        "error": {
+          "message": "无法归档页面。请稍后重试。"
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "页面已添加到收藏夹。"
+        },
+        "error": {
+          "message": "无法将页面添加到收藏夹。请稍后重试。"
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "页面已从收藏夹中移除。"
+        },
+        "error": {
+          "message": "无法将页面从收藏夹中移除。请稍后重试。"
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "页面锁定成功。"
+        },
+        "error": {
+          "message": "无法锁定页面。请稍后重试。"
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "页面解锁成功。"
+        },
+        "error": {
+          "message": "无法解锁页面。请稍后重试。"
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "页面已标记为公开并移至公开部分。"
+        },
+        "error": {
+          "message": "无法将页面标记为公开。请重试。"
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "页面已标记为私密并移至私密部分。"
+        },
+        "error": {
+          "message": "无法将页面标记为私密。请重试。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "页面删除成功。"
+        },
+        "error": {
+          "message": "无法删除页面。请重试。"
+        }
+      },
+      "export": {
+        "success": {
+          "message": "页面导出成功。"
+        },
+        "error": {
+          "message": "无法导出页面。请稍后重试。"
+        }
+      }
+    },
+    "create_page": "创建页面",
+    "delete_page": "删除页面",
+    "export": {
+      "title": "导出页面",
+      "format": "导出格式",
+      "include_content": "包含内容",
+      "page_format": "页面尺寸",
+      "content_variety": {
+        "everything": "全部",
+        "no_images": "不含图片"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "锁定",
+      "locked": "已锁定",
+      "unlocked": "已解锁"
+    },
+    "offline_badge": {
+      "heading": "您当前处于离线状态。",
+      "description": "您可以继续编辑。恢复在线后将自动同步。",
+      "label": "离线"
+    },
+    "toolbar": {
+      "color": "颜色"
     }
   }
 }

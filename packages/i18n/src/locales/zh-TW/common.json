@@ -307,6 +307,9 @@
   "end_date": "結束日期",
   "due_date": "截止日期",
   "target_date": "目標日期",
+  "created_date": "建立日期",
+  "updated_date": "更新日期",
+  "last_updated_date": "最後更新日期",
   "estimate": "評估",
   "change_parent_issue": "變更父工作事項",
   "remove_parent_issue": "移除父工作事項",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL 已成功複製到您的剪貼簿",
   "toast": {
     "success": "成功！",
-    "error": "錯誤！"
+    "error": "錯誤！",
+    "warning": "警告！",
+    "info": "提示！"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "評估",
     "created_at": "建立於",
     "updated_at": "更新時間",
+    "select_cycle": "選擇週期",
+    "select_modules": "選擇模組",
     "completed_at": "完成於",
     "layout": "版面配置",
     "filters": "篩選器",
@@ -464,6 +471,10 @@
     "epics": "史詩",
     "work_item": "工作事項",
     "work_items": "工作事項",
+    "work_items_in_project_count": "{count, plural, one{此專案中有 # 個工作事項} other{此專案中有 # 個工作事項}}",
+    "work_items_in_archives_count": "{count, plural, one{此專案的封存中有 # 個工作事項} other{此專案的封存中有 # 個工作事項}}",
+    "work_items_in_cycle_count": "{count, plural, one{此週期中有 # 個工作事項} other{此週期中有 # 個工作事項}}",
+    "work_items_in_module_count": "{count, plural, one{此模組中有 # 個工作事項} other{此模組中有 # 個工作事項}}",
     "sub_work_item": "子工作事項",
     "views": "檢視",
     "pages": "頁面",
@@ -619,7 +630,11 @@
       "enable": "啟用",
       "disable": "停用",
       "copy_markdown": "複製 Markdown",
-      "reply": "回覆"
+      "reply": "回覆",
+      "move": "移動",
+      "remove_from_cycle": "從週期中移除",
+      "remove_from_module": "從模組中移除",
+      "rename_folder": "重新命名資料夾"
     },
     "name": "名稱",
     "discard": "捨棄",
@@ -722,12 +737,33 @@
     "more": "更多",
     "saved": "已儲存",
     "all_projects": "所有項目",
-    "n_plus_projects": "{count}+ 個項目"
+    "n_plus_projects": "{count}+ 個項目",
+    "and": "和",
+    "view_all": "查看全部",
+    "view_less": "收合",
+    "empty": "空",
+    "no_date": "無日期",
+    "no_cycle": "無週期",
+    "no_modules": "無模組",
+    "no_labels": "無標籤",
+    "no_assignees": "無指派對象",
+    "labels_count": "{count, plural, one{# 個標籤} other{# 個標籤}}",
+    "modules_count": "{count, plural, one{# 個模組} other{# 個模組}}",
+    "not_found": {
+      "title": "糟糕！發生錯誤。",
+      "description": "抱歉，找不到您要瀏覽的頁面。該頁面可能已被刪除、重新命名或暫時無法使用。"
+    },
+    "toast": {
+      "success": "成功！",
+      "error": "錯誤！",
+      "warning": "警告"
+    }
   },
   "chart": {
     "x_axis": "X 軸",
     "y_axis": "Y 軸",
-    "metric": "指標"
+    "metric": "指標",
+    "week_of_month": "{month} 第 {week} 週"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "更新檢視"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "檢視建立成功。"
+        },
+        "error": {
+          "message": "無法建立檢視。請再試一次。"
+        }
+      },
+      "update": {
+        "success": {
+          "message": "檢視更新成功。"
+        },
+        "error": {
+          "message": "無法更新檢視。請再試一次。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "檢視刪除成功。"
+        },
+        "error": {
+          "message": "無法刪除檢視。請再試一次。"
+        }
+      },
+      "not_found": {
+        "message": "您嘗試更新的檢視不存在。"
+      },
+      "filters_update": {
+        "success": {
+          "message": "您的檢視已成功更新。"
+        },
+        "error": {
+          "message": "無法更新您的檢視。請再試一次。"
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "將工作事項匯出為 JSON 檔案。",
       "short_description": "匯出為 JSON"
+    }
+  },
+  "sign_in": "登入",
+  "powered_by_plane_publish": "由 Plane Publish 提供",
+  "instance": {
+    "failure": {
+      "title": "無法取得執行個體詳細資料。",
+      "description": "我們無法取得執行個體的詳細資料。別擔心，這可能只是連線問題。"
+    }
+  },
+  "something_went_wrong_please_try_again_later": "發生錯誤。請稍後再試。",
+  "please_try_again_later": "請稍後再試。",
+  "some_error_occurred": "發生錯誤",
+  "markdown_copied_to_clipboard": "Markdown 已複製到剪貼簿。",
+  "reloading_to_apply_changes": "正在重新載入以套用變更…",
+  "copy_link_failed": "無法複製連結。請再試一次。",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "主題設定下載成功。"
+        },
+        "error": {
+          "message": "無法下載主題設定。"
+        }
+      },
+      "import": {
+        "success": {
+          "message": "主題設定匯入成功"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "僅在手動排序時才能拖放"
+      },
+      "update_dates": {
+        "error": {
+          "message": "更新區塊日期時發生錯誤"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "此篩選條件設定不正確，無法套用"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "請輸入任務以取得 AI 協助。"
+      }
+    }
+  },
+  "text_colors": "文字顏色",
+  "background_colors": "背景顏色",
+  "submitting": "提交中...",
+  "image_upload": {
+    "title": "上傳圖片",
+    "drag_and_drop": "將圖片拖放到此處",
+    "drop_here": "將圖片拖放到此處上傳",
+    "file_too_large": "圖片大小不能超過 5 MB。",
+    "invalid_format": "請上傳格式有效的檔案。",
+    "supported_formats": "支援的檔案格式：.jpeg、.jpg、.png、.webp",
+    "upload_and_save": "上傳並儲存",
+    "uploading": "上傳中",
+    "search_for_images": "搜尋圖片",
+    "no_images_found": "找不到圖片。",
+    "tabs": {
+      "images": "圖片",
+      "upload": "上傳"
     }
   }
 }

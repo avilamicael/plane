@@ -373,6 +373,16 @@
           "message": "Ceva nu a funcționat."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Spațiul de lucru a fost actualizat cu succes"
+        }
+      },
+      "logo_removed": {
+        "message": "Imaginea spațiului de lucru a fost eliminată cu succes."
+      }
     }
   }
 }

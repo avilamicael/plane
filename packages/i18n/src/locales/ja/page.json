@@ -110,6 +110,126 @@
       "label": "コレクションから削除",
       "success_message": "ページをコレクションから削除しました。",
       "error_message": "ページをコレクションから削除できませんでした。もう一度お試しください。"
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "ページのリンクをクリップボードにコピーしました。"
+      },
+      "duplicate": {
+        "success": {
+          "message": "ページを複製しました。"
+        },
+        "error": {
+          "message": "ページを複製できませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "ページを復元しました。"
+        },
+        "error": {
+          "message": "ページを復元できませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "ページをアーカイブしました。"
+        },
+        "error": {
+          "message": "ページをアーカイブできませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "ページをお気に入りに追加しました。"
+        },
+        "error": {
+          "message": "ページをお気に入りに追加できませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "ページをお気に入りから削除しました。"
+        },
+        "error": {
+          "message": "ページをお気に入りから削除できませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "ページをロックしました。"
+        },
+        "error": {
+          "message": "ページをロックできませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "ページのロックを解除しました。"
+        },
+        "error": {
+          "message": "ページのロックを解除できませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "ページを公開に設定し、公開セクションに移動しました。"
+        },
+        "error": {
+          "message": "ページを公開に設定できませんでした。もう一度お試しください。"
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "ページを非公開に設定し、非公開セクションに移動しました。"
+        },
+        "error": {
+          "message": "ページを非公開に設定できませんでした。もう一度お試しください。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "ページを削除しました。"
+        },
+        "error": {
+          "message": "ページを削除できませんでした。もう一度お試しください。"
+        }
+      },
+      "export": {
+        "success": {
+          "message": "ページをエクスポートしました。"
+        },
+        "error": {
+          "message": "ページをエクスポートできませんでした。しばらくしてからもう一度お試しください。"
+        }
+      }
+    },
+    "create_page": "ページを作成",
+    "delete_page": "ページを削除",
+    "export": {
+      "title": "ページをエクスポート",
+      "format": "エクスポート形式",
+      "include_content": "含めるコンテンツ",
+      "page_format": "ページサイズ",
+      "content_variety": {
+        "everything": "すべて",
+        "no_images": "画像なし"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "ロック",
+      "locked": "ロック中",
+      "unlocked": "ロック解除"
+    },
+    "offline_badge": {
+      "heading": "オフラインです。",
+      "description": "編集を続けられます。オンラインに戻ると同期されます。",
+      "label": "オフライン"
+    },
+    "toolbar": {
+      "color": "色"
     }
   }
 }

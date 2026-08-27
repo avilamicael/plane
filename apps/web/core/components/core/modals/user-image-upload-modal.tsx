@@ -15,6 +15,7 @@ import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import { EFileAssetType } from "@plane/types";
 import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
 import { getAssetIdFromUrl, getFileURL, checkURLValidity } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // services
 import { FileService } from "@/services/file.service";
 const fileService = new FileService();
@@ -28,6 +29,8 @@ type Props = {
 };
 
 export const UserImageUploadModal = observer(function UserImageUploadModal(props: Props) {
+  const { t } = useTranslation();
+
   const { handleRemove, isOpen, onClose, onSuccess, value } = props;
   // states
   const [image, setImage] = useState<File | null>(null);
@@ -66,7 +69,7 @@ export const UserImageUploadModal = observer(function UserImageUploadModal(props
     } catch (error) {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
+        title: t("common.toast.error"),
         message: error?.toString() ?? "Something went wrong. Please try again.",
       });
       throw new Error("Error in uploading file.");
@@ -96,7 +99,7 @@ export const UserImageUploadModal = observer(function UserImageUploadModal(props
   return (
     <ModalCore isOpen={isOpen} handleClose={handleClose} position={EModalPosition.CENTER} width={EModalWidth.XL}>
       <div className="space-y-5 px-5 py-8 sm:p-6">
-        <h3 className="text-16 leading-6 font-medium text-primary">Upload Image</h3>
+        <h3 className="text-16 leading-6 font-medium text-primary">{t("image_upload.title")}</h3>
         <div className="space-y-3">
           <div className="flex items-center justify-center gap-3">
             <div
@@ -113,7 +116,7 @@ export const UserImageUploadModal = observer(function UserImageUploadModal(props
                     type="button"
                     className="absolute top-0 right-0 z-40 translate-x-1/2 -translate-y-1/2 rounded-sm bg-surface-2 px-2 py-0.5 text-11 font-medium text-secondary"
                   >
-                    Edit
+                    {t("edit")}
                   </button>
                   <img
                     src={image ? URL.createObjectURL(image) : value ? getFileURL(value) : ""}
@@ -125,7 +128,7 @@ export const UserImageUploadModal = observer(function UserImageUploadModal(props
                 <div>
                   <UserCirclePropertyIcon className="mx-auto h-16 w-16 text-secondary" />
                   <span className="mt-2 block text-13 font-medium text-secondary">
-                    {isDragActive ? "Drop image here to upload" : "Drag & drop image here"}
+                    {isDragActive ? t("image_upload.drop_here") : t("image_upload.drag_and_drop")}
                   </span>
                 </div>
               )}
@@ -136,22 +139,22 @@ export const UserImageUploadModal = observer(function UserImageUploadModal(props
           {fileRejections.length > 0 && (
             <p className="text-13 text-danger-primary">
               {fileRejections[0].errors[0].code === "file-too-large"
-                ? "The image size cannot exceed 5 MB."
-                : "Please upload a file in a valid format."}
+                ? t("image_upload.file_too_large")
+                : t("image_upload.invalid_format")}
             </p>
           )}
         </div>
-        <p className="my-4 text-13 text-secondary">File formats supported- .jpeg, .jpg, .png, .webp</p>
+        <p className="my-4 text-13 text-secondary">{t("image_upload.supported_formats")}</p>
         <div className="flex items-center justify-between">
           <Button variant="error-fill" size="lg" onClick={handleImageRemove} disabled={!value}>
-            {isRemoving ? "Removing" : "Remove"}
+            {isRemoving ? t("removing") : t("remove")}
           </Button>
           <div className="flex items-center gap-2">
             <Button variant="secondary" size="lg" onClick={handleClose}>
-              Cancel
+              {t("cancel")}
             </Button>
             <Button variant="primary" size="lg" onClick={handleSubmit} disabled={!image} loading={isImageUploading}>
-              {isImageUploading ? "Uploading" : "Upload & Save"}
+              {isImageUploading ? t("image_upload.uploading") : t("image_upload.upload_and_save")}
             </Button>
           </div>
         </div>

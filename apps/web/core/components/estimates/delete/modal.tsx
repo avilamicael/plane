@@ -9,6 +9,7 @@ import { observer } from "mobx-react";
 // ui
 import { Button } from "@plane/propel/button";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+import { useTranslation } from "@plane/i18n";
 import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
@@ -26,6 +27,8 @@ type TDeleteEstimateModal = {
 export const DeleteEstimateModal = observer(function DeleteEstimateModal(props: TDeleteEstimateModal) {
   // props
   const { workspaceSlug, projectId, estimateId, isOpen, handleClose } = props;
+  // i18n
+  const { t } = useTranslation();
   // hooks
   const { areEstimateEnabledByProjectId, deleteEstimate } = useProjectEstimates();
   const { asJson: estimate } = useEstimate(estimateId);
@@ -45,7 +48,7 @@ export const DeleteEstimateModal = observer(function DeleteEstimateModal(props: 
       setToast({
         type: TOAST_TYPE.SUCCESS,
         title: "Estimate deleted",
-        message: "Estimate has been removed from your project.",
+        message: t("project_settings.estimates.toasts.deleted.success.message"),
       });
       handleClose();
     } catch (_error) {
@@ -53,7 +56,7 @@ export const DeleteEstimateModal = observer(function DeleteEstimateModal(props: 
       setToast({
         type: TOAST_TYPE.ERROR,
         title: "Estimate creation failed",
-        message: "We were unable to delete the estimate, please try again.",
+        message: t("project_settings.estimates.toasts.deleted.error.message"),
       });
     }
   };

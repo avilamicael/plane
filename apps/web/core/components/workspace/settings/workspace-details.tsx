@@ -69,9 +69,9 @@ export const WorkspaceDetails = observer(function WorkspaceDetails() {
     try {
       await updateWorkspace(currentWorkspace.slug, payload);
       setToast({
-        title: "Success!",
+        title: t("common.toast.success"),
         type: TOAST_TYPE.SUCCESS,
-        message: "Workspace updated successfully",
+        message: t("workspace.toasts.update.success.message"),
       });
     } catch (err: unknown) {
       console.error(err);
@@ -91,14 +91,14 @@ export const WorkspaceDetails = observer(function WorkspaceDetails() {
       });
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success!",
-        message: "Workspace picture removed successfully.",
+        title: t("common.toast.success"),
+        message: t("workspace.toasts.logo_removed.message"),
       });
     } catch {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
-        message: "There was some error in deleting your profile picture. Please try again.",
+        title: t("common.toast.error"),
+        message: t("account_settings.profile.toasts.picture_delete_error"),
       });
     }
   };

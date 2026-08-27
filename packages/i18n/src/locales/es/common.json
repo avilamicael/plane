@@ -307,6 +307,9 @@
   "end_date": "Fecha de fin",
   "due_date": "Fecha de vencimiento",
   "target_date": "Fecha objetivo",
+  "created_date": "Fecha de creación",
+  "updated_date": "Fecha de actualización",
+  "last_updated_date": "Fecha de última actualización",
   "estimate": "Estimación",
   "change_parent_issue": "Cambiar elemento de trabajo padre",
   "remove_parent_issue": "Eliminar elemento de trabajo padre",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "La URL se ha copiado correctamente al portapapeles",
   "toast": {
     "success": "¡Éxito!",
-    "error": "¡Error!"
+    "error": "¡Error!",
+    "warning": "¡Advertencia!",
+    "info": "¡Información!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Estimación",
     "created_at": "Creado en",
     "updated_at": "Actualizado el",
+    "select_cycle": "Seleccionar ciclo",
+    "select_modules": "Seleccionar módulos",
     "completed_at": "Completado en",
     "layout": "Diseño",
     "filters": "Filtros",
@@ -464,6 +471,10 @@
     "epics": "Epics",
     "work_item": "Elemento de trabajo",
     "work_items": "Elementos de trabajo",
+    "work_items_in_project_count": "{count, plural, one{Hay # elemento de trabajo en este proyecto} other{Hay # elementos de trabajo en este proyecto}}",
+    "work_items_in_archives_count": "{count, plural, one{Hay # elemento de trabajo en los archivos de este proyecto} other{Hay # elementos de trabajo en los archivos de este proyecto}}",
+    "work_items_in_cycle_count": "{count, plural, one{Hay # elemento de trabajo en este ciclo} other{Hay # elementos de trabajo en este ciclo}}",
+    "work_items_in_module_count": "{count, plural, one{Hay # elemento de trabajo en este módulo} other{Hay # elementos de trabajo en este módulo}}",
     "sub_work_item": "Sub-elemento de trabajo",
     "views": "Vistas",
     "pages": "Páginas",
@@ -619,7 +630,11 @@
       "enable": "Habilitar",
       "disable": "Deshabilitar",
       "copy_markdown": "Copiar markdown",
-      "reply": "Responder"
+      "reply": "Responder",
+      "move": "Mover",
+      "remove_from_cycle": "Quitar del ciclo",
+      "remove_from_module": "Quitar del módulo",
+      "rename_folder": "Renombrar carpeta"
     },
     "name": "Nombre",
     "discard": "Descartar",
@@ -722,12 +737,33 @@
     "more": "Más",
     "saved": "Guardado",
     "all_projects": "Todos los proyectos",
-    "n_plus_projects": "{count}+ proyectos"
+    "n_plus_projects": "{count}+ proyectos",
+    "and": "y",
+    "view_all": "Ver todos",
+    "view_less": "Ver menos",
+    "empty": "Vacío",
+    "no_date": "Sin fecha",
+    "no_cycle": "Sin ciclo",
+    "no_modules": "Sin módulos",
+    "no_labels": "Sin etiquetas",
+    "no_assignees": "Sin asignados",
+    "labels_count": "{count, plural, one{# etiqueta} other{# etiquetas}}",
+    "modules_count": "{count, plural, one{# módulo} other{# módulos}}",
+    "not_found": {
+      "title": "¡Vaya! Algo salió mal.",
+      "description": "Lo sentimos, no se encuentra la página que buscas. Es posible que se haya eliminado, que haya cambiado de nombre o que no esté disponible temporalmente."
+    },
+    "toast": {
+      "success": "¡Éxito!",
+      "error": "¡Error!",
+      "warning": "Advertencia"
+    }
   },
   "chart": {
     "x_axis": "Eje X",
     "y_axis": "Eje Y",
-    "metric": "Métrica"
+    "metric": "Métrica",
+    "week_of_month": "{month}, semana {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Actualizar vista"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Vista creada correctamente."
+        },
+        "error": {
+          "message": "No se pudo crear la vista. Inténtalo de nuevo."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Vista actualizada correctamente."
+        },
+        "error": {
+          "message": "No se pudo actualizar la vista. Inténtalo de nuevo."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Vista eliminada correctamente."
+        },
+        "error": {
+          "message": "No se pudo eliminar la vista. Inténtalo de nuevo."
+        }
+      },
+      "not_found": {
+        "message": "La vista que intentas actualizar no existe."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Tu vista se ha actualizado correctamente."
+        },
+        "error": {
+          "message": "No se pudo actualizar tu vista. Inténtalo de nuevo."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Exporta elementos de trabajo a un archivo JSON.",
       "short_description": "Exportar como json"
+    }
+  },
+  "sign_in": "Iniciar sesión",
+  "powered_by_plane_publish": "Desarrollado por Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "No se pudieron obtener los detalles de la instancia.",
+      "description": "No pudimos obtener los detalles de la instancia. No te preocupes, puede que solo sea un problema de conexión."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Algo salió mal. Inténtalo de nuevo más tarde.",
+  "please_try_again_later": "Inténtalo de nuevo más tarde.",
+  "some_error_occurred": "Se produjo un error",
+  "markdown_copied_to_clipboard": "Markdown copiado al portapapeles.",
+  "reloading_to_apply_changes": "Recargando para aplicar los cambios...",
+  "copy_link_failed": "No pudimos copiar el enlace. Inténtalo de nuevo.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Configuración del tema descargada correctamente."
+        },
+        "error": {
+          "message": "Error al descargar la configuración del tema."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Configuración del tema importada correctamente"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Arrastrar y soltar solo está disponible con la ordenación manual"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Algo salió mal al actualizar las fechas del bloque"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Este filtro no está configurado correctamente y no se puede aplicar"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Escribe una tarea para recibir asistencia de la IA."
+      }
+    }
+  },
+  "text_colors": "Colores de texto",
+  "background_colors": "Colores de fondo",
+  "submitting": "Enviando...",
+  "image_upload": {
+    "title": "Subir imagen",
+    "drag_and_drop": "Arrastra y suelta la imagen aquí",
+    "drop_here": "Suelta la imagen aquí para subirla",
+    "file_too_large": "El tamaño de la imagen no puede superar los 5 MB.",
+    "invalid_format": "Sube un archivo en un formato válido.",
+    "supported_formats": "Formatos de archivo admitidos: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Subir y guardar",
+    "uploading": "Subiendo",
+    "search_for_images": "Buscar imágenes",
+    "no_images_found": "No se encontraron imágenes.",
+    "tabs": {
+      "images": "Imágenes",
+      "upload": "Subir"
     }
   }
 }

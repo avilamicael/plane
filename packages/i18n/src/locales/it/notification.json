@@ -52,7 +52,17 @@
       "5_days": "5 giorni",
       "1_week": "1 settimana",
       "2_weeks": "2 settimane",
-      "custom": "Personalizzato"
+      "custom": "Personalizzato",
+      "modal": {
+        "title": "Personalizza il tempo di posticipo",
+        "pick_a_date": "Scegli una data",
+        "select_date": "Seleziona data",
+        "pick_a_time": "Scegli un orario",
+        "select_a_time": "Seleziona un orario",
+        "no_available_time": "Nessun orario disponibile per questa data.",
+        "date_required": "Seleziona una data",
+        "time_required": "Seleziona un orario"
+      }
     }
   }
 }

@@ -63,7 +63,8 @@
             "required": "We need an email address to invite them.",
             "invalid": "Email is invalid"
           }
-        }
+        },
+        "invitation_removed": "Invitation removed successfully."
       },
       "billing_and_plans": {
         "heading": "Billing & Plans",
@@ -147,8 +148,18 @@
           },
           "secret_key_not_copied": {
             "message": "Error occurred while copying secret key."
+          },
+          "deleted": {
+            "message": "Webhook deleted successfully."
+          },
+          "not_deleted": {
+            "message": "Webhook could not be deleted. Please try again."
+          },
+          "secret_key_regenerated": {
+            "message": "New key regenerated successfully."
           }
-        }
+        },
+        "delete_webhook": "Delete webhook"
       },
       "api_tokens": {
         "heading": "Access Tokens",
@@ -170,7 +181,8 @@
             "title": "Error!",
             "message": "The token could not be deleted"
           }
-        }
+        },
+        "expiration_required": "Please select an expiration date."
       },
       "integrations": {
         "title": "Integrations",

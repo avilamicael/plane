@@ -307,6 +307,9 @@
   "end_date": "Bitiş tarihi",
   "due_date": "Son tarih",
   "target_date": "Hedef tarih",
+  "created_date": "Oluşturulma tarihi",
+  "updated_date": "Güncellenme tarihi",
+  "last_updated_date": "Son güncellenme tarihi",
   "estimate": "Tahmin",
   "change_parent_issue": "Üst iş öğesini değiştir",
   "remove_parent_issue": "Üst iş öğesini kaldır",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL panonuza başarıyla kopyalandı",
   "toast": {
     "success": "Başarılı!",
-    "error": "Hata!"
+    "error": "Hata!",
+    "warning": "Uyarı!",
+    "info": "Bilgi!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Tahmin",
     "created_at": "Oluşturulma tarihi",
     "updated_at": "Güncelleme tarihi",
+    "select_cycle": "Döngü seç",
+    "select_modules": "Modül seç",
     "completed_at": "Tamamlanma tarihi",
     "layout": "Düzen",
     "filters": "Filtreler",
@@ -464,6 +471,10 @@
     "epics": "Epikler",
     "work_item": "İş öğesi",
     "work_items": "İş Öğeleri",
+    "work_items_in_project_count": "{count, plural, one{Bu projede # iş öğesi var} other{Bu projede # iş öğesi var}}",
+    "work_items_in_archives_count": "{count, plural, one{Bu projenin arşivinde # iş öğesi var} other{Bu projenin arşivinde # iş öğesi var}}",
+    "work_items_in_cycle_count": "{count, plural, one{Bu döngüde # iş öğesi var} other{Bu döngüde # iş öğesi var}}",
+    "work_items_in_module_count": "{count, plural, one{Bu modülde # iş öğesi var} other{Bu modülde # iş öğesi var}}",
     "sub_work_item": "Alt iş öğesi",
     "views": "Görünümler",
     "pages": "Sayfalar",
@@ -619,7 +630,11 @@
       "enable": "Etkinleştir",
       "disable": "Devre dışı bırak",
       "copy_markdown": "Markdown'ı kopyala",
-      "reply": "Yanıtla"
+      "reply": "Yanıtla",
+      "move": "Taşı",
+      "remove_from_cycle": "Döngüden kaldır",
+      "remove_from_module": "Modülden kaldır",
+      "rename_folder": "Klasörü yeniden adlandır"
     },
     "name": "Ad",
     "discard": "Vazgeç",
@@ -722,12 +737,33 @@
     "more": "Daha fazla",
     "saved": "Kaydedildi",
     "all_projects": "Tüm projeler",
-    "n_plus_projects": "{count}+ proje"
+    "n_plus_projects": "{count}+ proje",
+    "and": "ve",
+    "view_all": "Tümünü göster",
+    "view_less": "Daha az göster",
+    "empty": "Boş",
+    "no_date": "Tarih yok",
+    "no_cycle": "Döngü yok",
+    "no_modules": "Modül yok",
+    "no_labels": "Etiket yok",
+    "no_assignees": "Atanan yok",
+    "labels_count": "{count, plural, one{# etiket} other{# etiket}}",
+    "modules_count": "{count, plural, one{# modül} other{# modül}}",
+    "not_found": {
+      "title": "Hay aksi! Bir şeyler ters gitti.",
+      "description": "Üzgünüz, aradığınız sayfa bulunamadı. Kaldırılmış, adı değiştirilmiş veya geçici olarak kullanılamıyor olabilir."
+    },
+    "toast": {
+      "success": "Başarılı!",
+      "error": "Hata!",
+      "warning": "Uyarı"
+    }
   },
   "chart": {
     "x_axis": "X ekseni",
     "y_axis": "Y ekseni",
-    "metric": "Metrik"
+    "metric": "Metrik",
+    "week_of_month": "{month}, {week}. hafta"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Görünümü Güncelle"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Görünüm başarıyla oluşturuldu."
+        },
+        "error": {
+          "message": "Görünüm oluşturulamadı. Lütfen tekrar deneyin."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Görünüm başarıyla güncellendi."
+        },
+        "error": {
+          "message": "Görünüm güncellenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Görünüm başarıyla silindi."
+        },
+        "error": {
+          "message": "Görünüm silinemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "not_found": {
+        "message": "Güncellemeye çalıştığınız görünüm mevcut değil."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Görünümünüz başarıyla güncellendi."
+        },
+        "error": {
+          "message": "Görünümünüz güncellenemedi. Lütfen tekrar deneyin."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "İş öğelerini JSON dosyasına aktarın.",
       "short_description": "JSON olarak aktar"
+    }
+  },
+  "sign_in": "Giriş yap",
+  "powered_by_plane_publish": "Plane Publish tarafından desteklenmektedir",
+  "instance": {
+    "failure": {
+      "title": "Örnek bilgileri alınamadı.",
+      "description": "Örnek bilgilerini alamadık. Endişelenmeyin, bu yalnızca bir bağlantı sorunu olabilir."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+  "please_try_again_later": "Lütfen daha sonra tekrar deneyin.",
+  "some_error_occurred": "Bir hata oluştu",
+  "markdown_copied_to_clipboard": "Markdown panoya kopyalandı.",
+  "reloading_to_apply_changes": "Değişikliklerin uygulanması için yeniden yükleniyor...",
+  "copy_link_failed": "Bağlantı kopyalanamadı. Lütfen tekrar deneyin.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Tema yapılandırması başarıyla indirildi."
+        },
+        "error": {
+          "message": "Tema yapılandırması indirilemedi."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Tema yapılandırması başarıyla içe aktarıldı"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Sürükle ve bırak yalnızca manuel sıralamada kullanılabilir"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Blok tarihleri güncellenirken bir hata oluştu"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Bu filtre doğru yapılandırılmadığı için uygulanamıyor"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Yapay zekâ desteği almak için lütfen bir görev girin."
+      }
+    }
+  },
+  "text_colors": "Metin renkleri",
+  "background_colors": "Arka plan renkleri",
+  "submitting": "Gönderiliyor...",
+  "image_upload": {
+    "title": "Görsel yükle",
+    "drag_and_drop": "Görseli buraya sürükleyip bırakın",
+    "drop_here": "Yüklemek için görseli buraya bırakın",
+    "file_too_large": "Görsel boyutu 5 MB'ı aşamaz.",
+    "invalid_format": "Lütfen geçerli bir biçimde dosya yükleyin.",
+    "supported_formats": "Desteklenen dosya biçimleri: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Yükle ve kaydet",
+    "uploading": "Yükleniyor",
+    "search_for_images": "Görsel ara",
+    "no_images_found": "Görsel bulunamadı.",
+    "tabs": {
+      "images": "Görseller",
+      "upload": "Yükle"
     }
   }
 }

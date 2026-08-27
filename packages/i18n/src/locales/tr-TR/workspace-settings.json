@@ -63,7 +63,8 @@
             "required": "Davet etmek için bir e-posta adresine ihtiyacımız var.",
             "invalid": "E-posta geçersiz"
           }
-        }
+        },
+        "invitation_removed": "Davet başarıyla kaldırıldı."
       },
       "billing_and_plans": {
         "heading": "Faturalandırma ve Planlar",
@@ -147,8 +148,18 @@
           },
           "secret_key_not_copied": {
             "message": "Gizli anahtar kopyalanırken hata oluştu."
+          },
+          "deleted": {
+            "message": "Webhook başarıyla silindi."
+          },
+          "not_deleted": {
+            "message": "Webhook silinemedi. Lütfen tekrar deneyin."
+          },
+          "secret_key_regenerated": {
+            "message": "Yeni anahtar başarıyla yeniden oluşturuldu."
           }
-        }
+        },
+        "delete_webhook": "Webhook'u sil"
       },
       "api_tokens": {
         "heading": "API Token'ları",
@@ -170,7 +181,8 @@
             "title": "Hata!",
             "message": "API token'ı silinemedi"
           }
-        }
+        },
+        "expiration_required": "Lütfen bir son kullanma tarihi seçin."
       },
       "integrations": {
         "title": "Entegrasyonlar",

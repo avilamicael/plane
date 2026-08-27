@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Помилка",
+          "message": "Щось пішло не так. Спробуйте знову."
+        },
+        "template": {
+          "try_again": "{reason}. Спробуйте знову.",
+          "contact_admin": "{reason}. Зверніться до адміністратора."
+        },
+        "reason": {
+          "instance_not_configured": "Інстанцію не налаштовано",
+          "signup_disabled": "Реєстрацію вимкнено",
+          "invalid_password": "Неправильний пароль",
+          "smtp_not_configured": "SMTP не налаштовано",
+          "invalid_email": "Неправильна адреса електронної пошти",
+          "email_required": "Потрібна адреса електронної пошти",
+          "email_and_password_required": "Потрібні адреса електронної пошти та пароль",
+          "email_and_code_required": "Потрібні адреса електронної пошти та код",
+          "authentication_failed": "Помилка автентифікації",
+          "invalid_magic_code": "Неправильний магічний код",
+          "expired_magic_code": "Термін дії магічного коду минув",
+          "oauth_not_configured": "OAuth не налаштовано",
+          "google_not_configured": "Google не налаштовано",
+          "github_not_configured": "GitHub не налаштовано",
+          "gitlab_not_configured": "GitLab не налаштовано",
+          "google_oauth_provider_error": "Помилка провайдера OAuth Google",
+          "github_oauth_provider_error": "Помилка провайдера OAuth GitHub",
+          "gitlab_oauth_provider_error": "Помилка провайдера OAuth GitLab",
+          "invalid_password_token": "Неправильний токен пароля",
+          "expired_password_token": "Термін дії токена пароля минув",
+          "password_required": "Потрібен пароль",
+          "incorrect_old_password": "Неправильний старий пароль",
+          "invalid_new_password": "Неправильний новий пароль",
+          "password_already_set": "Пароль уже встановлено",
+          "admin_already_exist": "Адміністратор уже існує",
+          "admin_email_password_first_name_required": "Потрібні адреса електронної пошти, пароль та ім'я",
+          "invalid_admin_email": "Неправильна адреса електронної пошти адміністратора",
+          "invalid_admin_password": "Неправильний пароль адміністратора"
+        },
+        "title": {
+          "user_already_exist": "Користувач уже існує",
+          "user_does_not_exist": "Користувача не існує",
+          "user_account_deactivated": "Обліковий запис користувача деактивовано",
+          "bot_user_login_forbidden": "Вхід не дозволено",
+          "admin_user_already_exist": "Користувач-адміністратор уже існує",
+          "admin_user_does_not_exist": "Користувача-адміністратора не існує"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Цей обліковий запис не можна використовувати для входу. Скористайтеся особистим обліковим записом.",
+          "user_account_deactivated": "Обліковий запис користувача деактивовано. Зверніться до {contact}.",
+          "default_contact": "адміністратора",
+          "user_already_exist": "Ваш обліковий запис уже зареєстровано.",
+          "user_does_not_exist": "Обліковий запис не знайдено.",
+          "admin_user_already_exist": "Користувач-адміністратор уже існує.",
+          "admin_user_does_not_exist": "Користувача-адміністратора не існує.",
+          "link": {
+            "sign_in_now": "Увійти зараз",
+            "create_one": "Створити обліковий запис, щоб почати"
+          }
+        }
+      }
+    }
+  }
+}

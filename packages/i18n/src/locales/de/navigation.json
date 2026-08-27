@@ -30,5 +30,39 @@
     "upgrade_plan": "Plan upgraden",
     "plane_pro": "Plane Pro",
     "business": "Business"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Standard-Tab erfolgreich aktualisiert."
+        },
+        "error": {
+          "message": "Der Standard-Tab konnte nicht aktualisiert werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Der Tab konnte nicht ausgeblendet werden. Bitte versuchen Sie es später erneut."
+        }
+      }
+    },
+    "actions": {
+      "show": "Anzeigen",
+      "hide_in_more_menu": "Im Menü „Mehr“ ausblenden",
+      "set_as_default": "Als Standard festlegen",
+      "clear_default": "Standard entfernen"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Befehle suchen ..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Nur Symbol",
+      "icon_with_name": "Symbol mit Name"
+    },
+    "dock": "App-Leiste andocken",
+    "undock": "App-Leiste lösen"
   }
 }

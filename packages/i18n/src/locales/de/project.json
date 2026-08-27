@@ -139,7 +139,8 @@
         "title": "Keine archivierten Zyklen",
         "description": "Archivieren Sie abgeschlossene Zyklen, um Ordnung zu halten."
       }
-    }
+    },
+    "delete_cycle": "Zyklus löschen"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Etwas ist schief gelaufen."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Projekt erfolgreich gelöscht."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Das Projekt konnte nicht archiviert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Das Projekt konnte nicht wiederhergestellt werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Bitte bestätigen Sie das Verlassen des Projekts, indem Sie „Leave Project“ eingeben."
+        },
+        "project_name": {
+          "message": "Bitte geben Sie den Projektnamen genau so ein, wie er in der Beschreibung steht."
+        },
+        "fill_all_fields": {
+          "message": "Bitte füllen Sie alle Felder aus."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Das Repository konnte nicht mit dem Projekt synchronisiert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "members_added": {
+        "message": "Mitglieder erfolgreich hinzugefügt."
+      },
+      "publish": {
+        "success": {
+          "message": "Veröffentlichungseinstellungen erfolgreich aktualisiert!"
+        },
+        "unpublish_error": {
+          "message": "Beim Aufheben der Veröffentlichung des Projekts ist ein Fehler aufgetreten."
+        },
+        "select_layout": {
+          "message": "Bitte wählen Sie mindestens ein Ansichtslayout aus, um das Projekt zu veröffentlichen."
+        },
+        "link_copied": {
+          "message": "Link zur veröffentlichten Seite erfolgreich kopiert."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Kommentare zulassen",
+      "allow_reactions": "Reaktionen zulassen",
+      "allow_voting": "Abstimmungen zulassen",
+      "anyone_with_link_can_access": "Jeder mit dem Link kann darauf zugreifen"
+    },
+    "join": {
+      "title": "Projekt beitreten?"
+    },
+    "card": {
+      "created_on": "Erstellt am {date}",
+      "no_members_yet": "Noch keine Mitglieder"
     }
   }
 }

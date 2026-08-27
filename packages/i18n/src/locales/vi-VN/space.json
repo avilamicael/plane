@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Lỗi",
+          "message": "Đã xảy ra lỗi. Vui lòng thử lại."
+        },
+        "template": {
+          "try_again": "{reason}. Vui lòng thử lại.",
+          "contact_admin": "{reason}. Vui lòng liên hệ quản trị viên của bạn."
+        },
+        "reason": {
+          "instance_not_configured": "Hệ thống chưa được cấu hình",
+          "signup_disabled": "Đăng ký đã bị tắt",
+          "invalid_password": "Mật khẩu không hợp lệ",
+          "smtp_not_configured": "SMTP chưa được cấu hình",
+          "invalid_email": "Email không hợp lệ",
+          "email_required": "Email là bắt buộc",
+          "email_and_password_required": "Email và mật khẩu là bắt buộc",
+          "email_and_code_required": "Email và mã là bắt buộc",
+          "authentication_failed": "Xác thực không thành công",
+          "invalid_magic_code": "Mã ma thuật không hợp lệ",
+          "expired_magic_code": "Mã ma thuật đã hết hạn",
+          "oauth_not_configured": "OAuth chưa được cấu hình",
+          "google_not_configured": "Google chưa được cấu hình",
+          "github_not_configured": "GitHub chưa được cấu hình",
+          "gitlab_not_configured": "GitLab chưa được cấu hình",
+          "google_oauth_provider_error": "Lỗi nhà cung cấp OAuth của Google",
+          "github_oauth_provider_error": "Lỗi nhà cung cấp OAuth của GitHub",
+          "gitlab_oauth_provider_error": "Lỗi nhà cung cấp OAuth của GitLab",
+          "invalid_password_token": "Mã thông báo mật khẩu không hợp lệ",
+          "expired_password_token": "Mã thông báo mật khẩu đã hết hạn",
+          "password_required": "Mật khẩu là bắt buộc",
+          "incorrect_old_password": "Mật khẩu cũ không đúng",
+          "invalid_new_password": "Mật khẩu mới không hợp lệ",
+          "password_already_set": "Mật khẩu đã được thiết lập",
+          "admin_already_exist": "Quản trị viên đã tồn tại",
+          "admin_email_password_first_name_required": "Email, mật khẩu và tên là bắt buộc",
+          "invalid_admin_email": "Email quản trị viên không hợp lệ",
+          "invalid_admin_password": "Mật khẩu quản trị viên không hợp lệ"
+        },
+        "title": {
+          "user_already_exist": "Người dùng đã tồn tại",
+          "user_does_not_exist": "Người dùng không tồn tại",
+          "user_account_deactivated": "Tài khoản người dùng đã bị vô hiệu hóa",
+          "bot_user_login_forbidden": "Không được phép đăng nhập",
+          "admin_user_already_exist": "Người dùng quản trị đã tồn tại",
+          "admin_user_does_not_exist": "Người dùng quản trị không tồn tại"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Không thể dùng tài khoản này để đăng nhập. Vui lòng dùng tài khoản cá nhân.",
+          "user_account_deactivated": "Tài khoản người dùng đã bị vô hiệu hóa. Vui lòng liên hệ {contact}.",
+          "default_contact": "quản trị viên",
+          "user_already_exist": "Tài khoản của bạn đã được đăng ký.",
+          "user_does_not_exist": "Không tìm thấy tài khoản nào.",
+          "admin_user_already_exist": "Người dùng quản trị đã tồn tại.",
+          "admin_user_does_not_exist": "Người dùng quản trị không tồn tại.",
+          "link": {
+            "sign_in_now": "Đăng nhập ngay",
+            "create_one": "Tạo một tài khoản để bắt đầu"
+          }
+        }
+      }
+    }
+  }
+}

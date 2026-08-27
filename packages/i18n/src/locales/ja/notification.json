@@ -52,7 +52,17 @@
       "5_days": "5日",
       "1_week": "1週間",
       "2_weeks": "2週間",
-      "custom": "カスタム"
+      "custom": "カスタム",
+      "modal": {
+        "title": "スヌーズ時間をカスタマイズ",
+        "pick_a_date": "日付を選択",
+        "select_date": "日付を選択",
+        "pick_a_time": "時刻を選択",
+        "select_a_time": "時刻を選択してください",
+        "no_available_time": "この日に利用できる時刻はありません。",
+        "date_required": "日付を選択してください",
+        "time_required": "時刻を選択してください"
+      }
     }
   }
 }

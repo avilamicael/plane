@@ -139,7 +139,8 @@
         "title": "Belum ada siklus yang diarsipkan",
         "description": "Untuk membersihkan proyek Anda, arsipkan siklus yang telah diselesaikan. Temukan di sini setelah diarsipkan."
       }
-    }
+    },
+    "delete_cycle": "Hapus siklus"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Terjadi kesalahan."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Proyek berhasil dihapus."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Proyek tidak dapat diarsipkan. Silakan coba lagi."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Proyek tidak dapat dipulihkan. Silakan coba lagi."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Konfirmasikan keluar dari proyek dengan mengetik 'Leave Project'."
+        },
+        "project_name": {
+          "message": "Silakan masukkan nama proyek seperti yang tertera di deskripsi."
+        },
+        "fill_all_fields": {
+          "message": "Silakan isi semua kolom."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Repositori tidak dapat disinkronkan dengan proyek. Silakan coba lagi."
+        }
+      },
+      "members_added": {
+        "message": "Anggota berhasil ditambahkan."
+      },
+      "publish": {
+        "success": {
+          "message": "Pengaturan publikasi berhasil diperbarui!"
+        },
+        "unpublish_error": {
+          "message": "Terjadi kesalahan saat membatalkan publikasi proyek."
+        },
+        "select_layout": {
+          "message": "Silakan pilih setidaknya satu tata letak tampilan untuk memublikasikan proyek."
+        },
+        "link_copied": {
+          "message": "Tautan halaman yang dipublikasikan berhasil disalin."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Izinkan komentar",
+      "allow_reactions": "Izinkan reaksi",
+      "allow_voting": "Izinkan voting",
+      "anyone_with_link_can_access": "Siapa pun yang memiliki tautan dapat mengakses"
+    },
+    "join": {
+      "title": "Gabung ke proyek?"
+    },
+    "card": {
+      "created_on": "Dibuat pada {date}",
+      "no_members_yet": "Belum ada anggota"
     }
   }
 }

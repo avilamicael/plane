@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Fehler",
+          "message": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+        },
+        "template": {
+          "try_again": "{reason}. Bitte versuchen Sie es erneut.",
+          "contact_admin": "{reason}. Bitte wenden Sie sich an Ihren Administrator."
+        },
+        "reason": {
+          "instance_not_configured": "Instanz nicht konfiguriert",
+          "signup_disabled": "Registrierung deaktiviert",
+          "invalid_password": "Ungültiges Passwort",
+          "smtp_not_configured": "SMTP nicht konfiguriert",
+          "invalid_email": "Ungültige E-Mail-Adresse",
+          "email_required": "E-Mail-Adresse erforderlich",
+          "email_and_password_required": "E-Mail-Adresse und Passwort erforderlich",
+          "email_and_code_required": "E-Mail-Adresse und Code erforderlich",
+          "authentication_failed": "Authentifizierung fehlgeschlagen",
+          "invalid_magic_code": "Ungültiger magischer Code",
+          "expired_magic_code": "Magischer Code abgelaufen",
+          "oauth_not_configured": "OAuth nicht konfiguriert",
+          "google_not_configured": "Google nicht konfiguriert",
+          "github_not_configured": "GitHub nicht konfiguriert",
+          "gitlab_not_configured": "GitLab nicht konfiguriert",
+          "google_oauth_provider_error": "Fehler beim OAuth-Anbieter Google",
+          "github_oauth_provider_error": "Fehler beim OAuth-Anbieter GitHub",
+          "gitlab_oauth_provider_error": "Fehler beim OAuth-Anbieter GitLab",
+          "invalid_password_token": "Ungültiges Passwort-Token",
+          "expired_password_token": "Passwort-Token abgelaufen",
+          "password_required": "Passwort erforderlich",
+          "incorrect_old_password": "Altes Passwort falsch",
+          "invalid_new_password": "Ungültiges neues Passwort",
+          "password_already_set": "Passwort bereits festgelegt",
+          "admin_already_exist": "Administrator existiert bereits",
+          "admin_email_password_first_name_required": "E-Mail-Adresse, Passwort und Vorname erforderlich",
+          "invalid_admin_email": "Ungültige Administrator-E-Mail-Adresse",
+          "invalid_admin_password": "Ungültiges Administrator-Passwort"
+        },
+        "title": {
+          "user_already_exist": "Benutzer existiert bereits",
+          "user_does_not_exist": "Benutzer existiert nicht",
+          "user_account_deactivated": "Benutzerkonto deaktiviert",
+          "bot_user_login_forbidden": "Anmeldung nicht erlaubt",
+          "admin_user_already_exist": "Administrator-Benutzer existiert bereits",
+          "admin_user_does_not_exist": "Administrator-Benutzer existiert nicht"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Dieses Konto kann nicht zur Anmeldung verwendet werden. Bitte verwenden Sie ein persönliches Konto.",
+          "user_account_deactivated": "Benutzerkonto deaktiviert. Bitte wenden Sie sich an {contact}.",
+          "default_contact": "Ihren Administrator",
+          "user_already_exist": "Ihr Konto ist bereits registriert.",
+          "user_does_not_exist": "Kein Konto gefunden.",
+          "admin_user_already_exist": "Administrator-Benutzer existiert bereits.",
+          "admin_user_does_not_exist": "Administrator-Benutzer existiert nicht.",
+          "link": {
+            "sign_in_now": "Jetzt anmelden",
+            "create_one": "Jetzt eines erstellen"
+          }
+        }
+      }
+    }
+  }
+}

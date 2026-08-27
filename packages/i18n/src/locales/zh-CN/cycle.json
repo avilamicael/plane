@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {周期} other {周期}}",
-    "no_cycle": "无周期"
+    "no_cycle": "无周期",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "周期创建成功。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "周期删除成功。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "您的归档可以在项目归档中找到。"
+        },
+        "error": {
+          "message": "无法归档周期。请重试。"
+        }
+      },
+      "date_conflict": {
+        "message": "指定日期已存在一个周期。如果要创建草稿周期，请移除日期。"
+      },
+      "transfer": {
+        "success": {
+          "message": "工作项转移成功"
+        },
+        "error": {
+          "message": "无法转移工作项。请重试。"
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "工作项已成功添加到周期。"
+        },
+        "error": {
+          "message": "无法将所选工作项添加到周期。请重试。"
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

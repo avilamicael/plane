@@ -9,6 +9,7 @@ import { ArrowDown, ArrowUp } from "lucide-react";
 import { observer } from "mobx-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 // plane imports
+import { useTranslation } from "@plane/i18n";
 import { Tooltip } from "@plane/propel/tooltip";
 import { cn } from "@plane/utils";
 // helpers
@@ -26,6 +27,8 @@ type TIssueVotes = {
 
 export const IssueVotes = observer(function IssueVotes(props: TIssueVotes) {
   const { anchor, issueIdFromProps, size = "md" } = props;
+  // i18n
+  const { t } = useTranslation();
   // states
   const [isSubmitting, setIsSubmitting] = useState(false);
   // router
@@ -89,10 +92,11 @@ export const IssueVotes = observer(function IssueVotes(props: TIssueVotes) {
                   .map((r) => r.actor_details?.display_name)
                   .splice(0, VOTES_LIMIT)
                   .join(", ")}
-                {allUpVotes.length > VOTES_LIMIT && " and " + (allUpVotes.length - VOTES_LIMIT) + " more"}
+                {allUpVotes.length > VOTES_LIMIT &&
+                  ` ${t("issue.vote.and_more", { count: allUpVotes.length - VOTES_LIMIT })}`}
               </>
             ) : (
-              "No upvotes yet"
+              t("issue.vote.no_upvotes")
             )}
           </div>
         }
@@ -130,10 +134,11 @@ export const IssueVotes = observer(function IssueVotes(props: TIssueVotes) {
                   .map((r) => r.actor_details.display_name)
                   .splice(0, VOTES_LIMIT)
                   .join(", ")}
-                {allDownVotes.length > VOTES_LIMIT && " and " + (allDownVotes.length - VOTES_LIMIT) + " more"}
+                {allDownVotes.length > VOTES_LIMIT &&
+                  ` ${t("issue.vote.and_more", { count: allDownVotes.length - VOTES_LIMIT })}`}
               </>
             ) : (
-              "No downvotes yet"
+              t("issue.vote.no_downvotes")
             )}
           </div>
         }

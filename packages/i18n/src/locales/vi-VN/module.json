@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {mô-đun} other {mô-đun}}",
     "no_module": "Không có mô-đun",
-    "select": "Thêm mô-đun"
+    "select": "Thêm mô-đun",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Đã tạo mô-đun thành công."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Đã cập nhật mô-đun thành công."
+        },
+        "error": {
+          "message": "Không thể cập nhật mô-đun. Vui lòng thử lại."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Mục đã lưu trữ của bạn có thể được tìm thấy trong phần lưu trữ của dự án."
+        },
+        "error": {
+          "message": "Không thể lưu trữ mô-đun. Vui lòng thử lại."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Mô-đun của bạn có thể được tìm thấy trong các mô-đun của dự án."
+        },
+        "error": {
+          "message": "Không thể khôi phục mô-đun. Vui lòng thử lại."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Đã tạo liên kết mô-đun thành công."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Đã cập nhật liên kết mô-đun thành công."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Đã xóa liên kết mô-đun thành công."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Đã thêm các mục công việc vào mô-đun thành công."
+        },
+        "error": {
+          "message": "Không thể thêm các mục công việc đã chọn vào mô-đun. Vui lòng thử lại."
+        }
+      }
+    },
+    "no_lead": "Không có người phụ trách",
+    "work_items_progress": "{completed}/{total} {total, plural, one {mục công việc} other {mục công việc}}"
   }
 }

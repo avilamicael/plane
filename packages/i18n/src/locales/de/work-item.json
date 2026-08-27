@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Melde dich an, um deinen Kommentar hinzuzufügen"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Klicken zum Hochstimmen",
       "click_to_downvote": "Klicken zum Runterstimmen",
       "click_to_view_upvotes": "Klicken um Hochstimmen anzuzeigen",
-      "click_to_view_downvotes": "Klicken um Runterstimmen anzuzeigen"
+      "click_to_view_downvotes": "Klicken um Runterstimmen anzuzeigen",
+      "no_upvotes": "Noch keine Upvotes",
+      "no_downvotes": "Noch keine Downvotes",
+      "and_more": "und {count} weitere"
     },
     "activity": {
       "created_the_work_item": "hat das Arbeitselement erstellt.",
       "created_the_work_item_via": "hat das Arbeitselement erstellt über",
-      "deleted_a_work_item": "hat ein Arbeitselement gelöscht."
+      "deleted_a_work_item": "hat ein Arbeitselement gelöscht.",
+      "set_the_name_to": "hat den Namen geändert in",
+      "updated_the_description": "hat die Beschreibung aktualisiert",
+      "set_the_state_to": "hat den Status geändert in",
+      "set_the_priority_to": "hat die Priorität geändert in",
+      "added_a_new_assignee": "hat einen neuen Bearbeiter hinzugefügt:",
+      "removed_the_assignee": "hat den Bearbeiter entfernt:",
+      "added_a_new_label": "hat ein neues Label hinzugefügt:",
+      "removed_the_label": "hat das Label entfernt:",
+      "set_the_start_date_to": "hat das Startdatum geändert in",
+      "removed_the_start_date": "hat das Startdatum entfernt",
+      "set_the_due_date_to": "hat das Fälligkeitsdatum geändert in",
+      "removed_the_due_date": "hat das Fälligkeitsdatum entfernt",
+      "set_the_parent_to": "hat das übergeordnete Element geändert in",
+      "removed_the_parent": "hat das übergeordnete Element entfernt",
+      "set_the_estimate_point_to": "hat den Schätzpunkt geändert in",
+      "removed_the_estimate_point": "hat den Schätzpunkt entfernt",
+      "added_this_work_item_to_the_cycle": "hat dieses Arbeitselement zum Zyklus hinzugefügt:",
+      "set_the_cycle_to": "hat den Zyklus geändert in",
+      "removed_the_work_item_from_the_cycle": "hat das Arbeitselement aus dem Zyklus entfernt:",
+      "added_this_work_item_to_the_module": "hat dieses Arbeitselement zum Modul hinzugefügt:",
+      "set_the_module_to": "hat das Modul geändert in",
+      "removed_the_work_item_from_the_module": "hat das Arbeitselement aus dem Modul entfernt:",
+      "added_the_link": "ergänzte den",
+      "updated_the_link": "aktualisierte den",
+      "removed_the_link": "entfernte diesen",
+      "link_noun": "Link",
+      "uploaded_a_new_attachment": "hat einen neuen Anhang hochgeladen",
+      "removed_an_attachment": "hat einen Anhang entfernt",
+      "restored_the_work_item": "hat das Arbeitselement wiederhergestellt",
+      "archived_the_work_item": "hat das Arbeitselement archiviert",
+      "declined_this_work_item_from_intake": "hat dieses Arbeitselement in Intake abgelehnt.",
+      "snoozed_this_work_item": "hat dieses Arbeitselement zurückgestellt.",
+      "accepted_this_work_item_from_intake": "hat dieses Arbeitselement in Intake angenommen.",
+      "declined_this_work_item_from_intake_as_duplicate": "hat dieses Arbeitselement in Intake abgelehnt und als Duplikat markiert.",
+      "updated_intake_work_item_status": "hat den Status des Arbeitselements in Intake aktualisiert.",
+      "marked_this_work_item_is_blocking_work_item": "hat markiert, dass dieses Arbeitselement folgendes Arbeitselement blockiert:",
+      "removed_the_blocking_work_item": "hat die Blockierung des Arbeitselements entfernt:",
+      "marked_this_work_item_is_being_blocked_by": "hat markiert, dass dieses Arbeitselement blockiert wird von:",
+      "removed_this_work_item_being_blocked_by_work_item": "hat die Blockierung dieses Arbeitselements aufgehoben durch:",
+      "marked_this_work_item_as_duplicate_of": "hat dieses Arbeitselement als Duplikat markiert von:",
+      "removed_this_work_item_as_a_duplicate_of": "hat die Duplikatmarkierung dieses Arbeitselements entfernt von:",
+      "marked_that_this_work_item_relates_to": "hat markiert, dass dieses Arbeitselement in Beziehung steht zu:",
+      "removed_the_relation_from": "hat die Beziehung entfernt zu:",
+      "connector_for": "für",
+      "connector_to": "zu",
+      "connector_from": "von",
+      "connector_of": "von"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reaktion erfolgreich hinzugefügt"
+          },
+          "error": {
+            "message": "Reaktion konnte nicht hinzugefügt werden"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reaktion erfolgreich entfernt"
+          },
+          "error": {
+            "message": "Reaktion konnte nicht entfernt werden"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Der Anhang wurde erfolgreich entfernt"
+          },
+          "error": {
+            "message": "Der Anhang konnte nicht entfernt werden"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Bitte wählen Sie mindestens ein Arbeitselement aus."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Arbeitselemente erfolgreich gelöscht!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Das Fälligkeitsdatum darf nicht vor dem Startdatum des Arbeitselements liegen."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Fehler beim Aktualisieren der Daten des Arbeitselements. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Das Arbeitselement konnte nicht in das Projekt verschoben werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Löschen des Arbeitselements fehlgeschlagen"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Aktualisierung des Arbeitselements fehlgeschlagen"
+        }
+      },
+      "editor_processing": {
+        "message": "Der Editor verarbeitet noch Änderungen. Bitte warten Sie, bevor Sie fortfahren."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Der Titel des Arbeitselements ist nicht aussagekräftig genug, um die Beschreibung zu generieren. Bitte versuchen Sie es mit einem anderen Titel."
+        }
+      }
     }
   },
   "sub_work_item": {

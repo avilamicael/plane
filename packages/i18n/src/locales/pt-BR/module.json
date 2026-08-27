@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Módulo} other {Módulos}}",
     "no_module": "Nenhum módulo",
-    "select": "Adicionar módulos"
+    "select": "Adicionar módulos",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Módulo criado com sucesso."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Módulo atualizado com sucesso."
+        },
+        "error": {
+          "message": "Não foi possível atualizar o módulo. Tente novamente."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Seus arquivos podem ser encontrados nos arquivos do projeto."
+        },
+        "error": {
+          "message": "Não foi possível arquivar o módulo. Tente novamente."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Seu módulo pode ser encontrado nos módulos do projeto."
+        },
+        "error": {
+          "message": "Não foi possível restaurar o módulo. Tente novamente."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Link do módulo criado com sucesso."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Link do módulo atualizado com sucesso."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Link do módulo excluído com sucesso."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Itens de trabalho adicionados ao módulo com sucesso."
+        },
+        "error": {
+          "message": "Não foi possível adicionar os itens de trabalho selecionados ao módulo. Tente novamente."
+        }
+      }
+    },
+    "no_lead": "Sem líder",
+    "work_items_progress": "{completed}/{total} {total, plural, one {item de trabalho} many {itens de trabalho} other {itens de trabalho}}"
   }
 }

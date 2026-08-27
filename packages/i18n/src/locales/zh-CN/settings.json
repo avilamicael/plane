@@ -37,11 +37,38 @@
         "states": {
           "sending": "发送中…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "头像删除成功。",
+        "picture_delete_error": "删除头像时出错。请重试。",
+        "deactivated": "账户停用成功。"
+      },
+      "general_form": {
+        "first_name_placeholder": "请输入您的名字",
+        "last_name_placeholder": "请输入您的姓氏",
+        "display_name_placeholder": "请输入您的显示名称"
       }
     },
     "preferences": {
       "heading": "偏好设置",
-      "description": "按照您的工作方式自定义您的应用体验"
+      "description": "按照您的工作方式自定义您的应用体验",
+      "toasts": {
+        "timezone": {
+          "success": "时区更新成功",
+          "error": "时区更新失败"
+        },
+        "language": {
+          "success": "语言更新成功",
+          "error": "语言更新失败"
+        },
+        "start_of_week": {
+          "success": "每周首日更新成功"
+        }
+      },
+      "start_of_week": {
+        "title": "每周的第一天",
+        "description": "这将改变应用中所有日历的显示方式。"
+      }
     },
     "notifications": {
       "heading": "邮件通知",

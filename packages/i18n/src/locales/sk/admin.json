@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "E-mail",
+      "password": "Heslo",
+      "save_changes": "Uložiť zmeny",
+      "saving": "Ukladanie",
+      "go_back": "Späť",
+      "success": "Hotovo",
+      "error": "Chyba",
+      "done": "Hotovo!",
+      "show_password": "Zobraziť heslo",
+      "hide_password": "Skryť heslo",
+      "settings_updated_successfully": "Nastavenia boli úspešne aktualizované",
+      "saving_configuration": "Ukladanie konfigurácie",
+      "configuration_saved_successfully": "Konfigurácia bola úspešne uložená",
+      "failed_to_save_configuration": "Konfiguráciu sa nepodarilo uložiť",
+      "learn_more": "Zistiť viac",
+      "here": "tu."
+    },
+    "sidebar": {
+      "instance_admin": "Správca inštancie",
+      "sign_out": "Odhlásiť sa",
+      "switch_to_light_mode": "Prepnúť na svetlý režim",
+      "switch_to_dark_mode": "Prepnúť na tmavý režim",
+      "general": {
+        "title": "Všeobecné",
+        "description": "Identifikujte svoje inštancie a zistite kľúčové údaje."
+      },
+      "email": {
+        "title": "E-mail",
+        "description": "Nastavte ovládanie SMTP."
+      },
+      "workspace": {
+        "title": "Pracovné priestory",
+        "description": "Spravujte všetky pracovné priestory v tejto inštancii."
+      },
+      "authentication": {
+        "title": "Overovanie",
+        "description": "Nastavte spôsoby overovania."
+      },
+      "ai": {
+        "title": "Umelá inteligencia",
+        "description": "Nastavte svoje prihlasovacie údaje k OpenAI."
+      },
+      "image": {
+        "title": "Obrázky v Plane",
+        "description": "Povoľte knižnice obrázkov tretích strán."
+      }
+    },
+    "sign_in": {
+      "heading": "Spravujte svoju inštanciu Plane",
+      "sub_heading": "Nastavte parametre platné pre celú inštanciu a zabezpečte ju",
+      "email_placeholder": "meno@firma.com",
+      "password_placeholder": "Zadajte svoje heslo",
+      "submit": "Prihlásiť sa"
+    },
+    "setup": {
+      "heading": "Nastavte svoju inštanciu Plane",
+      "sub_heading": "Po nastavení budete môcť túto inštanciu Plane spravovať.",
+      "first_name": "Meno",
+      "last_name": "Priezvisko",
+      "company_name": "Názov spoločnosti",
+      "company_name_placeholder": "Názov spoločnosti",
+      "set_password": "Nastavte heslo",
+      "new_password_placeholder": "Nové heslo",
+      "confirm_password": "Potvrďte heslo",
+      "confirm_password_placeholder": "Potvrďte heslo",
+      "passwords_dont_match": "Heslá sa nezhodujú",
+      "telemetry_consent": "Povoliť Plane anonymne zbierať udalosti o používaní.",
+      "see_more": "Zistiť viac",
+      "submit": "Pokračovať"
+    },
+    "settings": {
+      "general": {
+        "title": "Všeobecné nastavenia",
+        "description": "Zmeňte názov svojej inštancie a e-mailové adresy správcov inštancie. Zapnite alebo vypnite telemetriu vo svojej inštancii.",
+        "instance_details": "Údaje o inštancii",
+        "name_of_instance": "Názov inštancie",
+        "instance_name_placeholder": "Názov inštancie",
+        "admin_email_placeholder": "E-mail správcu",
+        "instance_id": "ID inštancie",
+        "telemetry": "Telemetria",
+        "telemetry_toggle_title": "Umožniť Plane zbierať anonymné údaje o používaní",
+        "telemetry_toggle_description": "Nezbierame žiadne osobné údaje. Tieto anonymizované údaje slúžia na pochopenie toho, ako Plane používate, a na vývoj nových funkcií v súlade s",
+        "telemetry_policy": "našimi Zásadami telemetrie."
+      },
+      "authentication": {
+        "title": "Spravujte spôsoby overovania vo svojej inštancii",
+        "description": "Nastavte spôsoby overovania pre svoj tím a obmedzte registrácie len na pozvánky.",
+        "allow_signup_title": "Povoliť registráciu komukoľvek aj bez pozvánky",
+        "allow_signup_description": "Vypnutím tejto možnosti sa budú môcť registrovať iba pozvaní používatelia.",
+        "available_modes": "Dostupné spôsoby overovania",
+        "cannot_disable_title": "Overovanie sa nedá vypnúť",
+        "cannot_disable_message": "Aspoň jeden spôsob overovania musí zostať zapnutý. Skôr než vypnete tento, zapnite iný.",
+        "modes": {
+          "unique_codes": {
+            "name": "Jedinečné kódy",
+            "description": "Prihláste sa alebo zaregistrujte do Plane pomocou kódov zasielaných e-mailom. Na použitie tohto spôsobu musíte mať nastavené SMTP."
+          },
+          "passwords": {
+            "name": "Heslá",
+            "description": "Umožnite členom vytvárať účty s heslom a prihlasovať sa pomocou svojich e-mailových adries."
+          },
+          "google": {
+            "description": "Umožnite členom prihlásiť sa alebo zaregistrovať do Plane pomocou účtov Google."
+          },
+          "github": {
+            "description": "Umožnite členom prihlásiť sa alebo zaregistrovať do Plane pomocou účtov GitHub."
+          },
+          "gitlab": {
+            "description": "Umožnite členom prihlásiť sa alebo zaregistrovať do Plane pomocou účtov GitLab."
+          },
+          "gitea": {
+            "description": "Umožnite členom prihlásiť sa alebo zaregistrovať do Plane pomocou účtov Gitea."
+          }
+        }
+      },
+      "email": {
+        "title": "Bezpečné e-maily z vašej vlastnej inštancie",
+        "description": "Plane môže vám aj vašim používateľom posielať užitočné e-maily priamo z vašej inštancie, bez komunikácie s internetom.",
+        "description_secondary": "Nastavte to nižšie a pred uložením si nastavenia otestujte.",
+        "description_warning": "Chybné nastavenie môže viesť k vracaniu e-mailov a chybám.",
+        "disabled_title": "Funkcia e-mailu vypnutá",
+        "disabled_message": "Funkcia e-mailu bola vypnutá",
+        "disable_error_title": "Chyba pri vypínaní e-mailu",
+        "disable_error_message": "Funkciu e-mailu sa nepodarilo vypnúť. Skúste to znova.",
+        "host": "Host",
+        "port": "Port",
+        "sender_email": "E-mailová adresa odosielateľa",
+        "sender_email_description": "Toto je e-mailová adresa, ktorú vaši používatelia uvidia pri správach z tejto inštancie. Bude ju potrebné overiť.",
+        "username": "Používateľské meno",
+        "password_placeholder": "Heslo",
+        "security": "Zabezpečenie e-mailu",
+        "security_none": "Bez zabezpečenia e-mailu",
+        "authentication": "Overovanie",
+        "authentication_description": "Toto je voliteľné, ale odporúčame nastaviť používateľské meno a heslo pre váš SMTP server.",
+        "send_test_email": "Odoslať testovací e-mail",
+        "updated_successfully": "Nastavenia e-mailu boli úspešne aktualizované"
+      },
+      "workspace": {
+        "title": "Pracovné priestory v tejto inštancii",
+        "description": "Zobrazte všetky pracovné priestory a určte, kto ich môže vytvárať.",
+        "prevent_creation_title": "Zabrániť ostatným vytvárať pracovné priestory.",
+        "prevent_creation_description": "Zapnutím tejto možnosti budete môcť pracovné priestory vytvárať iba vy. Používateľov do nových priestorov budete musieť pozvať.",
+        "all_workspaces": "Všetky pracovné priestory v tejto inštancii",
+        "list_description": "Pracovné priestory sa zatiaľ nedajú mazať a do priestoru sa dostanete iba vtedy, ak ste jeho správcom alebo členom.",
+        "create": "Vytvoriť pracovný priestor",
+        "creating": "Vytváranie pracovného priestoru",
+        "load_more": "Načítať ďalšie",
+        "name_label": "Pomenujte svoj pracovný priestor",
+        "name_placeholder": "Niečo známe a ľahko rozpoznateľné je vždy najlepšie.",
+        "url_label": "Nastavte URL svojho pracovného priestoru",
+        "url_placeholder": "nazov-priestoru",
+        "url_taken": "Táto URL je už obsadená. Skúste inú.",
+        "url_invalid": "URL môže obsahovať iba ( - ), ( _ ) a alfanumerické znaky.",
+        "size_label": "Koľko ľudí bude tento pracovný priestor používať?",
+        "size_placeholder": "Vyberte rozsah",
+        "required_field": "Toto pole je povinné.",
+        "created_title": "Hotovo!",
+        "created_message": "Pracovný priestor bol úspešne vytvorený.",
+        "create_error_title": "Chyba!",
+        "create_error_message": "Pracovný priestor sa nepodarilo vytvoriť. Skúste to znova.",
+        "create_generic_error": "Pri vytváraní pracovného priestoru došlo k chybe. Skúste to znova."
+      },
+      "ai": {
+        "title": "Funkcie AI pre všetky vaše pracovné priestory",
+        "description": "Nastavte prihlasovacie údaje k API umelej inteligencie, aby boli funkcie Plane AI zapnuté vo všetkých vašich pracovných priestoroch."
+      },
+      "image": {
+        "title": "Knižnice obrázkov tretích strán",
+        "description": "Umožnite svojim používateľom vyhľadávať a vyberať obrázky z knižníc tretích strán"
+      }
+    },
+    "oauth": {
+      "client_id": "ID klienta",
+      "client_secret": "Tajný kľúč klienta",
+      "application_id": "ID aplikácie",
+      "secret": "Tajný kľúč",
+      "organization_id": "ID organizácie",
+      "organization_id_description": "ID organizácie na GitHube.",
+      "host": "Host",
+      "origin_url": "URL pôvodu",
+      "callback_uri": "URI spätného volania",
+      "callback_url": "URL spätného volania",
+      "web": "Web",
+      "provider_details_for_plane": "Údaje od {provider} pre Plane",
+      "plane_details_for_provider": "Údaje od Plane pre {provider}",
+      "configured_message": "Overovanie cez {provider} je nastavené. Teraz by ste ho mali otestovať.",
+      "configuration_saved": "Konfigurácia uložená",
+      "auth_now_active": "Overovanie cez {provider} je teraz aktívne.",
+      "auth_now_disabled": "Overovanie cez {provider} je teraz vypnuté.",
+      "get_this_from_settings": "Túto hodnotu nájdete vo svojom",
+      "secret_also_in_settings": "Tajný kľúč klienta nájdete tiež vo svojom",
+      "app_settings_link": "nastavení aplikácie OAuth {provider}.",
+      "app_settings_link_no_period": "nastavení aplikácie OAuth {provider}",
+      "autogenerated_paste_origin": "Toto vygenerujeme automaticky. Vložte to do poľa",
+      "autogenerated_paste_callback": "Toto vygenerujeme automaticky. Vložte to do svojho poľa",
+      "field_word": "—",
+      "authorized_origin_url": "Autorizovaná URL pôvodu",
+      "authorized_callback_uri": "Autorizovaná URI spätného volania",
+      "authorized_js_origins": "Autorizované zdroje JavaScript",
+      "authorized_redirect_uri": "Autorizovaná URI presmerovania",
+      "redirect_uri": "URI presmerovania",
+      "for_this_oauth_client": "pre tohto klienta OAuth",
+      "google_client_id_description": "Vaše ID klienta nájdete v Google API Console.",
+      "google_client_secret_description": "Váš tajný kľúč klienta by mal byť tiež v Google API Console.",
+      "gitlab_host_description_prefix": "Je to buď https://gitlab.com, alebo",
+      "gitlab_host_description_suffix": "na ktorej hostujete GitLab.",
+      "gitlab_get_this_from": "Túto hodnotu získate vo svojom",
+      "gitlab_secret_also_in": "Tajný kľúč klienta nájdete tiež vo svojom",
+      "gitlab_paste_redirect_prefix": "Toto vygenerujeme automaticky. Vložte to do poľa",
+      "gitlab_paste_redirect_suffix": "svojej",
+      "gitlab_app_link": "aplikácie OAuth GitLab",
+      "gitea_host_label": "Host Gitea",
+      "gitea_host_description": "Použite URL svojej inštancie Gitea. Pre oficiálnu inštanciu Gitea použite „https://gitea.com“."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "Správca už existuje",
+        "message": "Správca už existuje. Skúste to znova."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "E-mail, heslo a meno sú povinné",
+        "message": "E-mail, heslo a meno sú povinné. Skúste to znova."
+      },
+      "invalid_admin_email": {
+        "title": "Neplatný e-mail správcu",
+        "message": "Neplatný e-mail správcu. Skúste to znova."
+      },
+      "invalid_admin_password": {
+        "title": "Neplatné heslo správcu",
+        "message": "Neplatné heslo správcu. Skúste to znova."
+      },
+      "required_admin_email_password": {
+        "title": "E-mail a heslo sú povinné",
+        "message": "E-mail a heslo sú povinné. Skúste to znova."
+      },
+      "admin_authentication_failed": {
+        "title": "Overenie zlyhalo",
+        "message": "Overenie zlyhalo. Skúste to znova."
+      },
+      "admin_user_already_exist": {
+        "title": "Používateľ správca už existuje",
+        "message": "Používateľ správca už existuje.",
+        "sign_in_now": "Prihláste sa",
+        "now": "teraz."
+      },
+      "admin_user_does_not_exist": {
+        "title": "Používateľ správca neexistuje",
+        "message": "Používateľ správca neexistuje.",
+        "sign_in_now": "Prihláste sa",
+        "now": "teraz."
+      },
+      "admin_user_deactivated": {
+        "title": "Používateľský účet bol deaktivovaný",
+        "message": "Používateľský účet bol deaktivovaný. Obráťte sa na {contact}."
+      },
+      "administrator": "správcu",
+      "generic_title": "Chyba",
+      "generic_message": "Niečo sa pokazilo. Skúste to znova."
+    },
+    "not_found": {
+      "title": "Ups! Niečo sa pokazilo.",
+      "description": "Ľutujeme, stránku, ktorú hľadáte, sa nepodarilo nájsť. Mohla byť odstránená, premenovaná alebo je dočasne nedostupná.",
+      "action": "Prejsť do všeobecných nastavení",
+      "image_alt": "404 - Stránka sa nenašla"
+    }
+  }
+}

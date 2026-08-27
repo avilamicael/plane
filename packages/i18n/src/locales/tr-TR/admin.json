@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "E-posta",
+      "password": "Parola",
+      "save_changes": "Değişiklikleri kaydet",
+      "saving": "Kaydediliyor",
+      "go_back": "Geri dön",
+      "success": "Başarılı",
+      "error": "Hata",
+      "done": "Tamam!",
+      "show_password": "Parolayı göster",
+      "hide_password": "Parolayı gizle",
+      "settings_updated_successfully": "Ayarlar başarıyla güncellendi",
+      "saving_configuration": "Yapılandırma kaydediliyor",
+      "configuration_saved_successfully": "Yapılandırma başarıyla kaydedildi",
+      "failed_to_save_configuration": "Yapılandırma kaydedilemedi",
+      "learn_more": "Daha fazla bilgi",
+      "here": "buraya."
+    },
+    "sidebar": {
+      "instance_admin": "Örnek yöneticisi",
+      "sign_out": "Çıkış yap",
+      "switch_to_light_mode": "Açık moda geç",
+      "switch_to_dark_mode": "Koyu moda geç",
+      "general": {
+        "title": "Genel",
+        "description": "Örneklerinizi tanımlayın ve temel bilgileri görün."
+      },
+      "email": {
+        "title": "E-posta",
+        "description": "SMTP ayarlarınızı yapılandırın."
+      },
+      "workspace": {
+        "title": "Çalışma alanları",
+        "description": "Bu örnekteki tüm çalışma alanlarını yönetin."
+      },
+      "authentication": {
+        "title": "Kimlik doğrulama",
+        "description": "Kimlik doğrulama yöntemlerini yapılandırın."
+      },
+      "ai": {
+        "title": "Yapay zekâ",
+        "description": "OpenAI kimlik bilgilerinizi yapılandırın."
+      },
+      "image": {
+        "title": "Plane içindeki görseller",
+        "description": "Üçüncü taraf görsel kitaplıklarına izin verin."
+      }
+    },
+    "sign_in": {
+      "heading": "Plane örneğinizi yönetin",
+      "sub_heading": "Örneğinizi güvence altına almak için örnek genelindeki ayarları yapılandırın",
+      "email_placeholder": "ad@sirket.com",
+      "password_placeholder": "Parolanızı girin",
+      "submit": "Giriş yap"
+    },
+    "setup": {
+      "heading": "Plane örneğinizi kurun",
+      "sub_heading": "Kurulumdan sonra bu Plane örneğini yönetebileceksiniz.",
+      "first_name": "Ad",
+      "last_name": "Soyad",
+      "company_name": "Şirket adı",
+      "company_name_placeholder": "Şirket adı",
+      "set_password": "Bir parola belirleyin",
+      "new_password_placeholder": "Yeni parola",
+      "confirm_password": "Parolayı onaylayın",
+      "confirm_password_placeholder": "Parolayı onaylayın",
+      "passwords_dont_match": "Parolalar eşleşmiyor",
+      "telemetry_consent": "Plane'in kullanım olaylarını anonim olarak toplamasına izin ver.",
+      "see_more": "Daha fazla bilgi",
+      "submit": "Devam et"
+    },
+    "settings": {
+      "general": {
+        "title": "Genel ayarlar",
+        "description": "Örneğinizin adını ve örnek yöneticilerinin e-posta adreslerini değiştirin. Örneğinizde telemetriyi etkinleştirin veya devre dışı bırakın.",
+        "instance_details": "Örnek bilgileri",
+        "name_of_instance": "Örnek adı",
+        "instance_name_placeholder": "Örnek adı",
+        "admin_email_placeholder": "Yönetici e-postası",
+        "instance_id": "Örnek kimliği",
+        "telemetry": "Telemetri",
+        "telemetry_toggle_title": "Plane'in anonim kullanım verileri toplamasına izin ver",
+        "telemetry_toggle_description": "Hiçbir kişisel veri toplanmaz. Bu anonimleştirilmiş veriler, Plane'i nasıl kullandığınızı anlamamıza ve yeni özellikleri şuna uygun geliştirmemize yardımcı olur:",
+        "telemetry_policy": "Telemetri Politikamız."
+      },
+      "authentication": {
+        "title": "Örneğinizin kimlik doğrulama yöntemlerini yönetin",
+        "description": "Ekibiniz için kimlik doğrulama yöntemlerini yapılandırın ve kayıtları yalnızca davetle sınırlayın.",
+        "allow_signup_title": "Daveti olmayanların da kaydolmasına izin ver",
+        "allow_signup_description": "Bunu kapatırsanız yalnızca davet edilen kullanıcılar kaydolabilir.",
+        "available_modes": "Kullanılabilir kimlik doğrulama yöntemleri",
+        "cannot_disable_title": "Kimlik doğrulama devre dışı bırakılamıyor",
+        "cannot_disable_message": "En az bir kimlik doğrulama yöntemi etkin kalmalıdır. Bunu devre dışı bırakmadan önce başka bir yöntemi etkinleştirin.",
+        "modes": {
+          "unique_codes": {
+            "name": "Tek kullanımlık kodlar",
+            "description": "E-posta ile gönderilen kodları kullanarak Plane'e giriş yapın veya kaydolun. Bu yöntemi kullanmak için SMTP kurulumunu yapmış olmanız gerekir."
+          },
+          "passwords": {
+            "name": "Parolalar",
+            "description": "Üyelerin parolayla hesap oluşturmasına ve e-posta adresleriyle giriş yapmasına izin verin."
+          },
+          "google": {
+            "description": "Üyelerin Google hesaplarıyla Plane'e giriş yapmasına veya kaydolmasına izin verin."
+          },
+          "github": {
+            "description": "Üyelerin GitHub hesaplarıyla Plane'e giriş yapmasına veya kaydolmasına izin verin."
+          },
+          "gitlab": {
+            "description": "Üyelerin GitLab hesaplarıyla Plane'e giriş yapmasına veya kaydolmasına izin verin."
+          },
+          "gitea": {
+            "description": "Üyelerin Gitea hesaplarıyla Plane'e giriş yapmasına veya kaydolmasına izin verin."
+          }
+        }
+      },
+      "email": {
+        "title": "Kendi örneğinizden güvenli e-postalar",
+        "description": "Plane, internete bağlanmadan kendi örneğinizden size ve kullanıcılarınıza faydalı e-postalar gönderebilir.",
+        "description_secondary": "Aşağıdan kurun ve kaydetmeden önce ayarlarınızı test edin.",
+        "description_warning": "Hatalı yapılandırmalar e-posta geri dönüşlerine ve hatalara yol açabilir.",
+        "disabled_title": "E-posta özelliği devre dışı",
+        "disabled_message": "E-posta özelliği devre dışı bırakıldı",
+        "disable_error_title": "E-posta devre dışı bırakılırken hata oluştu",
+        "disable_error_message": "E-posta özelliği devre dışı bırakılamadı. Lütfen tekrar deneyin.",
+        "host": "Sunucu",
+        "port": "Port",
+        "sender_email": "Gönderenin e-posta adresi",
+        "sender_email_description": "Bu, kullanıcılarınızın bu örnekten e-posta aldıklarında görecekleri adrestir. Bu adresi doğrulamanız gerekecek.",
+        "username": "Kullanıcı adı",
+        "password_placeholder": "Parola",
+        "security": "E-posta güvenliği",
+        "security_none": "E-posta güvenliği yok",
+        "authentication": "Kimlik doğrulama",
+        "authentication_description": "Bu isteğe bağlıdır, ancak SMTP sunucunuz için bir kullanıcı adı ve parola belirlemenizi öneririz.",
+        "send_test_email": "Test e-postası gönder",
+        "updated_successfully": "E-posta ayarları başarıyla güncellendi"
+      },
+      "workspace": {
+        "title": "Bu örnekteki çalışma alanları",
+        "description": "Tüm çalışma alanlarını görün ve kimlerin oluşturabileceğini denetleyin.",
+        "prevent_creation_title": "Başkalarının çalışma alanı oluşturmasını engelle.",
+        "prevent_creation_description": "Bunu açarsanız yalnızca siz çalışma alanı oluşturabilirsiniz. Kullanıcıları yeni çalışma alanlarına davet etmeniz gerekir.",
+        "all_workspaces": "Bu örnekteki tüm çalışma alanları",
+        "list_description": "Çalışma alanlarını henüz silemezsiniz ve bir çalışma alanına yalnızca orada yönetici veya üye iseniz gidebilirsiniz.",
+        "create": "Çalışma alanı oluştur",
+        "creating": "Çalışma alanı oluşturuluyor",
+        "load_more": "Daha fazla yükle",
+        "name_label": "Çalışma alanınıza bir ad verin",
+        "name_placeholder": "Tanıdık ve kolay hatırlanan bir ad her zaman en iyisidir.",
+        "url_label": "Çalışma alanınızın URL'sini belirleyin",
+        "url_placeholder": "calisma-alani-adi",
+        "url_taken": "Bu URL kullanılıyor. Başka bir tane deneyin.",
+        "url_invalid": "URL'ler yalnızca ( - ), ( _ ) ve alfanümerik karakterler içerebilir.",
+        "size_label": "Bu çalışma alanını kaç kişi kullanacak?",
+        "size_placeholder": "Bir aralık seçin",
+        "required_field": "Bu alan zorunludur.",
+        "created_title": "Başarılı!",
+        "created_message": "Çalışma alanı başarıyla oluşturuldu.",
+        "create_error_title": "Hata!",
+        "create_error_message": "Çalışma alanı oluşturulamadı. Lütfen tekrar deneyin.",
+        "create_generic_error": "Çalışma alanı oluşturulurken bir hata oluştu. Lütfen tekrar deneyin."
+      },
+      "ai": {
+        "title": "Tüm çalışma alanlarınız için yapay zekâ özellikleri",
+        "description": "Plane AI özelliklerinin tüm çalışma alanlarınızda açık olması için yapay zekâ API kimlik bilgilerinizi yapılandırın."
+      },
+      "image": {
+        "title": "Üçüncü taraf görsel kitaplıkları",
+        "description": "Kullanıcılarınızın üçüncü taraf kitaplıklardan görsel aramasına ve seçmesine izin verin"
+      }
+    },
+    "oauth": {
+      "client_id": "İstemci kimliği",
+      "client_secret": "İstemci gizli anahtarı",
+      "application_id": "Uygulama kimliği",
+      "secret": "Gizli anahtar",
+      "organization_id": "Kuruluş kimliği",
+      "organization_id_description": "Kuruluşun GitHub kimliği.",
+      "host": "Sunucu",
+      "origin_url": "Kaynak URL",
+      "callback_uri": "Geri çağırma URI'si",
+      "callback_url": "Geri çağırma URL'si",
+      "web": "Web",
+      "provider_details_for_plane": "{provider} tarafından Plane için sağlanan bilgiler",
+      "plane_details_for_provider": "Plane tarafından {provider} için sağlanan bilgiler",
+      "configured_message": "{provider} kimlik doğrulamanız yapılandırıldı. Şimdi test etmelisiniz.",
+      "configuration_saved": "Yapılandırma kaydedildi",
+      "auth_now_active": "{provider} kimlik doğrulaması artık etkin.",
+      "auth_now_disabled": "{provider} kimlik doğrulaması artık devre dışı.",
+      "get_this_from_settings": "Bunu şuradan alabilirsiniz:",
+      "secret_also_in_settings": "İstemci gizli anahtarınız da şurada bulunur:",
+      "app_settings_link": "{provider} OAuth uygulama ayarları.",
+      "app_settings_link_no_period": "{provider} OAuth uygulama ayarları",
+      "autogenerated_paste_origin": "Bunu otomatik olarak oluşturuyoruz. Şu alana yapıştırın:",
+      "autogenerated_paste_callback": "Bunu otomatik olarak oluşturuyoruz. Şu alanınıza yapıştırın:",
+      "field_word": "—",
+      "authorized_origin_url": "Yetkili kaynak URL",
+      "authorized_callback_uri": "Yetkili geri çağırma URI'si",
+      "authorized_js_origins": "Yetkili JavaScript kaynakları",
+      "authorized_redirect_uri": "Yetkili yönlendirme URI'si",
+      "redirect_uri": "Yönlendirme URI'si",
+      "for_this_oauth_client": "— bu OAuth istemcisi için",
+      "google_client_id_description": "İstemci kimliğiniz Google API Console içinde bulunur.",
+      "google_client_secret_description": "İstemci gizli anahtarınız da Google API Console içinde olmalıdır.",
+      "gitlab_host_description_prefix": "Bu ya https://gitlab.com ya da GitLab'ı barındırdığınız",
+      "gitlab_host_description_suffix": "adresidir.",
+      "gitlab_get_this_from": "Bunu şuradan alın:",
+      "gitlab_secret_also_in": "İstemci gizli anahtarı da şurada bulunur:",
+      "gitlab_paste_redirect_prefix": "Bunu otomatik olarak oluşturuyoruz. Şu alana yapıştırın:",
+      "gitlab_paste_redirect_suffix": "—",
+      "gitlab_app_link": "GitLab OAuth uygulamanızın",
+      "gitea_host_label": "Gitea sunucusu",
+      "gitea_host_description": "Gitea örneğinizin URL'sini kullanın. Resmî Gitea örneği için \"https://gitea.com\" adresini kullanın."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "Yönetici zaten mevcut",
+        "message": "Yönetici zaten mevcut. Lütfen tekrar deneyin."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "E-posta, parola ve ad zorunludur",
+        "message": "E-posta, parola ve ad zorunludur. Lütfen tekrar deneyin."
+      },
+      "invalid_admin_email": {
+        "title": "Geçersiz yönetici e-postası",
+        "message": "Geçersiz yönetici e-postası. Lütfen tekrar deneyin."
+      },
+      "invalid_admin_password": {
+        "title": "Geçersiz yönetici parolası",
+        "message": "Geçersiz yönetici parolası. Lütfen tekrar deneyin."
+      },
+      "required_admin_email_password": {
+        "title": "E-posta ve parola zorunludur",
+        "message": "E-posta ve parola zorunludur. Lütfen tekrar deneyin."
+      },
+      "admin_authentication_failed": {
+        "title": "Kimlik doğrulama başarısız",
+        "message": "Kimlik doğrulama başarısız. Lütfen tekrar deneyin."
+      },
+      "admin_user_already_exist": {
+        "title": "Yönetici kullanıcı zaten mevcut",
+        "message": "Yönetici kullanıcı zaten mevcut.",
+        "sign_in_now": "Şimdi giriş yapın",
+        "now": "."
+      },
+      "admin_user_does_not_exist": {
+        "title": "Yönetici kullanıcı mevcut değil",
+        "message": "Yönetici kullanıcı mevcut değil.",
+        "sign_in_now": "Şimdi giriş yapın",
+        "now": "."
+      },
+      "admin_user_deactivated": {
+        "title": "Kullanıcı hesabı devre dışı bırakıldı",
+        "message": "Kullanıcı hesabı devre dışı bırakıldı. Lütfen {contact} ile iletişime geçin."
+      },
+      "administrator": "yönetici",
+      "generic_title": "Hata",
+      "generic_message": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+    },
+    "not_found": {
+      "title": "Hay aksi! Bir şeyler ters gitti.",
+      "description": "Üzgünüz, aradığınız sayfa bulunamadı. Kaldırılmış, adı değiştirilmiş ya da geçici olarak kullanılamıyor olabilir.",
+      "action": "Genel ayarlara git",
+      "image_alt": "404 - Sayfa bulunamadı"
+    }
+  }
+}

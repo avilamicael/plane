@@ -110,6 +110,126 @@
       "label": "컬렉션에서 제거",
       "success_message": "페이지가 컬렉션에서 제거되었습니다.",
       "error_message": "페이지를 컬렉션에서 제거할 수 없습니다. 다시 시도해 주세요."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "페이지 링크가 클립보드에 복사되었습니다."
+      },
+      "duplicate": {
+        "success": {
+          "message": "페이지가 성공적으로 복제되었습니다."
+        },
+        "error": {
+          "message": "페이지를 복제할 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "페이지가 성공적으로 복원되었습니다."
+        },
+        "error": {
+          "message": "페이지를 복원할 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "페이지가 성공적으로 아카이브되었습니다."
+        },
+        "error": {
+          "message": "페이지를 아카이브할 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "페이지가 즐겨찾기에 추가되었습니다."
+        },
+        "error": {
+          "message": "페이지를 즐겨찾기에 추가할 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "페이지가 즐겨찾기에서 제거되었습니다."
+        },
+        "error": {
+          "message": "페이지를 즐겨찾기에서 제거할 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "페이지가 성공적으로 잠겼습니다."
+        },
+        "error": {
+          "message": "페이지를 잠글 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "페이지 잠금이 성공적으로 해제되었습니다."
+        },
+        "error": {
+          "message": "페이지 잠금을 해제할 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "페이지가 공개로 표시되어 공개 섹션으로 이동되었습니다."
+        },
+        "error": {
+          "message": "페이지를 공개로 표시할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "페이지가 비공개로 표시되어 비공개 섹션으로 이동되었습니다."
+        },
+        "error": {
+          "message": "페이지를 비공개로 표시할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "페이지가 성공적으로 삭제되었습니다."
+        },
+        "error": {
+          "message": "페이지를 삭제할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "페이지가 성공적으로 내보내졌습니다."
+        },
+        "error": {
+          "message": "페이지를 내보낼 수 없습니다. 잠시 후 다시 시도해주세요."
+        }
+      }
+    },
+    "create_page": "페이지 만들기",
+    "delete_page": "페이지 삭제",
+    "export": {
+      "title": "페이지 내보내기",
+      "format": "내보내기 형식",
+      "include_content": "포함할 콘텐츠",
+      "page_format": "페이지 형식",
+      "content_variety": {
+        "everything": "전체",
+        "no_images": "이미지 제외"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "잠금",
+      "locked": "잠김",
+      "unlocked": "잠금 해제됨"
+    },
+    "offline_badge": {
+      "heading": "오프라인 상태입니다.",
+      "description": "계속 편집할 수 있습니다. 다시 온라인 상태가 되면 동기화됩니다.",
+      "label": "오프라인"
+    },
+    "toolbar": {
+      "color": "색상"
     }
   }
 }

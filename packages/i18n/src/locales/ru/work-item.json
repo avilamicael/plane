@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Войдите, чтобы оставить комментарий"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Нажмите, чтобы проголосовать за",
       "click_to_downvote": "Нажмите, чтобы проголосовать против",
       "click_to_view_upvotes": "Нажмите, чтобы посмотреть голоса за",
-      "click_to_view_downvotes": "Нажмите, чтобы посмотреть голоса против"
+      "click_to_view_downvotes": "Нажмите, чтобы посмотреть голоса против",
+      "no_upvotes": "Пока нет голосов «за»",
+      "no_downvotes": "Пока нет голосов «против»",
+      "and_more": "и ещё {count}"
     },
     "activity": {
       "created_the_work_item": "создал(а) рабочий элемент.",
       "created_the_work_item_via": "создал(а) рабочий элемент через",
-      "deleted_a_work_item": "удалил(а) рабочий элемент."
+      "deleted_a_work_item": "удалил(а) рабочий элемент.",
+      "set_the_name_to": "изменил(а) имя на",
+      "updated_the_description": "обновил(а) описание",
+      "set_the_state_to": "изменил(а) статус на",
+      "set_the_priority_to": "изменил(а) приоритет на",
+      "added_a_new_assignee": "добавил(а) нового исполнителя",
+      "removed_the_assignee": "удалил(а) исполнителя",
+      "added_a_new_label": "добавил(а) новую метку",
+      "removed_the_label": "удалил(а) метку",
+      "set_the_start_date_to": "изменил(а) дату начала на",
+      "removed_the_start_date": "удалил(а) дату начала",
+      "set_the_due_date_to": "изменил(а) срок выполнения на",
+      "removed_the_due_date": "удалил(а) срок выполнения",
+      "set_the_parent_to": "изменил(а) родительский элемент на",
+      "removed_the_parent": "удалил(а) родительский элемент",
+      "set_the_estimate_point_to": "изменил(а) оценку на",
+      "removed_the_estimate_point": "удалил(а) оценку",
+      "added_this_work_item_to_the_cycle": "добавил(а) этот рабочий элемент в цикл",
+      "set_the_cycle_to": "изменил(а) цикл на",
+      "removed_the_work_item_from_the_cycle": "удалил(а) рабочий элемент из цикла",
+      "added_this_work_item_to_the_module": "добавил(а) этот рабочий элемент в модуль",
+      "set_the_module_to": "изменил(а) модуль на",
+      "removed_the_work_item_from_the_module": "удалил(а) рабочий элемент из модуля",
+      "added_the_link": "добавил(а)",
+      "updated_the_link": "обновил(а)",
+      "removed_the_link": "удалил(а)",
+      "link_noun": "ссылку",
+      "uploaded_a_new_attachment": "загрузил(а) новое вложение",
+      "removed_an_attachment": "удалил(а) вложение",
+      "restored_the_work_item": "восстановил(а) рабочий элемент",
+      "archived_the_work_item": "архивировал(а) рабочий элемент",
+      "declined_this_work_item_from_intake": "отклонил(а) этот рабочий элемент в Intake.",
+      "snoozed_this_work_item": "отложил(а) этот рабочий элемент.",
+      "accepted_this_work_item_from_intake": "принял(а) этот рабочий элемент в Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "отклонил(а) этот рабочий элемент в Intake, пометив его как дубликат.",
+      "updated_intake_work_item_status": "обновил(а) статус рабочего элемента в Intake.",
+      "marked_this_work_item_is_blocking_work_item": "отметил(а), что этот рабочий элемент блокирует рабочий элемент",
+      "removed_the_blocking_work_item": "снял(а) блокировку с рабочего элемента",
+      "marked_this_work_item_is_being_blocked_by": "отметил(а), что этот рабочий элемент заблокирован элементом",
+      "removed_this_work_item_being_blocked_by_work_item": "снял(а) блокировку этого рабочего элемента элементом",
+      "marked_this_work_item_as_duplicate_of": "отметил(а) этот рабочий элемент как дубликат элемента",
+      "removed_this_work_item_as_a_duplicate_of": "снял(а) с этого рабочего элемента отметку дубликата элемента",
+      "marked_that_this_work_item_relates_to": "отметил(а), что этот рабочий элемент связан с элементом",
+      "removed_the_relation_from": "удалил(а) связь с элементом",
+      "connector_for": "в",
+      "connector_to": "в",
+      "connector_from": "из",
+      "connector_of": "в"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Реакция успешно добавлена"
+          },
+          "error": {
+            "message": "Не удалось добавить реакцию"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Реакция успешно удалена"
+          },
+          "error": {
+            "message": "Не удалось удалить реакцию"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Вложение успешно удалено"
+          },
+          "error": {
+            "message": "Не удалось удалить вложение"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Выберите хотя бы один рабочий элемент."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Рабочие элементы успешно удалены!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Дата выполнения не может быть раньше даты начала рабочего элемента."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Ошибка при обновлении дат рабочего элемента. Попробуйте позже."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Не удалось переместить рабочий элемент в проект. Попробуйте ещё раз."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Не удалось удалить рабочий элемент"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Не удалось обновить рабочий элемент"
+        }
+      },
+      "editor_processing": {
+        "message": "Редактор ещё обрабатывает изменения. Подождите, прежде чем продолжить."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Название рабочего элемента недостаточно информативно для создания описания. Попробуйте другое название."
+        }
+      }
     }
   },
   "sub_work_item": {

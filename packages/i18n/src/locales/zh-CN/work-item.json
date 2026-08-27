@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "登录后即可发表评论"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "点击赞成",
       "click_to_downvote": "点击反对",
       "click_to_view_upvotes": "点击查看赞成票",
-      "click_to_view_downvotes": "点击查看反对票"
+      "click_to_view_downvotes": "点击查看反对票",
+      "no_upvotes": "暂无赞成票",
+      "no_downvotes": "暂无反对票",
+      "and_more": "以及其他 {count} 人"
     },
     "activity": {
       "created_the_work_item": "创建了工作项。",
       "created_the_work_item_via": "通过以下方式创建了工作项：",
-      "deleted_a_work_item": "删除了工作项。"
+      "deleted_a_work_item": "删除了工作项。",
+      "set_the_name_to": "将名称设置为",
+      "updated_the_description": "更新了描述",
+      "set_the_state_to": "将状态设置为",
+      "set_the_priority_to": "将优先级设置为",
+      "added_a_new_assignee": "添加了新的负责人",
+      "removed_the_assignee": "移除了负责人",
+      "added_a_new_label": "添加了新标签",
+      "removed_the_label": "移除了标签",
+      "set_the_start_date_to": "将开始日期设置为",
+      "removed_the_start_date": "移除了开始日期",
+      "set_the_due_date_to": "将截止日期设置为",
+      "removed_the_due_date": "移除了截止日期",
+      "set_the_parent_to": "将父项设置为",
+      "removed_the_parent": "移除了父项",
+      "set_the_estimate_point_to": "将估算点设置为",
+      "removed_the_estimate_point": "移除了估算点",
+      "added_this_work_item_to_the_cycle": "将此工作项添加到周期",
+      "set_the_cycle_to": "将周期设置为",
+      "removed_the_work_item_from_the_cycle": "将工作项从周期中移除",
+      "added_this_work_item_to_the_module": "将此工作项添加到模块",
+      "set_the_module_to": "将模块设置为",
+      "removed_the_work_item_from_the_module": "将工作项从模块中移除",
+      "added_the_link": "添加了",
+      "updated_the_link": "更新了",
+      "removed_the_link": "移除了",
+      "link_noun": "链接",
+      "uploaded_a_new_attachment": "上传了新附件",
+      "removed_an_attachment": "移除了附件",
+      "restored_the_work_item": "恢复了工作项",
+      "archived_the_work_item": "归档了工作项",
+      "declined_this_work_item_from_intake": "在 Intake 中拒绝了此工作项。",
+      "snoozed_this_work_item": "暂缓了此工作项。",
+      "accepted_this_work_item_from_intake": "在 Intake 中接受了此工作项。",
+      "declined_this_work_item_from_intake_as_duplicate": "在 Intake 中将此工作项标记为重复项并拒绝。",
+      "updated_intake_work_item_status": "更新了 Intake 工作项状态。",
+      "marked_this_work_item_is_blocking_work_item": "标记了此工作项正在阻塞以下工作项：",
+      "removed_the_blocking_work_item": "移除了对以下工作项的阻塞：",
+      "marked_this_work_item_is_being_blocked_by": "标记了此工作项被以下工作项阻塞：",
+      "removed_this_work_item_being_blocked_by_work_item": "移除了此工作项被以下工作项阻塞的关联：",
+      "marked_this_work_item_as_duplicate_of": "将此工作项标记为以下工作项的重复项：",
+      "removed_this_work_item_as_a_duplicate_of": "移除了此工作项与以下工作项的重复标记：",
+      "marked_that_this_work_item_relates_to": "标记了此工作项与以下工作项相关：",
+      "removed_the_relation_from": "移除了与以下工作项的关联：",
+      "connector_for": "对象：",
+      "connector_to": "对象：",
+      "connector_from": "对象：",
+      "connector_of": "对象："
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "表情回应添加成功"
+          },
+          "error": {
+            "message": "表情回应添加失败"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "表情回应移除成功"
+          },
+          "error": {
+            "message": "表情回应移除失败"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "附件移除成功"
+          },
+          "error": {
+            "message": "无法移除附件"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "请至少选择一个工作项。"
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "工作项删除成功！"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "截止日期不能早于工作项的开始日期。"
+      },
+      "update_dates": {
+        "error": {
+          "message": "更新工作项日期时出错。请稍后重试。"
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "无法将工作项移动到项目。请重试。"
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "工作项删除失败"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "工作项更新失败"
+        }
+      },
+      "editor_processing": {
+        "message": "编辑器仍在处理更改。请稍候再继续。"
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "工作项标题信息不足，无法生成描述。请换一个标题试试。"
+        }
+      }
     }
   },
   "sub_work_item": {

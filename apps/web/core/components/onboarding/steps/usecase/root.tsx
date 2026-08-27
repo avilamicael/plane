@@ -14,6 +14,7 @@ import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { TUserProfile } from "@plane/types";
 import { EOnboardingSteps } from "@plane/types";
 import { cn } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { useUserProfile } from "@/hooks/store/user";
 // local imports
@@ -28,8 +29,19 @@ const defaultValues = {
   use_case: [] as string[],
 };
 
+// The stored value stays in English so existing profiles keep matching; only the label is localized.
+const USE_CASE_I18N_LABELS: Record<string, string> = {
+  "Plan and track product roadmaps": "onboarding.usecase.options.plan_and_track_product_roadmaps",
+  "Manage engineering sprints": "onboarding.usecase.options.manage_engineering_sprints",
+  "Coordinate cross-functional projects": "onboarding.usecase.options.coordinate_cross_functional_projects",
+  "Replace our current tool": "onboarding.usecase.options.replace_our_current_tool",
+  "Just exploring": "onboarding.usecase.options.just_exploring",
+};
+
 export const UseCaseSetupStep = observer(function UseCaseSetupStep({ handleStepChange }: Props) {
   // store hooks
+  const { t } = useTranslation();
+
   const { data: profile, updateUserProfile } = useUserProfile();
   // form info
   const {
@@ -56,14 +68,14 @@ export const UseCaseSetupStep = observer(function UseCaseSetupStep({ handleStepC
       ]);
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success",
-        message: "Profile setup completed!",
+        title: t("common.toast.success"),
+        message: t("onboarding.toasts.profile_setup.success.message"),
       });
     } catch {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error",
-        message: "Profile setup failed. Please try again!",
+        title: t("common.toast.error"),
+        message: t("onboarding.toasts.profile_setup.error.message"),
       });
     }
   };
@@ -86,18 +98,21 @@ export const UseCaseSetupStep = observer(function UseCaseSetupStep({ handleStepC
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10">
       {/* Header */}
-      <CommonOnboardingHeader title="What brings you to Plane?" description="Tell us your goals and team size." />
+      <CommonOnboardingHeader
+        title={t("onboarding.usecase.heading")}
+        description={t("onboarding.usecase.subheading")}
+      />
 
       {/* Use Case Selection */}
       <div className="flex flex-col gap-3">
-        <p className="text-body-sm-semibold text-placeholder">Select one or more</p>
+        <p className="text-body-sm-semibold text-placeholder">{t("onboarding.common.select_one_or_more")}</p>
 
         <Controller
           control={control}
           name="use_case"
           rules={{
-            required: "Please select at least one option",
-            validate: (value) => (value && value.length > 0) || "Please select at least one option",
+            required: t("onboarding.common.errors.select_at_least_one"),
+            validate: (value) => (value && value.length > 0) || t("onboarding.common.errors.select_at_least_one"),
           }}
           render={({ field: { value, onChange } }) => (
             <div className="flex flex-col gap-3">
@@ -138,7 +153,9 @@ export const UseCaseSetupStep = observer(function UseCaseSetupStep({ handleStepC
                       />
                     </span>
 
-                    <span className="text-body-sm-regular">{useCase}</span>
+                    <span className="text-body-sm-regular">
+                      {USE_CASE_I18N_LABELS[useCase] ? t(USE_CASE_I18N_LABELS[useCase]) : useCase}
+                    </span>
                   </button>
                 );
               })}
@@ -151,10 +168,10 @@ export const UseCaseSetupStep = observer(function UseCaseSetupStep({ handleStepC
       {/* Action Buttons */}
       <div className="space-y-3">
         <Button variant="primary" type="submit" className="w-full" size="xl" disabled={isButtonDisabled}>
-          Continue
+          {t("common.continue")}
         </Button>
         <Button variant="ghost" onClick={handleSkip} className="w-full" size="xl">
-          Skip
+          {t("onboarding.common.skip")}
         </Button>
       </div>
     </form>

@@ -139,7 +139,8 @@
         "title": "Aucun cycle archivé pour le moment",
         "description": "Pour organiser votre projet, archivez les cycles terminés. Retrouvez-les ici une fois archivés."
       }
-    }
+    },
+    "delete_cycle": "Supprimer le cycle"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Une erreur s'est produite."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Projet supprimé avec succès."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Le projet n'a pas pu être archivé. Veuillez réessayer."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Le projet n'a pas pu être restauré. Veuillez réessayer."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Veuillez confirmer votre départ du projet en saisissant « Leave Project »."
+        },
+        "project_name": {
+          "message": "Veuillez saisir le nom du projet tel qu'il apparaît dans la description."
+        },
+        "fill_all_fields": {
+          "message": "Veuillez remplir tous les champs."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Le dépôt n'a pas pu être synchronisé avec le projet. Veuillez réessayer."
+        }
+      },
+      "members_added": {
+        "message": "Membres ajoutés avec succès."
+      },
+      "publish": {
+        "success": {
+          "message": "Paramètres de publication mis à jour avec succès !"
+        },
+        "unpublish_error": {
+          "message": "Une erreur s'est produite lors de la dépublication du projet."
+        },
+        "select_layout": {
+          "message": "Veuillez sélectionner au moins une disposition de vue pour publier le projet."
+        },
+        "link_copied": {
+          "message": "Lien de la page publiée copié avec succès."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Autoriser les commentaires",
+      "allow_reactions": "Autoriser les réactions",
+      "allow_voting": "Autoriser les votes",
+      "anyone_with_link_can_access": "Toute personne disposant du lien peut y accéder"
+    },
+    "join": {
+      "title": "Rejoindre le projet ?"
+    },
+    "card": {
+      "created_on": "Créé le {date}",
+      "no_members_yet": "Aucun membre pour l'instant"
     }
   }
 }

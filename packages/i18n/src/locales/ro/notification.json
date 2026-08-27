@@ -52,7 +52,17 @@
       "5_days": "5 zile",
       "1_week": "1 săptămână",
       "2_weeks": "2 săptămâni",
-      "custom": "Personalizat"
+      "custom": "Personalizat",
+      "modal": {
+        "title": "Personalizează timpul de amânare",
+        "pick_a_date": "Alege o dată",
+        "select_date": "Selectează data",
+        "pick_a_time": "Alege o oră",
+        "select_a_time": "Selectează o oră",
+        "no_available_time": "Nu există ore disponibile pentru această dată.",
+        "date_required": "Te rugăm să selectezi o dată",
+        "time_required": "Te rugăm să selectezi o oră"
+      }
     }
   }
 }

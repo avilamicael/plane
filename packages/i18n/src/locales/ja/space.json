@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "エラー",
+          "message": "問題が発生しました。もう一度お試しください。"
+        },
+        "template": {
+          "try_again": "{reason}。もう一度お試しください。",
+          "contact_admin": "{reason}。管理者にお問い合わせください。"
+        },
+        "reason": {
+          "instance_not_configured": "インスタンスが設定されていません",
+          "signup_disabled": "サインアップが無効になっています",
+          "invalid_password": "パスワードが無効です",
+          "smtp_not_configured": "SMTP が設定されていません",
+          "invalid_email": "メールアドレスが無効です",
+          "email_required": "メールアドレスが必要です",
+          "email_and_password_required": "メールアドレスとパスワードが必要です",
+          "email_and_code_required": "メールアドレスとコードが必要です",
+          "authentication_failed": "認証に失敗しました",
+          "invalid_magic_code": "マジックコードが無効です",
+          "expired_magic_code": "マジックコードの有効期限が切れています",
+          "oauth_not_configured": "OAuth が設定されていません",
+          "google_not_configured": "Google が設定されていません",
+          "github_not_configured": "GitHub が設定されていません",
+          "gitlab_not_configured": "GitLab が設定されていません",
+          "google_oauth_provider_error": "Google OAuth プロバイダーエラー",
+          "github_oauth_provider_error": "GitHub OAuth プロバイダーエラー",
+          "gitlab_oauth_provider_error": "GitLab OAuth プロバイダーエラー",
+          "invalid_password_token": "パスワードトークンが無効です",
+          "expired_password_token": "パスワードトークンの有効期限が切れています",
+          "password_required": "パスワードが必要です",
+          "incorrect_old_password": "現在のパスワードが正しくありません",
+          "invalid_new_password": "新しいパスワードが無効です",
+          "password_already_set": "パスワードは既に設定されています",
+          "admin_already_exist": "管理者は既に存在します",
+          "admin_email_password_first_name_required": "メールアドレス、パスワード、名前が必要です",
+          "invalid_admin_email": "管理者のメールアドレスが無効です",
+          "invalid_admin_password": "管理者のパスワードが無効です"
+        },
+        "title": {
+          "user_already_exist": "ユーザーは既に存在します",
+          "user_does_not_exist": "ユーザーが存在しません",
+          "user_account_deactivated": "ユーザーアカウントが無効化されています",
+          "bot_user_login_forbidden": "サインインは許可されていません",
+          "admin_user_already_exist": "管理者ユーザーは既に存在します",
+          "admin_user_does_not_exist": "管理者ユーザーが存在しません"
+        },
+        "message": {
+          "bot_user_login_forbidden": "このアカウントではサインインできません。個人のアカウントをご利用ください。",
+          "user_account_deactivated": "ユーザーアカウントが無効化されています。{contact}にお問い合わせください。",
+          "default_contact": "管理者",
+          "user_already_exist": "このアカウントは既に登録されています。",
+          "user_does_not_exist": "アカウントが見つかりません。",
+          "admin_user_already_exist": "管理者ユーザーは既に存在します。",
+          "admin_user_does_not_exist": "管理者ユーザーが存在しません。",
+          "link": {
+            "sign_in_now": "今すぐログイン",
+            "create_one": "アカウントを作成して始める"
+          }
+        }
+      }
+    }
+  }
+}

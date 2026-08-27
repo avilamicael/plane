@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Setări proiect",
     "general": {
       "enter_project_id": "Introdu ID-ul proiectului",
       "please_select_a_timezone": "Te rugăm să selectezi un fus orar",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Nicio stare disponibilă pentru grupul {groupKey}",
         "description": "Te rog să creezi o stare nouă"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Starea a fost creată cu succes."
+          },
+          "error": {
+            "name_exists": "O stare cu acest nume există deja. Te rugăm să încerci cu alt nume."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Starea a fost actualizată cu succes."
+          },
+          "error": {
+            "name_exists": "Există deja o altă stare cu același nume. Te rugăm să încerci cu alt nume.",
+            "message": "Starea nu a putut fi actualizată. Te rugăm să încerci din nou."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Starea nu a putut fi ștearsă. Te rugăm să încerci din nou.",
+            "has_work_items": "Această stare conține elemente de lucru. Mută-le într-o altă stare pentru a o putea șterge."
+          }
+        }
+      },
+      "delete_state": "Șterge starea"
     },
     "labels": {
       "heading": "Etichete",
@@ -53,7 +80,8 @@
       "label_max_char": "Numele etichetei nu trebuie să depășească 255 de caractere",
       "toast": {
         "error": "Eroare la actualizarea etichetei"
-      }
+      },
+      "delete_label": "Șterge eticheta"
     },
     "estimates": {
       "heading": "Estimări",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Eroare",
             "message": "Ceva a mers greșit"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "Estimarea a fost eliminată din proiectul tău."
+          },
+          "error": {
+            "message": "Nu am putut șterge estimarea. Te rugăm să încerci din nou."
           }
         }
       },

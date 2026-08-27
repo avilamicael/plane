@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "项目设置",
     "general": {
       "enter_project_id": "输入项目 ID",
       "please_select_a_timezone": "请选择时区",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "{groupKey} 组中没有状态",
         "description": "请创建一个新状态"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "状态创建成功。"
+          },
+          "error": {
+            "name_exists": "该名称的状态已存在。请换一个名称重试。"
+          }
+        },
+        "update": {
+          "success": {
+            "message": "状态更新成功。"
+          },
+          "error": {
+            "name_exists": "已存在同名的其他状态。请换一个名称重试。",
+            "message": "无法更新状态。请重试。"
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "无法删除状态。请重试。",
+            "has_work_items": "该状态中包含工作项。请先将它们移到其他状态，然后再删除。"
+          }
+        }
+      },
+      "delete_state": "删除状态"
     },
     "labels": {
       "heading": "标签",
@@ -53,7 +80,8 @@
       "label_max_char": "标签名称不应超过255个字符",
       "toast": {
         "error": "更新标签时出错"
-      }
+      },
+      "delete_label": "删除标签"
     },
     "estimates": {
       "heading": "估算",
@@ -127,6 +155,14 @@
           "error": {
             "title": "错误",
             "message": "出现错误"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "估算已从您的项目中移除。"
+          },
+          "error": {
+            "message": "无法删除估算。请重试。"
           }
         }
       },

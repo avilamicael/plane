@@ -139,7 +139,8 @@
         "title": "尚无已归档的周期",
         "description": "为了整理您的项目，归档已完成的周期。归档后可以在这里找到它们。"
       }
-    }
+    },
+    "delete_cycle": "删除周期"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "出了些问题。"
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "项目删除成功。"
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "无法归档项目。请重试。"
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "无法恢复项目。请重试。"
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "请输入 'Leave Project' 以确认退出项目。"
+        },
+        "project_name": {
+          "message": "请按描述中显示的内容输入项目名称。"
+        },
+        "fill_all_fields": {
+          "message": "请填写所有字段。"
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "无法将仓库与项目同步。请重试。"
+        }
+      },
+      "members_added": {
+        "message": "成员添加成功。"
+      },
+      "publish": {
+        "success": {
+          "message": "发布设置更新成功！"
+        },
+        "unpublish_error": {
+          "message": "取消发布项目时出现错误。"
+        },
+        "select_layout": {
+          "message": "请至少选择一种视图布局以发布项目。"
+        },
+        "link_copied": {
+          "message": "已发布页面的链接复制成功。"
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "允许评论",
+      "allow_reactions": "允许表情回应",
+      "allow_voting": "允许投票",
+      "anyone_with_link_can_access": "任何拥有链接的人都可以访问"
+    },
+    "join": {
+      "title": "加入项目？"
+    },
+    "card": {
+      "created_on": "创建于 {date}",
+      "no_members_yet": "暂无成员"
     }
   }
 }

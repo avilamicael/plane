@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Přihlaste se, abyste mohli přidat komentář"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Klikněte pro hlasování nahoru",
       "click_to_downvote": "Klikněte pro hlasování dolů",
       "click_to_view_upvotes": "Klikněte pro zobrazení hlasů nahoru",
-      "click_to_view_downvotes": "Klikněte pro zobrazení hlasů dolů"
+      "click_to_view_downvotes": "Klikněte pro zobrazení hlasů dolů",
+      "no_upvotes": "Zatím žádné hlasy pro",
+      "no_downvotes": "Zatím žádné hlasy proti",
+      "and_more": "a dalších {count}"
     },
     "activity": {
       "created_the_work_item": "vytvořil(a) pracovní položku.",
       "created_the_work_item_via": "vytvořil(a) pracovní položku přes",
-      "deleted_a_work_item": "smazal(a) pracovní položku."
+      "deleted_a_work_item": "smazal(a) pracovní položku.",
+      "set_the_name_to": "nastavil(a) název na",
+      "updated_the_description": "aktualizoval(a) popis",
+      "set_the_state_to": "nastavil(a) stav na",
+      "set_the_priority_to": "nastavil(a) prioritu na",
+      "added_a_new_assignee": "přidal(a) nového řešitele",
+      "removed_the_assignee": "odebral(a) řešitele",
+      "added_a_new_label": "přidal(a) nový štítek",
+      "removed_the_label": "odebral(a) štítek",
+      "set_the_start_date_to": "nastavil(a) datum začátku na",
+      "removed_the_start_date": "odebral(a) datum začátku",
+      "set_the_due_date_to": "nastavil(a) termín na",
+      "removed_the_due_date": "odebral(a) termín",
+      "set_the_parent_to": "nastavil(a) nadřazenou položku na",
+      "removed_the_parent": "odebral(a) nadřazenou položku",
+      "set_the_estimate_point_to": "nastavil(a) bod odhadu na",
+      "removed_the_estimate_point": "odebral(a) bod odhadu",
+      "added_this_work_item_to_the_cycle": "přidal(a) tuto pracovní položku do cyklu",
+      "set_the_cycle_to": "nastavil(a) cyklus na",
+      "removed_the_work_item_from_the_cycle": "odebral(a) pracovní položku z cyklu",
+      "added_this_work_item_to_the_module": "přidal(a) tuto pracovní položku do modulu",
+      "set_the_module_to": "nastavil(a) modul na",
+      "removed_the_work_item_from_the_module": "odebral(a) pracovní položku z modulu",
+      "added_the_link": "přidal(a)",
+      "updated_the_link": "aktualizoval(a)",
+      "removed_the_link": "odebral(a)",
+      "link_noun": "odkaz",
+      "uploaded_a_new_attachment": "nahrál(a) novou přílohu",
+      "removed_an_attachment": "odebral(a) přílohu",
+      "restored_the_work_item": "obnovil(a) pracovní položku",
+      "archived_the_work_item": "archivoval(a) pracovní položku",
+      "declined_this_work_item_from_intake": "odmítl(a) tuto pracovní položku v Intake.",
+      "snoozed_this_work_item": "odložil(a) tuto pracovní položku.",
+      "accepted_this_work_item_from_intake": "přijal(a) tuto pracovní položku v Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "odmítl(a) tuto pracovní položku v Intake označením jako duplikát.",
+      "updated_intake_work_item_status": "aktualizoval(a) stav pracovní položky v Intake.",
+      "marked_this_work_item_is_blocking_work_item": "označil(a), že tato pracovní položka blokuje pracovní položku",
+      "removed_the_blocking_work_item": "odebral(a) blokování pracovní položky",
+      "marked_this_work_item_is_being_blocked_by": "označil(a), že tato pracovní položka je blokována položkou",
+      "removed_this_work_item_being_blocked_by_work_item": "odebral(a) blokování této pracovní položky položkou",
+      "marked_this_work_item_as_duplicate_of": "označil(a) tuto pracovní položku jako duplikát položky",
+      "removed_this_work_item_as_a_duplicate_of": "odebral(a) označení této pracovní položky jako duplikátu položky",
+      "marked_that_this_work_item_relates_to": "označil(a), že tato pracovní položka souvisí s položkou",
+      "removed_the_relation_from": "odebral(a) vztah s položkou",
+      "connector_for": "v",
+      "connector_to": "do",
+      "connector_from": "z",
+      "connector_of": "v"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reakce byla úspěšně přidána"
+          },
+          "error": {
+            "message": "Přidání reakce se nezdařilo"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reakce byla úspěšně odebrána"
+          },
+          "error": {
+            "message": "Odebrání reakce se nezdařilo"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Příloha byla úspěšně odebrána"
+          },
+          "error": {
+            "message": "Přílohu se nepodařilo odebrat"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Vyberte prosím alespoň jednu pracovní položku."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Pracovní položky byly úspěšně smazány!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Datum splnění nemůže předcházet datu zahájení pracovní položky."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Chyba při aktualizaci dat pracovní položky. Zkuste to prosím později."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Přesunutí pracovní položky do projektu se nezdařilo. Zkuste to prosím znovu."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Smazání pracovní položky se nezdařilo"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Aktualizace pracovní položky se nezdařila"
+        }
+      },
+      "editor_processing": {
+        "message": "Editor stále zpracovává změny. Před pokračováním prosím počkejte."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Název pracovní položky není dostatečně výstižný pro vygenerování popisu. Zkuste jiný název."
+        }
+      }
     }
   },
   "sub_work_item": {

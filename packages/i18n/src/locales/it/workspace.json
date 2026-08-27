@@ -373,6 +373,16 @@
           "message": "Qualcosa è andato storto."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Spazio di lavoro aggiornato con successo"
+        }
+      },
+      "logo_removed": {
+        "message": "Immagine dello spazio di lavoro rimossa con successo."
+      }
     }
   }
 }

@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Kesalahan",
+          "message": "Terjadi kesalahan. Silakan coba lagi."
+        },
+        "template": {
+          "try_again": "{reason}. Silakan coba lagi.",
+          "contact_admin": "{reason}. Silakan hubungi admin anda."
+        },
+        "reason": {
+          "instance_not_configured": "Instansi belum dikonfigurasi",
+          "signup_disabled": "Pendaftaran dinonaktifkan",
+          "invalid_password": "Password tidak valid",
+          "smtp_not_configured": "SMTP belum dikonfigurasi",
+          "invalid_email": "Email tidak valid",
+          "email_required": "Email wajib diisi",
+          "email_and_password_required": "Email dan password wajib diisi",
+          "email_and_code_required": "Email dan kode wajib diisi",
+          "authentication_failed": "Autentikasi gagal",
+          "invalid_magic_code": "Kode ajaib tidak valid",
+          "expired_magic_code": "Kode ajaib telah kedaluwarsa",
+          "oauth_not_configured": "OAuth belum dikonfigurasi",
+          "google_not_configured": "Google belum dikonfigurasi",
+          "github_not_configured": "GitHub belum dikonfigurasi",
+          "gitlab_not_configured": "GitLab belum dikonfigurasi",
+          "google_oauth_provider_error": "Kesalahan penyedia OAuth Google",
+          "github_oauth_provider_error": "Kesalahan penyedia OAuth GitHub",
+          "gitlab_oauth_provider_error": "Kesalahan penyedia OAuth GitLab",
+          "invalid_password_token": "Token password tidak valid",
+          "expired_password_token": "Token password telah kedaluwarsa",
+          "password_required": "Password wajib diisi",
+          "incorrect_old_password": "Password lama salah",
+          "invalid_new_password": "Password baru tidak valid",
+          "password_already_set": "Password sudah diatur",
+          "admin_already_exist": "Admin sudah ada",
+          "admin_email_password_first_name_required": "Email, password, dan nama depan wajib diisi",
+          "invalid_admin_email": "Email admin tidak valid",
+          "invalid_admin_password": "Password admin tidak valid"
+        },
+        "title": {
+          "user_already_exist": "Pengguna sudah ada",
+          "user_does_not_exist": "Pengguna tidak ada",
+          "user_account_deactivated": "Akun pengguna dinonaktifkan",
+          "bot_user_login_forbidden": "Masuk tidak diizinkan",
+          "admin_user_already_exist": "Pengguna admin sudah ada",
+          "admin_user_does_not_exist": "Pengguna admin tidak ada"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Akun ini tidak dapat digunakan untuk masuk. Silakan gunakan akun pribadi.",
+          "user_account_deactivated": "Akun pengguna dinonaktifkan. Silakan hubungi {contact}.",
+          "default_contact": "admin",
+          "user_already_exist": "Akun anda sudah terdaftar.",
+          "user_does_not_exist": "Tidak ada akun yang ditemukan.",
+          "admin_user_already_exist": "Pengguna admin sudah ada.",
+          "admin_user_does_not_exist": "Pengguna admin tidak ada.",
+          "link": {
+            "sign_in_now": "Masuk sekarang",
+            "create_one": "Buat akun untuk memulai"
+          }
+        }
+      }
+    }
+  }
+}

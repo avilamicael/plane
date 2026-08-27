@@ -373,6 +373,16 @@
           "message": "Bir şeyler ters gitti."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Çalışma alanı başarıyla güncellendi"
+        }
+      },
+      "logo_removed": {
+        "message": "Çalışma alanı resmi başarıyla kaldırıldı."
+      }
     }
   }
 }

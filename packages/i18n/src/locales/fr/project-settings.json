@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Paramètres du projet",
     "general": {
       "enter_project_id": "Saisissez l’ID du projet",
       "please_select_a_timezone": "Veuillez sélectionner un fuseau horaire",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Aucun état disponible pour le groupe {groupKey}",
         "description": "Veuillez créer un nouvel état"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "État créé avec succès."
+          },
+          "error": {
+            "name_exists": "Un état portant ce nom existe déjà. Veuillez réessayer avec un autre nom."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "État mis à jour avec succès."
+          },
+          "error": {
+            "name_exists": "Un autre état porte déjà ce nom. Veuillez réessayer avec un autre nom.",
+            "message": "L'état n'a pas pu être mis à jour. Veuillez réessayer."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "L'état n'a pas pu être supprimé. Veuillez réessayer.",
+            "has_work_items": "Cet état contient des éléments de travail. Déplacez-les vers un autre état pour pouvoir le supprimer."
+          }
+        }
+      },
+      "delete_state": "Supprimer l'état"
     },
     "labels": {
       "heading": "Étiquettes",
@@ -53,7 +80,8 @@
       "label_max_char": "Le nom de l’étiquette ne doit pas dépasser 255 caractères",
       "toast": {
         "error": "Erreur lors de la mise à jour de l’étiquette"
-      }
+      },
+      "delete_label": "Supprimer l'étiquette"
     },
     "estimates": {
       "heading": "Estimations",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Erreur",
             "message": "Une erreur s’est produite"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "L'estimation a été supprimée de votre projet."
+          },
+          "error": {
+            "message": "Nous n'avons pas pu supprimer l'estimation. Veuillez réessayer."
           }
         }
       },

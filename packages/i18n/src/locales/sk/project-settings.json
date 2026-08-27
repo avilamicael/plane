@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Nastavenia projektu",
     "general": {
       "enter_project_id": "Zadajte ID projektu",
       "please_select_a_timezone": "Vyberte časové pásmo",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Žiadne stavy pre skupinu {groupKey}",
         "description": "Vytvorte nový stav"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Stav bol úspešne vytvorený."
+          },
+          "error": {
+            "name_exists": "Stav s týmto názvom už existuje. Skúste to prosím s iným názvom."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Stav bol úspešne aktualizovaný."
+          },
+          "error": {
+            "name_exists": "Iný stav s rovnakým názvom už existuje. Skúste to prosím s iným názvom.",
+            "message": "Stav sa nepodarilo aktualizovať. Skúste to prosím znova."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Stav sa nepodarilo zmazať. Skúste to prosím znova.",
+            "has_work_items": "Tento stav obsahuje pracovné položky. Presuňte ich do iného stavu, aby ste ho mohli zmazať."
+          }
+        }
+      },
+      "delete_state": "Zmazať stav"
     },
     "labels": {
       "heading": "Štítky",
@@ -53,7 +80,8 @@
       "label_max_char": "Názov štítka nesmie presiahnuť 255 znakov",
       "toast": {
         "error": "Chyba pri aktualizácii štítka"
-      }
+      },
+      "delete_label": "Zmazať štítok"
     },
     "estimates": {
       "heading": "Odhady",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Chyba",
             "message": "Niečo sa pokazilo"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "Odhad bol z vášho projektu odstránený."
+          },
+          "error": {
+            "message": "Odhad sa nepodarilo zmazať. Skúste to prosím znova."
           }
         }
       },

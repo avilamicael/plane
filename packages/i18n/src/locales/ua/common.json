@@ -307,6 +307,9 @@
   "end_date": "Дата завершення",
   "due_date": "Крайній термін",
   "target_date": "Цільова дата",
+  "created_date": "Дата створення",
+  "updated_date": "Дата оновлення",
+  "last_updated_date": "Дата останнього оновлення",
   "estimate": "Оцінка",
   "change_parent_issue": "Змінити батьківську робочу одиницю",
   "remove_parent_issue": "Вилучити батьківську робочу одиницю",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL успішно скопійовано в буфер обміну",
   "toast": {
     "success": "Успіх!",
-    "error": "Помилка!"
+    "error": "Помилка!",
+    "warning": "Попередження!",
+    "info": "Інформація!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Оцінка",
     "created_at": "Створено",
     "updated_at": "Оновлено",
+    "select_cycle": "Виберіть цикл",
+    "select_modules": "Виберіть модулі",
     "completed_at": "Завершено",
     "layout": "Розташування",
     "filters": "Фільтри",
@@ -464,6 +471,10 @@
     "epics": "Епіки",
     "work_item": "Робоча одиниця",
     "work_items": "Робочі одиниці",
+    "work_items_in_project_count": "{count, plural, one{У цьому проєкті # робоча одиниця} few{У цьому проєкті # робочі одиниці} many{У цьому проєкті # робочих одиниць} other{У цьому проєкті # робочих одиниць}}",
+    "work_items_in_archives_count": "{count, plural, one{В архіві цього проєкту # робоча одиниця} few{В архіві цього проєкту # робочі одиниці} many{В архіві цього проєкту # робочих одиниць} other{В архіві цього проєкту # робочих одиниць}}",
+    "work_items_in_cycle_count": "{count, plural, one{У цьому циклі # робоча одиниця} few{У цьому циклі # робочі одиниці} many{У цьому циклі # робочих одиниць} other{У цьому циклі # робочих одиниць}}",
+    "work_items_in_module_count": "{count, plural, one{У цьому модулі # робоча одиниця} few{У цьому модулі # робочі одиниці} many{У цьому модулі # робочих одиниць} other{У цьому модулі # робочих одиниць}}",
     "sub_work_item": "Похідна робоча одиниця",
     "views": "Подання",
     "pages": "Сторінки",
@@ -619,7 +630,11 @@
       "enable": "Увімкнути",
       "disable": "Вимкнути",
       "copy_markdown": "Скопіювати markdown",
-      "reply": "Відповісти"
+      "reply": "Відповісти",
+      "move": "Перемістити",
+      "remove_from_cycle": "Видалити з циклу",
+      "remove_from_module": "Видалити з модуля",
+      "rename_folder": "Перейменувати папку"
     },
     "name": "Назва",
     "discard": "Скасувати",
@@ -722,12 +737,33 @@
     "more": "Більше",
     "saved": "Збережено",
     "all_projects": "Усі проєкти",
-    "n_plus_projects": "{count}+ проєктів"
+    "n_plus_projects": "{count}+ проєктів",
+    "and": "і",
+    "view_all": "Показати всі",
+    "view_less": "Показати менше",
+    "empty": "Порожньо",
+    "no_date": "Без дати",
+    "no_cycle": "Без циклу",
+    "no_modules": "Без модулів",
+    "no_labels": "Без міток",
+    "no_assignees": "Немає призначених",
+    "labels_count": "{count, plural, one{# мітка} few{# мітки} many{# міток} other{# мітки}}",
+    "modules_count": "{count, plural, one{# модуль} few{# модулі} many{# модулів} other{# модуля}}",
+    "not_found": {
+      "title": "Ой! Щось пішло не так.",
+      "description": "На жаль, сторінку не знайдено. Можливо, її видалено, перейменовано або вона тимчасово недоступна."
+    },
+    "toast": {
+      "success": "Успіх!",
+      "error": "Помилка!",
+      "warning": "Попередження"
+    }
   },
   "chart": {
     "x_axis": "Вісь X",
     "y_axis": "Вісь Y",
-    "metric": "Метрика"
+    "metric": "Метрика",
+    "week_of_month": "{month}, тиждень {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Оновити подання"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Подання успішно створено."
+        },
+        "error": {
+          "message": "Не вдалося створити подання. Спробуйте ще раз."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Подання успішно оновлено."
+        },
+        "error": {
+          "message": "Не вдалося оновити подання. Спробуйте ще раз."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Подання успішно видалено."
+        },
+        "error": {
+          "message": "Не вдалося видалити подання. Спробуйте ще раз."
+        }
+      },
+      "not_found": {
+        "message": "Подання, яке ви намагаєтеся оновити, не існує."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Ваше подання успішно оновлено."
+        },
+        "error": {
+          "message": "Не вдалося оновити ваше подання. Спробуйте ще раз."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Експортуйте одиниці у формат JSON.",
       "short_description": "Експортувати як JSON"
+    }
+  },
+  "sign_in": "Увійти",
+  "powered_by_plane_publish": "Працює на Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Не вдалося завантажити відомості про екземпляр.",
+      "description": "Нам не вдалося завантажити відомості про екземпляр. Не хвилюйтеся, можливо, це лише проблема зі з’єднанням."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Щось пішло не так. Спробуйте пізніше.",
+  "please_try_again_later": "Спробуйте пізніше.",
+  "some_error_occurred": "Сталася помилка",
+  "markdown_copied_to_clipboard": "Markdown скопійовано до буфера обміну.",
+  "reloading_to_apply_changes": "Перезавантаження для застосування змін...",
+  "copy_link_failed": "Не вдалося скопіювати посилання. Спробуйте ще раз.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Конфігурацію теми успішно завантажено."
+        },
+        "error": {
+          "message": "Не вдалося завантажити конфігурацію теми."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Конфігурацію теми успішно імпортовано"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Перетягування доступне лише за ручного сортування"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Сталася помилка під час оновлення дат блоку"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Цей фільтр налаштовано неправильно, тому його не можна застосувати"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Введіть завдання, щоб отримати допомогу ШІ."
+      }
+    }
+  },
+  "text_colors": "Кольори тексту",
+  "background_colors": "Кольори фону",
+  "submitting": "Надсилання...",
+  "image_upload": {
+    "title": "Завантажити зображення",
+    "drag_and_drop": "Перетягніть зображення сюди",
+    "drop_here": "Відпустіть зображення тут, щоб завантажити",
+    "file_too_large": "Розмір зображення не може перевищувати 5 МБ.",
+    "invalid_format": "Завантажте файл у припустимому форматі.",
+    "supported_formats": "Підтримувані формати файлів: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Завантажити та зберегти",
+    "uploading": "Завантаження",
+    "search_for_images": "Пошук зображень",
+    "no_images_found": "Зображень не знайдено.",
+    "tabs": {
+      "images": "Зображення",
+      "upload": "Завантажити"
     }
   }
 }

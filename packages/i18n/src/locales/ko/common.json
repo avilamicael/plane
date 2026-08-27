@@ -307,6 +307,9 @@
   "end_date": "종료 날짜",
   "due_date": "마감일",
   "target_date": "목표일",
+  "created_date": "생성일",
+  "updated_date": "수정일",
+  "last_updated_date": "마지막 수정일",
   "estimate": "추정",
   "change_parent_issue": "상위 작업 항목 변경",
   "remove_parent_issue": "상위 작업 항목 제거",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL이 클립보드에 성공적으로 복사되었습니다",
   "toast": {
     "success": "성공!",
-    "error": "오류!"
+    "error": "오류!",
+    "warning": "경고!",
+    "info": "정보!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "추정",
     "created_at": "생성일",
     "updated_at": "업데이트일",
+    "select_cycle": "사이클 선택",
+    "select_modules": "모듈 선택",
     "completed_at": "완료일",
     "layout": "레이아웃",
     "filters": "필터",
@@ -464,6 +471,10 @@
     "epics": "에픽스",
     "work_item": "작업 항목",
     "work_items": "작업 항목",
+    "work_items_in_project_count": "{count, plural, one{이 프로젝트에 # 개의 작업 항목이 있습니다} other{이 프로젝트에 # 개의 작업 항목이 있습니다}}",
+    "work_items_in_archives_count": "{count, plural, one{이 프로젝트의 아카이브에 # 개의 작업 항목이 있습니다} other{이 프로젝트의 아카이브에 # 개의 작업 항목이 있습니다}}",
+    "work_items_in_cycle_count": "{count, plural, one{이 주기에 # 개의 작업 항목이 있습니다} other{이 주기에 # 개의 작업 항목이 있습니다}}",
+    "work_items_in_module_count": "{count, plural, one{이 모듈에 # 개의 작업 항목이 있습니다} other{이 모듈에 # 개의 작업 항목이 있습니다}}",
     "sub_work_item": "하위 작업 항목",
     "views": "보기",
     "pages": "페이지",
@@ -619,7 +630,11 @@
       "enable": "활성화",
       "disable": "비활성화",
       "copy_markdown": "마크다운 복사",
-      "reply": "답글"
+      "reply": "답글",
+      "move": "이동",
+      "remove_from_cycle": "주기에서 제거",
+      "remove_from_module": "모듈에서 제거",
+      "rename_folder": "폴더 이름 변경"
     },
     "name": "이름",
     "discard": "폐기",
@@ -722,12 +737,33 @@
     "more": "더 보기",
     "saved": "저장됨",
     "all_projects": "모든 프로젝트",
-    "n_plus_projects": "{count}+ 프로젝트"
+    "n_plus_projects": "{count}+ 프로젝트",
+    "and": "및",
+    "view_all": "전체 보기",
+    "view_less": "간략히 보기",
+    "empty": "없음",
+    "no_date": "날짜 없음",
+    "no_cycle": "주기 없음",
+    "no_modules": "모듈 없음",
+    "no_labels": "레이블 없음",
+    "no_assignees": "담당자 없음",
+    "labels_count": "{count, plural, one{레이블 #개} other{레이블 #개}}",
+    "modules_count": "{count, plural, one{모듈 #개} other{모듈 #개}}",
+    "not_found": {
+      "title": "이런! 문제가 발생했습니다.",
+      "description": "찾으시는 페이지를 찾을 수 없습니다. 페이지가 삭제되었거나 이름이 변경되었거나 일시적으로 사용할 수 없습니다."
+    },
+    "toast": {
+      "success": "성공!",
+      "error": "오류!",
+      "warning": "경고"
+    }
   },
   "chart": {
     "x_axis": "X축",
     "y_axis": "Y축",
-    "metric": "메트릭"
+    "metric": "메트릭",
+    "week_of_month": "{month} {week}주차"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "뷰 업데이트"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "뷰가 성공적으로 생성되었습니다."
+        },
+        "error": {
+          "message": "뷰를 생성할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "뷰가 성공적으로 업데이트되었습니다."
+        },
+        "error": {
+          "message": "뷰를 업데이트할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "뷰가 성공적으로 삭제되었습니다."
+        },
+        "error": {
+          "message": "뷰를 삭제할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "not_found": {
+        "message": "업데이트하려는 뷰가 존재하지 않습니다."
+      },
+      "filters_update": {
+        "success": {
+          "message": "뷰가 성공적으로 업데이트되었습니다."
+        },
+        "error": {
+          "message": "뷰를 업데이트할 수 없습니다. 다시 시도해주세요."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "작업 항목을 JSON 파일로 내보냅니다.",
       "short_description": "JSON으로 내보내기"
+    }
+  },
+  "sign_in": "로그인",
+  "powered_by_plane_publish": "Plane Publish 제공",
+  "instance": {
+    "failure": {
+      "title": "인스턴스 정보를 가져올 수 없습니다.",
+      "description": "인스턴스 정보를 가져오지 못했습니다. 일시적인 연결 문제일 수 있으니 걱정하지 마세요."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "문제가 발생했습니다. 잠시 후 다시 시도해주세요.",
+  "please_try_again_later": "잠시 후 다시 시도해주세요.",
+  "some_error_occurred": "오류가 발생했습니다",
+  "markdown_copied_to_clipboard": "Markdown이 클립보드에 복사되었습니다.",
+  "reloading_to_apply_changes": "변경 사항을 적용하기 위해 다시 불러오는 중...",
+  "copy_link_failed": "링크를 복사할 수 없습니다. 다시 시도해주세요.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "테마 구성이 성공적으로 다운로드되었습니다."
+        },
+        "error": {
+          "message": "테마 구성을 다운로드하지 못했습니다."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "테마 구성이 성공적으로 가져와졌습니다"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "드래그 앤 드롭은 수동 정렬일 때만 사용할 수 있습니다"
+      },
+      "update_dates": {
+        "error": {
+          "message": "블록 날짜를 업데이트하는 중 문제가 발생했습니다"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "이 필터는 올바르게 구성되지 않아 적용할 수 없습니다"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "AI 지원을 받으려면 작업을 입력해주세요."
+      }
+    }
+  },
+  "text_colors": "텍스트 색상",
+  "background_colors": "배경 색상",
+  "submitting": "제출 중...",
+  "image_upload": {
+    "title": "이미지 업로드",
+    "drag_and_drop": "여기에 이미지를 끌어다 놓으세요",
+    "drop_here": "업로드하려면 여기에 이미지를 놓으세요",
+    "file_too_large": "이미지 크기는 5MB를 초과할 수 없습니다.",
+    "invalid_format": "유효한 형식의 파일을 업로드하세요.",
+    "supported_formats": "지원되는 파일 형식: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "업로드 후 저장",
+    "uploading": "업로드 중",
+    "search_for_images": "이미지 검색",
+    "no_images_found": "이미지를 찾을 수 없습니다.",
+    "tabs": {
+      "images": "이미지",
+      "upload": "업로드"
     }
   }
 }

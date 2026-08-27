@@ -110,6 +110,126 @@
       "label": "Aus Sammlung entfernen",
       "success_message": "Seite aus Sammlung entfernt.",
       "error_message": "Die Seite konnte nicht aus der Sammlung entfernt werden. Bitte versuchen Sie es erneut."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Seitenlink in die Zwischenablage kopiert."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Seite erfolgreich dupliziert."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht dupliziert werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Seite erfolgreich wiederhergestellt."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht wiederhergestellt werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Seite erfolgreich archiviert."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht archiviert werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Seite zu den Favoriten hinzugefügt."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht zu den Favoriten hinzugefügt werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Seite aus den Favoriten entfernt."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht aus den Favoriten entfernt werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Seite erfolgreich gesperrt."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht gesperrt werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Seite erfolgreich entsperrt."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht entsperrt werden. Bitte versuchen Sie es später erneut."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "Die Seite wurde als öffentlich markiert und in den öffentlichen Bereich verschoben."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht als öffentlich markiert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "Die Seite wurde als privat markiert und in den privaten Bereich verschoben."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht als privat markiert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Seite erfolgreich gelöscht."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht gelöscht werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Seite erfolgreich exportiert."
+        },
+        "error": {
+          "message": "Die Seite konnte nicht exportiert werden. Bitte versuchen Sie es später erneut."
+        }
+      }
+    },
+    "create_page": "Seite erstellen",
+    "delete_page": "Seite löschen",
+    "export": {
+      "title": "Seite exportieren",
+      "format": "Exportformat",
+      "include_content": "Inhalt einschließen",
+      "page_format": "Seitenformat",
+      "content_variety": {
+        "everything": "Alles",
+        "no_images": "Ohne Bilder"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Sperren",
+      "locked": "Gesperrt",
+      "unlocked": "Entsperrt"
+    },
+    "offline_badge": {
+      "heading": "Sie sind offline.",
+      "description": "Sie können weiter Änderungen vornehmen. Sie werden synchronisiert, sobald Sie wieder online sind.",
+      "label": "Offline"
+    },
+    "toolbar": {
+      "color": "Farbe"
     }
   }
 }

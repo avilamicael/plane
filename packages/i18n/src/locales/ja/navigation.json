@@ -30,5 +30,39 @@
     "upgrade_plan": "プランをアップグレード",
     "plane_pro": "Plane Pro",
     "business": "ビジネス"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "デフォルトのタブを更新しました。"
+        },
+        "error": {
+          "message": "デフォルトのタブを更新できませんでした。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "タブを非表示にできませんでした。しばらくしてからもう一度お試しください。"
+        }
+      }
+    },
+    "actions": {
+      "show": "表示",
+      "hide_in_more_menu": "「その他」メニューに隠す",
+      "set_as_default": "デフォルトに設定",
+      "clear_default": "デフォルトを解除"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "コマンドを検索..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "アイコンのみ",
+      "icon_with_name": "アイコンと名前"
+    },
+    "dock": "アプリバーを固定",
+    "undock": "アプリバーの固定を解除"
   }
 }

@@ -37,11 +37,38 @@
         "states": {
           "sending": "傳送中…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "大頭貼刪除成功。",
+        "picture_delete_error": "刪除大頭貼時發生錯誤。請再試一次。",
+        "deactivated": "帳戶停用成功。"
+      },
+      "general_form": {
+        "first_name_placeholder": "請輸入您的名字",
+        "last_name_placeholder": "請輸入您的姓氏",
+        "display_name_placeholder": "請輸入您的顯示名稱"
       }
     },
     "preferences": {
       "heading": "偏好設定",
-      "description": "以您工作的方式自訂您的應用程式體驗"
+      "description": "以您工作的方式自訂您的應用程式體驗",
+      "toasts": {
+        "timezone": {
+          "success": "時區更新成功",
+          "error": "時區更新失敗"
+        },
+        "language": {
+          "success": "語言更新成功",
+          "error": "語言更新失敗"
+        },
+        "start_of_week": {
+          "success": "每週首日更新成功"
+        }
+      },
+      "start_of_week": {
+        "title": "每週的第一天",
+        "description": "這會改變應用程式中所有行事曆的顯示方式。"
+      }
     },
     "notifications": {
       "heading": "電子郵件通知",

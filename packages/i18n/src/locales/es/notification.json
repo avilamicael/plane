@@ -52,7 +52,17 @@
       "5_days": "5 días",
       "1_week": "1 semana",
       "2_weeks": "2 semanas",
-      "custom": "Personalizado"
+      "custom": "Personalizado",
+      "modal": {
+        "title": "Personalizar el tiempo de posposición",
+        "pick_a_date": "Elige una fecha",
+        "select_date": "Seleccionar fecha",
+        "pick_a_time": "Elige una hora",
+        "select_a_time": "Selecciona una hora",
+        "no_available_time": "No hay horas disponibles para esta fecha.",
+        "date_required": "Selecciona una fecha",
+        "time_required": "Selecciona una hora"
+      }
     }
   }
 }

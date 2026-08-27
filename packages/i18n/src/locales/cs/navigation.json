@@ -30,5 +30,39 @@
     "upgrade_plan": "Plán upgradu",
     "plane_pro": "Plane Pro",
     "business": "Byznys"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Výchozí karta byla úspěšně aktualizována."
+        },
+        "error": {
+          "message": "Výchozí kartu se nepodařilo aktualizovat. Zkuste to prosím později."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Kartu se nepodařilo skrýt. Zkuste to prosím později."
+        }
+      }
+    },
+    "actions": {
+      "show": "Zobrazit",
+      "hide_in_more_menu": "Skrýt v nabídce Více",
+      "set_as_default": "Nastavit jako výchozí",
+      "clear_default": "Zrušit výchozí"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Hledat příkazy..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Pouze ikona",
+      "icon_with_name": "Ikona s názvem"
+    },
+    "dock": "Ukotvit lištu aplikací",
+    "undock": "Uvolnit lištu aplikací"
   }
 }

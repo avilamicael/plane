@@ -52,7 +52,17 @@
       "5_days": "5 gün",
       "1_week": "1 hafta",
       "2_weeks": "2 hafta",
-      "custom": "Özel"
+      "custom": "Özel",
+      "modal": {
+        "title": "Erteleme süresini özelleştir",
+        "pick_a_date": "Bir tarih seçin",
+        "select_date": "Tarih seç",
+        "pick_a_time": "Bir saat seçin",
+        "select_a_time": "Saat seçin",
+        "no_available_time": "Bu tarih için uygun saat yok.",
+        "date_required": "Lütfen bir tarih seçin",
+        "time_required": "Lütfen bir saat seçin"
+      }
     }
   }
 }

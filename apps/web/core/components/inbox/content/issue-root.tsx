@@ -12,6 +12,7 @@ import type { EditorRefApi } from "@plane/editor";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { TIssue, TNameDescriptionLoader } from "@plane/types";
 import { EFileAssetType, EInboxIssueSource, EInboxIssueStatus } from "@plane/types";
+import { useTranslation } from "@plane/i18n";
 // components
 import { DescriptionVersionsRoot } from "@/components/core/description-versions";
 import { DescriptionInput } from "@/components/editor/rich-text/description-input";
@@ -46,6 +47,8 @@ type Props = {
 };
 
 export const InboxIssueMainContent = observer(function InboxIssueMainContent(props: Props) {
+  const { t } = useTranslation();
+
   const { workspaceSlug, projectId, inboxIssue, isEditable, isSubmitting, setIsSubmitting } = props;
   // refs
   const editorRef = useRef<EditorRefApi>(null);
@@ -82,16 +85,16 @@ export const InboxIssueMainContent = observer(function InboxIssueMainContent(pro
         try {
           await removeIssue(workspaceSlug, projectId, _issueId);
           setToast({
-            title: "Success!",
+            title: t("common.toast.success"),
             type: TOAST_TYPE.SUCCESS,
-            message: "Work item deleted successfully",
+            message: t("inbox_issue.modals.delete.success"),
           });
         } catch (error) {
           console.log("Error in deleting work item:", error);
           setToast({
-            title: "Error!",
+            title: t("common.toast.error"),
             type: TOAST_TYPE.ERROR,
-            message: "Work item delete failed",
+            message: t("issue.toasts.delete.error.message"),
           });
         }
       },
@@ -102,7 +105,7 @@ export const InboxIssueMainContent = observer(function InboxIssueMainContent(pro
           setToast({
             title: "Work item update failed",
             type: TOAST_TYPE.ERROR,
-            message: "Work item update failed",
+            message: t("issue.toasts.update.error.message"),
           });
         }
       },

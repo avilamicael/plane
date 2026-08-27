@@ -11,6 +11,7 @@ import { MessageSquare, MoreVertical } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
 // plane imports
 import type { EditorRefApi } from "@plane/editor";
+import { useTranslation } from "@plane/i18n";
 import { CheckIcon, CloseIcon } from "@plane/propel/icons";
 import type { TIssuePublicComment } from "@plane/types";
 import { getFileURL } from "@plane/utils";
@@ -32,6 +33,8 @@ type Props = {
 
 export const CommentCard = observer(function CommentCard(props: Props) {
   const { anchor, comment } = props;
+  // i18n
+  const { t } = useTranslation();
   // store hooks
   const { peekId, deleteIssueComment, updateIssueComment, uploadCommentAsset } = useIssueDetails();
   const { data: currentUser } = useUser();
@@ -199,7 +202,7 @@ export const CommentCard = observer(function CommentCard(props: Props) {
                         active ? "bg-layer-transparent-hover" : ""
                       }`}
                     >
-                      Edit
+                      {t("common.actions.edit")}
                     </button>
                   </div>
                 )}
@@ -214,7 +217,7 @@ export const CommentCard = observer(function CommentCard(props: Props) {
                         active ? "bg-layer-transparent-hover" : ""
                       }`}
                     >
-                      Delete
+                      {t("common.actions.delete")}
                     </button>
                   </div>
                 )}

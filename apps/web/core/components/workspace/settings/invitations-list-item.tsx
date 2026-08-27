@@ -60,14 +60,14 @@ export const WorkspaceInvitationsListItem = observer(function WorkspaceInvitatio
       await deleteMemberInvitation(workspaceSlug.toString(), invitationDetails.id);
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Success!",
-        message: "Invitation removed successfully.",
+        title: t("common.toast.success"),
+        message: t("workspace_settings.settings.members.invitation_removed"),
       });
     } catch (err: unknown) {
       const error = err as { error?: string };
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
+        title: t("common.toast.error"),
         message: error?.error || "Something went wrong. Please try again.",
       });
     }
@@ -161,7 +161,7 @@ export const WorkspaceInvitationsListItem = observer(function WorkspaceInvitatio
                 const error = err as { error?: string };
                 setToast({
                   type: TOAST_TYPE.ERROR,
-                  title: "Error!",
+                  title: t("common.toast.error"),
                   message: error?.error || "An error occurred while updating member role. Please try again.",
                 });
               });

@@ -110,6 +110,126 @@
       "label": "Hapus dari koleksi",
       "success_message": "Halaman dihapus dari koleksi.",
       "error_message": "Halaman tidak dapat dihapus dari koleksi. Silakan coba lagi."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Tautan halaman disalin ke clipboard."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Halaman berhasil diduplikasi."
+        },
+        "error": {
+          "message": "Halaman tidak dapat diduplikasi. Silakan coba lagi nanti."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Halaman berhasil dipulihkan."
+        },
+        "error": {
+          "message": "Halaman tidak dapat dipulihkan. Silakan coba lagi nanti."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Halaman berhasil diarsipkan."
+        },
+        "error": {
+          "message": "Halaman tidak dapat diarsipkan. Silakan coba lagi nanti."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Halaman ditambahkan ke favorit."
+        },
+        "error": {
+          "message": "Halaman tidak dapat ditambahkan ke favorit. Silakan coba lagi nanti."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Halaman dihapus dari favorit."
+        },
+        "error": {
+          "message": "Halaman tidak dapat dihapus dari favorit. Silakan coba lagi nanti."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Halaman berhasil dikunci."
+        },
+        "error": {
+          "message": "Halaman tidak dapat dikunci. Silakan coba lagi nanti."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Halaman berhasil dibuka kuncinya."
+        },
+        "error": {
+          "message": "Halaman tidak dapat dibuka kuncinya. Silakan coba lagi nanti."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "Halaman telah ditandai sebagai publik dan dipindahkan ke bagian publik."
+        },
+        "error": {
+          "message": "Halaman tidak dapat ditandai sebagai publik. Silakan coba lagi."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "Halaman telah ditandai sebagai pribadi dan dipindahkan ke bagian pribadi."
+        },
+        "error": {
+          "message": "Halaman tidak dapat ditandai sebagai pribadi. Silakan coba lagi."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Halaman berhasil dihapus."
+        },
+        "error": {
+          "message": "Halaman tidak dapat dihapus. Silakan coba lagi."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Halaman berhasil diekspor."
+        },
+        "error": {
+          "message": "Halaman tidak dapat diekspor. Silakan coba lagi nanti."
+        }
+      }
+    },
+    "create_page": "Buat halaman",
+    "delete_page": "Hapus halaman",
+    "export": {
+      "title": "Ekspor halaman",
+      "format": "Format ekspor",
+      "include_content": "Sertakan konten",
+      "page_format": "Format halaman",
+      "content_variety": {
+        "everything": "Semuanya",
+        "no_images": "Tanpa gambar"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Kunci",
+      "locked": "Terkunci",
+      "unlocked": "Tidak terkunci"
+    },
+    "offline_badge": {
+      "heading": "Anda sedang offline.",
+      "description": "Anda dapat terus melakukan perubahan. Perubahan akan disinkronkan saat Anda kembali online.",
+      "label": "Offline"
+    },
+    "toolbar": {
+      "color": "Warna"
     }
   }
 }

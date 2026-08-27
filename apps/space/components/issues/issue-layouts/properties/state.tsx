@@ -6,6 +6,7 @@
 
 import { observer } from "mobx-react";
 // plane ui
+import { useTranslation } from "@plane/i18n";
 import { StateGroupIcon } from "@plane/propel/icons";
 import { Tooltip } from "@plane/propel/tooltip";
 import type { TStateGroups } from "@plane/types";
@@ -30,6 +31,8 @@ type Props = {
 
 export const IssueBlockState = observer(function IssueBlockState(props: Props) {
   const { shouldShowBorder = true } = props;
+  // i18n
+  const { t } = useTranslation();
   // store hooks
   const { getStateById } = useStates();
   // derived values
@@ -37,7 +40,7 @@ export const IssueBlockState = observer(function IssueBlockState(props: Props) {
   if (!state) return null;
 
   return (
-    <Tooltip tooltipHeading="State" tooltipContent={state.name}>
+    <Tooltip tooltipHeading={t("common.state")} tooltipContent={state.name}>
       <div
         className={cn("flex h-full w-full items-center justify-between gap-1 rounded-sm px-2.5 py-1 text-11", {
           "border-[0.5px] border-strong": shouldShowBorder,

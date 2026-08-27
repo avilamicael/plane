@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "댓글을 추가하려면 로그인하세요"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "클릭하여 추천",
       "click_to_downvote": "클릭하여 비추천",
       "click_to_view_upvotes": "클릭하여 추천 목록 보기",
-      "click_to_view_downvotes": "클릭하여 비추천 목록 보기"
+      "click_to_view_downvotes": "클릭하여 비추천 목록 보기",
+      "no_upvotes": "아직 찬성 투표가 없습니다",
+      "no_downvotes": "아직 반대 투표가 없습니다",
+      "and_more": "외 {count}명"
     },
     "activity": {
       "created_the_work_item": "님이 작업 항목을 만들었습니다.",
       "created_the_work_item_via": "님이 다음을 통해 작업 항목을 만들었습니다:",
-      "deleted_a_work_item": "님이 작업 항목을 삭제했습니다."
+      "deleted_a_work_item": "님이 작업 항목을 삭제했습니다.",
+      "set_the_name_to": "님이 이름을 다음으로 설정했습니다:",
+      "updated_the_description": "님이 설명을 업데이트했습니다",
+      "set_the_state_to": "님이 상태를 다음으로 설정했습니다:",
+      "set_the_priority_to": "님이 우선순위를 다음으로 설정했습니다:",
+      "added_a_new_assignee": "님이 새 담당자를 추가했습니다:",
+      "removed_the_assignee": "님이 담당자를 제거했습니다:",
+      "added_a_new_label": "님이 새 레이블을 추가했습니다:",
+      "removed_the_label": "님이 레이블을 제거했습니다:",
+      "set_the_start_date_to": "님이 시작 날짜를 다음으로 설정했습니다:",
+      "removed_the_start_date": "님이 시작 날짜를 제거했습니다",
+      "set_the_due_date_to": "님이 마감일을 다음으로 설정했습니다:",
+      "removed_the_due_date": "님이 마감일을 제거했습니다",
+      "set_the_parent_to": "님이 상위 항목을 다음으로 설정했습니다:",
+      "removed_the_parent": "님이 상위 항목을 제거했습니다",
+      "set_the_estimate_point_to": "님이 추정 포인트를 다음으로 설정했습니다:",
+      "removed_the_estimate_point": "님이 추정 포인트를 제거했습니다",
+      "added_this_work_item_to_the_cycle": "님이 이 작업 항목을 다음 사이클에 추가했습니다:",
+      "set_the_cycle_to": "님이 사이클을 다음으로 설정했습니다:",
+      "removed_the_work_item_from_the_cycle": "님이 작업 항목을 다음 사이클에서 제거했습니다:",
+      "added_this_work_item_to_the_module": "님이 이 작업 항목을 다음 모듈에 추가했습니다:",
+      "set_the_module_to": "님이 모듈을 다음으로 설정했습니다:",
+      "removed_the_work_item_from_the_module": "님이 작업 항목을 다음 모듈에서 제거했습니다:",
+      "added_the_link": "님이 추가했습니다:",
+      "updated_the_link": "님이 업데이트했습니다:",
+      "removed_the_link": "님이 제거했습니다:",
+      "link_noun": "링크",
+      "uploaded_a_new_attachment": "님이 새 첨부 파일을 업로드했습니다",
+      "removed_an_attachment": "님이 첨부 파일을 제거했습니다",
+      "restored_the_work_item": "님이 작업 항목을 복원했습니다",
+      "archived_the_work_item": "님이 작업 항목을 보관했습니다",
+      "declined_this_work_item_from_intake": "님이 이 작업 항목을 Intake에서 거부했습니다.",
+      "snoozed_this_work_item": "님이 이 작업 항목을 스누즈했습니다.",
+      "accepted_this_work_item_from_intake": "님이 이 작업 항목을 Intake에서 수락했습니다.",
+      "declined_this_work_item_from_intake_as_duplicate": "님이 이 작업 항목을 중복으로 표시하여 Intake에서 거부했습니다.",
+      "updated_intake_work_item_status": "님이 Intake 작업 항목 상태를 업데이트했습니다.",
+      "marked_this_work_item_is_blocking_work_item": "님이 이 작업 항목이 다음 작업 항목을 차단함으로 표시했습니다:",
+      "removed_the_blocking_work_item": "님이 다음 작업 항목의 차단을 해제했습니다:",
+      "marked_this_work_item_is_being_blocked_by": "님이 이 작업 항목이 다음에 의해 차단됨으로 표시했습니다:",
+      "removed_this_work_item_being_blocked_by_work_item": "님이 이 작업 항목이 다음에 의해 차단된 상태를 해제했습니다:",
+      "marked_this_work_item_as_duplicate_of": "님이 이 작업 항목을 다음의 중복으로 표시했습니다:",
+      "removed_this_work_item_as_a_duplicate_of": "님이 이 작업 항목의 다음과의 중복 표시를 해제했습니다:",
+      "marked_that_this_work_item_relates_to": "님이 이 작업 항목이 다음과 관련됨으로 표시했습니다:",
+      "removed_the_relation_from": "님이 다음과의 관계를 제거했습니다:",
+      "connector_for": "대상:",
+      "connector_to": "대상:",
+      "connector_from": "대상:",
+      "connector_of": "대상:"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "반응이 성공적으로 추가되었습니다"
+          },
+          "error": {
+            "message": "반응 추가에 실패했습니다"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "반응이 성공적으로 제거되었습니다"
+          },
+          "error": {
+            "message": "반응 제거에 실패했습니다"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "첨부 파일이 성공적으로 제거되었습니다"
+          },
+          "error": {
+            "message": "첨부 파일을 제거할 수 없습니다"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "작업 항목을 하나 이상 선택해주세요."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "작업 항목이 성공적으로 삭제되었습니다!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "마감일은 작업 항목의 시작일보다 이전일 수 없습니다."
+      },
+      "update_dates": {
+        "error": {
+          "message": "작업 항목 날짜를 업데이트하는 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "작업 항목을 프로젝트로 이동하지 못했습니다. 다시 시도해주세요."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "작업 항목 삭제에 실패했습니다"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "작업 항목 업데이트에 실패했습니다"
+        }
+      },
+      "editor_processing": {
+        "message": "편집기가 아직 변경 사항을 처리 중입니다. 잠시 기다린 후 진행해주세요."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "작업 항목 제목이 설명을 생성하기에 충분하지 않습니다. 다른 제목으로 시도해주세요."
+        }
+      }
     }
   },
   "sub_work_item": {

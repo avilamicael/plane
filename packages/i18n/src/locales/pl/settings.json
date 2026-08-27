@@ -37,11 +37,38 @@
         "states": {
           "sending": "Wysyłanie…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Zdjęcie profilowe pomyślnie usunięto.",
+        "picture_delete_error": "Wystąpił błąd podczas usuwania zdjęcia profilowego. Spróbuj ponownie.",
+        "deactivated": "Konto pomyślnie dezaktywowano."
+      },
+      "general_form": {
+        "first_name_placeholder": "Wprowadź swoje imię",
+        "last_name_placeholder": "Wprowadź swoje nazwisko",
+        "display_name_placeholder": "Wprowadź swoją nazwę wyświetlaną"
       }
     },
     "preferences": {
       "heading": "Preferencje",
-      "description": "Dostosuj sposób korzystania z aplikacji do swojego stylu pracy"
+      "description": "Dostosuj sposób korzystania z aplikacji do swojego stylu pracy",
+      "toasts": {
+        "timezone": {
+          "success": "Strefę czasową pomyślnie zaktualizowano",
+          "error": "Nie udało się zaktualizować strefy czasowej"
+        },
+        "language": {
+          "success": "Język pomyślnie zaktualizowano",
+          "error": "Nie udało się zaktualizować języka"
+        },
+        "start_of_week": {
+          "success": "Pierwszy dzień tygodnia pomyślnie zaktualizowano"
+        }
+      },
+      "start_of_week": {
+        "title": "Pierwszy dzień tygodnia",
+        "description": "Zmieni to wygląd wszystkich kalendarzy w aplikacji."
+      }
     },
     "notifications": {
       "heading": "Powiadomienia e-mail",

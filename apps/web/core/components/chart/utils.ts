@@ -6,6 +6,7 @@
 
 import { getWeekOfMonth, isValid } from "date-fns";
 import { CHART_X_AXIS_DATE_PROPERTIES, ChartXAxisDateGrouping, TO_CAPITALIZE_PROPERTIES } from "@plane/constants";
+import { i18nInstance } from "@plane/i18n";
 import type { ChartXAxisProperty, TChart, TChartDatum } from "@plane/types";
 import {
   capitalizeFirstLetter,
@@ -17,7 +18,7 @@ import {
 //
 
 const getDateGroupingName = (date: string, dateGrouping: ChartXAxisDateGrouping): string => {
-  if (!date || ["none", "null"].includes(date.toLowerCase())) return "None";
+  if (!date || ["none", "null"].includes(date.toLowerCase())) return i18nInstance.t("common.none");
 
   const formattedData = new Date(date);
   const isValidDate = isValid(formattedData);
@@ -38,7 +39,10 @@ const getDateGroupingName = (date: string, dateGrouping: ChartXAxisDateGrouping)
       break;
     case ChartXAxisDateGrouping.WEEK: {
       const month = renderFormattedDate(formattedData, "MMM");
-      parsedName = `${month}, Week ${getWeekOfMonth(formattedData)}`;
+      parsedName = i18nInstance.t("chart.week_of_month", {
+        month,
+        week: getWeekOfMonth(formattedData),
+      });
       break;
     }
     case ChartXAxisDateGrouping.MONTH:

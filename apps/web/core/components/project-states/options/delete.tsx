@@ -14,6 +14,7 @@ import { Tooltip } from "@plane/propel/tooltip";
 import type { IState, TStateOperationsCallbacks } from "@plane/types";
 import { AlertModalCore } from "@plane/ui";
 import { cn } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 
@@ -24,6 +25,8 @@ type TStateDelete = {
 };
 
 export const StateDelete = observer(function StateDelete(props: TStateDelete) {
+  const { t } = useTranslation();
+
   const { totalStates, state, deleteStateCallback } = props;
   // hooks
   const { isMobile } = usePlatformOS();
@@ -46,15 +49,14 @@ export const StateDelete = observer(function StateDelete(props: TStateDelete) {
       if (errorStatus.status === 400) {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message:
-            "This state contains some work items within it, please move them to some other state to delete this state.",
+          title: t("common.toast.error"),
+          message: t("project_settings.states.toasts.delete.error.has_work_items"),
         });
       } else {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "State could not be deleted. Please try again.",
+          title: t("common.toast.error"),
+          message: t("project_settings.states.toasts.delete.error.message"),
         });
       }
       setIsDelete(false);
@@ -68,7 +70,7 @@ export const StateDelete = observer(function StateDelete(props: TStateDelete) {
         handleSubmit={handleDeleteState}
         isSubmitting={isDelete}
         isOpen={isDeleteModal}
-        title="Delete State"
+        title={t("project_settings.states.delete_state")}
         content={
           <>
             Are you sure you want to delete state- <span className="font-medium text-primary">{state?.name}</span>? All

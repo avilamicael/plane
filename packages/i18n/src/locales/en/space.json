@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Error",
+          "message": "Something went wrong. Please try again."
+        },
+        "template": {
+          "try_again": "{reason}. Please try again.",
+          "contact_admin": "{reason}. Please contact your administrator."
+        },
+        "reason": {
+          "instance_not_configured": "Instance not configured",
+          "signup_disabled": "Sign up disabled",
+          "invalid_password": "Invalid password",
+          "smtp_not_configured": "SMTP not configured",
+          "invalid_email": "Invalid email",
+          "email_required": "Email required",
+          "email_and_password_required": "Email and password required",
+          "email_and_code_required": "Email and code required",
+          "authentication_failed": "Authentication failed",
+          "invalid_magic_code": "Invalid magic code",
+          "expired_magic_code": "Expired magic code",
+          "oauth_not_configured": "OAuth not configured",
+          "google_not_configured": "Google not configured",
+          "github_not_configured": "GitHub not configured",
+          "gitlab_not_configured": "GitLab not configured",
+          "google_oauth_provider_error": "Google OAuth provider error",
+          "github_oauth_provider_error": "GitHub OAuth provider error",
+          "gitlab_oauth_provider_error": "GitLab OAuth provider error",
+          "invalid_password_token": "Invalid password token",
+          "expired_password_token": "Expired password token",
+          "password_required": "Password required",
+          "incorrect_old_password": "Incorrect old password",
+          "invalid_new_password": "Invalid new password",
+          "password_already_set": "Password already set",
+          "admin_already_exist": "Admin already exists",
+          "admin_email_password_first_name_required": "Email, password and first name required",
+          "invalid_admin_email": "Invalid admin email",
+          "invalid_admin_password": "Invalid admin password"
+        },
+        "title": {
+          "user_already_exist": "User already exists",
+          "user_does_not_exist": "User does not exist",
+          "user_account_deactivated": "User account deactivated",
+          "bot_user_login_forbidden": "Sign in not allowed",
+          "admin_user_already_exist": "Admin user already exists",
+          "admin_user_does_not_exist": "Admin user does not exist"
+        },
+        "message": {
+          "bot_user_login_forbidden": "This account cannot be used to sign in. Please use a personal account.",
+          "user_account_deactivated": "User account deactivated. Please contact {contact}.",
+          "default_contact": "administrator",
+          "user_already_exist": "Your account is already registered.",
+          "user_does_not_exist": "No account found.",
+          "admin_user_already_exist": "Admin user already exists.",
+          "admin_user_does_not_exist": "Admin user does not exist.",
+          "link": {
+            "sign_in_now": "Sign in now",
+            "create_one": "Create one to get started"
+          }
+        }
+      }
+    }
+  }
+}

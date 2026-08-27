@@ -63,7 +63,8 @@
             "required": "Kami perlu alamat email untuk mengundang mereka.",
             "invalid": "Email tidak valid"
           }
-        }
+        },
+        "invitation_removed": "Undangan berhasil dihapus."
       },
       "billing_and_plans": {
         "heading": "Penagihan & Rencana",
@@ -147,8 +148,18 @@
           },
           "secret_key_not_copied": {
             "message": "Terjadi kesalahan saat menyalin kunci rahasia."
+          },
+          "deleted": {
+            "message": "Webhook berhasil dihapus."
+          },
+          "not_deleted": {
+            "message": "Webhook tidak dapat dihapus. Silakan coba lagi."
+          },
+          "secret_key_regenerated": {
+            "message": "Kunci baru berhasil dibuat ulang."
           }
-        }
+        },
+        "delete_webhook": "Hapus webhook"
       },
       "api_tokens": {
         "heading": "Token API",
@@ -170,7 +181,8 @@
             "title": "Kesalahan!",
             "message": "Token API tidak dapat dihapus"
           }
-        }
+        },
+        "expiration_required": "Silakan pilih tanggal kedaluwarsa."
       },
       "integrations": {
         "title": "Integrasi",

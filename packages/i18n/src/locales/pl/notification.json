@@ -52,7 +52,17 @@
       "5_days": "5 dni",
       "1_week": "1 tydzień",
       "2_weeks": "2 tygodnie",
-      "custom": "Niestandardowe"
+      "custom": "Niestandardowe",
+      "modal": {
+        "title": "Dostosuj czas odłożenia",
+        "pick_a_date": "Wybierz datę",
+        "select_date": "Wybierz datę",
+        "pick_a_time": "Wybierz godzinę",
+        "select_a_time": "Wybierz godzinę",
+        "no_available_time": "Brak dostępnych godzin dla tej daty.",
+        "date_required": "Wybierz datę",
+        "time_required": "Wybierz godzinę"
+      }
     }
   }
 }

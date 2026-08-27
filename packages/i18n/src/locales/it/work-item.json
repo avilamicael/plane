@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Accedi per aggiungere il tuo commento"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Clicca per votare a favore",
       "click_to_downvote": "Clicca per votare contro",
       "click_to_view_upvotes": "Clicca per vedere i voti a favore",
-      "click_to_view_downvotes": "Clicca per vedere i voti contro"
+      "click_to_view_downvotes": "Clicca per vedere i voti contro",
+      "no_upvotes": "Nessun voto positivo finora",
+      "no_downvotes": "Nessun voto negativo finora",
+      "and_more": "e altri {count}"
     },
     "activity": {
       "created_the_work_item": "ha creato l’elemento di lavoro.",
       "created_the_work_item_via": "ha creato l’elemento di lavoro tramite",
-      "deleted_a_work_item": "ha eliminato un elemento di lavoro."
+      "deleted_a_work_item": "ha eliminato un elemento di lavoro.",
+      "set_the_name_to": "ha impostato il nome su",
+      "updated_the_description": "ha aggiornato la descrizione",
+      "set_the_state_to": "ha impostato lo stato su",
+      "set_the_priority_to": "ha impostato la priorità su",
+      "added_a_new_assignee": "ha aggiunto un nuovo assegnatario",
+      "removed_the_assignee": "ha rimosso l’assegnatario",
+      "added_a_new_label": "ha aggiunto una nuova etichetta",
+      "removed_the_label": "ha rimosso l’etichetta",
+      "set_the_start_date_to": "ha impostato la data di inizio al",
+      "removed_the_start_date": "ha rimosso la data di inizio",
+      "set_the_due_date_to": "ha impostato la scadenza al",
+      "removed_the_due_date": "ha rimosso la scadenza",
+      "set_the_parent_to": "ha impostato l’elemento padre su",
+      "removed_the_parent": "ha rimosso l’elemento padre",
+      "set_the_estimate_point_to": "ha impostato il punto di stima su",
+      "removed_the_estimate_point": "ha rimosso il punto di stima",
+      "added_this_work_item_to_the_cycle": "ha aggiunto questo elemento di lavoro al ciclo",
+      "set_the_cycle_to": "ha impostato il ciclo su",
+      "removed_the_work_item_from_the_cycle": "ha rimosso l’elemento di lavoro dal ciclo",
+      "added_this_work_item_to_the_module": "ha aggiunto questo elemento di lavoro al modulo",
+      "set_the_module_to": "ha impostato il modulo su",
+      "removed_the_work_item_from_the_module": "ha rimosso l’elemento di lavoro dal modulo",
+      "added_the_link": "ha aggiunto il",
+      "updated_the_link": "ha aggiornato il",
+      "removed_the_link": "ha rimosso questo",
+      "link_noun": "collegamento",
+      "uploaded_a_new_attachment": "ha caricato un nuovo allegato",
+      "removed_an_attachment": "ha rimosso un allegato",
+      "restored_the_work_item": "ha ripristinato l’elemento di lavoro",
+      "archived_the_work_item": "ha archiviato l’elemento di lavoro",
+      "declined_this_work_item_from_intake": "ha rifiutato questo elemento di lavoro in Intake.",
+      "snoozed_this_work_item": "ha posticipato questo elemento di lavoro.",
+      "accepted_this_work_item_from_intake": "ha accettato questo elemento di lavoro in Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "ha rifiutato questo elemento di lavoro in Intake contrassegnandolo come duplicato.",
+      "updated_intake_work_item_status": "ha aggiornato lo stato dell’elemento di lavoro in Intake.",
+      "marked_this_work_item_is_blocking_work_item": "ha indicato che questo elemento di lavoro sta bloccando l’elemento di lavoro",
+      "removed_the_blocking_work_item": "ha rimosso il blocco dell’elemento di lavoro",
+      "marked_this_work_item_is_being_blocked_by": "ha indicato che questo elemento di lavoro è bloccato da",
+      "removed_this_work_item_being_blocked_by_work_item": "ha rimosso il blocco di questo elemento di lavoro da parte di",
+      "marked_this_work_item_as_duplicate_of": "ha contrassegnato questo elemento di lavoro come duplicato di",
+      "removed_this_work_item_as_a_duplicate_of": "ha rimosso il contrassegno di duplicato di questo elemento di lavoro rispetto a",
+      "marked_that_this_work_item_relates_to": "ha indicato che questo elemento di lavoro è correlato a",
+      "removed_the_relation_from": "ha rimosso la relazione con",
+      "connector_for": "in",
+      "connector_to": "a",
+      "connector_from": "da",
+      "connector_of": "di"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reazione creata con successo"
+          },
+          "error": {
+            "message": "Creazione della reazione non riuscita"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reazione rimossa con successo"
+          },
+          "error": {
+            "message": "Rimozione della reazione non riuscita"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "L'allegato è stato rimosso con successo"
+          },
+          "error": {
+            "message": "Impossibile rimuovere l'allegato"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Seleziona almeno un elemento di lavoro."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Elementi di lavoro eliminati con successo!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "La data di scadenza non può precedere la data di inizio dell'elemento di lavoro."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Errore durante l'aggiornamento delle date dell'elemento di lavoro. Riprova più tardi."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Impossibile spostare l'elemento di lavoro nel progetto. Riprova."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Eliminazione dell'elemento di lavoro non riuscita"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Aggiornamento dell'elemento di lavoro non riuscito"
+        }
+      },
+      "editor_processing": {
+        "message": "L'editor sta ancora elaborando le modifiche. Attendi prima di continuare."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Il titolo dell'elemento di lavoro non è abbastanza descrittivo per generare la descrizione. Prova con un altro titolo."
+        }
+      }
     }
   },
   "sub_work_item": {

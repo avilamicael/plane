@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Configurações do projeto",
     "general": {
       "enter_project_id": "Inserir ID do projeto",
       "please_select_a_timezone": "Por favor, selecione um fuso horário",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Nenhum estado disponível para o grupo {groupKey}",
         "description": "Por favor, crie um novo estado"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Estado criado com sucesso."
+          },
+          "error": {
+            "name_exists": "Já existe um estado com esse nome. Tente novamente com outro nome."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Estado atualizado com sucesso."
+          },
+          "error": {
+            "name_exists": "Já existe outro estado com o mesmo nome. Tente novamente com outro nome.",
+            "message": "Não foi possível atualizar o estado. Tente novamente."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Não foi possível excluir o estado. Tente novamente.",
+            "has_work_items": "Este estado contém itens de trabalho. Mova-os para outro estado antes de excluí-lo."
+          }
+        }
+      },
+      "delete_state": "Excluir estado"
     },
     "labels": {
       "heading": "Etiquetas",
@@ -53,7 +80,8 @@
       "label_max_char": "O nome da etiqueta não deve exceder 255 caracteres",
       "toast": {
         "error": "Erro ao atualizar a etiqueta"
-      }
+      },
+      "delete_label": "Excluir etiqueta"
     },
     "estimates": {
       "heading": "Estimativas",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Erro",
             "message": "Algo deu errado"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "A estimativa foi removida do seu projeto."
+          },
+          "error": {
+            "message": "Não foi possível excluir a estimativa. Tente novamente."
           }
         }
       },

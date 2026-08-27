@@ -5,6 +5,7 @@
  */
 
 import { observer } from "mobx-react";
+import { useTranslation } from "@plane/i18n";
 import { LabelPropertyIcon } from "@plane/propel/icons";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
@@ -21,6 +22,7 @@ export const IssueLabelActivity = observer(function IssueLabelActivity(props: TI
     activity: { getActivityById },
   } = useIssueDetail();
   const { getLabelById } = useLabel();
+  const { t } = useTranslation();
 
   const activity = getActivityById(activityId);
   const oldLabelColor = getLabelById(activity?.old_identifier ?? "")?.color;
@@ -34,12 +36,17 @@ export const IssueLabelActivity = observer(function IssueLabelActivity(props: TI
       ends={ends}
     >
       <>
-        {activity.old_value === "" ? `added a new label ` : `removed the label `}
+        {activity.old_value === ""
+          ? `${t("issue.activity.added_a_new_label")} `
+          : `${t("issue.activity.removed_the_label")} `}
         <LabelActivityChip
           name={activity.old_value === "" ? activity.new_value : activity.old_value}
           color={activity.old_value === "" ? newLabelColor : oldLabelColor}
         />
-        {showIssue && (activity.old_value === "" ? ` to ` : ` from `)}
+        {showIssue &&
+          (activity.old_value === ""
+            ? ` ${t("issue.activity.connector_to")} `
+            : ` ${t("issue.activity.connector_from")} `)}
         {showIssue && <IssueLink activityId={activityId} />}
       </>
     </IssueActivityBlockComponent>

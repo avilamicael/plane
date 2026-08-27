@@ -5,8 +5,9 @@
  */
 
 import { Link } from "react-router";
-// helpers
+// plane imports
 import { SUPPORT_EMAIL } from "@plane/constants";
+import { i18nInstance } from "@plane/i18n";
 
 export enum EPageTypes {
   INIT = "INIT",
@@ -92,256 +93,278 @@ export type TAuthErrorInfo = {
   message: React.ReactNode;
 };
 
-const errorCodeMessages: {
+const AUTH_ERRORS_KEY = "space.auth.errors";
+
+/**
+ * Translates outside of the React tree. `authErrorHandler` is a plain function called
+ * from effects and promise callbacks, so the `useTranslation` hook is not available here.
+ * Mirrors the hook's guard: anything that is not a string falls back to the key.
+ */
+const t = (key: string, params?: Record<string, unknown>): string => {
+  const value = params === undefined ? i18nInstance.t(key) : i18nInstance.t(key, params);
+  return typeof value === "string" ? value : key;
+};
+
+/** `<reason>. Please try again.` */
+const tryAgain = (reasonKey: string): string =>
+  t(`${AUTH_ERRORS_KEY}.template.try_again`, { reason: t(`${AUTH_ERRORS_KEY}.reason.${reasonKey}`) });
+
+/** `<reason>. Please contact your administrator.` */
+const contactAdmin = (reasonKey: string): string =>
+  t(`${AUTH_ERRORS_KEY}.template.contact_admin`, { reason: t(`${AUTH_ERRORS_KEY}.reason.${reasonKey}`) });
+
+const reason = (reasonKey: string): string => t(`${AUTH_ERRORS_KEY}.reason.${reasonKey}`);
+
+const title = (titleKey: string): string => t(`${AUTH_ERRORS_KEY}.title.${titleKey}`);
+
+type TErrorLinkProps = {
+  /** Key under `space.auth.errors.message` holding the sentence that precedes the link. */
+  messageKey: string;
+  /** Key under `space.auth.errors.message.link` holding the link label. */
+  linkKey: string;
+  to: string;
+};
+
+const ErrorMessageWithLink = ({ messageKey, linkKey, to }: TErrorLinkProps) => (
+  <div>
+    {t(`${AUTH_ERRORS_KEY}.message.${messageKey}`)}&nbsp;
+    <Link className="font-medium underline underline-offset-4 transition-all hover:font-bold" to={to}>
+      {t(`${AUTH_ERRORS_KEY}.message.link.${linkKey}`)}
+    </Link>
+  </div>
+);
+
+/**
+ * Built on every call instead of once at module load: the active language can change
+ * after this module is imported, and a frozen map would keep serving the boot language.
+ */
+const getErrorCodeMessages = (): {
   [key in EAuthenticationErrorCodes]: { title: string; message: (email?: string) => React.ReactNode };
-} = {
+} => ({
   // global
   [EAuthenticationErrorCodes.INSTANCE_NOT_CONFIGURED]: {
-    title: `Instance not configured`,
-    message: () => `Instance not configured. Please contact your administrator.`,
+    title: reason("instance_not_configured"),
+    message: () => contactAdmin("instance_not_configured"),
   },
   [EAuthenticationErrorCodes.SIGNUP_DISABLED]: {
-    title: `Sign up disabled`,
-    message: () => `Sign up disabled. Please contact your administrator.`,
+    title: reason("signup_disabled"),
+    message: () => contactAdmin("signup_disabled"),
   },
   [EAuthenticationErrorCodes.INVALID_PASSWORD]: {
-    title: `Invalid password`,
-    message: () => `Invalid password. Please try again.`,
+    title: reason("invalid_password"),
+    message: () => tryAgain("invalid_password"),
   },
   [EAuthenticationErrorCodes.SMTP_NOT_CONFIGURED]: {
-    title: `SMTP not configured`,
-    message: () => `SMTP not configured. Please contact your administrator.`,
+    title: reason("smtp_not_configured"),
+    message: () => contactAdmin("smtp_not_configured"),
   },
 
   // email check in both sign up and sign in
   [EAuthenticationErrorCodes.INVALID_EMAIL]: {
-    title: `Invalid email`,
-    message: () => `Invalid email. Please try again.`,
+    title: reason("invalid_email"),
+    message: () => tryAgain("invalid_email"),
   },
   [EAuthenticationErrorCodes.EMAIL_REQUIRED]: {
-    title: `Email required`,
-    message: () => `Email required. Please try again.`,
+    title: reason("email_required"),
+    message: () => tryAgain("email_required"),
   },
 
   // sign up
   [EAuthenticationErrorCodes.USER_ALREADY_EXIST]: {
-    title: `User already exists`,
+    title: title("user_already_exist"),
     message: (email = undefined) => (
-      <div>
-        Your account is already registered.&nbsp;
-        <Link
-          className="font-medium underline underline-offset-4 transition-all hover:font-bold"
-          to={`/sign-in${email ? `?email=${encodeURIComponent(email)}` : ``}`}
-        >
-          Sign In
-        </Link>
-        &nbsp;now.
-      </div>
+      <ErrorMessageWithLink
+        messageKey="user_already_exist"
+        linkKey="sign_in_now"
+        to={`/sign-in${email ? `?email=${encodeURIComponent(email)}` : ``}`}
+      />
     ),
   },
   [EAuthenticationErrorCodes.REQUIRED_EMAIL_PASSWORD_SIGN_UP]: {
-    title: `Email and password required`,
-    message: () => `Email and password required. Please try again.`,
+    title: reason("email_and_password_required"),
+    message: () => tryAgain("email_and_password_required"),
   },
   [EAuthenticationErrorCodes.AUTHENTICATION_FAILED_SIGN_UP]: {
-    title: `Authentication failed`,
-    message: () => `Authentication failed. Please try again.`,
+    title: reason("authentication_failed"),
+    message: () => tryAgain("authentication_failed"),
   },
   [EAuthenticationErrorCodes.INVALID_EMAIL_SIGN_UP]: {
-    title: `Invalid email`,
-    message: () => `Invalid email. Please try again.`,
+    title: reason("invalid_email"),
+    message: () => tryAgain("invalid_email"),
   },
   [EAuthenticationErrorCodes.MAGIC_SIGN_UP_EMAIL_CODE_REQUIRED]: {
-    title: `Email and code required`,
-    message: () => `Email and code required. Please try again.`,
+    title: reason("email_and_code_required"),
+    message: () => tryAgain("email_and_code_required"),
   },
   [EAuthenticationErrorCodes.INVALID_EMAIL_MAGIC_SIGN_UP]: {
-    title: `Invalid email`,
-    message: () => `Invalid email. Please try again.`,
+    title: reason("invalid_email"),
+    message: () => tryAgain("invalid_email"),
   },
 
   // sign in
   [EAuthenticationErrorCodes.BOT_USER_LOGIN_FORBIDDEN]: {
-    title: `Sign in not allowed`,
-    message: () => `This account cannot be used to sign in. Please use a personal account.`,
+    title: title("bot_user_login_forbidden"),
+    message: () => t(`${AUTH_ERRORS_KEY}.message.bot_user_login_forbidden`),
   },
   [EAuthenticationErrorCodes.USER_ACCOUNT_DEACTIVATED]: {
-    title: `User account deactivated`,
-    message: () => `User account deactivated. Please contact ${SUPPORT_EMAIL ? SUPPORT_EMAIL : "administrator"}.`,
+    title: title("user_account_deactivated"),
+    message: () =>
+      t(`${AUTH_ERRORS_KEY}.message.user_account_deactivated`, {
+        contact: SUPPORT_EMAIL ? SUPPORT_EMAIL : t(`${AUTH_ERRORS_KEY}.message.default_contact`),
+      }),
   },
 
   [EAuthenticationErrorCodes.USER_DOES_NOT_EXIST]: {
-    title: `User does not exist`,
+    title: title("user_does_not_exist"),
     message: (email = undefined) => (
-      <div>
-        No account found.&nbsp;
-        <Link
-          className="font-medium underline underline-offset-4 transition-all hover:font-bold"
-          to={`/${email ? `?email=${encodeURIComponent(email)}` : ``}`}
-        >
-          Create one
-        </Link>
-        &nbsp;to get started.
-      </div>
+      <ErrorMessageWithLink
+        messageKey="user_does_not_exist"
+        linkKey="create_one"
+        to={`/${email ? `?email=${encodeURIComponent(email)}` : ``}`}
+      />
     ),
   },
   [EAuthenticationErrorCodes.REQUIRED_EMAIL_PASSWORD_SIGN_IN]: {
-    title: `Email and password required`,
-    message: () => `Email and password required. Please try again.`,
+    title: reason("email_and_password_required"),
+    message: () => tryAgain("email_and_password_required"),
   },
   [EAuthenticationErrorCodes.AUTHENTICATION_FAILED_SIGN_IN]: {
-    title: `Authentication failed`,
-    message: () => `Authentication failed. Please try again.`,
+    title: reason("authentication_failed"),
+    message: () => tryAgain("authentication_failed"),
   },
   [EAuthenticationErrorCodes.INVALID_EMAIL_SIGN_IN]: {
-    title: `Invalid email`,
-    message: () => `Invalid email. Please try again.`,
+    title: reason("invalid_email"),
+    message: () => tryAgain("invalid_email"),
   },
   [EAuthenticationErrorCodes.MAGIC_SIGN_IN_EMAIL_CODE_REQUIRED]: {
-    title: `Email and code required`,
-    message: () => `Email and code required. Please try again.`,
+    title: reason("email_and_code_required"),
+    message: () => tryAgain("email_and_code_required"),
   },
   [EAuthenticationErrorCodes.INVALID_EMAIL_MAGIC_SIGN_IN]: {
-    title: `Invalid email`,
-    message: () => `Invalid email. Please try again.`,
+    title: reason("invalid_email"),
+    message: () => tryAgain("invalid_email"),
   },
 
   // Both Sign in and Sign up
   [EAuthenticationErrorCodes.INVALID_MAGIC_CODE_SIGN_IN]: {
-    title: `Authentication failed`,
-    message: () => `Invalid magic code. Please try again.`,
+    title: reason("authentication_failed"),
+    message: () => tryAgain("invalid_magic_code"),
   },
   [EAuthenticationErrorCodes.INVALID_MAGIC_CODE_SIGN_UP]: {
-    title: `Authentication failed`,
-    message: () => `Invalid magic code. Please try again.`,
+    title: reason("authentication_failed"),
+    message: () => tryAgain("invalid_magic_code"),
   },
   [EAuthenticationErrorCodes.EXPIRED_MAGIC_CODE_SIGN_IN]: {
-    title: `Expired magic code`,
-    message: () => `Expired magic code. Please try again.`,
+    title: reason("expired_magic_code"),
+    message: () => tryAgain("expired_magic_code"),
   },
   [EAuthenticationErrorCodes.EXPIRED_MAGIC_CODE_SIGN_UP]: {
-    title: `Expired magic code`,
-    message: () => `Expired magic code. Please try again.`,
+    title: reason("expired_magic_code"),
+    message: () => tryAgain("expired_magic_code"),
   },
   [EAuthenticationErrorCodes.EMAIL_CODE_ATTEMPT_EXHAUSTED_SIGN_IN]: {
-    title: `Expired magic code`,
-    message: () => `Expired magic code. Please try again.`,
+    title: reason("expired_magic_code"),
+    message: () => tryAgain("expired_magic_code"),
   },
   [EAuthenticationErrorCodes.EMAIL_CODE_ATTEMPT_EXHAUSTED_SIGN_UP]: {
-    title: `Expired magic code`,
-    message: () => `Expired magic code. Please try again.`,
+    title: reason("expired_magic_code"),
+    message: () => tryAgain("expired_magic_code"),
   },
 
   // Oauth
   [EAuthenticationErrorCodes.OAUTH_NOT_CONFIGURED]: {
-    title: `OAuth not configured`,
-    message: () => `OAuth not configured. Please contact your administrator.`,
+    title: reason("oauth_not_configured"),
+    message: () => contactAdmin("oauth_not_configured"),
   },
   [EAuthenticationErrorCodes.GOOGLE_NOT_CONFIGURED]: {
-    title: `Google not configured`,
-    message: () => `Google not configured. Please contact your administrator.`,
+    title: reason("google_not_configured"),
+    message: () => contactAdmin("google_not_configured"),
   },
   [EAuthenticationErrorCodes.GITHUB_NOT_CONFIGURED]: {
-    title: `GitHub not configured`,
-    message: () => `GitHub not configured. Please contact your administrator.`,
+    title: reason("github_not_configured"),
+    message: () => contactAdmin("github_not_configured"),
   },
   [EAuthenticationErrorCodes.GITLAB_NOT_CONFIGURED]: {
-    title: `GitLab not configured`,
-    message: () => `GitLab not configured. Please contact your administrator.`,
+    title: reason("gitlab_not_configured"),
+    message: () => contactAdmin("gitlab_not_configured"),
   },
   [EAuthenticationErrorCodes.GOOGLE_OAUTH_PROVIDER_ERROR]: {
-    title: `Google OAuth provider error`,
-    message: () => `Google OAuth provider error. Please try again.`,
+    title: reason("google_oauth_provider_error"),
+    message: () => tryAgain("google_oauth_provider_error"),
   },
   [EAuthenticationErrorCodes.GITHUB_OAUTH_PROVIDER_ERROR]: {
-    title: `GitHub OAuth provider error`,
-    message: () => `GitHub OAuth provider error. Please try again.`,
+    title: reason("github_oauth_provider_error"),
+    message: () => tryAgain("github_oauth_provider_error"),
   },
   [EAuthenticationErrorCodes.GITLAB_OAUTH_PROVIDER_ERROR]: {
-    title: `GitLab OAuth provider error`,
-    message: () => `GitLab OAuth provider error. Please try again.`,
+    title: reason("gitlab_oauth_provider_error"),
+    message: () => tryAgain("gitlab_oauth_provider_error"),
   },
 
   // Reset Password
   [EAuthenticationErrorCodes.INVALID_PASSWORD_TOKEN]: {
-    title: `Invalid password token`,
-    message: () => `Invalid password token. Please try again.`,
+    title: reason("invalid_password_token"),
+    message: () => tryAgain("invalid_password_token"),
   },
   [EAuthenticationErrorCodes.EXPIRED_PASSWORD_TOKEN]: {
-    title: `Expired password token`,
-    message: () => `Expired password token. Please try again.`,
+    title: reason("expired_password_token"),
+    message: () => tryAgain("expired_password_token"),
   },
 
   // Change password
   [EAuthenticationErrorCodes.MISSING_PASSWORD]: {
-    title: `Password required`,
-    message: () => `Password required. Please try again.`,
+    title: reason("password_required"),
+    message: () => tryAgain("password_required"),
   },
   [EAuthenticationErrorCodes.INCORRECT_OLD_PASSWORD]: {
-    title: `Incorrect old password`,
-    message: () => `Incorrect old password. Please try again.`,
+    title: reason("incorrect_old_password"),
+    message: () => tryAgain("incorrect_old_password"),
   },
   [EAuthenticationErrorCodes.INVALID_NEW_PASSWORD]: {
-    title: `Invalid new password`,
-    message: () => `Invalid new password. Please try again.`,
+    title: reason("invalid_new_password"),
+    message: () => tryAgain("invalid_new_password"),
   },
 
   // set password
   [EAuthenticationErrorCodes.PASSWORD_ALREADY_SET]: {
-    title: `Password already set`,
-    message: () => `Password already set. Please try again.`,
+    title: reason("password_already_set"),
+    message: () => tryAgain("password_already_set"),
   },
 
   // admin
   [EAuthenticationErrorCodes.ADMIN_ALREADY_EXIST]: {
-    title: `Admin already exists`,
-    message: () => `Admin already exists. Please try again.`,
+    title: reason("admin_already_exist"),
+    message: () => tryAgain("admin_already_exist"),
   },
   [EAuthenticationErrorCodes.REQUIRED_ADMIN_EMAIL_PASSWORD_FIRST_NAME]: {
-    title: `Email, password and first name required`,
-    message: () => `Email, password and first name required. Please try again.`,
+    title: reason("admin_email_password_first_name_required"),
+    message: () => tryAgain("admin_email_password_first_name_required"),
   },
   [EAuthenticationErrorCodes.INVALID_ADMIN_EMAIL]: {
-    title: `Invalid admin email`,
-    message: () => `Invalid admin email. Please try again.`,
+    title: reason("invalid_admin_email"),
+    message: () => tryAgain("invalid_admin_email"),
   },
   [EAuthenticationErrorCodes.INVALID_ADMIN_PASSWORD]: {
-    title: `Invalid admin password`,
-    message: () => `Invalid admin password. Please try again.`,
+    title: reason("invalid_admin_password"),
+    message: () => tryAgain("invalid_admin_password"),
   },
   [EAuthenticationErrorCodes.REQUIRED_ADMIN_EMAIL_PASSWORD]: {
-    title: `Email and password required`,
-    message: () => `Email and password required. Please try again.`,
+    title: reason("email_and_password_required"),
+    message: () => tryAgain("email_and_password_required"),
   },
   [EAuthenticationErrorCodes.ADMIN_AUTHENTICATION_FAILED]: {
-    title: `Authentication failed`,
-    message: () => `Authentication failed. Please try again.`,
+    title: reason("authentication_failed"),
+    message: () => tryAgain("authentication_failed"),
   },
   [EAuthenticationErrorCodes.ADMIN_USER_ALREADY_EXIST]: {
-    title: `Admin user already exists`,
-    message: () => (
-      <div>
-        Admin user already exists.&nbsp;
-        <Link className="font-medium underline underline-offset-4 transition-all hover:font-bold" to={`/admin`}>
-          Sign In
-        </Link>
-        &nbsp;now.
-      </div>
-    ),
+    title: title("admin_user_already_exist"),
+    message: () => <ErrorMessageWithLink messageKey="admin_user_already_exist" linkKey="sign_in_now" to={`/admin`} />,
   },
   [EAuthenticationErrorCodes.ADMIN_USER_DOES_NOT_EXIST]: {
-    title: `Admin user does not exist`,
-    message: () => (
-      <div>
-        Admin user does not exist.&nbsp;
-        <Link className="font-medium underline underline-offset-4 transition-all hover:font-bold" to={`/admin`}>
-          Sign In
-        </Link>
-        &nbsp;now.
-      </div>
-    ),
+    title: title("admin_user_does_not_exist"),
+    message: () => <ErrorMessageWithLink messageKey="admin_user_does_not_exist" linkKey="sign_in_now" to={`/admin`} />,
   },
-};
+});
 
 export const authErrorHandler = (errorCode: EAuthenticationErrorCodes, email?: string): TAuthErrorInfo | undefined => {
   const bannerAlertErrorCodes = [
@@ -393,13 +416,15 @@ export const authErrorHandler = (errorCode: EAuthenticationErrorCodes, email?: s
     EAuthenticationErrorCodes.USER_ACCOUNT_DEACTIVATED,
   ];
 
-  if (bannerAlertErrorCodes.includes(errorCode))
+  if (bannerAlertErrorCodes.includes(errorCode)) {
+    const errorCodeMessages = getErrorCodeMessages();
     return {
       type: EErrorAlertType.BANNER_ALERT,
       code: errorCode,
-      title: errorCodeMessages[errorCode]?.title || "Error",
-      message: errorCodeMessages[errorCode]?.message(email) || "Something went wrong. Please try again.",
+      title: errorCodeMessages[errorCode]?.title || t(`${AUTH_ERRORS_KEY}.default.title`),
+      message: errorCodeMessages[errorCode]?.message(email) || t(`${AUTH_ERRORS_KEY}.default.message`),
     };
+  }
 
   return undefined;
 };

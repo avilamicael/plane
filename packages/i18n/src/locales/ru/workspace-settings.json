@@ -63,7 +63,8 @@
             "required": "Введите email адрес, чтобы пригласить участников",
             "invalid": "Неверный email"
           }
-        }
+        },
+        "invitation_removed": "Приглашение успешно удалено."
       },
       "billing_and_plans": {
         "heading": "Оплата и тарифы",
@@ -147,8 +148,18 @@
           },
           "secret_key_not_copied": {
             "message": "Ошибка копирования ключа"
+          },
+          "deleted": {
+            "message": "Webhook успешно удалён."
+          },
+          "not_deleted": {
+            "message": "Не удалось удалить webhook. Попробуйте ещё раз."
+          },
+          "secret_key_regenerated": {
+            "message": "Новый ключ успешно сгенерирован."
           }
-        }
+        },
+        "delete_webhook": "Удалить вебхук"
       },
       "api_tokens": {
         "heading": "API-токены",
@@ -170,7 +181,8 @@
             "title": "Ошибка!",
             "message": "Не удалось удалить токен"
           }
-        }
+        },
+        "expiration_required": "Выберите дату окончания срока действия."
       },
       "integrations": {
         "title": "Интеграции",

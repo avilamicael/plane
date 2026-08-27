@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Entre para adicionar seu comentário"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Clique para votar a favor",
       "click_to_downvote": "Clique para votar contra",
       "click_to_view_upvotes": "Clique para ver os votos a favor",
-      "click_to_view_downvotes": "Clique para ver os votos contra"
+      "click_to_view_downvotes": "Clique para ver os votos contra",
+      "no_upvotes": "Nenhum voto positivo ainda",
+      "no_downvotes": "Nenhum voto negativo ainda",
+      "and_more": "e mais {count}"
     },
     "activity": {
       "created_the_work_item": "criou o item de trabalho.",
       "created_the_work_item_via": "criou o item de trabalho via",
-      "deleted_a_work_item": "excluiu um item de trabalho."
+      "deleted_a_work_item": "excluiu um item de trabalho.",
+      "set_the_name_to": "definiu o nome como",
+      "updated_the_description": "atualizou a descrição",
+      "set_the_state_to": "definiu o estado como",
+      "set_the_priority_to": "definiu a prioridade como",
+      "added_a_new_assignee": "adicionou um novo responsável",
+      "removed_the_assignee": "removeu o responsável",
+      "added_a_new_label": "adicionou uma nova etiqueta",
+      "removed_the_label": "removeu a etiqueta",
+      "set_the_start_date_to": "definiu a data de início como",
+      "removed_the_start_date": "removeu a data de início",
+      "set_the_due_date_to": "definiu a data de vencimento como",
+      "removed_the_due_date": "removeu a data de vencimento",
+      "set_the_parent_to": "definiu o item pai como",
+      "removed_the_parent": "removeu o item pai",
+      "set_the_estimate_point_to": "definiu o ponto de estimativa como",
+      "removed_the_estimate_point": "removeu o ponto de estimativa",
+      "added_this_work_item_to_the_cycle": "adicionou este item de trabalho ao ciclo",
+      "set_the_cycle_to": "definiu o ciclo como",
+      "removed_the_work_item_from_the_cycle": "removeu o item de trabalho do ciclo",
+      "added_this_work_item_to_the_module": "adicionou este item de trabalho ao módulo",
+      "set_the_module_to": "definiu o módulo como",
+      "removed_the_work_item_from_the_module": "removeu o item de trabalho do módulo",
+      "added_the_link": "adicionou o",
+      "updated_the_link": "atualizou o",
+      "removed_the_link": "removeu este",
+      "link_noun": "link",
+      "uploaded_a_new_attachment": "enviou um novo anexo",
+      "removed_an_attachment": "removeu um anexo",
+      "restored_the_work_item": "restaurou o item de trabalho",
+      "archived_the_work_item": "arquivou o item de trabalho",
+      "declined_this_work_item_from_intake": "recusou este item de trabalho no Intake.",
+      "snoozed_this_work_item": "adiou este item de trabalho.",
+      "accepted_this_work_item_from_intake": "aceitou este item de trabalho no Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "recusou este item de trabalho no Intake marcando-o como duplicado.",
+      "updated_intake_work_item_status": "atualizou o status do item de trabalho no Intake.",
+      "marked_this_work_item_is_blocking_work_item": "marcou que este item de trabalho está bloqueando o item de trabalho",
+      "removed_the_blocking_work_item": "removeu o bloqueio do item de trabalho",
+      "marked_this_work_item_is_being_blocked_by": "marcou que este item de trabalho está bloqueado por",
+      "removed_this_work_item_being_blocked_by_work_item": "removeu o bloqueio deste item de trabalho por",
+      "marked_this_work_item_as_duplicate_of": "marcou este item de trabalho como duplicado de",
+      "removed_this_work_item_as_a_duplicate_of": "removeu a marcação de duplicado deste item de trabalho em relação a",
+      "marked_that_this_work_item_relates_to": "marcou que este item de trabalho está relacionado a",
+      "removed_the_relation_from": "removeu a relação com",
+      "connector_for": "em",
+      "connector_to": "em",
+      "connector_from": "de",
+      "connector_of": "de"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reação criada com sucesso"
+          },
+          "error": {
+            "message": "Falha ao criar a reação"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reação removida com sucesso"
+          },
+          "error": {
+            "message": "Falha ao remover a reação"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "O anexo foi removido com sucesso"
+          },
+          "error": {
+            "message": "Não foi possível remover o anexo"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Selecione pelo menos um item de trabalho."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Itens de trabalho excluídos com sucesso!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "A data de vencimento não pode ser anterior à data de início do item de trabalho."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Erro ao atualizar as datas do item de trabalho. Tente novamente mais tarde."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Falha ao mover o item de trabalho para o projeto. Tente novamente."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Falha ao excluir o item de trabalho"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Falha ao atualizar o item de trabalho"
+        }
+      },
+      "editor_processing": {
+        "message": "O editor ainda está processando as alterações. Aguarde antes de continuar."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "O título do item de trabalho não é informativo o suficiente para gerar a descrição. Tente com outro título."
+        }
+      }
     }
   },
   "sub_work_item": {

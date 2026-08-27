@@ -30,5 +30,39 @@
     "upgrade_plan": "升级计划",
     "plane_pro": "Plane Pro",
     "business": "商业版"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "默认标签页更新成功。"
+        },
+        "error": {
+          "message": "无法更新默认标签页。请稍后重试。"
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "无法隐藏标签页。请稍后重试。"
+        }
+      }
+    },
+    "actions": {
+      "show": "显示",
+      "hide_in_more_menu": "隐藏到“更多”菜单",
+      "set_as_default": "设为默认",
+      "clear_default": "清除默认"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "搜索命令..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "仅图标",
+      "icon_with_name": "图标与名称"
+    },
+    "dock": "停靠应用栏",
+    "undock": "取消停靠应用栏"
   }
 }

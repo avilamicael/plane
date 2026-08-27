@@ -109,10 +109,13 @@ export const DAYS_LIST: {
 
 /**
  * Idioma da interface, gravado em <html lang> por setLanguage() do @plane/i18n.
+ *
+ * Lido por globalThis porque este pacote compila sem a lib "dom" — em ambiente
+ * sem document (build, teste), devolve undefined e o Intl cai no padrão.
  */
 const getUiLocale = (): string | undefined => {
-  if (typeof document === "undefined") return undefined;
-  return document.documentElement.lang || undefined;
+  const doc = (globalThis as { document?: { documentElement?: { lang?: string } } }).document;
+  return doc?.documentElement?.lang || undefined;
 };
 
 /**

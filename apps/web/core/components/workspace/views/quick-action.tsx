@@ -12,6 +12,7 @@ import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import type { IWorkspaceView } from "@plane/types";
 import { CustomMenu } from "@plane/ui";
 import { copyUrlToClipboard, cn } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // helpers
 import { useViewMenuItems } from "@/components/common/quick-actions-helper";
 // hooks
@@ -26,6 +27,8 @@ type Props = {
 };
 
 export const WorkspaceViewQuickActions = observer(function WorkspaceViewQuickActions(props: Props) {
+  const { t } = useTranslation();
+
   const { workspaceSlug, view } = props;
   // states
   const [updateViewModal, setUpdateViewModal] = useState(false);
@@ -42,8 +45,8 @@ export const WorkspaceViewQuickActions = observer(function WorkspaceViewQuickAct
     await copyUrlToClipboard(viewLink);
     setToast({
       type: TOAST_TYPE.SUCCESS,
-      title: "Link Copied!",
-      message: "View link copied to clipboard.",
+      title: t("common.link_copied"),
+      message: t("view_link_copied_to_clipboard"),
     });
   };
 

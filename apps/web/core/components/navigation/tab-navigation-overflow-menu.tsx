@@ -67,12 +67,16 @@ export function TabNavigationOverflowMenu({ overflowItems, isActive, tabPreferen
                       onShow(item.key);
                     }}
                     className="invisible rounded-sm p-1 text-tertiary transition-colors group-hover/menu-item:visible hover:text-primary"
-                    title="Show"
+                    title={t("navigation_tabs.actions.show")}
                   >
                     <Pin className="size-3" />
                   </button>
                 )}
-                <Tooltip tooltipContent={isDefault ? "Clear default" : "Set as default"}>
+                <Tooltip
+                  tooltipContent={
+                    isDefault ? t("navigation_tabs.actions.clear_default") : t("navigation_tabs.actions.set_as_default")
+                  }
+                >
                   <button
                     onClick={(e) => {
                       e.stopPropagation();
@@ -85,7 +89,11 @@ export function TabNavigationOverflowMenu({ overflowItems, isActive, tabPreferen
                         visible: isDefault,
                       }
                     )}
-                    title={isDefault ? "Clear default" : "Set as default"}
+                    title={
+                      isDefault
+                        ? t("navigation_tabs.actions.clear_default")
+                        : t("navigation_tabs.actions.set_as_default")
+                    }
                   >
                     <SetAsDefaultIcon className="size-3" />
                   </button>

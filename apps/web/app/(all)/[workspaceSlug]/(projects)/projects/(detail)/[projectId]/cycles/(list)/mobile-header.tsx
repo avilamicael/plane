@@ -7,6 +7,7 @@
 import type React from "react";
 import { observer } from "mobx-react";
 // ui
+import { useTranslation } from "@plane/i18n";
 import type { ISvgIcons } from "@plane/propel/icons";
 import { TimelineLayoutIcon, GridLayoutIcon, ListLayoutIcon } from "@plane/propel/icons";
 // plane package imports
@@ -42,6 +43,7 @@ export const CyclesListMobileHeader = observer(function CyclesListMobileHeader()
   const { currentProjectDetails } = useProject();
   // hooks
   const { updateDisplayFilters } = useCycleFilter();
+  const { t } = useTranslation();
   return (
     <div className="flex justify-center sm:hidden">
       <CustomMenu
@@ -51,7 +53,7 @@ export const CyclesListMobileHeader = observer(function CyclesListMobileHeader()
         customButton={
           <span className="flex items-center gap-2">
             <ListLayoutIcon className="h-4 w-4" />
-            <span className="flex flex-grow justify-center text-13 text-secondary">Layout</span>
+            <span className="flex flex-grow justify-center text-13 text-secondary">{t("common.layout")}</span>
           </span>
         }
         customButtonClassName="flex flex-grow justify-center items-center text-secondary text-13"

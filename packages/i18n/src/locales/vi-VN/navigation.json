@@ -30,5 +30,39 @@
     "upgrade_plan": "Nâng cấp gói",
     "plane_pro": "Plane Pro",
     "business": "Doanh nghiệp"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Đã cập nhật tab mặc định thành công."
+        },
+        "error": {
+          "message": "Không thể cập nhật tab mặc định. Vui lòng thử lại sau."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Không thể ẩn tab. Vui lòng thử lại sau."
+        }
+      }
+    },
+    "actions": {
+      "show": "Hiển thị",
+      "hide_in_more_menu": "Ẩn trong menu Thêm",
+      "set_as_default": "Đặt làm mặc định",
+      "clear_default": "Bỏ mặc định"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Tìm lệnh..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Chỉ biểu tượng",
+      "icon_with_name": "Biểu tượng kèm tên"
+    },
+    "dock": "Ghim thanh ứng dụng",
+    "undock": "Bỏ ghim thanh ứng dụng"
   }
 }

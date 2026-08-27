@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Yorum eklemek için giriş yapın"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Olumlu oy vermek için tıklayın",
       "click_to_downvote": "Olumsuz oy vermek için tıklayın",
       "click_to_view_upvotes": "Olumlu oyları görüntülemek için tıklayın",
-      "click_to_view_downvotes": "Olumsuz oyları görüntülemek için tıklayın"
+      "click_to_view_downvotes": "Olumsuz oyları görüntülemek için tıklayın",
+      "no_upvotes": "Henüz olumlu oy yok",
+      "no_downvotes": "Henüz olumsuz oy yok",
+      "and_more": "ve {count} kişi daha"
     },
     "activity": {
       "created_the_work_item": "iş öğesini oluşturdu.",
       "created_the_work_item_via": "iş öğesini şu yolla oluşturdu:",
-      "deleted_a_work_item": "bir iş öğesini sildi."
+      "deleted_a_work_item": "bir iş öğesini sildi.",
+      "set_the_name_to": "adı şu şekilde ayarladı:",
+      "updated_the_description": "açıklamayı güncelledi",
+      "set_the_state_to": "durumu şu şekilde ayarladı:",
+      "set_the_priority_to": "önceliği şu şekilde ayarladı:",
+      "added_a_new_assignee": "yeni bir atanan kişi ekledi:",
+      "removed_the_assignee": "atanan kişiyi kaldırdı:",
+      "added_a_new_label": "yeni bir etiket ekledi:",
+      "removed_the_label": "etiketi kaldırdı:",
+      "set_the_start_date_to": "başlangıç tarihini şu şekilde ayarladı:",
+      "removed_the_start_date": "başlangıç tarihini kaldırdı",
+      "set_the_due_date_to": "son tarihi şu şekilde ayarladı:",
+      "removed_the_due_date": "son tarihi kaldırdı",
+      "set_the_parent_to": "üst öğeyi şu şekilde ayarladı:",
+      "removed_the_parent": "üst öğeyi kaldırdı",
+      "set_the_estimate_point_to": "tahmin puanını şu şekilde ayarladı:",
+      "removed_the_estimate_point": "tahmin puanını kaldırdı",
+      "added_this_work_item_to_the_cycle": "bu iş öğesini şu döngüye ekledi:",
+      "set_the_cycle_to": "döngüyü şu şekilde ayarladı:",
+      "removed_the_work_item_from_the_cycle": "iş öğesini şu döngüden kaldırdı:",
+      "added_this_work_item_to_the_module": "bu iş öğesini şu modüle ekledi:",
+      "set_the_module_to": "modülü şu şekilde ayarladı:",
+      "removed_the_work_item_from_the_module": "iş öğesini şu modülden kaldırdı:",
+      "added_the_link": "ekledi:",
+      "updated_the_link": "güncelledi:",
+      "removed_the_link": "kaldırdı:",
+      "link_noun": "bağlantı",
+      "uploaded_a_new_attachment": "yeni bir ek yükledi",
+      "removed_an_attachment": "bir eki kaldırdı",
+      "restored_the_work_item": "iş öğesini geri yükledi",
+      "archived_the_work_item": "iş öğesini arşivledi",
+      "declined_this_work_item_from_intake": "bu iş öğesini Intake'ten reddetti.",
+      "snoozed_this_work_item": "bu iş öğesini erteledi.",
+      "accepted_this_work_item_from_intake": "bu iş öğesini Intake'ten kabul etti.",
+      "declined_this_work_item_from_intake_as_duplicate": "bu iş öğesini yinelenen olarak işaretleyerek Intake'ten reddetti.",
+      "updated_intake_work_item_status": "Intake iş öğesi durumunu güncelledi.",
+      "marked_this_work_item_is_blocking_work_item": "bu iş öğesinin şu iş öğesini engellediğini işaretledi:",
+      "removed_the_blocking_work_item": "şu iş öğesindeki engellemeyi kaldırdı:",
+      "marked_this_work_item_is_being_blocked_by": "bu iş öğesinin şunun tarafından engellendiğini işaretledi:",
+      "removed_this_work_item_being_blocked_by_work_item": "bu iş öğesinin şunun tarafından engellenmesini kaldırdı:",
+      "marked_this_work_item_as_duplicate_of": "bu iş öğesini şunun kopyası olarak işaretledi:",
+      "removed_this_work_item_as_a_duplicate_of": "bu iş öğesinin şunun kopyası olma işaretini kaldırdı:",
+      "marked_that_this_work_item_relates_to": "bu iş öğesinin şununla ilişkili olduğunu işaretledi:",
+      "removed_the_relation_from": "şununla olan ilişkiyi kaldırdı:",
+      "connector_for": "şu öğede:",
+      "connector_to": "şu öğeye:",
+      "connector_from": "şu öğeden:",
+      "connector_of": "şu öğenin:"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Tepki başarıyla eklendi"
+          },
+          "error": {
+            "message": "Tepki eklenemedi"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Tepki başarıyla kaldırıldı"
+          },
+          "error": {
+            "message": "Tepki kaldırılamadı"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Ek başarıyla kaldırıldı"
+          },
+          "error": {
+            "message": "Ek kaldırılamadı"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Lütfen en az bir iş öğesi seçin."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "İş öğeleri başarıyla silindi!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Bitiş tarihi, iş öğesinin başlangıç tarihinden önce olamaz."
+      },
+      "update_dates": {
+        "error": {
+          "message": "İş öğesi tarihleri güncellenirken hata oluştu. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "İş öğesi projeye taşınamadı. Lütfen tekrar deneyin."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "İş öğesi silinemedi"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "İş öğesi güncellenemedi"
+        }
+      },
+      "editor_processing": {
+        "message": "Düzenleyici değişiklikleri hâlâ işliyor. Devam etmeden önce lütfen bekleyin."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "İş öğesi başlığı açıklama oluşturmak için yeterince açıklayıcı değil. Lütfen farklı bir başlık deneyin."
+        }
+      }
     }
   },
   "sub_work_item": {

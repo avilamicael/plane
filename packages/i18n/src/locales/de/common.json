@@ -307,6 +307,9 @@
   "end_date": "Enddatum",
   "due_date": "Fälligkeitsdatum",
   "target_date": "Zieldatum",
+  "created_date": "Erstellungsdatum",
+  "updated_date": "Aktualisierungsdatum",
+  "last_updated_date": "Datum der letzten Aktualisierung",
   "estimate": "Schätzung",
   "change_parent_issue": "Übergeordnetes Arbeitselement ändern",
   "remove_parent_issue": "Übergeordnetes Arbeitselement entfernen",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "Die URL wurde erfolgreich in Ihre Zwischenablage kopiert",
   "toast": {
     "success": "Erfolg!",
-    "error": "Fehler!"
+    "error": "Fehler!",
+    "warning": "Warnung!",
+    "info": "Information!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Schätzung",
     "created_at": "Erstellt am",
     "updated_at": "Aktualisiert am",
+    "select_cycle": "Zyklus auswählen",
+    "select_modules": "Module auswählen",
     "completed_at": "Abgeschlossen am",
     "layout": "Layout",
     "filters": "Filter",
@@ -464,6 +471,10 @@
     "epics": "Epics",
     "work_item": "Arbeitselement",
     "work_items": "Arbeitselemente",
+    "work_items_in_project_count": "{count, plural, one{Es gibt # Arbeitselement in diesem Projekt} other{Es gibt # Arbeitselemente in diesem Projekt}}",
+    "work_items_in_archives_count": "{count, plural, one{Es gibt # Arbeitselement im Archiv dieses Projekts} other{Es gibt # Arbeitselemente im Archiv dieses Projekts}}",
+    "work_items_in_cycle_count": "{count, plural, one{Es gibt # Arbeitselement in diesem Zyklus} other{Es gibt # Arbeitselemente in diesem Zyklus}}",
+    "work_items_in_module_count": "{count, plural, one{Es gibt # Arbeitselement in diesem Modul} other{Es gibt # Arbeitselemente in diesem Modul}}",
     "sub_work_item": "Untergeordnetes Arbeitselement",
     "views": "Ansichten",
     "pages": "Seiten",
@@ -619,7 +630,11 @@
       "enable": "Aktivieren",
       "disable": "Deaktivieren",
       "copy_markdown": "Markdown kopieren",
-      "reply": "Antworten"
+      "reply": "Antworten",
+      "move": "Verschieben",
+      "remove_from_cycle": "Aus Zyklus entfernen",
+      "remove_from_module": "Aus Modul entfernen",
+      "rename_folder": "Ordner umbenennen"
     },
     "name": "Name",
     "discard": "Verwerfen",
@@ -722,12 +737,33 @@
     "more": "Mehr",
     "saved": "Gespeichert",
     "all_projects": "Alle Projekte",
-    "n_plus_projects": "{count}+ Projekte"
+    "n_plus_projects": "{count}+ Projekte",
+    "and": "und",
+    "view_all": "Alle anzeigen",
+    "view_less": "Weniger anzeigen",
+    "empty": "Leer",
+    "no_date": "Kein Datum",
+    "no_cycle": "Kein Zyklus",
+    "no_modules": "Keine Module",
+    "no_labels": "Keine Labels",
+    "no_assignees": "Keine Zugewiesenen",
+    "labels_count": "{count, plural, one{# Label} other{# Labels}}",
+    "modules_count": "{count, plural, one{# Modul} other{# Module}}",
+    "not_found": {
+      "title": "Hoppla! Etwas ist schiefgelaufen.",
+      "description": "Die gesuchte Seite konnte leider nicht gefunden werden. Möglicherweise wurde sie entfernt, umbenannt oder ist vorübergehend nicht verfügbar."
+    },
+    "toast": {
+      "success": "Erfolg!",
+      "error": "Fehler!",
+      "warning": "Warnung"
+    }
   },
   "chart": {
     "x_axis": "X-Achse",
     "y_axis": "Y-Achse",
-    "metric": "Metrik"
+    "metric": "Metrik",
+    "week_of_month": "{month}, Woche {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Ansicht aktualisieren"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Ansicht erfolgreich erstellt."
+        },
+        "error": {
+          "message": "Die Ansicht konnte nicht erstellt werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Ansicht erfolgreich aktualisiert."
+        },
+        "error": {
+          "message": "Die Ansicht konnte nicht aktualisiert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Ansicht erfolgreich gelöscht."
+        },
+        "error": {
+          "message": "Die Ansicht konnte nicht gelöscht werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "not_found": {
+        "message": "Die Ansicht, die Sie aktualisieren möchten, existiert nicht."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Ihre Ansicht wurde erfolgreich aktualisiert."
+        },
+        "error": {
+          "message": "Ihre Ansicht konnte nicht aktualisiert werden. Bitte versuchen Sie es erneut."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Arbeitselemente in JSON exportieren.",
       "short_description": "Als JSON exportieren"
+    }
+  },
+  "sign_in": "Anmelden",
+  "powered_by_plane_publish": "Bereitgestellt von Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Die Instanzdetails konnten nicht abgerufen werden.",
+      "description": "Wir konnten die Details der Instanz nicht abrufen. Keine Sorge, es könnte nur ein Verbindungsproblem sein."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
+  "please_try_again_later": "Bitte versuchen Sie es später erneut.",
+  "some_error_occurred": "Es ist ein Fehler aufgetreten",
+  "markdown_copied_to_clipboard": "Markdown in die Zwischenablage kopiert.",
+  "reloading_to_apply_changes": "Wird neu geladen, um die Änderungen zu übernehmen ...",
+  "copy_link_failed": "Der Link konnte nicht kopiert werden. Bitte versuchen Sie es erneut.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Design-Konfiguration erfolgreich heruntergeladen."
+        },
+        "error": {
+          "message": "Die Design-Konfiguration konnte nicht heruntergeladen werden."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Design-Konfiguration erfolgreich importiert"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Drag & Drop ist nur bei manueller Sortierung möglich"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Beim Aktualisieren der Blockdaten ist ein Fehler aufgetreten"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Dieser Filter ist nicht korrekt konfiguriert und kann nicht angewendet werden"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Bitte geben Sie eine Aufgabe ein, um KI-Unterstützung zu erhalten."
+      }
+    }
+  },
+  "text_colors": "Textfarben",
+  "background_colors": "Hintergrundfarben",
+  "submitting": "Wird gesendet ...",
+  "image_upload": {
+    "title": "Bild hochladen",
+    "drag_and_drop": "Bild hierher ziehen und ablegen",
+    "drop_here": "Bild hier ablegen, um es hochzuladen",
+    "file_too_large": "Die Bildgröße darf 5 MB nicht überschreiten.",
+    "invalid_format": "Bitte laden Sie eine Datei in einem gültigen Format hoch.",
+    "supported_formats": "Unterstützte Dateiformate: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Hochladen und speichern",
+    "uploading": "Wird hochgeladen",
+    "search_for_images": "Nach Bildern suchen",
+    "no_images_found": "Keine Bilder gefunden.",
+    "tabs": {
+      "images": "Bilder",
+      "upload": "Hochladen"
     }
   }
 }

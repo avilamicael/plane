@@ -191,5 +191,173 @@
       "title": "チームがPlaneに切り替える理由を発見",
       "description": "今日使用しているツールとPlaneを比較して、違いを確認してください。"
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "または",
+      "skip": "スキップ",
+      "select_one": "1つ選択してください",
+      "select_one_or_more": "1つ以上選択してください",
+      "steps_progress": "{total, plural, one {# ステップ} other {# ステップ}}中 {current}",
+      "errors": {
+        "field_required": "この項目は必須です",
+        "select_at_least_one": "少なくとも1つ選択してください"
+      }
+    },
+    "profile": {
+      "heading": "プロフィールを作成しましょう。",
+      "subheading": "Plane ではこのように表示されます。",
+      "upload_image": "画像をアップロード",
+      "change_image": "画像を変更",
+      "choose_image": "画像を選択",
+      "name_placeholder": "氏名を入力してください",
+      "marketing_consent": "Plane からのマーケティング情報の受信に同意します",
+      "role_question": "どの職種で働いていますか？1つ選んでください。",
+      "domain_question": "専門分野は何ですか？1つ以上選んでください。",
+      "roles": {
+        "individual_contributor": "個人コントリビューター",
+        "senior_leader": "シニアリーダー",
+        "manager": "マネージャー",
+        "executive": "経営層",
+        "freelancer": "フリーランス",
+        "student": "学生"
+      },
+      "domains": {
+        "engineering": "エンジニアリング",
+        "product": "プロダクト",
+        "marketing": "マーケティング",
+        "sales": "セールス",
+        "operations": "オペレーション",
+        "legal": "法務",
+        "finance": "財務",
+        "human_resources": "人事",
+        "project": "プロジェクト",
+        "other": "その他"
+      },
+      "errors": {
+        "name_length": "名前は50文字以内で入力してください。",
+        "first_name_required": "名は必須です",
+        "first_name_length": "名は50文字以内で入力してください。",
+        "last_name_required": "姓は必須です",
+        "last_name_length": "姓は50文字以内で入力してください。"
+      },
+      "toast": {
+        "completed": "プロフィールの設定が完了しました。",
+        "failed": "プロフィールの設定に失敗しました。もう一度お試しください。",
+        "details_failed": "ユーザー情報の更新に失敗しました。もう一度お試しください。"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "新しいパスワード...",
+      "match": "パスワードが一致しています",
+      "mismatch": "パスワードが一致しません"
+    },
+    "role": {
+      "heading": "あなたの職種は？",
+      "subheading": "あなたの働き方に合わせて Plane を設定しましょう。",
+      "options": {
+        "product_manager": "プロダクトマネージャー",
+        "engineering_manager": "エンジニアリングマネージャー",
+        "designer": "デザイナー",
+        "developer": "開発者",
+        "founder_executive": "創業者・経営層",
+        "operations_manager": "オペレーションマネージャー",
+        "others": "その他"
+      }
+    },
+    "usecase": {
+      "heading": "Plane を使う目的は何ですか？",
+      "subheading": "目標とチームの規模を教えてください。",
+      "options": {
+        "plan_and_track_product_roadmaps": "製品ロードマップの計画と追跡",
+        "manage_engineering_sprints": "エンジニアリングのスプリント管理",
+        "coordinate_cross_functional_projects": "部門横断プロジェクトの調整",
+        "replace_our_current_tool": "現在のツールの置き換え",
+        "just_exploring": "とりあえず試してみたい"
+      }
+    },
+    "workspace": {
+      "heading": "ワークスペースを作成",
+      "subheading": "すべての仕事を、ひとつに。",
+      "join_heading": "招待を受けるか、ワークスペースを作成",
+      "join_existing": "既存のワークスペースに参加",
+      "create_new": "新しいワークスペースを作成",
+      "join_invited_cta": "招待されたワークスペースに参加したい",
+      "creation_disabled": "ワークスペースへの招待がなく、インスタンス管理者が新しいワークスペースの作成を制限しているようです。ワークスペースのオーナーまたは管理者に招待を依頼し、この画面に戻って参加してください。",
+      "organization_size": {
+        "just_myself": "自分だけ"
+      }
+    },
+    "invitations": {
+      "heading": "招待されています。",
+      "subheading": "招待を受け入れて、チームと一緒に作業しましょう。",
+      "continue_to_workspace": "ワークスペースへ進む",
+      "create_own_workspace": "自分のワークスペースを作成",
+      "empty": "招待が見つかりません"
+    },
+    "team": {
+      "heading": "チームメンバーを招待",
+      "subheading": "Plane はチームで使うと最も力を発揮します。今すぐ招待して、Plane を最大限に活用しましょう。",
+      "add_another": "さらに追加",
+      "do_it_later": "後で行う",
+      "errors": {
+        "invalid_email": "メールアドレスの形式が正しくありません",
+        "not_an_email": "メールアドレスのようには見えません。"
+      },
+      "toast": {
+        "invitations_sent": "招待を送信しました。"
+      }
+    },
+    "switch_account": {
+      "wrong_email": "メールアドレスが違いますか？",
+      "title": "アカウントを切り替える",
+      "description_prefix": "誤って",
+      "description_suffix": "で登録した場合は、ここから別のアカウントに切り替えられます。",
+      "switching": "切り替え中...",
+      "sign_out_failed": "ログアウトに失敗しました。もう一度お試しください。"
+    },
+    "toast": {
+      "finish_failed": "初期設定を完了できませんでした。しばらくしてからもう一度お試しください。"
+    },
+    "tour": {
+      "welcome": {
+        "title": "Plane へようこそ、{name} さん",
+        "description": "Plane をお試しいただきありがとうございます。これでプロジェクトを簡単に管理できます。まずはプロジェクトを作成しましょう。",
+        "take_tour": "製品ツアーを見る",
+        "skip": "いいえ、自分で見てまわります"
+      },
+      "sidebar": {
+        "title": "さあ、始めましょう。",
+        "subtitle": "Plane をもっと活用しましょう。",
+        "work_items": "作業アイテム",
+        "cycles": "サイクル",
+        "modules": "モジュール",
+        "views": "ビュー",
+        "pages": "ページ"
+      },
+      "steps": {
+        "work_items": {
+          "title": "作業アイテムで計画する",
+          "description": "作業アイテムは Plane の基本単位です。Plane のほとんどの概念は、作業アイテムとそのプロパティに関連しています。"
+        },
+        "cycles": {
+          "title": "サイクルで前進する",
+          "description": "サイクルは、アジャイル開発でよく使われるスプリントのように、あなたとチームの進行を加速します。"
+        },
+        "modules": {
+          "title": "モジュールに分割する",
+          "description": "モジュールは大きな取り組みをプロジェクトや機能に分割し、整理しやすくします。"
+        },
+        "views": {
+          "title": "ビュー",
+          "description": "カスタムフィルターを作成して、自分に必要な作業アイテムだけを表示できます。フィルターは数クリックで保存・共有できます。"
+        },
+        "pages": {
+          "title": "ページで記録する",
+          "description": "会議中や一日の始めに作業アイテムをすばやくメモするには、ページを使いましょう。"
+        }
+      },
+      "create_first_project": "最初のプロジェクトを作成"
+    }
   }
 }

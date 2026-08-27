@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Connectez-vous pour ajouter votre commentaire"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Cliquez pour voter pour",
       "click_to_downvote": "Cliquez pour voter contre",
       "click_to_view_upvotes": "Cliquez pour voir les votes pour",
-      "click_to_view_downvotes": "Cliquez pour voir les votes contre"
+      "click_to_view_downvotes": "Cliquez pour voir les votes contre",
+      "no_upvotes": "Aucun vote positif pour l’instant",
+      "no_downvotes": "Aucun vote négatif pour l’instant",
+      "and_more": "et {count} de plus"
     },
     "activity": {
       "created_the_work_item": "a créé l’élément de travail.",
       "created_the_work_item_via": "a créé l’élément de travail via",
-      "deleted_a_work_item": "a supprimé un élément de travail."
+      "deleted_a_work_item": "a supprimé un élément de travail.",
+      "set_the_name_to": "a défini le nom sur",
+      "updated_the_description": "a mis à jour la description",
+      "set_the_state_to": "a défini l’état sur",
+      "set_the_priority_to": "a défini la priorité sur",
+      "added_a_new_assignee": "a ajouté un nouvel acteur",
+      "removed_the_assignee": "a retiré l’acteur",
+      "added_a_new_label": "a ajouté une nouvelle étiquette",
+      "removed_the_label": "a retiré l’étiquette",
+      "set_the_start_date_to": "a défini la date de début au",
+      "removed_the_start_date": "a supprimé la date de début",
+      "set_the_due_date_to": "a défini la date d’échéance au",
+      "removed_the_due_date": "a supprimé la date d’échéance",
+      "set_the_parent_to": "a défini l’élément parent sur",
+      "removed_the_parent": "a supprimé l’élément parent",
+      "set_the_estimate_point_to": "a défini le point d’estimation sur",
+      "removed_the_estimate_point": "a supprimé le point d’estimation",
+      "added_this_work_item_to_the_cycle": "a ajouté cet élément de travail au cycle",
+      "set_the_cycle_to": "a défini le cycle sur",
+      "removed_the_work_item_from_the_cycle": "a retiré l’élément de travail du cycle",
+      "added_this_work_item_to_the_module": "a ajouté cet élément de travail au module",
+      "set_the_module_to": "a défini le module sur",
+      "removed_the_work_item_from_the_module": "a retiré l’élément de travail du module",
+      "added_the_link": "a ajouté le",
+      "updated_the_link": "a mis à jour le",
+      "removed_the_link": "a supprimé ce",
+      "link_noun": "lien",
+      "uploaded_a_new_attachment": "a ajouté une nouvelle pièce jointe",
+      "removed_an_attachment": "a supprimé une pièce jointe",
+      "restored_the_work_item": "a restauré l’élément de travail",
+      "archived_the_work_item": "a archivé l’élément de travail",
+      "declined_this_work_item_from_intake": "a refusé cet élément de travail dans Intake.",
+      "snoozed_this_work_item": "a reporté cet élément de travail.",
+      "accepted_this_work_item_from_intake": "a accepté cet élément de travail dans Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "a refusé cet élément de travail dans Intake en le marquant comme doublon.",
+      "updated_intake_work_item_status": "a mis à jour le statut de l’élément de travail dans Intake.",
+      "marked_this_work_item_is_blocking_work_item": "a indiqué que cet élément de travail bloque l’élément de travail",
+      "removed_the_blocking_work_item": "a supprimé le blocage de l’élément de travail",
+      "marked_this_work_item_is_being_blocked_by": "a indiqué que cet élément de travail est bloqué par",
+      "removed_this_work_item_being_blocked_by_work_item": "a supprimé le blocage de cet élément de travail par",
+      "marked_this_work_item_as_duplicate_of": "a marqué cet élément de travail comme doublon de",
+      "removed_this_work_item_as_a_duplicate_of": "a supprimé le marquage de cet élément de travail comme doublon de",
+      "marked_that_this_work_item_relates_to": "a indiqué que cet élément de travail est lié à",
+      "removed_the_relation_from": "a supprimé la relation avec",
+      "connector_for": "pour",
+      "connector_to": "à",
+      "connector_from": "de",
+      "connector_of": "de"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Réaction créée avec succès"
+          },
+          "error": {
+            "message": "Échec de la création de la réaction"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Réaction supprimée avec succès"
+          },
+          "error": {
+            "message": "Échec de la suppression de la réaction"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "La pièce jointe a été supprimée avec succès"
+          },
+          "error": {
+            "message": "La pièce jointe n'a pas pu être supprimée"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Veuillez sélectionner au moins un élément de travail."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Éléments de travail supprimés avec succès !"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "La date d'échéance ne peut pas être antérieure à la date de début de l'élément de travail."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Erreur lors de la mise à jour des dates de l'élément de travail. Veuillez réessayer plus tard."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Échec du déplacement de l'élément de travail vers le projet. Veuillez réessayer."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Échec de la suppression de l'élément de travail"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Échec de la mise à jour de l'élément de travail"
+        }
+      },
+      "editor_processing": {
+        "message": "L'éditeur traite encore les modifications. Veuillez patienter avant de continuer."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Le titre de l'élément de travail n'est pas assez explicite pour générer la description. Essayez avec un autre titre."
+        }
+      }
     }
   },
   "sub_work_item": {

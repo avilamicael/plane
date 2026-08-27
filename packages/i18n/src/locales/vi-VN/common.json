@@ -307,6 +307,9 @@
   "end_date": "Ngày kết thúc",
   "due_date": "Ngày hết hạn",
   "target_date": "Ngày đích",
+  "created_date": "Ngày tạo",
+  "updated_date": "Ngày cập nhật",
+  "last_updated_date": "Ngày cập nhật gần nhất",
   "estimate": "Ước tính",
   "change_parent_issue": "Thay đổi mục công việc cha",
   "remove_parent_issue": "Xóa mục công việc cha",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL đã được sao chép thành công vào bảng tạm của bạn",
   "toast": {
     "success": "Thành công!",
-    "error": "Lỗi!"
+    "error": "Lỗi!",
+    "warning": "Cảnh báo!",
+    "info": "Thông tin!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Ước tính",
     "created_at": "Được tạo vào",
     "updated_at": "Thời gian cập nhật",
+    "select_cycle": "Chọn chu kỳ",
+    "select_modules": "Chọn mô-đun",
     "completed_at": "Hoàn thành vào",
     "layout": "Bố cục",
     "filters": "Bộ lọc",
@@ -464,6 +471,10 @@
     "epics": "Epics",
     "work_item": "Mục công việc",
     "work_items": "Mục công việc",
+    "work_items_in_project_count": "{count, plural, one{Có # mục công việc trong dự án này} other{Có # mục công việc trong dự án này}}",
+    "work_items_in_archives_count": "{count, plural, one{Có # mục công việc trong kho lưu trữ của dự án này} other{Có # mục công việc trong kho lưu trữ của dự án này}}",
+    "work_items_in_cycle_count": "{count, plural, one{Có # mục công việc trong chu kỳ này} other{Có # mục công việc trong chu kỳ này}}",
+    "work_items_in_module_count": "{count, plural, one{Có # mục công việc trong mô-đun này} other{Có # mục công việc trong mô-đun này}}",
     "sub_work_item": "Mục công việc con",
     "views": "Chế độ xem",
     "pages": "Trang",
@@ -619,7 +630,11 @@
       "enable": "Bật",
       "disable": "Tắt",
       "copy_markdown": "Sao chép markdown",
-      "reply": "Trả lời"
+      "reply": "Trả lời",
+      "move": "Di chuyển",
+      "remove_from_cycle": "Xóa khỏi chu kỳ",
+      "remove_from_module": "Xóa khỏi mô-đun",
+      "rename_folder": "Đổi tên thư mục"
     },
     "name": "Tên",
     "discard": "Hủy bỏ",
@@ -722,12 +737,33 @@
     "more": "Thêm",
     "saved": "Đã lưu",
     "all_projects": "Tất cả dự án",
-    "n_plus_projects": "{count}+ dự án"
+    "n_plus_projects": "{count}+ dự án",
+    "and": "và",
+    "view_all": "Xem tất cả",
+    "view_less": "Thu gọn",
+    "empty": "Trống",
+    "no_date": "Không có ngày",
+    "no_cycle": "Không có chu kỳ",
+    "no_modules": "Không có mô-đun",
+    "no_labels": "Không có nhãn",
+    "no_assignees": "Không có người phụ trách",
+    "labels_count": "{count, plural, one{# nhãn} other{# nhãn}}",
+    "modules_count": "{count, plural, one{# mô-đun} other{# mô-đun}}",
+    "not_found": {
+      "title": "Rất tiếc! Đã xảy ra lỗi.",
+      "description": "Rất tiếc, không tìm thấy trang bạn đang tìm. Trang có thể đã bị xóa, đổi tên hoặc tạm thời không khả dụng."
+    },
+    "toast": {
+      "success": "Thành công!",
+      "error": "Lỗi!",
+      "warning": "Cảnh báo"
+    }
   },
   "chart": {
     "x_axis": "Trục X",
     "y_axis": "Trục Y",
-    "metric": "Chỉ số"
+    "metric": "Chỉ số",
+    "week_of_month": "{month}, tuần {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Cập nhật chế độ xem"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Đã tạo chế độ xem thành công."
+        },
+        "error": {
+          "message": "Không thể tạo chế độ xem. Vui lòng thử lại."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Đã cập nhật chế độ xem thành công."
+        },
+        "error": {
+          "message": "Không thể cập nhật chế độ xem. Vui lòng thử lại."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Đã xóa chế độ xem thành công."
+        },
+        "error": {
+          "message": "Không thể xóa chế độ xem. Vui lòng thử lại."
+        }
+      },
+      "not_found": {
+        "message": "Chế độ xem bạn đang cố cập nhật không tồn tại."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Chế độ xem của bạn đã được cập nhật thành công."
+        },
+        "error": {
+          "message": "Không thể cập nhật chế độ xem của bạn. Vui lòng thử lại."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Xuất mục công việc thành tệp JSON.",
       "short_description": "Xuất sang JSON"
+    }
+  },
+  "sign_in": "Đăng nhập",
+  "powered_by_plane_publish": "Được hỗ trợ bởi Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Không thể tải thông tin phiên bản.",
+      "description": "Chúng tôi không thể tải thông tin phiên bản. Đừng lo, có thể chỉ là sự cố kết nối."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Đã xảy ra lỗi. Vui lòng thử lại sau.",
+  "please_try_again_later": "Vui lòng thử lại sau.",
+  "some_error_occurred": "Đã xảy ra lỗi",
+  "markdown_copied_to_clipboard": "Đã sao chép Markdown vào bảng tạm.",
+  "reloading_to_apply_changes": "Đang tải lại để áp dụng thay đổi...",
+  "copy_link_failed": "Không thể sao chép liên kết. Vui lòng thử lại.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Đã tải xuống cấu hình giao diện thành công."
+        },
+        "error": {
+          "message": "Không thể tải xuống cấu hình giao diện."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Đã nhập cấu hình giao diện thành công"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Kéo và thả chỉ hoạt động khi sắp xếp thủ công"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Đã xảy ra lỗi khi cập nhật ngày của khối"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Bộ lọc này chưa được cấu hình đúng và không thể áp dụng"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Vui lòng nhập một tác vụ để nhận hỗ trợ từ AI."
+      }
+    }
+  },
+  "text_colors": "Màu chữ",
+  "background_colors": "Màu nền",
+  "submitting": "Đang gửi...",
+  "image_upload": {
+    "title": "Tải ảnh lên",
+    "drag_and_drop": "Kéo và thả ảnh vào đây",
+    "drop_here": "Thả ảnh vào đây để tải lên",
+    "file_too_large": "Kích thước ảnh không được vượt quá 5 MB.",
+    "invalid_format": "Vui lòng tải lên tệp có định dạng hợp lệ.",
+    "supported_formats": "Định dạng tệp được hỗ trợ: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Tải lên và lưu",
+    "uploading": "Đang tải lên",
+    "search_for_images": "Tìm kiếm hình ảnh",
+    "no_images_found": "Không tìm thấy hình ảnh nào.",
+    "tabs": {
+      "images": "Hình ảnh",
+      "upload": "Tải lên"
     }
   }
 }

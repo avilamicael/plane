@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "電子郵件",
+      "password": "密碼",
+      "save_changes": "儲存變更",
+      "saving": "儲存中",
+      "go_back": "返回",
+      "success": "成功",
+      "error": "錯誤",
+      "done": "完成！",
+      "show_password": "顯示密碼",
+      "hide_password": "隱藏密碼",
+      "settings_updated_successfully": "設定已成功更新",
+      "saving_configuration": "正在儲存設定",
+      "configuration_saved_successfully": "設定已成功儲存",
+      "failed_to_save_configuration": "儲存設定失敗",
+      "learn_more": "瞭解更多",
+      "here": "這裡。"
+    },
+    "sidebar": {
+      "instance_admin": "執行個體管理員",
+      "sign_out": "登出",
+      "switch_to_light_mode": "切換至淺色模式",
+      "switch_to_dark_mode": "切換至深色模式",
+      "general": {
+        "title": "一般",
+        "description": "識別你的執行個體並查看重要資訊。"
+      },
+      "email": {
+        "title": "電子郵件",
+        "description": "設定 SMTP 相關選項。"
+      },
+      "workspace": {
+        "title": "工作區",
+        "description": "管理此執行個體上的所有工作區。"
+      },
+      "authentication": {
+        "title": "驗證",
+        "description": "設定驗證方式。"
+      },
+      "ai": {
+        "title": "人工智慧",
+        "description": "設定你的 OpenAI 憑證。"
+      },
+      "image": {
+        "title": "Plane 中的圖片",
+        "description": "允許第三方圖片庫。"
+      }
+    },
+    "sign_in": {
+      "heading": "管理你的 Plane 執行個體",
+      "sub_heading": "設定整個執行個體的選項，確保執行個體安全",
+      "email_placeholder": "name@company.com",
+      "password_placeholder": "請輸入密碼",
+      "submit": "登入"
+    },
+    "setup": {
+      "heading": "設定你的 Plane 執行個體",
+      "sub_heading": "完成設定後，你就可以管理這個 Plane 執行個體。",
+      "first_name": "名字",
+      "last_name": "姓氏",
+      "company_name": "公司名稱",
+      "company_name_placeholder": "公司名稱",
+      "set_password": "設定密碼",
+      "new_password_placeholder": "新密碼",
+      "confirm_password": "確認密碼",
+      "confirm_password_placeholder": "確認密碼",
+      "passwords_dont_match": "兩次輸入的密碼不一致",
+      "telemetry_consent": "允許 Plane 匿名收集使用事件。",
+      "see_more": "瞭解更多",
+      "submit": "繼續"
+    },
+    "settings": {
+      "general": {
+        "title": "一般設定",
+        "description": "變更執行個體名稱與執行個體管理員的電子郵件地址。啟用或停用執行個體中的遙測。",
+        "instance_details": "執行個體資訊",
+        "name_of_instance": "執行個體名稱",
+        "instance_name_placeholder": "執行個體名稱",
+        "admin_email_placeholder": "管理員電子郵件",
+        "instance_id": "執行個體 ID",
+        "telemetry": "遙測",
+        "telemetry_toggle_title": "允許 Plane 收集匿名使用資料",
+        "telemetry_toggle_description": "不會收集任何個人資訊。這些匿名化資料用於瞭解你如何使用 Plane，並據此開發新功能，詳情請見",
+        "telemetry_policy": "我們的遙測政策。"
+      },
+      "authentication": {
+        "title": "管理執行個體的驗證方式",
+        "description": "為你的團隊設定驗證方式，並將註冊限制為僅限邀請。",
+        "allow_signup_title": "允許任何人在沒有邀請的情況下註冊",
+        "allow_signup_description": "關閉此選項後，只有受邀使用者才能註冊。",
+        "available_modes": "可用的驗證方式",
+        "cannot_disable_title": "無法停用驗證",
+        "cannot_disable_message": "至少需保留一種啟用中的驗證方式。請先啟用其他方式，再停用這一項。",
+        "modes": {
+          "unique_codes": {
+            "name": "一次性驗證碼",
+            "description": "使用透過電子郵件寄送的驗證碼登入或註冊 Plane。使用此方式須先設定 SMTP。"
+          },
+          "passwords": {
+            "name": "密碼",
+            "description": "允許成員以密碼建立帳戶，並使用電子郵件地址登入。"
+          },
+          "google": {
+            "description": "允許成員使用 Google 帳戶登入或註冊 Plane。"
+          },
+          "github": {
+            "description": "允許成員使用 GitHub 帳戶登入或註冊 Plane。"
+          },
+          "gitlab": {
+            "description": "允許成員使用 GitLab 帳戶登入或註冊 Plane。"
+          },
+          "gitea": {
+            "description": "允許成員使用 Gitea 帳戶登入或註冊 Plane。"
+          }
+        }
+      },
+      "email": {
+        "title": "從你自己的執行個體安全寄送郵件",
+        "description": "Plane 可以從你自己的執行個體寄送實用郵件給你與你的使用者，無須連上網際網路。",
+        "description_secondary": "請在下方完成設定，並在儲存前先測試設定。",
+        "description_warning": "設定錯誤可能導致郵件退信與錯誤。",
+        "disabled_title": "電子郵件功能已停用",
+        "disabled_message": "電子郵件功能已停用",
+        "disable_error_title": "停用電子郵件時發生錯誤",
+        "disable_error_message": "無法停用電子郵件功能。請再試一次。",
+        "host": "主機",
+        "port": "連接埠",
+        "sender_email": "寄件者電子郵件地址",
+        "sender_email_description": "這是使用者收到此執行個體郵件時看到的電子郵件地址。你需要驗證此地址。",
+        "username": "使用者名稱",
+        "password_placeholder": "密碼",
+        "security": "電子郵件安全性",
+        "security_none": "不使用郵件加密",
+        "authentication": "驗證",
+        "authentication_description": "此為選填，但我們建議為你的 SMTP 伺服器設定使用者名稱與密碼。",
+        "send_test_email": "寄送測試郵件",
+        "updated_successfully": "電子郵件設定已成功更新"
+      },
+      "workspace": {
+        "title": "此執行個體上的工作區",
+        "description": "查看所有工作區，並控制誰可以建立工作區。",
+        "prevent_creation_title": "禁止其他人建立工作區。",
+        "prevent_creation_description": "開啟此選項後，只有你可以建立工作區。你需要邀請使用者加入新的工作區。",
+        "all_workspaces": "此執行個體上的所有工作區",
+        "list_description": "目前還無法刪除工作區，而且只有當你是該工作區的管理員或成員時才能進入。",
+        "create": "建立工作區",
+        "creating": "正在建立工作區",
+        "load_more": "載入更多",
+        "name_label": "為工作區命名",
+        "name_placeholder": "熟悉且容易辨識的名稱總是最好的。",
+        "url_label": "設定工作區的網址",
+        "url_placeholder": "workspace-name",
+        "url_taken": "此網址已被使用。請換一個。",
+        "url_invalid": "網址只能包含 ( - )、( _ ) 與英數字元。",
+        "size_label": "會有多少人使用這個工作區？",
+        "size_placeholder": "選擇一個範圍",
+        "required_field": "此為必填欄位。",
+        "created_title": "成功！",
+        "created_message": "工作區建立成功。",
+        "create_error_title": "發生錯誤！",
+        "create_error_message": "無法建立工作區。請再試一次。",
+        "create_generic_error": "建立工作區時發生錯誤。請再試一次。"
+      },
+      "ai": {
+        "title": "適用於所有工作區的 AI 功能",
+        "description": "設定你的 AI API 憑證，為所有工作區啟用 Plane AI 功能。"
+      },
+      "image": {
+        "title": "第三方圖片庫",
+        "description": "讓你的使用者從第三方圖片庫搜尋並選擇圖片"
+      }
+    },
+    "oauth": {
+      "client_id": "用戶端 ID",
+      "client_secret": "用戶端密鑰",
+      "application_id": "應用程式 ID",
+      "secret": "密鑰",
+      "organization_id": "組織 ID",
+      "organization_id_description": "該組織的 GitHub ID。",
+      "host": "主機",
+      "origin_url": "來源網址",
+      "callback_uri": "回呼 URI",
+      "callback_url": "回呼網址",
+      "web": "Web",
+      "provider_details_for_plane": "{provider} 提供給 Plane 的資訊",
+      "plane_details_for_provider": "Plane 提供給 {provider} 的資訊",
+      "configured_message": "{provider} 驗證已設定完成。現在可以測試看看了。",
+      "configuration_saved": "設定已儲存",
+      "auth_now_active": "{provider} 驗證現已啟用。",
+      "auth_now_disabled": "{provider} 驗證現已停用。",
+      "get_this_from_settings": "你可以在以下位置取得此值：",
+      "secret_also_in_settings": "用戶端密鑰同樣位於：",
+      "app_settings_link": "{provider} OAuth 應用程式設定。",
+      "app_settings_link_no_period": "{provider} OAuth 應用程式設定",
+      "autogenerated_paste_origin": "此值由我們自動產生。請貼到以下欄位：",
+      "autogenerated_paste_callback": "此值由我們自動產生。請貼到以下欄位：",
+      "field_word": "—",
+      "authorized_origin_url": "已授權的來源網址",
+      "authorized_callback_uri": "已授權的回呼 URI",
+      "authorized_js_origins": "已授權的 JavaScript 來源",
+      "authorized_redirect_uri": "已授權的重新導向 URI",
+      "redirect_uri": "重新導向 URI",
+      "for_this_oauth_client": "—— 此 OAuth 用戶端請見",
+      "google_client_id_description": "你的用戶端 ID 位於 Google API Console 中。",
+      "google_client_secret_description": "你的用戶端密鑰同樣應位於 Google API Console 中。",
+      "gitlab_host_description_prefix": "這可以是 https://gitlab.com，也可以是你自行架設 GitLab 的",
+      "gitlab_host_description_suffix": "。",
+      "gitlab_get_this_from": "你可以在以下位置取得此值：",
+      "gitlab_secret_also_in": "用戶端密鑰同樣位於：",
+      "gitlab_paste_redirect_prefix": "此值由我們自動產生。請貼到以下欄位：",
+      "gitlab_paste_redirect_suffix": "——位於你的",
+      "gitlab_app_link": "GitLab OAuth 應用程式",
+      "gitea_host_label": "Gitea 主機",
+      "gitea_host_description": "請填寫你的 Gitea 執行個體網址。若使用官方 Gitea 執行個體，請填寫「https://gitea.com」。"
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "管理員已存在",
+        "message": "管理員已存在。請再試一次。"
+      },
+      "required_admin_email_password_first_name": {
+        "title": "電子郵件、密碼與名字為必填",
+        "message": "電子郵件、密碼與名字為必填。請再試一次。"
+      },
+      "invalid_admin_email": {
+        "title": "管理員電子郵件無效",
+        "message": "管理員電子郵件無效。請再試一次。"
+      },
+      "invalid_admin_password": {
+        "title": "管理員密碼無效",
+        "message": "管理員密碼無效。請再試一次。"
+      },
+      "required_admin_email_password": {
+        "title": "電子郵件與密碼為必填",
+        "message": "電子郵件與密碼為必填。請再試一次。"
+      },
+      "admin_authentication_failed": {
+        "title": "驗證失敗",
+        "message": "驗證失敗。請再試一次。"
+      },
+      "admin_user_already_exist": {
+        "title": "管理員使用者已存在",
+        "message": "管理員使用者已存在。",
+        "sign_in_now": "立即登入",
+        "now": "。"
+      },
+      "admin_user_does_not_exist": {
+        "title": "管理員使用者不存在",
+        "message": "管理員使用者不存在。",
+        "sign_in_now": "立即登入",
+        "now": "。"
+      },
+      "admin_user_deactivated": {
+        "title": "使用者帳戶已停用",
+        "message": "使用者帳戶已停用。請聯絡 {contact}。"
+      },
+      "administrator": "管理員",
+      "generic_title": "錯誤",
+      "generic_message": "發生問題。請再試一次。"
+    },
+    "not_found": {
+      "title": "糟糕！發生問題。",
+      "description": "抱歉，找不到你要的頁面。它可能已被移除、更名，或暫時無法使用。",
+      "action": "前往一般設定",
+      "image_alt": "404 - 找不到頁面"
+    }
+  }
+}

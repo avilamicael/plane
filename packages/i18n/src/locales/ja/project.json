@@ -139,7 +139,8 @@
         "title": "アーカイブされたサイクルがまだありません",
         "description": "プロジェクトを整理するために、完了したサイクルをアーカイブします。アーカイブ後はここで確認できます。"
       }
-    }
+    },
+    "delete_cycle": "サイクルを削除"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "問題が発生しました。"
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "プロジェクトを削除しました。"
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "プロジェクトをアーカイブできませんでした。もう一度お試しください。"
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "プロジェクトを復元できませんでした。もう一度お試しください。"
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "「Leave Project」と入力してプロジェクトからの退出を確認してください。"
+        },
+        "project_name": {
+          "message": "説明に表示されているとおりにプロジェクト名を入力してください。"
+        },
+        "fill_all_fields": {
+          "message": "すべての項目を入力してください。"
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "リポジトリをプロジェクトと同期できませんでした。もう一度お試しください。"
+        }
+      },
+      "members_added": {
+        "message": "メンバーを追加しました。"
+      },
+      "publish": {
+        "success": {
+          "message": "公開設定を更新しました。"
+        },
+        "unpublish_error": {
+          "message": "プロジェクトの公開を解除する際に問題が発生しました。"
+        },
+        "select_layout": {
+          "message": "プロジェクトを公開するには、ビューのレイアウトを1つ以上選択してください。"
+        },
+        "link_copied": {
+          "message": "公開ページのリンクをコピーしました。"
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "コメントを許可",
+      "allow_reactions": "リアクションを許可",
+      "allow_voting": "投票を許可",
+      "anyone_with_link_can_access": "リンクを知っている全員がアクセスできます"
+    },
+    "join": {
+      "title": "プロジェクトに参加しますか?"
+    },
+    "card": {
+      "created_on": "{date} に作成",
+      "no_members_yet": "メンバーはまだいません"
     }
   }
 }

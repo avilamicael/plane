@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "專案設定",
     "general": {
       "enter_project_id": "輸入專案 ID",
       "please_select_a_timezone": "請選擇時區",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "{groupKey} 群組沒有可用的狀態",
         "description": "請建立新狀態"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "狀態建立成功。"
+          },
+          "error": {
+            "name_exists": "該名稱的狀態已存在。請換一個名稱重試。"
+          }
+        },
+        "update": {
+          "success": {
+            "message": "狀態更新成功。"
+          },
+          "error": {
+            "name_exists": "已存在同名的其他狀態。請換一個名稱重試。",
+            "message": "無法更新狀態。請再試一次。"
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "無法刪除狀態。請再試一次。",
+            "has_work_items": "該狀態中包含工作事項。請先將它們移到其他狀態，然後再刪除。"
+          }
+        }
+      },
+      "delete_state": "刪除狀態"
     },
     "labels": {
       "heading": "標籤",
@@ -53,7 +80,8 @@
       "label_max_char": "標籤名稱不應超過 255 個字元",
       "toast": {
         "error": "更新標籤時發生錯誤"
-      }
+      },
+      "delete_label": "刪除標籤"
     },
     "estimates": {
       "heading": "評估",
@@ -127,6 +155,14 @@
           "error": {
             "title": "錯誤",
             "message": "發生錯誤"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "估算已從您的專案中移除。"
+          },
+          "error": {
+            "message": "無法刪除估算。請再試一次。"
           }
         }
       },

@@ -4,26 +4,32 @@
  * See the LICENSE file for details.
  */
 
+import type { TTranslationStore } from "@plane/i18n";
 import type { TIssueActivity } from "@plane/types";
 
-export const getRelationActivityContent = (activity: TIssueActivity | undefined): string | undefined => {
+export const getRelationActivityContent = (
+  activity: TIssueActivity | undefined,
+  t: TTranslationStore["t"]
+): string | undefined => {
   if (!activity) return;
 
   switch (activity.field) {
     case "blocking":
       return activity.old_value === ""
-        ? `marked this work item is blocking work item `
-        : `removed the blocking work item `;
+        ? `${t("issue.activity.marked_this_work_item_is_blocking_work_item")} `
+        : `${t("issue.activity.removed_the_blocking_work_item")} `;
     case "blocked_by":
       return activity.old_value === ""
-        ? `marked this work item is being blocked by `
-        : `removed this work item being blocked by work item `;
+        ? `${t("issue.activity.marked_this_work_item_is_being_blocked_by")} `
+        : `${t("issue.activity.removed_this_work_item_being_blocked_by_work_item")} `;
     case "duplicate":
       return activity.old_value === ""
-        ? `marked this work item as duplicate of `
-        : `removed this work item as a duplicate of `;
+        ? `${t("issue.activity.marked_this_work_item_as_duplicate_of")} `
+        : `${t("issue.activity.removed_this_work_item_as_a_duplicate_of")} `;
     case "relates_to":
-      return activity.old_value === "" ? `marked that this work item relates to ` : `removed the relation from `;
+      return activity.old_value === ""
+        ? `${t("issue.activity.marked_that_this_work_item_relates_to")} `
+        : `${t("issue.activity.removed_the_relation_from")} `;
   }
 
   return;

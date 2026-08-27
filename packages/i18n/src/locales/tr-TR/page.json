@@ -110,6 +110,126 @@
       "label": "Koleksiyondan kaldır",
       "success_message": "Sayfa koleksiyondan kaldırıldı.",
       "error_message": "Sayfa koleksiyondan kaldırılamadı. Lütfen tekrar deneyin."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Sayfa bağlantısı panoya kopyalandı."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Sayfa başarıyla çoğaltıldı."
+        },
+        "error": {
+          "message": "Sayfa çoğaltılamadı. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Sayfa başarıyla geri yüklendi."
+        },
+        "error": {
+          "message": "Sayfa geri yüklenemedi. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Sayfa başarıyla arşivlendi."
+        },
+        "error": {
+          "message": "Sayfa arşivlenemedi. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Sayfa favorilere eklendi."
+        },
+        "error": {
+          "message": "Sayfa favorilere eklenemedi. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Sayfa favorilerden kaldırıldı."
+        },
+        "error": {
+          "message": "Sayfa favorilerden kaldırılamadı. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Sayfa başarıyla kilitlendi."
+        },
+        "error": {
+          "message": "Sayfa kilitlenemedi. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Sayfanın kilidi başarıyla açıldı."
+        },
+        "error": {
+          "message": "Sayfanın kilidi açılamadı. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "Sayfa herkese açık olarak işaretlendi ve herkese açık bölüme taşındı."
+        },
+        "error": {
+          "message": "Sayfa herkese açık olarak işaretlenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "Sayfa özel olarak işaretlendi ve özel bölüme taşındı."
+        },
+        "error": {
+          "message": "Sayfa özel olarak işaretlenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Sayfa başarıyla silindi."
+        },
+        "error": {
+          "message": "Sayfa silinemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Sayfa başarıyla dışa aktarıldı."
+        },
+        "error": {
+          "message": "Sayfa dışa aktarılamadı. Lütfen daha sonra tekrar deneyin."
+        }
+      }
+    },
+    "create_page": "Sayfa oluştur",
+    "delete_page": "Sayfayı sil",
+    "export": {
+      "title": "Sayfayı dışa aktar",
+      "format": "Dışa aktarma biçimi",
+      "include_content": "İçeriği dahil et",
+      "page_format": "Sayfa biçimi",
+      "content_variety": {
+        "everything": "Her şey",
+        "no_images": "Görseller olmadan"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Kilitle",
+      "locked": "Kilitli",
+      "unlocked": "Kilidi açık"
+    },
+    "offline_badge": {
+      "heading": "Çevrimdışısınız.",
+      "description": "Değişiklik yapmaya devam edebilirsiniz. Tekrar çevrimiçi olduğunuzda eşitlenecekler.",
+      "label": "Çevrimdışı"
+    },
+    "toolbar": {
+      "color": "Renk"
     }
   }
 }

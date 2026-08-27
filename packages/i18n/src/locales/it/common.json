@@ -307,6 +307,9 @@
   "end_date": "Data di fine",
   "due_date": "Scadenza",
   "target_date": "Data prevista",
+  "created_date": "Data di creazione",
+  "updated_date": "Data di aggiornamento",
+  "last_updated_date": "Data ultimo aggiornamento",
   "estimate": "Stima",
   "change_parent_issue": "Cambia elemento di lavoro principale",
   "remove_parent_issue": "Rimuovi elemento di lavoro principale",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "L'URL è stato copiato con successo negli appunti",
   "toast": {
     "success": "Successo!",
-    "error": "Errore!"
+    "error": "Errore!",
+    "warning": "Avviso!",
+    "info": "Informazioni!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Stima",
     "created_at": "Creato il",
     "updated_at": "Aggiornato il",
+    "select_cycle": "Seleziona ciclo",
+    "select_modules": "Seleziona moduli",
     "completed_at": "Completato il",
     "layout": "Layout",
     "filters": "Filtri",
@@ -464,6 +471,10 @@
     "epics": "Epiche",
     "work_item": "Elemento di lavoro",
     "work_items": "Elementi di lavoro",
+    "work_items_in_project_count": "{count, plural, one{In questo progetto è presente # elemento di lavoro} many{In questo progetto sono presenti # elementi di lavoro} other{In questo progetto sono presenti # elementi di lavoro}}",
+    "work_items_in_archives_count": "{count, plural, one{Negli archivi di questo progetto è presente # elemento di lavoro} many{Negli archivi di questo progetto sono presenti # elementi di lavoro} other{Negli archivi di questo progetto sono presenti # elementi di lavoro}}",
+    "work_items_in_cycle_count": "{count, plural, one{In questo ciclo è presente # elemento di lavoro} many{In questo ciclo sono presenti # elementi di lavoro} other{In questo ciclo sono presenti # elementi di lavoro}}",
+    "work_items_in_module_count": "{count, plural, one{In questo modulo è presente # elemento di lavoro} many{In questo modulo sono presenti # elementi di lavoro} other{In questo modulo sono presenti # elementi di lavoro}}",
     "sub_work_item": "Sotto-elemento di lavoro",
     "views": "Visualizzazioni",
     "pages": "Pagine",
@@ -619,7 +630,11 @@
       "enable": "Abilita",
       "disable": "Disabilita",
       "copy_markdown": "Copia markdown",
-      "reply": "Rispondi"
+      "reply": "Rispondi",
+      "move": "Sposta",
+      "remove_from_cycle": "Rimuovi dal ciclo",
+      "remove_from_module": "Rimuovi dal modulo",
+      "rename_folder": "Rinomina cartella"
     },
     "name": "Nome",
     "discard": "Scarta",
@@ -722,12 +737,33 @@
     "more": "Altro",
     "saved": "Salvato",
     "all_projects": "Tutti i progetti",
-    "n_plus_projects": "{count}+ progetti"
+    "n_plus_projects": "{count}+ progetti",
+    "and": "e",
+    "view_all": "Mostra tutti",
+    "view_less": "Mostra meno",
+    "empty": "Vuoto",
+    "no_date": "Nessuna data",
+    "no_cycle": "Nessun ciclo",
+    "no_modules": "Nessun modulo",
+    "no_labels": "Nessuna etichetta",
+    "no_assignees": "Nessun assegnatario",
+    "labels_count": "{count, plural, one{# etichetta} many{# etichette} other{# etichette}}",
+    "modules_count": "{count, plural, one{# modulo} many{# moduli} other{# moduli}}",
+    "not_found": {
+      "title": "Ops! Qualcosa è andato storto.",
+      "description": "Spiacenti, la pagina che stai cercando non è stata trovata. Potrebbe essere stata rimossa, rinominata o non essere temporaneamente disponibile."
+    },
+    "toast": {
+      "success": "Successo!",
+      "error": "Errore!",
+      "warning": "Avviso"
+    }
   },
   "chart": {
     "x_axis": "Asse X",
     "y_axis": "Asse Y",
-    "metric": "Metrica"
+    "metric": "Metrica",
+    "week_of_month": "{month}, settimana {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Aggiorna visualizzazione"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Visualizzazione creata con successo."
+        },
+        "error": {
+          "message": "Impossibile creare la visualizzazione. Riprova."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Visualizzazione aggiornata con successo."
+        },
+        "error": {
+          "message": "Impossibile aggiornare la visualizzazione. Riprova."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Visualizzazione eliminata con successo."
+        },
+        "error": {
+          "message": "Impossibile eliminare la visualizzazione. Riprova."
+        }
+      },
+      "not_found": {
+        "message": "La visualizzazione che stai cercando di aggiornare non esiste."
+      },
+      "filters_update": {
+        "success": {
+          "message": "La tua visualizzazione è stata aggiornata con successo."
+        },
+        "error": {
+          "message": "Impossibile aggiornare la tua visualizzazione. Riprova."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Esporta elementi di lavoro in un file JSON.",
       "short_description": "Esporta come JSON"
+    }
+  },
+  "sign_in": "Accedi",
+  "powered_by_plane_publish": "Supportato da Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Impossibile recuperare i dettagli dell’istanza.",
+      "description": "Non siamo riusciti a recuperare i dettagli dell’istanza. Niente paura, potrebbe trattarsi solo di un problema di connessione."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Qualcosa è andato storto. Riprova più tardi.",
+  "please_try_again_later": "Riprova più tardi.",
+  "some_error_occurred": "Si è verificato un errore",
+  "markdown_copied_to_clipboard": "Markdown copiato negli appunti.",
+  "reloading_to_apply_changes": "Ricaricamento per applicare le modifiche...",
+  "copy_link_failed": "Non è stato possibile copiare il link. Riprova.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Configurazione del tema scaricata con successo."
+        },
+        "error": {
+          "message": "Download della configurazione del tema non riuscito."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Configurazione del tema importata con successo"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Il trascinamento è disponibile solo con l'ordinamento manuale"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Si è verificato un errore durante l'aggiornamento delle date del blocco"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Questo filtro non è configurato correttamente e non può essere applicato"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Inserisci un'attività per ricevere l'assistenza dell'IA."
+      }
+    }
+  },
+  "text_colors": "Colori del testo",
+  "background_colors": "Colori di sfondo",
+  "submitting": "Invio...",
+  "image_upload": {
+    "title": "Carica immagine",
+    "drag_and_drop": "Trascina e rilascia l'immagine qui",
+    "drop_here": "Rilascia l'immagine qui per caricarla",
+    "file_too_large": "La dimensione dell'immagine non può superare 5 MB.",
+    "invalid_format": "Carica un file in un formato valido.",
+    "supported_formats": "Formati di file supportati: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Carica e salva",
+    "uploading": "Caricamento",
+    "search_for_images": "Cerca immagini",
+    "no_images_found": "Nessuna immagine trovata.",
+    "tabs": {
+      "images": "Immagini",
+      "upload": "Carica"
     }
   }
 }

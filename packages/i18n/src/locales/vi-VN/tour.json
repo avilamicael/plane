@@ -191,5 +191,173 @@
       "title": "Khám phá lý do các nhóm chuyển sang Plane",
       "description": "So sánh Plane với các công cụ bạn sử dụng hôm nay và xem sự khác biệt."
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "hoặc",
+      "skip": "Bỏ qua",
+      "select_one": "Chọn một mục",
+      "select_one_or_more": "Chọn một hoặc nhiều mục",
+      "steps_progress": "{current} trong {total, plural, one {# bước} other {# bước}}",
+      "errors": {
+        "field_required": "Trường này là bắt buộc",
+        "select_at_least_one": "Vui lòng chọn ít nhất một mục"
+      }
+    },
+    "profile": {
+      "heading": "Tạo hồ sơ của bạn.",
+      "subheading": "Đây là cách bạn sẽ hiển thị trong Plane.",
+      "upload_image": "Tải ảnh lên",
+      "change_image": "Đổi ảnh",
+      "choose_image": "Chọn ảnh",
+      "name_placeholder": "Nhập họ và tên của bạn",
+      "marketing_consent": "Tôi đồng ý nhận thông tin tiếp thị từ Plane",
+      "role_question": "Bạn làm việc ở vai trò nào? Chọn một.",
+      "domain_question": "Lĩnh vực chuyên môn của bạn là gì? Chọn một hoặc nhiều.",
+      "roles": {
+        "individual_contributor": "Cá nhân đóng góp",
+        "senior_leader": "Lãnh đạo cấp cao",
+        "manager": "Quản lý",
+        "executive": "Điều hành",
+        "freelancer": "Freelancer",
+        "student": "Sinh viên"
+      },
+      "domains": {
+        "engineering": "Kỹ thuật",
+        "product": "Sản phẩm",
+        "marketing": "Tiếp thị",
+        "sales": "Kinh doanh",
+        "operations": "Vận hành",
+        "legal": "Pháp lý",
+        "finance": "Tài chính",
+        "human_resources": "Nhân sự",
+        "project": "Dự án",
+        "other": "Khác"
+      },
+      "errors": {
+        "name_length": "Tên không được vượt quá 50 ký tự.",
+        "first_name_required": "Tên là bắt buộc",
+        "first_name_length": "Tên không được vượt quá 50 ký tự.",
+        "last_name_required": "Họ là bắt buộc",
+        "last_name_length": "Họ không được vượt quá 50 ký tự."
+      },
+      "toast": {
+        "completed": "Đã thiết lập hồ sơ!",
+        "failed": "Thiết lập hồ sơ thất bại. Vui lòng thử lại!",
+        "details_failed": "Cập nhật thông tin của bạn thất bại. Vui lòng thử lại!"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "Mật khẩu mới...",
+      "match": "Mật khẩu khớp nhau",
+      "mismatch": "Mật khẩu không khớp"
+    },
+    "role": {
+      "heading": "Vai trò của bạn là gì?",
+      "subheading": "Hãy thiết lập Plane theo cách bạn làm việc.",
+      "options": {
+        "product_manager": "Quản lý Sản phẩm",
+        "engineering_manager": "Quản lý Kỹ thuật",
+        "designer": "Nhà thiết kế",
+        "developer": "Lập trình viên",
+        "founder_executive": "Nhà sáng lập/Điều hành",
+        "operations_manager": "Quản lý Vận hành",
+        "others": "Khác"
+      }
+    },
+    "usecase": {
+      "heading": "Điều gì đưa bạn đến với Plane?",
+      "subheading": "Hãy cho chúng tôi biết mục tiêu và quy mô nhóm của bạn.",
+      "options": {
+        "plan_and_track_product_roadmaps": "Lập kế hoạch và theo dõi lộ trình sản phẩm",
+        "manage_engineering_sprints": "Quản lý các sprint kỹ thuật",
+        "coordinate_cross_functional_projects": "Điều phối các dự án liên phòng ban",
+        "replace_our_current_tool": "Thay thế công cụ hiện tại của chúng tôi",
+        "just_exploring": "Chỉ đang tìm hiểu"
+      }
+    },
+    "workspace": {
+      "heading": "Tạo không gian làm việc của bạn",
+      "subheading": "Toàn bộ công việc của bạn ở một nơi.",
+      "join_heading": "Chấp nhận lời mời hoặc tạo không gian làm việc",
+      "join_existing": "Tham gia không gian làm việc hiện có",
+      "create_new": "Tạo không gian làm việc mới",
+      "join_invited_cta": "Tôi muốn tham gia các không gian làm việc đã được mời",
+      "creation_disabled": "Có vẻ bạn không có lời mời đến bất kỳ không gian làm việc nào và quản trị viên phiên bản đã hạn chế việc tạo không gian làm việc mới. Vui lòng nhờ chủ sở hữu hoặc quản trị viên mời bạn vào một không gian làm việc, rồi quay lại màn hình này để tham gia.",
+      "organization_size": {
+        "just_myself": "Chỉ mình tôi"
+      }
+    },
+    "invitations": {
+      "heading": "Bạn được mời!",
+      "subheading": "Chấp nhận lời mời để cộng tác cùng nhóm của bạn.",
+      "continue_to_workspace": "Đến không gian làm việc",
+      "create_own_workspace": "Tạo không gian làm việc của riêng tôi",
+      "empty": "Không tìm thấy lời mời nào"
+    },
+    "team": {
+      "heading": "Mời đồng đội của bạn",
+      "subheading": "Làm việc trong Plane hiệu quả nhất khi có cả nhóm. Hãy mời họ ngay để khai thác trọn vẹn Plane.",
+      "add_another": "Thêm dòng khác",
+      "do_it_later": "Để sau",
+      "errors": {
+        "invalid_email": "ID e-mail không hợp lệ",
+        "not_an_email": "Đây không giống một địa chỉ e-mail."
+      },
+      "toast": {
+        "invitations_sent": "Đã gửi lời mời thành công."
+      }
+    },
+    "switch_account": {
+      "wrong_email": "Sai địa chỉ e-mail?",
+      "title": "Chuyển tài khoản",
+      "description_prefix": "Nếu bạn đã vô tình đăng ký bằng",
+      "description_suffix": "bạn có thể chuyển sang tài khoản khác tại đây.",
+      "switching": "Đang chuyển...",
+      "sign_out_failed": "Đăng xuất thất bại. Vui lòng thử lại."
+    },
+    "toast": {
+      "finish_failed": "Không thể hoàn tất thiết lập ban đầu. Vui lòng thử lại sau."
+    },
+    "tour": {
+      "welcome": {
+        "title": "Chào mừng bạn đến với Plane, {name}",
+        "description": "Chúng tôi rất vui vì bạn đã quyết định dùng thử Plane. Giờ đây bạn có thể quản lý dự án một cách dễ dàng. Hãy bắt đầu bằng việc tạo một dự án.",
+        "take_tour": "Xem hướng dẫn sản phẩm",
+        "skip": "Không, cảm ơn. Tôi sẽ tự khám phá"
+      },
+      "sidebar": {
+        "title": "Bắt đầu thôi!",
+        "subtitle": "Khai thác Plane nhiều hơn.",
+        "work_items": "Hạng mục công việc",
+        "cycles": "Chu kỳ",
+        "modules": "Mô-đun",
+        "views": "Chế độ xem",
+        "pages": "Trang"
+      },
+      "steps": {
+        "work_items": {
+          "title": "Lập kế hoạch với hạng mục công việc",
+          "description": "Hạng mục công việc là viên gạch nền tảng của Plane. Hầu hết các khái niệm trong Plane đều gắn với hạng mục công việc và thuộc tính của chúng."
+        },
+        "cycles": {
+          "title": "Tiến lên cùng chu kỳ",
+          "description": "Chu kỳ giúp bạn và nhóm tiến nhanh hơn, tương tự các sprint thường dùng trong phát triển linh hoạt."
+        },
+        "modules": {
+          "title": "Chia thành mô-đun",
+          "description": "Mô-đun chia mục tiêu lớn của bạn thành các dự án hoặc tính năng, giúp bạn tổ chức tốt hơn."
+        },
+        "views": {
+          "title": "Chế độ xem",
+          "description": "Tạo bộ lọc tùy chỉnh để chỉ hiển thị những hạng mục công việc quan trọng với bạn. Lưu và chia sẻ bộ lọc chỉ trong vài cú nhấp."
+        },
+        "pages": {
+          "title": "Ghi chép bằng trang",
+          "description": "Dùng Trang để ghi nhanh hạng mục công việc khi đang họp hoặc khi bắt đầu ngày mới."
+        }
+      },
+      "create_first_project": "Tạo dự án đầu tiên của bạn"
+    }
   }
 }

@@ -191,5 +191,173 @@
       "title": "Ekiplerin neden Plane e geçtiğini keşfedin",
       "description": "Bugün kullandığınız araçlarla Plane i karşılaştırın ve farkı görün."
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "veya",
+      "skip": "Atla",
+      "select_one": "Bir tane seçin",
+      "select_one_or_more": "Bir veya daha fazla seçin",
+      "steps_progress": "{total, plural, one {# adımdan} other {# adımdan}} {current}. adım",
+      "errors": {
+        "field_required": "Bu alan zorunludur",
+        "select_at_least_one": "Lütfen en az bir seçenek seçin"
+      }
+    },
+    "profile": {
+      "heading": "Profilinizi oluşturun.",
+      "subheading": "Plane içinde böyle görüneceksiniz.",
+      "upload_image": "Görsel yükle",
+      "change_image": "Görseli değiştir",
+      "choose_image": "Görsel seç",
+      "name_placeholder": "Adınızı ve soyadınızı girin",
+      "marketing_consent": "Plane pazarlama iletilerini almayı kabul ediyorum",
+      "role_question": "Hangi rolde çalışıyorsunuz? Bir tane seçin.",
+      "domain_question": "Uzmanlık alanınız nedir? Bir veya daha fazla seçin.",
+      "roles": {
+        "individual_contributor": "Bireysel katkı sağlayan",
+        "senior_leader": "Üst düzey lider",
+        "manager": "Yönetici",
+        "executive": "Üst yönetici",
+        "freelancer": "Serbest çalışan",
+        "student": "Öğrenci"
+      },
+      "domains": {
+        "engineering": "Mühendislik",
+        "product": "Ürün",
+        "marketing": "Pazarlama",
+        "sales": "Satış",
+        "operations": "Operasyon",
+        "legal": "Hukuk",
+        "finance": "Finans",
+        "human_resources": "İnsan kaynakları",
+        "project": "Projeler",
+        "other": "Diğer"
+      },
+      "errors": {
+        "name_length": "Ad en fazla 50 karakter olabilir.",
+        "first_name_required": "Ad zorunludur",
+        "first_name_length": "Ad en fazla 50 karakter olabilir.",
+        "last_name_required": "Soyad zorunludur",
+        "last_name_length": "Soyad en fazla 50 karakter olabilir."
+      },
+      "toast": {
+        "completed": "Profil kurulumu tamamlandı!",
+        "failed": "Profil kurulumu başarısız oldu. Lütfen tekrar deneyin!",
+        "details_failed": "Bilgileriniz güncellenemedi. Lütfen tekrar deneyin!"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "Yeni parola...",
+      "match": "Parolalar eşleşiyor",
+      "mismatch": "Parolalar eşleşmiyor"
+    },
+    "role": {
+      "heading": "Rolünüz nedir?",
+      "subheading": "Plane’i çalışma şeklinize göre ayarlayalım.",
+      "options": {
+        "product_manager": "Ürün Yöneticisi",
+        "engineering_manager": "Mühendislik Yöneticisi",
+        "designer": "Tasarımcı",
+        "developer": "Geliştirici",
+        "founder_executive": "Kurucu/Üst Yönetici",
+        "operations_manager": "Operasyon Yöneticisi",
+        "others": "Diğerleri"
+      }
+    },
+    "usecase": {
+      "heading": "Plane’e gelme nedeniniz nedir?",
+      "subheading": "Hedeflerinizi ve ekip büyüklüğünüzü paylaşın.",
+      "options": {
+        "plan_and_track_product_roadmaps": "Ürün yol haritalarını planlamak ve izlemek",
+        "manage_engineering_sprints": "Mühendislik sprintlerini yönetmek",
+        "coordinate_cross_functional_projects": "Birimler arası projeleri koordine etmek",
+        "replace_our_current_tool": "Mevcut aracımızı değiştirmek",
+        "just_exploring": "Sadece keşfediyorum"
+      }
+    },
+    "workspace": {
+      "heading": "Çalışma alanınızı oluşturun",
+      "subheading": "Tüm işiniz tek yerde.",
+      "join_heading": "Davetleri kabul edin veya bir çalışma alanı oluşturun",
+      "join_existing": "Mevcut bir çalışma alanına katıl",
+      "create_new": "Yeni çalışma alanı oluştur",
+      "join_invited_cta": "Davet edildiğim çalışma alanlarına katılmak istiyorum",
+      "creation_disabled": "Görünüşe göre herhangi bir çalışma alanına davetiniz yok ve örnek yöneticiniz yeni çalışma alanı oluşturmayı kısıtlamış. Lütfen bir çalışma alanı sahibinden veya yöneticisinden sizi davet etmesini isteyin ve katılmak için bu ekrana geri dönün.",
+      "organization_size": {
+        "just_myself": "Sadece ben"
+      }
+    },
+    "invitations": {
+      "heading": "Davet edildiniz!",
+      "subheading": "Ekibinizle birlikte çalışmak için davetleri kabul edin.",
+      "continue_to_workspace": "Çalışma alanına git",
+      "create_own_workspace": "Kendi çalışma alanımı oluştur",
+      "empty": "Davet bulunamadı"
+    },
+    "team": {
+      "heading": "Takım arkadaşlarınızı davet edin",
+      "subheading": "Plane’de iş, ekibinizle en iyi şekilde ilerler. Plane’in tüm potansiyelini kullanmak için onları şimdi davet edin.",
+      "add_another": "Bir tane daha ekle",
+      "do_it_later": "Bunu sonra yaparım",
+      "errors": {
+        "invalid_email": "Geçersiz e-posta kimliği",
+        "not_an_email": "Bu bir e-posta adresine benzemiyor."
+      },
+      "toast": {
+        "invitations_sent": "Davetler başarıyla gönderildi."
+      }
+    },
+    "switch_account": {
+      "wrong_email": "Yanlış e-posta adresi mi?",
+      "title": "Hesap değiştir",
+      "description_prefix": "Yanlışlıkla",
+      "description_suffix": "ile kaydolduysanız, buradan başka bir hesaba geçebilirsiniz.",
+      "switching": "Değiştiriliyor...",
+      "sign_out_failed": "Oturum kapatılamadı. Lütfen tekrar deneyin."
+    },
+    "toast": {
+      "finish_failed": "Başlangıç kurulumu tamamlanamadı. Lütfen daha sonra tekrar deneyin."
+    },
+    "tour": {
+      "welcome": {
+        "title": "Plane’e hoş geldiniz, {name}",
+        "description": "Plane’i denemeye karar vermenize sevindik. Artık projelerinizi kolayca yönetebilirsiniz. Bir proje oluşturarak başlayın.",
+        "take_tour": "Ürün turuna katıl",
+        "skip": "Hayır teşekkürler, kendim keşfedeceğim"
+      },
+      "sidebar": {
+        "title": "Hadi başlayalım!",
+        "subtitle": "Plane’den daha fazlasını elde edin.",
+        "work_items": "İş öğeleri",
+        "cycles": "Döngüler",
+        "modules": "Modüller",
+        "views": "Görünümler",
+        "pages": "Sayfalar"
+      },
+      "steps": {
+        "work_items": {
+          "title": "İş öğeleriyle planlayın",
+          "description": "İş öğesi, Plane’in yapı taşıdır. Plane’deki kavramların çoğu iş öğeleri ve özellikleriyle ilişkilidir."
+        },
+        "cycles": {
+          "title": "Döngülerle ilerleyin",
+          "description": "Döngüler, çevik geliştirmede kullanılan sprintlere benzer şekilde sizin ve ekibinizin daha hızlı ilerlemesine yardımcı olur."
+        },
+        "modules": {
+          "title": "Modüllere bölün",
+          "description": "Modüller, büyük hedefinizi projelere veya özelliklere bölerek daha iyi organize olmanızı sağlar."
+        },
+        "views": {
+          "title": "Görünümler",
+          "description": "Yalnızca sizin için önemli olan iş öğelerini göstermek üzere özel filtreler oluşturun. Filtrelerinizi birkaç tıklamayla kaydedin ve paylaşın."
+        },
+        "pages": {
+          "title": "Sayfalarla belgeleyin",
+          "description": "Bir toplantıdayken veya güne başlarken iş öğelerini hızlıca not almak için Sayfalar’ı kullanın."
+        }
+      },
+      "create_first_project": "İlk projenizi oluşturun"
+    }
   }
 }

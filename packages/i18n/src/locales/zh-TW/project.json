@@ -139,7 +139,8 @@
         "title": "尚無已封存的週期",
         "description": "為了整理您的專案，可以封存已完成的週期。一旦封存，您可以在這裡找到它們。"
       }
-    }
+    },
+    "delete_cycle": "刪除週期"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "發生錯誤。"
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "專案刪除成功。"
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "無法封存專案。請再試一次。"
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "無法還原專案。請再試一次。"
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "請輸入 'Leave Project' 以確認離開專案。"
+        },
+        "project_name": {
+          "message": "請按描述中顯示的內容輸入專案名稱。"
+        },
+        "fill_all_fields": {
+          "message": "請填寫所有欄位。"
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "無法將儲存庫與專案同步。請再試一次。"
+        }
+      },
+      "members_added": {
+        "message": "成員新增成功。"
+      },
+      "publish": {
+        "success": {
+          "message": "發布設定更新成功！"
+        },
+        "unpublish_error": {
+          "message": "取消發布專案時發生錯誤。"
+        },
+        "select_layout": {
+          "message": "請至少選擇一種檢視版面以發布專案。"
+        },
+        "link_copied": {
+          "message": "已發布頁面的連結複製成功。"
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "允許留言",
+      "allow_reactions": "允許表情回應",
+      "allow_voting": "允許投票",
+      "anyone_with_link_can_access": "任何擁有連結的人都可以存取"
+    },
+    "join": {
+      "title": "加入專案？"
+    },
+    "card": {
+      "created_on": "建立於 {date}",
+      "no_members_yet": "尚無成員"
     }
   }
 }

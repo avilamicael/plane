@@ -191,5 +191,173 @@
       "title": "Temukan mengapa tim beralih ke Plane",
       "description": "Bandingkan Plane dengan alat yang Anda gunakan hari ini dan lihat perbedaannya."
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "atau",
+      "skip": "Lewati",
+      "select_one": "Pilih satu",
+      "select_one_or_more": "Pilih satu atau beberapa",
+      "steps_progress": "{current} dari {total, plural, one {# langkah} other {# langkah}}",
+      "errors": {
+        "field_required": "Kolom ini wajib diisi",
+        "select_at_least_one": "Pilih setidaknya satu opsi"
+      }
+    },
+    "profile": {
+      "heading": "Buat profil Anda.",
+      "subheading": "Beginilah Anda akan tampil di Plane.",
+      "upload_image": "Unggah gambar",
+      "change_image": "Ganti gambar",
+      "choose_image": "Pilih gambar",
+      "name_placeholder": "Masukkan nama lengkap Anda",
+      "marketing_consent": "Saya setuju menerima komunikasi pemasaran dari Plane",
+      "role_question": "Anda bekerja di peran apa? Pilih satu.",
+      "domain_question": "Apa bidang keahlian Anda? Pilih satu atau beberapa.",
+      "roles": {
+        "individual_contributor": "Kontributor individu",
+        "senior_leader": "Pemimpin senior",
+        "manager": "Manajer",
+        "executive": "Eksekutif",
+        "freelancer": "Pekerja lepas",
+        "student": "Pelajar"
+      },
+      "domains": {
+        "engineering": "Teknik",
+        "product": "Produk",
+        "marketing": "Pemasaran",
+        "sales": "Penjualan",
+        "operations": "Operasional",
+        "legal": "Hukum",
+        "finance": "Keuangan",
+        "human_resources": "Sumber daya manusia",
+        "project": "Proyek",
+        "other": "Lainnya"
+      },
+      "errors": {
+        "name_length": "Nama maksimal 50 karakter.",
+        "first_name_required": "Nama depan wajib diisi",
+        "first_name_length": "Nama depan maksimal 50 karakter.",
+        "last_name_required": "Nama belakang wajib diisi",
+        "last_name_length": "Nama belakang maksimal 50 karakter."
+      },
+      "toast": {
+        "completed": "Penyiapan profil selesai!",
+        "failed": "Penyiapan profil gagal. Silakan coba lagi!",
+        "details_failed": "Pembaruan data Anda gagal. Silakan coba lagi!"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "Kata sandi baru...",
+      "match": "Kata sandi cocok",
+      "mismatch": "Kata sandi tidak cocok"
+    },
+    "role": {
+      "heading": "Apa peran Anda?",
+      "subheading": "Mari siapkan Plane sesuai cara Anda bekerja.",
+      "options": {
+        "product_manager": "Manajer Produk",
+        "engineering_manager": "Manajer Teknik",
+        "designer": "Desainer",
+        "developer": "Pengembang",
+        "founder_executive": "Pendiri/Eksekutif",
+        "operations_manager": "Manajer Operasional",
+        "others": "Lainnya"
+      }
+    },
+    "usecase": {
+      "heading": "Apa yang membawa Anda ke Plane?",
+      "subheading": "Ceritakan tujuan dan ukuran tim Anda.",
+      "options": {
+        "plan_and_track_product_roadmaps": "Merencanakan dan melacak peta jalan produk",
+        "manage_engineering_sprints": "Mengelola sprint teknik",
+        "coordinate_cross_functional_projects": "Mengoordinasikan proyek lintas fungsi",
+        "replace_our_current_tool": "Mengganti alat kami saat ini",
+        "just_exploring": "Sekadar menjelajah"
+      }
+    },
+    "workspace": {
+      "heading": "Buat ruang kerja Anda",
+      "subheading": "Semua pekerjaan Anda dalam satu tempat.",
+      "join_heading": "Terima undangan atau buat ruang kerja",
+      "join_existing": "Gabung ke ruang kerja yang ada",
+      "create_new": "Buat ruang kerja baru",
+      "join_invited_cta": "Saya ingin bergabung ke ruang kerja yang mengundang saya",
+      "creation_disabled": "Sepertinya Anda tidak memiliki undangan ke ruang kerja mana pun dan admin instansi Anda telah membatasi pembuatan ruang kerja baru. Mintalah pemilik atau admin ruang kerja untuk mengundang Anda, lalu kembali ke layar ini untuk bergabung.",
+      "organization_size": {
+        "just_myself": "Hanya saya"
+      }
+    },
+    "invitations": {
+      "heading": "Anda diundang!",
+      "subheading": "Terima undangan untuk berkolaborasi dengan tim Anda.",
+      "continue_to_workspace": "Lanjut ke ruang kerja",
+      "create_own_workspace": "Buat ruang kerja sendiri",
+      "empty": "Tidak ada undangan ditemukan"
+    },
+    "team": {
+      "heading": "Undang rekan tim Anda",
+      "subheading": "Bekerja di Plane paling optimal bersama tim Anda. Undang mereka sekarang untuk memanfaatkan Plane sepenuhnya.",
+      "add_another": "Tambah lagi",
+      "do_it_later": "Nanti saja",
+      "errors": {
+        "invalid_email": "ID email tidak valid",
+        "not_an_email": "Ini sepertinya bukan alamat email."
+      },
+      "toast": {
+        "invitations_sent": "Undangan berhasil dikirim."
+      }
+    },
+    "switch_account": {
+      "wrong_email": "Alamat email salah?",
+      "title": "Ganti akun",
+      "description_prefix": "Jika Anda tidak sengaja mendaftar melalui",
+      "description_suffix": "Anda dapat beralih ke akun lain dari sini.",
+      "switching": "Mengganti...",
+      "sign_out_failed": "Gagal keluar. Silakan coba lagi."
+    },
+    "toast": {
+      "finish_failed": "Gagal menyelesaikan penyiapan awal. Silakan coba lagi nanti."
+    },
+    "tour": {
+      "welcome": {
+        "title": "Selamat datang di Plane, {name}",
+        "description": "Kami senang Anda memutuskan mencoba Plane. Kini Anda dapat mengelola proyek dengan mudah. Mulailah dengan membuat proyek.",
+        "take_tour": "Ikuti tur produk",
+        "skip": "Tidak, terima kasih. Saya akan menjelajah sendiri"
+      },
+      "sidebar": {
+        "title": "Ayo mulai!",
+        "subtitle": "Manfaatkan Plane lebih maksimal.",
+        "work_items": "Item pekerjaan",
+        "cycles": "Siklus",
+        "modules": "Modul",
+        "views": "Tampilan",
+        "pages": "Halaman"
+      },
+      "steps": {
+        "work_items": {
+          "title": "Rencanakan dengan item pekerjaan",
+          "description": "Item pekerjaan adalah blok pembangun Plane. Sebagian besar konsep di Plane terkait dengan item pekerjaan dan propertinya."
+        },
+        "cycles": {
+          "title": "Melaju dengan siklus",
+          "description": "Siklus membantu Anda dan tim maju lebih cepat, mirip sprint yang biasa dipakai dalam pengembangan agile."
+        },
+        "modules": {
+          "title": "Pecah menjadi modul",
+          "description": "Modul memecah target besar Anda menjadi proyek atau fitur, agar Anda lebih terorganisasi."
+        },
+        "views": {
+          "title": "Tampilan",
+          "description": "Buat filter khusus untuk menampilkan hanya item pekerjaan yang penting bagi Anda. Simpan dan bagikan filter Anda hanya dengan beberapa klik."
+        },
+        "pages": {
+          "title": "Dokumentasikan dengan halaman",
+          "description": "Gunakan Halaman untuk mencatat item pekerjaan dengan cepat saat rapat atau memulai hari."
+        }
+      },
+      "create_first_project": "Buat proyek pertama Anda"
+    }
   }
 }

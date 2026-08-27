@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "登入後即可留言"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "點擊贊成",
       "click_to_downvote": "點擊反對",
       "click_to_view_upvotes": "點擊查看贊成票",
-      "click_to_view_downvotes": "點擊查看反對票"
+      "click_to_view_downvotes": "點擊查看反對票",
+      "no_upvotes": "尚無贊成票",
+      "no_downvotes": "尚無反對票",
+      "and_more": "以及其他 {count} 人"
     },
     "activity": {
       "created_the_work_item": "建立了工作事項。",
       "created_the_work_item_via": "透過以下方式建立了工作事項：",
-      "deleted_a_work_item": "刪除了工作事項。"
+      "deleted_a_work_item": "刪除了工作事項。",
+      "set_the_name_to": "將名稱設定為",
+      "updated_the_description": "更新了描述",
+      "set_the_state_to": "將狀態設定為",
+      "set_the_priority_to": "將優先順序設定為",
+      "added_a_new_assignee": "新增了指派對象",
+      "removed_the_assignee": "移除了指派對象",
+      "added_a_new_label": "新增了標籤",
+      "removed_the_label": "移除了標籤",
+      "set_the_start_date_to": "將開始日期設定為",
+      "removed_the_start_date": "移除了開始日期",
+      "set_the_due_date_to": "將截止日期設定為",
+      "removed_the_due_date": "移除了截止日期",
+      "set_the_parent_to": "將父項目設定為",
+      "removed_the_parent": "移除了父項目",
+      "set_the_estimate_point_to": "將評估點數設定為",
+      "removed_the_estimate_point": "移除了評估點數",
+      "added_this_work_item_to_the_cycle": "將此工作事項新增至週期",
+      "set_the_cycle_to": "將週期設定為",
+      "removed_the_work_item_from_the_cycle": "將工作事項從週期中移除",
+      "added_this_work_item_to_the_module": "將此工作事項新增至模組",
+      "set_the_module_to": "將模組設定為",
+      "removed_the_work_item_from_the_module": "將工作事項從模組中移除",
+      "added_the_link": "新增了",
+      "updated_the_link": "更新了",
+      "removed_the_link": "移除了",
+      "link_noun": "連結",
+      "uploaded_a_new_attachment": "上傳了新附件",
+      "removed_an_attachment": "移除了附件",
+      "restored_the_work_item": "還原了工作事項",
+      "archived_the_work_item": "封存了工作事項",
+      "declined_this_work_item_from_intake": "在 Intake 中拒絕了此工作事項。",
+      "snoozed_this_work_item": "暫緩了此工作事項。",
+      "accepted_this_work_item_from_intake": "在 Intake 中接受了此工作事項。",
+      "declined_this_work_item_from_intake_as_duplicate": "在 Intake 中將此工作事項標記為重複項目並拒絕。",
+      "updated_intake_work_item_status": "更新了 Intake 工作事項狀態。",
+      "marked_this_work_item_is_blocking_work_item": "標記了此工作事項正在阻擋以下工作事項：",
+      "removed_the_blocking_work_item": "移除了對以下工作事項的阻擋：",
+      "marked_this_work_item_is_being_blocked_by": "標記了此工作事項被以下工作事項阻擋：",
+      "removed_this_work_item_being_blocked_by_work_item": "移除了此工作事項被以下工作事項阻擋的關聯：",
+      "marked_this_work_item_as_duplicate_of": "將此工作事項標記為以下工作事項的重複項目：",
+      "removed_this_work_item_as_a_duplicate_of": "移除了此工作事項與以下工作事項的重複標記：",
+      "marked_that_this_work_item_relates_to": "標記了此工作事項與以下工作事項相關：",
+      "removed_the_relation_from": "移除了與以下工作事項的關聯：",
+      "connector_for": "對象：",
+      "connector_to": "對象：",
+      "connector_from": "對象：",
+      "connector_of": "對象："
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "表情回應新增成功"
+          },
+          "error": {
+            "message": "表情回應新增失敗"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "表情回應移除成功"
+          },
+          "error": {
+            "message": "表情回應移除失敗"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "附件移除成功"
+          },
+          "error": {
+            "message": "無法移除附件"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "請至少選擇一個工作事項。"
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "工作事項刪除成功！"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "到期日不能早於工作事項的開始日期。"
+      },
+      "update_dates": {
+        "error": {
+          "message": "更新工作事項日期時發生錯誤。請稍後再試。"
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "無法將工作事項移動到專案。請再試一次。"
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "工作事項刪除失敗"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "工作事項更新失敗"
+        }
+      },
+      "editor_processing": {
+        "message": "編輯器仍在處理變更。請稍候再繼續。"
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "工作事項標題資訊不足，無法產生描述。請換一個標題試試。"
+        }
+      }
     }
   },
   "sub_work_item": {

@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Proje Ayarları",
     "general": {
       "enter_project_id": "Proje ID girin",
       "please_select_a_timezone": "Lütfen bir saat dilimi seçin",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "{groupKey} grubu için durum yok",
         "description": "Lütfen yeni bir durum oluşturun"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Durum başarıyla oluşturuldu."
+          },
+          "error": {
+            "name_exists": "Bu ada sahip bir durum zaten var. Lütfen başka bir adla tekrar deneyin."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Durum başarıyla güncellendi."
+          },
+          "error": {
+            "name_exists": "Aynı ada sahip başka bir durum mevcut. Lütfen başka bir adla tekrar deneyin.",
+            "message": "Durum güncellenemedi. Lütfen tekrar deneyin."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Durum silinemedi. Lütfen tekrar deneyin.",
+            "has_work_items": "Bu durum iş öğeleri içeriyor. Silmek için bunları başka bir duruma taşıyın."
+          }
+        }
+      },
+      "delete_state": "Durumu sil"
     },
     "labels": {
       "heading": "Etiketler",
@@ -53,7 +80,8 @@
       "label_max_char": "Etiket adı 255 karakteri geçmemeli",
       "toast": {
         "error": "Etiket güncellenirken hata oluştu"
-      }
+      },
+      "delete_label": "Etiketi sil"
     },
     "estimates": {
       "heading": "Tahminler",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Erır",
             "message": "Bir şeyler yanlış gitti"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "Tahmin projenizden kaldırıldı."
+          },
+          "error": {
+            "message": "Tahmin silinemedi. Lütfen tekrar deneyin."
           }
         }
       },

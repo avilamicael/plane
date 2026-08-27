@@ -110,6 +110,126 @@
       "label": "Odebrat z kolekce",
       "success_message": "Stránka byla odebrána z kolekce.",
       "error_message": "Stránku se nepodařilo odebrat z kolekce. Zkuste to prosím znovu."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Odkaz na stránku zkopírován do schránky."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Stránka byla úspěšně duplikována."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo duplikovat. Zkuste to prosím později."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Stránka byla úspěšně obnovena."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo obnovit. Zkuste to prosím později."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Stránka byla úspěšně archivována."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo archivovat. Zkuste to prosím později."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Stránka byla přidána do oblíbených."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo přidat do oblíbených. Zkuste to prosím později."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Stránka byla odebrána z oblíbených."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo odebrat z oblíbených. Zkuste to prosím později."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Stránka byla úspěšně uzamčena."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo uzamknout. Zkuste to prosím později."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Stránka byla úspěšně odemčena."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo odemknout. Zkuste to prosím později."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "Stránka byla označena jako veřejná a přesunuta do veřejné sekce."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo označit jako veřejnou. Zkuste to prosím znovu."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "Stránka byla označena jako soukromá a přesunuta do soukromé sekce."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo označit jako soukromou. Zkuste to prosím znovu."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Stránka byla úspěšně smazána."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo smazat. Zkuste to prosím znovu."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Stránka byla úspěšně exportována."
+        },
+        "error": {
+          "message": "Stránku se nepodařilo exportovat. Zkuste to prosím později."
+        }
+      }
+    },
+    "create_page": "Vytvořit stránku",
+    "delete_page": "Smazat stránku",
+    "export": {
+      "title": "Exportovat stránku",
+      "format": "Formát exportu",
+      "include_content": "Zahrnout obsah",
+      "page_format": "Formát stránky",
+      "content_variety": {
+        "everything": "Vše",
+        "no_images": "Bez obrázků"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Zamknout",
+      "locked": "Zamčeno",
+      "unlocked": "Odemčeno"
+    },
+    "offline_badge": {
+      "heading": "Jste offline.",
+      "description": "Můžete pokračovat v úpravách. Synchronizují se, jakmile budete zase online.",
+      "label": "Offline"
+    },
+    "toolbar": {
+      "color": "Barva"
     }
   }
 }

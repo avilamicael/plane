@@ -307,6 +307,9 @@
   "end_date": "終了日",
   "due_date": "期限",
   "target_date": "目標日",
+  "created_date": "作成日",
+  "updated_date": "更新日",
+  "last_updated_date": "最終更新日",
   "estimate": "見積もり",
   "change_parent_issue": "親作業項目を変更",
   "remove_parent_issue": "親作業項目を削除",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URLがクリップボードに正常にコピーされました",
   "toast": {
     "success": "成功！",
-    "error": "エラー！"
+    "error": "エラー！",
+    "warning": "警告！",
+    "info": "情報！"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "見積もり",
     "created_at": "クリエイテッド アット",
     "updated_at": "更新日時",
+    "select_cycle": "サイクルを選択",
+    "select_modules": "モジュールを選択",
     "completed_at": "コンプリーテッド アット",
     "layout": "レイアウト",
     "filters": "フィルター",
@@ -464,6 +471,10 @@
     "epics": "エピック",
     "work_item": "作業項目",
     "work_items": "作業項目",
+    "work_items_in_project_count": "{count, plural, one{このプロジェクトには # 件の作業項目があります} other{このプロジェクトには # 件の作業項目があります}}",
+    "work_items_in_archives_count": "{count, plural, one{このプロジェクトのアーカイブには # 件の作業項目があります} other{このプロジェクトのアーカイブには # 件の作業項目があります}}",
+    "work_items_in_cycle_count": "{count, plural, one{このサイクルには # 件の作業項目があります} other{このサイクルには # 件の作業項目があります}}",
+    "work_items_in_module_count": "{count, plural, one{このモジュールには # 件の作業項目があります} other{このモジュールには # 件の作業項目があります}}",
     "sub_work_item": "サブ作業項目",
     "views": "ビュー",
     "pages": "ページ",
@@ -619,7 +630,11 @@
       "enable": "有効化",
       "disable": "無効化",
       "copy_markdown": "マークダウンをコピー",
-      "reply": "返信"
+      "reply": "返信",
+      "move": "移動",
+      "remove_from_cycle": "サイクルから削除",
+      "remove_from_module": "モジュールから削除",
+      "rename_folder": "フォルダ名を変更"
     },
     "name": "名前",
     "discard": "破棄",
@@ -722,12 +737,33 @@
     "more": "その他",
     "saved": "保存しました",
     "all_projects": "すべてのプロジェクト",
-    "n_plus_projects": "{count}+ プロジェクト"
+    "n_plus_projects": "{count}+ プロジェクト",
+    "and": "と",
+    "view_all": "すべて表示",
+    "view_less": "表示を減らす",
+    "empty": "なし",
+    "no_date": "日付なし",
+    "no_cycle": "サイクルなし",
+    "no_modules": "モジュールなし",
+    "no_labels": "ラベルなし",
+    "no_assignees": "担当者なし",
+    "labels_count": "{count, plural, one{ラベル # 件} other{ラベル # 件}}",
+    "modules_count": "{count, plural, one{モジュール # 件} other{モジュール # 件}}",
+    "not_found": {
+      "title": "問題が発生しました。",
+      "description": "お探しのページが見つかりませんでした。削除されたか、名前が変更されたか、一時的に利用できない可能性があります。"
+    },
+    "toast": {
+      "success": "成功！",
+      "error": "エラー！",
+      "warning": "警告"
+    }
   },
   "chart": {
     "x_axis": "エックス アクシス",
     "y_axis": "ワイ アクシス",
-    "metric": "メトリック"
+    "metric": "メトリック",
+    "week_of_month": "{month} 第 {week} 週"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "ビューを更新"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "ビューを作成しました。"
+        },
+        "error": {
+          "message": "ビューを作成できませんでした。もう一度お試しください。"
+        }
+      },
+      "update": {
+        "success": {
+          "message": "ビューを更新しました。"
+        },
+        "error": {
+          "message": "ビューを更新できませんでした。もう一度お試しください。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "ビューを削除しました。"
+        },
+        "error": {
+          "message": "ビューを削除できませんでした。もう一度お試しください。"
+        }
+      },
+      "not_found": {
+        "message": "更新しようとしているビューは存在しません。"
+      },
+      "filters_update": {
+        "success": {
+          "message": "ビューを更新しました。"
+        },
+        "error": {
+          "message": "ビューを更新できませんでした。もう一度お試しください。"
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "作業項目をJSONファイルにエクスポートします。",
       "short_description": "JSONとしてエクスポート"
+    }
+  },
+  "sign_in": "サインイン",
+  "powered_by_plane_publish": "Plane Publish 提供",
+  "instance": {
+    "failure": {
+      "title": "インスタンスの詳細を取得できませんでした。",
+      "description": "インスタンスの詳細を取得できませんでした。接続の問題かもしれませんので、ご安心ください。"
+    }
+  },
+  "something_went_wrong_please_try_again_later": "問題が発生しました。しばらくしてからもう一度お試しください。",
+  "please_try_again_later": "しばらくしてからもう一度お試しください。",
+  "some_error_occurred": "エラーが発生しました",
+  "markdown_copied_to_clipboard": "Markdown をクリップボードにコピーしました。",
+  "reloading_to_apply_changes": "変更を適用するために再読み込みしています...",
+  "copy_link_failed": "リンクをコピーできませんでした。もう一度お試しください。",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "テーマ設定をダウンロードしました。"
+        },
+        "error": {
+          "message": "テーマ設定をダウンロードできませんでした。"
+        }
+      },
+      "import": {
+        "success": {
+          "message": "テーマ設定をインポートしました"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "ドラッグ＆ドロップは手動並び替えの場合のみ利用できます"
+      },
+      "update_dates": {
+        "error": {
+          "message": "ブロックの日付の更新中に問題が発生しました"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "このフィルターは正しく設定されていないため適用できません"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "AI のサポートを受けるには、タスクを入力してください。"
+      }
+    }
+  },
+  "text_colors": "文字色",
+  "background_colors": "背景色",
+  "submitting": "送信中...",
+  "image_upload": {
+    "title": "画像をアップロード",
+    "drag_and_drop": "ここに画像をドラッグ＆ドロップ",
+    "drop_here": "アップロードするにはここに画像をドロップ",
+    "file_too_large": "画像のサイズは 5 MB を超えられません。",
+    "invalid_format": "有効な形式のファイルをアップロードしてください。",
+    "supported_formats": "サポートされているファイル形式: .jpeg、.jpg、.png、.webp",
+    "upload_and_save": "アップロードして保存",
+    "uploading": "アップロード中",
+    "search_for_images": "画像を検索",
+    "no_images_found": "画像が見つかりません。",
+    "tabs": {
+      "images": "画像",
+      "upload": "アップロード"
     }
   }
 }

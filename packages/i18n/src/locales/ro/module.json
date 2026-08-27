@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Modul} other {Module}}",
     "no_module": "Niciun modul",
-    "select": "Adaugă module"
+    "select": "Adaugă module",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Modulul a fost creat cu succes."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Modulul a fost actualizat cu succes."
+        },
+        "error": {
+          "message": "Modulul nu a putut fi actualizat. Te rugăm să încerci din nou."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Arhivele tale pot fi găsite în arhiva proiectului."
+        },
+        "error": {
+          "message": "Modulul nu a putut fi arhivat. Te rugăm să încerci din nou."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Modulul tău poate fi găsit în modulele proiectului."
+        },
+        "error": {
+          "message": "Modulul nu a putut fi restaurat. Te rugăm să încerci din nou."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Link-ul modulului a fost creat cu succes."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Link-ul modulului a fost actualizat cu succes."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Link-ul modulului a fost șters cu succes."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Elementele de lucru au fost adăugate la modul cu succes."
+        },
+        "error": {
+          "message": "Elementele de lucru selectate nu au putut fi adăugate la modul. Te rugăm să încerci din nou."
+        }
+      }
+    },
+    "no_lead": "Fără lider",
+    "work_items_progress": "{completed}/{total} {total, plural, one {activitate} few {activități} other {de activități}}"
   }
 }

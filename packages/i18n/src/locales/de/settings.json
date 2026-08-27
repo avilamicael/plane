@@ -37,11 +37,38 @@
         "states": {
           "sending": "Wird gesendet…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Profilbild erfolgreich gelöscht.",
+        "picture_delete_error": "Beim Löschen Ihres Profilbilds ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+        "deactivated": "Konto erfolgreich deaktiviert."
+      },
+      "general_form": {
+        "first_name_placeholder": "Geben Sie Ihren Vornamen ein",
+        "last_name_placeholder": "Geben Sie Ihren Nachnamen ein",
+        "display_name_placeholder": "Geben Sie Ihren Anzeigenamen ein"
       }
     },
     "preferences": {
       "heading": "Einstellungen",
-      "description": "Passen Sie Ihre App-Erfahrung an Ihre Arbeitsweise an"
+      "description": "Passen Sie Ihre App-Erfahrung an Ihre Arbeitsweise an",
+      "toasts": {
+        "timezone": {
+          "success": "Zeitzone erfolgreich aktualisiert",
+          "error": "Zeitzone konnte nicht aktualisiert werden"
+        },
+        "language": {
+          "success": "Sprache erfolgreich aktualisiert",
+          "error": "Sprache konnte nicht aktualisiert werden"
+        },
+        "start_of_week": {
+          "success": "Erster Wochentag erfolgreich aktualisiert"
+        }
+      },
+      "start_of_week": {
+        "title": "Erster Tag der Woche",
+        "description": "Dies ändert das Aussehen aller Kalender in Ihrer App."
+      }
     },
     "notifications": {
       "heading": "E-Mail-Benachrichtigungen",

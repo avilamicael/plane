@@ -139,7 +139,8 @@
         "title": "Chưa có chu kỳ đã lưu trữ",
         "description": "Để tổ chức dự án của bạn, hãy lưu trữ chu kỳ đã hoàn thành. Bạn có thể tìm thấy chúng ở đây sau khi lưu trữ."
       }
-    }
+    },
+    "delete_cycle": "Xóa chu kỳ"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Đã xảy ra lỗi."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Đã xóa dự án thành công."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Không thể lưu trữ dự án. Vui lòng thử lại."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Không thể khôi phục dự án. Vui lòng thử lại."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Vui lòng xác nhận rời khỏi dự án bằng cách nhập 'Leave Project'."
+        },
+        "project_name": {
+          "message": "Vui lòng nhập tên dự án đúng như trong phần mô tả."
+        },
+        "fill_all_fields": {
+          "message": "Vui lòng điền đầy đủ các trường."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Không thể đồng bộ kho lưu trữ với dự án. Vui lòng thử lại."
+        }
+      },
+      "members_added": {
+        "message": "Đã thêm thành viên thành công."
+      },
+      "publish": {
+        "success": {
+          "message": "Đã cập nhật cài đặt xuất bản thành công!"
+        },
+        "unpublish_error": {
+          "message": "Đã xảy ra lỗi khi hủy xuất bản dự án."
+        },
+        "select_layout": {
+          "message": "Vui lòng chọn ít nhất một bố cục hiển thị để xuất bản dự án."
+        },
+        "link_copied": {
+          "message": "Đã sao chép liên kết trang đã xuất bản thành công."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Cho phép bình luận",
+      "allow_reactions": "Cho phép biểu cảm",
+      "allow_voting": "Cho phép bình chọn",
+      "anyone_with_link_can_access": "Bất kỳ ai có liên kết đều có thể truy cập"
+    },
+    "join": {
+      "title": "Tham gia dự án?"
+    },
+    "card": {
+      "created_on": "Được tạo vào {date}",
+      "no_members_yet": "Chưa có thành viên"
     }
   }
 }

@@ -191,5 +191,173 @@
       "title": "了解团队为何切换到Plane",
       "description": "将Plane与您今天使用的工具进行比较，看看差异。"
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "或",
+      "skip": "跳过",
+      "select_one": "选择一项",
+      "select_one_or_more": "选择一项或多项",
+      "steps_progress": "第 {current} 步，共 {total, plural, one {# 步} other {# 步}}",
+      "errors": {
+        "field_required": "此项为必填",
+        "select_at_least_one": "请至少选择一项"
+      }
+    },
+    "profile": {
+      "heading": "创建你的个人资料。",
+      "subheading": "这是你在 Plane 中显示的样子。",
+      "upload_image": "上传图片",
+      "change_image": "更换图片",
+      "choose_image": "选择图片",
+      "name_placeholder": "请输入你的全名",
+      "marketing_consent": "我同意接收 Plane 的营销信息",
+      "role_question": "你从事什么职位？请选择一项。",
+      "domain_question": "你的专业领域是什么？请选择一项或多项。",
+      "roles": {
+        "individual_contributor": "个人贡献者",
+        "senior_leader": "高级负责人",
+        "manager": "经理",
+        "executive": "高管",
+        "freelancer": "自由职业者",
+        "student": "学生"
+      },
+      "domains": {
+        "engineering": "工程",
+        "product": "产品",
+        "marketing": "市场营销",
+        "sales": "销售",
+        "operations": "运营",
+        "legal": "法务",
+        "finance": "财务",
+        "human_resources": "人力资源",
+        "project": "项目",
+        "other": "其他"
+      },
+      "errors": {
+        "name_length": "名称不能超过 50 个字符。",
+        "first_name_required": "名字为必填项",
+        "first_name_length": "名字不能超过 50 个字符。",
+        "last_name_required": "姓氏为必填项",
+        "last_name_length": "姓氏不能超过 50 个字符。"
+      },
+      "toast": {
+        "completed": "个人资料设置完成！",
+        "failed": "个人资料设置失败，请重试！",
+        "details_failed": "更新用户信息失败，请重试！"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "新密码...",
+      "match": "密码一致",
+      "mismatch": "密码不一致"
+    },
+    "role": {
+      "heading": "你的职位是什么？",
+      "subheading": "让我们按你的工作方式来配置 Plane。",
+      "options": {
+        "product_manager": "产品经理",
+        "engineering_manager": "工程经理",
+        "designer": "设计师",
+        "developer": "开发者",
+        "founder_executive": "创始人/高管",
+        "operations_manager": "运营经理",
+        "others": "其他"
+      }
+    },
+    "usecase": {
+      "heading": "什么原因让你选择 Plane？",
+      "subheading": "告诉我们你的目标和团队规模。",
+      "options": {
+        "plan_and_track_product_roadmaps": "规划并跟踪产品路线图",
+        "manage_engineering_sprints": "管理工程冲刺",
+        "coordinate_cross_functional_projects": "协调跨职能项目",
+        "replace_our_current_tool": "替换我们现有的工具",
+        "just_exploring": "只是先看看"
+      }
+    },
+    "workspace": {
+      "heading": "创建你的工作区",
+      "subheading": "所有工作，尽在一处。",
+      "join_heading": "接受邀请或创建工作区",
+      "join_existing": "加入现有工作区",
+      "create_new": "创建新工作区",
+      "join_invited_cta": "我想加入受邀的工作区",
+      "creation_disabled": "你似乎没有收到任何工作区邀请，而且实例管理员限制了创建新工作区。请让工作区所有者或管理员先邀请你，然后回到此页面加入。",
+      "organization_size": {
+        "just_myself": "只有我"
+      }
+    },
+    "invitations": {
+      "heading": "你收到了邀请！",
+      "subheading": "接受邀请，与你的团队一起协作。",
+      "continue_to_workspace": "进入工作区",
+      "create_own_workspace": "创建我自己的工作区",
+      "empty": "未找到邀请"
+    },
+    "team": {
+      "heading": "邀请你的团队成员",
+      "subheading": "在 Plane 中，与团队一起工作效果最好。现在就邀请他们，充分发挥 Plane 的潜力。",
+      "add_another": "再添加一个",
+      "do_it_later": "稍后再说",
+      "errors": {
+        "invalid_email": "电子邮件地址无效",
+        "not_an_email": "这看起来不像是电子邮件地址。"
+      },
+      "toast": {
+        "invitations_sent": "邀请已成功发送。"
+      }
+    },
+    "switch_account": {
+      "wrong_email": "电子邮件地址有误？",
+      "title": "切换账户",
+      "description_prefix": "如果你是误用",
+      "description_suffix": "注册的，可以在此切换到其他账户。",
+      "switching": "正在切换...",
+      "sign_out_failed": "退出登录失败，请重试。"
+    },
+    "toast": {
+      "finish_failed": "无法完成初始设置，请稍后重试。"
+    },
+    "tour": {
+      "welcome": {
+        "title": "欢迎使用 Plane，{name}",
+        "description": "很高兴你决定试用 Plane。现在你可以轻松管理项目了。先创建一个项目开始吧。",
+        "take_tour": "查看产品导览",
+        "skip": "不用了，我想自己探索"
+      },
+      "sidebar": {
+        "title": "开始吧！",
+        "subtitle": "更充分地使用 Plane。",
+        "work_items": "工作项",
+        "cycles": "周期",
+        "modules": "模块",
+        "views": "视图",
+        "pages": "页面"
+      },
+      "steps": {
+        "work_items": {
+          "title": "用工作项进行规划",
+          "description": "工作项是 Plane 的基本构建块。Plane 中的大多数概念都与工作项及其属性相关。"
+        },
+        "cycles": {
+          "title": "用周期推进",
+          "description": "周期帮助你和团队更快推进，类似敏捷开发中常用的冲刺。"
+        },
+        "modules": {
+          "title": "拆分为模块",
+          "description": "模块把庞大的目标拆分为项目或功能，帮助你更好地组织工作。"
+        },
+        "views": {
+          "title": "视图",
+          "description": "创建自定义筛选器，只显示你关心的工作项。几次点击即可保存并分享筛选器。"
+        },
+        "pages": {
+          "title": "用页面记录",
+          "description": "在开会时或一天开始时，用页面快速记下工作项。"
+        }
+      },
+      "create_first_project": "创建你的第一个项目"
+    }
   }
 }

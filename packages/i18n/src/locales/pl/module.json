@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Moduł} few {Moduły} other {Modułów}}",
     "no_module": "Brak modułu",
-    "select": "Dodaj moduły"
+    "select": "Dodaj moduły",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Moduł pomyślnie utworzono."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Moduł pomyślnie zaktualizowano."
+        },
+        "error": {
+          "message": "Nie udało się zaktualizować modułu. Spróbuj ponownie."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Archiwa znajdziesz w archiwum projektu."
+        },
+        "error": {
+          "message": "Nie udało się zarchiwizować modułu. Spróbuj ponownie."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Twój moduł znajdziesz w modułach projektu."
+        },
+        "error": {
+          "message": "Nie udało się przywrócić modułu. Spróbuj ponownie."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Link do modułu pomyślnie utworzono."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Link do modułu pomyślnie zaktualizowano."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Link do modułu pomyślnie usunięto."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Elementy pracy pomyślnie dodano do modułu."
+        },
+        "error": {
+          "message": "Nie udało się dodać wybranych elementów pracy do modułu. Spróbuj ponownie."
+        }
+      }
+    },
+    "no_lead": "Brak prowadzącego",
+    "work_items_progress": "{completed}/{total} {total, plural, one {element pracy} few {elementy pracy} many {elementów pracy} other {elementu pracy}}"
   }
 }

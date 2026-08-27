@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Projekteinstellungen",
     "general": {
       "enter_project_id": "Geben Sie eine Projekt-ID ein",
       "please_select_a_timezone": "Bitte wählen Sie eine Zeitzone aus",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Keine Status für die Gruppe {groupKey}",
         "description": "Erstellen Sie einen neuen Status"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Status erfolgreich erstellt."
+          },
+          "error": {
+            "name_exists": "Ein Status mit diesem Namen existiert bereits. Bitte versuchen Sie es mit einem anderen Namen."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Status erfolgreich aktualisiert."
+          },
+          "error": {
+            "name_exists": "Ein anderer Status mit demselben Namen existiert bereits. Bitte versuchen Sie es mit einem anderen Namen.",
+            "message": "Der Status konnte nicht aktualisiert werden. Bitte versuchen Sie es erneut."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Der Status konnte nicht gelöscht werden. Bitte versuchen Sie es erneut.",
+            "has_work_items": "Dieser Status enthält Arbeitselemente. Verschieben Sie diese in einen anderen Status, um ihn zu löschen."
+          }
+        }
+      },
+      "delete_state": "Status löschen"
     },
     "labels": {
       "heading": "Labels",
@@ -53,7 +80,8 @@
       "label_max_char": "Der Labelname darf nicht mehr als 255 Zeichen enthalten",
       "toast": {
         "error": "Fehler beim Aktualisieren des Labels"
-      }
+      },
+      "delete_label": "Label löschen"
     },
     "estimates": {
       "heading": "Schätzungen",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Fehler",
             "message": "Etwas ist schiefgelaufen"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "Die Schätzung wurde aus Ihrem Projekt entfernt."
+          },
+          "error": {
+            "message": "Die Schätzung konnte nicht gelöscht werden. Bitte versuchen Sie es erneut."
           }
         }
       },

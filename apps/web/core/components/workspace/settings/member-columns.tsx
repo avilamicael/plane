@@ -19,6 +19,7 @@ import type { IUser, IWorkspaceMember } from "@plane/types";
 import { CustomSelect, PopoverMenu } from "@plane/ui";
 // helpers
 import { getFileURL } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
@@ -112,6 +113,8 @@ export function NameColumn(props: NameProps) {
 }
 
 export const AccountTypeColumn = observer(function AccountTypeColumn(props: AccountTypeProps) {
+  const { t } = useTranslation();
+
   const { rowData, workspaceSlug } = props;
   // form info
   const {
@@ -164,7 +167,7 @@ export const AccountTypeColumn = observer(function AccountTypeColumn(props: Acco
 
                   setToast({
                     type: TOAST_TYPE.ERROR,
-                    title: "Error!",
+                    title: t("common.toast.error"),
                     message: errorString ?? "An error occurred while updating member role. Please try again.",
                   });
                 }

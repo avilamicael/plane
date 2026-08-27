@@ -110,6 +110,126 @@
       "label": "Quitar de la colección",
       "success_message": "Página quitada de la colección.",
       "error_message": "No se pudo quitar la página de la colección. Inténtalo de nuevo."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Enlace de la página copiado al portapapeles."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Página duplicada correctamente."
+        },
+        "error": {
+          "message": "No se pudo duplicar la página. Inténtalo de nuevo más tarde."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Página restaurada correctamente."
+        },
+        "error": {
+          "message": "No se pudo restaurar la página. Inténtalo de nuevo más tarde."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Página archivada correctamente."
+        },
+        "error": {
+          "message": "No se pudo archivar la página. Inténtalo de nuevo más tarde."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Página añadida a favoritos."
+        },
+        "error": {
+          "message": "No se pudo añadir la página a favoritos. Inténtalo de nuevo más tarde."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Página eliminada de favoritos."
+        },
+        "error": {
+          "message": "No se pudo eliminar la página de favoritos. Inténtalo de nuevo más tarde."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Página bloqueada correctamente."
+        },
+        "error": {
+          "message": "No se pudo bloquear la página. Inténtalo de nuevo más tarde."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Página desbloqueada correctamente."
+        },
+        "error": {
+          "message": "No se pudo desbloquear la página. Inténtalo de nuevo más tarde."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "La página se ha marcado como pública y se ha movido a la sección pública."
+        },
+        "error": {
+          "message": "No se pudo marcar la página como pública. Inténtalo de nuevo."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "La página se ha marcado como privada y se ha movido a la sección privada."
+        },
+        "error": {
+          "message": "No se pudo marcar la página como privada. Inténtalo de nuevo."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Página eliminada correctamente."
+        },
+        "error": {
+          "message": "No se pudo eliminar la página. Inténtalo de nuevo."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Página exportada correctamente."
+        },
+        "error": {
+          "message": "No se pudo exportar la página. Inténtalo de nuevo más tarde."
+        }
+      }
+    },
+    "create_page": "Crear página",
+    "delete_page": "Eliminar página",
+    "export": {
+      "title": "Exportar página",
+      "format": "Formato de exportación",
+      "include_content": "Incluir contenido",
+      "page_format": "Formato de página",
+      "content_variety": {
+        "everything": "Todo",
+        "no_images": "Sin imágenes"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Bloquear",
+      "locked": "Bloqueada",
+      "unlocked": "Desbloqueada"
+    },
+    "offline_badge": {
+      "heading": "Estás sin conexión.",
+      "description": "Puedes seguir haciendo cambios. Se sincronizarán cuando vuelvas a estar en línea.",
+      "label": "Sin conexión"
+    },
+    "toolbar": {
+      "color": "Color"
     }
   }
 }

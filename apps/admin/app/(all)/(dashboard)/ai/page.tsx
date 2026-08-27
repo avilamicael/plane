@@ -6,6 +6,7 @@
 
 import { observer } from "mobx-react";
 import useSWR from "swr";
+import { useTranslation } from "@plane/i18n";
 import { Loader } from "@plane/ui";
 // components
 import { PageWrapper } from "@/components/common/page-wrapper";
@@ -17,6 +18,8 @@ import type { Route } from "./+types/page";
 import { InstanceAIForm } from "./form";
 
 const InstanceAIPage = observer(function InstanceAIPage(_props: Route.ComponentProps) {
+  // i18n
+  const { t } = useTranslation();
   // store
   const { fetchInstanceConfigurations, formattedConfig } = useInstance();
 
@@ -25,8 +28,8 @@ const InstanceAIPage = observer(function InstanceAIPage(_props: Route.ComponentP
   return (
     <PageWrapper
       header={{
-        title: "AI features for all your workspaces",
-        description: "Configure your AI API credentials so Plane AI features are turned on for all your workspaces.",
+        title: t("admin.settings.ai.title"),
+        description: t("admin.settings.ai.description"),
       }}
     >
       {formattedConfig ? (

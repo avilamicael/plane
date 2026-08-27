@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {Ciclo} other {Ciclos}}",
-    "no_cycle": "Sin ciclo"
+    "no_cycle": "Sin ciclo",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Ciclo creado correctamente."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Ciclo eliminado correctamente."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Tus archivos se pueden encontrar en los archivos del proyecto."
+        },
+        "error": {
+          "message": "No se pudo archivar el ciclo. Inténtalo de nuevo."
+        }
+      },
+      "date_conflict": {
+        "message": "Ya tienes un ciclo en las fechas indicadas. Si quieres crear un ciclo en borrador, elimina las fechas."
+      },
+      "transfer": {
+        "success": {
+          "message": "Los elementos de trabajo se han transferido correctamente"
+        },
+        "error": {
+          "message": "No se pudieron transferir los elementos de trabajo. Inténtalo de nuevo."
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Elementos de trabajo añadidos al ciclo correctamente."
+        },
+        "error": {
+          "message": "No se pudieron añadir los elementos de trabajo seleccionados al ciclo. Inténtalo de nuevo."
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

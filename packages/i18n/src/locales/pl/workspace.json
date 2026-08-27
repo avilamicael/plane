@@ -373,6 +373,16 @@
           "message": "Coś poszło nie tak."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Obszar roboczy pomyślnie zaktualizowano"
+        }
+      },
+      "logo_removed": {
+        "message": "Obraz obszaru roboczego pomyślnie usunięto."
+      }
     }
   }
 }

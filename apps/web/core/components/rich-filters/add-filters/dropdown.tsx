@@ -8,6 +8,7 @@ import React from "react";
 import { observer } from "mobx-react";
 // plane imports
 import { setToast, TOAST_TYPE } from "@plane/propel/toast";
+import { useTranslation } from "@plane/i18n";
 import type { IFilterInstance } from "@plane/shared-state";
 import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@plane/types";
 import { CustomSearchSelect } from "@plane/ui";
@@ -30,6 +31,8 @@ export const AddFilterDropdown = observer(function AddFilterDropdown<
 >(props: TAddFilterDropdownProps<P, E>) {
   const { filter, customButton, buttonConfig } = props;
   const { className, defaultOpen = false, isDisabled = false } = buttonConfig || {};
+  // i18n
+  const { t } = useTranslation();
 
   // Transform available filter configs to CustomSearchSelect options format
   const filterOptions = filter.configManager.allAvailableConfigs.map((config) => ({
@@ -69,7 +72,7 @@ export const AddFilterDropdown = observer(function AddFilterDropdown<
     } else {
       setToast({
         title: "Filter configuration error",
-        message: "This filter is not properly configured and cannot be applied",
+        message: t("rich_filters.toasts.invalid_filter.message"),
         type: TOAST_TYPE.ERROR,
       });
     }

@@ -37,11 +37,38 @@
         "states": {
           "sending": "Đang gửi…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Đã xóa ảnh đại diện thành công.",
+        "picture_delete_error": "Đã xảy ra lỗi khi xóa ảnh đại diện của bạn. Vui lòng thử lại.",
+        "deactivated": "Đã vô hiệu hóa tài khoản thành công."
+      },
+      "general_form": {
+        "first_name_placeholder": "Nhập tên của bạn",
+        "last_name_placeholder": "Nhập họ của bạn",
+        "display_name_placeholder": "Nhập tên hiển thị của bạn"
       }
     },
     "preferences": {
       "heading": "Tùy chọn",
-      "description": "Tùy chỉnh trải nghiệm ứng dụng theo cách bạn làm việc"
+      "description": "Tùy chỉnh trải nghiệm ứng dụng theo cách bạn làm việc",
+      "toasts": {
+        "timezone": {
+          "success": "Đã cập nhật múi giờ thành công",
+          "error": "Cập nhật múi giờ thất bại"
+        },
+        "language": {
+          "success": "Đã cập nhật ngôn ngữ thành công",
+          "error": "Cập nhật ngôn ngữ thất bại"
+        },
+        "start_of_week": {
+          "success": "Đã cập nhật ngày đầu tuần thành công"
+        }
+      },
+      "start_of_week": {
+        "title": "Ngày đầu tuần",
+        "description": "Thao tác này sẽ thay đổi giao diện của tất cả lịch trong ứng dụng."
+      }
     },
     "notifications": {
       "heading": "Thông báo qua email",

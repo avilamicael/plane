@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Modül} other {Modüller}}",
     "no_module": "Modül yok",
-    "select": "Modül ekle"
+    "select": "Modül ekle",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Modül başarıyla oluşturuldu."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Modül başarıyla güncellendi."
+        },
+        "error": {
+          "message": "Modül güncellenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Arşivleriniz proje arşivlerinde bulunabilir."
+        },
+        "error": {
+          "message": "Modül arşivlenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Modülünüz proje modüllerinde bulunabilir."
+        },
+        "error": {
+          "message": "Modül geri yüklenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Modül bağlantısı başarıyla oluşturuldu."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Modül bağlantısı başarıyla güncellendi."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Modül bağlantısı başarıyla silindi."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "İş öğeleri modüle başarıyla eklendi."
+        },
+        "error": {
+          "message": "Seçilen iş öğeleri modüle eklenemedi. Lütfen tekrar deneyin."
+        }
+      }
+    },
+    "no_lead": "Lider yok",
+    "work_items_progress": "{completed}/{total} {total, plural, one {iş öğesi} other {iş öğesi}}"
   }
 }

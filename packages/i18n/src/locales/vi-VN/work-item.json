@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Đăng nhập để thêm bình luận"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Nhấp để bỏ phiếu thuận",
       "click_to_downvote": "Nhấp để bỏ phiếu chống",
       "click_to_view_upvotes": "Nhấp để xem phiếu thuận",
-      "click_to_view_downvotes": "Nhấp để xem phiếu chống"
+      "click_to_view_downvotes": "Nhấp để xem phiếu chống",
+      "no_upvotes": "Chưa có lượt ủng hộ",
+      "no_downvotes": "Chưa có lượt phản đối",
+      "and_more": "và {count} người khác"
     },
     "activity": {
       "created_the_work_item": "đã tạo mục công việc.",
       "created_the_work_item_via": "đã tạo mục công việc qua",
-      "deleted_a_work_item": "đã xóa một mục công việc."
+      "deleted_a_work_item": "đã xóa một mục công việc.",
+      "set_the_name_to": "đã đặt tên thành",
+      "updated_the_description": "đã cập nhật mô tả",
+      "set_the_state_to": "đã đặt trạng thái thành",
+      "set_the_priority_to": "đã đặt mức ưu tiên thành",
+      "added_a_new_assignee": "đã thêm người phụ trách mới",
+      "removed_the_assignee": "đã gỡ người phụ trách",
+      "added_a_new_label": "đã thêm nhãn mới",
+      "removed_the_label": "đã gỡ nhãn",
+      "set_the_start_date_to": "đã đặt ngày bắt đầu thành",
+      "removed_the_start_date": "đã xóa ngày bắt đầu",
+      "set_the_due_date_to": "đã đặt ngày hết hạn thành",
+      "removed_the_due_date": "đã xóa ngày hết hạn",
+      "set_the_parent_to": "đã đặt mục cha thành",
+      "removed_the_parent": "đã gỡ mục cha",
+      "set_the_estimate_point_to": "đã đặt điểm ước tính thành",
+      "removed_the_estimate_point": "đã xóa điểm ước tính",
+      "added_this_work_item_to_the_cycle": "đã thêm mục công việc này vào chu kỳ",
+      "set_the_cycle_to": "đã đặt chu kỳ thành",
+      "removed_the_work_item_from_the_cycle": "đã gỡ mục công việc khỏi chu kỳ",
+      "added_this_work_item_to_the_module": "đã thêm mục công việc này vào mô-đun",
+      "set_the_module_to": "đã đặt mô-đun thành",
+      "removed_the_work_item_from_the_module": "đã gỡ mục công việc khỏi mô-đun",
+      "added_the_link": "đã thêm",
+      "updated_the_link": "đã cập nhật",
+      "removed_the_link": "đã xóa",
+      "link_noun": "liên kết",
+      "uploaded_a_new_attachment": "đã tải lên tệp đính kèm mới",
+      "removed_an_attachment": "đã xóa một tệp đính kèm",
+      "restored_the_work_item": "đã khôi phục mục công việc",
+      "archived_the_work_item": "đã lưu trữ mục công việc",
+      "declined_this_work_item_from_intake": "đã từ chối mục công việc này từ Intake.",
+      "snoozed_this_work_item": "đã tạm hoãn mục công việc này.",
+      "accepted_this_work_item_from_intake": "đã chấp nhận mục công việc này từ Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "đã từ chối mục công việc này từ Intake bằng cách đánh dấu là trùng lặp.",
+      "updated_intake_work_item_status": "đã cập nhật trạng thái mục công việc trong Intake.",
+      "marked_this_work_item_is_blocking_work_item": "đã đánh dấu mục công việc này đang chặn mục công việc",
+      "removed_the_blocking_work_item": "đã gỡ chặn mục công việc",
+      "marked_this_work_item_is_being_blocked_by": "đã đánh dấu mục công việc này bị chặn bởi",
+      "removed_this_work_item_being_blocked_by_work_item": "đã gỡ việc mục công việc này bị chặn bởi",
+      "marked_this_work_item_as_duplicate_of": "đã đánh dấu mục công việc này là bản trùng của",
+      "removed_this_work_item_as_a_duplicate_of": "đã gỡ đánh dấu mục công việc này là bản trùng của",
+      "marked_that_this_work_item_relates_to": "đã đánh dấu mục công việc này liên quan đến",
+      "removed_the_relation_from": "đã gỡ liên kết với",
+      "connector_for": "cho",
+      "connector_to": "vào",
+      "connector_from": "khỏi",
+      "connector_of": "của"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Đã thêm biểu cảm thành công"
+          },
+          "error": {
+            "message": "Thêm biểu cảm thất bại"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Đã xóa biểu cảm thành công"
+          },
+          "error": {
+            "message": "Xóa biểu cảm thất bại"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Đã xóa tệp đính kèm thành công"
+          },
+          "error": {
+            "message": "Không thể xóa tệp đính kèm"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Vui lòng chọn ít nhất một mục công việc."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Đã xóa các mục công việc thành công!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Ngày đến hạn không thể trước ngày bắt đầu của mục công việc."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Lỗi khi cập nhật ngày của mục công việc. Vui lòng thử lại sau."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Không thể chuyển mục công việc sang dự án. Vui lòng thử lại."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Xóa mục công việc thất bại"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Cập nhật mục công việc thất bại"
+        }
+      },
+      "editor_processing": {
+        "message": "Trình soạn thảo vẫn đang xử lý các thay đổi. Vui lòng đợi trước khi tiếp tục."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Tiêu đề mục công việc chưa đủ rõ ràng để tạo mô tả. Vui lòng thử với tiêu đề khác."
+        }
+      }
     }
   },
   "sub_work_item": {

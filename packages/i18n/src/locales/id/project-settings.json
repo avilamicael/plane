@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Pengaturan proyek",
     "general": {
       "enter_project_id": "Masukkan ID proyek",
       "please_select_a_timezone": "Silakan pilih zona waktu",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Tidak ada status yang tersedia untuk grup {groupKey}",
         "description": "Silakan buat status baru"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Status berhasil dibuat."
+          },
+          "error": {
+            "name_exists": "Status dengan nama tersebut sudah ada. Silakan coba lagi dengan nama lain."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Status berhasil diperbarui."
+          },
+          "error": {
+            "name_exists": "Status lain dengan nama yang sama sudah ada. Silakan coba lagi dengan nama lain.",
+            "message": "Status tidak dapat diperbarui. Silakan coba lagi."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Status tidak dapat dihapus. Silakan coba lagi.",
+            "has_work_items": "Status ini berisi item kerja. Pindahkan ke status lain untuk menghapus status ini."
+          }
+        }
+      },
+      "delete_state": "Hapus status"
     },
     "labels": {
       "heading": "Label",
@@ -53,7 +80,8 @@
       "label_max_char": "Nama label tidak boleh lebih dari 255 karakter",
       "toast": {
         "error": "Kesalahan saat memperbarui label"
-      }
+      },
+      "delete_label": "Hapus label"
     },
     "estimates": {
       "heading": "Perkiraan",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Kesalahan",
             "message": "Terjadi kesalahan"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "Estimasi telah dihapus dari proyek Anda."
+          },
+          "error": {
+            "message": "Kami tidak dapat menghapus estimasi. Silakan coba lagi."
           }
         }
       },

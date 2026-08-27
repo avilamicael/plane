@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "프로젝트 설정",
     "general": {
       "enter_project_id": "프로젝트 ID 입력",
       "please_select_a_timezone": "시간대를 선택하세요",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "{groupKey} 그룹에 사용할 수 있는 상태 없음",
         "description": "새 상태를 생성하세요"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "상태가 성공적으로 생성되었습니다."
+          },
+          "error": {
+            "name_exists": "동일한 이름의 상태가 이미 존재합니다. 다른 이름으로 다시 시도해주세요."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "상태가 성공적으로 업데이트되었습니다."
+          },
+          "error": {
+            "name_exists": "동일한 이름의 다른 상태가 존재합니다. 다른 이름으로 다시 시도해주세요.",
+            "message": "상태를 업데이트할 수 없습니다. 다시 시도해주세요."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "상태를 삭제할 수 없습니다. 다시 시도해주세요.",
+            "has_work_items": "이 상태에는 작업 항목이 포함되어 있습니다. 삭제하려면 다른 상태로 옮겨주세요."
+          }
+        }
+      },
+      "delete_state": "상태 삭제"
     },
     "labels": {
       "heading": "레이블",
@@ -53,7 +80,8 @@
       "label_max_char": "레이블 이름은 255자를 초과할 수 없습니다",
       "toast": {
         "error": "레이블 업데이트 중 오류 발생"
-      }
+      },
+      "delete_label": "레이블 삭제"
     },
     "estimates": {
       "heading": "추정",
@@ -127,6 +155,14 @@
           "error": {
             "title": "오류",
             "message": "문제가 발생했습니다"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "추정치가 프로젝트에서 제거되었습니다."
+          },
+          "error": {
+            "message": "추정치를 삭제할 수 없습니다. 다시 시도해주세요."
           }
         }
       },

@@ -6,6 +6,7 @@
 
 export const NAMESPACES = [
   "accessibility",
+  "admin",
   "auth",
   "automation",
   "common",
@@ -23,6 +24,7 @@ export const NAMESPACES = [
   "project",
   "project-settings",
   "settings",
+  "space",
   "stickies",
   "template",
   "tour",

@@ -30,5 +30,39 @@
     "upgrade_plan": "Apgrejd plán",
     "plane_pro": "Plejn Pro",
     "business": "Biznis"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Predvolená karta bola úspešne aktualizovaná."
+        },
+        "error": {
+          "message": "Predvolenú kartu sa nepodarilo aktualizovať. Skúste to prosím neskôr."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Kartu sa nepodarilo skryť. Skúste to prosím neskôr."
+        }
+      }
+    },
+    "actions": {
+      "show": "Zobraziť",
+      "hide_in_more_menu": "Skryť v ponuke Viac",
+      "set_as_default": "Nastaviť ako predvolené",
+      "clear_default": "Zrušiť predvolené"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Hľadať príkazy..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Iba ikona",
+      "icon_with_name": "Ikona s názvom"
+    },
+    "dock": "Ukotviť lištu aplikácií",
+    "undock": "Uvoľniť lištu aplikácií"
   }
 }

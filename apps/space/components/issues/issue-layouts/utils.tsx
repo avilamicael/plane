@@ -7,6 +7,7 @@
 import { isNil } from "lodash-es";
 // types
 import { EIconSize, ISSUE_PRIORITIES } from "@plane/constants";
+import type { TTranslationStore } from "@plane/i18n";
 import { CycleGroupIcon, CycleIcon, ModuleIcon, PriorityIcon, StateGroupIcon } from "@plane/propel/icons";
 import type {
   GroupByColumnTypes,
@@ -17,6 +18,7 @@ import type {
 } from "@plane/types";
 // ui
 import { Avatar } from "@plane/ui";
+import { getIssuePriorityFilters } from "@plane/utils";
 // components
 // constants
 // stores
@@ -29,6 +31,16 @@ import type { IStateStore } from "@/store/state.store";
 export const HIGHLIGHT_CLASS = "highlight";
 export const HIGHLIGHT_WITH_LINE = "highlight-with-line";
 
+// `None` is the group identifier the layouts compare against (see getGroupId), so it
+// must stay untranslated. Only the `name` rendered in the column header is localized.
+const NONE_GROUP_ID = "None";
+
+type TTranslate = TTranslationStore["t"];
+
+// The column getters are plain helpers and cannot call the useTranslation hook, so the
+// callers (all React components) hand `t` down to them.
+const identityTranslate: TTranslate = (key) => key;
+
 export const getGroupByColumns = (
   groupBy: GroupByColumnTypes | null,
   cycle: ICycleStore,
@@ -36,29 +48,32 @@ export const getGroupByColumns = (
   label: IIssueLabelStore,
   projectState: IStateStore,
   member: IIssueMemberStore,
-  includeNone?: boolean
+  includeNone?: boolean,
+  t?: TTranslate
 ): IGroupByColumn[] | undefined => {
+  const translate = t ?? identityTranslate;
+
   switch (groupBy) {
     case "cycle":
-      return getCycleColumns(cycle);
+      return getCycleColumns(cycle, translate);
     case "module":
-      return getModuleColumns(module);
+      return getModuleColumns(module, translate);
     case "state":
       return getStateColumns(projectState);
     case "priority":
-      return getPriorityColumns();
+      return getPriorityColumns(translate);
     case "labels":
-      return getLabelsColumns(label) as any;
+      return getLabelsColumns(label, translate) as any;
     case "assignees":
-      return getAssigneeColumns(member);
+      return getAssigneeColumns(member, translate);
     case "created_by":
       return getCreatedByColumns(member) as any;
     default:
-      if (includeNone) return [{ id: `All Issues`, name: `All work items`, payload: {}, icon: undefined }];
+      if (includeNone) return [{ id: `All Issues`, name: translate("issue.all"), payload: {}, icon: undefined }];
   }
 };
 
-const getCycleColumns = (cycleStore: ICycleStore): IGroupByColumn[] | undefined => {
+const getCycleColumns = (cycleStore: ICycleStore, t: TTranslate): IGroupByColumn[] | undefined => {
   const { cycles } = cycleStore;
 
   if (!cycles) return;
@@ -77,8 +92,8 @@ const getCycleColumns = (cycleStore: ICycleStore): IGroupByColumn[] | undefined 
     }
   });
   cycleGroups.push({
-    id: "None",
-    name: "None",
+    id: NONE_GROUP_ID,
+    name: t("common.none"),
     icon: <CycleIcon className="h-3.5 w-3.5" />,
     payload: { cycle_id: null },
   });
@@ -86,7 +101,7 @@ const getCycleColumns = (cycleStore: ICycleStore): IGroupByColumn[] | undefined 
   return cycleGroups;
 };
 
-const getModuleColumns = (moduleStore: IIssueModuleStore): IGroupByColumn[] | undefined => {
+const getModuleColumns = (moduleStore: IIssueModuleStore, t: TTranslate): IGroupByColumn[] | undefined => {
   const { modules } = moduleStore;
 
   if (!modules) return;
@@ -103,8 +118,8 @@ const getModuleColumns = (moduleStore: IIssueModuleStore): IGroupByColumn[] | un
       });
   }) as any;
   moduleGroups.push({
-    id: "None",
-    name: "None",
+    id: NONE_GROUP_ID,
+    name: t("common.none"),
     icon: <ModuleIcon className="h-3.5 w-3.5" />,
     payload: { module_ids: [] },
   });
@@ -128,23 +143,23 @@ const getStateColumns = (projectState: IStateStore): IGroupByColumn[] | undefine
   })) as any;
 };
 
-const getPriorityColumns = () => {
+const getPriorityColumns = (t: TTranslate) => {
   const priorities = ISSUE_PRIORITIES;
 
   return priorities.map((priority) => ({
     id: priority.key,
-    name: priority.title,
+    name: t(getIssuePriorityFilters(priority.key)?.titleTranslationKey ?? "common.none"),
     icon: <PriorityIcon priority={priority?.key} />,
     payload: { priority: priority.key },
   }));
 };
 
-const getLabelsColumns = (label: IIssueLabelStore) => {
+const getLabelsColumns = (label: IIssueLabelStore, t: TTranslate) => {
   const { labels: storeLabels } = label;
 
   if (!storeLabels) return;
 
-  const labels = [...storeLabels, { id: "None", name: "None", color: "#666" }];
+  const labels = [...storeLabels, { id: NONE_GROUP_ID, name: t("common.none"), color: "#666" }];
 
   return labels.map((label) => ({
     id: label.id,
@@ -152,11 +167,11 @@ const getLabelsColumns = (label: IIssueLabelStore) => {
     icon: (
       <div className="h-[12px] w-[12px] rounded-full" style={{ backgroundColor: label.color ? label.color : "#666" }} />
     ),
-    payload: label?.id === "None" ? {} : { label_ids: [label.id] },
+    payload: label?.id === NONE_GROUP_ID ? {} : { label_ids: [label.id] },
   }));
 };
 
-const getAssigneeColumns = (member: IIssueMemberStore) => {
+const getAssigneeColumns = (member: IIssueMemberStore, t: TTranslate) => {
   const { members } = member;
 
   if (!members) return;
@@ -168,7 +183,7 @@ const getAssigneeColumns = (member: IIssueMemberStore) => {
     payload: { assignee_ids: [member.id] },
   }));
 
-  assigneeColumns.push({ id: "None", name: "None", icon: <Avatar size="md" />, payload: {} });
+  assigneeColumns.push({ id: NONE_GROUP_ID, name: t("common.none"), icon: <Avatar size="md" />, payload: {} });
 
   return assigneeColumns;
 };
@@ -211,7 +226,7 @@ export const getIssueBlockId = (issueId: string | undefined, groupId: string | u
  * @returns
  */
 export const getGroupId = (groupId: string) => {
-  if (groupId === "None") return [];
+  if (groupId === NONE_GROUP_ID) return [];
   return [groupId];
 };
 

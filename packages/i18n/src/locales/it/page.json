@@ -110,6 +110,126 @@
       "label": "Rimuovi dalla raccolta",
       "success_message": "Pagina rimossa dalla raccolta.",
       "error_message": "Non è stato possibile rimuovere la pagina dalla raccolta. Riprova."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Link della pagina copiato negli appunti."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Pagina duplicata con successo."
+        },
+        "error": {
+          "message": "Impossibile duplicare la pagina. Riprova più tardi."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Pagina ripristinata con successo."
+        },
+        "error": {
+          "message": "Impossibile ripristinare la pagina. Riprova più tardi."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Pagina archiviata con successo."
+        },
+        "error": {
+          "message": "Impossibile archiviare la pagina. Riprova più tardi."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Pagina aggiunta ai preferiti."
+        },
+        "error": {
+          "message": "Impossibile aggiungere la pagina ai preferiti. Riprova più tardi."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Pagina rimossa dai preferiti."
+        },
+        "error": {
+          "message": "Impossibile rimuovere la pagina dai preferiti. Riprova più tardi."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Pagina bloccata con successo."
+        },
+        "error": {
+          "message": "Impossibile bloccare la pagina. Riprova più tardi."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Pagina sbloccata con successo."
+        },
+        "error": {
+          "message": "Impossibile sbloccare la pagina. Riprova più tardi."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "La pagina è stata contrassegnata come pubblica e spostata nella sezione pubblica."
+        },
+        "error": {
+          "message": "Impossibile contrassegnare la pagina come pubblica. Riprova."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "La pagina è stata contrassegnata come privata e spostata nella sezione privata."
+        },
+        "error": {
+          "message": "Impossibile contrassegnare la pagina come privata. Riprova."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Pagina eliminata con successo."
+        },
+        "error": {
+          "message": "Impossibile eliminare la pagina. Riprova."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Pagina esportata con successo."
+        },
+        "error": {
+          "message": "Impossibile esportare la pagina. Riprova più tardi."
+        }
+      }
+    },
+    "create_page": "Crea pagina",
+    "delete_page": "Elimina pagina",
+    "export": {
+      "title": "Esporta pagina",
+      "format": "Formato di esportazione",
+      "include_content": "Includi contenuto",
+      "page_format": "Formato pagina",
+      "content_variety": {
+        "everything": "Tutto",
+        "no_images": "Senza immagini"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Blocca",
+      "locked": "Bloccata",
+      "unlocked": "Sbloccata"
+    },
+    "offline_badge": {
+      "heading": "Sei offline.",
+      "description": "Puoi continuare a fare modifiche. Verranno sincronizzate quando tornerai online.",
+      "label": "Offline"
+    },
+    "toolbar": {
+      "color": "Colore"
     }
   }
 }

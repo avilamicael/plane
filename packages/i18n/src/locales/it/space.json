@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Errore",
+          "message": "Qualcosa è andato storto. Per favore riprova."
+        },
+        "template": {
+          "try_again": "{reason}. Per favore riprova.",
+          "contact_admin": "{reason}. Contatta il tuo amministratore."
+        },
+        "reason": {
+          "instance_not_configured": "Istanza non configurata",
+          "signup_disabled": "Registrazione disabilitata",
+          "invalid_password": "Password non valida",
+          "smtp_not_configured": "SMTP non configurato",
+          "invalid_email": "Email non valida",
+          "email_required": "Email obbligatoria",
+          "email_and_password_required": "Email e password obbligatorie",
+          "email_and_code_required": "Email e codice obbligatori",
+          "authentication_failed": "Autenticazione fallita",
+          "invalid_magic_code": "Codice magico non valido",
+          "expired_magic_code": "Codice magico scaduto",
+          "oauth_not_configured": "OAuth non configurato",
+          "google_not_configured": "Google non configurato",
+          "github_not_configured": "GitHub non configurato",
+          "gitlab_not_configured": "GitLab non configurato",
+          "google_oauth_provider_error": "Errore del provider OAuth di Google",
+          "github_oauth_provider_error": "Errore del provider OAuth di GitHub",
+          "gitlab_oauth_provider_error": "Errore del provider OAuth di GitLab",
+          "invalid_password_token": "Token della password non valido",
+          "expired_password_token": "Token della password scaduto",
+          "password_required": "Password obbligatoria",
+          "incorrect_old_password": "Vecchia password errata",
+          "invalid_new_password": "Nuova password non valida",
+          "password_already_set": "Password già impostata",
+          "admin_already_exist": "L'amministratore esiste già",
+          "admin_email_password_first_name_required": "Email, password e nome obbligatori",
+          "invalid_admin_email": "Email amministratore non valida",
+          "invalid_admin_password": "Password amministratore non valida"
+        },
+        "title": {
+          "user_already_exist": "L'utente esiste già",
+          "user_does_not_exist": "L'utente non esiste",
+          "user_account_deactivated": "Account utente disattivato",
+          "bot_user_login_forbidden": "Accesso non consentito",
+          "admin_user_already_exist": "L'utente amministratore esiste già",
+          "admin_user_does_not_exist": "L'utente amministratore non esiste"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Questo account non può essere usato per accedere. Usa un account personale.",
+          "user_account_deactivated": "Account utente disattivato. Contatta {contact}.",
+          "default_contact": "l'amministratore",
+          "user_already_exist": "Il tuo account è già registrato.",
+          "user_does_not_exist": "Nessun account trovato.",
+          "admin_user_already_exist": "L'utente amministratore esiste già.",
+          "admin_user_does_not_exist": "L'utente amministratore non esiste.",
+          "link": {
+            "sign_in_now": "Accedi ora",
+            "create_one": "Creane uno per iniziare"
+          }
+        }
+      }
+    }
+  }
+}

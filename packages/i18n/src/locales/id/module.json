@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Modul} other {Modul}}",
     "no_module": "Tidak ada modul",
-    "select": "Tambah modul"
+    "select": "Tambah modul",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Modul berhasil dibuat."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Modul berhasil diperbarui."
+        },
+        "error": {
+          "message": "Modul tidak dapat diperbarui. Silakan coba lagi."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Arsip Anda dapat ditemukan di arsip proyek."
+        },
+        "error": {
+          "message": "Modul tidak dapat diarsipkan. Silakan coba lagi."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Modul Anda dapat ditemukan di modul proyek."
+        },
+        "error": {
+          "message": "Modul tidak dapat dipulihkan. Silakan coba lagi."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Tautan modul berhasil dibuat."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Tautan modul berhasil diperbarui."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Tautan modul berhasil dihapus."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Item kerja berhasil ditambahkan ke modul."
+        },
+        "error": {
+          "message": "Item kerja yang dipilih tidak dapat ditambahkan ke modul. Silakan coba lagi."
+        }
+      }
+    },
+    "no_lead": "Tidak ada pemimpin",
+    "work_items_progress": "{completed}/{total} {total, plural, one {item kerja} other {item kerja}}"
   }
 }

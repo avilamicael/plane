@@ -52,7 +52,17 @@
       "5_days": "5 jours",
       "1_week": "1 semaine",
       "2_weeks": "2 semaines",
-      "custom": "Personnalisé"
+      "custom": "Personnalisé",
+      "modal": {
+        "title": "Personnaliser la mise en veille",
+        "pick_a_date": "Choisissez une date",
+        "select_date": "Sélectionner une date",
+        "pick_a_time": "Choisissez une heure",
+        "select_a_time": "Sélectionnez une heure",
+        "no_available_time": "Aucune heure disponible pour cette date.",
+        "date_required": "Veuillez sélectionner une date",
+        "time_required": "Veuillez sélectionner une heure"
+      }
     }
   }
 }

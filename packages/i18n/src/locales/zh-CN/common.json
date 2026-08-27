@@ -307,6 +307,9 @@
   "end_date": "结束日期",
   "due_date": "截止日期",
   "target_date": "目标日期",
+  "created_date": "创建日期",
+  "updated_date": "更新日期",
+  "last_updated_date": "最后更新日期",
   "estimate": "估算",
   "change_parent_issue": "更改父工作项",
   "remove_parent_issue": "移除父工作项",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL 已成功复制到您的剪贴板",
   "toast": {
     "success": "成功！",
-    "error": "错误！"
+    "error": "错误！",
+    "warning": "警告！",
+    "info": "提示！"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "估算",
     "created_at": "创建于",
     "updated_at": "更新时间",
+    "select_cycle": "选择周期",
+    "select_modules": "选择模块",
     "completed_at": "完成于",
     "layout": "布局",
     "filters": "筛选",
@@ -464,6 +471,10 @@
     "epics": "史诗",
     "work_item": "工作项",
     "work_items": "工作项",
+    "work_items_in_project_count": "{count, plural, one{此项目中有 # 个工作项} other{此项目中有 # 个工作项}}",
+    "work_items_in_archives_count": "{count, plural, one{此项目的归档中有 # 个工作项} other{此项目的归档中有 # 个工作项}}",
+    "work_items_in_cycle_count": "{count, plural, one{此周期中有 # 个工作项} other{此周期中有 # 个工作项}}",
+    "work_items_in_module_count": "{count, plural, one{此模块中有 # 个工作项} other{此模块中有 # 个工作项}}",
     "sub_work_item": "子工作项",
     "views": "视图",
     "pages": "页面",
@@ -619,7 +630,11 @@
       "enable": "启用",
       "disable": "禁用",
       "copy_markdown": "复制Markdown",
-      "reply": "回复"
+      "reply": "回复",
+      "move": "移动",
+      "remove_from_cycle": "从周期中移除",
+      "remove_from_module": "从模块中移除",
+      "rename_folder": "重命名文件夹"
     },
     "name": "名称",
     "discard": "放弃",
@@ -722,12 +737,33 @@
     "more": "更多",
     "saved": "已保存",
     "all_projects": "所有项目",
-    "n_plus_projects": "{count}+ 个项目"
+    "n_plus_projects": "{count}+ 个项目",
+    "and": "和",
+    "view_all": "查看全部",
+    "view_less": "收起",
+    "empty": "空",
+    "no_date": "无日期",
+    "no_cycle": "无周期",
+    "no_modules": "无模块",
+    "no_labels": "无标签",
+    "no_assignees": "无负责人",
+    "labels_count": "{count, plural, one{# 个标签} other{# 个标签}}",
+    "modules_count": "{count, plural, one{# 个模块} other{# 个模块}}",
+    "not_found": {
+      "title": "哎呀！出了点问题。",
+      "description": "抱歉，找不到您要访问的页面。该页面可能已被删除、重命名或暂时无法访问。"
+    },
+    "toast": {
+      "success": "成功！",
+      "error": "错误！",
+      "warning": "警告"
+    }
   },
   "chart": {
     "x_axis": "X轴",
     "y_axis": "Y轴",
-    "metric": "指标"
+    "metric": "指标",
+    "week_of_month": "{month} 第 {week} 周"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "更新视图"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "视图创建成功。"
+        },
+        "error": {
+          "message": "无法创建视图。请重试。"
+        }
+      },
+      "update": {
+        "success": {
+          "message": "视图更新成功。"
+        },
+        "error": {
+          "message": "无法更新视图。请重试。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "视图删除成功。"
+        },
+        "error": {
+          "message": "无法删除视图。请重试。"
+        }
+      },
+      "not_found": {
+        "message": "您尝试更新的视图不存在。"
+      },
+      "filters_update": {
+        "success": {
+          "message": "您的视图已成功更新。"
+        },
+        "error": {
+          "message": "无法更新您的视图。请重试。"
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "将工作项导出为 JSON 文件。",
       "short_description": "导出为 JSON"
+    }
+  },
+  "sign_in": "登录",
+  "powered_by_plane_publish": "由 Plane Publish 提供支持",
+  "instance": {
+    "failure": {
+      "title": "无法获取实例详情。",
+      "description": "我们无法获取实例的详细信息。别担心，这可能只是网络连接问题。"
+    }
+  },
+  "something_went_wrong_please_try_again_later": "出现错误。请稍后重试。",
+  "please_try_again_later": "请稍后重试。",
+  "some_error_occurred": "发生错误",
+  "markdown_copied_to_clipboard": "Markdown 已复制到剪贴板。",
+  "reloading_to_apply_changes": "正在重新加载以应用更改…",
+  "copy_link_failed": "无法复制链接。请重试。",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "主题配置下载成功。"
+        },
+        "error": {
+          "message": "无法下载主题配置。"
+        }
+      },
+      "import": {
+        "success": {
+          "message": "主题配置导入成功"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "仅在手动排序时才能拖放"
+      },
+      "update_dates": {
+        "error": {
+          "message": "更新区块日期时出现错误"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "此筛选条件配置不正确，无法应用"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "请输入任务以获取 AI 协助。"
+      }
+    }
+  },
+  "text_colors": "文字颜色",
+  "background_colors": "背景颜色",
+  "submitting": "提交中...",
+  "image_upload": {
+    "title": "上传图片",
+    "drag_and_drop": "将图片拖放到此处",
+    "drop_here": "将图片拖放到此处上传",
+    "file_too_large": "图片大小不能超过 5 MB。",
+    "invalid_format": "请上传格式有效的文件。",
+    "supported_formats": "支持的文件格式：.jpeg、.jpg、.png、.webp",
+    "upload_and_save": "上传并保存",
+    "uploading": "上传中",
+    "search_for_images": "搜索图片",
+    "no_images_found": "未找到图片。",
+    "tabs": {
+      "images": "图片",
+      "upload": "上传"
     }
   }
 }

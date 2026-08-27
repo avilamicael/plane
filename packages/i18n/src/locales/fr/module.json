@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Module} other {Modules}}",
     "no_module": "Pas de module",
-    "select": "Ajouter des modules"
+    "select": "Ajouter des modules",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Module créé avec succès."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Module mis à jour avec succès."
+        },
+        "error": {
+          "message": "Le module n'a pas pu être mis à jour. Veuillez réessayer."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Vos archives se trouvent dans les archives du projet."
+        },
+        "error": {
+          "message": "Le module n'a pas pu être archivé. Veuillez réessayer."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Votre module se trouve dans les modules du projet."
+        },
+        "error": {
+          "message": "Le module n'a pas pu être restauré. Veuillez réessayer."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Lien du module créé avec succès."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Lien du module mis à jour avec succès."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Lien du module supprimé avec succès."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Éléments de travail ajoutés au module avec succès."
+        },
+        "error": {
+          "message": "Les éléments de travail sélectionnés n'ont pas pu être ajoutés au module. Veuillez réessayer."
+        }
+      }
+    },
+    "no_lead": "Aucun responsable",
+    "work_items_progress": "{completed}/{total} {total, plural, one {élément de travail} many {éléments de travail} other {éléments de travail}}"
   }
 }

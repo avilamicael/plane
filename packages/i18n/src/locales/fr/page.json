@@ -110,6 +110,126 @@
       "label": "Retirer de la collection",
       "success_message": "Page retirée de la collection.",
       "error_message": "La page n'a pas pu être retirée de la collection. Veuillez réessayer."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Lien de la page copié dans le presse-papiers."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Page dupliquée avec succès."
+        },
+        "error": {
+          "message": "La page n'a pas pu être dupliquée. Veuillez réessayer plus tard."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Page restaurée avec succès."
+        },
+        "error": {
+          "message": "La page n'a pas pu être restaurée. Veuillez réessayer plus tard."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Page archivée avec succès."
+        },
+        "error": {
+          "message": "La page n'a pas pu être archivée. Veuillez réessayer plus tard."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Page ajoutée aux favoris."
+        },
+        "error": {
+          "message": "La page n'a pas pu être ajoutée aux favoris. Veuillez réessayer plus tard."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Page retirée des favoris."
+        },
+        "error": {
+          "message": "La page n'a pas pu être retirée des favoris. Veuillez réessayer plus tard."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Page verrouillée avec succès."
+        },
+        "error": {
+          "message": "La page n'a pas pu être verrouillée. Veuillez réessayer plus tard."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Page déverrouillée avec succès."
+        },
+        "error": {
+          "message": "La page n'a pas pu être déverrouillée. Veuillez réessayer plus tard."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "La page a été marquée comme publique et déplacée vers la section publique."
+        },
+        "error": {
+          "message": "La page n'a pas pu être marquée comme publique. Veuillez réessayer."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "La page a été marquée comme privée et déplacée vers la section privée."
+        },
+        "error": {
+          "message": "La page n'a pas pu être marquée comme privée. Veuillez réessayer."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Page supprimée avec succès."
+        },
+        "error": {
+          "message": "La page n'a pas pu être supprimée. Veuillez réessayer."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Page exportée avec succès."
+        },
+        "error": {
+          "message": "La page n'a pas pu être exportée. Veuillez réessayer plus tard."
+        }
+      }
+    },
+    "create_page": "Créer une page",
+    "delete_page": "Supprimer la page",
+    "export": {
+      "title": "Exporter la page",
+      "format": "Format d'export",
+      "include_content": "Contenu à inclure",
+      "page_format": "Format de page",
+      "content_variety": {
+        "everything": "Tout",
+        "no_images": "Sans images"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Verrouiller",
+      "locked": "Verrouillée",
+      "unlocked": "Déverrouillée"
+    },
+    "offline_badge": {
+      "heading": "Vous êtes hors ligne.",
+      "description": "Vous pouvez continuer à apporter des modifications. Elles seront synchronisées dès votre retour en ligne.",
+      "label": "Hors ligne"
+    },
+    "toolbar": {
+      "color": "Couleur"
     }
   }
 }

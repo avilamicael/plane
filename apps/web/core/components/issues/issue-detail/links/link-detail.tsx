@@ -8,6 +8,7 @@ import { NewTabIcon, EditIcon, TrashIcon } from "@plane/propel/icons";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import { Tooltip } from "@plane/propel/tooltip";
 import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useMember } from "@/hooks/store/use-member";
@@ -23,6 +24,8 @@ export type TIssueLinkDetail = {
 
 export function IssueLinkDetail(props: TIssueLinkDetail) {
   // props
+  const { t } = useTranslation();
+
   const { linkId, linkOperations, isNotAllowed } = props;
   // hooks
   const {
@@ -53,8 +56,8 @@ export function IssueLinkDetail(props: TIssueLinkDetail) {
             copyTextToClipboard(linkDetail.url);
             setToast({
               type: TOAST_TYPE.SUCCESS,
-              title: "Link copied!",
-              message: "Link copied to clipboard",
+              title: t("common.link_copied"),
+              message: t("common.link_copied_to_clipboard"),
             });
           }}
         >

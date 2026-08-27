@@ -191,5 +191,173 @@
       "title": "Descoperă de ce echipele trec la Plane",
       "description": "Compară Plane cu instrumentele pe care le folosești astăzi și vezi diferența."
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "sau",
+      "skip": "Omite",
+      "select_one": "Selectează o opțiune",
+      "select_one_or_more": "Selectează una sau mai multe opțiuni",
+      "steps_progress": "{current} din {total, plural, one {# pas} few {# pași} other {# de pași}}",
+      "errors": {
+        "field_required": "Acest câmp este obligatoriu",
+        "select_at_least_one": "Selectează cel puțin o opțiune"
+      }
+    },
+    "profile": {
+      "heading": "Creează-ți profilul.",
+      "subheading": "Așa vei apărea în Plane.",
+      "upload_image": "Încarcă imagine",
+      "change_image": "Schimbă imaginea",
+      "choose_image": "Alege imagine",
+      "name_placeholder": "Introdu numele tău complet",
+      "marketing_consent": "Sunt de acord să primesc comunicări de marketing de la Plane",
+      "role_question": "În ce rol lucrezi? Alege una.",
+      "domain_question": "Care este domeniul tău de expertiză? Alege unul sau mai multe.",
+      "roles": {
+        "individual_contributor": "Contribuitor individual",
+        "senior_leader": "Lider senior",
+        "manager": "Manager",
+        "executive": "Director",
+        "freelancer": "Freelancer",
+        "student": "Student"
+      },
+      "domains": {
+        "engineering": "Inginerie",
+        "product": "Produs",
+        "marketing": "Marketing",
+        "sales": "Vânzări",
+        "operations": "Operațiuni",
+        "legal": "Juridic",
+        "finance": "Finanțe",
+        "human_resources": "Resurse umane",
+        "project": "Proiecte",
+        "other": "Altul"
+      },
+      "errors": {
+        "name_length": "Numele poate avea cel mult 50 de caractere.",
+        "first_name_required": "Prenumele este obligatoriu",
+        "first_name_length": "Prenumele poate avea cel mult 50 de caractere.",
+        "last_name_required": "Numele de familie este obligatoriu",
+        "last_name_length": "Numele de familie poate avea cel mult 50 de caractere."
+      },
+      "toast": {
+        "completed": "Profil configurat!",
+        "failed": "Configurarea profilului a eșuat. Încearcă din nou!",
+        "details_failed": "Actualizarea datelor tale a eșuat. Încearcă din nou!"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "Parolă nouă...",
+      "match": "Parolele coincid",
+      "mismatch": "Parolele nu coincid"
+    },
+    "role": {
+      "heading": "Care este rolul tău?",
+      "subheading": "Hai să configurăm Plane după felul în care lucrezi.",
+      "options": {
+        "product_manager": "Manager de produs",
+        "engineering_manager": "Manager de inginerie",
+        "designer": "Designer",
+        "developer": "Dezvoltator",
+        "founder_executive": "Fondator/Director",
+        "operations_manager": "Manager de operațiuni",
+        "others": "Altele"
+      }
+    },
+    "usecase": {
+      "heading": "Ce te aduce în Plane?",
+      "subheading": "Spune-ne despre obiectivele tale și mărimea echipei.",
+      "options": {
+        "plan_and_track_product_roadmaps": "Planificarea și urmărirea foilor de parcurs de produs",
+        "manage_engineering_sprints": "Gestionarea sprinturilor de inginerie",
+        "coordinate_cross_functional_projects": "Coordonarea proiectelor interdisciplinare",
+        "replace_our_current_tool": "Înlocuirea instrumentului nostru actual",
+        "just_exploring": "Doar explorez"
+      }
+    },
+    "workspace": {
+      "heading": "Creează-ți spațiul de lucru",
+      "subheading": "Toată munca ta, într-un singur loc.",
+      "join_heading": "Acceptă invitațiile sau creează un spațiu de lucru",
+      "join_existing": "Alătură-te unui spațiu de lucru existent",
+      "create_new": "Creează un spațiu de lucru nou",
+      "join_invited_cta": "Vreau să mă alătur spațiilor de lucru la care am fost invitat",
+      "creation_disabled": "Se pare că nu ai nicio invitație la un spațiu de lucru, iar administratorul instanței tale a restricționat crearea de spații de lucru noi. Roagă un proprietar sau un administrator să te invite într-un spațiu de lucru și revino la acest ecran pentru a te alătura.",
+      "organization_size": {
+        "just_myself": "Doar eu"
+      }
+    },
+    "invitations": {
+      "heading": "Ai fost invitat!",
+      "subheading": "Acceptă invitațiile pentru a colabora cu echipa ta.",
+      "continue_to_workspace": "Mergi la spațiul de lucru",
+      "create_own_workspace": "Creează-ți propriul spațiu de lucru",
+      "empty": "Nu a fost găsită nicio invitație"
+    },
+    "team": {
+      "heading": "Invită-ți colegii",
+      "subheading": "Munca în Plane merge cel mai bine cu echipa ta. Invită-i acum ca să folosești Plane la potențial maxim.",
+      "add_another": "Adaugă altul",
+      "do_it_later": "O fac mai târziu",
+      "errors": {
+        "invalid_email": "ID de e-mail nevalid",
+        "not_an_email": "Asta nu pare o adresă de e-mail."
+      },
+      "toast": {
+        "invitations_sent": "Invitațiile au fost trimise cu succes."
+      }
+    },
+    "switch_account": {
+      "wrong_email": "Adresă de e-mail greșită?",
+      "title": "Schimbă contul",
+      "description_prefix": "Dacă te-ai înregistrat prin",
+      "description_suffix": "din greșeală, poți comuta de aici pe alt cont.",
+      "switching": "Se comută...",
+      "sign_out_failed": "Deconectarea a eșuat. Încearcă din nou."
+    },
+    "toast": {
+      "finish_failed": "Configurarea inițială nu a putut fi finalizată. Încearcă din nou mai târziu."
+    },
+    "tour": {
+      "welcome": {
+        "title": "Bine ai venit în Plane, {name}",
+        "description": "Ne bucurăm că ai decis să încerci Plane. Acum îți poți gestiona proiectele cu ușurință. Începe prin a crea un proiect.",
+        "take_tour": "Fă turul produsului",
+        "skip": "Nu, mulțumesc, explorez singur"
+      },
+      "sidebar": {
+        "title": "Să începem!",
+        "subtitle": "Profită mai mult de Plane.",
+        "work_items": "Elemente de lucru",
+        "cycles": "Cicluri",
+        "modules": "Module",
+        "views": "Vizualizări",
+        "pages": "Pagini"
+      },
+      "steps": {
+        "work_items": {
+          "title": "Planifică cu elemente de lucru",
+          "description": "Elementul de lucru este cărămida de bază a Plane. Majoritatea conceptelor din Plane sunt legate de elementele de lucru și de proprietățile lor."
+        },
+        "cycles": {
+          "title": "Avansează cu cicluri",
+          "description": "Ciclurile vă ajută pe tine și echipa ta să avansați mai repede, la fel ca sprinturile folosite în dezvoltarea agilă."
+        },
+        "modules": {
+          "title": "Împarte în module",
+          "description": "Modulele îți împart obiectivul mare în proiecte sau funcționalități, ca să te organizezi mai bine."
+        },
+        "views": {
+          "title": "Vizualizări",
+          "description": "Creează filtre personalizate ca să afișezi doar elementele de lucru care contează pentru tine. Salvează și partajează filtrele în câteva clicuri."
+        },
+        "pages": {
+          "title": "Documentează cu pagini",
+          "description": "Folosește paginile ca să notezi rapid elemente de lucru într-o ședință sau la începutul zilei."
+        }
+      },
+      "create_first_project": "Creează primul tău proiect"
+    }
   }
 }

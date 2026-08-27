@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "E-Mail",
+      "password": "Passwort",
+      "save_changes": "Änderungen speichern",
+      "saving": "Wird gespeichert",
+      "go_back": "Zurück",
+      "success": "Erfolg",
+      "error": "Fehler",
+      "done": "Fertig!",
+      "show_password": "Passwort anzeigen",
+      "hide_password": "Passwort ausblenden",
+      "settings_updated_successfully": "Einstellungen erfolgreich aktualisiert",
+      "saving_configuration": "Konfiguration wird gespeichert",
+      "configuration_saved_successfully": "Konfiguration erfolgreich gespeichert",
+      "failed_to_save_configuration": "Konfiguration konnte nicht gespeichert werden",
+      "learn_more": "Mehr erfahren",
+      "here": "hier."
+    },
+    "sidebar": {
+      "instance_admin": "Instanz-Administrator",
+      "sign_out": "Abmelden",
+      "switch_to_light_mode": "Zum hellen Modus wechseln",
+      "switch_to_dark_mode": "Zum dunklen Modus wechseln",
+      "general": {
+        "title": "Allgemein",
+        "description": "Identifizieren Sie Ihre Instanzen und sehen Sie die wichtigsten Details."
+      },
+      "email": {
+        "title": "E-Mail",
+        "description": "Konfigurieren Sie Ihre SMTP-Einstellungen."
+      },
+      "workspace": {
+        "title": "Arbeitsbereiche",
+        "description": "Verwalten Sie alle Arbeitsbereiche dieser Instanz."
+      },
+      "authentication": {
+        "title": "Authentifizierung",
+        "description": "Konfigurieren Sie die Authentifizierungsmethoden."
+      },
+      "ai": {
+        "title": "Künstliche Intelligenz",
+        "description": "Konfigurieren Sie Ihre OpenAI-Zugangsdaten."
+      },
+      "image": {
+        "title": "Bilder in Plane",
+        "description": "Bildbibliotheken von Drittanbietern zulassen."
+      }
+    },
+    "sign_in": {
+      "heading": "Verwalten Sie Ihre Plane-Instanz",
+      "sub_heading": "Konfigurieren Sie instanzweite Einstellungen, um Ihre Instanz abzusichern",
+      "email_placeholder": "name@firma.com",
+      "password_placeholder": "Geben Sie Ihr Passwort ein",
+      "submit": "Anmelden"
+    },
+    "setup": {
+      "heading": "Richten Sie Ihre Plane-Instanz ein",
+      "sub_heading": "Nach der Einrichtung können Sie diese Plane-Instanz verwalten.",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "company_name": "Firmenname",
+      "company_name_placeholder": "Firmenname",
+      "set_password": "Passwort festlegen",
+      "new_password_placeholder": "Neues Passwort",
+      "confirm_password": "Passwort bestätigen",
+      "confirm_password_placeholder": "Passwort bestätigen",
+      "passwords_dont_match": "Die Passwörter stimmen nicht überein",
+      "telemetry_consent": "Plane erlauben, Nutzungsereignisse anonym zu erfassen.",
+      "see_more": "Mehr erfahren",
+      "submit": "Weiter"
+    },
+    "settings": {
+      "general": {
+        "title": "Allgemeine Einstellungen",
+        "description": "Ändern Sie den Namen Ihrer Instanz und die E-Mail-Adressen der Instanz-Administratoren. Aktivieren oder deaktivieren Sie die Telemetrie in Ihrer Instanz.",
+        "instance_details": "Instanzdetails",
+        "name_of_instance": "Name der Instanz",
+        "instance_name_placeholder": "Instanzname",
+        "admin_email_placeholder": "Administrator-E-Mail",
+        "instance_id": "Instanz-ID",
+        "telemetry": "Telemetrie",
+        "telemetry_toggle_title": "Plane anonyme Nutzungsdaten erfassen lassen",
+        "telemetry_toggle_description": "Es werden keine personenbezogenen Daten erfasst. Diese anonymisierten Daten helfen uns zu verstehen, wie Sie Plane nutzen, und neue Funktionen im Einklang mit",
+        "telemetry_policy": "unserer Telemetrie-Richtlinie zu entwickeln."
+      },
+      "authentication": {
+        "title": "Authentifizierungsmethoden Ihrer Instanz verwalten",
+        "description": "Konfigurieren Sie die Authentifizierungsmethoden für Ihr Team und beschränken Sie Registrierungen auf Einladungen.",
+        "allow_signup_title": "Allen die Registrierung auch ohne Einladung erlauben",
+        "allow_signup_description": "Wenn Sie dies deaktivieren, können sich nur eingeladene Benutzer registrieren.",
+        "available_modes": "Verfügbare Authentifizierungsmethoden",
+        "cannot_disable_title": "Authentifizierung kann nicht deaktiviert werden",
+        "cannot_disable_message": "Mindestens eine Authentifizierungsmethode muss aktiviert bleiben. Aktivieren Sie eine andere Methode, bevor Sie diese deaktivieren.",
+        "modes": {
+          "unique_codes": {
+            "name": "Einmalcodes",
+            "description": "Melden Sie sich bei Plane mit per E-Mail versendeten Codes an oder registrieren Sie sich. Für diese Methode muss SMTP eingerichtet sein."
+          },
+          "passwords": {
+            "name": "Passwörter",
+            "description": "Erlauben Sie Mitgliedern, Konten mit Passwort zu erstellen und sich mit ihrer E-Mail-Adresse anzumelden."
+          },
+          "google": {
+            "description": "Erlauben Sie Mitgliedern, sich mit ihrem Google-Konto bei Plane anzumelden oder zu registrieren."
+          },
+          "github": {
+            "description": "Erlauben Sie Mitgliedern, sich mit ihrem GitHub-Konto bei Plane anzumelden oder zu registrieren."
+          },
+          "gitlab": {
+            "description": "Erlauben Sie Mitgliedern, sich mit ihrem GitLab-Konto bei Plane anzumelden oder zu registrieren."
+          },
+          "gitea": {
+            "description": "Erlauben Sie Mitgliedern, sich mit ihrem Gitea-Konto bei Plane anzumelden oder zu registrieren."
+          }
+        }
+      },
+      "email": {
+        "title": "Sichere E-Mails aus Ihrer eigenen Instanz",
+        "description": "Plane kann Ihnen und Ihren Benutzern nützliche E-Mails aus Ihrer eigenen Instanz senden, ohne mit dem Internet zu kommunizieren.",
+        "description_secondary": "Richten Sie es unten ein und testen Sie Ihre Einstellungen, bevor Sie sie speichern.",
+        "description_warning": "Fehlkonfigurationen können zu E-Mail-Rückläufern und Fehlern führen.",
+        "disabled_title": "E-Mail-Funktion deaktiviert",
+        "disabled_message": "Die E-Mail-Funktion wurde deaktiviert",
+        "disable_error_title": "Fehler beim Deaktivieren der E-Mail-Funktion",
+        "disable_error_message": "Die E-Mail-Funktion konnte nicht deaktiviert werden. Bitte versuchen Sie es erneut.",
+        "host": "Host",
+        "port": "Port",
+        "sender_email": "E-Mail-Adresse des Absenders",
+        "sender_email_description": "Dies ist die E-Mail-Adresse, die Ihre Benutzer sehen, wenn sie E-Mails von dieser Instanz erhalten. Sie müssen diese Adresse verifizieren.",
+        "username": "Benutzername",
+        "password_placeholder": "Passwort",
+        "security": "E-Mail-Sicherheit",
+        "security_none": "Keine E-Mail-Sicherheit",
+        "authentication": "Authentifizierung",
+        "authentication_description": "Dies ist optional, wir empfehlen jedoch, einen Benutzernamen und ein Passwort für Ihren SMTP-Server einzurichten.",
+        "send_test_email": "Test-E-Mail senden",
+        "updated_successfully": "E-Mail-Einstellungen erfolgreich aktualisiert"
+      },
+      "workspace": {
+        "title": "Arbeitsbereiche in dieser Instanz",
+        "description": "Sehen Sie alle Arbeitsbereiche und steuern Sie, wer sie erstellen darf.",
+        "prevent_creation_title": "Verhindern, dass andere Arbeitsbereiche erstellen.",
+        "prevent_creation_description": "Wenn Sie dies aktivieren, können nur Sie Arbeitsbereiche erstellen. Sie müssen Benutzer in neue Arbeitsbereiche einladen.",
+        "all_workspaces": "Alle Arbeitsbereiche dieser Instanz",
+        "list_description": "Sie können Arbeitsbereiche noch nicht löschen und einen Arbeitsbereich nur öffnen, wenn Sie dort Administrator oder Mitglied sind.",
+        "create": "Arbeitsbereich erstellen",
+        "creating": "Arbeitsbereich wird erstellt",
+        "load_more": "Mehr laden",
+        "name_label": "Benennen Sie Ihren Arbeitsbereich",
+        "name_placeholder": "Etwas Vertrautes und leicht Wiedererkennbares ist immer am besten.",
+        "url_label": "Legen Sie die URL Ihres Arbeitsbereichs fest",
+        "url_placeholder": "arbeitsbereich-name",
+        "url_taken": "Diese URL ist bereits vergeben. Versuchen Sie eine andere.",
+        "url_invalid": "URLs dürfen nur ( - ), ( _ ) und alphanumerische Zeichen enthalten.",
+        "size_label": "Wie viele Personen werden diesen Arbeitsbereich nutzen?",
+        "size_placeholder": "Bereich auswählen",
+        "required_field": "Dies ist ein Pflichtfeld.",
+        "created_title": "Erfolg!",
+        "created_message": "Arbeitsbereich erfolgreich erstellt.",
+        "create_error_title": "Fehler!",
+        "create_error_message": "Der Arbeitsbereich konnte nicht erstellt werden. Bitte versuchen Sie es erneut.",
+        "create_generic_error": "Beim Erstellen des Arbeitsbereichs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+      },
+      "ai": {
+        "title": "KI-Funktionen für alle Ihre Arbeitsbereiche",
+        "description": "Konfigurieren Sie Ihre KI-API-Zugangsdaten, damit die Plane AI-Funktionen in allen Ihren Arbeitsbereichen aktiviert sind."
+      },
+      "image": {
+        "title": "Bildbibliotheken von Drittanbietern",
+        "description": "Lassen Sie Ihre Benutzer Bilder aus Bibliotheken von Drittanbietern suchen und auswählen"
+      }
+    },
+    "oauth": {
+      "client_id": "Client-ID",
+      "client_secret": "Client-Secret",
+      "application_id": "Anwendungs-ID",
+      "secret": "Secret",
+      "organization_id": "Organisations-ID",
+      "organization_id_description": "Die GitHub-ID der Organisation.",
+      "host": "Host",
+      "origin_url": "Ursprungs-URL",
+      "callback_uri": "Callback-URI",
+      "callback_url": "Callback-URL",
+      "web": "Web",
+      "provider_details_for_plane": "Von {provider} bereitgestellte Angaben für Plane",
+      "plane_details_for_provider": "Von Plane bereitgestellte Angaben für {provider}",
+      "configured_message": "Ihre {provider}-Authentifizierung ist konfiguriert. Sie sollten sie jetzt testen.",
+      "configuration_saved": "Konfiguration gespeichert",
+      "auth_now_active": "Die {provider}-Authentifizierung ist jetzt aktiv.",
+      "auth_now_disabled": "Die {provider}-Authentifizierung ist jetzt deaktiviert.",
+      "get_this_from_settings": "Diesen Wert finden Sie in Ihren",
+      "secret_also_in_settings": "Ihr Client-Secret finden Sie ebenfalls in Ihren",
+      "app_settings_link": "Einstellungen der {provider}-OAuth-Anwendung.",
+      "app_settings_link_no_period": "Einstellungen der {provider}-OAuth-Anwendung",
+      "autogenerated_paste_origin": "Wir generieren dies automatisch. Fügen Sie es in das Feld",
+      "autogenerated_paste_callback": "Wir generieren dies automatisch. Fügen Sie es in Ihr Feld",
+      "field_word": "ein –",
+      "authorized_origin_url": "Autorisierte Ursprungs-URL",
+      "authorized_callback_uri": "Autorisierte Callback-URI",
+      "authorized_js_origins": "Autorisierte JavaScript-Quellen",
+      "authorized_redirect_uri": "Autorisierte Weiterleitungs-URI",
+      "redirect_uri": "Weiterleitungs-URI",
+      "for_this_oauth_client": "ein – für diesen OAuth-Client",
+      "google_client_id_description": "Ihre Client-ID finden Sie in Ihrer Google API Console.",
+      "google_client_secret_description": "Ihr Client-Secret sollte sich ebenfalls in Ihrer Google API Console befinden.",
+      "gitlab_host_description_prefix": "Dies ist entweder https://gitlab.com oder die",
+      "gitlab_host_description_suffix": "unter der Sie GitLab hosten.",
+      "gitlab_get_this_from": "Diesen Wert erhalten Sie in Ihren",
+      "gitlab_secret_also_in": "Das Client-Secret finden Sie ebenfalls in Ihren",
+      "gitlab_paste_redirect_prefix": "Wir generieren dies automatisch. Fügen Sie es in das Feld",
+      "gitlab_paste_redirect_suffix": "Ihrer",
+      "gitlab_app_link": "GitLab-OAuth-Anwendung ein",
+      "gitea_host_label": "Gitea-Host",
+      "gitea_host_description": "Verwenden Sie die URL Ihrer Gitea-Instanz. Für die offizielle Gitea-Instanz verwenden Sie „https://gitea.com“."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "Administrator existiert bereits",
+        "message": "Administrator existiert bereits. Bitte versuchen Sie es erneut."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "E-Mail, Passwort und Vorname erforderlich",
+        "message": "E-Mail, Passwort und Vorname erforderlich. Bitte versuchen Sie es erneut."
+      },
+      "invalid_admin_email": {
+        "title": "Ungültige Administrator-E-Mail",
+        "message": "Ungültige Administrator-E-Mail. Bitte versuchen Sie es erneut."
+      },
+      "invalid_admin_password": {
+        "title": "Ungültiges Administrator-Passwort",
+        "message": "Ungültiges Administrator-Passwort. Bitte versuchen Sie es erneut."
+      },
+      "required_admin_email_password": {
+        "title": "E-Mail und Passwort erforderlich",
+        "message": "E-Mail und Passwort erforderlich. Bitte versuchen Sie es erneut."
+      },
+      "admin_authentication_failed": {
+        "title": "Authentifizierung fehlgeschlagen",
+        "message": "Authentifizierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+      },
+      "admin_user_already_exist": {
+        "title": "Administratorbenutzer existiert bereits",
+        "message": "Administratorbenutzer existiert bereits.",
+        "sign_in_now": "Jetzt anmelden",
+        "now": "."
+      },
+      "admin_user_does_not_exist": {
+        "title": "Administratorbenutzer existiert nicht",
+        "message": "Administratorbenutzer existiert nicht.",
+        "sign_in_now": "Jetzt anmelden",
+        "now": "."
+      },
+      "admin_user_deactivated": {
+        "title": "Benutzerkonto deaktiviert",
+        "message": "Benutzerkonto deaktiviert. Bitte wenden Sie sich an {contact}."
+      },
+      "administrator": "den Administrator",
+      "generic_title": "Fehler",
+      "generic_message": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    },
+    "not_found": {
+      "title": "Ups! Etwas ist schiefgelaufen.",
+      "description": "Die gesuchte Seite konnte leider nicht gefunden werden. Sie wurde möglicherweise entfernt, umbenannt oder ist vorübergehend nicht verfügbar.",
+      "action": "Zu den allgemeinen Einstellungen",
+      "image_alt": "404 - Seite nicht gefunden"
+    }
+  }
+}

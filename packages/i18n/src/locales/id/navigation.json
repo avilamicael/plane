@@ -30,5 +30,39 @@
     "upgrade_plan": "Tingkatkan paket",
     "plane_pro": "Plane Pro",
     "business": "Bisnis"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Tab default berhasil diperbarui."
+        },
+        "error": {
+          "message": "Gagal memperbarui tab default. Silakan coba lagi nanti."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Gagal menyembunyikan tab. Silakan coba lagi nanti."
+        }
+      }
+    },
+    "actions": {
+      "show": "Tampilkan",
+      "hide_in_more_menu": "Sembunyikan di menu Lainnya",
+      "set_as_default": "Jadikan default",
+      "clear_default": "Hapus default"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Cari perintah..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Hanya ikon",
+      "icon_with_name": "Ikon dengan nama"
+    },
+    "dock": "Tambatkan bilah aplikasi",
+    "undock": "Lepaskan bilah aplikasi"
   }
 }

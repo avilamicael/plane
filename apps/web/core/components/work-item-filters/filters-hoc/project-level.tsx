@@ -12,6 +12,7 @@ import { EUserPermissionsLevel } from "@plane/constants";
 import { setToast, TOAST_TYPE } from "@plane/propel/toast";
 import type { IProjectView, TWorkItemFilterExpression } from "@plane/types";
 import { EUserProjectRoles, EViewAccess } from "@plane/types";
+import { useTranslation } from "@plane/i18n";
 // components
 import { removeNillKeys } from "@/components/issues/issue-layouts/utils";
 import { CreateUpdateProjectViewModal } from "@/components/views/modal";
@@ -37,6 +38,8 @@ type TProjectLevelWorkItemFiltersHOCProps = TSharedWorkItemFiltersHOCProps & {
 export const ProjectLevelWorkItemFiltersHOC = observer(function ProjectLevelWorkItemFiltersHOC(
   props: TProjectLevelWorkItemFiltersHOCProps
 ) {
+  const { t } = useTranslation();
+
   const { children, enableSaveView, enableUpdateView, entityId, initialWorkItemFilters, projectId, workspaceSlug } =
     props;
   // states
@@ -141,7 +144,7 @@ export const ProjectLevelWorkItemFiltersHOC = observer(function ProjectLevelWork
         setToast({
           type: TOAST_TYPE.ERROR,
           title: "We couldn't find the view",
-          message: "The view you're trying to update doesn't exist.",
+          message: t("view.toasts.not_found.message"),
         });
 
         return;
@@ -153,19 +156,19 @@ export const ProjectLevelWorkItemFiltersHOC = observer(function ProjectLevelWork
         .then(() => {
           setToast({
             type: TOAST_TYPE.SUCCESS,
-            title: "Success!",
-            message: "Your view has been updated successfully.",
+            title: t("common.toast.success"),
+            message: t("view.toasts.filters_update.success.message"),
           });
         })
         .catch(() => {
           setToast({
             type: TOAST_TYPE.ERROR,
-            title: "Error!",
-            message: "Your view could not be updated. Please try again.",
+            title: t("common.toast.error"),
+            message: t("view.toasts.filters_update.error.message"),
           });
         });
     },
-    [viewDetails, updateView, workspaceSlug, projectId, getViewFilterPayload]
+    [viewDetails, updateView, workspaceSlug, projectId, getViewFilterPayload, t]
   );
 
   const saveViewOptions = useMemo(

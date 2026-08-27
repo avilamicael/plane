@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "이메일",
+      "password": "비밀번호",
+      "save_changes": "변경 사항 저장",
+      "saving": "저장 중",
+      "go_back": "뒤로",
+      "success": "성공",
+      "error": "오류",
+      "done": "완료되었습니다.",
+      "show_password": "비밀번호 표시",
+      "hide_password": "비밀번호 숨기기",
+      "settings_updated_successfully": "설정이 업데이트되었습니다",
+      "saving_configuration": "구성을 저장하는 중",
+      "configuration_saved_successfully": "구성이 저장되었습니다",
+      "failed_to_save_configuration": "구성을 저장하지 못했습니다",
+      "learn_more": "자세히 보기",
+      "here": "여기."
+    },
+    "sidebar": {
+      "instance_admin": "인스턴스 관리자",
+      "sign_out": "로그아웃",
+      "switch_to_light_mode": "라이트 모드로 전환",
+      "switch_to_dark_mode": "다크 모드로 전환",
+      "general": {
+        "title": "일반",
+        "description": "인스턴스를 식별하고 주요 정보를 확인하세요."
+      },
+      "email": {
+        "title": "이메일",
+        "description": "SMTP 설정을 구성하세요."
+      },
+      "workspace": {
+        "title": "워크스페이스",
+        "description": "이 인스턴스의 모든 워크스페이스를 관리하세요."
+      },
+      "authentication": {
+        "title": "인증",
+        "description": "인증 방식을 구성하세요."
+      },
+      "ai": {
+        "title": "인공지능",
+        "description": "OpenAI 자격 증명을 구성하세요."
+      },
+      "image": {
+        "title": "Plane의 이미지",
+        "description": "서드파티 이미지 라이브러리를 허용하세요."
+      }
+    },
+    "sign_in": {
+      "heading": "Plane 인스턴스 관리",
+      "sub_heading": "인스턴스 전체 설정을 구성해 인스턴스를 안전하게 보호하세요",
+      "email_placeholder": "name@company.com",
+      "password_placeholder": "비밀번호를 입력하세요",
+      "submit": "로그인"
+    },
+    "setup": {
+      "heading": "Plane 인스턴스 설정",
+      "sub_heading": "설정을 마치면 이 Plane 인스턴스를 관리할 수 있습니다.",
+      "first_name": "이름",
+      "last_name": "성",
+      "company_name": "회사명",
+      "company_name_placeholder": "회사명",
+      "set_password": "비밀번호 설정",
+      "new_password_placeholder": "새 비밀번호",
+      "confirm_password": "비밀번호 확인",
+      "confirm_password_placeholder": "비밀번호 확인",
+      "passwords_dont_match": "비밀번호가 일치하지 않습니다",
+      "telemetry_consent": "Plane이 사용 이벤트를 익명으로 수집하도록 허용합니다.",
+      "see_more": "자세히 보기",
+      "submit": "계속"
+    },
+    "settings": {
+      "general": {
+        "title": "일반 설정",
+        "description": "인스턴스 이름과 인스턴스 관리자 이메일 주소를 변경하세요. 인스턴스의 텔레메트리를 켜거나 끌 수 있습니다.",
+        "instance_details": "인스턴스 정보",
+        "name_of_instance": "인스턴스 이름",
+        "instance_name_placeholder": "인스턴스 이름",
+        "admin_email_placeholder": "관리자 이메일",
+        "instance_id": "인스턴스 ID",
+        "telemetry": "텔레메트리",
+        "telemetry_toggle_title": "Plane이 익명 사용 데이터를 수집하도록 허용",
+        "telemetry_toggle_description": "개인정보는 수집되지 않습니다. 익명화된 이 데이터는 Plane 사용 방식을 이해하고 다음 정책에 따라 새로운 기능을 만드는 데 사용됩니다:",
+        "telemetry_policy": "텔레메트리 정책."
+      },
+      "authentication": {
+        "title": "인스턴스의 인증 방식 관리",
+        "description": "팀의 인증 방식을 구성하고 초대받은 사용자만 가입할 수 있도록 제한하세요.",
+        "allow_signup_title": "초대가 없어도 누구나 가입할 수 있도록 허용",
+        "allow_signup_description": "이 옵션을 끄면 초대받은 사용자만 가입할 수 있습니다.",
+        "available_modes": "사용 가능한 인증 방식",
+        "cannot_disable_title": "인증을 비활성화할 수 없습니다",
+        "cannot_disable_message": "최소 한 가지 인증 방식은 활성화된 상태로 유지되어야 합니다. 이 방식을 끄기 전에 다른 방식을 켜 주세요.",
+        "modes": {
+          "unique_codes": {
+            "name": "일회용 코드",
+            "description": "이메일로 전송되는 코드로 Plane에 로그인하거나 가입합니다. 이 방식을 사용하려면 SMTP가 설정되어 있어야 합니다."
+          },
+          "passwords": {
+            "name": "비밀번호",
+            "description": "구성원이 비밀번호로 계정을 만들고 이메일 주소로 로그인할 수 있도록 허용합니다."
+          },
+          "google": {
+            "description": "구성원이 Google 계정으로 Plane에 로그인하거나 가입할 수 있도록 허용합니다."
+          },
+          "github": {
+            "description": "구성원이 GitHub 계정으로 Plane에 로그인하거나 가입할 수 있도록 허용합니다."
+          },
+          "gitlab": {
+            "description": "구성원이 GitLab 계정으로 Plane에 로그인하거나 가입할 수 있도록 허용합니다."
+          },
+          "gitea": {
+            "description": "구성원이 Gitea 계정으로 Plane에 로그인하거나 가입할 수 있도록 허용합니다."
+          }
+        }
+      },
+      "email": {
+        "title": "내 인스턴스에서 보내는 안전한 이메일",
+        "description": "Plane은 인터넷과 통신하지 않고도 내 인스턴스에서 나와 사용자에게 유용한 이메일을 보낼 수 있습니다.",
+        "description_secondary": "아래에서 설정하고 저장하기 전에 설정을 테스트해 보세요.",
+        "description_warning": "설정이 잘못되면 이메일 반송과 오류가 발생할 수 있습니다.",
+        "disabled_title": "이메일 기능 비활성화됨",
+        "disabled_message": "이메일 기능이 비활성화되었습니다",
+        "disable_error_title": "이메일 비활성화 오류",
+        "disable_error_message": "이메일 기능을 비활성화하지 못했습니다. 다시 시도해 주세요.",
+        "host": "호스트",
+        "port": "포트",
+        "sender_email": "발신자 이메일 주소",
+        "sender_email_description": "이 인스턴스에서 보낸 이메일을 받을 때 사용자에게 표시되는 이메일 주소입니다. 이 주소를 인증해야 합니다.",
+        "username": "사용자 이름",
+        "password_placeholder": "비밀번호",
+        "security": "이메일 보안",
+        "security_none": "이메일 보안 없음",
+        "authentication": "인증",
+        "authentication_description": "선택 사항이지만 SMTP 서버에 사용자 이름과 비밀번호를 설정하는 것을 권장합니다.",
+        "send_test_email": "테스트 이메일 보내기",
+        "updated_successfully": "이메일 설정이 업데이트되었습니다"
+      },
+      "workspace": {
+        "title": "이 인스턴스의 워크스페이스",
+        "description": "모든 워크스페이스를 확인하고 누가 만들 수 있는지 관리하세요.",
+        "prevent_creation_title": "다른 사람이 워크스페이스를 만들지 못하도록 합니다.",
+        "prevent_creation_description": "이 옵션을 켜면 나만 워크스페이스를 만들 수 있습니다. 새 워크스페이스에는 사용자를 초대해야 합니다.",
+        "all_workspaces": "이 인스턴스의 모든 워크스페이스",
+        "list_description": "아직 워크스페이스를 삭제할 수 없으며, 관리자나 구성원인 워크스페이스에만 들어갈 수 있습니다.",
+        "create": "워크스페이스 만들기",
+        "creating": "워크스페이스를 만드는 중",
+        "load_more": "더 보기",
+        "name_label": "워크스페이스 이름 지정",
+        "name_placeholder": "익숙하고 알아보기 쉬운 이름이 가장 좋습니다.",
+        "url_label": "워크스페이스 URL 설정",
+        "url_placeholder": "workspace-name",
+        "url_taken": "이미 사용 중인 URL입니다. 다른 URL을 사용해 보세요.",
+        "url_invalid": "URL에는 ( - ), ( _ ) 및 영숫자만 사용할 수 있습니다.",
+        "size_label": "이 워크스페이스는 몇 명이 사용하나요?",
+        "size_placeholder": "범위 선택",
+        "required_field": "필수 항목입니다.",
+        "created_title": "완료되었습니다.",
+        "created_message": "워크스페이스가 생성되었습니다.",
+        "create_error_title": "오류",
+        "create_error_message": "워크스페이스를 만들지 못했습니다. 다시 시도해 주세요.",
+        "create_generic_error": "워크스페이스를 만드는 중 오류가 발생했습니다. 다시 시도해 주세요."
+      },
+      "ai": {
+        "title": "모든 워크스페이스를 위한 AI 기능",
+        "description": "AI API 자격 증명을 구성해 모든 워크스페이스에서 Plane AI 기능을 켜세요."
+      },
+      "image": {
+        "title": "서드파티 이미지 라이브러리",
+        "description": "사용자가 서드파티 라이브러리에서 이미지를 검색하고 선택할 수 있게 합니다"
+      }
+    },
+    "oauth": {
+      "client_id": "클라이언트 ID",
+      "client_secret": "클라이언트 시크릿",
+      "application_id": "애플리케이션 ID",
+      "secret": "시크릿",
+      "organization_id": "조직 ID",
+      "organization_id_description": "조직의 GitHub ID입니다.",
+      "host": "호스트",
+      "origin_url": "원본 URL",
+      "callback_uri": "콜백 URI",
+      "callback_url": "콜백 URL",
+      "web": "웹",
+      "provider_details_for_plane": "Plane을 위해 {provider}가 제공하는 정보",
+      "plane_details_for_provider": "{provider}를 위해 Plane이 제공하는 정보",
+      "configured_message": "{provider} 인증이 구성되었습니다. 이제 테스트해 보세요.",
+      "configuration_saved": "구성이 저장되었습니다",
+      "auth_now_active": "{provider} 인증이 활성화되었습니다.",
+      "auth_now_disabled": "{provider} 인증이 비활성화되었습니다.",
+      "get_this_from_settings": "이 값은 다음에서 확인할 수 있습니다:",
+      "secret_also_in_settings": "클라이언트 시크릿도 다음에서 확인할 수 있습니다:",
+      "app_settings_link": "{provider} OAuth 애플리케이션 설정.",
+      "app_settings_link_no_period": "{provider} OAuth 애플리케이션 설정",
+      "autogenerated_paste_origin": "이 값은 자동으로 생성됩니다. 다음 필드에 붙여넣으세요:",
+      "autogenerated_paste_callback": "이 값은 자동으로 생성됩니다. 다음 필드에 붙여넣으세요:",
+      "field_word": "—",
+      "authorized_origin_url": "승인된 원본 URL",
+      "authorized_callback_uri": "승인된 콜백 URI",
+      "authorized_js_origins": "승인된 JavaScript 원본",
+      "authorized_redirect_uri": "승인된 리디렉션 URI",
+      "redirect_uri": "리디렉션 URI",
+      "for_this_oauth_client": "— 이 OAuth 클라이언트는",
+      "google_client_id_description": "클라이언트 ID는 Google API Console에 있습니다.",
+      "google_client_secret_description": "클라이언트 시크릿도 Google API Console에 있습니다.",
+      "gitlab_host_description_prefix": "https://gitlab.com이거나 GitLab을 호스팅하는",
+      "gitlab_host_description_suffix": "입니다.",
+      "gitlab_get_this_from": "이 값은 다음에서 확인할 수 있습니다:",
+      "gitlab_secret_also_in": "클라이언트 시크릿도 다음에서 확인할 수 있습니다:",
+      "gitlab_paste_redirect_prefix": "이 값은 자동으로 생성됩니다. 다음 필드에 붙여넣으세요:",
+      "gitlab_paste_redirect_suffix": "—",
+      "gitlab_app_link": "GitLab OAuth 애플리케이션",
+      "gitea_host_label": "Gitea 호스트",
+      "gitea_host_description": "사용 중인 Gitea 인스턴스의 URL을 입력하세요. 공식 Gitea 인스턴스는 \"https://gitea.com\"을 사용합니다."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "관리자가 이미 존재합니다",
+        "message": "관리자가 이미 존재합니다. 다시 시도해 주세요."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "이메일, 비밀번호, 이름이 필요합니다",
+        "message": "이메일, 비밀번호, 이름이 필요합니다. 다시 시도해 주세요."
+      },
+      "invalid_admin_email": {
+        "title": "관리자 이메일이 올바르지 않습니다",
+        "message": "관리자 이메일이 올바르지 않습니다. 다시 시도해 주세요."
+      },
+      "invalid_admin_password": {
+        "title": "관리자 비밀번호가 올바르지 않습니다",
+        "message": "관리자 비밀번호가 올바르지 않습니다. 다시 시도해 주세요."
+      },
+      "required_admin_email_password": {
+        "title": "이메일과 비밀번호가 필요합니다",
+        "message": "이메일과 비밀번호가 필요합니다. 다시 시도해 주세요."
+      },
+      "admin_authentication_failed": {
+        "title": "인증에 실패했습니다",
+        "message": "인증에 실패했습니다. 다시 시도해 주세요."
+      },
+      "admin_user_already_exist": {
+        "title": "관리자 사용자가 이미 존재합니다",
+        "message": "관리자 사용자가 이미 존재합니다.",
+        "sign_in_now": "지금 로그인",
+        "now": "하세요."
+      },
+      "admin_user_does_not_exist": {
+        "title": "관리자 사용자가 존재하지 않습니다",
+        "message": "관리자 사용자가 존재하지 않습니다.",
+        "sign_in_now": "지금 로그인",
+        "now": "하세요."
+      },
+      "admin_user_deactivated": {
+        "title": "사용자 계정이 비활성화되었습니다",
+        "message": "사용자 계정이 비활성화되었습니다. {contact}에게 문의하세요."
+      },
+      "administrator": "관리자",
+      "generic_title": "오류",
+      "generic_message": "문제가 발생했습니다. 다시 시도해 주세요."
+    },
+    "not_found": {
+      "title": "문제가 발생했습니다.",
+      "description": "찾으시는 페이지를 찾을 수 없습니다. 삭제되었거나 이름이 변경되었거나 일시적으로 사용할 수 없을 수 있습니다.",
+      "action": "일반 설정으로 이동",
+      "image_alt": "404 - 페이지를 찾을 수 없음"
+    }
+  }
+}

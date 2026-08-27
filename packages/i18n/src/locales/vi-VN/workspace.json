@@ -373,6 +373,16 @@
           "message": "Đã xảy ra lỗi."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Đã cập nhật không gian làm việc thành công"
+        }
+      },
+      "logo_removed": {
+        "message": "Đã xóa ảnh không gian làm việc thành công."
+      }
     }
   }
 }

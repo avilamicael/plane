@@ -11,6 +11,7 @@ import { useParams } from "next/navigation";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import { AlertModalCore } from "@plane/ui";
 import { getPageName } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 // constants
 // plane web hooks
 import { useAppRouter } from "@/hooks/use-app-router";
@@ -27,6 +28,8 @@ type TConfirmPageDeletionProps = {
 };
 
 export const DeletePageModal = observer(function DeletePageModal(props: TConfirmPageDeletionProps) {
+  const { t } = useTranslation();
+
   const { isOpen, onClose, page, storeType } = props;
   // states
   const [isDeleting, setIsDeleting] = useState(false);
@@ -52,8 +55,8 @@ export const DeletePageModal = observer(function DeletePageModal(props: TConfirm
         handleClose();
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Page deleted successfully.",
+          title: t("common.toast.success"),
+          message: t("page_actions.toasts.delete.success.message"),
         });
 
         if (routePageId) {
@@ -63,8 +66,8 @@ export const DeletePageModal = observer(function DeletePageModal(props: TConfirm
       .catch(() => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Page could not be deleted. Please try again.",
+          title: t("common.toast.error"),
+          message: t("page_actions.toasts.delete.error.message"),
         });
       });
 
@@ -79,7 +82,7 @@ export const DeletePageModal = observer(function DeletePageModal(props: TConfirm
       handleSubmit={handleDelete}
       isSubmitting={isDeleting}
       isOpen={isOpen}
-      title="Delete page"
+      title={t("page_actions.delete_page")}
       content={
         <>
           Are you sure you want to delete page-{" "}

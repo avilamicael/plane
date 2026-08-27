@@ -63,7 +63,8 @@
             "required": "Eine E-Mail-Adresse ist erforderlich.",
             "invalid": "E-Mail ist ungültig"
           }
-        }
+        },
+        "invitation_removed": "Einladung erfolgreich entfernt."
       },
       "billing_and_plans": {
         "heading": "Abrechnung und Pläne",
@@ -147,8 +148,18 @@
           },
           "secret_key_not_copied": {
             "message": "Fehler beim Kopieren des Schlüssels."
+          },
+          "deleted": {
+            "message": "Webhook erfolgreich gelöscht."
+          },
+          "not_deleted": {
+            "message": "Der Webhook konnte nicht gelöscht werden. Bitte versuchen Sie es erneut."
+          },
+          "secret_key_regenerated": {
+            "message": "Neuer Schlüssel erfolgreich neu generiert."
           }
-        }
+        },
+        "delete_webhook": "Webhook löschen"
       },
       "api_tokens": {
         "heading": "API-Tokens",
@@ -170,7 +181,8 @@
             "title": "Fehler!",
             "message": "Löschen des Tokens fehlgeschlagen"
           }
-        }
+        },
+        "expiration_required": "Bitte wählen Sie ein Ablaufdatum aus."
       },
       "integrations": {
         "title": "Integrationen",

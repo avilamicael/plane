@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {Siklus} other {Siklus}}",
-    "no_cycle": "Tidak ada siklus"
+    "no_cycle": "Tidak ada siklus",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Siklus berhasil dibuat."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Siklus berhasil dihapus."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Arsip Anda dapat ditemukan di arsip proyek."
+        },
+        "error": {
+          "message": "Siklus tidak dapat diarsipkan. Silakan coba lagi."
+        }
+      },
+      "date_conflict": {
+        "message": "Anda sudah memiliki siklus pada tanggal tersebut. Jika ingin membuat siklus draf, hapus tanggalnya."
+      },
+      "transfer": {
+        "success": {
+          "message": "Item kerja berhasil dipindahkan"
+        },
+        "error": {
+          "message": "Item kerja tidak dapat dipindahkan. Silakan coba lagi."
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Item kerja berhasil ditambahkan ke siklus."
+        },
+        "error": {
+          "message": "Item kerja yang dipilih tidak dapat ditambahkan ke siklus. Silakan coba lagi."
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

@@ -139,7 +139,8 @@
         "title": "아카이브된 주기 없음",
         "description": "프로젝트를 정리하려면 완료된 주기를 아카이브하세요. 아카이브된 주기는 여기에서 찾을 수 있습니다."
       }
-    }
+    },
+    "delete_cycle": "주기 삭제"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "문제가 발생했습니다."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "프로젝트가 성공적으로 삭제되었습니다."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "프로젝트를 아카이브할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "프로젝트를 복원할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "'Leave Project'를 입력하여 프로젝트 나가기를 확인해주세요."
+        },
+        "project_name": {
+          "message": "설명에 표시된 대로 프로젝트 이름을 입력해주세요."
+        },
+        "fill_all_fields": {
+          "message": "모든 항목을 입력해주세요."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "저장소를 프로젝트와 동기화할 수 없습니다. 다시 시도해주세요."
+        }
+      },
+      "members_added": {
+        "message": "멤버가 성공적으로 추가되었습니다."
+      },
+      "publish": {
+        "success": {
+          "message": "게시 설정이 성공적으로 업데이트되었습니다!"
+        },
+        "unpublish_error": {
+          "message": "프로젝트 게시를 취소하는 중 문제가 발생했습니다."
+        },
+        "select_layout": {
+          "message": "프로젝트를 게시하려면 뷰 레이아웃을 하나 이상 선택해주세요."
+        },
+        "link_copied": {
+          "message": "게시된 페이지 링크가 성공적으로 복사되었습니다."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "댓글 허용",
+      "allow_reactions": "반응 허용",
+      "allow_voting": "투표 허용",
+      "anyone_with_link_can_access": "링크가 있는 모든 사용자가 접근할 수 있습니다"
+    },
+    "join": {
+      "title": "프로젝트에 참여하시겠습니까?"
+    },
+    "card": {
+      "created_on": "{date}에 생성됨",
+      "no_members_yet": "아직 멤버가 없습니다"
     }
   }
 }

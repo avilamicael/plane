@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Button } from "@plane/propel/button";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { useTranslation } from "@plane/i18n";
 // hooks
 import { useModule } from "@/hooks/store/use-module";
 import { useAppRouter } from "@/hooks/use-app-router";
@@ -23,6 +24,8 @@ type Props = {
 };
 
 export function ArchiveModuleModal(props: Props) {
+  const { t } = useTranslation();
+
   const { workspaceSlug, projectId, moduleId, isOpen, handleClose } = props;
   // router
   const router = useAppRouter();
@@ -45,7 +48,7 @@ export function ArchiveModuleModal(props: Props) {
         setToast({
           type: TOAST_TYPE.SUCCESS,
           title: "Archive success",
-          message: "Your archives can be found in project archives.",
+          message: t("module.toasts.archive.success.message"),
         });
         onClose();
         router.push(`/${workspaceSlug}/projects/${projectId}/modules`);
@@ -54,8 +57,8 @@ export function ArchiveModuleModal(props: Props) {
       .catch(() =>
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Module could not be archived. Please try again.",
+          title: t("common.toast.error"),
+          message: t("module.toasts.archive.error.message"),
         })
       )
       .finally(() => setIsArchiving(false));

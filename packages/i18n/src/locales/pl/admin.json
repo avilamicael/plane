@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "E-mail",
+      "password": "Hasło",
+      "save_changes": "Zapisz zmiany",
+      "saving": "Zapisywanie",
+      "go_back": "Wróć",
+      "success": "Sukces",
+      "error": "Błąd",
+      "done": "Gotowe!",
+      "show_password": "Pokaż hasło",
+      "hide_password": "Ukryj hasło",
+      "settings_updated_successfully": "Ustawienia zostały zaktualizowane",
+      "saving_configuration": "Zapisywanie konfiguracji",
+      "configuration_saved_successfully": "Konfiguracja została zapisana",
+      "failed_to_save_configuration": "Nie udało się zapisać konfiguracji",
+      "learn_more": "Dowiedz się więcej",
+      "here": "tutaj."
+    },
+    "sidebar": {
+      "instance_admin": "Administrator instancji",
+      "sign_out": "Wyloguj się",
+      "switch_to_light_mode": "Przełącz na tryb jasny",
+      "switch_to_dark_mode": "Przełącz na tryb ciemny",
+      "general": {
+        "title": "Ogólne",
+        "description": "Zidentyfikuj swoje instancje i poznaj kluczowe szczegóły."
+      },
+      "email": {
+        "title": "E-mail",
+        "description": "Skonfiguruj ustawienia SMTP."
+      },
+      "workspace": {
+        "title": "Przestrzenie robocze",
+        "description": "Zarządzaj wszystkimi przestrzeniami roboczymi w tej instancji."
+      },
+      "authentication": {
+        "title": "Uwierzytelnianie",
+        "description": "Skonfiguruj metody uwierzytelniania."
+      },
+      "ai": {
+        "title": "Sztuczna inteligencja",
+        "description": "Skonfiguruj swoje dane uwierzytelniające OpenAI."
+      },
+      "image": {
+        "title": "Obrazy w Plane",
+        "description": "Zezwól na biblioteki obrazów innych firm."
+      }
+    },
+    "sign_in": {
+      "heading": "Zarządzaj swoją instancją Plane",
+      "sub_heading": "Skonfiguruj ustawienia obowiązujące w całej instancji, aby ją zabezpieczyć",
+      "email_placeholder": "imie@firma.com",
+      "password_placeholder": "Wprowadź swoje hasło",
+      "submit": "Zaloguj się"
+    },
+    "setup": {
+      "heading": "Skonfiguruj swoją instancję Plane",
+      "sub_heading": "Po konfiguracji będziesz mieć możliwość zarządzania tą instancją Plane.",
+      "first_name": "Imię",
+      "last_name": "Nazwisko",
+      "company_name": "Nazwa firmy",
+      "company_name_placeholder": "Nazwa firmy",
+      "set_password": "Ustaw hasło",
+      "new_password_placeholder": "Nowe hasło",
+      "confirm_password": "Potwierdź hasło",
+      "confirm_password_placeholder": "Potwierdź hasło",
+      "passwords_dont_match": "Hasła nie są zgodne",
+      "telemetry_consent": "Zezwól Plane na anonimowe zbieranie zdarzeń użytkowania.",
+      "see_more": "Dowiedz się więcej",
+      "submit": "Kontynuuj"
+    },
+    "settings": {
+      "general": {
+        "title": "Ustawienia ogólne",
+        "description": "Zmień nazwę swojej instancji oraz adresy e-mail administratorów instancji. Włącz lub wyłącz telemetrię w swojej instancji.",
+        "instance_details": "Szczegóły instancji",
+        "name_of_instance": "Nazwa instancji",
+        "instance_name_placeholder": "Nazwa instancji",
+        "admin_email_placeholder": "E-mail administratora",
+        "instance_id": "Identyfikator instancji",
+        "telemetry": "Telemetria",
+        "telemetry_toggle_title": "Pozwól Plane zbierać anonimowe dane o użytkowaniu",
+        "telemetry_toggle_description": "Nie zbieramy żadnych danych osobowych. Te zanonimizowane dane pomagają nam zrozumieć, jak korzystasz z Plane, i tworzyć nowe funkcje zgodnie z",
+        "telemetry_policy": "naszą Polityką telemetrii."
+      },
+      "authentication": {
+        "title": "Zarządzaj metodami uwierzytelniania w swojej instancji",
+        "description": "Skonfiguruj metody uwierzytelniania dla swojego zespołu i ogranicz rejestrację wyłącznie do zaproszeń.",
+        "allow_signup_title": "Zezwól każdemu na rejestrację nawet bez zaproszenia",
+        "allow_signup_description": "Wyłączenie tej opcji pozwoli rejestrować się tylko zaproszonym użytkownikom.",
+        "available_modes": "Dostępne metody uwierzytelniania",
+        "cannot_disable_title": "Nie można wyłączyć uwierzytelniania",
+        "cannot_disable_message": "Co najmniej jedna metoda uwierzytelniania musi pozostać włączona. Włącz inną metodę, zanim wyłączysz tę.",
+        "modes": {
+          "unique_codes": {
+            "name": "Kody jednorazowe",
+            "description": "Zaloguj się lub zarejestruj w Plane za pomocą kodów wysyłanych e-mailem. Aby korzystać z tej metody, musisz mieć skonfigurowany SMTP."
+          },
+          "passwords": {
+            "name": "Hasła",
+            "description": "Pozwól członkom tworzyć konta z hasłem i logować się przy użyciu swoich adresów e-mail."
+          },
+          "google": {
+            "description": "Pozwól członkom logować się lub rejestrować w Plane przy użyciu kont Google."
+          },
+          "github": {
+            "description": "Pozwól członkom logować się lub rejestrować w Plane przy użyciu kont GitHub."
+          },
+          "gitlab": {
+            "description": "Pozwól członkom logować się lub rejestrować w Plane przy użyciu kont GitLab."
+          },
+          "gitea": {
+            "description": "Pozwól członkom logować się lub rejestrować w Plane przy użyciu kont Gitea."
+          }
+        }
+      },
+      "email": {
+        "title": "Bezpieczne e-maile z Twojej własnej instancji",
+        "description": "Plane może wysyłać przydatne wiadomości e-mail do Ciebie i Twoich użytkowników z Twojej własnej instancji, bez łączenia się z Internetem.",
+        "description_secondary": "Skonfiguruj to poniżej i przetestuj ustawienia przed ich zapisaniem.",
+        "description_warning": "Błędna konfiguracja może powodować odrzucenia i błędy wiadomości e-mail.",
+        "disabled_title": "Funkcja e-mail wyłączona",
+        "disabled_message": "Funkcja e-mail została wyłączona",
+        "disable_error_title": "Błąd podczas wyłączania e-maili",
+        "disable_error_message": "Nie udało się wyłączyć funkcji e-mail. Spróbuj ponownie.",
+        "host": "Host",
+        "port": "Port",
+        "sender_email": "Adres e-mail nadawcy",
+        "sender_email_description": "To jest adres e-mail, który zobaczą Twoi użytkownicy, otrzymując wiadomości z tej instancji. Musisz go zweryfikować.",
+        "username": "Nazwa użytkownika",
+        "password_placeholder": "Hasło",
+        "security": "Zabezpieczenia poczty",
+        "security_none": "Bez zabezpieczeń poczty",
+        "authentication": "Uwierzytelnianie",
+        "authentication_description": "To opcjonalne, ale zalecamy ustawienie nazwy użytkownika i hasła dla Twojego serwera SMTP.",
+        "send_test_email": "Wyślij testową wiadomość e-mail",
+        "updated_successfully": "Ustawienia poczty zostały zaktualizowane"
+      },
+      "workspace": {
+        "title": "Przestrzenie robocze w tej instancji",
+        "description": "Zobacz wszystkie przestrzenie robocze i kontroluj, kto może je tworzyć.",
+        "prevent_creation_title": "Uniemożliw innym tworzenie przestrzeni roboczych.",
+        "prevent_creation_description": "Włączenie tej opcji sprawi, że tylko Ty będziesz mógł tworzyć przestrzenie robocze. Będziesz musiał zapraszać użytkowników do nowych przestrzeni.",
+        "all_workspaces": "Wszystkie przestrzenie robocze w tej instancji",
+        "list_description": "Nie możesz jeszcze usuwać przestrzeni roboczych i możesz wejść do przestrzeni tylko wtedy, gdy jesteś w niej administratorem lub członkiem.",
+        "create": "Utwórz przestrzeń roboczą",
+        "creating": "Tworzenie przestrzeni roboczej",
+        "load_more": "Załaduj więcej",
+        "name_label": "Nazwij swoją przestrzeń roboczą",
+        "name_placeholder": "Coś znajomego i łatwo rozpoznawalnego sprawdza się najlepiej.",
+        "url_label": "Ustaw adres URL swojej przestrzeni roboczej",
+        "url_placeholder": "nazwa-przestrzeni",
+        "url_taken": "Ten adres URL jest już zajęty. Spróbuj innego.",
+        "url_invalid": "Adresy URL mogą zawierać tylko ( - ), ( _ ) oraz znaki alfanumeryczne.",
+        "size_label": "Ile osób będzie korzystać z tej przestrzeni roboczej?",
+        "size_placeholder": "Wybierz zakres",
+        "required_field": "To pole jest wymagane.",
+        "created_title": "Sukces!",
+        "created_message": "Przestrzeń robocza została utworzona.",
+        "create_error_title": "Błąd!",
+        "create_error_message": "Nie udało się utworzyć przestrzeni roboczej. Spróbuj ponownie.",
+        "create_generic_error": "Wystąpił błąd podczas tworzenia przestrzeni roboczej. Spróbuj ponownie."
+      },
+      "ai": {
+        "title": "Funkcje AI dla wszystkich Twoich przestrzeni roboczych",
+        "description": "Skonfiguruj dane uwierzytelniające API sztucznej inteligencji, aby funkcje Plane AI były włączone we wszystkich Twoich przestrzeniach roboczych."
+      },
+      "image": {
+        "title": "Biblioteki obrazów innych firm",
+        "description": "Pozwól swoim użytkownikom wyszukiwać i wybierać obrazy z bibliotek innych firm"
+      }
+    },
+    "oauth": {
+      "client_id": "Identyfikator klienta",
+      "client_secret": "Sekret klienta",
+      "application_id": "Identyfikator aplikacji",
+      "secret": "Sekret",
+      "organization_id": "Identyfikator organizacji",
+      "organization_id_description": "Identyfikator organizacji w GitHub.",
+      "host": "Host",
+      "origin_url": "Adres URL źródła",
+      "callback_uri": "Identyfikator URI wywołania zwrotnego",
+      "callback_url": "Adres URL wywołania zwrotnego",
+      "web": "Web",
+      "provider_details_for_plane": "Dane z {provider} dla Plane",
+      "plane_details_for_provider": "Dane z Plane dla {provider}",
+      "configured_message": "Uwierzytelnianie {provider} zostało skonfigurowane. Teraz warto je przetestować.",
+      "configuration_saved": "Konfiguracja zapisana",
+      "auth_now_active": "Uwierzytelnianie {provider} jest teraz aktywne.",
+      "auth_now_disabled": "Uwierzytelnianie {provider} jest teraz wyłączone.",
+      "get_this_from_settings": "Znajdziesz to w swoich",
+      "secret_also_in_settings": "Sekret klienta również znajdziesz w swoich",
+      "app_settings_link": "ustawieniach aplikacji OAuth {provider}.",
+      "app_settings_link_no_period": "ustawieniach aplikacji OAuth {provider}",
+      "autogenerated_paste_origin": "Wygenerujemy to automatycznie. Wklej to w pole",
+      "autogenerated_paste_callback": "Wygenerujemy to automatycznie. Wklej to w swoje pole",
+      "field_word": "—",
+      "authorized_origin_url": "Autoryzowany adres URL źródła",
+      "authorized_callback_uri": "Autoryzowany identyfikator URI wywołania zwrotnego",
+      "authorized_js_origins": "Autoryzowane źródła JavaScript",
+      "authorized_redirect_uri": "Autoryzowany identyfikator URI przekierowania",
+      "redirect_uri": "Identyfikator URI przekierowania",
+      "for_this_oauth_client": "dla tego klienta OAuth",
+      "google_client_id_description": "Twój identyfikator klienta znajduje się w Google API Console.",
+      "google_client_secret_description": "Twój sekret klienta również powinien znajdować się w Google API Console.",
+      "gitlab_host_description_prefix": "To jest https://gitlab.com albo",
+      "gitlab_host_description_suffix": "pod którą hostujesz GitLab.",
+      "gitlab_get_this_from": "Znajdziesz to w swoich",
+      "gitlab_secret_also_in": "Sekret klienta również znajdziesz w swoich",
+      "gitlab_paste_redirect_prefix": "Wygenerujemy to automatycznie. Wklej to w pole",
+      "gitlab_paste_redirect_suffix": "swojej",
+      "gitlab_app_link": "aplikacji OAuth GitLab",
+      "gitea_host_label": "Host Gitea",
+      "gitea_host_description": "Użyj adresu URL swojej instancji Gitea. Dla oficjalnej instancji Gitea użyj „https://gitea.com”."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "Administrator już istnieje",
+        "message": "Administrator już istnieje. Spróbuj ponownie."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "Wymagane są e-mail, hasło i imię",
+        "message": "Wymagane są e-mail, hasło i imię. Spróbuj ponownie."
+      },
+      "invalid_admin_email": {
+        "title": "Nieprawidłowy e-mail administratora",
+        "message": "Nieprawidłowy e-mail administratora. Spróbuj ponownie."
+      },
+      "invalid_admin_password": {
+        "title": "Nieprawidłowe hasło administratora",
+        "message": "Nieprawidłowe hasło administratora. Spróbuj ponownie."
+      },
+      "required_admin_email_password": {
+        "title": "Wymagane są e-mail i hasło",
+        "message": "Wymagane są e-mail i hasło. Spróbuj ponownie."
+      },
+      "admin_authentication_failed": {
+        "title": "Uwierzytelnianie nie powiodło się",
+        "message": "Uwierzytelnianie nie powiodło się. Spróbuj ponownie."
+      },
+      "admin_user_already_exist": {
+        "title": "Użytkownik administrator już istnieje",
+        "message": "Użytkownik administrator już istnieje.",
+        "sign_in_now": "Zaloguj się",
+        "now": "teraz."
+      },
+      "admin_user_does_not_exist": {
+        "title": "Użytkownik administrator nie istnieje",
+        "message": "Użytkownik administrator nie istnieje.",
+        "sign_in_now": "Zaloguj się",
+        "now": "teraz."
+      },
+      "admin_user_deactivated": {
+        "title": "Konto użytkownika dezaktywowane",
+        "message": "Konto użytkownika dezaktywowane. Skontaktuj się z {contact}."
+      },
+      "administrator": "administratorem",
+      "generic_title": "Błąd",
+      "generic_message": "Coś poszło nie tak. Spróbuj ponownie."
+    },
+    "not_found": {
+      "title": "Ups! Coś poszło nie tak.",
+      "description": "Niestety nie znaleźliśmy strony, której szukasz. Mogła zostać usunięta, przemianowana lub być tymczasowo niedostępna.",
+      "action": "Przejdź do ustawień ogólnych",
+      "image_alt": "404 - Nie znaleziono strony"
+    }
+  }
+}

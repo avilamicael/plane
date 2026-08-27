@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Modulo} other {Moduli}}",
     "no_module": "Nessun modulo",
-    "select": "Aggiungi moduli"
+    "select": "Aggiungi moduli",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Modulo creato con successo."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Modulo aggiornato con successo."
+        },
+        "error": {
+          "message": "Impossibile aggiornare il modulo. Riprova."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "I tuoi archivi sono disponibili negli archivi del progetto."
+        },
+        "error": {
+          "message": "Impossibile archiviare il modulo. Riprova."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Il tuo modulo è disponibile nei moduli del progetto."
+        },
+        "error": {
+          "message": "Impossibile ripristinare il modulo. Riprova."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Link del modulo creato con successo."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Link del modulo aggiornato con successo."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Link del modulo eliminato con successo."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Elementi di lavoro aggiunti al modulo con successo."
+        },
+        "error": {
+          "message": "Impossibile aggiungere gli elementi di lavoro selezionati al modulo. Riprova."
+        }
+      }
+    },
+    "no_lead": "Nessun responsabile",
+    "work_items_progress": "{completed}/{total} {total, plural, one {elemento di lavoro} many {elementi di lavoro} other {elementi di lavoro}}"
   }
 }

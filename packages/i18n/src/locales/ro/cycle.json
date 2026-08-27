@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {Ciclu} other {Cicluri}}",
-    "no_cycle": "Niciun ciclu"
+    "no_cycle": "Niciun ciclu",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Ciclul a fost creat cu succes."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Ciclul a fost șters cu succes."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Arhivele tale pot fi găsite în arhiva proiectului."
+        },
+        "error": {
+          "message": "Ciclul nu a putut fi arhivat. Te rugăm să încerci din nou."
+        }
+      },
+      "date_conflict": {
+        "message": "Ai deja un ciclu în datele indicate. Dacă vrei să creezi un ciclu ciornă, elimină datele."
+      },
+      "transfer": {
+        "success": {
+          "message": "Elementele de lucru au fost transferate cu succes"
+        },
+        "error": {
+          "message": "Elementele de lucru nu au putut fi transferate. Te rugăm să încerci din nou."
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Elementele de lucru au fost adăugate la ciclu cu succes."
+        },
+        "error": {
+          "message": "Elementele de lucru selectate nu au putut fi adăugate la ciclu. Te rugăm să încerci din nou."
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

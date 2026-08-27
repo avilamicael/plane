@@ -63,7 +63,8 @@
             "required": "Vyžaduje sa e-mailová adresa.",
             "invalid": "E-mail je neplatný"
           }
-        }
+        },
+        "invitation_removed": "Pozvánka bola úspešne odstránená."
       },
       "billing_and_plans": {
         "heading": "Fakturácia a plány",
@@ -147,8 +148,18 @@
           },
           "secret_key_not_copied": {
             "message": "Chyba pri kopírovaní kľúča."
+          },
+          "deleted": {
+            "message": "Webhook bol úspešne zmazaný."
+          },
+          "not_deleted": {
+            "message": "Webhook sa nepodarilo zmazať. Skúste to prosím znova."
+          },
+          "secret_key_regenerated": {
+            "message": "Nový kľúč bol úspešne vygenerovaný."
           }
-        }
+        },
+        "delete_webhook": "Zmazať webhook"
       },
       "api_tokens": {
         "heading": "API Tokeny",
@@ -170,7 +181,8 @@
             "title": "Chyba!",
             "message": "Mazanie tokenu zlyhalo"
           }
-        }
+        },
+        "expiration_required": "Vyberte prosím dátum vypršania platnosti."
       },
       "integrations": {
         "title": "Integrácie",

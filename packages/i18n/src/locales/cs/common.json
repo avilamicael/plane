@@ -307,6 +307,9 @@
   "end_date": "Datum ukončení",
   "due_date": "Termín",
   "target_date": "Cílové datum",
+  "created_date": "Datum vytvoření",
+  "updated_date": "Datum aktualizace",
+  "last_updated_date": "Datum poslední aktualizace",
   "estimate": "Odhad",
   "change_parent_issue": "Změnit nadřazenou pracovní položku",
   "remove_parent_issue": "Odebrat nadřazenou pracovní položku",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL byla úspěšně zkopírována do schránky",
   "toast": {
     "success": "Úspěch!",
-    "error": "Chyba!"
+    "error": "Chyba!",
+    "warning": "Varování!",
+    "info": "Informace!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Odhad",
     "created_at": "Vytvořeno dne",
     "updated_at": "Aktualizováno dne",
+    "select_cycle": "Vybrat cyklus",
+    "select_modules": "Vybrat moduly",
     "completed_at": "Dokončeno dne",
     "layout": "Rozložení",
     "filters": "Filtry",
@@ -464,6 +471,10 @@
     "epics": "Epiky",
     "work_item": "Pracovní položka",
     "work_items": "Pracovní položky",
+    "work_items_in_project_count": "{count, plural, one{V tomto projektu je # pracovní položka} few{V tomto projektu jsou # pracovní položky} many{V tomto projektu je # pracovní položky} other{V tomto projektu je # pracovních položek}}",
+    "work_items_in_archives_count": "{count, plural, one{V archivu tohoto projektu je # pracovní položka} few{V archivu tohoto projektu jsou # pracovní položky} many{V archivu tohoto projektu je # pracovní položky} other{V archivu tohoto projektu je # pracovních položek}}",
+    "work_items_in_cycle_count": "{count, plural, one{V tomto cyklu je # pracovní položka} few{V tomto cyklu jsou # pracovní položky} many{V tomto cyklu je # pracovní položky} other{V tomto cyklu je # pracovních položek}}",
+    "work_items_in_module_count": "{count, plural, one{V tomto modulu je # pracovní položka} few{V tomto modulu jsou # pracovní položky} many{V tomto modulu je # pracovní položky} other{V tomto modulu je # pracovních položek}}",
     "sub_work_item": "Podřízená pracovní položka",
     "views": "Pohledy",
     "pages": "Stránky",
@@ -619,7 +630,11 @@
       "enable": "Povolit",
       "disable": "Zakázat",
       "copy_markdown": "Kopírovat markdown",
-      "reply": "Odpovědět"
+      "reply": "Odpovědět",
+      "move": "Přesunout",
+      "remove_from_cycle": "Odebrat z cyklu",
+      "remove_from_module": "Odebrat z modulu",
+      "rename_folder": "Přejmenovat složku"
     },
     "name": "Název",
     "discard": "Zahodit",
@@ -722,12 +737,33 @@
     "more": "Více",
     "saved": "Uloženo",
     "all_projects": "Všechny projekty",
-    "n_plus_projects": "{count}+ projektů"
+    "n_plus_projects": "{count}+ projektů",
+    "and": "a",
+    "view_all": "Zobrazit vše",
+    "view_less": "Zobrazit méně",
+    "empty": "Prázdné",
+    "no_date": "Bez data",
+    "no_cycle": "Bez cyklu",
+    "no_modules": "Bez modulů",
+    "no_labels": "Bez štítků",
+    "no_assignees": "Bez přiřazených",
+    "labels_count": "{count, plural, one{# štítek} few{# štítky} many{# štítku} other{# štítků}}",
+    "modules_count": "{count, plural, one{# modul} few{# moduly} many{# modulu} other{# modulů}}",
+    "not_found": {
+      "title": "Jejda! Něco se pokazilo.",
+      "description": "Litujeme, hledanou stránku se nepodařilo najít. Mohla být odstraněna, přejmenována nebo je dočasně nedostupná."
+    },
+    "toast": {
+      "success": "Úspěch!",
+      "error": "Chyba!",
+      "warning": "Varování"
+    }
   },
   "chart": {
     "x_axis": "Osa X",
     "y_axis": "Osa Y",
-    "metric": "Metrika"
+    "metric": "Metrika",
+    "week_of_month": "{month}, týden {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Aktualizovat pohled"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Pohled byl úspěšně vytvořen."
+        },
+        "error": {
+          "message": "Pohled se nepodařilo vytvořit. Zkuste to prosím znovu."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Pohled byl úspěšně aktualizován."
+        },
+        "error": {
+          "message": "Pohled se nepodařilo aktualizovat. Zkuste to prosím znovu."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Pohled byl úspěšně smazán."
+        },
+        "error": {
+          "message": "Pohled se nepodařilo smazat. Zkuste to prosím znovu."
+        }
+      },
+      "not_found": {
+        "message": "Pohled, který se pokoušíte aktualizovat, neexistuje."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Váš pohled byl úspěšně aktualizován."
+        },
+        "error": {
+          "message": "Váš pohled se nepodařilo aktualizovat. Zkuste to prosím znovu."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Exportujte položky do JSON.",
       "short_description": "Exportovat jako JSON"
+    }
+  },
+  "sign_in": "Přihlásit se",
+  "powered_by_plane_publish": "Poháněno Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Nepodařilo se načíst podrobnosti instance.",
+      "description": "Nepodařilo se nám načíst podrobnosti instance. Nemějte obavy, může jít jen o problém s připojením."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Něco se pokazilo. Zkuste to prosím později.",
+  "please_try_again_later": "Zkuste to prosím později.",
+  "some_error_occurred": "Došlo k chybě",
+  "markdown_copied_to_clipboard": "Markdown zkopírován do schránky.",
+  "reloading_to_apply_changes": "Znovu se načítá, aby se změny projevily...",
+  "copy_link_failed": "Odkaz se nepodařilo zkopírovat. Zkuste to prosím znovu.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Konfigurace motivu byla úspěšně stažena."
+        },
+        "error": {
+          "message": "Stažení konfigurace motivu se nezdařilo."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Konfigurace motivu byla úspěšně importována"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Přetahování funguje pouze při ručním řazení"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Při aktualizaci dat bloku se něco pokazilo"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Tento filtr není správně nastaven a nelze jej použít"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Zadejte prosím úkol, abyste získali asistenci AI."
+      }
+    }
+  },
+  "text_colors": "Barvy textu",
+  "background_colors": "Barvy pozadí",
+  "submitting": "Odesílání...",
+  "image_upload": {
+    "title": "Nahrát obrázek",
+    "drag_and_drop": "Přetáhněte obrázek sem",
+    "drop_here": "Sem přetáhněte obrázek pro nahrání",
+    "file_too_large": "Velikost obrázku nesmí přesáhnout 5 MB.",
+    "invalid_format": "Nahrajte soubor v platném formátu.",
+    "supported_formats": "Podporované formáty souborů: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Nahrát a uložit",
+    "uploading": "Nahrávání",
+    "search_for_images": "Hledat obrázky",
+    "no_images_found": "Nebyly nalezeny žádné obrázky.",
+    "tabs": {
+      "images": "Obrázky",
+      "upload": "Nahrát"
     }
   }
 }

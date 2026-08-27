@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Masuk untuk menambahkan komentar"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Klik untuk memberi suara naik",
       "click_to_downvote": "Klik untuk memberi suara turun",
       "click_to_view_upvotes": "Klik untuk melihat suara naik",
-      "click_to_view_downvotes": "Klik untuk melihat suara turun"
+      "click_to_view_downvotes": "Klik untuk melihat suara turun",
+      "no_upvotes": "Belum ada suara dukungan",
+      "no_downvotes": "Belum ada suara penolakan",
+      "and_more": "dan {count} lainnya"
     },
     "activity": {
       "created_the_work_item": "membuat item kerja.",
       "created_the_work_item_via": "membuat item kerja melalui",
-      "deleted_a_work_item": "menghapus item kerja."
+      "deleted_a_work_item": "menghapus item kerja.",
+      "set_the_name_to": "mengubah nama menjadi",
+      "updated_the_description": "memperbarui deskripsi",
+      "set_the_state_to": "mengubah status menjadi",
+      "set_the_priority_to": "mengubah prioritas menjadi",
+      "added_a_new_assignee": "menambahkan penerima tugas baru",
+      "removed_the_assignee": "menghapus penerima tugas",
+      "added_a_new_label": "menambahkan label baru",
+      "removed_the_label": "menghapus label",
+      "set_the_start_date_to": "mengubah tanggal mulai menjadi",
+      "removed_the_start_date": "menghapus tanggal mulai",
+      "set_the_due_date_to": "mengubah tanggal jatuh tempo menjadi",
+      "removed_the_due_date": "menghapus tanggal jatuh tempo",
+      "set_the_parent_to": "mengubah item induk menjadi",
+      "removed_the_parent": "menghapus item induk",
+      "set_the_estimate_point_to": "mengubah poin perkiraan menjadi",
+      "removed_the_estimate_point": "menghapus poin perkiraan",
+      "added_this_work_item_to_the_cycle": "menambahkan item kerja ini ke siklus",
+      "set_the_cycle_to": "mengubah siklus menjadi",
+      "removed_the_work_item_from_the_cycle": "menghapus item kerja dari siklus",
+      "added_this_work_item_to_the_module": "menambahkan item kerja ini ke modul",
+      "set_the_module_to": "mengubah modul menjadi",
+      "removed_the_work_item_from_the_module": "menghapus item kerja dari modul",
+      "added_the_link": "menambahkan",
+      "updated_the_link": "memperbarui",
+      "removed_the_link": "menghapus",
+      "link_noun": "tautan",
+      "uploaded_a_new_attachment": "mengunggah lampiran baru",
+      "removed_an_attachment": "menghapus lampiran",
+      "restored_the_work_item": "memulihkan item kerja",
+      "archived_the_work_item": "mengarsipkan item kerja",
+      "declined_this_work_item_from_intake": "menolak item kerja ini dari Intake.",
+      "snoozed_this_work_item": "menunda item kerja ini.",
+      "accepted_this_work_item_from_intake": "menerima item kerja ini dari Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "menolak item kerja ini dari Intake dengan menandainya sebagai duplikat.",
+      "updated_intake_work_item_status": "memperbarui status item kerja di Intake.",
+      "marked_this_work_item_is_blocking_work_item": "menandai item kerja ini memblokir item kerja",
+      "removed_the_blocking_work_item": "menghapus pemblokiran item kerja",
+      "marked_this_work_item_is_being_blocked_by": "menandai item kerja ini diblokir oleh",
+      "removed_this_work_item_being_blocked_by_work_item": "menghapus pemblokiran item kerja ini oleh",
+      "marked_this_work_item_as_duplicate_of": "menandai item kerja ini sebagai duplikat dari",
+      "removed_this_work_item_as_a_duplicate_of": "menghapus tanda duplikat item kerja ini dari",
+      "marked_that_this_work_item_relates_to": "menandai item kerja ini terkait dengan",
+      "removed_the_relation_from": "menghapus keterkaitan dengan",
+      "connector_for": "pada",
+      "connector_to": "ke",
+      "connector_from": "dari",
+      "connector_of": "dari"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reaksi berhasil dibuat"
+          },
+          "error": {
+            "message": "Gagal membuat reaksi"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reaksi berhasil dihapus"
+          },
+          "error": {
+            "message": "Gagal menghapus reaksi"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Lampiran berhasil dihapus"
+          },
+          "error": {
+            "message": "Lampiran tidak dapat dihapus"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Silakan pilih setidaknya satu item kerja."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Item kerja berhasil dihapus!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Tanggal jatuh tempo tidak boleh sebelum tanggal mulai item kerja."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Terjadi kesalahan saat memperbarui tanggal item kerja. Silakan coba lagi nanti."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Gagal memindahkan item kerja ke proyek. Silakan coba lagi."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Gagal menghapus item kerja"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Gagal memperbarui item kerja"
+        }
+      },
+      "editor_processing": {
+        "message": "Editor masih memproses perubahan. Harap tunggu sebelum melanjutkan."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Judul item kerja kurang informatif untuk menghasilkan deskripsi. Silakan coba dengan judul lain."
+        }
+      }
     }
   },
   "sub_work_item": {

@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {模块} other {模块}}",
     "no_module": "无模块",
-    "select": "添加模块"
+    "select": "添加模块",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "模块创建成功。"
+        }
+      },
+      "update": {
+        "success": {
+          "message": "模块更新成功。"
+        },
+        "error": {
+          "message": "无法更新模块。请重试。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "您的归档可以在项目归档中找到。"
+        },
+        "error": {
+          "message": "无法归档模块。请重试。"
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "您的模块可以在项目模块中找到。"
+        },
+        "error": {
+          "message": "无法恢复模块。请重试。"
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "模块链接创建成功。"
+          }
+        },
+        "update": {
+          "success": {
+            "message": "模块链接更新成功。"
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "模块链接删除成功。"
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "工作项已成功添加到模块。"
+        },
+        "error": {
+          "message": "无法将所选工作项添加到模块。请重试。"
+        }
+      }
+    },
+    "no_lead": "无负责人",
+    "work_items_progress": "{completed}/{total} {total, plural, one {工作项} other {工作项}}"
   }
 }

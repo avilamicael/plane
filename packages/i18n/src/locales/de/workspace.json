@@ -373,6 +373,16 @@
           "message": "Etwas ist schief gelaufen."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Arbeitsbereich erfolgreich aktualisiert"
+        }
+      },
+      "logo_removed": {
+        "message": "Bild des Arbeitsbereichs erfolgreich entfernt."
+      }
     }
   }
 }

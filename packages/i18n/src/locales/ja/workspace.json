@@ -373,6 +373,16 @@
           "message": "問題が発生しました。"
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "ワークスペースを更新しました"
+        }
+      },
+      "logo_removed": {
+        "message": "ワークスペースの画像を削除しました。"
+      }
     }
   }
 }

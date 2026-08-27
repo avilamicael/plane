@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {週期} other {週期}}",
-    "no_cycle": "無週期"
+    "no_cycle": "無週期",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "週期建立成功。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "週期刪除成功。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "您的封存可以在專案封存中找到。"
+        },
+        "error": {
+          "message": "無法封存週期。請再試一次。"
+        }
+      },
+      "date_conflict": {
+        "message": "指定日期已存在一個週期。如果要建立草稿週期，請移除日期。"
+      },
+      "transfer": {
+        "success": {
+          "message": "工作事項轉移成功"
+        },
+        "error": {
+          "message": "無法轉移工作事項。請再試一次。"
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "工作事項已成功新增至週期。"
+        },
+        "error": {
+          "message": "無法將所選工作事項新增至週期。請再試一次。"
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

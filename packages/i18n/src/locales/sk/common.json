@@ -307,6 +307,9 @@
   "end_date": "Dátum ukončenia",
   "due_date": "Termín",
   "target_date": "Cieľový dátum",
+  "created_date": "Dátum vytvorenia",
+  "updated_date": "Dátum aktualizácie",
+  "last_updated_date": "Dátum poslednej aktualizácie",
   "estimate": "Odhad",
   "change_parent_issue": "Zmeniť nadradenú pracovnú položku",
   "remove_parent_issue": "Odstrániť nadradenú pracovnú položku",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL bola úspešne skopírovaná do schránky",
   "toast": {
     "success": "Úspech!",
-    "error": "Chyba!"
+    "error": "Chyba!",
+    "warning": "Varovanie!",
+    "info": "Informácia!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Odhad",
     "created_at": "Vytvorené dňa",
     "updated_at": "Aktualizované dňa",
+    "select_cycle": "Vybrať cyklus",
+    "select_modules": "Vybrať moduly",
     "completed_at": "Dokončené dňa",
     "layout": "Rozloženie",
     "filters": "Filtre",
@@ -464,6 +471,10 @@
     "epics": "Epiky",
     "work_item": "Pracovná položka",
     "work_items": "Pracovné položky",
+    "work_items_in_project_count": "{count, plural, one{V tomto projekte je # pracovná položka} few{V tomto projekte sú # pracovné položky} many{V tomto projekte je # pracovnej položky} other{V tomto projekte je # pracovných položiek}}",
+    "work_items_in_archives_count": "{count, plural, one{V archíve tohto projektu je # pracovná položka} few{V archíve tohto projektu sú # pracovné položky} many{V archíve tohto projektu je # pracovnej položky} other{V archíve tohto projektu je # pracovných položiek}}",
+    "work_items_in_cycle_count": "{count, plural, one{V tomto cykle je # pracovná položka} few{V tomto cykle sú # pracovné položky} many{V tomto cykle je # pracovnej položky} other{V tomto cykle je # pracovných položiek}}",
+    "work_items_in_module_count": "{count, plural, one{V tomto module je # pracovná položka} few{V tomto module sú # pracovné položky} many{V tomto module je # pracovnej položky} other{V tomto module je # pracovných položiek}}",
     "sub_work_item": "Podriadená pracovná položka",
     "views": "Pohľady",
     "pages": "Stránky",
@@ -619,7 +630,11 @@
       "enable": "Povoliť",
       "disable": "Zakázať",
       "copy_markdown": "Kopírovať markdown",
-      "reply": "Odpovedať"
+      "reply": "Odpovedať",
+      "move": "Presunúť",
+      "remove_from_cycle": "Odstrániť z cyklu",
+      "remove_from_module": "Odstrániť z modulu",
+      "rename_folder": "Premenovať priečinok"
     },
     "name": "Názov",
     "discard": "Zahodiť",
@@ -722,12 +737,33 @@
     "more": "Viac",
     "saved": "Uložené",
     "all_projects": "Všetky projekty",
-    "n_plus_projects": "{count}+ projektov"
+    "n_plus_projects": "{count}+ projektov",
+    "and": "a",
+    "view_all": "Zobraziť všetko",
+    "view_less": "Zobraziť menej",
+    "empty": "Prázdne",
+    "no_date": "Bez dátumu",
+    "no_cycle": "Bez cyklu",
+    "no_modules": "Bez modulov",
+    "no_labels": "Bez štítkov",
+    "no_assignees": "Bez priradených",
+    "labels_count": "{count, plural, one{# štítok} few{# štítky} many{# štítka} other{# štítkov}}",
+    "modules_count": "{count, plural, one{# modul} few{# moduly} many{# modulu} other{# modulov}}",
+    "not_found": {
+      "title": "Ups! Niečo sa pokazilo.",
+      "description": "Ľutujeme, hľadanú stránku sa nepodarilo nájsť. Mohla byť odstránená, premenovaná alebo je dočasne nedostupná."
+    },
+    "toast": {
+      "success": "Úspech!",
+      "error": "Chyba!",
+      "warning": "Varovanie"
+    }
   },
   "chart": {
     "x_axis": "Os X",
     "y_axis": "Os Y",
-    "metric": "Metrika"
+    "metric": "Metrika",
+    "week_of_month": "{month}, týždeň {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Aktualizovať pohľad"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Pohľad bol úspešne vytvorený."
+        },
+        "error": {
+          "message": "Pohľad sa nepodarilo vytvoriť. Skúste to prosím znova."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Pohľad bol úspešne aktualizovaný."
+        },
+        "error": {
+          "message": "Pohľad sa nepodarilo aktualizovať. Skúste to prosím znova."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Pohľad bol úspešne zmazaný."
+        },
+        "error": {
+          "message": "Pohľad sa nepodarilo zmazať. Skúste to prosím znova."
+        }
+      },
+      "not_found": {
+        "message": "Pohľad, ktorý sa pokúšate aktualizovať, neexistuje."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Váš pohľad bol úspešne aktualizovaný."
+        },
+        "error": {
+          "message": "Váš pohľad sa nepodarilo aktualizovať. Skúste to prosím znova."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Exportujte položky do JSON.",
       "short_description": "Exportovať ako JSON"
+    }
+  },
+  "sign_in": "Prihlásiť sa",
+  "powered_by_plane_publish": "Poháňa Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Nepodarilo sa načítať podrobnosti inštancie.",
+      "description": "Nepodarilo sa nám načítať podrobnosti inštancie. Bez obáv, môže ísť len o problém s pripojením."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Niečo sa pokazilo. Skúste to prosím neskôr.",
+  "please_try_again_later": "Skúste to prosím neskôr.",
+  "some_error_occurred": "Došlo k chybe",
+  "markdown_copied_to_clipboard": "Markdown bol skopírovaný do schránky.",
+  "reloading_to_apply_changes": "Znovu sa načítava, aby sa zmeny prejavili...",
+  "copy_link_failed": "Odkaz sa nepodarilo skopírovať. Skúste to prosím znova.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Konfigurácia motívu bola úspešne stiahnutá."
+        },
+        "error": {
+          "message": "Stiahnutie konfigurácie motívu zlyhalo."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Konfigurácia motívu bola úspešne importovaná"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Presúvanie funguje iba pri ručnom zoradení"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Pri aktualizácii dátumov bloku sa niečo pokazilo"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Tento filter nie je správne nastavený a nedá sa použiť"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Zadajte prosím úlohu, aby ste získali asistenciu AI."
+      }
+    }
+  },
+  "text_colors": "Farby textu",
+  "background_colors": "Farby pozadia",
+  "submitting": "Odosiela sa...",
+  "image_upload": {
+    "title": "Nahrať obrázok",
+    "drag_and_drop": "Presuňte obrázok sem",
+    "drop_here": "Sem presuňte obrázok pre nahratie",
+    "file_too_large": "Veľkosť obrázka nesmie presiahnuť 5 MB.",
+    "invalid_format": "Nahrajte súbor v platnom formáte.",
+    "supported_formats": "Podporované formáty súborov: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Nahrať a uložiť",
+    "uploading": "Nahráva sa",
+    "search_for_images": "Hľadať obrázky",
+    "no_images_found": "Nenašli sa žiadne obrázky.",
+    "tabs": {
+      "images": "Obrázky",
+      "upload": "Nahrať"
     }
   }
 }

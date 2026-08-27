@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {Zyklus} few {Zyklen} other {Zyklen}}",
-    "no_cycle": "Kein Zyklus"
+    "no_cycle": "Kein Zyklus",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Zyklus erfolgreich erstellt."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Zyklus erfolgreich gelöscht."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Ihre archivierten Elemente finden Sie in den Projektarchiven."
+        },
+        "error": {
+          "message": "Der Zyklus konnte nicht archiviert werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "date_conflict": {
+        "message": "Sie haben bereits einen Zyklus an den angegebenen Daten. Wenn Sie einen Entwurfszyklus erstellen möchten, entfernen Sie die Daten."
+      },
+      "transfer": {
+        "success": {
+          "message": "Die Arbeitselemente wurden erfolgreich übertragen"
+        },
+        "error": {
+          "message": "Die Arbeitselemente konnten nicht übertragen werden. Bitte versuchen Sie es erneut."
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Arbeitselemente erfolgreich zum Zyklus hinzugefügt."
+        },
+        "error": {
+          "message": "Die ausgewählten Arbeitselemente konnten nicht zum Zyklus hinzugefügt werden. Bitte versuchen Sie es erneut."
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

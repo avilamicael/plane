@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Cài đặt dự án",
     "general": {
       "enter_project_id": "Nhập ID dự án",
       "please_select_a_timezone": "Vui lòng chọn múi giờ",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Không có trạng thái trong nhóm {groupKey}",
         "description": "Vui lòng tạo một trạng thái mới"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Đã tạo trạng thái thành công."
+          },
+          "error": {
+            "name_exists": "Trạng thái với tên này đã tồn tại. Vui lòng thử lại với tên khác."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Đã cập nhật trạng thái thành công."
+          },
+          "error": {
+            "name_exists": "Đã tồn tại trạng thái khác với cùng tên. Vui lòng thử lại với tên khác.",
+            "message": "Không thể cập nhật trạng thái. Vui lòng thử lại."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Không thể xóa trạng thái. Vui lòng thử lại.",
+            "has_work_items": "Trạng thái này đang chứa các mục công việc. Hãy chuyển chúng sang trạng thái khác để xóa trạng thái này."
+          }
+        }
+      },
+      "delete_state": "Xóa trạng thái"
     },
     "labels": {
       "heading": "Nhãn",
@@ -53,7 +80,8 @@
       "label_max_char": "Tên nhãn không nên vượt quá 255 ký tự",
       "toast": {
         "error": "Đã xảy ra lỗi khi cập nhật nhãn"
-      }
+      },
+      "delete_label": "Xóa nhãn"
     },
     "estimates": {
       "heading": "Ước tính",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Lỗi",
             "message": "Đã xảy ra lỗi"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "Đã xóa ước tính khỏi dự án của bạn."
+          },
+          "error": {
+            "message": "Không thể xóa ước tính. Vui lòng thử lại."
           }
         }
       },

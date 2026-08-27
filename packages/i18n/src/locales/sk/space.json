@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Chyba",
+          "message": "Niečo sa pokazilo. Skúste to prosím znova."
+        },
+        "template": {
+          "try_again": "{reason}. Skúste to prosím znova.",
+          "contact_admin": "{reason}. Kontaktujte prosím svojho administrátora."
+        },
+        "reason": {
+          "instance_not_configured": "Inštancia nie je nakonfigurovaná",
+          "signup_disabled": "Registrácia je vypnutá",
+          "invalid_password": "Neplatné heslo",
+          "smtp_not_configured": "SMTP nie je nakonfigurované",
+          "invalid_email": "Neplatný e-mail",
+          "email_required": "E-mail je povinný",
+          "email_and_password_required": "E-mail a heslo sú povinné",
+          "email_and_code_required": "E-mail a kód sú povinné",
+          "authentication_failed": "Overenie zlyhalo",
+          "invalid_magic_code": "Neplatný magický kód",
+          "expired_magic_code": "Platnosť magického kódu vypršala",
+          "oauth_not_configured": "OAuth nie je nakonfigurované",
+          "google_not_configured": "Google nie je nakonfigurovaný",
+          "github_not_configured": "GitHub nie je nakonfigurovaný",
+          "gitlab_not_configured": "GitLab nie je nakonfigurovaný",
+          "google_oauth_provider_error": "Chyba poskytovateľa OAuth Google",
+          "github_oauth_provider_error": "Chyba poskytovateľa OAuth GitHub",
+          "gitlab_oauth_provider_error": "Chyba poskytovateľa OAuth GitLab",
+          "invalid_password_token": "Neplatný token hesla",
+          "expired_password_token": "Platnosť tokenu hesla vypršala",
+          "password_required": "Heslo je povinné",
+          "incorrect_old_password": "Nesprávne staré heslo",
+          "invalid_new_password": "Neplatné nové heslo",
+          "password_already_set": "Heslo je už nastavené",
+          "admin_already_exist": "Administrátor už existuje",
+          "admin_email_password_first_name_required": "E-mail, heslo a meno sú povinné",
+          "invalid_admin_email": "Neplatný e-mail administrátora",
+          "invalid_admin_password": "Neplatné heslo administrátora"
+        },
+        "title": {
+          "user_already_exist": "Používateľ už existuje",
+          "user_does_not_exist": "Používateľ neexistuje",
+          "user_account_deactivated": "Používateľský účet bol deaktivovaný",
+          "bot_user_login_forbidden": "Prihlásenie nie je povolené",
+          "admin_user_already_exist": "Používateľ administrátor už existuje",
+          "admin_user_does_not_exist": "Používateľ administrátor neexistuje"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Tento účet nie je možné použiť na prihlásenie. Použite prosím osobný účet.",
+          "user_account_deactivated": "Používateľský účet bol deaktivovaný. Kontaktujte prosím {contact}.",
+          "default_contact": "administrátora",
+          "user_already_exist": "Váš účet je už zaregistrovaný.",
+          "user_does_not_exist": "Nenašiel sa žiadny účet.",
+          "admin_user_already_exist": "Používateľ administrátor už existuje.",
+          "admin_user_does_not_exist": "Používateľ administrátor neexistuje.",
+          "link": {
+            "sign_in_now": "Prihláste sa teraz",
+            "create_one": "Vytvorte si účet a začnite"
+          }
+        }
+      }
+    }
+  }
+}

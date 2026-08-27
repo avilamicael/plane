@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Impostazioni del progetto",
     "general": {
       "enter_project_id": "Inserisci l'ID del progetto",
       "please_select_a_timezone": "Seleziona un fuso orario",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Nessuno stato disponibile per il gruppo {groupKey}",
         "description": "Crea un nuovo stato"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Stato creato con successo."
+          },
+          "error": {
+            "name_exists": "Esiste già uno stato con questo nome. Riprova con un altro nome."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Stato aggiornato con successo."
+          },
+          "error": {
+            "name_exists": "Esiste già un altro stato con lo stesso nome. Riprova con un altro nome.",
+            "message": "Impossibile aggiornare lo stato. Riprova."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Impossibile eliminare lo stato. Riprova.",
+            "has_work_items": "Questo stato contiene elementi di lavoro. Spostali in un altro stato per eliminarlo."
+          }
+        }
+      },
+      "delete_state": "Elimina stato"
     },
     "labels": {
       "heading": "Etichette",
@@ -53,7 +80,8 @@
       "label_max_char": "Il nome dell'etichetta non deve superare i 255 caratteri",
       "toast": {
         "error": "Errore durante l'aggiornamento dell'etichetta"
-      }
+      },
+      "delete_label": "Elimina etichetta"
     },
     "estimates": {
       "heading": "Stime",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Errore",
             "message": "Qualcosa è andato storto"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "La stima è stata rimossa dal tuo progetto."
+          },
+          "error": {
+            "message": "Non è stato possibile eliminare la stima. Riprova."
           }
         }
       },

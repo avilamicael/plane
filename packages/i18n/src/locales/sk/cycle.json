@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {Cyklus} few {Cykly} other {Cyklov}}",
-    "no_cycle": "Žiadny cyklus"
+    "no_cycle": "Žiadny cyklus",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Cyklus bol úspešne vytvorený."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Cyklus bol úspešne zmazaný."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Vaše archívy nájdete v archívoch projektu."
+        },
+        "error": {
+          "message": "Cyklus sa nepodarilo archivovať. Skúste to prosím znova."
+        }
+      },
+      "date_conflict": {
+        "message": "V zadaných dátumoch už máte cyklus. Ak chcete vytvoriť koncept cyklu, odstráňte dátumy."
+      },
+      "transfer": {
+        "success": {
+          "message": "Pracovné položky boli úspešne prenesené"
+        },
+        "error": {
+          "message": "Pracovné položky sa nepodarilo preniesť. Skúste to prosím znova."
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Pracovné položky boli úspešne pridané do cyklu."
+        },
+        "error": {
+          "message": "Vybrané pracovné položky sa nepodarilo pridať do cyklu. Skúste to prosím znova."
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

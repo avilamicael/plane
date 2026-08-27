@@ -30,5 +30,39 @@
     "upgrade_plan": "Apgreyd plen",
     "plane_pro": "Pleyn Pro",
     "business": "Biznis"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Varsayılan sekme başarıyla güncellendi."
+        },
+        "error": {
+          "message": "Varsayılan sekme güncellenemedi. Lütfen daha sonra tekrar deneyin."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Sekme gizlenemedi. Lütfen daha sonra tekrar deneyin."
+        }
+      }
+    },
+    "actions": {
+      "show": "Göster",
+      "hide_in_more_menu": "Daha fazla menüsünde gizle",
+      "set_as_default": "Varsayılan yap",
+      "clear_default": "Varsayılanı kaldır"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Komut ara..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Yalnızca simge",
+      "icon_with_name": "Simge ve ad"
+    },
+    "dock": "Uygulama çubuğunu sabitle",
+    "undock": "Uygulama çubuğunu serbest bırak"
   }
 }

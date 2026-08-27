@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {モジュール} other {モジュール}}",
     "no_module": "モジュールなし",
-    "select": "モジュールを追加"
+    "select": "モジュールを追加",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "モジュールを作成しました。"
+        }
+      },
+      "update": {
+        "success": {
+          "message": "モジュールを更新しました。"
+        },
+        "error": {
+          "message": "モジュールを更新できませんでした。もう一度お試しください。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "アーカイブはプロジェクトのアーカイブで確認できます。"
+        },
+        "error": {
+          "message": "モジュールをアーカイブできませんでした。もう一度お試しください。"
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "モジュールはプロジェクトのモジュールで確認できます。"
+        },
+        "error": {
+          "message": "モジュールを復元できませんでした。もう一度お試しください。"
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "モジュールのリンクを作成しました。"
+          }
+        },
+        "update": {
+          "success": {
+            "message": "モジュールのリンクを更新しました。"
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "モジュールのリンクを削除しました。"
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "作業項目をモジュールに追加しました。"
+        },
+        "error": {
+          "message": "選択した作業項目をモジュールに追加できませんでした。もう一度お試しください。"
+        }
+      }
+    },
+    "no_lead": "リードなし",
+    "work_items_progress": "{completed}/{total} {total, plural, one {作業項目} other {作業項目}}"
   }
 }

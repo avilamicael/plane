@@ -110,6 +110,126 @@
       "label": "Remove from collection",
       "success_message": "Page removed from collection.",
       "error_message": "Page could not be removed from the collection. Please try again."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Page link copied to clipboard."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Page duplicated successfully."
+        },
+        "error": {
+          "message": "Page could not be duplicated. Please try again later."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Page restored successfully."
+        },
+        "error": {
+          "message": "Page could not be restored. Please try again later."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Page archived successfully."
+        },
+        "error": {
+          "message": "Page could not be archived. Please try again later."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Page added to favorites."
+        },
+        "error": {
+          "message": "Page could not be added to favorites. Please try again later."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Page removed from favorites."
+        },
+        "error": {
+          "message": "Page could not be removed from favorites. Please try again later."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Page locked successfully."
+        },
+        "error": {
+          "message": "Page could not be locked. Please try again later."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Page unlocked successfully."
+        },
+        "error": {
+          "message": "Page could not be unlocked. Please try again later."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "The page has been marked public and moved to the public section."
+        },
+        "error": {
+          "message": "The page couldn't be marked public. Please try again."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "The page has been marked private and moved to the private section."
+        },
+        "error": {
+          "message": "The page couldn't be marked private. Please try again."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Page deleted successfully."
+        },
+        "error": {
+          "message": "Page could not be deleted. Please try again."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Page exported successfully."
+        },
+        "error": {
+          "message": "Page could not be exported. Please try again later."
+        }
+      }
+    },
+    "create_page": "Create page",
+    "delete_page": "Delete page",
+    "export": {
+      "title": "Export page",
+      "format": "Export format",
+      "include_content": "Include content",
+      "page_format": "Page format",
+      "content_variety": {
+        "everything": "Everything",
+        "no_images": "No images"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Lock",
+      "locked": "Locked",
+      "unlocked": "Unlocked"
+    },
+    "offline_badge": {
+      "heading": "You are offline.",
+      "description": "You can continue making changes. They will be synced when you are back online.",
+      "label": "Offline"
+    },
+    "toolbar": {
+      "color": "Color"
     }
   }
 }

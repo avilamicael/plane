@@ -110,6 +110,126 @@
       "label": "Usuń z kolekcji",
       "success_message": "Strona została usunięta z kolekcji.",
       "error_message": "Nie udało się usunąć strony z kolekcji. Spróbuj ponownie."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Link do strony skopiowano do schowka."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Stronę pomyślnie zduplikowano."
+        },
+        "error": {
+          "message": "Nie udało się zduplikować strony. Spróbuj ponownie później."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Stronę pomyślnie przywrócono."
+        },
+        "error": {
+          "message": "Nie udało się przywrócić strony. Spróbuj ponownie później."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Stronę pomyślnie zarchiwizowano."
+        },
+        "error": {
+          "message": "Nie udało się zarchiwizować strony. Spróbuj ponownie później."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Stronę dodano do ulubionych."
+        },
+        "error": {
+          "message": "Nie udało się dodać strony do ulubionych. Spróbuj ponownie później."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Stronę usunięto z ulubionych."
+        },
+        "error": {
+          "message": "Nie udało się usunąć strony z ulubionych. Spróbuj ponownie później."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Stronę pomyślnie zablokowano."
+        },
+        "error": {
+          "message": "Nie udało się zablokować strony. Spróbuj ponownie później."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Stronę pomyślnie odblokowano."
+        },
+        "error": {
+          "message": "Nie udało się odblokować strony. Spróbuj ponownie później."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "Strona została oznaczona jako publiczna i przeniesiona do sekcji publicznej."
+        },
+        "error": {
+          "message": "Nie udało się oznaczyć strony jako publicznej. Spróbuj ponownie."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "Strona została oznaczona jako prywatna i przeniesiona do sekcji prywatnej."
+        },
+        "error": {
+          "message": "Nie udało się oznaczyć strony jako prywatnej. Spróbuj ponownie."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Stronę pomyślnie usunięto."
+        },
+        "error": {
+          "message": "Nie udało się usunąć strony. Spróbuj ponownie."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Stronę pomyślnie wyeksportowano."
+        },
+        "error": {
+          "message": "Nie udało się wyeksportować strony. Spróbuj ponownie później."
+        }
+      }
+    },
+    "create_page": "Utwórz stronę",
+    "delete_page": "Usuń stronę",
+    "export": {
+      "title": "Eksportuj stronę",
+      "format": "Format eksportu",
+      "include_content": "Uwzględnij zawartość",
+      "page_format": "Format strony",
+      "content_variety": {
+        "everything": "Wszystko",
+        "no_images": "Bez obrazów"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Zablokuj",
+      "locked": "Zablokowana",
+      "unlocked": "Odblokowana"
+    },
+    "offline_badge": {
+      "heading": "Jesteś w trybie offline.",
+      "description": "Możesz dalej wprowadzać zmiany. Zostaną zsynchronizowane, gdy wrócisz do trybu online.",
+      "label": "Offline"
+    },
+    "toolbar": {
+      "color": "Kolor"
     }
   }
 }

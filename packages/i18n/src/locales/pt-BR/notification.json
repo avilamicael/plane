@@ -52,7 +52,17 @@
       "5_days": "5 dias",
       "1_week": "1 semana",
       "2_weeks": "2 semanas",
-      "custom": "Personalizado"
+      "custom": "Personalizado",
+      "modal": {
+        "title": "Personalizar o tempo de adiamento",
+        "pick_a_date": "Escolha uma data",
+        "select_date": "Selecionar data",
+        "pick_a_time": "Escolha um horário",
+        "select_a_time": "Selecione um horário",
+        "no_available_time": "Nenhum horário disponível para esta data.",
+        "date_required": "Selecione uma data",
+        "time_required": "Selecione um horário"
+      }
     }
   }
 }

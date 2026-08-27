@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Configuración del proyecto",
     "general": {
       "enter_project_id": "Ingresa el ID del proyecto",
       "please_select_a_timezone": "Por favor selecciona una zona horaria",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "No estados disponibles para el grupo {groupKey}",
         "description": "Por favor, crea un nuevo estado"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Estado creado correctamente."
+          },
+          "error": {
+            "name_exists": "Ya existe un estado con ese nombre. Inténtalo de nuevo con otro nombre."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Estado actualizado correctamente."
+          },
+          "error": {
+            "name_exists": "Ya existe otro estado con el mismo nombre. Inténtalo de nuevo con otro nombre.",
+            "message": "No se pudo actualizar el estado. Inténtalo de nuevo."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "No se pudo eliminar el estado. Inténtalo de nuevo.",
+            "has_work_items": "Este estado contiene elementos de trabajo. Muévelos a otro estado para poder eliminarlo."
+          }
+        }
+      },
+      "delete_state": "Eliminar estado"
     },
     "labels": {
       "heading": "Etiquetas",
@@ -53,7 +80,8 @@
       "label_max_char": "El nombre de la etiqueta no debe exceder 255 caracteres",
       "toast": {
         "error": "Error al actualizar la etiqueta"
-      }
+      },
+      "delete_label": "Eliminar etiqueta"
     },
     "estimates": {
       "heading": "Estimaciones",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Error",
             "message": "Algo salió mal"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "La estimación se ha eliminado de tu proyecto."
+          },
+          "error": {
+            "message": "No pudimos eliminar la estimación. Inténtalo de nuevo."
           }
         }
       },

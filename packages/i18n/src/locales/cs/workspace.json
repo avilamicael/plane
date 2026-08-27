@@ -373,6 +373,16 @@
           "message": "Něco se pokazilo."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Pracovní prostor byl úspěšně aktualizován"
+        }
+      },
+      "logo_removed": {
+        "message": "Obrázek pracovního prostoru byl úspěšně odebrán."
+      }
     }
   }
 }

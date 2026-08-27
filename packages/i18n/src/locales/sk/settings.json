@@ -37,11 +37,38 @@
         "states": {
           "sending": "Odosielanie…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Profilový obrázok bol úspešne zmazaný.",
+        "picture_delete_error": "Pri mazaní profilového obrázka došlo k chybe. Skúste to prosím znova.",
+        "deactivated": "Účet bol úspešne deaktivovaný."
+      },
+      "general_form": {
+        "first_name_placeholder": "Zadajte svoje meno",
+        "last_name_placeholder": "Zadajte svoje priezvisko",
+        "display_name_placeholder": "Zadajte svoje zobrazované meno"
       }
     },
     "preferences": {
       "heading": "Predvoľby",
-      "description": "Prispôsobte si aplikáciu spôsobu, akým pracujete"
+      "description": "Prispôsobte si aplikáciu spôsobu, akým pracujete",
+      "toasts": {
+        "timezone": {
+          "success": "Časové pásmo bolo úspešne aktualizované",
+          "error": "Aktualizácia časového pásma zlyhala"
+        },
+        "language": {
+          "success": "Jazyk bol úspešne aktualizovaný",
+          "error": "Aktualizácia jazyka zlyhala"
+        },
+        "start_of_week": {
+          "success": "Prvý deň v týždni bol úspešne aktualizovaný"
+        }
+      },
+      "start_of_week": {
+        "title": "Prvý deň v týždni",
+        "description": "Zmení to vzhľad všetkých kalendárov v aplikácii."
+      }
     },
     "notifications": {
       "heading": "E-mailové oznámenia",

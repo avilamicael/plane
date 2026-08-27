@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {Döngü} other {Döngüler}}",
-    "no_cycle": "Döngü yok"
+    "no_cycle": "Döngü yok",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Döngü başarıyla oluşturuldu."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Döngü başarıyla silindi."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Arşivleriniz proje arşivlerinde bulunabilir."
+        },
+        "error": {
+          "message": "Döngü arşivlenemedi. Lütfen tekrar deneyin."
+        }
+      },
+      "date_conflict": {
+        "message": "Belirtilen tarihlerde zaten bir döngünüz var. Taslak bir döngü oluşturmak istiyorsanız tarihleri kaldırın."
+      },
+      "transfer": {
+        "success": {
+          "message": "İş öğeleri başarıyla aktarıldı"
+        },
+        "error": {
+          "message": "İş öğeleri aktarılamadı. Lütfen tekrar deneyin."
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "İş öğeleri döngüye başarıyla eklendi."
+        },
+        "error": {
+          "message": "Seçilen iş öğeleri döngüye eklenemedi. Lütfen tekrar deneyin."
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

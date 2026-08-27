@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "コメントを追加するにはサインインしてください"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "クリックして賛成票を投じる",
       "click_to_downvote": "クリックして反対票を投じる",
       "click_to_view_upvotes": "クリックして賛成票を表示",
-      "click_to_view_downvotes": "クリックして反対票を表示"
+      "click_to_view_downvotes": "クリックして反対票を表示",
+      "no_upvotes": "まだ賛成票はありません",
+      "no_downvotes": "まだ反対票はありません",
+      "and_more": "他 {count} 名"
     },
     "activity": {
       "created_the_work_item": "が作業項目を作成しました。",
       "created_the_work_item_via": "が次の方法で作業項目を作成しました:",
-      "deleted_a_work_item": "が作業項目を削除しました。"
+      "deleted_a_work_item": "が作業項目を削除しました。",
+      "set_the_name_to": "が名前を次のように設定しました:",
+      "updated_the_description": "が説明を更新しました",
+      "set_the_state_to": "が状態を次のように設定しました:",
+      "set_the_priority_to": "が優先度を次のように設定しました:",
+      "added_a_new_assignee": "が新しい担当者を追加しました:",
+      "removed_the_assignee": "が担当者を削除しました:",
+      "added_a_new_label": "が新しいラベルを追加しました:",
+      "removed_the_label": "がラベルを削除しました:",
+      "set_the_start_date_to": "が開始日を次のように設定しました:",
+      "removed_the_start_date": "が開始日を削除しました",
+      "set_the_due_date_to": "が期限を次のように設定しました:",
+      "removed_the_due_date": "が期限を削除しました",
+      "set_the_parent_to": "が親項目を次のように設定しました:",
+      "removed_the_parent": "が親項目を削除しました",
+      "set_the_estimate_point_to": "が見積もりポイントを次のように設定しました:",
+      "removed_the_estimate_point": "が見積もりポイントを削除しました",
+      "added_this_work_item_to_the_cycle": "がこの作業項目を次のサイクルに追加しました:",
+      "set_the_cycle_to": "がサイクルを次のように設定しました:",
+      "removed_the_work_item_from_the_cycle": "が作業項目を次のサイクルから削除しました:",
+      "added_this_work_item_to_the_module": "がこの作業項目を次のモジュールに追加しました:",
+      "set_the_module_to": "がモジュールを次のように設定しました:",
+      "removed_the_work_item_from_the_module": "が作業項目を次のモジュールから削除しました:",
+      "added_the_link": "が追加しました:",
+      "updated_the_link": "が更新しました:",
+      "removed_the_link": "が削除しました:",
+      "link_noun": "リンク",
+      "uploaded_a_new_attachment": "が新しい添付ファイルをアップロードしました",
+      "removed_an_attachment": "が添付ファイルを削除しました",
+      "restored_the_work_item": "が作業項目を復元しました",
+      "archived_the_work_item": "が作業項目をアーカイブしました",
+      "declined_this_work_item_from_intake": "がこの作業項目を Intake で却下しました。",
+      "snoozed_this_work_item": "がこの作業項目をスヌーズしました。",
+      "accepted_this_work_item_from_intake": "がこの作業項目を Intake で承認しました。",
+      "declined_this_work_item_from_intake_as_duplicate": "がこの作業項目を重複としてマークし、Intake で却下しました。",
+      "updated_intake_work_item_status": "が Intake の作業項目のステータスを更新しました。",
+      "marked_this_work_item_is_blocking_work_item": "がこの作業項目が次の作業項目をブロックしていることをマークしました:",
+      "removed_the_blocking_work_item": "が次の作業項目のブロックを解除しました:",
+      "marked_this_work_item_is_being_blocked_by": "がこの作業項目が次によってブロックされていることをマークしました:",
+      "removed_this_work_item_being_blocked_by_work_item": "がこの作業項目が次によってブロックされている状態を解除しました:",
+      "marked_this_work_item_as_duplicate_of": "がこの作業項目を次の重複としてマークしました:",
+      "removed_this_work_item_as_a_duplicate_of": "がこの作業項目の次との重複マークを解除しました:",
+      "marked_that_this_work_item_relates_to": "がこの作業項目が次に関連していることをマークしました:",
+      "removed_the_relation_from": "が次との関連を削除しました:",
+      "connector_for": "対象:",
+      "connector_to": "対象:",
+      "connector_from": "対象:",
+      "connector_of": "対象:"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "リアクションを追加しました"
+          },
+          "error": {
+            "message": "リアクションの追加に失敗しました"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "リアクションを削除しました"
+          },
+          "error": {
+            "message": "リアクションの削除に失敗しました"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "添付ファイルを削除しました"
+          },
+          "error": {
+            "message": "添付ファイルを削除できませんでした"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "作業項目を1つ以上選択してください。"
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "作業項目を削除しました。"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "期限は作業項目の開始日より前に設定できません。"
+      },
+      "update_dates": {
+        "error": {
+          "message": "作業項目の日付の更新中にエラーが発生しました。しばらくしてからもう一度お試しください。"
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "作業項目をプロジェクトに移動できませんでした。もう一度お試しください。"
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "作業項目の削除に失敗しました"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "作業項目の更新に失敗しました"
+        }
+      },
+      "editor_processing": {
+        "message": "エディターが変更を処理中です。完了までお待ちください。"
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "作業項目のタイトルが説明を生成するには不十分です。別のタイトルでお試しください。"
+        }
+      }
     }
   },
   "sub_work_item": {

@@ -373,6 +373,16 @@
           "message": "出了些问题。"
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "工作区更新成功"
+        }
+      },
+      "logo_removed": {
+        "message": "工作区图片移除成功。"
+      }
     }
   }
 }

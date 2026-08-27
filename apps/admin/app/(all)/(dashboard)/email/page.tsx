@@ -7,6 +7,7 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
+import { useTranslation } from "@plane/i18n";
 import { TOAST_TYPE, setToast } from "@plane/propel/toast";
 import { Loader, ToggleSwitch } from "@plane/ui";
 // components
@@ -19,6 +20,8 @@ import type { Route } from "./+types/page";
 import { InstanceEmailForm } from "./email-config-form";
 
 const InstanceEmailPage = observer(function InstanceEmailPage(_props: Route.ComponentProps) {
+  // i18n
+  const { t } = useTranslation();
   // store
   const { fetchInstanceConfigurations, formattedConfig, disableEmail } = useInstance();
 
@@ -34,14 +37,14 @@ const InstanceEmailPage = observer(function InstanceEmailPage(_props: Route.Comp
         await disableEmail();
         setIsSMTPEnabled(false);
         setToast({
-          title: "Email feature disabled",
-          message: "Email feature has been disabled",
+          title: t("admin.settings.email.disabled_title"),
+          message: t("admin.settings.email.disabled_message"),
           type: TOAST_TYPE.SUCCESS,
         });
       } catch (_error) {
         setToast({
-          title: "Error disabling email",
-          message: "Failed to disable email feature. Please try again.",
+          title: t("admin.settings.email.disable_error_title"),
+          message: t("admin.settings.email.disable_error_message"),
           type: TOAST_TYPE.ERROR,
         });
       } finally {
@@ -60,13 +63,13 @@ const InstanceEmailPage = observer(function InstanceEmailPage(_props: Route.Comp
   return (
     <PageWrapper
       header={{
-        title: "Secure emails from your own instance",
+        title: t("admin.settings.email.title"),
         description: (
           <>
-            Plane can send useful emails to you and your users from your own instance without talking to the Internet.
+            {t("admin.settings.email.description")}
             <div className="text-13 font-regular text-tertiary">
-              Set it up below and please test your settings before you save them.&nbsp;
-              <span className="text-danger-primary">Misconfigs can lead to email bounces and errors.</span>
+              {t("admin.settings.email.description_secondary")}&nbsp;
+              <span className="text-danger-primary">{t("admin.settings.email.description_warning")}</span>
             </div>
           </>
         ),

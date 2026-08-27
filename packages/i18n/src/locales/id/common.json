@@ -307,6 +307,9 @@
   "end_date": "Tanggal akhir",
   "due_date": "Tanggal jatuh tempo",
   "target_date": "Tanggal target",
+  "created_date": "Tanggal dibuat",
+  "updated_date": "Tanggal diperbarui",
+  "last_updated_date": "Tanggal terakhir diperbarui",
   "estimate": "Perkiraan",
   "change_parent_issue": "Ubah item kerja induk",
   "remove_parent_issue": "Hapus item kerja induk",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "URL berhasil disalin ke clipboard Anda",
   "toast": {
     "success": "Sukses!",
-    "error": "Kesalahan!"
+    "error": "Kesalahan!",
+    "warning": "Peringatan!",
+    "info": "Info!"
   },
   "links": {
     "toasts": {
@@ -420,7 +425,7 @@
     "no_items_in_this_group": "Tidak ada item dalam grup ini",
     "drop_here_to_move": "Letakkan di sini untuk memindahkan",
     "states": "Negara-negara",
-    "state": "Negara",
+    "state": "Status",
     "state_groups": "Kelompok negara",
     "state_group": "Kelompok negara",
     "priorities": "Prioritas",
@@ -445,6 +450,8 @@
     "estimate": "Perkiraan",
     "created_at": "Dibuat pada",
     "updated_at": "Diperbarui pada",
+    "select_cycle": "Pilih siklus",
+    "select_modules": "Pilih modul",
     "completed_at": "Selesai pada",
     "layout": "Tata letak",
     "filters": "Filter",
@@ -464,6 +471,10 @@
     "epics": "Epik",
     "work_item": "Item kerja",
     "work_items": "Item kerja",
+    "work_items_in_project_count": "{count, plural, one{Ada # item kerja dalam projek ini} other{Ada # item kerja dalam projek ini}}",
+    "work_items_in_archives_count": "{count, plural, one{Ada # item kerja dalam arsip projek ini} other{Ada # item kerja dalam arsip projek ini}}",
+    "work_items_in_cycle_count": "{count, plural, one{Ada # item kerja dalam siklus ini} other{Ada # item kerja dalam siklus ini}}",
+    "work_items_in_module_count": "{count, plural, one{Ada # item kerja dalam modul ini} other{Ada # item kerja dalam modul ini}}",
     "sub_work_item": "Sub-item kerja",
     "views": "Tampilan",
     "pages": "Halaman",
@@ -619,7 +630,11 @@
       "enable": "Aktifkan",
       "disable": "Nonaktifkan",
       "copy_markdown": "Salin markdown",
-      "reply": "Balas"
+      "reply": "Balas",
+      "move": "Pindahkan",
+      "remove_from_cycle": "Hapus dari siklus",
+      "remove_from_module": "Hapus dari modul",
+      "rename_folder": "Ganti nama folder"
     },
     "name": "Nama",
     "discard": "Buang",
@@ -722,12 +737,33 @@
     "more": "Lainnya",
     "saved": "Tersimpan",
     "all_projects": "Semua proyek",
-    "n_plus_projects": "{count}+ proyek"
+    "n_plus_projects": "{count}+ proyek",
+    "and": "dan",
+    "view_all": "Lihat semua",
+    "view_less": "Lihat lebih sedikit",
+    "empty": "Kosong",
+    "no_date": "Tanpa tanggal",
+    "no_cycle": "Tanpa siklus",
+    "no_modules": "Tanpa modul",
+    "no_labels": "Tanpa label",
+    "no_assignees": "Tanpa penugas",
+    "labels_count": "{count, plural, one{# label} other{# label}}",
+    "modules_count": "{count, plural, one{# modul} other{# modul}}",
+    "not_found": {
+      "title": "Ups! Terjadi kesalahan.",
+      "description": "Maaf, halaman yang Anda cari tidak ditemukan. Halaman mungkin telah dihapus, diganti nama, atau untuk sementara tidak tersedia."
+    },
+    "toast": {
+      "success": "Sukses!",
+      "error": "Kesalahan!",
+      "warning": "Peringatan"
+    }
   },
   "chart": {
     "x_axis": "Sumbu-X",
     "y_axis": "Sumbu-Y",
-    "metric": "Metrik"
+    "metric": "Metrik",
+    "week_of_month": "{month}, minggu {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Perbarui Tampilan"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Tampilan berhasil dibuat."
+        },
+        "error": {
+          "message": "Tampilan tidak dapat dibuat. Silakan coba lagi."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Tampilan berhasil diperbarui."
+        },
+        "error": {
+          "message": "Tampilan tidak dapat diperbarui. Silakan coba lagi."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Tampilan berhasil dihapus."
+        },
+        "error": {
+          "message": "Tampilan tidak dapat dihapus. Silakan coba lagi."
+        }
+      },
+      "not_found": {
+        "message": "Tampilan yang ingin Anda perbarui tidak ada."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Tampilan Anda berhasil diperbarui."
+        },
+        "error": {
+          "message": "Tampilan Anda tidak dapat diperbarui. Silakan coba lagi."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Ekspor item kerja ke file JSON.",
       "short_description": "Ekspor sebagai json"
+    }
+  },
+  "sign_in": "Masuk",
+  "powered_by_plane_publish": "Ditenagai oleh Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Tidak dapat memuat detail instance.",
+      "description": "Kami tidak dapat memuat detail instance. Jangan khawatir, mungkin hanya masalah koneksi."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Terjadi kesalahan. Silakan coba lagi nanti.",
+  "please_try_again_later": "Silakan coba lagi nanti.",
+  "some_error_occurred": "Terjadi kesalahan",
+  "markdown_copied_to_clipboard": "Markdown disalin ke clipboard.",
+  "reloading_to_apply_changes": "Memuat ulang untuk menerapkan perubahan...",
+  "copy_link_failed": "Kami tidak dapat menyalin tautan. Silakan coba lagi.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Konfigurasi tema berhasil diunduh."
+        },
+        "error": {
+          "message": "Gagal mengunduh konfigurasi tema."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Konfigurasi tema berhasil diimpor"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Seret dan lepas hanya aktif saat diurutkan secara manual"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Terjadi kesalahan saat memperbarui tanggal blok"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Filter ini tidak dikonfigurasi dengan benar dan tidak dapat diterapkan"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Silakan masukkan tugas untuk mendapatkan bantuan AI."
+      }
+    }
+  },
+  "text_colors": "Warna teks",
+  "background_colors": "Warna latar",
+  "submitting": "Mengirim...",
+  "image_upload": {
+    "title": "Unggah gambar",
+    "drag_and_drop": "Seret dan lepas gambar di sini",
+    "drop_here": "Lepas gambar di sini untuk mengunggah",
+    "file_too_large": "Ukuran gambar tidak boleh melebihi 5 MB.",
+    "invalid_format": "Unggah berkas dengan format yang valid.",
+    "supported_formats": "Format berkas yang didukung: .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Unggah dan simpan",
+    "uploading": "Mengunggah",
+    "search_for_images": "Cari gambar",
+    "no_images_found": "Tidak ada gambar yang ditemukan.",
+    "tabs": {
+      "images": "Gambar",
+      "upload": "Unggah"
     }
   }
 }

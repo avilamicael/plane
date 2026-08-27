@@ -1,5 +1,6 @@
 {
   "project_settings": {
+    "label": "Ustawienia projektu",
     "general": {
       "enter_project_id": "Wpisz ID projektu",
       "please_select_a_timezone": "Wybierz strefę czasową",
@@ -43,7 +44,33 @@
       "empty_state": {
         "title": "Brak stanów w grupie {groupKey}",
         "description": "Utwórz nowy stan"
-      }
+      },
+      "toasts": {
+        "create": {
+          "success": {
+            "message": "Stan pomyślnie utworzono."
+          },
+          "error": {
+            "name_exists": "Stan o tej nazwie już istnieje. Spróbuj ponownie z inną nazwą."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Stan pomyślnie zaktualizowano."
+          },
+          "error": {
+            "name_exists": "Inny stan o tej samej nazwie już istnieje. Spróbuj ponownie z inną nazwą.",
+            "message": "Nie udało się zaktualizować stanu. Spróbuj ponownie."
+          }
+        },
+        "delete": {
+          "error": {
+            "message": "Nie udało się usunąć stanu. Spróbuj ponownie.",
+            "has_work_items": "Ten stan zawiera elementy pracy. Przenieś je do innego stanu, aby go usunąć."
+          }
+        }
+      },
+      "delete_state": "Usuń stan"
     },
     "labels": {
       "heading": "Etykiety",
@@ -53,7 +80,8 @@
       "label_max_char": "Nazwa etykiety nie może mieć więcej niż 255 znaków",
       "toast": {
         "error": "Błąd podczas aktualizacji etykiety"
-      }
+      },
+      "delete_label": "Usuń etykietę"
     },
     "estimates": {
       "heading": "Szacunki",
@@ -127,6 +155,14 @@
           "error": {
             "title": "Błąd",
             "message": "Coś poszło nie tak"
+          }
+        },
+        "deleted": {
+          "success": {
+            "message": "Estymata została usunięta z Twojego projektu."
+          },
+          "error": {
+            "message": "Nie udało się usunąć estymaty. Spróbuj ponownie."
           }
         }
       },

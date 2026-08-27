@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "错误",
+          "message": "出了点问题。请重试。"
+        },
+        "template": {
+          "try_again": "{reason}。请重试。",
+          "contact_admin": "{reason}。请联系您的管理员。"
+        },
+        "reason": {
+          "instance_not_configured": "实例未配置",
+          "signup_disabled": "注册已禁用",
+          "invalid_password": "密码无效",
+          "smtp_not_configured": "SMTP 未配置",
+          "invalid_email": "邮箱无效",
+          "email_required": "需要填写邮箱",
+          "email_and_password_required": "需要填写邮箱和密码",
+          "email_and_code_required": "需要填写邮箱和验证码",
+          "authentication_failed": "身份验证失败",
+          "invalid_magic_code": "魔法验证码无效",
+          "expired_magic_code": "魔法验证码已过期",
+          "oauth_not_configured": "OAuth 未配置",
+          "google_not_configured": "Google 未配置",
+          "github_not_configured": "GitHub 未配置",
+          "gitlab_not_configured": "GitLab 未配置",
+          "google_oauth_provider_error": "Google OAuth 提供商错误",
+          "github_oauth_provider_error": "GitHub OAuth 提供商错误",
+          "gitlab_oauth_provider_error": "GitLab OAuth 提供商错误",
+          "invalid_password_token": "密码令牌无效",
+          "expired_password_token": "密码令牌已过期",
+          "password_required": "需要填写密码",
+          "incorrect_old_password": "旧密码不正确",
+          "invalid_new_password": "新密码无效",
+          "password_already_set": "密码已设置",
+          "admin_already_exist": "管理员已存在",
+          "admin_email_password_first_name_required": "需要填写邮箱、密码和名字",
+          "invalid_admin_email": "管理员邮箱无效",
+          "invalid_admin_password": "管理员密码无效"
+        },
+        "title": {
+          "user_already_exist": "用户已存在",
+          "user_does_not_exist": "用户不存在",
+          "user_account_deactivated": "用户账号已停用",
+          "bot_user_login_forbidden": "不允许登录",
+          "admin_user_already_exist": "管理员用户已存在",
+          "admin_user_does_not_exist": "管理员用户不存在"
+        },
+        "message": {
+          "bot_user_login_forbidden": "该账号无法用于登录。请使用个人账号。",
+          "user_account_deactivated": "用户账号已停用。请联系{contact}。",
+          "default_contact": "管理员",
+          "user_already_exist": "您的账号已注册。",
+          "user_does_not_exist": "未找到账号。",
+          "admin_user_already_exist": "管理员用户已存在。",
+          "admin_user_does_not_exist": "管理员用户不存在。",
+          "link": {
+            "sign_in_now": "立即登录",
+            "create_one": "创建账号以开始使用"
+          }
+        }
+      }
+    }
+  }
+}

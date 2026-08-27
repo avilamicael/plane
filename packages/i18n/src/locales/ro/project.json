@@ -139,7 +139,8 @@
         "title": "Niciun ciclu arhivat încă",
         "description": "Pentru a păstra proiectul ordonat, arhivează ciclurile completate. Le vei găsi aici după arhivare."
       }
-    }
+    },
+    "delete_cycle": "Șterge ciclul"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Ceva nu a funcționat."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Proiectul a fost șters cu succes."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Proiectul nu a putut fi arhivat. Te rugăm să încerci din nou."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Proiectul nu a putut fi restaurat. Te rugăm să încerci din nou."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Te rugăm să confirmi părăsirea proiectului tastând „Leave Project”."
+        },
+        "project_name": {
+          "message": "Te rugăm să introduci numele proiectului așa cum apare în descriere."
+        },
+        "fill_all_fields": {
+          "message": "Te rugăm să completezi toate câmpurile."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Depozitul nu a putut fi sincronizat cu proiectul. Te rugăm să încerci din nou."
+        }
+      },
+      "members_added": {
+        "message": "Membrii au fost adăugați cu succes."
+      },
+      "publish": {
+        "success": {
+          "message": "Setările de publicare au fost actualizate cu succes!"
+        },
+        "unpublish_error": {
+          "message": "Ceva nu a funcționat la anularea publicării proiectului."
+        },
+        "select_layout": {
+          "message": "Te rugăm să selectezi cel puțin un aspect de perspectivă pentru a publica proiectul."
+        },
+        "link_copied": {
+          "message": "Link-ul paginii publicate a fost copiat cu succes."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Permite comentarii",
+      "allow_reactions": "Permite reacții",
+      "allow_voting": "Permite votarea",
+      "anyone_with_link_can_access": "Oricine are linkul poate accesa"
+    },
+    "join": {
+      "title": "Vă alăturați proiectului?"
+    },
+    "card": {
+      "created_on": "Creat pe {date}",
+      "no_members_yet": "Încă niciun membru"
     }
   }
 }

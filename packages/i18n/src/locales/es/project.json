@@ -139,7 +139,8 @@
         "title": "Aún no hay ciclos archivados",
         "description": "Para mantener ordenado tu proyecto, archiva los ciclos completados. Encuéntralos aquí una vez archivados."
       }
-    }
+    },
+    "delete_cycle": "Eliminar ciclo"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Algo salió mal."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Proyecto eliminado correctamente."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "No se pudo archivar el proyecto. Inténtalo de nuevo."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "No se pudo restaurar el proyecto. Inténtalo de nuevo."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Confirma que quieres salir del proyecto escribiendo 'Leave Project'."
+        },
+        "project_name": {
+          "message": "Escribe el nombre del proyecto tal como aparece en la descripción."
+        },
+        "fill_all_fields": {
+          "message": "Completa todos los campos."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "No se pudo sincronizar el repositorio con el proyecto. Inténtalo de nuevo."
+        }
+      },
+      "members_added": {
+        "message": "Miembros añadidos correctamente."
+      },
+      "publish": {
+        "success": {
+          "message": "¡Configuración de publicación actualizada correctamente!"
+        },
+        "unpublish_error": {
+          "message": "Algo salió mal al dejar de publicar el proyecto."
+        },
+        "select_layout": {
+          "message": "Selecciona al menos un diseño de vista para publicar el proyecto."
+        },
+        "link_copied": {
+          "message": "Enlace de la página publicada copiado correctamente."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Permitir comentarios",
+      "allow_reactions": "Permitir reacciones",
+      "allow_voting": "Permitir votación",
+      "anyone_with_link_can_access": "Cualquier persona con el enlace puede acceder"
+    },
+    "join": {
+      "title": "¿Unirse al proyecto?"
+    },
+    "card": {
+      "created_on": "Creado el {date}",
+      "no_members_yet": "Aún sin miembros"
     }
   }
 }

@@ -139,7 +139,8 @@
         "title": "Žiadne archivované cykly",
         "description": "Archivujte dokončené cykly pre poriadok."
       }
-    }
+    },
+    "delete_cycle": "Zmazať cyklus"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Niečo sa pokazilo."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Projekt bol úspešne zmazaný."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Projekt sa nepodarilo archivovať. Skúste to prosím znova."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Projekt sa nepodarilo obnoviť. Skúste to prosím znova."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Potvrďte prosím opustenie projektu zadaním „Leave Project“."
+        },
+        "project_name": {
+          "message": "Zadajte prosím názov projektu presne tak, ako je uvedený v popise."
+        },
+        "fill_all_fields": {
+          "message": "Vyplňte prosím všetky polia."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Repozitár sa nepodarilo synchronizovať s projektom. Skúste to prosím znova."
+        }
+      },
+      "members_added": {
+        "message": "Členovia boli úspešne pridaní."
+      },
+      "publish": {
+        "success": {
+          "message": "Nastavenia publikovania boli úspešne aktualizované!"
+        },
+        "unpublish_error": {
+          "message": "Pri zrušení publikovania projektu sa niečo pokazilo."
+        },
+        "select_layout": {
+          "message": "Vyberte prosím aspoň jedno rozloženie pohľadu na publikovanie projektu."
+        },
+        "link_copied": {
+          "message": "Odkaz na publikovanú stránku bol úspešne skopírovaný."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Povoliť komentáre",
+      "allow_reactions": "Povoliť reakcie",
+      "allow_voting": "Povoliť hlasovanie",
+      "anyone_with_link_can_access": "Prístup má ktokoľvek s odkazom"
+    },
+    "join": {
+      "title": "Pripojiť sa k projektu?"
+    },
+    "card": {
+      "created_on": "Vytvorené {date}",
+      "no_members_yet": "Zatiaľ žiadni členovia"
     }
   }
 }

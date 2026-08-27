@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Prihláste sa, aby ste mohli pridať komentár"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Kliknite pre hlasovanie hore",
       "click_to_downvote": "Kliknite pre hlasovanie dole",
       "click_to_view_upvotes": "Kliknite pre zobrazenie hlasov hore",
-      "click_to_view_downvotes": "Kliknite pre zobrazenie hlasov dole"
+      "click_to_view_downvotes": "Kliknite pre zobrazenie hlasov dole",
+      "no_upvotes": "Zatiaľ žiadne hlasy za",
+      "no_downvotes": "Zatiaľ žiadne hlasy proti",
+      "and_more": "a ďalších {count}"
     },
     "activity": {
       "created_the_work_item": "vytvoril(a) pracovnú položku.",
       "created_the_work_item_via": "vytvoril(a) pracovnú položku cez",
-      "deleted_a_work_item": "odstránil(a) pracovnú položku."
+      "deleted_a_work_item": "odstránil(a) pracovnú položku.",
+      "set_the_name_to": "nastavil(a) názov na",
+      "updated_the_description": "aktualizoval(a) popis",
+      "set_the_state_to": "nastavil(a) stav na",
+      "set_the_priority_to": "nastavil(a) prioritu na",
+      "added_a_new_assignee": "pridal(a) nového riešiteľa",
+      "removed_the_assignee": "odobral(a) riešiteľa",
+      "added_a_new_label": "pridal(a) nový štítok",
+      "removed_the_label": "odobral(a) štítok",
+      "set_the_start_date_to": "nastavil(a) dátum začiatku na",
+      "removed_the_start_date": "odobral(a) dátum začiatku",
+      "set_the_due_date_to": "nastavil(a) termín na",
+      "removed_the_due_date": "odobral(a) termín",
+      "set_the_parent_to": "nastavil(a) nadradenú položku na",
+      "removed_the_parent": "odobral(a) nadradenú položku",
+      "set_the_estimate_point_to": "nastavil(a) bod odhadu na",
+      "removed_the_estimate_point": "odobral(a) bod odhadu",
+      "added_this_work_item_to_the_cycle": "pridal(a) túto pracovnú položku do cyklu",
+      "set_the_cycle_to": "nastavil(a) cyklus na",
+      "removed_the_work_item_from_the_cycle": "odobral(a) pracovnú položku z cyklu",
+      "added_this_work_item_to_the_module": "pridal(a) túto pracovnú položku do modulu",
+      "set_the_module_to": "nastavil(a) modul na",
+      "removed_the_work_item_from_the_module": "odobral(a) pracovnú položku z modulu",
+      "added_the_link": "pridal(a)",
+      "updated_the_link": "aktualizoval(a)",
+      "removed_the_link": "odobral(a)",
+      "link_noun": "odkaz",
+      "uploaded_a_new_attachment": "nahral(a) novú prílohu",
+      "removed_an_attachment": "odobral(a) prílohu",
+      "restored_the_work_item": "obnovil(a) pracovnú položku",
+      "archived_the_work_item": "archivoval(a) pracovnú položku",
+      "declined_this_work_item_from_intake": "odmietol(la) túto pracovnú položku v Intake.",
+      "snoozed_this_work_item": "odložil(a) túto pracovnú položku.",
+      "accepted_this_work_item_from_intake": "prijal(a) túto pracovnú položku v Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "odmietol(la) túto pracovnú položku v Intake označením ako duplikát.",
+      "updated_intake_work_item_status": "aktualizoval(a) stav pracovnej položky v Intake.",
+      "marked_this_work_item_is_blocking_work_item": "označil(a), že táto pracovná položka blokuje pracovnú položku",
+      "removed_the_blocking_work_item": "odobral(a) blokovanie pracovnej položky",
+      "marked_this_work_item_is_being_blocked_by": "označil(a), že táto pracovná položka je blokovaná položkou",
+      "removed_this_work_item_being_blocked_by_work_item": "odobral(a) blokovanie tejto pracovnej položky položkou",
+      "marked_this_work_item_as_duplicate_of": "označil(a) túto pracovnú položku ako duplikát položky",
+      "removed_this_work_item_as_a_duplicate_of": "odobral(a) označenie tejto pracovnej položky ako duplikátu položky",
+      "marked_that_this_work_item_relates_to": "označil(a), že táto pracovná položka súvisí s položkou",
+      "removed_the_relation_from": "odobral(a) vzťah s položkou",
+      "connector_for": "v",
+      "connector_to": "do",
+      "connector_from": "z",
+      "connector_of": "v"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reakcia bola úspešne pridaná"
+          },
+          "error": {
+            "message": "Pridanie reakcie zlyhalo"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reakcia bola úspešne odstránená"
+          },
+          "error": {
+            "message": "Odstránenie reakcie zlyhalo"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Príloha bola úspešne odstránená"
+          },
+          "error": {
+            "message": "Prílohu sa nepodarilo odstrániť"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Vyberte prosím aspoň jednu pracovnú položku."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Pracovné položky boli úspešne zmazané!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Dátum splnenia nemôže predchádzať dátumu začiatku pracovnej položky."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Chyba pri aktualizácii dátumov pracovnej položky. Skúste to prosím neskôr."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Presunutie pracovnej položky do projektu zlyhalo. Skúste to prosím znova."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Zmazanie pracovnej položky zlyhalo"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Aktualizácia pracovnej položky zlyhala"
+        }
+      },
+      "editor_processing": {
+        "message": "Editor stále spracováva zmeny. Pred pokračovaním prosím počkajte."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Názov pracovnej položky nie je dostatočne výstižný na vygenerovanie popisu. Skúste iný názov."
+        }
+      }
     }
   },
   "sub_work_item": {

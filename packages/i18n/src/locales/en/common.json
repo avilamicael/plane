@@ -307,6 +307,9 @@
   "end_date": "End date",
   "due_date": "Due date",
   "target_date": "Target date",
+  "created_date": "Created date",
+  "updated_date": "Updated date",
+  "last_updated_date": "Last updated date",
   "estimate": "Estimate",
   "change_parent_issue": "Change parent work item",
   "remove_parent_issue": "Remove parent work item",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "The URL has been successfully copied to your clipboard",
   "toast": {
     "success": "Success!",
-    "error": "Error!"
+    "error": "Error!",
+    "warning": "Warning!",
+    "info": "Info!"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Estimate",
     "created_at": "Created at",
     "updated_at": "Updated at",
+    "select_cycle": "Select cycle",
+    "select_modules": "Select modules",
     "completed_at": "Completed at",
     "layout": "Layout",
     "filters": "Filters",
@@ -464,6 +471,10 @@
     "epics": "Epics",
     "work_item": "Work item",
     "work_items": "Work items",
+    "work_items_in_project_count": "{count, plural, one{There is # work item in this project} other{There are # work items in this project}}",
+    "work_items_in_archives_count": "{count, plural, one{There is # work item in this project's archives} other{There are # work items in this project's archives}}",
+    "work_items_in_cycle_count": "{count, plural, one{There is # work item in this cycle} other{There are # work items in this cycle}}",
+    "work_items_in_module_count": "{count, plural, one{There is # work item in this module} other{There are # work items in this module}}",
     "sub_work_item": "Sub-work item",
     "views": "Views",
     "pages": "Pages",
@@ -619,7 +630,11 @@
       "enable": "Enable",
       "disable": "Disable",
       "copy_markdown": "Copy markdown",
-      "reply": "Reply"
+      "reply": "Reply",
+      "move": "Move",
+      "remove_from_cycle": "Remove from cycle",
+      "remove_from_module": "Remove from module",
+      "rename_folder": "Rename folder"
     },
     "name": "Name",
     "discard": "Discard",
@@ -722,12 +737,33 @@
     "more": "More",
     "saved": "Saved",
     "all_projects": "All projects",
-    "n_plus_projects": "{count}+ projects"
+    "n_plus_projects": "{count}+ projects",
+    "and": "and",
+    "view_all": "View all",
+    "view_less": "View less",
+    "empty": "Empty",
+    "no_date": "No date",
+    "no_cycle": "No cycle",
+    "no_modules": "No modules",
+    "no_labels": "No labels",
+    "no_assignees": "No assignees",
+    "labels_count": "{count, plural, one{# label} other{# labels}}",
+    "modules_count": "{count, plural, one{# module} other{# modules}}",
+    "not_found": {
+      "title": "Oops! Something went wrong.",
+      "description": "Sorry, the page you are looking for cannot be found. It may have been removed, had its name changed, or is temporarily unavailable."
+    },
+    "toast": {
+      "success": "Success!",
+      "error": "Error!",
+      "warning": "Warning"
+    }
   },
   "chart": {
     "x_axis": "X-axis",
     "y_axis": "Y-axis",
-    "metric": "Metric"
+    "metric": "Metric",
+    "week_of_month": "{month}, Week {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Update View"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "View created successfully."
+        },
+        "error": {
+          "message": "View could not be created. Please try again."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "View updated successfully."
+        },
+        "error": {
+          "message": "View could not be updated. Please try again."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "View deleted successfully."
+        },
+        "error": {
+          "message": "View could not be deleted. Please try again."
+        }
+      },
+      "not_found": {
+        "message": "The view you're trying to update doesn't exist."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Your view has been updated successfully."
+        },
+        "error": {
+          "message": "Your view could not be updated. Please try again."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Export work items to a JSON file.",
       "short_description": "Export as json"
+    }
+  },
+  "sign_in": "Sign in",
+  "powered_by_plane_publish": "Powered by Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Unable to fetch instance details.",
+      "description": "We were unable to fetch the details of the instance. Fret not, it might just be a connectivity issue."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Something went wrong. Please try again later.",
+  "please_try_again_later": "Please try again later.",
+  "some_error_occurred": "Some error occurred",
+  "markdown_copied_to_clipboard": "Markdown copied to clipboard.",
+  "reloading_to_apply_changes": "Reloading to apply changes...",
+  "copy_link_failed": "We couldn't copy the link. Please try again.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Theme configuration downloaded successfully."
+        },
+        "error": {
+          "message": "Failed to download theme configuration."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Theme configuration imported successfully"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Drag and drop is only enabled when sorted by manual"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Something went wrong while updating block dates"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "This filter is not properly configured and cannot be applied"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Please enter some task to get AI assistance."
+      }
+    }
+  },
+  "text_colors": "Text colors",
+  "background_colors": "Background colors",
+  "submitting": "Submitting...",
+  "image_upload": {
+    "title": "Upload image",
+    "drag_and_drop": "Drag & drop image here",
+    "drop_here": "Drop image here to upload",
+    "file_too_large": "The image size cannot exceed 5 MB.",
+    "invalid_format": "Please upload a file in a valid format.",
+    "supported_formats": "File formats supported- .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Upload & Save",
+    "uploading": "Uploading",
+    "search_for_images": "Search for images",
+    "no_images_found": "No images found.",
+    "tabs": {
+      "images": "Images",
+      "upload": "Upload"
     }
   }
 }

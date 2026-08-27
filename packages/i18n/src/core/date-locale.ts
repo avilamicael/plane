@@ -22,7 +22,10 @@ import type { TLanguage } from "../types";
  * idiomas no bundle inicial — mesmo motivo pelo qual as traduções usam
  * resourcesToBackend.
  */
-const DATE_FNS_LOCALE_LOADERS: Record<TLanguage, () => Promise<{ default: Locale }>> = {
+// Cada módulo de locale do date-fns v4 exporta um único named export com nome
+// próprio (ptBR, enUS, zhCN…), não um default — por isso o tipo aqui é o registro
+// de exports, e o Locale é extraído pela forma do objeto, não pelo nome.
+const DATE_FNS_LOCALE_LOADERS: Record<TLanguage, () => Promise<Record<string, unknown>>> = {
   en: () => import("date-fns/locale/en-US"),
   fr: () => import("date-fns/locale/fr"),
   es: () => import("date-fns/locale/es"),
@@ -45,6 +48,10 @@ const DATE_FNS_LOCALE_LOADERS: Record<TLanguage, () => Promise<{ default: Locale
   "tr-TR": () => import("date-fns/locale/tr"),
 };
 
+/** Reconhece o objeto Locale pela forma, sem depender do nome do export. */
+const isDateFnsLocale = (value: unknown): value is Locale =>
+  typeof value === "object" && value !== null && "formatDistance" in value && "formatLong" in value;
+
 /**
  * Alinha o locale global do date-fns com o idioma da interface.
  *
@@ -54,8 +61,9 @@ const DATE_FNS_LOCALE_LOADERS: Record<TLanguage, () => Promise<{ default: Locale
 export async function syncDateFnsLocale(language: string): Promise<void> {
   const loader = DATE_FNS_LOCALE_LOADERS[language as TLanguage] ?? DATE_FNS_LOCALE_LOADERS[FALLBACK_LANGUAGE];
   try {
-    const { default: locale } = await loader();
-    setDefaultOptions({ locale });
+    const mod = await loader();
+    const locale = Object.values(mod).find(isDateFnsLocale);
+    if (locale) setDefaultOptions({ locale });
   } catch {
     // silencioso por design — ver comentário acima
   }

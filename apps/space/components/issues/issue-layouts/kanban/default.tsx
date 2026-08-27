@@ -7,6 +7,8 @@
 import type { MutableRefObject } from "react";
 import { isNil } from "lodash-es";
 import { observer } from "mobx-react";
+// plane imports
+import { useTranslation } from "@plane/i18n";
 // types
 import type {
   GroupByColumnTypes,
@@ -63,13 +65,14 @@ export const KanBan = observer(function KanBan(props: IKanBan) {
     showEmptyGroup = true,
   } = props;
 
+  const { t } = useTranslation();
   const member = useMember();
   const label = useLabel();
   const cycle = useCycle();
   const modules = useModule();
   const state = useStates();
 
-  const groupList = getGroupByColumns(groupBy as GroupByColumnTypes, cycle, modules, label, state, member);
+  const groupList = getGroupByColumns(groupBy as GroupByColumnTypes, cycle, modules, label, state, member, false, t);
 
   if (!groupList) return null;
 

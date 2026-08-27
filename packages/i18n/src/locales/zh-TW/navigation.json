@@ -30,5 +30,39 @@
     "upgrade_plan": "升級方案",
     "plane_pro": "平面專業版",
     "business": "商業"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "預設分頁更新成功。"
+        },
+        "error": {
+          "message": "無法更新預設分頁。請稍後再試。"
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "無法隱藏分頁。請稍後再試。"
+        }
+      }
+    },
+    "actions": {
+      "show": "顯示",
+      "hide_in_more_menu": "隱藏到「更多」選單",
+      "set_as_default": "設為預設",
+      "clear_default": "清除預設"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "搜尋指令..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "僅圖示",
+      "icon_with_name": "圖示與名稱"
+    },
+    "dock": "停駐應用程式列",
+    "undock": "取消停駐應用程式列"
   }
 }

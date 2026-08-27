@@ -307,6 +307,9 @@
   "end_date": "Date de fin",
   "due_date": "Date d’échéance",
   "target_date": "Date cible",
+  "created_date": "Date de création",
+  "updated_date": "Date de mise à jour",
+  "last_updated_date": "Date de dernière mise à jour",
   "estimate": "Estimation",
   "change_parent_issue": "Changer l’élément de travail parent",
   "remove_parent_issue": "Supprimer l’élément de travail parent",
@@ -372,7 +375,9 @@
   "copied_to_clipboard_description": "L'URL a été copiée avec succès dans votre presse-papiers",
   "toast": {
     "success": "Succès !",
-    "error": "Erreur !"
+    "error": "Erreur !",
+    "warning": "Avertissement !",
+    "info": "Info !"
   },
   "links": {
     "toasts": {
@@ -445,6 +450,8 @@
     "estimate": "Estimation",
     "created_at": "Créé le",
     "updated_at": "Mis à jour le",
+    "select_cycle": "Sélectionner un cycle",
+    "select_modules": "Sélectionner des modules",
     "completed_at": "Terminé le",
     "layout": "Disposition",
     "filters": "Filtres",
@@ -464,6 +471,10 @@
     "epics": "Epics",
     "work_item": "Élément de travail",
     "work_items": "Éléments de travail",
+    "work_items_in_project_count": "{count, plural, one{Il y a # élément de travail dans ce projet} many{Il y a # éléments de travail dans ce projet} other{Il y a # éléments de travail dans ce projet}}",
+    "work_items_in_archives_count": "{count, plural, one{Il y a # élément de travail dans les archives de ce projet} many{Il y a # éléments de travail dans les archives de ce projet} other{Il y a # éléments de travail dans les archives de ce projet}}",
+    "work_items_in_cycle_count": "{count, plural, one{Il y a # élément de travail dans ce cycle} many{Il y a # éléments de travail dans ce cycle} other{Il y a # éléments de travail dans ce cycle}}",
+    "work_items_in_module_count": "{count, plural, one{Il y a # élément de travail dans ce module} many{Il y a # éléments de travail dans ce module} other{Il y a # éléments de travail dans ce module}}",
     "sub_work_item": "Sous-élément de travail",
     "views": "Vues",
     "pages": "Pages",
@@ -619,7 +630,11 @@
       "enable": "Activer",
       "disable": "Désactiver",
       "copy_markdown": "Copier le markdown",
-      "reply": "Répondre"
+      "reply": "Répondre",
+      "move": "Déplacer",
+      "remove_from_cycle": "Retirer du cycle",
+      "remove_from_module": "Retirer du module",
+      "rename_folder": "Renommer le dossier"
     },
     "name": "Nom",
     "discard": "Abandonner",
@@ -722,12 +737,33 @@
     "more": "Plus",
     "saved": "Enregistré",
     "all_projects": "Tous les projets",
-    "n_plus_projects": "{count}+ projets"
+    "n_plus_projects": "{count}+ projets",
+    "and": "et",
+    "view_all": "Tout afficher",
+    "view_less": "Afficher moins",
+    "empty": "Vide",
+    "no_date": "Aucune date",
+    "no_cycle": "Aucun cycle",
+    "no_modules": "Aucun module",
+    "no_labels": "Aucune étiquette",
+    "no_assignees": "Aucun acteur",
+    "labels_count": "{count, plural, one{# étiquette} many{# étiquettes} other{# étiquettes}}",
+    "modules_count": "{count, plural, one{# module} many{# modules} other{# modules}}",
+    "not_found": {
+      "title": "Oups ! Une erreur s’est produite.",
+      "description": "Désolé, la page que vous recherchez est introuvable. Elle a peut-être été supprimée, renommée ou est temporairement indisponible."
+    },
+    "toast": {
+      "success": "Succès !",
+      "error": "Erreur !",
+      "warning": "Avertissement"
+    }
   },
   "chart": {
     "x_axis": "Axe X",
     "y_axis": "Axe Y",
-    "metric": "Métrique"
+    "metric": "Métrique",
+    "week_of_month": "{month}, semaine {week}"
   },
   "form": {
     "title": {
@@ -785,6 +821,43 @@
     },
     "update": {
       "label": "Mettre à jour la vue"
+    },
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Vue créée avec succès."
+        },
+        "error": {
+          "message": "La vue n'a pas pu être créée. Veuillez réessayer."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Vue mise à jour avec succès."
+        },
+        "error": {
+          "message": "La vue n'a pas pu être mise à jour. Veuillez réessayer."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Vue supprimée avec succès."
+        },
+        "error": {
+          "message": "La vue n'a pas pu être supprimée. Veuillez réessayer."
+        }
+      },
+      "not_found": {
+        "message": "La vue que vous essayez de mettre à jour n'existe pas."
+      },
+      "filters_update": {
+        "success": {
+          "message": "Votre vue a été mise à jour avec succès."
+        },
+        "error": {
+          "message": "Votre vue n'a pas pu être mise à jour. Veuillez réessayer."
+        }
+      }
     }
   },
   "role_details": {
@@ -871,6 +944,82 @@
       "title": "JSON",
       "description": "Exportez les éléments de travail vers un fichier JSON.",
       "short_description": "Exporter en json"
+    }
+  },
+  "sign_in": "Se connecter",
+  "powered_by_plane_publish": "Propulsé par Plane Publish",
+  "instance": {
+    "failure": {
+      "title": "Impossible de récupérer les détails de l’instance.",
+      "description": "Nous n’avons pas pu récupérer les détails de l’instance. Pas d’inquiétude, il s’agit peut-être simplement d’un problème de connexion."
+    }
+  },
+  "something_went_wrong_please_try_again_later": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+  "please_try_again_later": "Veuillez réessayer plus tard.",
+  "some_error_occurred": "Une erreur s'est produite",
+  "markdown_copied_to_clipboard": "Markdown copié dans le presse-papiers.",
+  "reloading_to_apply_changes": "Rechargement pour appliquer les modifications...",
+  "copy_link_failed": "Nous n'avons pas pu copier le lien. Veuillez réessayer.",
+  "theme_config": {
+    "toasts": {
+      "download": {
+        "success": {
+          "message": "Configuration du thème téléchargée avec succès."
+        },
+        "error": {
+          "message": "Échec du téléchargement de la configuration du thème."
+        }
+      },
+      "import": {
+        "success": {
+          "message": "Configuration du thème importée avec succès"
+        }
+      }
+    }
+  },
+  "gantt": {
+    "toasts": {
+      "manual_sort_required": {
+        "message": "Le glisser-déposer n'est disponible qu'avec le tri manuel"
+      },
+      "update_dates": {
+        "error": {
+          "message": "Une erreur s'est produite lors de la mise à jour des dates du bloc"
+        }
+      }
+    }
+  },
+  "rich_filters": {
+    "toasts": {
+      "invalid_filter": {
+        "message": "Ce filtre n'est pas correctement configuré et ne peut pas être appliqué"
+      }
+    }
+  },
+  "ai_assistant": {
+    "toasts": {
+      "empty_prompt": {
+        "message": "Veuillez saisir une tâche pour obtenir l'assistance de l'IA."
+      }
+    }
+  },
+  "text_colors": "Couleurs du texte",
+  "background_colors": "Couleurs d'arrière-plan",
+  "submitting": "Envoi...",
+  "image_upload": {
+    "title": "Téléverser une image",
+    "drag_and_drop": "Glissez-déposez l'image ici",
+    "drop_here": "Déposez l'image ici pour la téléverser",
+    "file_too_large": "La taille de l'image ne peut pas dépasser 5 Mo.",
+    "invalid_format": "Veuillez téléverser un fichier dans un format valide.",
+    "supported_formats": "Formats de fichier pris en charge : .jpeg, .jpg, .png, .webp",
+    "upload_and_save": "Téléverser et enregistrer",
+    "uploading": "Téléversement",
+    "search_for_images": "Rechercher des images",
+    "no_images_found": "Aucune image trouvée.",
+    "tabs": {
+      "images": "Images",
+      "upload": "Téléverser"
     }
   }
 }

@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "邮箱",
+      "password": "密码",
+      "save_changes": "保存更改",
+      "saving": "保存中",
+      "go_back": "返回",
+      "success": "成功",
+      "error": "错误",
+      "done": "完成！",
+      "show_password": "显示密码",
+      "hide_password": "隐藏密码",
+      "settings_updated_successfully": "设置已成功更新",
+      "saving_configuration": "正在保存配置",
+      "configuration_saved_successfully": "配置已成功保存",
+      "failed_to_save_configuration": "保存配置失败",
+      "learn_more": "了解更多",
+      "here": "此处。"
+    },
+    "sidebar": {
+      "instance_admin": "实例管理员",
+      "sign_out": "退出登录",
+      "switch_to_light_mode": "切换到浅色模式",
+      "switch_to_dark_mode": "切换到深色模式",
+      "general": {
+        "title": "常规",
+        "description": "识别你的实例并查看关键信息。"
+      },
+      "email": {
+        "title": "邮件",
+        "description": "配置 SMTP 相关设置。"
+      },
+      "workspace": {
+        "title": "工作区",
+        "description": "管理此实例上的所有工作区。"
+      },
+      "authentication": {
+        "title": "身份验证",
+        "description": "配置身份验证方式。"
+      },
+      "ai": {
+        "title": "人工智能",
+        "description": "配置你的 OpenAI 凭据。"
+      },
+      "image": {
+        "title": "Plane 中的图片",
+        "description": "允许第三方图片库。"
+      }
+    },
+    "sign_in": {
+      "heading": "管理你的 Plane 实例",
+      "sub_heading": "配置实例级设置，保障实例安全",
+      "email_placeholder": "name@company.com",
+      "password_placeholder": "请输入密码",
+      "submit": "登录"
+    },
+    "setup": {
+      "heading": "设置你的 Plane 实例",
+      "sub_heading": "设置完成后，你就可以管理这个 Plane 实例了。",
+      "first_name": "名字",
+      "last_name": "姓氏",
+      "company_name": "公司名称",
+      "company_name_placeholder": "公司名称",
+      "set_password": "设置密码",
+      "new_password_placeholder": "新密码",
+      "confirm_password": "确认密码",
+      "confirm_password_placeholder": "确认密码",
+      "passwords_dont_match": "两次输入的密码不一致",
+      "telemetry_consent": "允许 Plane 匿名收集使用事件。",
+      "see_more": "了解更多",
+      "submit": "继续"
+    },
+    "settings": {
+      "general": {
+        "title": "常规设置",
+        "description": "修改实例名称和实例管理员的电子邮件地址。启用或关闭实例中的遥测。",
+        "instance_details": "实例信息",
+        "name_of_instance": "实例名称",
+        "instance_name_placeholder": "实例名称",
+        "admin_email_placeholder": "管理员邮箱",
+        "instance_id": "实例 ID",
+        "telemetry": "遥测",
+        "telemetry_toggle_title": "允许 Plane 收集匿名使用数据",
+        "telemetry_toggle_description": "不会收集任何个人信息。这些匿名数据用于了解你如何使用 Plane，并据此开发新功能，具体请见",
+        "telemetry_policy": "我们的遥测政策。"
+      },
+      "authentication": {
+        "title": "管理实例的身份验证方式",
+        "description": "为团队配置身份验证方式，并将注册限制为仅限邀请。",
+        "allow_signup_title": "允许任何人在没有邀请的情况下注册",
+        "allow_signup_description": "关闭此项后，只有受邀用户才能注册。",
+        "available_modes": "可用的身份验证方式",
+        "cannot_disable_title": "无法关闭身份验证",
+        "cannot_disable_message": "至少需要保留一种启用的身份验证方式。请先启用其他方式，再关闭此方式。",
+        "modes": {
+          "unique_codes": {
+            "name": "一次性验证码",
+            "description": "使用通过邮件发送的验证码登录或注册 Plane。使用此方式需要先配置 SMTP。"
+          },
+          "passwords": {
+            "name": "密码",
+            "description": "允许成员使用密码创建账户，并使用其电子邮件地址登录。"
+          },
+          "google": {
+            "description": "允许成员使用 Google 账户登录或注册 Plane。"
+          },
+          "github": {
+            "description": "允许成员使用 GitHub 账户登录或注册 Plane。"
+          },
+          "gitlab": {
+            "description": "允许成员使用 GitLab 账户登录或注册 Plane。"
+          },
+          "gitea": {
+            "description": "允许成员使用 Gitea 账户登录或注册 Plane。"
+          }
+        }
+      },
+      "email": {
+        "title": "从你自己的实例安全发送邮件",
+        "description": "Plane 可以从你自己的实例向你和你的用户发送有用的邮件，无需连接互联网。",
+        "description_secondary": "请在下方完成配置，并在保存前测试设置。",
+        "description_warning": "配置错误可能导致邮件退信和错误。",
+        "disabled_title": "邮件功能已关闭",
+        "disabled_message": "邮件功能已被关闭",
+        "disable_error_title": "关闭邮件功能出错",
+        "disable_error_message": "无法关闭邮件功能。请重试。",
+        "host": "主机",
+        "port": "端口",
+        "sender_email": "发件人邮箱地址",
+        "sender_email_description": "这是用户收到此实例邮件时看到的邮箱地址。你需要验证该地址。",
+        "username": "用户名",
+        "password_placeholder": "密码",
+        "security": "邮件安全",
+        "security_none": "不使用邮件加密",
+        "authentication": "身份验证",
+        "authentication_description": "这是可选项，但我们建议为 SMTP 服务器设置用户名和密码。",
+        "send_test_email": "发送测试邮件",
+        "updated_successfully": "邮件设置已成功更新"
+      },
+      "workspace": {
+        "title": "此实例上的工作区",
+        "description": "查看所有工作区，并控制谁可以创建工作区。",
+        "prevent_creation_title": "禁止其他人创建工作区。",
+        "prevent_creation_description": "开启此项后，只有你可以创建工作区。你需要邀请用户加入新的工作区。",
+        "all_workspaces": "此实例上的所有工作区",
+        "list_description": "暂时还不能删除工作区，并且只有当你是管理员或成员时才能进入该工作区。",
+        "create": "创建工作区",
+        "creating": "正在创建工作区",
+        "load_more": "加载更多",
+        "name_label": "为工作区命名",
+        "name_placeholder": "熟悉且易于识别的名称总是最好的。",
+        "url_label": "设置工作区的网址",
+        "url_placeholder": "workspace-name",
+        "url_taken": "该网址已被占用。请换一个。",
+        "url_invalid": "网址只能包含 ( - )、( _ ) 和字母数字字符。",
+        "size_label": "会有多少人使用这个工作区？",
+        "size_placeholder": "选择一个范围",
+        "required_field": "此项为必填。",
+        "created_title": "成功！",
+        "created_message": "工作区创建成功。",
+        "create_error_title": "出错了！",
+        "create_error_message": "无法创建工作区。请重试。",
+        "create_generic_error": "创建工作区时发生错误。请重试。"
+      },
+      "ai": {
+        "title": "面向所有工作区的 AI 功能",
+        "description": "配置你的 AI API 凭据，为所有工作区开启 Plane AI 功能。"
+      },
+      "image": {
+        "title": "第三方图片库",
+        "description": "让你的用户从第三方图片库中搜索并选择图片"
+      }
+    },
+    "oauth": {
+      "client_id": "客户端 ID",
+      "client_secret": "客户端密钥",
+      "application_id": "应用 ID",
+      "secret": "密钥",
+      "organization_id": "组织 ID",
+      "organization_id_description": "该组织的 GitHub ID。",
+      "host": "主机",
+      "origin_url": "来源网址",
+      "callback_uri": "回调 URI",
+      "callback_url": "回调网址",
+      "web": "Web",
+      "provider_details_for_plane": "{provider} 为 Plane 提供的信息",
+      "plane_details_for_provider": "Plane 为 {provider} 提供的信息",
+      "configured_message": "{provider} 身份验证已配置完成。现在可以测试一下了。",
+      "configuration_saved": "配置已保存",
+      "auth_now_active": "{provider} 身份验证现已启用。",
+      "auth_now_disabled": "{provider} 身份验证现已关闭。",
+      "get_this_from_settings": "你可以在以下位置获取该值：",
+      "secret_also_in_settings": "客户端密钥同样位于：",
+      "app_settings_link": "{provider} OAuth 应用设置。",
+      "app_settings_link_no_period": "{provider} OAuth 应用设置",
+      "autogenerated_paste_origin": "该值由我们自动生成。请粘贴到以下字段：",
+      "autogenerated_paste_callback": "该值由我们自动生成。请粘贴到以下字段：",
+      "field_word": "—",
+      "authorized_origin_url": "已授权的来源网址",
+      "authorized_callback_uri": "已授权的回调 URI",
+      "authorized_js_origins": "已授权的 JavaScript 来源",
+      "authorized_redirect_uri": "已授权的重定向 URI",
+      "redirect_uri": "重定向 URI",
+      "for_this_oauth_client": "—— 对于此 OAuth 客户端，请见",
+      "google_client_id_description": "你的客户端 ID 位于 Google API Console 中。",
+      "google_client_secret_description": "你的客户端密钥同样应位于 Google API Console 中。",
+      "gitlab_host_description_prefix": "这可以是 https://gitlab.com，也可以是你自托管 GitLab 的",
+      "gitlab_host_description_suffix": "。",
+      "gitlab_get_this_from": "你可以在以下位置获取该值：",
+      "gitlab_secret_also_in": "客户端密钥同样位于：",
+      "gitlab_paste_redirect_prefix": "该值由我们自动生成。请粘贴到以下字段：",
+      "gitlab_paste_redirect_suffix": "——位于你的",
+      "gitlab_app_link": "GitLab OAuth 应用",
+      "gitea_host_label": "Gitea 主机",
+      "gitea_host_description": "请填写你的 Gitea 实例的网址。若使用官方 Gitea 实例，请填写“https://gitea.com”。"
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "管理员已存在",
+        "message": "管理员已存在。请重试。"
+      },
+      "required_admin_email_password_first_name": {
+        "title": "邮箱、密码和名字为必填项",
+        "message": "邮箱、密码和名字为必填项。请重试。"
+      },
+      "invalid_admin_email": {
+        "title": "管理员邮箱无效",
+        "message": "管理员邮箱无效。请重试。"
+      },
+      "invalid_admin_password": {
+        "title": "管理员密码无效",
+        "message": "管理员密码无效。请重试。"
+      },
+      "required_admin_email_password": {
+        "title": "邮箱和密码为必填项",
+        "message": "邮箱和密码为必填项。请重试。"
+      },
+      "admin_authentication_failed": {
+        "title": "身份验证失败",
+        "message": "身份验证失败。请重试。"
+      },
+      "admin_user_already_exist": {
+        "title": "管理员用户已存在",
+        "message": "管理员用户已存在。",
+        "sign_in_now": "立即登录",
+        "now": "。"
+      },
+      "admin_user_does_not_exist": {
+        "title": "管理员用户不存在",
+        "message": "管理员用户不存在。",
+        "sign_in_now": "立即登录",
+        "now": "。"
+      },
+      "admin_user_deactivated": {
+        "title": "用户账户已停用",
+        "message": "用户账户已停用。请联系 {contact}。"
+      },
+      "administrator": "管理员",
+      "generic_title": "错误",
+      "generic_message": "出了点问题。请重试。"
+    },
+    "not_found": {
+      "title": "糟糕！出了点问题。",
+      "description": "抱歉，找不到你要访问的页面。它可能已被删除、改名，或暂时无法访问。",
+      "action": "前往常规设置",
+      "image_alt": "404 - 页面未找到"
+    }
+  }
+}

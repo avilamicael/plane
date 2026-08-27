@@ -139,7 +139,8 @@
         "title": "Nessun ciclo archiviato ancora",
         "description": "Per organizzare il tuo progetto, archivia i cicli completati. Li troverai qui una volta archiviati."
       }
-    }
+    },
+    "delete_cycle": "Elimina ciclo"
   },
   "project_views": {
     "empty_state": {
@@ -418,6 +419,69 @@
           "message": "Qualcosa è andato storto."
         }
       }
+    },
+    "toasts": {
+      "delete": {
+        "success": {
+          "message": "Progetto eliminato con successo."
+        }
+      },
+      "archive": {
+        "error": {
+          "message": "Impossibile archiviare il progetto. Riprova."
+        }
+      },
+      "restore": {
+        "error": {
+          "message": "Impossibile ripristinare il progetto. Riprova."
+        }
+      },
+      "leave": {
+        "confirm_text": {
+          "message": "Conferma l'uscita dal progetto digitando 'Leave Project'."
+        },
+        "project_name": {
+          "message": "Inserisci il nome del progetto come indicato nella descrizione."
+        },
+        "fill_all_fields": {
+          "message": "Compila tutti i campi."
+        }
+      },
+      "integration": {
+        "sync_error": {
+          "message": "Impossibile sincronizzare il repository con il progetto. Riprova."
+        }
+      },
+      "members_added": {
+        "message": "Membri aggiunti con successo."
+      },
+      "publish": {
+        "success": {
+          "message": "Impostazioni di pubblicazione aggiornate con successo!"
+        },
+        "unpublish_error": {
+          "message": "Si è verificato un errore durante l'annullamento della pubblicazione del progetto."
+        },
+        "select_layout": {
+          "message": "Seleziona almeno un layout di visualizzazione per pubblicare il progetto."
+        },
+        "link_copied": {
+          "message": "Link della pagina pubblicata copiato con successo."
+        }
+      }
+    },
+    "publish": {
+      "allow_comments": "Consenti commenti",
+      "allow_reactions": "Consenti reazioni",
+      "allow_voting": "Consenti votazioni",
+      "anyone_with_link_can_access": "Chiunque abbia il link può accedere"
+    },
+    "join": {
+      "title": "Unirsi al progetto?"
+    },
+    "card": {
+      "created_on": "Creato il {date}",
+      "no_members_yet": "Ancora nessun membro"
     }
   }
 }

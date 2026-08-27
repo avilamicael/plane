@@ -30,5 +30,39 @@
     "upgrade_plan": "Upgrade plan",
     "plane_pro": "Plane Pro",
     "business": "Business"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Default tab updated successfully."
+        },
+        "error": {
+          "message": "Failed to update default tab. Please try again later."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Failed to hide tab. Please try again later."
+        }
+      }
+    },
+    "actions": {
+      "show": "Show",
+      "hide_in_more_menu": "Hide in more menu",
+      "set_as_default": "Set as default",
+      "clear_default": "Clear default"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Search commands..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Icon only",
+      "icon_with_name": "Icon with name"
+    },
+    "dock": "Dock App Rail",
+    "undock": "Undock App Rail"
   }
 }

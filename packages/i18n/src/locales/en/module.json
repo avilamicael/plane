@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Module} other {Modules}}",
     "no_module": "No module",
-    "select": "Add modules"
+    "select": "Add modules",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Module created successfully."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Module updated successfully."
+        },
+        "error": {
+          "message": "Module could not be updated. Please try again."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Your archives can be found in project archives."
+        },
+        "error": {
+          "message": "Module could not be archived. Please try again."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Your module can be found in project modules."
+        },
+        "error": {
+          "message": "Module could not be restored. Please try again."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Module link created successfully."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Module link updated successfully."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Module link deleted successfully."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Work items added to the module successfully."
+        },
+        "error": {
+          "message": "Selected work items could not be added to the module. Please try again."
+        }
+      }
+    },
+    "no_lead": "No lead",
+    "work_items_progress": "{completed}/{total} {total, plural, one {work item} other {work items}}"
   }
 }

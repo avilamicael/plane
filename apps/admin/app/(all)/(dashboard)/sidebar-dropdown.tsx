@@ -11,6 +11,7 @@ import { LogOut, UserCog2, Palette } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
 // plane internal packages
 import { API_BASE_URL } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 import { AuthService } from "@plane/services";
 import { Avatar } from "@plane/ui";
 import { getFileURL, cn } from "@plane/utils";
@@ -25,6 +26,7 @@ export const AdminSidebarDropdown = observer(function AdminSidebarDropdown() {
   const { isSidebarCollapsed } = useTheme();
   const { currentUser, signOut } = useUser();
   // hooks
+  const { t } = useTranslation();
   const { resolvedTheme, setTheme } = useNextTheme();
   // state
   const [csrfToken, setCsrfToken] = useState<string | undefined>(undefined);
@@ -56,7 +58,7 @@ export const AdminSidebarDropdown = observer(function AdminSidebarDropdown() {
           onClick={handleThemeSwitch}
         >
           <Palette className="h-4 w-4 stroke-[1.5]" />
-          Switch to {resolvedTheme === "dark" ? "light" : "dark"} mode
+          {resolvedTheme === "dark" ? t("admin.sidebar.switch_to_light_mode") : t("admin.sidebar.switch_to_dark_mode")}
         </Menu.Item>
       </div>
       <div className="py-2">
@@ -68,7 +70,7 @@ export const AdminSidebarDropdown = observer(function AdminSidebarDropdown() {
             className="flex w-full items-center gap-2 rounded-sm px-2 py-1 hover:bg-layer-1-hover"
           >
             <LogOut className="h-4 w-4 stroke-[1.5]" />
-            Sign out
+            {t("admin.sidebar.sign_out")}
           </Menu.Item>
         </form>
       </div>
@@ -115,7 +117,7 @@ export const AdminSidebarDropdown = observer(function AdminSidebarDropdown() {
 
           {!isSidebarCollapsed && (
             <div className="flex w-full gap-2">
-              <h4 className="grow truncate text-body-md-medium text-primary">Instance admin</h4>
+              <h4 className="grow truncate text-body-md-medium text-primary">{t("admin.sidebar.instance_admin")}</h4>
             </div>
           )}
         </div>

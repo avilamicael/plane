@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Erreur",
+          "message": "Une erreur s'est produite. Veuillez réessayer."
+        },
+        "template": {
+          "try_again": "{reason}. Veuillez réessayer.",
+          "contact_admin": "{reason}. Veuillez contacter votre administrateur."
+        },
+        "reason": {
+          "instance_not_configured": "Instance non configurée",
+          "signup_disabled": "Inscription désactivée",
+          "invalid_password": "Mot de passe invalide",
+          "smtp_not_configured": "SMTP non configuré",
+          "invalid_email": "E-mail invalide",
+          "email_required": "E-mail requis",
+          "email_and_password_required": "E-mail et mot de passe requis",
+          "email_and_code_required": "E-mail et code requis",
+          "authentication_failed": "Échec de l'authentification",
+          "invalid_magic_code": "Code magique invalide",
+          "expired_magic_code": "Code magique expiré",
+          "oauth_not_configured": "OAuth non configuré",
+          "google_not_configured": "Google non configuré",
+          "github_not_configured": "GitHub non configuré",
+          "gitlab_not_configured": "GitLab non configuré",
+          "google_oauth_provider_error": "Erreur du fournisseur OAuth Google",
+          "github_oauth_provider_error": "Erreur du fournisseur OAuth GitHub",
+          "gitlab_oauth_provider_error": "Erreur du fournisseur OAuth GitLab",
+          "invalid_password_token": "Jeton de mot de passe invalide",
+          "expired_password_token": "Jeton de mot de passe expiré",
+          "password_required": "Mot de passe requis",
+          "incorrect_old_password": "Ancien mot de passe incorrect",
+          "invalid_new_password": "Nouveau mot de passe invalide",
+          "password_already_set": "Mot de passe déjà défini",
+          "admin_already_exist": "L'administrateur existe déjà",
+          "admin_email_password_first_name_required": "E-mail, mot de passe et prénom requis",
+          "invalid_admin_email": "E-mail d'administrateur invalide",
+          "invalid_admin_password": "Mot de passe d'administrateur invalide"
+        },
+        "title": {
+          "user_already_exist": "L'utilisateur existe déjà",
+          "user_does_not_exist": "L'utilisateur n'existe pas",
+          "user_account_deactivated": "Compte utilisateur désactivé",
+          "bot_user_login_forbidden": "Connexion non autorisée",
+          "admin_user_already_exist": "L'utilisateur administrateur existe déjà",
+          "admin_user_does_not_exist": "L'utilisateur administrateur n'existe pas"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Ce compte ne peut pas être utilisé pour se connecter. Veuillez utiliser un compte personnel.",
+          "user_account_deactivated": "Compte utilisateur désactivé. Veuillez contacter {contact}.",
+          "default_contact": "votre administrateur",
+          "user_already_exist": "Votre compte est déjà enregistré.",
+          "user_does_not_exist": "Aucun compte trouvé.",
+          "admin_user_already_exist": "L'utilisateur administrateur existe déjà.",
+          "admin_user_does_not_exist": "L'utilisateur administrateur n'existe pas.",
+          "link": {
+            "sign_in_now": "Connectez-vous maintenant",
+            "create_one": "Créez-en un pour commencer"
+          }
+        }
+      }
+    }
+  }
+}

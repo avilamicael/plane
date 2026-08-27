@@ -110,6 +110,126 @@
       "label": "從集合中移除",
       "success_message": "頁面已從集合中移除。",
       "error_message": "無法將頁面從集合中移除。請再試一次。"
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "頁面連結已複製到剪貼簿。"
+      },
+      "duplicate": {
+        "success": {
+          "message": "頁面複製成功。"
+        },
+        "error": {
+          "message": "無法複製頁面。請稍後再試。"
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "頁面還原成功。"
+        },
+        "error": {
+          "message": "無法還原頁面。請稍後再試。"
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "頁面封存成功。"
+        },
+        "error": {
+          "message": "無法封存頁面。請稍後再試。"
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "頁面已加入我的最愛。"
+        },
+        "error": {
+          "message": "無法將頁面加入我的最愛。請稍後再試。"
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "頁面已從我的最愛移除。"
+        },
+        "error": {
+          "message": "無法將頁面從我的最愛移除。請稍後再試。"
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "頁面鎖定成功。"
+        },
+        "error": {
+          "message": "無法鎖定頁面。請稍後再試。"
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "頁面解鎖成功。"
+        },
+        "error": {
+          "message": "無法解鎖頁面。請稍後再試。"
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "頁面已標記為公開並移至公開區段。"
+        },
+        "error": {
+          "message": "無法將頁面標記為公開。請再試一次。"
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "頁面已標記為私密並移至私密區段。"
+        },
+        "error": {
+          "message": "無法將頁面標記為私密。請再試一次。"
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "頁面刪除成功。"
+        },
+        "error": {
+          "message": "無法刪除頁面。請再試一次。"
+        }
+      },
+      "export": {
+        "success": {
+          "message": "頁面匯出成功。"
+        },
+        "error": {
+          "message": "無法匯出頁面。請稍後再試。"
+        }
+      }
+    },
+    "create_page": "建立頁面",
+    "delete_page": "刪除頁面",
+    "export": {
+      "title": "匯出頁面",
+      "format": "匯出格式",
+      "include_content": "包含內容",
+      "page_format": "頁面尺寸",
+      "content_variety": {
+        "everything": "全部",
+        "no_images": "不含圖片"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "鎖定",
+      "locked": "已鎖定",
+      "unlocked": "已解鎖"
+    },
+    "offline_badge": {
+      "heading": "您目前處於離線狀態。",
+      "description": "您可以繼續編輯。恢復連線後將自動同步。",
+      "label": "離線"
+    },
+    "toolbar": {
+      "color": "顏色"
     }
   }
 }

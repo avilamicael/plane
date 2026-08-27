@@ -63,7 +63,8 @@
             "required": "Nous avons besoin d’une adresse e-mail pour les inviter.",
             "invalid": "L’e-mail est invalide"
           }
-        }
+        },
+        "invitation_removed": "Invitation supprimée avec succès."
       },
       "billing_and_plans": {
         "heading": "Facturation & Plans",
@@ -147,8 +148,18 @@
           },
           "secret_key_not_copied": {
             "message": "Une erreur s’est produite lors de la copie de la clé secrète."
+          },
+          "deleted": {
+            "message": "Webhook supprimé avec succès."
+          },
+          "not_deleted": {
+            "message": "Le webhook n'a pas pu être supprimé. Veuillez réessayer."
+          },
+          "secret_key_regenerated": {
+            "message": "Nouvelle clé régénérée avec succès."
           }
-        }
+        },
+        "delete_webhook": "Supprimer le webhook"
       },
       "api_tokens": {
         "heading": "Jetons API",
@@ -170,7 +181,8 @@
             "title": "Erreur !",
             "message": "Le jeton API n’a pas pu être supprimé"
           }
-        }
+        },
+        "expiration_required": "Veuillez sélectionner une date d'expiration."
       },
       "integrations": {
         "title": "Intégrations",

@@ -52,7 +52,17 @@
       "5_days": "5 dní",
       "1_week": "1 týždeň",
       "2_weeks": "2 týždne",
-      "custom": "Vlastné"
+      "custom": "Vlastné",
+      "modal": {
+        "title": "Upraviť čas odloženia",
+        "pick_a_date": "Vyberte dátum",
+        "select_date": "Zvoliť dátum",
+        "pick_a_time": "Vyberte čas",
+        "select_a_time": "Zvoľte čas",
+        "no_available_time": "Pre tento dátum nie je k dispozícii žiadny čas.",
+        "date_required": "Vyberte prosím dátum",
+        "time_required": "Vyberte prosím čas"
+      }
     }
   }
 }

@@ -149,7 +149,8 @@
             }
           }
         }
-      }
+      },
+      "sign_in_to_comment": "Autentifică-te pentru a adăuga un comentariu"
     },
     "empty_state": {
       "issue_detail": {
@@ -266,12 +267,131 @@
       "click_to_upvote": "Clic pentru a vota pozitiv",
       "click_to_downvote": "Clic pentru a vota negativ",
       "click_to_view_upvotes": "Clic pentru a vedea voturile pozitive",
-      "click_to_view_downvotes": "Clic pentru a vedea voturile negative"
+      "click_to_view_downvotes": "Clic pentru a vedea voturile negative",
+      "no_upvotes": "Încă niciun vot pozitiv",
+      "no_downvotes": "Încă niciun vot negativ",
+      "and_more": "și încă {count}"
     },
     "activity": {
       "created_the_work_item": "a creat activitatea.",
       "created_the_work_item_via": "a creat activitatea prin",
-      "deleted_a_work_item": "a șters o activitate."
+      "deleted_a_work_item": "a șters o activitate.",
+      "set_the_name_to": "a setat numele la",
+      "updated_the_description": "a actualizat descrierea",
+      "set_the_state_to": "a setat starea la",
+      "set_the_priority_to": "a setat prioritatea la",
+      "added_a_new_assignee": "a adăugat un nou responsabil",
+      "removed_the_assignee": "a eliminat responsabilul",
+      "added_a_new_label": "a adăugat o etichetă nouă",
+      "removed_the_label": "a eliminat eticheta",
+      "set_the_start_date_to": "a setat data de început la",
+      "removed_the_start_date": "a eliminat data de început",
+      "set_the_due_date_to": "a setat data limită la",
+      "removed_the_due_date": "a eliminat data limită",
+      "set_the_parent_to": "a setat elementul părinte la",
+      "removed_the_parent": "a eliminat elementul părinte",
+      "set_the_estimate_point_to": "a setat punctul de estimare la",
+      "removed_the_estimate_point": "a eliminat punctul de estimare",
+      "added_this_work_item_to_the_cycle": "a adăugat această activitate la ciclul",
+      "set_the_cycle_to": "a setat ciclul la",
+      "removed_the_work_item_from_the_cycle": "a eliminat activitatea din ciclul",
+      "added_this_work_item_to_the_module": "a adăugat această activitate la modulul",
+      "set_the_module_to": "a setat modulul la",
+      "removed_the_work_item_from_the_module": "a eliminat activitatea din modulul",
+      "added_the_link": "a adăugat",
+      "updated_the_link": "a actualizat",
+      "removed_the_link": "a eliminat",
+      "link_noun": "linkul",
+      "uploaded_a_new_attachment": "a încărcat un atașament nou",
+      "removed_an_attachment": "a eliminat un atașament",
+      "restored_the_work_item": "a restaurat activitatea",
+      "archived_the_work_item": "a arhivat activitatea",
+      "declined_this_work_item_from_intake": "a respins această activitate din Intake.",
+      "snoozed_this_work_item": "a amânat această activitate.",
+      "accepted_this_work_item_from_intake": "a acceptat această activitate din Intake.",
+      "declined_this_work_item_from_intake_as_duplicate": "a respins această activitate din Intake marcând-o ca duplicat.",
+      "updated_intake_work_item_status": "a actualizat starea activității din Intake.",
+      "marked_this_work_item_is_blocking_work_item": "a marcat că această activitate blochează activitatea",
+      "removed_the_blocking_work_item": "a eliminat blocarea activității",
+      "marked_this_work_item_is_being_blocked_by": "a marcat că această activitate este blocată de",
+      "removed_this_work_item_being_blocked_by_work_item": "a eliminat blocarea acestei activități de către",
+      "marked_this_work_item_as_duplicate_of": "a marcat această activitate ca duplicat al",
+      "removed_this_work_item_as_a_duplicate_of": "a eliminat marcarea acestei activități ca duplicat al",
+      "marked_that_this_work_item_relates_to": "a marcat că această activitate este legată de",
+      "removed_the_relation_from": "a eliminat relația cu",
+      "connector_for": "pentru",
+      "connector_to": "la",
+      "connector_from": "din",
+      "connector_of": "pentru"
+    },
+    "toasts": {
+      "reaction": {
+        "create": {
+          "success": {
+            "message": "Reacția a fost creată cu succes"
+          },
+          "error": {
+            "message": "Crearea reacției a eșuat"
+          }
+        },
+        "remove": {
+          "success": {
+            "message": "Reacția a fost eliminată cu succes"
+          },
+          "error": {
+            "message": "Eliminarea reacției a eșuat"
+          }
+        }
+      },
+      "attachment": {
+        "remove": {
+          "success": {
+            "message": "Atașamentul a fost eliminat cu succes"
+          },
+          "error": {
+            "message": "Atașamentul nu a putut fi eliminat"
+          }
+        }
+      },
+      "select_at_least_one": {
+        "message": "Te rugăm să selectezi cel puțin un element de lucru."
+      },
+      "bulk_delete": {
+        "success": {
+          "message": "Elementele de lucru au fost șterse cu succes!"
+        }
+      },
+      "due_date_before_start_date": {
+        "message": "Data scadentă nu poate fi anterioară datei de început a elementului de lucru."
+      },
+      "update_dates": {
+        "error": {
+          "message": "Eroare la actualizarea datelor elementului de lucru. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "move_to_project": {
+        "error": {
+          "message": "Mutarea elementului de lucru în proiect a eșuat. Te rugăm să încerci din nou."
+        }
+      },
+      "delete": {
+        "error": {
+          "message": "Ștergerea elementului de lucru a eșuat"
+        }
+      },
+      "update": {
+        "error": {
+          "message": "Actualizarea elementului de lucru a eșuat"
+        }
+      },
+      "editor_processing": {
+        "message": "Editorul procesează încă modificările. Te rugăm să aștepți înainte de a continua."
+      },
+      "ai_description": {
+        "insufficient_title": {
+          "message": "Titlul elementului de lucru nu este suficient de descriptiv pentru a genera descrierea. Încearcă un alt titlu."
+        }
+      }
     }
   },
   "sub_work_item": {

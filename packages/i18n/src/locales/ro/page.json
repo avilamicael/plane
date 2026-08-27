@@ -110,6 +110,126 @@
       "label": "Elimină din colecție",
       "success_message": "Pagina a fost eliminată din colecție.",
       "error_message": "Pagina nu a putut fi eliminată din colecție. Te rugăm să încerci din nou."
+    },
+    "toasts": {
+      "link_copied": {
+        "message": "Link-ul paginii a fost copiat în memoria temporară."
+      },
+      "duplicate": {
+        "success": {
+          "message": "Pagina a fost duplicată cu succes."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi duplicată. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Pagina a fost restaurată cu succes."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi restaurată. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Pagina a fost arhivată cu succes."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi arhivată. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "add_to_favorites": {
+        "success": {
+          "message": "Pagina a fost adăugată la favorite."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi adăugată la favorite. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "remove_from_favorites": {
+        "success": {
+          "message": "Pagina a fost eliminată de la favorite."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi eliminată de la favorite. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "lock": {
+        "success": {
+          "message": "Pagina a fost blocată cu succes."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi blocată. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "unlock": {
+        "success": {
+          "message": "Pagina a fost deblocată cu succes."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi deblocată. Te rugăm să încerci din nou mai târziu."
+        }
+      },
+      "make_public": {
+        "success": {
+          "message": "Pagina a fost marcată ca publică și mutată în secțiunea publică."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi marcată ca publică. Te rugăm să încerci din nou."
+        }
+      },
+      "make_private": {
+        "success": {
+          "message": "Pagina a fost marcată ca privată și mutată în secțiunea privată."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi marcată ca privată. Te rugăm să încerci din nou."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Pagina a fost ștearsă cu succes."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi ștearsă. Te rugăm să încerci din nou."
+        }
+      },
+      "export": {
+        "success": {
+          "message": "Pagina a fost exportată cu succes."
+        },
+        "error": {
+          "message": "Pagina nu a putut fi exportată. Te rugăm să încerci din nou mai târziu."
+        }
+      }
+    },
+    "create_page": "Creează document",
+    "delete_page": "Șterge documentul",
+    "export": {
+      "title": "Exportă documentul",
+      "format": "Format de export",
+      "include_content": "Include conținutul",
+      "page_format": "Format document",
+      "content_variety": {
+        "everything": "Tot",
+        "no_images": "Fără imagini"
+      }
+    }
+  },
+  "page_editor": {
+    "lock_control": {
+      "lock": "Blochează",
+      "locked": "Blocată",
+      "unlocked": "Deblocată"
+    },
+    "offline_badge": {
+      "heading": "Ești offline.",
+      "description": "Poți continua să faci modificări. Vor fi sincronizate când revii online.",
+      "label": "Offline"
+    },
+    "toolbar": {
+      "color": "Culoare"
     }
   }
 }

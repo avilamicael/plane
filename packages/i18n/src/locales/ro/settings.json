@@ -37,11 +37,38 @@
         "states": {
           "sending": "Se trimite…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Imaginea de profil a fost ștearsă cu succes.",
+        "picture_delete_error": "A apărut o eroare la ștergerea imaginii tale de profil. Te rugăm să încerci din nou.",
+        "deactivated": "Contul a fost dezactivat cu succes."
+      },
+      "general_form": {
+        "first_name_placeholder": "Introdu prenumele tău",
+        "last_name_placeholder": "Introdu numele tău de familie",
+        "display_name_placeholder": "Introdu numele afișat"
       }
     },
     "preferences": {
       "heading": "Preferințe",
-      "description": "Personalizează experiența aplicației așa cum lucrezi"
+      "description": "Personalizează experiența aplicației așa cum lucrezi",
+      "toasts": {
+        "timezone": {
+          "success": "Fusul orar a fost actualizat cu succes",
+          "error": "Actualizarea fusului orar a eșuat"
+        },
+        "language": {
+          "success": "Limba a fost actualizată cu succes",
+          "error": "Actualizarea limbii a eșuat"
+        },
+        "start_of_week": {
+          "success": "Prima zi a săptămânii a fost actualizată cu succes"
+        }
+      },
+      "start_of_week": {
+        "title": "Prima zi a săptămânii",
+        "description": "Aceasta va schimba modul în care arată toate calendarele din aplicație."
+      }
     },
     "notifications": {
       "heading": "Notificări prin e-mail",

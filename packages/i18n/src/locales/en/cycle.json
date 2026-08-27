@@ -20,7 +20,46 @@
   },
   "cycle": {
     "label": "{count, plural, one {Cycle} other {Cycles}}",
-    "no_cycle": "No cycle"
+    "no_cycle": "No cycle",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Cycle created successfully."
+        }
+      },
+      "delete": {
+        "success": {
+          "message": "Cycle deleted successfully."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Your archives can be found in project archives."
+        },
+        "error": {
+          "message": "Cycle could not be archived. Please try again."
+        }
+      },
+      "date_conflict": {
+        "message": "You already have a cycle on the given dates, if you want to create a draft cycle, remove the dates."
+      },
+      "transfer": {
+        "success": {
+          "message": "Work items have been transferred successfully"
+        },
+        "error": {
+          "message": "Unable to transfer work items. Please try again."
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Work items added to the cycle successfully."
+        },
+        "error": {
+          "message": "Selected work items could not be added to the cycle. Please try again."
+        }
+      }
+    }
   },
   "active_cycle_analytics": {
     "empty_state": {

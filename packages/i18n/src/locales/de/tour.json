@@ -191,5 +191,173 @@
       "title": "Entdecken Sie, warum Teams zu Plane wechseln",
       "description": "Vergleichen Sie Plane mit den Tools, die Sie heute verwenden, und sehen Sie den Unterschied."
     }
+  },
+  "onboarding": {
+    "common": {
+      "or": "oder",
+      "skip": "Überspringen",
+      "select_one": "Wähle eine Option",
+      "select_one_or_more": "Wähle eine oder mehrere Optionen",
+      "steps_progress": "{current} von {total, plural, one {# Schritt} other {# Schritten}}",
+      "errors": {
+        "field_required": "Dieses Feld ist erforderlich",
+        "select_at_least_one": "Bitte wähle mindestens eine Option"
+      }
+    },
+    "profile": {
+      "heading": "Erstelle dein Profil.",
+      "subheading": "So wirst du in Plane angezeigt.",
+      "upload_image": "Bild hochladen",
+      "change_image": "Bild ändern",
+      "choose_image": "Bild auswählen",
+      "name_placeholder": "Gib deinen vollständigen Namen ein",
+      "marketing_consent": "Ich stimme dem Erhalt von Marketing-Mitteilungen von Plane zu",
+      "role_question": "In welcher Rolle arbeitest du? Wähle eine aus.",
+      "domain_question": "Was ist dein Fachgebiet? Wähle eines oder mehrere aus.",
+      "roles": {
+        "individual_contributor": "Individueller Mitarbeiter",
+        "senior_leader": "Senior Führungskraft",
+        "manager": "Manager",
+        "executive": "Führungskraft",
+        "freelancer": "Freiberufler",
+        "student": "Student"
+      },
+      "domains": {
+        "engineering": "Entwicklung",
+        "product": "Produkt",
+        "marketing": "Marketing",
+        "sales": "Vertrieb",
+        "operations": "Betrieb",
+        "legal": "Recht",
+        "finance": "Finanzen",
+        "human_resources": "Personalwesen",
+        "project": "Projekte",
+        "other": "Sonstiges"
+      },
+      "errors": {
+        "name_length": "Der Name darf höchstens 50 Zeichen lang sein.",
+        "first_name_required": "Der Vorname ist erforderlich",
+        "first_name_length": "Der Vorname darf höchstens 50 Zeichen lang sein.",
+        "last_name_required": "Der Nachname ist erforderlich",
+        "last_name_length": "Der Nachname darf höchstens 50 Zeichen lang sein."
+      },
+      "toast": {
+        "completed": "Profil eingerichtet!",
+        "failed": "Die Profileinrichtung ist fehlgeschlagen. Bitte versuche es erneut!",
+        "details_failed": "Die Aktualisierung deiner Daten ist fehlgeschlagen. Bitte versuche es erneut!"
+      }
+    },
+    "password": {
+      "new_password_placeholder": "Neues Passwort...",
+      "match": "Die Passwörter stimmen überein",
+      "mismatch": "Die Passwörter stimmen nicht überein"
+    },
+    "role": {
+      "heading": "Was ist deine Rolle?",
+      "subheading": "Richten wir Plane passend zu deiner Arbeitsweise ein.",
+      "options": {
+        "product_manager": "Produktmanager",
+        "engineering_manager": "Engineering Manager",
+        "designer": "Designer",
+        "developer": "Entwickler",
+        "founder_executive": "Gründer/Führungskraft",
+        "operations_manager": "Operations Manager",
+        "others": "Sonstige"
+      }
+    },
+    "usecase": {
+      "heading": "Was führt dich zu Plane?",
+      "subheading": "Erzähl uns von deinen Zielen und deiner Teamgröße.",
+      "options": {
+        "plan_and_track_product_roadmaps": "Produkt-Roadmaps planen und verfolgen",
+        "manage_engineering_sprints": "Engineering-Sprints verwalten",
+        "coordinate_cross_functional_projects": "Bereichsübergreifende Projekte koordinieren",
+        "replace_our_current_tool": "Unser aktuelles Tool ersetzen",
+        "just_exploring": "Ich schaue mich nur um"
+      }
+    },
+    "workspace": {
+      "heading": "Erstelle deinen Arbeitsbereich",
+      "subheading": "Deine gesamte Arbeit – vereint.",
+      "join_heading": "Einladungen annehmen oder Arbeitsbereich erstellen",
+      "join_existing": "Bestehendem Arbeitsbereich beitreten",
+      "create_new": "Neuen Arbeitsbereich erstellen",
+      "join_invited_cta": "Ich möchte den Arbeitsbereichen beitreten, zu denen ich eingeladen wurde",
+      "creation_disabled": "Du scheinst keine Einladungen zu einem Arbeitsbereich zu haben, und der Administrator deiner Instanz hat das Erstellen neuer Arbeitsbereiche eingeschränkt. Bitte einen Besitzer oder Administrator, dich in einen Arbeitsbereich einzuladen, und kehre dann zu diesem Bildschirm zurück, um beizutreten.",
+      "organization_size": {
+        "just_myself": "Nur ich"
+      }
+    },
+    "invitations": {
+      "heading": "Du bist eingeladen!",
+      "subheading": "Nimm die Einladungen an, um mit deinem Team zusammenzuarbeiten.",
+      "continue_to_workspace": "Zum Arbeitsbereich",
+      "create_own_workspace": "Eigenen Arbeitsbereich erstellen",
+      "empty": "Keine Einladungen gefunden"
+    },
+    "team": {
+      "heading": "Lade dein Team ein",
+      "subheading": "Die Arbeit in Plane funktioniert am besten mit deinem Team. Lade es jetzt ein, um das volle Potenzial von Plane zu nutzen.",
+      "add_another": "Weitere hinzufügen",
+      "do_it_later": "Mache ich später",
+      "errors": {
+        "invalid_email": "Ungültige E-Mail-ID",
+        "not_an_email": "Das sieht nicht nach einer E-Mail-Adresse aus."
+      },
+      "toast": {
+        "invitations_sent": "Einladungen erfolgreich versendet."
+      }
+    },
+    "switch_account": {
+      "wrong_email": "Falsche E-Mail-Adresse?",
+      "title": "Konto wechseln",
+      "description_prefix": "Wenn du dich versehentlich mit",
+      "description_suffix": "registriert hast, kannst du hier zu einem anderen Konto wechseln.",
+      "switching": "Wird gewechselt...",
+      "sign_out_failed": "Abmelden fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "toast": {
+      "finish_failed": "Das Onboarding konnte nicht abgeschlossen werden. Bitte versuche es später erneut."
+    },
+    "tour": {
+      "welcome": {
+        "title": "Willkommen bei Plane, {name}",
+        "description": "Schön, dass du dich für Plane entschieden hast. Du kannst deine Projekte jetzt mühelos verwalten. Leg los, indem du ein Projekt erstellst.",
+        "take_tour": "Produkttour starten",
+        "skip": "Nein danke, ich schaue mich selbst um"
+      },
+      "sidebar": {
+        "title": "Los geht’s!",
+        "subtitle": "Hol mehr aus Plane heraus.",
+        "work_items": "Arbeitselemente",
+        "cycles": "Zyklen",
+        "modules": "Module",
+        "views": "Ansichten",
+        "pages": "Seiten"
+      },
+      "steps": {
+        "work_items": {
+          "title": "Plane mit Arbeitselementen",
+          "description": "Das Arbeitselement ist der Grundbaustein von Plane. Die meisten Konzepte in Plane hängen mit Arbeitselementen und ihren Eigenschaften zusammen."
+        },
+        "cycles": {
+          "title": "Komm mit Zyklen voran",
+          "description": "Zyklen helfen dir und deinem Team, schneller voranzukommen – ähnlich den Sprints in der agilen Entwicklung."
+        },
+        "modules": {
+          "title": "Teile in Module auf",
+          "description": "Module teilen dein großes Vorhaben in Projekte oder Funktionen auf, damit du dich besser organisieren kannst."
+        },
+        "views": {
+          "title": "Ansichten",
+          "description": "Erstelle eigene Filter, um nur die Arbeitselemente anzuzeigen, die für dich wichtig sind. Speichere und teile deine Filter mit wenigen Klicks."
+        },
+        "pages": {
+          "title": "Dokumentiere mit Seiten",
+          "description": "Nutze Seiten, um Arbeitselemente schnell festzuhalten – im Meeting oder zum Start in den Tag."
+        }
+      },
+      "create_first_project": "Erstes Projekt erstellen"
+    }
   }
 }

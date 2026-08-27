@@ -373,6 +373,16 @@
           "message": "Something went wrong."
         }
       }
+    },
+    "toasts": {
+      "update": {
+        "success": {
+          "message": "Workspace updated successfully"
+        }
+      },
+      "logo_removed": {
+        "message": "Workspace picture removed successfully."
+      }
     }
   }
 }

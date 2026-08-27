@@ -37,11 +37,38 @@
         "states": {
           "sending": "Gönderiliyor…"
         }
+      },
+      "toasts": {
+        "picture_deleted": "Profil resmi başarıyla silindi.",
+        "picture_delete_error": "Profil resminiz silinirken bir hata oluştu. Lütfen tekrar deneyin.",
+        "deactivated": "Hesap başarıyla devre dışı bırakıldı."
+      },
+      "general_form": {
+        "first_name_placeholder": "Adınızı girin",
+        "last_name_placeholder": "Soyadınızı girin",
+        "display_name_placeholder": "Görünen adınızı girin"
       }
     },
     "preferences": {
       "heading": "Tercihler",
-      "description": "Uygulama deneyiminizi çalışma şeklinize göre özelleştirin"
+      "description": "Uygulama deneyiminizi çalışma şeklinize göre özelleştirin",
+      "toasts": {
+        "timezone": {
+          "success": "Saat dilimi başarıyla güncellendi",
+          "error": "Saat dilimi güncellenemedi"
+        },
+        "language": {
+          "success": "Dil başarıyla güncellendi",
+          "error": "Dil güncellenemedi"
+        },
+        "start_of_week": {
+          "success": "Haftanın ilk günü başarıyla güncellendi"
+        }
+      },
+      "start_of_week": {
+        "title": "Haftanın ilk günü",
+        "description": "Bu, uygulamanızdaki tüm takvimlerin görünümünü değiştirir."
+      }
     },
     "notifications": {
       "heading": "E-posta bildirimleri",

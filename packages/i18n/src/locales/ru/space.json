@@ -1,0 +1,67 @@
+{
+  "space": {
+    "auth": {
+      "errors": {
+        "default": {
+          "title": "Ошибка",
+          "message": "Что-то пошло не так. Пожалуйста, попробуйте снова."
+        },
+        "template": {
+          "try_again": "{reason}. Пожалуйста, попробуйте снова.",
+          "contact_admin": "{reason}. Пожалуйста, свяжитесь с администратором."
+        },
+        "reason": {
+          "instance_not_configured": "Экземпляр не настроен",
+          "signup_disabled": "Регистрация отключена",
+          "invalid_password": "Неверный пароль",
+          "smtp_not_configured": "SMTP не настроен",
+          "invalid_email": "Неверный email",
+          "email_required": "Требуется email",
+          "email_and_password_required": "Требуются email и пароль",
+          "email_and_code_required": "Требуются email и код",
+          "authentication_failed": "Ошибка аутентификации",
+          "invalid_magic_code": "Неверный магический код",
+          "expired_magic_code": "Магический код истёк",
+          "oauth_not_configured": "OAuth не настроен",
+          "google_not_configured": "Google не настроен",
+          "github_not_configured": "GitHub не настроен",
+          "gitlab_not_configured": "GitLab не настроен",
+          "google_oauth_provider_error": "Ошибка провайдера OAuth Google",
+          "github_oauth_provider_error": "Ошибка провайдера OAuth GitHub",
+          "gitlab_oauth_provider_error": "Ошибка провайдера OAuth GitLab",
+          "invalid_password_token": "Неверный токен пароля",
+          "expired_password_token": "Токен пароля истёк",
+          "password_required": "Требуется пароль",
+          "incorrect_old_password": "Неверный старый пароль",
+          "invalid_new_password": "Неверный новый пароль",
+          "password_already_set": "Пароль уже установлен",
+          "admin_already_exist": "Администратор уже существует",
+          "admin_email_password_first_name_required": "Требуются email, пароль и имя",
+          "invalid_admin_email": "Неверный email администратора",
+          "invalid_admin_password": "Неверный пароль администратора"
+        },
+        "title": {
+          "user_already_exist": "Пользователь уже существует",
+          "user_does_not_exist": "Пользователь не существует",
+          "user_account_deactivated": "Аккаунт пользователя деактивирован",
+          "bot_user_login_forbidden": "Вход запрещён",
+          "admin_user_already_exist": "Пользователь-администратор уже существует",
+          "admin_user_does_not_exist": "Пользователь-администратор не существует"
+        },
+        "message": {
+          "bot_user_login_forbidden": "Этот аккаунт нельзя использовать для входа. Пожалуйста, используйте личный аккаунт.",
+          "user_account_deactivated": "Аккаунт пользователя деактивирован. Пожалуйста, свяжитесь с {contact}.",
+          "default_contact": "администратором",
+          "user_already_exist": "Ваш аккаунт уже зарегистрирован.",
+          "user_does_not_exist": "Аккаунт не найден.",
+          "admin_user_already_exist": "Пользователь-администратор уже существует.",
+          "admin_user_does_not_exist": "Пользователь-администратор не существует.",
+          "link": {
+            "sign_in_now": "Войти сейчас",
+            "create_one": "Создать аккаунт, чтобы начать"
+          }
+        }
+      }
+    }
+  }
+}

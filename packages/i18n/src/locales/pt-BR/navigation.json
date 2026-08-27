@@ -30,5 +30,39 @@
     "upgrade_plan": "Atualizar plano",
     "plane_pro": "Plane Pro",
     "business": "Business"
+  },
+  "navigation_tabs": {
+    "toasts": {
+      "default_tab": {
+        "success": {
+          "message": "Aba padrão atualizada com sucesso."
+        },
+        "error": {
+          "message": "Falha ao atualizar a aba padrão. Tente novamente mais tarde."
+        }
+      },
+      "hide_tab": {
+        "error": {
+          "message": "Falha ao ocultar a aba. Tente novamente mais tarde."
+        }
+      }
+    },
+    "actions": {
+      "show": "Mostrar",
+      "hide_in_more_menu": "Ocultar no menu Mais",
+      "set_as_default": "Definir como padrão",
+      "clear_default": "Remover padrão"
+    }
+  },
+  "top_nav": {
+    "power_k_placeholder": "Pesquisar comandos..."
+  },
+  "app_rail": {
+    "display_mode": {
+      "icon_only": "Somente ícone",
+      "icon_with_name": "Ícone com nome"
+    },
+    "dock": "Fixar a barra de apps",
+    "undock": "Desafixar a barra de apps"
   }
 }

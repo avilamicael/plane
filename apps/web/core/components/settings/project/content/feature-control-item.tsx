@@ -9,6 +9,7 @@ import { observer } from "mobx-react";
 import { setPromiseToast } from "@plane/propel/toast";
 import type { IProject } from "@plane/types";
 import { ToggleSwitch } from "@plane/ui";
+import { useTranslation } from "@plane/i18n";
 // components
 import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-item";
 // hooks
@@ -25,6 +26,8 @@ type Props = {
 };
 
 export const ProjectSettingsFeatureControlItem = observer(function ProjectSettingsFeatureControlItem(props: Props) {
+  const { t } = useTranslation();
+
   const { description, disabled, featureProperty, projectId, title, value, workspaceSlug } = props;
   // store hooks
   const { getProjectById, updateProject } = useProject();
@@ -43,11 +46,11 @@ export const ProjectSettingsFeatureControlItem = observer(function ProjectSettin
     setPromiseToast(updateProjectPromise, {
       loading: "Updating project feature...",
       success: {
-        title: "Success!",
+        title: t("common.toast.success"),
         message: () => "Project feature updated successfully.",
       },
       error: {
-        title: "Error!",
+        title: t("common.toast.error"),
         message: () => "Something went wrong while updating project feature. Please try again.",
       },
     });

@@ -2,6 +2,64 @@
   "module": {
     "label": "{count, plural, one {Modul} few {Moduly} other {Modulů}}",
     "no_module": "Žádný modul",
-    "select": "Přidat moduly"
+    "select": "Přidat moduly",
+    "toasts": {
+      "create": {
+        "success": {
+          "message": "Modul byl úspěšně vytvořen."
+        }
+      },
+      "update": {
+        "success": {
+          "message": "Modul byl úspěšně aktualizován."
+        },
+        "error": {
+          "message": "Modul se nepodařilo aktualizovat. Zkuste to prosím znovu."
+        }
+      },
+      "archive": {
+        "success": {
+          "message": "Vaše archivy najdete v archivech projektu."
+        },
+        "error": {
+          "message": "Modul se nepodařilo archivovat. Zkuste to prosím znovu."
+        }
+      },
+      "restore": {
+        "success": {
+          "message": "Váš modul najdete v modulech projektu."
+        },
+        "error": {
+          "message": "Modul se nepodařilo obnovit. Zkuste to prosím znovu."
+        }
+      },
+      "link": {
+        "create": {
+          "success": {
+            "message": "Odkaz na modul byl úspěšně vytvořen."
+          }
+        },
+        "update": {
+          "success": {
+            "message": "Odkaz na modul byl úspěšně aktualizován."
+          }
+        },
+        "delete": {
+          "success": {
+            "message": "Odkaz na modul byl úspěšně smazán."
+          }
+        }
+      },
+      "add_work_items": {
+        "success": {
+          "message": "Pracovní položky byly úspěšně přidány do modulu."
+        },
+        "error": {
+          "message": "Vybrané pracovní položky se nepodařilo přidat do modulu. Zkuste to prosím znovu."
+        }
+      }
+    },
+    "no_lead": "Bez vedoucího",
+    "work_items_progress": "{completed}/{total} {total, plural, one {pracovní položka} few {pracovní položky} many {pracovní položky} other {pracovních položek}}"
   }
 }

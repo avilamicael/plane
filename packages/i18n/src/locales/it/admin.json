@@ -1,0 +1,270 @@
+{
+  "admin": {
+    "common": {
+      "email": "E-mail",
+      "password": "Password",
+      "save_changes": "Salva modifiche",
+      "saving": "Salvataggio",
+      "go_back": "Indietro",
+      "success": "Operazione riuscita",
+      "error": "Errore",
+      "done": "Fatto!",
+      "show_password": "Mostra password",
+      "hide_password": "Nascondi password",
+      "settings_updated_successfully": "Impostazioni aggiornate correttamente",
+      "saving_configuration": "Salvataggio della configurazione",
+      "configuration_saved_successfully": "Configurazione salvata correttamente",
+      "failed_to_save_configuration": "Impossibile salvare la configurazione",
+      "learn_more": "Scopri di più",
+      "here": "qui."
+    },
+    "sidebar": {
+      "instance_admin": "Amministratore dell'istanza",
+      "sign_out": "Esci",
+      "switch_to_light_mode": "Passa alla modalità chiara",
+      "switch_to_dark_mode": "Passa alla modalità scura",
+      "general": {
+        "title": "Generale",
+        "description": "Identifica le tue istanze e consulta i dati principali."
+      },
+      "email": {
+        "title": "E-mail",
+        "description": "Configura i controlli SMTP."
+      },
+      "workspace": {
+        "title": "Spazi di lavoro",
+        "description": "Gestisci tutti gli spazi di lavoro di questa istanza."
+      },
+      "authentication": {
+        "title": "Autenticazione",
+        "description": "Configura le modalità di autenticazione."
+      },
+      "ai": {
+        "title": "Intelligenza artificiale",
+        "description": "Configura le tue credenziali OpenAI."
+      },
+      "image": {
+        "title": "Immagini in Plane",
+        "description": "Consenti librerie di immagini di terze parti."
+      }
+    },
+    "sign_in": {
+      "heading": "Gestisci la tua istanza di Plane",
+      "sub_heading": "Configura le impostazioni valide per l'intera istanza e mantienila sicura",
+      "email_placeholder": "nome@azienda.com",
+      "password_placeholder": "Inserisci la tua password",
+      "submit": "Accedi"
+    },
+    "setup": {
+      "heading": "Configura la tua istanza di Plane",
+      "sub_heading": "Al termine della configurazione potrai gestire questa istanza di Plane.",
+      "first_name": "Nome",
+      "last_name": "Cognome",
+      "company_name": "Nome dell'azienda",
+      "company_name_placeholder": "Nome dell'azienda",
+      "set_password": "Imposta una password",
+      "new_password_placeholder": "Nuova password",
+      "confirm_password": "Conferma la password",
+      "confirm_password_placeholder": "Conferma la password",
+      "passwords_dont_match": "Le password non coincidono",
+      "telemetry_consent": "Consenti a Plane di raccogliere eventi di utilizzo in forma anonima.",
+      "see_more": "Scopri di più",
+      "submit": "Continua"
+    },
+    "settings": {
+      "general": {
+        "title": "Impostazioni generali",
+        "description": "Modifica il nome della tua istanza e gli indirizzi e-mail degli amministratori. Attiva o disattiva la telemetria nella tua istanza.",
+        "instance_details": "Dettagli dell'istanza",
+        "name_of_instance": "Nome dell'istanza",
+        "instance_name_placeholder": "Nome dell'istanza",
+        "admin_email_placeholder": "E-mail dell'amministratore",
+        "instance_id": "ID dell'istanza",
+        "telemetry": "Telemetria",
+        "telemetry_toggle_title": "Consenti a Plane di raccogliere dati di utilizzo anonimi",
+        "telemetry_toggle_description": "Non viene raccolto alcun dato personale. Questi dati anonimizzati servono a capire come usi Plane e a sviluppare nuove funzionalità in linea con",
+        "telemetry_policy": "la nostra Informativa sulla telemetria."
+      },
+      "authentication": {
+        "title": "Gestisci le modalità di autenticazione della tua istanza",
+        "description": "Configura le modalità di autenticazione per il tuo team e limita le registrazioni ai soli inviti.",
+        "allow_signup_title": "Consenti a chiunque di registrarsi anche senza invito",
+        "allow_signup_description": "Disattivando questa opzione, potranno registrarsi solo gli utenti invitati.",
+        "available_modes": "Modalità di autenticazione disponibili",
+        "cannot_disable_title": "Impossibile disattivare l'autenticazione",
+        "cannot_disable_message": "Almeno un metodo di autenticazione deve restare attivo. Attiva un altro metodo prima di disattivare questo.",
+        "modes": {
+          "unique_codes": {
+            "name": "Codici univoci",
+            "description": "Accedi o registrati su Plane con i codici inviati via e-mail. Per usare questo metodo devi aver configurato l'SMTP."
+          },
+          "passwords": {
+            "name": "Password",
+            "description": "Consenti ai membri di creare account con password e di accedere con il proprio indirizzo e-mail."
+          },
+          "google": {
+            "description": "Consenti ai membri di accedere o registrarsi su Plane con il proprio account Google."
+          },
+          "github": {
+            "description": "Consenti ai membri di accedere o registrarsi su Plane con il proprio account GitHub."
+          },
+          "gitlab": {
+            "description": "Consenti ai membri di accedere o registrarsi su Plane con il proprio account GitLab."
+          },
+          "gitea": {
+            "description": "Consenti ai membri di accedere o registrarsi su Plane con il proprio account Gitea."
+          }
+        }
+      },
+      "email": {
+        "title": "E-mail sicure dalla tua istanza",
+        "description": "Plane può inviare e-mail utili a te e ai tuoi utenti dalla tua istanza, senza passare da Internet.",
+        "description_secondary": "Configura qui sotto e testa le impostazioni prima di salvarle.",
+        "description_warning": "Configurazioni errate possono causare mancate consegne ed errori.",
+        "disabled_title": "Funzione e-mail disattivata",
+        "disabled_message": "La funzione e-mail è stata disattivata",
+        "disable_error_title": "Errore nella disattivazione dell'e-mail",
+        "disable_error_message": "Impossibile disattivare la funzione e-mail. Riprova.",
+        "host": "Host",
+        "port": "Porta",
+        "sender_email": "Indirizzo e-mail del mittente",
+        "sender_email_description": "Questo è l'indirizzo e-mail che i tuoi utenti vedranno quando riceveranno messaggi da questa istanza. Dovrai verificarlo.",
+        "username": "Nome utente",
+        "password_placeholder": "Password",
+        "security": "Sicurezza e-mail",
+        "security_none": "Nessuna sicurezza e-mail",
+        "authentication": "Autenticazione",
+        "authentication_description": "È facoltativo, ma consigliamo di impostare un nome utente e una password per il tuo server SMTP.",
+        "send_test_email": "Invia e-mail di prova",
+        "updated_successfully": "Impostazioni e-mail aggiornate correttamente"
+      },
+      "workspace": {
+        "title": "Spazi di lavoro in questa istanza",
+        "description": "Consulta tutti gli spazi di lavoro e controlla chi può crearli.",
+        "prevent_creation_title": "Impedisci ad altri di creare spazi di lavoro.",
+        "prevent_creation_description": "Attivando questa opzione, solo tu potrai creare spazi di lavoro. Dovrai invitare gli utenti nei nuovi spazi.",
+        "all_workspaces": "Tutti gli spazi di lavoro di questa istanza",
+        "list_description": "Non puoi ancora eliminare gli spazi di lavoro e puoi accedere a uno spazio solo se ne sei amministratore o membro.",
+        "create": "Crea spazio di lavoro",
+        "creating": "Creazione dello spazio di lavoro",
+        "load_more": "Carica altri",
+        "name_label": "Dai un nome al tuo spazio di lavoro",
+        "name_placeholder": "Qualcosa di familiare e riconoscibile è sempre la scelta migliore.",
+        "url_label": "Imposta l'URL del tuo spazio di lavoro",
+        "url_placeholder": "nome-spazio-di-lavoro",
+        "url_taken": "Questo URL è già in uso. Provane un altro.",
+        "url_invalid": "Gli URL possono contenere solo ( - ), ( _ ) e caratteri alfanumerici.",
+        "size_label": "Quante persone useranno questo spazio di lavoro?",
+        "size_placeholder": "Seleziona un intervallo",
+        "required_field": "Questo campo è obbligatorio.",
+        "created_title": "Fatto!",
+        "created_message": "Spazio di lavoro creato correttamente.",
+        "create_error_title": "Errore!",
+        "create_error_message": "Impossibile creare lo spazio di lavoro. Riprova.",
+        "create_generic_error": "Si è verificato un errore durante la creazione dello spazio di lavoro. Riprova."
+      },
+      "ai": {
+        "title": "Funzionalità di IA per tutti i tuoi spazi di lavoro",
+        "description": "Configura le credenziali della tua API di IA per attivare le funzionalità di Plane AI in tutti i tuoi spazi di lavoro."
+      },
+      "image": {
+        "title": "Librerie di immagini di terze parti",
+        "description": "Permetti ai tuoi utenti di cercare e scegliere immagini da librerie di terze parti"
+      }
+    },
+    "oauth": {
+      "client_id": "ID client",
+      "client_secret": "Secret del client",
+      "application_id": "ID applicazione",
+      "secret": "Secret",
+      "organization_id": "ID organizzazione",
+      "organization_id_description": "L'ID GitHub dell'organizzazione.",
+      "host": "Host",
+      "origin_url": "URL di origine",
+      "callback_uri": "URI di callback",
+      "callback_url": "URL di callback",
+      "web": "Web",
+      "provider_details_for_plane": "Dati forniti da {provider} per Plane",
+      "plane_details_for_provider": "Dati forniti da Plane per {provider}",
+      "configured_message": "L'autenticazione {provider} è configurata. Ora dovresti provarla.",
+      "configuration_saved": "Configurazione salvata",
+      "auth_now_active": "L'autenticazione {provider} è ora attiva.",
+      "auth_now_disabled": "L'autenticazione {provider} è ora disattivata.",
+      "get_this_from_settings": "Lo trovi nelle tue",
+      "secret_also_in_settings": "Anche il secret del client si trova nelle tue",
+      "app_settings_link": "impostazioni dell'applicazione OAuth di {provider}.",
+      "app_settings_link_no_period": "impostazioni dell'applicazione OAuth di {provider}",
+      "autogenerated_paste_origin": "Lo generiamo automaticamente. Incollalo nel campo",
+      "autogenerated_paste_callback": "Lo generiamo automaticamente. Incollalo nel tuo campo",
+      "field_word": "—",
+      "authorized_origin_url": "URL di origine autorizzato",
+      "authorized_callback_uri": "URI di callback autorizzato",
+      "authorized_js_origins": "Origini JavaScript autorizzate",
+      "authorized_redirect_uri": "URI di reindirizzamento autorizzato",
+      "redirect_uri": "URI di reindirizzamento",
+      "for_this_oauth_client": "per questo client OAuth",
+      "google_client_id_description": "Il tuo ID client si trova nella tua Google API Console.",
+      "google_client_secret_description": "Anche il secret del client dovrebbe trovarsi nella tua Google API Console.",
+      "gitlab_host_description_prefix": "È https://gitlab.com oppure il",
+      "gitlab_host_description_suffix": "su cui ospiti GitLab.",
+      "gitlab_get_this_from": "Lo trovi nelle tue",
+      "gitlab_secret_also_in": "Anche il secret del client si trova nelle tue",
+      "gitlab_paste_redirect_prefix": "Lo generiamo automaticamente. Incollalo nel campo",
+      "gitlab_paste_redirect_suffix": "della tua",
+      "gitlab_app_link": "applicazione OAuth di GitLab",
+      "gitea_host_label": "Host Gitea",
+      "gitea_host_description": "Usa l'URL della tua istanza Gitea. Per l'istanza ufficiale di Gitea, usa «https://gitea.com»."
+    },
+    "errors": {
+      "admin_already_exist": {
+        "title": "L'amministratore esiste già",
+        "message": "L'amministratore esiste già. Riprova."
+      },
+      "required_admin_email_password_first_name": {
+        "title": "E-mail, password e nome obbligatori",
+        "message": "E-mail, password e nome obbligatori. Riprova."
+      },
+      "invalid_admin_email": {
+        "title": "E-mail dell'amministratore non valida",
+        "message": "E-mail dell'amministratore non valida. Riprova."
+      },
+      "invalid_admin_password": {
+        "title": "Password dell'amministratore non valida",
+        "message": "Password dell'amministratore non valida. Riprova."
+      },
+      "required_admin_email_password": {
+        "title": "E-mail e password obbligatorie",
+        "message": "E-mail e password obbligatorie. Riprova."
+      },
+      "admin_authentication_failed": {
+        "title": "Autenticazione non riuscita",
+        "message": "Autenticazione non riuscita. Riprova."
+      },
+      "admin_user_already_exist": {
+        "title": "L'utente amministratore esiste già",
+        "message": "L'utente amministratore esiste già.",
+        "sign_in_now": "Accedi",
+        "now": "ora."
+      },
+      "admin_user_does_not_exist": {
+        "title": "L'utente amministratore non esiste",
+        "message": "L'utente amministratore non esiste.",
+        "sign_in_now": "Accedi",
+        "now": "ora."
+      },
+      "admin_user_deactivated": {
+        "title": "Account utente disattivato",
+        "message": "Account utente disattivato. Contatta {contact}."
+      },
+      "administrator": "l'amministratore",
+      "generic_title": "Errore",
+      "generic_message": "Qualcosa è andato storto. Riprova."
+    },
+    "not_found": {
+      "title": "Ops! Qualcosa è andato storto.",
+      "description": "Spiacenti, la pagina che cerchi non è stata trovata. Potrebbe essere stata rimossa, rinominata o essere temporaneamente non disponibile.",
+      "action": "Vai alle impostazioni generali",
+      "image_alt": "404 - Pagina non trovata"
+    }
+  }
+}

@@ -19,6 +19,9 @@ export type { TNamespace } from "./constants/namespaces";
 // Utilities
 export { setLanguage } from "./core/set-language";
 export { initPromise } from "./core";
+// Direct instance access for translating outside the React tree (plain helpers,
+// error maps). Inside components use the useTranslation hook instead.
+export { i18nInstance } from "./core";
 
 // Constants
 export { FALLBACK_LANGUAGE, SUPPORTED_LANGUAGES, LANGUAGE_STORAGE_KEY } from "./constants/language";
