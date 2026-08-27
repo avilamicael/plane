@@ -1,0 +1,23 @@
+- generic [ref=f4e1]:
+  - generic:
+    - region "Notifications"
+  - main [ref=f4e6]:
+    - generic [ref=f4e10]:
+      - generic [ref=f4e11]:
+        - generic [ref=f4e12] [cursor=pointer]
+        - button "a Micael Avila" [ref=f4e25] [cursor=pointer]:
+          - generic [ref=f4e26]: a
+          - generic [ref=f4e27]: Micael Avila
+      - generic [ref=f4e31]:
+        - generic [ref=f4e32]:
+          - heading "Create your profile." [level=1] [ref=f4e33]
+          - paragraph [ref=f4e34]: This is how you will appear in Plane.
+        - generic [ref=f4e35]:
+          - button "M" [ref=f4e36] [cursor=pointer]
+          - button "Upload image" [ref=f4e37] [cursor=pointer]
+        - generic [ref=f4e44]:
+          - generic [ref=f4e45]: Name*
+          - textbox "Name*" [active] [ref=f4e46]:
+            - /placeholder: Enter your full name
+            - text: Micael
+        - button "Continue" [ref=f4e47] [cursor=pointer]

@@ -41,7 +41,9 @@
       "pending_points": "Points en attente - {count}",
       "work_items_count": "{count, plural, one {# élément de travail} many {# éléments de travail} other {# éléments de travail}}",
       "work_items_closed": "{closed}/{total} {closed, plural, one {élément de travail fermé} many {éléments de travail fermés} other {éléments de travail fermés}}",
-      "cancelled_work_items_excluded": "{count, plural, one {# élément de travail annulé est exclu de ce rapport.} many {# éléments de travail annulés sont exclus de ce rapport.} other {# éléments de travail annulés sont exclus de ce rapport.}}"
+      "cancelled_work_items_excluded": "{count, plural, one {# élément de travail annulé est exclu de ce rapport.} many {# éléments de travail annulés sont exclus de ce rapport.} other {# éléments de travail annulés sont exclus de ce rapport.}}",
+      "current_plot": "{plot} actuels",
+      "ideal_plot": "{plot} idéaux"
     },
     "upcoming_cycle": {
       "label": "Cycle à venir"

@@ -41,7 +41,9 @@
       "pending_points": "待處理點數 - {count}",
       "work_items_count": "{count, plural, one {# 個工作事項} other {# 個工作事項}}",
       "work_items_closed": "{closed}/{total} 個工作事項已關閉",
-      "cancelled_work_items_excluded": "{count, plural, one {# 個已取消的工作事項已從此報告中排除。} other {# 個已取消的工作事項已從此報告中排除。}}"
+      "cancelled_work_items_excluded": "{count, plural, one {# 個已取消的工作事項已從此報告中排除。} other {# 個已取消的工作事項已從此報告中排除。}}",
+      "current_plot": "目前{plot}",
+      "ideal_plot": "理想{plot}"
     },
     "upcoming_cycle": {
       "label": "即將到來的週期"

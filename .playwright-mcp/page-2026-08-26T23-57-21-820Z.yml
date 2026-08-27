@@ -1,0 +1,12 @@
+- generic [active] [ref=f5e1]:
+  - generic:
+    - region "Notifications"
+  - main [ref=f5e3]:
+    - generic [ref=f5e6]:
+      - img "404- Page not found" [ref=f5e8]
+      - generic [ref=f5e9]:
+        - heading "Oops! Something went wrong." [level=3] [ref=f5e10]
+        - paragraph [ref=f5e11]: Sorry, the page you are looking for cannot be found. It may have been removed, had its name changed, or is temporarily unavailable.
+      - link [ref=f5e12] [cursor=pointer]:
+        - /url: /
+        - button "Go to Home" [ref=f5e14]

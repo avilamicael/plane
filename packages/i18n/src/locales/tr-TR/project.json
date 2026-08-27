@@ -41,7 +41,9 @@
       "pending_points": "Bekleyen puanlar - {count}",
       "work_items_count": "{count, plural, one {# iş öğesi} other {# iş öğesi}}",
       "work_items_closed": "{closed}/{total} iş öğesi kapatıldı",
-      "cancelled_work_items_excluded": "{count, plural, one {# iptal edilen iş öğesi bu rapordan hariç tutulmuştur.} other {# iptal edilen iş öğesi bu rapordan hariç tutulmuştur.}}"
+      "cancelled_work_items_excluded": "{count, plural, one {# iptal edilen iş öğesi bu rapordan hariç tutulmuştur.} other {# iptal edilen iş öğesi bu rapordan hariç tutulmuştur.}}",
+      "current_plot": "Mevcut {plot}",
+      "ideal_plot": "İdeal {plot}"
     },
     "upcoming_cycle": {
       "label": "Yaklaşan döngü"

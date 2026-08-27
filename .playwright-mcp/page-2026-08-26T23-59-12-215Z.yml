@@ -1,0 +1,616 @@
+- generic [active] [ref=f9e1]:
+  - generic:
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar Apenas itens de trabalho concluídos ou cancelados podem ser arquivados" [disabled]:
+          - generic:
+            - heading "Arquivar" [level=5]
+            - paragraph: Apenas itens de trabalho concluídos ou cancelados podem ser arquivados
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar":
+          - generic:
+            - heading "Arquivar" [level=5]
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+    - generic:
+      - generic:
+        - button "Editar":
+          - generic:
+            - heading "Editar" [level=5]
+        - button "Fazer uma cópia":
+          - generic:
+            - heading "Fazer uma cópia" [level=5]
+        - button "Abrir em nova aba":
+          - generic:
+            - heading "Abrir em nova aba" [level=5]
+        - button "Copiar link":
+          - generic:
+            - heading "Copiar link" [level=5]
+        - button "Arquivar":
+          - generic:
+            - heading "Arquivar" [level=5]
+        - button "Excluir":
+          - generic:
+            - heading "Excluir" [level=5]
+  - generic:
+    - region "Notifications"
+  - main [ref=f9e3]:
+    - generic [ref=f9e4]:
+      - generic [ref=f9e5]:
+        - button "Abrir seletor de espaço de trabalho" [ref=f9e8] [cursor=pointer]:
+          - generic [ref=f9e9]:
+            - generic [ref=f9e10]: V
+            - heading "Via Exata" [level=4] [ref=f9e11]
+        - button [ref=f9e18] [cursor=pointer]:
+          - textbox "Search commands..." [ref=f9e21]
+        - generic [ref=f9e23]:
+          - link [ref=f9e24] [cursor=pointer]:
+            - /url: /via-exata/notifications/
+          - button [ref=f9e29] [cursor=pointer]:
+            - button [ref=f9e30]
+          - link "Nos dê uma estrela no GitHub" [ref=f9e35] [cursor=pointer]:
+            - /url: https://github.com/makeplane/plane
+          - button [ref=f9e39] [cursor=pointer]:
+            - button "A" [ref=f9e40]
+      - generic [ref=f9e48]:
+        - complementary "Main sidebar" [ref=f9e49]:
+          - complementary [ref=f9e50]:
+            - generic [ref=f9e51]:
+              - generic [ref=f9e52]:
+                - generic [ref=f9e53]:
+                  - generic [ref=f9e54]: Projects
+                  - generic [ref=f9e55]:
+                    - button [ref=f9e56] [cursor=pointer]
+                    - button [ref=f9e59] [cursor=pointer]
+                - button "Novo item" [ref=f9e63] [cursor=pointer]
+              - generic [ref=f9e67]:
+                - link [ref=f9e68] [cursor=pointer]:
+                  - /url: /via-exata/
+                  - paragraph [ref=f9e73]: Página inicial
+                - link [ref=f9e74] [cursor=pointer]:
+                  - /url: /via-exata/drafts/
+                  - paragraph [ref=f9e79]: Rascunhos
+                - link [ref=f9e80] [cursor=pointer]:
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - paragraph [ref=f9e86]: Seu trabalho
+                - link [ref=f9e87] [cursor=pointer]:
+                  - /url: /via-exata/stickies/
+                  - paragraph [ref=f9e92]: Notas adesivas
+              - generic [ref=f9e93]:
+                - generic [ref=f9e94]:
+                  - button "Fechar menu do espaço de trabalho" [expanded] [ref=f9e95] [cursor=pointer]:
+                    - generic [ref=f9e96]: Espaço de trabalho
+                  - generic:
+                    - button "Fechar menu do espaço de trabalho" [expanded]
+                - generic [ref=f9e98]:
+                  - link [ref=f9e99] [cursor=pointer]:
+                    - /url: /via-exata/projects/
+                    - paragraph [ref=f9e104]: Projetos
+                  - button "Abrir barra lateral estendida" [ref=f9e106] [cursor=pointer]:
+                    - generic [ref=f9e111]: Mais
+              - generic [ref=f9e113]:
+                - generic [ref=f9e114]:
+                  - button "Fechar menu de projetos" [expanded] [ref=f9e115] [cursor=pointer]:
+                    - generic [ref=f9e116]: Projetos
+                  - button "Fechar menu de projetos" [ref=f9e118] [cursor=pointer]
+                - generic [ref=f9e125]:
+                  - generic [ref=f9e127]:
+                    - link [ref=f9e128] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                      - button "Fechar menu do projeto" [ref=f9e129]:
+                        - generic [ref=f9e130]: 👇
+                        - paragraph [ref=f9e132]: Via Exata
+                    - generic [ref=f9e133]:
+                      - button "Alternar menu de ações rápidas":
+                        - button
+                  - generic [ref=f9e135]:
+                    - link "Itens" [ref=f9e137] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues/
+                    - link "Ciclos" [ref=f9e144] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/
+                    - link "Módulos" [ref=f9e153] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/modules/
+                    - link "Visualizações" [ref=f9e164] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/views/
+                    - link "Páginas" [ref=f9e172] [cursor=pointer]:
+                      - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/pages/
+              - button "Abrir modal de planos pagos" [ref=f9e181] [cursor=pointer]: Community
+            - separator "Resize sidebar" [ref=f9e182]
+        - complementary "Sidebar peek view":
+          - complementary:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Projects
+                  - generic:
+                    - button
+                    - button
+                - generic:
+                  - button "Novo item"
+              - generic:
+                - link "Página inicial":
+                  - /url: /via-exata/
+                  - generic:
+                    - generic:
+                      - paragraph: Página inicial
+                - link "Rascunhos":
+                  - /url: /via-exata/drafts/
+                  - generic:
+                    - generic:
+                      - paragraph: Rascunhos
+                - link "Seu trabalho":
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - generic:
+                    - generic:
+                      - paragraph: Seu trabalho
+                - link "Notas adesivas":
+                  - /url: /via-exata/stickies/
+                  - generic:
+                    - generic:
+                      - paragraph: Notas adesivas
+              - generic:
+                - generic:
+                  - button "Fechar menu do espaço de trabalho" [expanded]:
+                    - generic: Espaço de trabalho
+                  - generic:
+                    - button "Fechar menu do espaço de trabalho" [expanded]
+                - generic:
+                  - generic:
+                    - link "Projetos":
+                      - /url: /via-exata/projects/
+                      - generic:
+                        - generic:
+                          - paragraph: Projetos
+                    - generic:
+                      - button "Abrir barra lateral estendida":
+                        - generic: Mais
+              - generic:
+                - generic:
+                  - generic:
+                    - button "Fechar menu de projetos" [expanded]:
+                      - generic: Projetos
+                    - generic:
+                      - button "Fechar menu de projetos"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - link "Fechar menu do projeto":
+                              - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                              - button "Fechar menu do projeto":
+                                - generic: 👇
+                                - paragraph: Via Exata
+                            - generic:
+                              - button "Alternar menu de ações rápidas":
+                                - button
+                          - generic:
+                            - generic:
+                              - link "Itens":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues/
+                              - link "Ciclos":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/cycles/
+                              - link "Módulos":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/modules/
+                              - link "Visualizações":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/views/
+                              - link "Páginas":
+                                - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/pages/
+              - generic:
+                - button "Abrir modal de planos pagos": Community
+            - separator "Resize sidebar"
+        - main [ref=f9e183]:
+          - generic [ref=f9e187]:
+            - generic [ref=f9e189]:
+              - generic [ref=f9e190]:
+                - button [ref=f9e193] [cursor=pointer]:
+                  - button "..." [ref=f9e194]
+                - link "Itens de trabalho" [ref=f9e203] [cursor=pointer]:
+                  - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues/
+              - generic [ref=f9e209]: "7"
+            - generic [ref=f9e210]:
+              - generic [ref=f9e211]:
+                - button [ref=f9e213] [cursor=pointer]:
+                  - button [ref=f9e214]
+                - button [ref=f9e222] [cursor=pointer]
+                - button [ref=f9e228] [cursor=pointer]
+                - button [ref=f9e230] [cursor=pointer]
+              - button "Adicionar item de trabalho" [ref=f9e233] [cursor=pointer]
+          - generic [ref=f9e242]:
+            - generic [ref=f9e243]:
+              - generic [ref=f9e245]:
+                - generic [ref=f9e278] [cursor=pointer]:
+                  - generic [ref=f9e279]: Backlog
+                  - generic [ref=f9e280]: "3"
+                - generic [ref=f9e281] [cursor=pointer]
+              - generic [ref=f9e284]:
+                - generic [ref=f9e285]:
+                  - link [ref=f9e289] [cursor=pointer]:
+                    - /url: /via-exata/browse/VIAEX-3/
+                    - generic [ref=f9e290]:
+                      - generic [ref=f9e292]:
+                        - button "VIAEX-3" [disabled] [ref=f9e296]
+                        - paragraph [ref=f9e298]: 2. Invite your team 🤜🤛
+                      - generic [ref=f9e299]:
+                        - generic [ref=f9e300]:
+                          - button [ref=f9e303]:
+                            - button "Backlog" [ref=f9e304]
+                          - button [ref=f9e338]
+                          - button [ref=f9e344]:
+                            - button [ref=f9e345]
+                        - button [ref=f9e349]
+                  - link [ref=f9e357] [cursor=pointer]:
+                    - /url: /via-exata/browse/VIAEX-6/
+                    - generic [ref=f9e358]:
+                      - generic [ref=f9e360]:
+                        - button "VIAEX-6" [disabled] [ref=f9e364]
+                        - paragraph [ref=f9e366]: 5. Use Cycles to time box tasks 🗓️
+                      - generic [ref=f9e367]:
+                        - generic [ref=f9e368]:
+                          - button [ref=f9e371]:
+                            - button "Backlog" [ref=f9e372]
+                          - button [ref=f9e406]
+                          - button [ref=f9e412]:
+                            - button [ref=f9e413]
+                        - button [ref=f9e417]
+                  - link [ref=f9e425] [cursor=pointer]:
+                    - /url: /via-exata/browse/VIAEX-7/
+                    - generic [ref=f9e426]:
+                      - generic [ref=f9e428]:
+                        - button "VIAEX-7" [disabled] [ref=f9e432]
+                        - paragraph [ref=f9e434]: 6. Customize your settings ⚙️
+                      - generic [ref=f9e435]:
+                        - generic [ref=f9e436]:
+                          - button [ref=f9e439]:
+                            - button "Backlog" [ref=f9e440]
+                          - button [ref=f9e474]
+                          - button [ref=f9e482]:
+                            - button [ref=f9e483]
+                        - button [ref=f9e487]
+                - generic [ref=f9e493]: Novo Item de trabalho
+            - generic [ref=f9e499]:
+              - generic [ref=f9e501]:
+                - generic [ref=f9e506] [cursor=pointer]:
+                  - generic [ref=f9e507]: Todo
+                  - generic [ref=f9e508]: "1"
+                - generic [ref=f9e509] [cursor=pointer]
+              - generic [ref=f9e512]:
+                - link [ref=f9e517] [cursor=pointer]:
+                  - /url: /via-exata/browse/VIAEX-2/
+                  - generic [ref=f9e518]:
+                    - generic [ref=f9e520]:
+                      - button "VIAEX-2" [disabled] [ref=f9e524]
+                      - paragraph [ref=f9e526]: 1. Create Projects 🎯
+                    - generic [ref=f9e527]:
+                      - generic [ref=f9e528]:
+                        - button [ref=f9e531]:
+                          - button "Todo" [ref=f9e532]
+                        - button [ref=f9e538]
+                        - button [ref=f9e544]:
+                          - button [ref=f9e545]
+                      - button [ref=f9e549]
+                - generic [ref=f9e555]: Novo Item de trabalho
+            - generic [ref=f9e561]:
+              - generic [ref=f9e563]:
+                - generic [ref=f9e569] [cursor=pointer]:
+                  - generic [ref=f9e570]: In Progress
+                  - generic [ref=f9e571]: "2"
+                - generic [ref=f9e572] [cursor=pointer]
+              - generic [ref=f9e575]:
+                - generic [ref=f9e576]:
+                  - link [ref=f9e580] [cursor=pointer]:
+                    - /url: /via-exata/browse/VIAEX-4/
+                    - generic [ref=f9e581]:
+                      - generic [ref=f9e583]:
+                        - button "VIAEX-4" [disabled] [ref=f9e587]
+                        - paragraph [ref=f9e589]: 3. Create and assign Work Items ✏️
+                      - generic [ref=f9e590]:
+                        - generic [ref=f9e591]:
+                          - button [ref=f9e594]:
+                            - button "In Progress" [ref=f9e595]
+                          - button [ref=f9e602]
+                          - button [ref=f9e608]:
+                            - button [ref=f9e609]
+                        - button [ref=f9e613]
+                  - link [ref=f9e621] [cursor=pointer]:
+                    - /url: /via-exata/browse/VIAEX-5/
+                    - generic [ref=f9e622]:
+                      - generic [ref=f9e624]:
+                        - button "VIAEX-5" [disabled] [ref=f9e628]
+                        - paragraph [ref=f9e630]: 4. Visualize your work 🔮
+                      - generic [ref=f9e631]:
+                        - generic [ref=f9e632]:
+                          - button [ref=f9e635]:
+                            - button "In Progress" [ref=f9e636]
+                          - button [ref=f9e643]
+                          - button [ref=f9e651]:
+                            - button [ref=f9e652]
+                        - button [ref=f9e656]
+                - generic [ref=f9e662]: Novo Item de trabalho
+            - generic [ref=f9e668]:
+              - generic [ref=f9e670]:
+                - generic [ref=f9e675] [cursor=pointer]:
+                  - generic [ref=f9e676]: Done
+                  - generic [ref=f9e677]: "1"
+                - generic [ref=f9e678] [cursor=pointer]
+              - generic [ref=f9e681]:
+                - link [ref=f9e686] [cursor=pointer]:
+                  - /url: /via-exata/browse/VIAEX-1/
+                  - generic [ref=f9e687]:
+                    - generic [ref=f9e689]:
+                      - button "VIAEX-1" [disabled] [ref=f9e693]
+                      - paragraph [ref=f9e695]: Welcome to Plane 👋
+                    - generic [ref=f9e696]:
+                      - generic [ref=f9e697]:
+                        - button [ref=f9e700]:
+                          - button "Done" [ref=f9e701]
+                        - button [ref=f9e707]
+                        - button [ref=f9e714]:
+                          - button [ref=f9e715]
+                      - button [ref=f9e719]
+                - generic [ref=f9e725]: Novo Item de trabalho
+            - generic [ref=f9e733]:
+              - generic [ref=f9e738] [cursor=pointer]:
+                - generic [ref=f9e739]: Cancelled
+                - generic [ref=f9e740]: "0"
+              - generic [ref=f9e741] [cursor=pointer]

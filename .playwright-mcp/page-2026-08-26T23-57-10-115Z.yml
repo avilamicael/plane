@@ -1,0 +1,209 @@
+- generic [active] [ref=f4e1]:
+  - generic:
+    - region "Notifications"
+  - main [ref=f4e6]:
+    - generic [ref=f4e116]:
+      - generic [ref=f4e117]:
+        - button "Open workspace switcher" [ref=f4e120] [cursor=pointer]:
+          - generic [ref=f4e121]:
+            - generic [ref=f4e122]: V
+            - heading "Via Exata" [level=4] [ref=f4e123]
+        - button [ref=f4e130] [cursor=pointer]:
+          - textbox "Search commands..." [ref=f4e133]
+        - generic [ref=f4e135]:
+          - link [ref=f4e136] [cursor=pointer]:
+            - /url: /via-exata/notifications/
+          - button [ref=f4e141] [cursor=pointer]:
+            - button [ref=f4e142]
+          - link "Star us on GitHub" [ref=f4e147] [cursor=pointer]:
+            - /url: https://github.com/makeplane/plane
+          - button [ref=f4e151] [cursor=pointer]:
+            - button "A" [ref=f4e152]
+      - generic [ref=f4e160]:
+        - complementary "Main sidebar" [ref=f4e161]:
+          - complementary [ref=f4e162]:
+            - generic [ref=f4e163]:
+              - generic [ref=f4e164]:
+                - generic [ref=f4e165]:
+                  - generic [ref=f4e166]: Projects
+                  - generic [ref=f4e167]:
+                    - button [ref=f4e168] [cursor=pointer]
+                    - button [ref=f4e171] [cursor=pointer]
+                - button "New work item" [ref=f4e175] [cursor=pointer]
+              - generic [ref=f4e179]:
+                - link [ref=f4e180] [cursor=pointer]:
+                  - /url: /via-exata/
+                  - paragraph [ref=f4e185]: Home
+                - link [ref=f4e186] [cursor=pointer]:
+                  - /url: /via-exata/drafts/
+                  - paragraph [ref=f4e191]: Drafts
+                - link [ref=f4e192] [cursor=pointer]:
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - paragraph [ref=f4e198]: Your work
+                - link [ref=f4e199] [cursor=pointer]:
+                  - /url: /via-exata/stickies/
+                  - paragraph [ref=f4e204]: Stickies
+              - generic [ref=f4e205]:
+                - generic [ref=f4e206]:
+                  - button "Close workspace menu" [expanded] [ref=f4e207] [cursor=pointer]:
+                    - generic [ref=f4e208]: Workspace
+                  - generic:
+                    - button "Close workspace menu" [expanded]
+                - generic [ref=f4e210]:
+                  - link [ref=f4e211] [cursor=pointer]:
+                    - /url: /via-exata/projects/
+                    - paragraph [ref=f4e216]: Projects
+                  - button "Open extended sidebar" [ref=f4e218] [cursor=pointer]:
+                    - generic [ref=f4e223]: More
+              - generic [ref=f4e225]:
+                - generic [ref=f4e226]:
+                  - button "Close projects menu" [expanded] [ref=f4e227] [cursor=pointer]:
+                    - generic [ref=f4e228]: Projects
+                  - button "Close projects menu" [ref=f4e230] [cursor=pointer]
+                - generic [ref=f4e239]:
+                  - link [ref=f4e240] [cursor=pointer]:
+                    - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                    - button "Open project menu" [ref=f4e241]:
+                      - generic [ref=f4e242]: 👇
+                      - paragraph [ref=f4e244]: Via Exata
+                  - generic [ref=f4e245]:
+                    - button "Toggle quick actions menu":
+                      - button
+              - button "Open paid plans' modal" [ref=f4e248] [cursor=pointer]: Community
+            - separator "Resize sidebar" [ref=f4e249]
+        - complementary "Sidebar peek view":
+          - complementary:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Projects
+                  - generic:
+                    - button
+                    - button
+                - generic:
+                  - button "New work item"
+              - generic:
+                - link "Home":
+                  - /url: /via-exata/
+                  - generic:
+                    - generic:
+                      - paragraph: Home
+                - link "Drafts":
+                  - /url: /via-exata/drafts/
+                  - generic:
+                    - generic:
+                      - paragraph: Drafts
+                - link "Your work":
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - generic:
+                    - generic:
+                      - paragraph: Your work
+                - link "Stickies":
+                  - /url: /via-exata/stickies/
+                  - generic:
+                    - generic:
+                      - paragraph: Stickies
+              - generic:
+                - generic:
+                  - button "Close workspace menu" [expanded]:
+                    - generic: Workspace
+                  - generic:
+                    - button "Close workspace menu" [expanded]
+                - generic:
+                  - generic:
+                    - link "Projects":
+                      - /url: /via-exata/projects/
+                      - generic:
+                        - generic:
+                          - paragraph: Projects
+                    - generic:
+                      - button "Open extended sidebar":
+                        - generic: More
+              - generic:
+                - generic:
+                  - generic:
+                    - button "Close projects menu" [expanded]:
+                      - generic: Projects
+                    - generic:
+                      - button "Close projects menu"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - link "Open project menu":
+                              - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                              - button "Open project menu":
+                                - generic: 👇
+                                - paragraph: Via Exata
+                            - generic:
+                              - button "Toggle quick actions menu":
+                                - button
+              - generic:
+                - button "Open paid plans' modal": Community
+            - separator "Resize sidebar"
+        - main [ref=f4e250]:
+          - generic [ref=f4e254]:
+            - generic [ref=f4e255]: Home
+            - button "Manage widgets" [ref=f4e265] [cursor=pointer]
+          - generic [ref=f4e272]:
+            - generic [ref=f4e285]:
+              - heading "Welcome to Plane, Micael Avila" [level=3] [ref=f4e286]
+              - paragraph [ref=f4e287]: We're glad that you decided to try out Plane. You can now manage your projects with ease. Get started by creating a project.
+              - generic [ref=f4e289]:
+                - button "Take a Product Tour" [ref=f4e290] [cursor=pointer]
+                - button "No thanks, I will explore it myself" [ref=f4e291] [cursor=pointer]
+            - generic [ref=f4e293]:
+              - generic [ref=f4e294]:
+                - heading "Good evening, Micael Avila" [level=2] [ref=f4e295]
+                - heading "🌙️ Wednesday, Aug 26 23:57" [level=5] [ref=f4e296]:
+                  - generic [ref=f4e297]: 🌙️
+                  - generic [ref=f4e298]: Wednesday, Aug 26 23:57
+              - generic [ref=f4e299]:
+                - generic [ref=f4e300]:
+                  - generic [ref=f4e301]:
+                    - generic [ref=f4e302]: Your quickstart guide
+                    - button "Not right now" [ref=f4e303] [cursor=pointer]
+                  - generic [ref=f4e307]:
+                    - generic [ref=f4e308]:
+                      - heading "Create a project" [level=3] [ref=f4e313]
+                      - paragraph [ref=f4e314]: Most things start with a project in Plane.
+                    - generic [ref=f4e318]:
+                      - heading "Invite your team" [level=3] [ref=f4e323]
+                      - paragraph [ref=f4e324]: Build, ship, and manage with coworkers.
+                      - link "Get them in" [ref=f4e325] [cursor=pointer]:
+                        - /url: /via-exata/settings/members/
+                    - generic [ref=f4e326]:
+                      - heading "Set up your workspace." [level=3] [ref=f4e332]
+                      - paragraph [ref=f4e333]: Turn features on or off or go beyond that.
+                      - link "Configure this workspace" [ref=f4e334] [cursor=pointer]:
+                        - /url: http://localhost/settings/
+                    - generic [ref=f4e335]:
+                      - link "a" [ref=f4e338] [cursor=pointer]:
+                        - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                      - heading "Make Plane yours." [level=3] [ref=f4e340]
+                      - paragraph [ref=f4e341]: Choose your picture, colors, and more.
+                      - link "Personalize now" [ref=f4e342] [cursor=pointer]:
+                        - /url: /settings/profile/general/
+                - generic [ref=f4e343]:
+                  - generic [ref=f4e345]:
+                    - generic [ref=f4e346]:
+                      - generic [ref=f4e347]: Quicklinks
+                      - button "Add quick Link" [ref=f4e348] [cursor=pointer]
+                    - paragraph [ref=f4e370]: Keep important references, resources, or docs handy for your work
+                  - generic [ref=f4e372]:
+                    - generic [ref=f4e373]:
+                      - generic [ref=f4e374]: Recents
+                      - button [ref=f4e375] [cursor=pointer]:
+                        - button "All" [ref=f4e376]
+                    - paragraph [ref=f4e399]: You don't have any recents yet.
+                  - generic [ref=f4e401]:
+                    - generic [ref=f4e402]:
+                      - generic [ref=f4e403]: Your stickies
+                      - generic [ref=f4e404]:
+                        - generic [ref=f4e405]:
+                          - button [ref=f4e406] [cursor=pointer]
+                          - generic [ref=f4e409]:
+                            - textbox "Search by title"
+                        - button "Add sticky" [ref=f4e412] [cursor=pointer]
+                    - paragraph [ref=f4e436]: Jot down an idea, capture an aha, or record a brainwave. Add a sticky to get started.

@@ -1,0 +1,12 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - region "Notifications"
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - img "Plane Logo" [ref=e16]
+      - generic [ref=e17]:
+        - heading "Welcome to Plane" [level=1] [ref=e18]
+        - paragraph [ref=e19]: Set up your instance and create your first workspace to begin managing projects and work.
+    - link [ref=e20] [cursor=pointer]:
+      - /url: /god-mode
+      - button "Get started" [ref=e21]

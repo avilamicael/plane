@@ -41,7 +41,9 @@
       "pending_points": "Điểm đang chờ xử lý - {count}",
       "work_items_count": "{count, plural, one {# mục công việc} other {# mục công việc}}",
       "work_items_closed": "{closed}/{total} mục công việc đã đóng",
-      "cancelled_work_items_excluded": "{count, plural, one {# mục công việc đã hủy bị loại khỏi báo cáo này.} other {# mục công việc đã hủy bị loại khỏi báo cáo này.}}"
+      "cancelled_work_items_excluded": "{count, plural, one {# mục công việc đã hủy bị loại khỏi báo cáo này.} other {# mục công việc đã hủy bị loại khỏi báo cáo này.}}",
+      "current_plot": "{plot} hiện tại",
+      "ideal_plot": "{plot} lý tưởng"
     },
     "upcoming_cycle": {
       "label": "Chu kỳ sắp tới"

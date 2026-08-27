@@ -41,7 +41,9 @@
       "pending_points": "보류 중인 포인트 - {count}",
       "work_items_count": "{count, plural, one {#개의 작업 항목} other {#개의 작업 항목}}",
       "work_items_closed": "{closed}/{total} 개의 작업 항목이 닫혔습니다",
-      "cancelled_work_items_excluded": "{count, plural, one {#개의 취소된 작업 항목이 이 보고서에서 제외되었습니다.} other {#개의 취소된 작업 항목이 이 보고서에서 제외되었습니다.}}"
+      "cancelled_work_items_excluded": "{count, plural, one {#개의 취소된 작업 항목이 이 보고서에서 제외되었습니다.} other {#개의 취소된 작업 항목이 이 보고서에서 제외되었습니다.}}",
+      "current_plot": "현재 {plot}",
+      "ideal_plot": "이상적인 {plot}"
     },
     "upcoming_cycle": {
       "label": "다가오는 주기"

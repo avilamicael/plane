@@ -1,0 +1,67 @@
+- generic [ref=f6e1]:
+  - generic:
+    - region "Notifications":
+      - dialog [ref=f6e182]:
+        - button [ref=f6e183] [cursor=pointer]
+        - generic [ref=f6e192]:
+          - heading "Success!" [level=2] [ref=f6e193]
+          - paragraph [ref=f6e194]: Language updated successfully
+  - main [ref=f6e3]:
+    - main [ref=f6e5]:
+      - generic [ref=f6e8]:
+        - generic [ref=f6e9]:
+          - generic [ref=f6e10]: A
+          - generic [ref=f6e13]:
+            - paragraph [ref=f6e14]: Micael Avila
+            - paragraph [ref=f6e15]: avilla.micael@gmail.com
+        - generic [ref=f6e16]:
+          - generic [ref=f6e17]:
+            - generic [ref=f6e18]: Seu perfil
+            - generic [ref=f6e19]:
+              - button "Perfil" [ref=f6e195] [cursor=pointer]
+              - button "Preferências" [ref=f6e196] [cursor=pointer]
+              - button "Notificações" [ref=f6e197] [cursor=pointer]
+              - button "Segurança" [ref=f6e198] [cursor=pointer]
+          - generic [ref=f6e45]:
+            - generic [ref=f6e46]: Desenvolvedor
+            - button "Tokens de Acesso Pessoal" [ref=f6e199] [cursor=pointer]
+          - generic [ref=f6e54]:
+            - generic [ref=f6e55]: Espaço de trabalho
+            - generic [ref=f6e56]:
+              - link "V Via Exata" [ref=f6e200] [cursor=pointer]:
+                - /url: /via-exata/
+                - generic [ref=f6e58]: V
+                - generic [ref=f6e59]: Via Exata
+              - generic [ref=f6e60]:
+                - link "Criar espaço de trabalho" [ref=f6e201] [cursor=pointer]:
+                  - /url: /create-workspace/
+                - link "Convites para o espaço de trabalho" [ref=f6e202] [cursor=pointer]:
+                  - /url: /invitations/
+        - generic [ref=f6e73]:
+          - generic [ref=f6e75]:
+            - heading "Preferências" [level=6] [ref=f6e203]
+            - paragraph [ref=f6e77]: Personalize sua experiência no aplicativo do jeito que você trabalha
+          - generic [ref=f6e78]:
+            - generic [ref=f6e81]:
+              - generic [ref=f6e82]:
+                - heading "Tema" [level=4] [ref=f6e204]
+                - paragraph [ref=f6e84]: Selecione ou personalize o esquema de cores da sua interface.
+              - button "Selecione seu tema" [ref=f6e205] [cursor=pointer]
+            - generic [ref=f6e91]:
+              - generic [ref=f6e92]: Idioma e Hora
+              - generic [ref=f6e93]:
+                - generic [ref=f6e94]:
+                  - generic [ref=f6e95]:
+                    - heading "Fuso horário" [level=4] [ref=f6e206]
+                    - paragraph [ref=f6e97]: Configuração atual de fuso horário.
+                  - button "UTC" [ref=f6e207] [cursor=pointer]
+                - generic [ref=f6e105]:
+                  - generic [ref=f6e106]:
+                    - heading "Idioma" [level=4] [ref=f6e208]
+                    - paragraph [ref=f6e108]: Escolha o idioma usado na interface do usuário.
+                  - button "Português Brasil" [active] [ref=f6e209] [cursor=pointer]
+                - generic [ref=f6e115]:
+                  - generic [ref=f6e116]:
+                    - heading "First day of the week" [level=4] [ref=f6e210]
+                    - paragraph [ref=f6e118]: This will change how all calendars in your app look.
+                  - button "Sunday" [ref=f6e211] [cursor=pointer]

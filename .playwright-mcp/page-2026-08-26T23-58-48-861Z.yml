@@ -1,0 +1,184 @@
+- generic [active] [ref=f8e1]:
+  - generic:
+    - generic:
+      - generic:
+        - button "Settings":
+          - generic:
+            - heading "Settings" [level=5]
+        - button "Copy link":
+          - generic:
+            - heading "Copy link" [level=5]
+  - generic:
+    - region "Notifications"
+  - main [ref=f8e3]:
+    - generic [ref=f8e4]:
+      - generic [ref=f8e5]:
+        - button "Abrir seletor de espaço de trabalho" [ref=f8e8] [cursor=pointer]:
+          - generic [ref=f8e9]:
+            - generic [ref=f8e10]: V
+            - heading "Via Exata" [level=4] [ref=f8e11]
+        - button [ref=f8e18] [cursor=pointer]:
+          - textbox "Search commands..." [ref=f8e21]
+        - generic [ref=f8e23]:
+          - link [ref=f8e24] [cursor=pointer]:
+            - /url: /via-exata/notifications/
+          - button [ref=f8e29] [cursor=pointer]:
+            - button [ref=f8e30]
+          - link "Nos dê uma estrela no GitHub" [ref=f8e35] [cursor=pointer]:
+            - /url: https://github.com/makeplane/plane
+          - button [ref=f8e39] [cursor=pointer]:
+            - button "A" [ref=f8e40]
+      - generic [ref=f8e48]:
+        - complementary "Main sidebar" [ref=f8e49]:
+          - complementary [ref=f8e50]:
+            - generic [ref=f8e51]:
+              - generic [ref=f8e52]:
+                - generic [ref=f8e53]:
+                  - generic [ref=f8e54]: Projects
+                  - generic [ref=f8e55]:
+                    - button [ref=f8e56] [cursor=pointer]
+                    - button [ref=f8e59] [cursor=pointer]
+                - button "Novo item" [ref=f8e63] [cursor=pointer]
+              - generic [ref=f8e67]:
+                - link [ref=f8e68] [cursor=pointer]:
+                  - /url: /via-exata/
+                  - paragraph [ref=f8e73]: Página inicial
+                - link [ref=f8e74] [cursor=pointer]:
+                  - /url: /via-exata/drafts/
+                  - paragraph [ref=f8e79]: Rascunhos
+                - link [ref=f8e80] [cursor=pointer]:
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - paragraph [ref=f8e86]: Seu trabalho
+                - link [ref=f8e87] [cursor=pointer]:
+                  - /url: /via-exata/stickies/
+                  - paragraph [ref=f8e92]: Notas adesivas
+              - generic [ref=f8e93]:
+                - generic [ref=f8e94]:
+                  - button "Fechar menu do espaço de trabalho" [expanded] [ref=f8e95] [cursor=pointer]:
+                    - generic [ref=f8e96]: Espaço de trabalho
+                  - generic:
+                    - button "Fechar menu do espaço de trabalho" [expanded]
+                - generic [ref=f8e98]:
+                  - link [ref=f8e99] [cursor=pointer]:
+                    - /url: /via-exata/projects/
+                    - paragraph [ref=f8e104]: Projetos
+                  - button "Abrir barra lateral estendida" [ref=f8e106] [cursor=pointer]:
+                    - generic [ref=f8e111]: Mais
+              - generic [ref=f8e113]:
+                - generic [ref=f8e114]:
+                  - button "Fechar menu de projetos" [expanded] [ref=f8e115] [cursor=pointer]:
+                    - generic [ref=f8e116]: Projetos
+                  - button "Fechar menu de projetos" [ref=f8e118] [cursor=pointer]
+                - generic [ref=f8e127]:
+                  - link [ref=f8e128] [cursor=pointer]:
+                    - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                    - button "Abrir menu do projeto" [ref=f8e129]:
+                      - generic [ref=f8e130]: 👇
+                      - paragraph [ref=f8e132]: Via Exata
+                  - generic [ref=f8e133]:
+                    - button "Alternar menu de ações rápidas":
+                      - button
+              - button "Abrir modal de planos pagos" [ref=f8e136] [cursor=pointer]: Community
+            - separator "Resize sidebar" [ref=f8e137]
+        - complementary "Sidebar peek view":
+          - complementary:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Projects
+                  - generic:
+                    - button
+                    - button
+                - generic:
+                  - button "Novo item"
+              - generic:
+                - link "Página inicial":
+                  - /url: /via-exata/
+                  - generic:
+                    - generic:
+                      - paragraph: Página inicial
+                - link "Rascunhos":
+                  - /url: /via-exata/drafts/
+                  - generic:
+                    - generic:
+                      - paragraph: Rascunhos
+                - link "Seu trabalho":
+                  - /url: /via-exata/profile/01dad351-7e91-4e97-83d7-1be5b7255edc/
+                  - generic:
+                    - generic:
+                      - paragraph: Seu trabalho
+                - link "Notas adesivas":
+                  - /url: /via-exata/stickies/
+                  - generic:
+                    - generic:
+                      - paragraph: Notas adesivas
+              - generic:
+                - generic:
+                  - button "Fechar menu do espaço de trabalho" [expanded]:
+                    - generic: Espaço de trabalho
+                  - generic:
+                    - button "Fechar menu do espaço de trabalho" [expanded]
+                - generic:
+                  - generic:
+                    - link "Projetos":
+                      - /url: /via-exata/projects/
+                      - generic:
+                        - generic:
+                          - paragraph: Projetos
+                    - generic:
+                      - button "Abrir barra lateral estendida":
+                        - generic: Mais
+              - generic:
+                - generic:
+                  - generic:
+                    - button "Fechar menu de projetos" [expanded]:
+                      - generic: Projetos
+                    - generic:
+                      - button "Fechar menu de projetos"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - link "Abrir menu do projeto":
+                              - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues
+                              - button "Abrir menu do projeto":
+                                - generic: 👇
+                                - paragraph: Via Exata
+                            - generic:
+                              - button "Alternar menu de ações rápidas":
+                                - button
+              - generic:
+                - button "Abrir modal de planos pagos": Community
+            - separator "Resize sidebar"
+        - main [ref=f8e138]:
+          - generic [ref=f8e142]:
+            - generic [ref=f8e143]: Projetos
+            - generic [ref=f8e151]:
+              - generic [ref=f8e152]:
+                - button [ref=f8e153] [cursor=pointer]
+                - generic [ref=f8e156]:
+                  - textbox "Buscar"
+              - generic [ref=f8e159]:
+                - button "Data de criação" [ref=f8e160] [cursor=pointer]
+                - button "Filtros" [ref=f8e168] [cursor=pointer]
+              - button "Adicionar Projeto" [ref=f8e169] [cursor=pointer]
+          - link "Via Exata 👇 Via Exata VIAEX Welcome to the Plane Demo Project! This project throws you into the driver’s seat of Plane, work management software. Through curated work items, you’ll uncover key features, pick up best practices, and see how Plane can streamline your team’s workflow. Whether you’re a startup hungry to scale or an enterprise sharpening efficiency, this demo is your launchpad to mastering Plane. Jump in and see what it can do! A" [ref=f8e176] [cursor=pointer]:
+            - /url: /via-exata/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/issues/
+            - generic [ref=f8e177]:
+              - img "Via Exata" [ref=f8e179]
+              - generic [ref=f8e180]:
+                - generic [ref=f8e181]:
+                  - generic [ref=f8e182]: 👇
+                  - generic [ref=f8e184]:
+                    - heading "Via Exata" [level=3] [ref=f8e185]
+                    - paragraph [ref=f8e187]: VIAEX
+                - generic [ref=f8e188]:
+                  - button [ref=f8e189]
+                  - button [ref=f8e192]
+            - generic [ref=f8e195]:
+              - paragraph [ref=f8e196]: Welcome to the Plane Demo Project! This project throws you into the driver’s seat of Plane, work management software. Through curated work items, you’ll uncover key features, pick up best practices, and see how Plane can streamline your team’s workflow. Whether you’re a startup hungry to scale or an enterprise sharpening efficiency, this demo is your launchpad to mastering Plane. Jump in and see what it can do!
+              - generic [ref=f8e197]:
+                - generic [ref=f8e198]: A
+                - link [ref=f8e204]:
+                  - /url: /via-exata/settings/projects/5c35c184-0d3a-46de-a4b8-f41a979f4812/
