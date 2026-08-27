@@ -34,31 +34,31 @@ export const HorizontalStackAssetsMap = [
   },
   {
     asset: <EpicHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("common.epic"),
+    title: "Epic",
   },
   {
     asset: <EstimateHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("estimate"),
+    title: "Estimate",
   },
   {
     asset: <ExportHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("export"),
+    title: "Export",
   },
   {
     asset: <IntakeHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("intake"),
+    title: "Intake",
   },
   {
     asset: <LabelHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("common.label"),
+    title: "Label",
   },
   {
     asset: <LinkHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("common.link"),
+    title: "Link",
   },
   {
     asset: <MembersHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("members"),
+    title: "Members",
   },
   {
     asset: <NoteHorizontalStackIllustration className="h-20 w-20" />,
@@ -66,19 +66,19 @@ export const HorizontalStackAssetsMap = [
   },
   {
     asset: <PriorityHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("priority"),
+    title: "Priority",
   },
   {
     asset: <ProjectHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("common.project"),
+    title: "Project",
   },
   {
     asset: <SettingsHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("power_k.group_titles.settings"),
+    title: "Settings",
   },
   {
     asset: <StateHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("state"),
+    title: "State",
   },
   {
     asset: <TemplateHorizontalStackIllustration className="h-20 w-20" />,
@@ -94,7 +94,7 @@ export const HorizontalStackAssetsMap = [
   },
   {
     asset: <UpdateHorizontalStackIllustration className="h-20 w-20" />,
-    title: t("update"),
+    title: "Update",
   },
   {
     asset: <WebhookHorizontalStackIllustration className="h-20 w-20" />,

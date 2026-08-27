@@ -7,6 +7,7 @@
 import * as React from "react";
 import { Toast as BaseToast } from "@base-ui-components/react/toast";
 import { AlertTriangle, CheckIcon, InfoIcon, XIcon } from "lucide-react";
+import { i18nInstance, useTranslation } from "@plane/i18n";
 import { CloseIcon } from "../icons/actions/close-icon";
 // spinner
 import { CircularBarSpinner } from "../spinners/circular-bar-spinner";
@@ -112,6 +113,7 @@ function ToastList() {
 }
 
 function ToastRender({ id, toast }: { id: React.Key; toast: BaseToast.Root.ToastObject }) {
+  const { t } = useTranslation();
   const toastData = toast.data as SetToastProps;
   const type = toastData.type as TOAST_TYPE;
   const data = TOAST_DATA[type];
@@ -204,6 +206,7 @@ export type ToastStaticProps = {
 };
 
 export function ToastStatic({ type, title, message, actionItems, theme = "light" }: ToastStaticProps) {
+  const { t } = useTranslation();
   const data = TOAST_DATA[type];
 
   return (
@@ -294,7 +297,7 @@ export const setPromiseToast = <ToastData,>(
   toastManager.promise(promise, {
     loading: {
       data: {
-        title: options.loading ?? t("loading"),
+        title: options.loading ?? i18nInstance.t("loading"),
         type: TOAST_TYPE.LOADING,
         message: undefined,
         actionItems: undefined,

@@ -8,6 +8,7 @@ import React, { useMemo, useState } from "react";
 import { Area, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis, Line, ComposedChart, CartesianGrid } from "recharts";
 // plane imports
 import { AXIS_LABEL_CLASSNAME } from "@plane/constants";
+import { useTranslation } from "@plane/i18n";
 import type { TAreaChartProps } from "@plane/types";
 // local components
 import { getLegendProps } from "../components/legend";
@@ -17,6 +18,7 @@ import { CustomTooltip } from "../components/tooltip";
 export const AreaChart = React.memo(function AreaChart<K extends string, T extends string>(
   props: TAreaChartProps<K, T>
 ) {
+  const { t } = useTranslation();
   const {
     data,
     areas,
@@ -121,9 +123,9 @@ export const AreaChart = React.memo(function AreaChart<K extends string, T exten
           <CartesianGrid stroke="var(--border-color-subtle)" vertical={false} />
           <XAxis
             dataKey={xAxis.key}
-            tick={(props) => {
+            tick={(tickProps) => {
               const TickComponent = customTicks?.x || CustomXAxisTick;
-              return <TickComponent {...props} />;
+              return <TickComponent {...tickProps} />;
             }}
             tickLine={false}
             axisLine={false}
@@ -150,9 +152,9 @@ export const AreaChart = React.memo(function AreaChart<K extends string, T exten
                 className: AXIS_LABEL_CLASSNAME,
               }
             }
-            tick={(props) => {
+            tick={(tickProps) => {
               const TickComponent = customTicks?.y || CustomYAxisTick;
-              return <TickComponent {...props} />;
+              return <TickComponent {...tickProps} />;
             }}
             tickCount={tickCount.y}
             allowDecimals={!!yAxis.allowDecimals}

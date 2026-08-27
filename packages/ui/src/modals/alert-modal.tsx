@@ -9,6 +9,7 @@ import { AlertTriangle, Info } from "lucide-react";
 import React from "react";
 // components
 import type { TButtonVariant } from "@plane/propel/button";
+import { useTranslation } from "@plane/i18n";
 import { Button } from "@plane/propel/button";
 import { cn } from "../utils";
 import { EModalPosition, EModalWidth } from "./constants";
@@ -53,6 +54,7 @@ const VARIANT_CLASSES: Record<TModalVariant, string> = {
 };
 
 export function AlertModalCore(props: Props) {
+  const { t } = useTranslation();
   const {
     content,
     handleClose,
@@ -96,7 +98,7 @@ export function AlertModalCore(props: Props) {
         <Button variant="secondary" onClick={handleClose}>
           {secondaryButtonText}
         </Button>
-        <Button variant={BUTTON_VARIANTS[variant]} tabIndex={1} onClick={handleSubmit} loading={isSubmitting}>
+        <Button variant={BUTTON_VARIANTS[variant]} tabIndex={0} onClick={handleSubmit} loading={isSubmitting}>
           {isSubmitting ? primaryButtonText.loading : primaryButtonText.default}
         </Button>
       </div>
