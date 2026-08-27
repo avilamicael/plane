@@ -32,7 +32,7 @@ export const LayoutQuickActions = observer(function LayoutQuickActions(props: Pr
       setToast({
         type: TOAST_TYPE.SUCCESS,
         title: t("common.link_copied"),
-        message: `${storeType === "EPIC" ? "Epics" : "Work items"} link copied to clipboard.`,
+        message: `${storeType === "EPIC" ? t("common.epics") : t("issues")} link copied to clipboard.`,
       });
     });
 

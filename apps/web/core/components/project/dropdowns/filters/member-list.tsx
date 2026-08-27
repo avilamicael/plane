@@ -28,16 +28,16 @@ type Props = {
 };
 
 const PROJECT_ROLE_OPTIONS: IRoleOption[] = [
-  { value: String(EUserProjectRoles.ADMIN), label: "Admin" },
-  { value: String(EUserProjectRoles.MEMBER), label: "Member" },
-  { value: String(EUserProjectRoles.GUEST), label: "Guest" },
+  { value: String(EUserProjectRoles.ADMIN), label: "common.admin" },
+  { value: String(EUserProjectRoles.MEMBER), label: "common.member" },
+  { value: String(EUserProjectRoles.GUEST), label: "common.guest" },
 ];
 
 const WORKSPACE_ROLE_OPTIONS: IRoleOption[] = [
-  { value: String(EUserWorkspaceRoles.ADMIN), label: "Admin" },
-  { value: String(EUserWorkspaceRoles.MEMBER), label: "Member" },
-  { value: String(EUserWorkspaceRoles.GUEST), label: "Guest" },
-  { value: "suspended", label: "Suspended" },
+  { value: String(EUserWorkspaceRoles.ADMIN), label: "common.admin" },
+  { value: String(EUserWorkspaceRoles.MEMBER), label: "common.member" },
+  { value: String(EUserWorkspaceRoles.GUEST), label: "common.guest" },
+  { value: "suspended", label: "common.suspended" },
 ];
 
 // Role filter group component
@@ -50,6 +50,7 @@ const RoleFilterGroup = observer(function RoleFilterGroup({
   handleUpdate: (role: string) => void;
   memberType: "project" | "workspace";
 }) {
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(true);
   const appliedFiltersCount = appliedFilters?.length ?? 0;
   const roleOptions = memberType === "project" ? PROJECT_ROLE_OPTIONS : WORKSPACE_ROLE_OPTIONS;
@@ -70,7 +71,7 @@ const RoleFilterGroup = observer(function RoleFilterGroup({
               <FilterOption
                 key={`role-${role.value}`}
                 isChecked={isSelected}
-                title={role.label}
+                title={t(role.label)}
                 onClick={() => handleUpdate(role.value)}
               />
             );

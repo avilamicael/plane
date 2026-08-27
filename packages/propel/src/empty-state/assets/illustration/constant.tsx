@@ -9,10 +9,10 @@ import { InboxIllustration, SearchIllustration } from "./";
 export const IllustrationMap = [
   {
     asset: <InboxIllustration className="h-20 w-20" />,
-    title: "Inbox",
+    title: t("sidebar.inbox"),
   },
   {
     asset: <SearchIllustration className="h-20 w-20" />,
-    title: "Search",
+    title: t("search"),
   },
 ];

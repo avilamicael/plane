@@ -167,7 +167,7 @@ const PriorityChart = observer(function PriorityChart(props: Props) {
         cell: ({ row }) => <div className="text-right">{row.original.count}</div>,
         meta: {
           export: {
-            key: "Count",
+            key: t("common.count"),
             value: (row) => row.original.count,
             label: t("common.count"),
           },

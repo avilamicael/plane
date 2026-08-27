@@ -83,7 +83,7 @@ export const DeleteEstimateModal = observer(function DeleteEstimateModal(props: 
             {t("common.cancel")}
           </Button>
           <Button variant="error-fill" size="lg" onClick={handleDeleteEstimate} disabled={buttonLoader}>
-            {buttonLoader ? "Deleting" : "Delete Estimate"}
+            {buttonLoader ? t("common.deleting") : t("project_settings.estimates.delete")}
           </Button>
         </div>
       </div>

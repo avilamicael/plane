@@ -116,11 +116,11 @@ export const ExportForm = observer(function ExportForm(props: Props) {
           message: t("workspace_settings.settings.exports.modal.toasts.success.message", {
             entity:
               formData.provider.provider === "csv"
-                ? "CSV"
+                ? t("exporter.csv.title")
                 : formData.provider.provider === "xlsx"
-                  ? "Excel"
+                  ? t("exporter.excel.title")
                   : formData.provider.provider === "json"
-                    ? "JSON"
+                    ? t("exporter.json.title")
                     : "",
           }),
         });

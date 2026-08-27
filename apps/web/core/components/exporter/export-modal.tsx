@@ -88,7 +88,14 @@ export const Exporter = observer(function Exporter(props: Props) {
             type: TOAST_TYPE.SUCCESS,
             title: t("workspace_settings.settings.exports.modal.toasts.success.title"),
             message: t("workspace_settings.settings.exports.modal.toasts.success.message", {
-              entity: provider === "csv" ? "CSV" : provider === "xlsx" ? "Excel" : provider === "json" ? "JSON" : "",
+              entity:
+                provider === "csv"
+                  ? t("exporter.csv.title")
+                  : provider === "xlsx"
+                    ? t("exporter.excel.title")
+                    : provider === "json"
+                      ? t("exporter.json.title")
+                      : "",
             }),
           });
         })
@@ -117,7 +124,13 @@ export const Exporter = observer(function Exporter(props: Props) {
           <span className="flex items-center justify-start">
             <h3 className="text-18 font-medium 2xl:text-20">
               {t("workspace_settings.settings.exports.modal.title")}{" "}
-              {provider === "csv" ? "CSV" : provider === "xlsx" ? "Excel" : provider === "json" ? "JSON" : ""}
+              {provider === "csv"
+                ? t("exporter.csv.title")
+                : provider === "xlsx"
+                  ? t("exporter.excel.title")
+                  : provider === "json"
+                    ? t("exporter.json.title")
+                    : ""}
             </h3>
           </span>
         </div>

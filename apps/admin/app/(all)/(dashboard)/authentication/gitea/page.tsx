@@ -49,8 +49,8 @@ const InstanceGiteaAuthenticationPage = observer(function InstanceGiteaAuthentic
         title: t("admin.oauth.configuration_saved"),
         message: () =>
           value === "1"
-            ? t("admin.oauth.auth_now_active", { provider: "Gitea" })
-            : t("admin.oauth.auth_now_disabled", { provider: "Gitea" }),
+            ? t("admin.oauth.auth_now_active", { provider: t("admin.header.segments.gitea") })
+            : t("admin.oauth.auth_now_disabled", { provider: t("admin.header.segments.gitea") }),
       },
       error: {
         title: t("admin.common.error"),

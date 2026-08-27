@@ -14,42 +14,42 @@ export const STICKY_COLORS_LIST: {
 }[] = [
   {
     key: "gray",
-    label: "Gray",
+    label: "editor_ui.colors.names.gray",
     backgroundColor: "var(--editor-colors-gray-background)",
   },
   {
     key: "peach",
-    label: "Peach",
+    label: "editor_ui.colors.names.peach",
     backgroundColor: "var(--editor-colors-peach-background)",
   },
   {
     key: "pink",
-    label: "Pink",
+    label: "editor_ui.colors.names.pink",
     backgroundColor: "var(--editor-colors-pink-background)",
   },
   {
     key: "orange",
-    label: "Orange",
+    label: "editor_ui.colors.names.orange",
     backgroundColor: "var(--editor-colors-orange-background)",
   },
   {
     key: "green",
-    label: "Green",
+    label: "editor_ui.colors.names.green",
     backgroundColor: "var(--editor-colors-green-background)",
   },
   {
     key: "light-blue",
-    label: "Light blue",
+    label: "editor_ui.colors.names.light_blue",
     backgroundColor: "var(--editor-colors-light-blue-background)",
   },
   {
     key: "dark-blue",
-    label: "Dark blue",
+    label: "editor_ui.colors.names.dark_blue",
     backgroundColor: "var(--editor-colors-dark-blue-background)",
   },
   {
     key: "purple",
-    label: "Purple",
+    label: "editor_ui.colors.names.purple",
     backgroundColor: "var(--editor-colors-purple-background)",
   },
 ];

@@ -953,6 +953,20 @@
       "q2": "Apr - Jun",
       "q3": "Jul - Sept",
       "q4": "Oct - Dec"
+    },
+    "months_long": {
+      "january": "january",
+      "february": "february",
+      "march": "march",
+      "april": "april",
+      "may": "may",
+      "june": "june",
+      "july": "july",
+      "august": "august",
+      "september": "september",
+      "october": "october",
+      "november": "november",
+      "december": "december"
     }
   },
   "chart": {

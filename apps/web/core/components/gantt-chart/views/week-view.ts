@@ -9,6 +9,7 @@ import type { ChartDataType } from "@plane/types";
 import { EStartOfTheWeek } from "@plane/types";
 import { months, generateWeeks } from "../data";
 import { getNumberOfDaysBetweenTwoDates, getWeekNumberByDate } from "./helpers";
+import { i18nInstance } from "@plane/i18n";
 export interface IDayBlock {
   date: Date;
   day: number;
@@ -165,8 +166,8 @@ export const getWeeksBetweenTwoDates = (
       },
       title:
         monthAtStartOfTheWeek === monthAtEndOfTheWeek
-          ? `${months[monthAtStartOfTheWeek].abbreviation} ${yearAtStartOfTheWeek}`
-          : `${months[monthAtStartOfTheWeek].abbreviation} ${yearAtStartOfTheWeek} - ${months[monthAtEndOfTheWeek].abbreviation} ${yearAtEndOfTheWeek}`,
+          ? `${i18nInstance.t(months[monthAtStartOfTheWeek].abbreviation)} ${yearAtStartOfTheWeek}`
+          : `${i18nInstance.t(months[monthAtStartOfTheWeek].abbreviation)} ${yearAtStartOfTheWeek} - ${i18nInstance.t(months[monthAtEndOfTheWeek].abbreviation)} ${yearAtEndOfTheWeek}`,
       startMonth: monthAtStartOfTheWeek,
       startYear: yearAtStartOfTheWeek,
       endMonth: monthAtEndOfTheWeek,

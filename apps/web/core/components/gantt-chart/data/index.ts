@@ -7,6 +7,7 @@
 // types
 import type { WeekMonthDataType, ChartDataType, TGanttViews } from "@plane/types";
 import { EStartOfTheWeek } from "@plane/types";
+import { i18nInstance } from "@plane/i18n";
 
 // constants
 export const generateWeeks = (startOfWeek: EStartOfTheWeek = EStartOfTheWeek.SUNDAY): WeekMonthDataType[] => [
@@ -25,18 +26,18 @@ export const weeks: WeekMonthDataType[] = [
 ];
 
 export const months: WeekMonthDataType[] = [
-  { key: 0, shortTitle: "jan", title: "january", abbreviation: "Jan" },
-  { key: 1, shortTitle: "feb", title: "february", abbreviation: "Feb" },
-  { key: 2, shortTitle: "mar", title: "march", abbreviation: "Mar" },
-  { key: 3, shortTitle: "apr", title: "april", abbreviation: "Apr" },
-  { key: 4, shortTitle: "may", title: "may", abbreviation: "May" },
-  { key: 5, shortTitle: "jun", title: "june", abbreviation: "Jun" },
-  { key: 6, shortTitle: "jul", title: "july", abbreviation: "Jul" },
-  { key: 7, shortTitle: "aug", title: "august", abbreviation: "Aug" },
-  { key: 8, shortTitle: "sept", title: "september", abbreviation: "Sept" },
-  { key: 9, shortTitle: "oct", title: "october", abbreviation: "Oct" },
-  { key: 10, shortTitle: "nov", title: "november", abbreviation: "Nov" },
-  { key: 11, shortTitle: "dec", title: "december", abbreviation: "Dec" },
+  { key: 0, shortTitle: "jan", title: "common.months_long.january", abbreviation: "common.months_short.jan" },
+  { key: 1, shortTitle: "feb", title: "common.months_long.february", abbreviation: "common.months_short.feb" },
+  { key: 2, shortTitle: "mar", title: "common.months_long.march", abbreviation: "common.months_short.mar" },
+  { key: 3, shortTitle: "apr", title: "common.months_long.april", abbreviation: "common.months_short.apr" },
+  { key: 4, shortTitle: "may", title: "common.months_long.may", abbreviation: "common.months_short.may" },
+  { key: 5, shortTitle: "jun", title: "common.months_long.june", abbreviation: "common.months_short.jun" },
+  { key: 6, shortTitle: "jul", title: "common.months_long.july", abbreviation: "common.months_short.jul" },
+  { key: 7, shortTitle: "aug", title: "common.months_long.august", abbreviation: "common.months_short.aug" },
+  { key: 8, shortTitle: "sept", title: "common.months_long.september", abbreviation: "common.months_short.sep" },
+  { key: 9, shortTitle: "oct", title: "common.months_long.october", abbreviation: "common.months_short.oct" },
+  { key: 10, shortTitle: "nov", title: "common.months_long.november", abbreviation: "common.months_short.nov" },
+  { key: 11, shortTitle: "dec", title: "common.months_long.december", abbreviation: "common.months_short.dec" },
 ];
 
 export const quarters: WeekMonthDataType[] = [
@@ -68,7 +69,7 @@ export const datePreview = (date: Date, includeTime: boolean = false) => {
   month = months[month];
   const year = date.getFullYear();
 
-  return `${charCapitalize(month?.shortTitle)} ${day}, ${year}${includeTime ? `, ${timePreview(date)}` : ``}`;
+  return `${charCapitalize(i18nInstance.t(month?.abbreviation))} ${day}, ${year}${includeTime ? `, ${timePreview(date)}` : ``}`;
 };
 
 // context data

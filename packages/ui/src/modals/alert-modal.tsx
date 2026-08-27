@@ -62,8 +62,8 @@ export function AlertModalCore(props: Props) {
     isOpen,
     position = EModalPosition.CENTER,
     primaryButtonText = {
-      loading: "Deleting",
-      default: "Delete",
+      loading: t("common.deleting"),
+      default: t("common.actions.delete"),
     },
     secondaryButtonText = "Cancel",
     title,

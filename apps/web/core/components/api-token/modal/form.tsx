@@ -189,10 +189,10 @@ export function CreateApiTokenForm(props: Props) {
                         >
                           <Calendar className="h-3 w-3" />
                           {value === "custom"
-                            ? "Custom date"
+                            ? t("workspace_settings.settings.api_tokens.custom_date")
                             : selectedOption
                               ? selectedOption.label
-                              : "Set expiration date"}
+                              : t("workspace_settings.settings.api_tokens.set_expiration")}
                         </div>
                       }
                       value={value}

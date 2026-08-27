@@ -163,7 +163,7 @@ export const BaseKanBanRoot = observer(function BaseKanBanRoot(props: IBaseKanBa
     return combine(
       dropTargetForElements({
         element,
-        getData: () => ({ columnId: "issue-trash-box", groupId: "issue-trash-box", type: "DELETE" }),
+        getData: () => ({ columnId: "issue-trash-box", groupId: "issue-trash-box", type: t("common.actions.delete") }),
         onDragEnter: () => {
           setIsDragOverDelete(true);
         },
@@ -181,7 +181,7 @@ export const BaseKanBanRoot = observer(function BaseKanBanRoot(props: IBaseKanBa
         },
       })
     );
-  }, [setIsDragOverDelete, setDraggedIssueId, setDeleteIssueModal]);
+  }, [setIsDragOverDelete, setDraggedIssueId, setDeleteIssueModal, t]);
 
   const renderQuickActions: TRenderQuickActions = useCallback(
     ({ issue, parentRef, customActionButton }) => (

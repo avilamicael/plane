@@ -76,7 +76,7 @@ export const ExtendedSidebarItem = observer(function ExtendedSidebarItem(props: 
         element,
         canDrag: () => !disableDrag,
         dragHandle: dragHandleElement ?? undefined,
-        getInitialData: () => ({ id: item.key, dragInstanceId: "NAVIGATION" }), // var1
+        getInitialData: () => ({ id: item.key, dragInstanceId: t("billing.plans.f.navigation.title") }), // var1
         onDragStart: () => {
           setIsDragging(true);
         },
@@ -134,7 +134,7 @@ export const ExtendedSidebarItem = observer(function ExtendedSidebarItem(props: 
         },
       })
     );
-  }, [isLastChild, handleOnNavigationItemDrop, disableDrag, disableDrop, item.key]);
+  }, [isLastChild, handleOnNavigationItemDrop, disableDrag, disableDrop, item.key, t]);
 
   const itemHref =
     item.key === "your_work"

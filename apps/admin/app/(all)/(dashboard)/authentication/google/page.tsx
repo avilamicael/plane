@@ -51,8 +51,8 @@ const InstanceGoogleAuthenticationPage = observer(function InstanceGoogleAuthent
         title: t("admin.oauth.configuration_saved"),
         message: () =>
           value === "1"
-            ? t("admin.oauth.auth_now_active", { provider: "Google" })
-            : t("admin.oauth.auth_now_disabled", { provider: "Google" }),
+            ? t("admin.oauth.auth_now_active", { provider: t("admin.header.segments.google") })
+            : t("admin.oauth.auth_now_disabled", { provider: t("admin.header.segments.google") }),
       },
       error: {
         title: t("admin.common.error"),

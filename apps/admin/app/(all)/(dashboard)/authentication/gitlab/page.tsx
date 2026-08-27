@@ -51,8 +51,8 @@ const InstanceGitlabAuthenticationPage = observer(function InstanceGitlabAuthent
         title: t("admin.oauth.configuration_saved"),
         message: () =>
           value === "1"
-            ? t("admin.oauth.auth_now_active", { provider: "GitLab" })
-            : t("admin.oauth.auth_now_disabled", { provider: "GitLab" }),
+            ? t("admin.oauth.auth_now_active", { provider: t("admin.header.segments.gitlab") })
+            : t("admin.oauth.auth_now_disabled", { provider: t("admin.header.segments.gitlab") }),
       },
       error: {
         title: t("admin.common.error"),

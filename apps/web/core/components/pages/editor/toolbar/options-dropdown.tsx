@@ -108,7 +108,7 @@ export const PageOptionsDropdown = observer(function PageOptionsDropdown(props: 
         {
           key: "export",
           action: () => setIsExportModalOpen(true),
-          title: "Export",
+          title: t("export"),
           icon: ArrowUpToLine,
           shouldRender: true,
         },

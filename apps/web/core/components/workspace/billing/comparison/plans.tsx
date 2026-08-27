@@ -698,8 +698,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
           free: <T k="billing.plans.values.basic" />,
           one: <T k="billing.plans.values.basic" />,
           pro: <T k="billing.plans.values.pre_defined_roles" />,
-          business: "RBAC",
-          enterprise: "GAC",
+          business: "billing.plans.highlights.business_1",
+          enterprise: "billing.plans.highlights.enterprise_2",
         },
       },
       {
@@ -1271,7 +1271,7 @@ export const PLANE_PLANS: PlanePlans = {
     },
     pro: {
       id: EProductSubscriptionEnum.PRO,
-      name: "Pro",
+      name: "sidebar.pro",
       monthlyPrice: 8,
       yearlyPrice: 6,
       monthlyPriceSecondaryDescription: <T k="billing.plans.billed_monthly" />,
@@ -1281,7 +1281,7 @@ export const PLANE_PLANS: PlanePlans = {
     },
     business: {
       id: EProductSubscriptionEnum.BUSINESS,
-      name: "Business",
+      name: "common.business",
       monthlyPriceSecondaryDescription: <T k="billing.plans.billed_monthly" />,
       yearlyPriceSecondaryDescription: <T k="billing.plans.billed_yearly" />,
       buttonCTA: <T k="billing.plans.talk_to_sales" />,

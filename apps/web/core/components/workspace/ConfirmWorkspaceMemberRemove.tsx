@@ -96,11 +96,11 @@ export const ConfirmWorkspaceMemberRemove = observer(function ConfirmWorkspaceMe
                   <Button variant="error-fill" tabIndex={1} onClick={handleDeletion} loading={isRemoving}>
                     {currentUser?.id === userDetails.id
                       ? isRemoving
-                        ? "Leaving"
-                        : "Leave"
+                        ? t("leaving")
+                        : t("leave")
                       : isRemoving
-                        ? "Removing"
-                        : "Remove"}
+                        ? t("removing")
+                        : t("remove")}
                   </Button>
                 </div>
               </Dialog.Panel>

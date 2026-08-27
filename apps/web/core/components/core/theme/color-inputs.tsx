@@ -39,7 +39,7 @@ export const CustomThemeColorInputs = observer(function CustomThemeColorInputs(p
             control={control}
             name="background"
             rules={{
-              required: "Neutral color is required",
+              required: t("common.theme.neutral_color_required"),
               pattern: {
                 value: /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/,
                 message: t("common.errors.invalid_hex_code"),
@@ -72,7 +72,7 @@ export const CustomThemeColorInputs = observer(function CustomThemeColorInputs(p
             control={control}
             name="primary"
             rules={{
-              required: "Brand color is required",
+              required: t("common.theme.brand_color_required"),
               pattern: {
                 value: /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/,
                 message: t("common.errors.invalid_hex_code"),

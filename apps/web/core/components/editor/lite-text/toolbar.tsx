@@ -39,19 +39,20 @@ type Props = {
 type TCommentAccessType = {
   icon: LucideIcon | React.FC<ISvgIcons>;
   key: EIssueCommentAccessSpecifier;
-  label: "Private" | "Public";
+  /** Chave i18n do rótulo. */
+  label: string;
 };
 
 const COMMENT_ACCESS_SPECIFIERS: TCommentAccessType[] = [
   {
     icon: LockIcon,
     key: EIssueCommentAccessSpecifier.INTERNAL,
-    label: "Private",
+    label: "private",
   },
   {
     icon: GlobeIcon,
     key: EIssueCommentAccessSpecifier.EXTERNAL,
-    label: "Public",
+    label: "public",
   },
 ];
 
@@ -110,7 +111,7 @@ export function IssueCommentToolbar(props: Props) {
             const isAccessActive = accessSpecifier === access.key;
 
             return (
-              <Tooltip key={access.key} tooltipContent={access.label}>
+              <Tooltip key={access.key} tooltipContent={t(access.label)}>
                 <button
                   type="button"
                   onClick={() => handleAccessChange?.(access.key)}

@@ -44,7 +44,7 @@ export const useMemberColumns = () => {
 
   const columns = [
     {
-      key: "Full name",
+      key: t("project_members.full_name"),
       content: t("workspace_settings.settings.members.details.full_name"),
       thClassName: "text-left",
       thRender: () => (
@@ -66,7 +66,7 @@ export const useMemberColumns = () => {
     },
 
     {
-      key: "Display name",
+      key: t("display_name"),
       content: t("workspace_settings.settings.members.details.display_name"),
       tdRender: (rowData: RowData) => (
         <div className={`w-32 ${isSuspended(rowData) ? "text-placeholder" : ""}`}>{rowData.member.display_name}</div>
@@ -81,7 +81,7 @@ export const useMemberColumns = () => {
     },
 
     {
-      key: "Email address",
+      key: t("workspace_settings.settings.members.details.email_address"),
       content: t("workspace_settings.settings.members.details.email_address"),
       tdRender: (rowData: RowData) => (
         <div className={`w-48 truncate ${isSuspended(rowData) ? "text-placeholder" : ""}`}>{rowData.member.email}</div>
@@ -96,7 +96,7 @@ export const useMemberColumns = () => {
     },
 
     {
-      key: "Account type",
+      key: t("workspace_settings.settings.members.details.account_type"),
       content: t("workspace_settings.settings.members.details.account_type"),
       thRender: () => (
         <MemberHeaderColumn
@@ -109,7 +109,7 @@ export const useMemberColumns = () => {
     },
 
     {
-      key: "Authentication",
+      key: t("common.authentication"),
       content: t("workspace_settings.settings.members.details.authentication"),
       tdRender: (rowData: RowData) => {
         if (isSuspended(rowData)) return null;
@@ -120,7 +120,7 @@ export const useMemberColumns = () => {
     },
 
     {
-      key: "Joining date",
+      key: t("project_members.joining_date"),
       content: t("workspace_settings.settings.members.details.joining_date"),
       tdRender: (rowData: RowData) =>
         isSuspended(rowData) ? null : <div>{renderFormattedDate(rowData?.member?.joining_date)}</div>,

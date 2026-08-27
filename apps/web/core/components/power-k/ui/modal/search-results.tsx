@@ -14,6 +14,7 @@ import { useAppRouter } from "@/hooks/use-app-router";
 // helpers
 import { PowerKModalCommandItem } from "./command-item";
 import { POWER_K_SEARCH_RESULTS_GROUPS_MAP } from "./search-results-map";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   closePalette: () => void;
@@ -22,6 +23,8 @@ type Props = {
 
 export const PowerKModalSearchResults = observer(function PowerKModalSearchResults(props: Props) {
   const { closePalette, results } = props;
+  // translation
+  const { t } = useTranslation();
   // router
   const router = useAppRouter();
   const { projectId: routerProjectId } = useParams();
@@ -38,7 +41,7 @@ export const PowerKModalSearchResults = observer(function PowerKModalSearchResul
         if (section.length <= 0) return null;
 
         return (
-          <Command.Group key={key} heading={currentSection.title}>
+          <Command.Group key={key} heading={t(currentSection.title)}>
             {section.map((item) => {
               let value = `${key}-${item?.id}-${item.name}`;
 

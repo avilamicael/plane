@@ -61,7 +61,7 @@ export const ThemeSwitcher = observer(function ThemeSwitcher(props: {
 
         const updatePromise = updateUserTheme({ theme: themeOption.value });
         setPromiseToast(updatePromise, {
-          loading: "Updating theme...",
+          loading: t("updating_theme"),
           success: {
             title: t("common.theme.updated"),
             message: () => t("common.theme.reloading"),

@@ -71,7 +71,7 @@ export const ProjectSettingLabelGroup = observer(function ProjectSettingLabelGro
         handleLabelDelete(label);
       },
       isVisible: true,
-      text: "Delete label",
+      text: t("project_settings.labels.delete_label"),
       key: "delete_label",
     },
   ];

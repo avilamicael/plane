@@ -145,7 +145,7 @@ export const SidebarProjectsListItem = observer(function SidebarProjectsListItem
         element,
         canDrag: () => !disableDrag,
         dragHandle: dragHandleElement ?? undefined,
-        getInitialData: () => ({ id: projectId, dragInstanceId: "PROJECTS" }),
+        getInitialData: () => ({ id: projectId, dragInstanceId: t("common.projects") }),
         onDragStart: () => {
           setIsDragging(true);
         },

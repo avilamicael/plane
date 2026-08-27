@@ -9,6 +9,7 @@ import { observer } from "mobx-react";
 // plane imports
 import type { TStateOperationsCallbacks } from "@plane/types";
 import { cn } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 
 type TStateMarksAsDefault = {
   stateId: string;
@@ -17,6 +18,7 @@ type TStateMarksAsDefault = {
 };
 
 export const StateMarksAsDefault = observer(function StateMarksAsDefault(props: TStateMarksAsDefault) {
+  const { t } = useTranslation();
   const { stateId, isDefault, markStateAsDefaultCallback } = props;
   // states
   const [isLoading, setIsLoading] = useState(false);
@@ -43,7 +45,7 @@ export const StateMarksAsDefault = observer(function StateMarksAsDefault(props: 
       disabled={isDefault || isLoading}
       onClick={handleMarkAsDefault}
     >
-      {isLoading ? "Marking as default" : isDefault ? `Default` : `Mark as default`}
+      {isLoading ? t("project_settings.states.marking_as_default") : isDefault ? `Default` : `Mark as default`}
     </button>
   );
 });

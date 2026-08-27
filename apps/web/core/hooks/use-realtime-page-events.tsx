@@ -150,7 +150,8 @@ export const useRealtimePageEvents = ({
             // Show toast notification
             setToast({
               type: TOAST_TYPE.ERROR,
-              title: errorType === "fetch" ? "Failed to load page" : "Failed to save page",
+              title:
+                errorType === "fetch" ? t("page_actions.toasts.load_failed") : t("page_actions.toasts.save_failed"),
               message: errorMessage,
             });
 

@@ -9,6 +9,7 @@ import { ChevronRightIcon } from "@plane/propel/icons";
 import { EPillVariant, Pill, EPillSize } from "@plane/propel/pill";
 import { ToggleSwitch } from "@plane/ui";
 import { joinUrlPath } from "@plane/utils";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   workspaceSlug: string;
@@ -20,6 +21,7 @@ type Props = {
 };
 
 export function ProjectFeatureToggle(props: Props) {
+  const { t } = useTranslation();
   const { workspaceSlug, projectId, featureItem, value, handleSubmit, disabled } = props;
   return featureItem?.href ? (
     <Link href={joinUrlPath(workspaceSlug, "settings", "projects", projectId, "features", featureItem?.href)}>
@@ -29,7 +31,7 @@ export function ProjectFeatureToggle(props: Props) {
           size={EPillSize.SM}
           className="rounded-lg border-none"
         >
-          {value ? "Enabled" : "Disabled"}
+          {value ? t("common.enabled") : t("common.disabled")}
         </Pill>
         <ChevronRightIcon className="h-4 w-4 text-tertiary" />
       </div>

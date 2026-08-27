@@ -18,12 +18,14 @@ import { ActivitySettingsLoader } from "@/components/ui/loader/settings/activity
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUser } from "@/hooks/store/user";
+import { useTranslation } from "@plane/i18n";
 
 type Props = {
   activity: IUserActivityResponse | undefined;
 };
 
 export const ActivityList = observer(function ActivityList(props: Props) {
+  const { t } = useTranslation();
   const { activity } = props;
   // params
   const { workspaceSlug } = useParams();
@@ -155,7 +157,7 @@ export const ActivityList = observer(function ActivityList(props: Props) {
                               >
                                 <span className="text-gray font-medium">
                                   {currentUser?.id === activityItem.actor_detail.id
-                                    ? "You"
+                                    ? t("you")
                                     : activityItem.actor_detail.display_name}
                                 </span>
                               </Link>

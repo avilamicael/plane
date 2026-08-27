@@ -56,7 +56,7 @@ export function GeneratedTokenDetails(props: Props) {
         <p className="text-11 text-placeholder">
           {tokenDetails.expired_at
             ? `Expires ${renderFormattedDate(tokenDetails.expired_at)} at ${renderFormattedTime(tokenDetails.expired_at)}`
-            : "Never expires"}
+            : t("common.never_expires")}
         </p>
         <Button variant="secondary" onClick={handleClose}>
           {t("close")}

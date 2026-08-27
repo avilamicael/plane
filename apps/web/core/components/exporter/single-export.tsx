@@ -39,7 +39,13 @@ export function SingleExport({ service, refreshing }: Props) {
           <span>
             Export to{" "}
             <span className="font-medium">
-              {provider === "csv" ? "CSV" : provider === "xlsx" ? "Excel" : provider === "json" ? "JSON" : ""}
+              {provider === "csv"
+                ? t("exporter.csv.title")
+                : provider === "xlsx"
+                  ? t("exporter.excel.title")
+                  : provider === "json"
+                    ? t("exporter.json.title")
+                    : ""}
             </span>{" "}
           </span>
           <span
@@ -55,7 +61,7 @@ export function SingleExport({ service, refreshing }: Props) {
                       : ""
             }`}
           >
-            {refreshing ? "Refreshing..." : service.status}
+            {refreshing ? t("refreshing") : service.status}
           </span>
         </h4>
         <div className="mt-2 flex items-center gap-2 text-11 text-secondary">
@@ -69,7 +75,7 @@ export function SingleExport({ service, refreshing }: Props) {
             <div>
               <a target="_blank" href={service?.url} rel="noopener noreferrer">
                 <Button variant="primary" className="w-full">
-                  {isLoading ? "Downloading..." : "Download"}
+                  {isLoading ? t("common.downloading") : t("common.download")}
                 </Button>
               </a>
             </div>

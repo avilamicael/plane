@@ -90,7 +90,11 @@ export const StateDelete = observer(function StateDelete(props: TStateDelete) {
       >
         <Tooltip
           tooltipContent={
-            state.default ? "Cannot delete the default state." : totalStates === 1 ? `Cannot have an empty group.` : ``
+            state.default
+              ? t("project_settings.states.cannot_delete_default")
+              : totalStates === 1
+                ? `Cannot have an empty group.`
+                : ``
           }
           isMobile={isMobile}
           disabled={!isDeleteDisabled}

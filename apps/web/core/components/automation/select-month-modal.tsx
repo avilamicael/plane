@@ -130,7 +130,7 @@ export function SelectMonthModal({ type, initialValues, isOpen, handleClose, han
             {t("common.cancel")}
           </Button>
           <Button variant="primary" size="lg" type="submit" loading={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit"}
+            {isSubmitting ? t("common.submitting") : t("submit")}
           </Button>
         </div>
       </form>

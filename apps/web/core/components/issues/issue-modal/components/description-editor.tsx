@@ -122,7 +122,7 @@ export const IssueDescriptionEditor = observer(function IssueDescriptionEditor(p
     aiService
       .createGptTask(workspaceSlug.toString(), {
         prompt: issueName,
-        task: "Generate a proper description for this work item.",
+        task: t("common.ai.generate_description"),
       })
       .then((res) => {
         if (res.response === "")

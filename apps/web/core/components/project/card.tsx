@@ -81,7 +81,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
 
     const addToFavoritePromise = addProjectToFavorites(workspaceSlug.toString(), project.id);
     setPromiseToast(addToFavoritePromise, {
-      loading: "Adding project to favorites...",
+      loading: t("adding_project_to_favorites"),
       success: {
         title: t("common.toast.success"),
         message: () => t("common.project_favorite.added"),
@@ -102,7 +102,7 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
 
     const removeFromFavoritePromise = removeProjectFromFavorites(workspaceSlug.toString(), project.id);
     setPromiseToast(removeFromFavoritePromise, {
-      loading: "Removing project from favorites...",
+      loading: t("removing_project_from_favorites"),
       success: {
         title: t("common.toast.success"),
         message: () => t("common.project_favorite.removed"),
@@ -285,7 +285,9 @@ export const ProjectCard = observer(function ProjectCard(props: Props) {
                 isMobile={isMobile}
                 tooltipHeading={t("members")}
                 tooltipContent={
-                  project.members && project.members.length > 0 ? `${project.members.length} Members` : "No Member"
+                  project.members && project.members.length > 0
+                    ? `${project.members.length} Members`
+                    : t("project.card.no_member")
                 }
                 position="top"
               >

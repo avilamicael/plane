@@ -12,6 +12,7 @@ import { months } from "../data";
 import { getNumberOfDaysBetweenTwoDates, getNumberOfDaysInMonth } from "./helpers";
 import type { IWeekBlock } from "./week-view";
 import { getWeeksBetweenTwoDates } from "./week-view";
+import { i18nInstance } from "@plane/i18n";
 
 export interface IMonthBlock {
   today: boolean;
@@ -146,7 +147,7 @@ export const getMonthsBetweenTwoDates = (startDate: Date, endDate: Date): IMonth
       year: currentYear,
       month: currentMonth,
       monthData: months[currentMonth],
-      title: `${months[currentMonth].title} ${currentYear}`,
+      title: `${i18nInstance.t(months[currentMonth].title)} ${currentYear}`,
       days: getNumberOfDaysInMonth(currentMonth, currentYear),
       today: todayMonth === currentMonth && todayYear === currentYear,
     });

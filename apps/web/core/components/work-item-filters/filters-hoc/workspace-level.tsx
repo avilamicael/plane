@@ -94,11 +94,11 @@ export const WorkspaceLevelWorkItemFiltersHOC = observer(function WorkspaceLevel
 
   const getDefaultViewDetailPayload: () => Partial<IWorkspaceView> = useCallback(
     () => ({
-      name: viewDetails ? `${viewDetails?.name} 2` : "Untitled",
+      name: viewDetails ? `${viewDetails?.name} 2` : t("common.untitled"),
       description: viewDetails ? viewDetails.description : "",
       access: viewDetails ? viewDetails.access : EViewAccess.PUBLIC,
     }),
-    [viewDetails]
+    [viewDetails, t]
   );
 
   const getViewFilterPayload: (filterExpression: TWorkItemFilterExpression) => Partial<IWorkspaceView> = useCallback(

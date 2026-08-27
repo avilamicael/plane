@@ -21,8 +21,8 @@ export const useExportColumns = () => {
   const { t } = useTranslation();
   const columns = [
     {
-      key: "Exported By",
-      content: "Exported By",
+      key: t("workspace_settings.settings.exports.exported_by"),
+      content: t("workspace_settings.settings.exports.exported_by"),
       tdRender: (rowData: RowData) => {
         const { avatar_url, display_name, email } = rowData.initiated_by_detail;
         return (
@@ -48,34 +48,34 @@ export const useExportColumns = () => {
       },
     },
     {
-      key: "Exported On",
-      content: "Exported On",
+      key: t("workspace_settings.settings.exports.exported_on"),
+      content: t("workspace_settings.settings.exports.exported_on"),
       tdRender: (rowData: RowData) => <span>{renderFormattedDate(rowData.created_at)}</span>,
     },
 
     {
-      key: "Exported projects",
-      content: "Exported projects",
+      key: t("workspace_settings.settings.exports.exported_projects"),
+      content: t("workspace_settings.settings.exports.exported_projects"),
       tdRender: (rowData: RowData) => <div className="text-13">{rowData.project.length} project(s)</div>,
     },
     {
-      key: "Format",
-      content: "Format",
+      key: t("common.format"),
+      content: t("common.format"),
       tdRender: (rowData: RowData) => (
         <span className="text-13">
           {rowData.provider === "csv"
-            ? "CSV"
+            ? t("exporter.csv.title")
             : rowData.provider === "xlsx"
-              ? "Excel"
+              ? t("exporter.excel.title")
               : rowData.provider === "json"
-                ? "JSON"
+                ? t("exporter.json.title")
                 : ""}
         </span>
       ),
     },
     {
-      key: "Status",
-      content: "Status",
+      key: t("common.status"),
+      content: t("common.status"),
       tdRender: (rowData: RowData) => (
         <span
           className={`rounded-sm px-2 py-1 text-11 capitalize ${
@@ -95,8 +95,8 @@ export const useExportColumns = () => {
       ),
     },
     {
-      key: "Download",
-      content: "Download",
+      key: t("common.download"),
+      content: t("common.download"),
       tdRender: (rowData: RowData) =>
         checkExpiry(rowData.created_at) ? (
           <>

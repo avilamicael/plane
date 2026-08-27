@@ -45,7 +45,7 @@ export const FiltersRow = observer(function FiltersRow<K extends TFilterProperty
   };
 
   const modalButtonConfig: Partial<TAddFilterButtonProps<K, E>["buttonConfig"]> = {
-    label: !hasAnyConditions ? "Filters" : null,
+    label: !hasAnyConditions ? t("common.filters") : null,
   };
 
   const handleUpdate = useCallback(async () => {
@@ -99,7 +99,7 @@ export const FiltersRow = observer(function FiltersRow<K extends TFilterProperty
           loading={isUpdating}
           disabled={isUpdating}
         >
-          {isUpdating ? "Confirming" : (filter.updateViewOptions?.label ?? t("common.update_view"))}
+          {isUpdating ? t("confirming") : (filter.updateViewOptions?.label ?? t("common.update_view"))}
         </Button>
       </ElementTransition>
     </>

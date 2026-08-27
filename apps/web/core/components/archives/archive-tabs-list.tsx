@@ -11,6 +11,7 @@ import { useParams, usePathname } from "next/navigation";
 import type { IProject } from "@plane/types";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
+import { useTranslation } from "@plane/i18n";
 
 const ARCHIVES_TAB_LIST: {
   key: string;
@@ -19,22 +20,23 @@ const ARCHIVES_TAB_LIST: {
 }[] = [
   {
     key: "issues",
-    label: "Work items",
+    label: "issues",
     shouldRender: () => true,
   },
   {
     key: "cycles",
-    label: "Cycles",
+    label: "cycles",
     shouldRender: (projectDetails) => projectDetails.cycle_view,
   },
   {
     key: "modules",
-    label: "Modules",
+    label: "modules",
     shouldRender: (projectDetails) => projectDetails.module_view,
   },
 ];
 
 export const ArchiveTabsList = observer(function ArchiveTabsList() {
+  const { t } = useTranslation();
   // router
   const { workspaceSlug, projectId } = useParams();
   const pathname = usePathname();
@@ -59,7 +61,7 @@ export const ArchiveTabsList = observer(function ArchiveTabsList() {
                     : "border-transparent text-tertiary hover:border-subtle hover:text-placeholder"
                 }`}
               >
-                {tab.label}
+                {t(tab.label)}
               </span>
             </Link>
           )
