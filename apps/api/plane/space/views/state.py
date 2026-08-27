@@ -12,7 +12,7 @@ from rest_framework.response import Response
 
 # Module imports
 from .base import BaseAPIView
-from plane.db.models import DeployBoard, State
+from plane.db.models import DeployBoard, State, StateGroup
 
 
 class ProjectStatesEndpoint(BaseAPIView):
@@ -23,8 +23,11 @@ class ProjectStatesEndpoint(BaseAPIView):
         if not deploy_board:
             return Response({"error": "Invalid anchor"}, status=status.HTTP_404_NOT_FOUND)
 
+        # Exclude triage states by their semantic group, never by their display
+        # name: the name is user-editable (and localizable), so filtering on it
+        # would leak intake/triage items into the public board.
         states = State.objects.filter(
-            ~Q(name="Triage"),
+            ~Q(group=StateGroup.TRIAGE.value),
             workspace__slug=deploy_board.workspace.slug,
             project_id=deploy_board.project_id,
         ).values("name", "group", "color", "id", "sequence")
