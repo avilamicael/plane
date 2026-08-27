@@ -279,6 +279,14 @@ minimumReleaseAgeExclude:
   - storybook@10.4.6
 
 patchedDependencies:
+  # Headless UI v2 wraps the children of Menu.Items / Combobox.Options / Listbox.Options
+  # in an internal <Frozen> that does `cloneElement(child, { ref })` unconditionally.
+  # Frozen is rendered without a ref, so `ref` is null and the clone WIPES the ref the
+  # app put on that child. Every dropdown here hangs `ref={setPopperElement}` on that
+  # single child, so popperElement stayed null, usePopper never created an instance and
+  # the panel rendered at `position: absolute; left: 0; top: 0` — the top-left corner.
+  # The patch keeps the child's own ref when Frozen has none to forward.
+  '@headlessui/react@2.2.10': patches/@headlessui__react@2.2.10.patch
   react-color@2.19.3: patches/react-color@2.19.3.patch
 
 peerDependencyRules:
