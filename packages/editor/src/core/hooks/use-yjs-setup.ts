@@ -12,6 +12,7 @@ import { IndexeddbPersistence } from "y-indexeddb";
 // yjs
 import type * as Y from "yjs";
 // types
+import { i18nInstance } from "@plane/i18n";
 import type { CollaborationState, CollabStage, CollaborationError } from "@/types/collaboration";
 
 // Helper to check if a close code indicates a forced close
@@ -65,7 +66,10 @@ export const useYjsSetup = ({ docId, serverUrl, authToken, onStateChange }: UseY
       url: serverUrl,
       onAuthenticationFailed: () => {
         if (isDisposedRef.current) return;
-        const error: CollaborationError = { type: "auth-failed", message: "Authentication failed" };
+        const error: CollaborationError = {
+          type: "auth-failed",
+          message: i18nInstance.t("editor_ui.connection.authentication_failed"),
+        };
         const newStage = { kind: "disconnected" as const, error };
         stageRef.current = newStage;
         setStage(newStage);
@@ -153,7 +157,9 @@ export const useYjsSetup = ({ docId, serverUrl, authToken, onStateChange }: UseY
         const error: CollaborationError = {
           type: "forced-close",
           code: closeCode || 0,
-          message: isManualDisconnect ? "Manually disconnected" : "Server forced connection close",
+          message: isManualDisconnect
+            ? i18nInstance.t("editor_ui.connection.manually_disconnected")
+            : i18nInstance.t("editor_ui.connection.server_forced_close"),
         };
         const newStage = { kind: "disconnected" as const, error };
         stageRef.current = newStage;

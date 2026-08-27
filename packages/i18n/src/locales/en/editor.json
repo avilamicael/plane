@@ -61,5 +61,146 @@
       "use_this": "Use this",
       "refine": "Refine"
     }
+  },
+  "editor_ui": {
+    "blocks": {
+      "text": "Text",
+      "text_description": "Just start typing with plain text.",
+      "heading_1": "Heading 1",
+      "heading_1_description": "Big section heading.",
+      "heading_2": "Heading 2",
+      "heading_2_description": "Medium section heading.",
+      "heading_3": "Heading 3",
+      "heading_3_description": "Small section heading.",
+      "heading_4": "Heading 4",
+      "heading_5": "Heading 5",
+      "heading_6": "Heading 6",
+      "numbered_list": "Numbered list",
+      "numbered_list_description": "Create a numbered list.",
+      "bulleted_list": "Bulleted list",
+      "bulleted_list_description": "Create a bulleted list.",
+      "todo_list": "To-do list",
+      "todo_list_description": "Create a to-do list.",
+      "table": "Table",
+      "table_description": "Create a table",
+      "quote": "Quote",
+      "quote_description": "Capture a quote.",
+      "code": "Code",
+      "code_description": "Capture a code snippet.",
+      "callout": "Callout",
+      "callout_description": "Insert callout",
+      "divider": "Divider",
+      "divider_description": "Visually divide blocks.",
+      "emoji": "Emoji",
+      "emoji_description": "Insert an emoji",
+      "image": "Image",
+      "image_description": "Insert an image",
+      "link": "Link",
+      "multiple": "Multiple",
+      "heading_4_description": "Small section heading.",
+      "heading_5_description": "Small section heading.",
+      "heading_6_description": "Small section heading."
+    },
+    "marks": {
+      "bold": "Bold",
+      "italic": "Italic",
+      "underline": "Underline",
+      "strikethrough": "Strikethrough"
+    },
+    "colors": {
+      "label": "Colors",
+      "color": "Color",
+      "text_colors": "Text colors",
+      "background_colors": "Background colors",
+      "text_color": "Text color",
+      "background_color": "Background color",
+      "change_text_color": "Change text color",
+      "change_background_color": "Change background color",
+      "default": "Default",
+      "default_background": "Default background",
+      "names": {
+        "gray": "Gray",
+        "peach": "Peach",
+        "pink": "Pink",
+        "orange": "Orange",
+        "green": "Green",
+        "light_blue": "Light blue",
+        "dark_blue": "Dark blue",
+        "purple": "Purple"
+      }
+    },
+    "align": {
+      "label": "Text align",
+      "align": "Align",
+      "left": "Left align",
+      "center": "Center align",
+      "right": "Right align",
+      "left_short": "Left",
+      "center_short": "Center",
+      "right_short": "Right"
+    },
+    "fonts": {
+      "sans_serif": "Sans serif",
+      "serif": "Serif",
+      "mono": "Mono"
+    },
+    "table": {
+      "insert_above": "Insert above",
+      "insert_below": "Insert below",
+      "insert_left": "Insert left",
+      "insert_right": "Insert right",
+      "duplicate": "Duplicate",
+      "clear_contents": "Clear contents",
+      "delete": "Delete",
+      "header_row": "Header row",
+      "header_column": "Header column",
+      "insert_columns": "Insert columns",
+      "insert_rows": "Insert rows"
+    },
+    "block_menu": {
+      "delete": "Delete",
+      "duplicate": "Duplicate",
+      "fit_to_width": "Fit to width"
+    },
+    "image": {
+      "download": "Download",
+      "download_image": "Download image",
+      "fullscreen_viewer": "Fullscreen image viewer",
+      "close_viewer": "Close image viewer",
+      "zoom_in": "Zoom in",
+      "zoom_out": "Zoom out",
+      "open_in_new_tab": "Open image in new tab",
+      "view_full_screen": "View in full screen",
+      "view_image_full_screen": "View image in full screen",
+      "retry": "Retry",
+      "retry_duplication": "Retry duplication",
+      "error_loading": "Error loading image",
+      "uploading": "Uploading...",
+      "drop_here": "Drop image here",
+      "add_image": "Add an image"
+    },
+    "code": {
+      "copy_code": "Copy code"
+    },
+    "link": {
+      "enter_or_paste_link": "Enter or paste a link",
+      "enter_or_paste_url": "Enter or paste URL",
+      "text_to_display": "Enter Text to display",
+      "url_label": "URL",
+      "text_label": "Text",
+      "remove_link": "Remove Link"
+    },
+    "mentions": {
+      "loading": "Loading...",
+      "no_results": "No results"
+    },
+    "emoji": {
+      "no_emojis_found": "No emojis found"
+    },
+    "connection": {
+      "authentication_failed": "Authentication failed",
+      "manually_disconnected": "Manually disconnected",
+      "server_forced_close": "Server forced connection close"
+    }
   }
 }

@@ -439,11 +439,19 @@
       "archive": {
         "error": {
           "message": "Project could not be archived. Please try again."
+        },
+        "success": {
+          "title": "Archive success",
+          "message": "{name} has been archived successfully"
         }
       },
       "restore": {
         "error": {
           "message": "Project could not be restored. Please try again."
+        },
+        "success": {
+          "title": "Restore success",
+          "message": "You can find {name} in your projects."
         }
       },
       "leave": {
@@ -487,11 +495,42 @@
       "anyone_with_link_can_access": "Anyone with the link can access"
     },
     "join": {
-      "title": "Join project?"
+      "title": "Join project?",
+      "description_prefix": "Are you sure you want to join the project",
+      "description_suffix": "? Please click the 'Join Project' button below to continue.",
+      "button": "Join Project",
+      "joining": "Joining..."
     },
     "card": {
       "created_on": "Created on {date}",
       "no_members_yet": "No member yet"
+    },
+    "delete_modal": {
+      "confirm_prefix": "To confirm, type",
+      "confirm_suffix": "below:",
+      "confirm_phrase": "delete my project",
+      "confirm_placeholder": "Enter 'delete my project'"
+    },
+    "leave_modal": {
+      "enter_project_name_prefix": "Enter the project name",
+      "enter_project_name_suffix": "to continue:",
+      "confirm_phrase": "Leave Project",
+      "confirm_placeholder": "Enter 'leave project'",
+      "project_name_required": "Project name is required"
+    },
+    "archive_restore_modal": {
+      "archive_title": "Archive {name}",
+      "restore_title": "Restore {name}",
+      "archive_description": "This project and its work items, cycles, modules, and pages will be archived. Its work items won't appear in search. Only project admins can restore the project.",
+      "restore_description": "Restoring a project will activate it and make it visible to all members of the project. Are you sure you want to continue?"
+    },
+    "remove_member_modal": {
+      "leave_title": "Leave project?",
+      "remove_title": "Remove {name}?",
+      "leave_description_prefix": "Are you sure you want to leave the",
+      "leave_description_suffix": "project? You will be able to join the project if invited again or if it's public.",
+      "remove_description_prefix": "Are you sure you want to remove member-",
+      "remove_description_suffix": "? They will no longer have access to this project. This action cannot be undone."
     }
   }
 }

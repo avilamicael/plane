@@ -46,7 +46,8 @@ export function DeleteProjectModal(props: DeleteProjectModal) {
     watch,
   } = useForm({ defaultValues });
 
-  const canDelete = watch("projectName") === project?.name && watch("confirmDelete") === "delete my project";
+  const confirmPhrase = t("project.delete_modal.confirm_phrase");
+  const canDelete = watch("projectName") === project?.name && watch("confirmDelete") === confirmPhrase;
 
   const handleClose = () => {
     const timer = setTimeout(() => {
@@ -120,7 +121,8 @@ export function DeleteProjectModal(props: DeleteProjectModal) {
         </div>
         <div className="text-secondary">
           <p className="text-13">
-            To confirm, type <span className="font-medium text-primary">delete my project</span> below:
+            {t("project.delete_modal.confirm_prefix")} <span className="font-medium text-primary">{confirmPhrase}</span>{" "}
+            {t("project.delete_modal.confirm_suffix")}
           </p>
           <Controller
             control={control}
@@ -134,7 +136,7 @@ export function DeleteProjectModal(props: DeleteProjectModal) {
                 onChange={onChange}
                 ref={ref}
                 hasError={Boolean(errors.confirmDelete)}
-                placeholder="Enter 'delete my project'"
+                placeholder={t("project.delete_modal.confirm_placeholder")}
                 className="mt-2 w-full"
                 autoComplete="off"
               />
@@ -143,10 +145,10 @@ export function DeleteProjectModal(props: DeleteProjectModal) {
         </div>
         <div className="flex justify-end gap-2">
           <Button variant="secondary" size="lg" onClick={handleClose}>
-            Cancel
+            {t("common.cancel")}
           </Button>
           <Button variant="error-fill" size="lg" type="submit" disabled={!canDelete} loading={isSubmitting}>
-            {isSubmitting ? "Deleting" : t("project_settings.general.delete_project.title")}
+            {isSubmitting ? t("common.deleting") : t("project_settings.general.delete_project.title")}
           </Button>
         </div>
       </form>

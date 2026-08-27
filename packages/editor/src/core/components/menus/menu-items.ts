@@ -62,6 +62,7 @@ type commandFunction<T extends TEditorCommands> = (params?: TCommandWithProps<T>
 
 export type EditorMenuItem<T extends TEditorCommands> = {
   key: T;
+  /** Chave i18n — traduza com t(item.name) no ponto de renderização. */
   name: string;
   command: commandFunction<T>;
   icon: LucideIcon | React.FC<ISvgIcons>;
@@ -70,7 +71,7 @@ export type EditorMenuItem<T extends TEditorCommands> = {
 
 export const TextItem = (editor: Editor): EditorMenuItem<"text"> => ({
   key: "text",
-  name: "Text",
+  name: "editor_ui.blocks.text",
   isActive: () => editor.isActive(CORE_EXTENSIONS.PARAGRAPH),
   command: () => setText(editor),
   icon: CaseSensitive,
@@ -93,26 +94,26 @@ const HeadingItem = <T extends SupportedHeadingLevels>(
 });
 
 export const HeadingOneItem = (editor: Editor): EditorMenuItem<"h1"> =>
-  HeadingItem(editor, 1, "h1", "Heading 1", Heading1);
+  HeadingItem(editor, 1, "h1", "editor_ui.blocks.heading_1", Heading1);
 
 export const HeadingTwoItem = (editor: Editor): EditorMenuItem<"h2"> =>
-  HeadingItem(editor, 2, "h2", "Heading 2", Heading2);
+  HeadingItem(editor, 2, "h2", "editor_ui.blocks.heading_2", Heading2);
 
 export const HeadingThreeItem = (editor: Editor): EditorMenuItem<"h3"> =>
-  HeadingItem(editor, 3, "h3", "Heading 3", Heading3);
+  HeadingItem(editor, 3, "h3", "editor_ui.blocks.heading_3", Heading3);
 
 export const HeadingFourItem = (editor: Editor): EditorMenuItem<"h4"> =>
-  HeadingItem(editor, 4, "h4", "Heading 4", Heading4);
+  HeadingItem(editor, 4, "h4", "editor_ui.blocks.heading_4", Heading4);
 
 export const HeadingFiveItem = (editor: Editor): EditorMenuItem<"h5"> =>
-  HeadingItem(editor, 5, "h5", "Heading 5", Heading5);
+  HeadingItem(editor, 5, "h5", "editor_ui.blocks.heading_5", Heading5);
 
 export const HeadingSixItem = (editor: Editor): EditorMenuItem<"h6"> =>
-  HeadingItem(editor, 6, "h6", "Heading 6", Heading6);
+  HeadingItem(editor, 6, "h6", "editor_ui.blocks.heading_6", Heading6);
 
 export const BoldItem = (editor: Editor): EditorMenuItem<"bold"> => ({
   key: "bold",
-  name: "Bold",
+  name: "editor_ui.marks.bold",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.BOLD),
   command: () => toggleBold(editor),
   icon: BoldIcon,
@@ -120,7 +121,7 @@ export const BoldItem = (editor: Editor): EditorMenuItem<"bold"> => ({
 
 export const ItalicItem = (editor: Editor): EditorMenuItem<"italic"> => ({
   key: "italic",
-  name: "Italic",
+  name: "editor_ui.marks.italic",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.ITALIC),
   command: () => toggleItalic(editor),
   icon: ItalicIcon,
@@ -128,7 +129,7 @@ export const ItalicItem = (editor: Editor): EditorMenuItem<"italic"> => ({
 
 export const UnderLineItem = (editor: Editor): EditorMenuItem<"underline"> => ({
   key: "underline",
-  name: "Underline",
+  name: "editor_ui.marks.underline",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.UNDERLINE),
   command: () => toggleUnderline(editor),
   icon: UnderlineIcon,
@@ -136,7 +137,7 @@ export const UnderLineItem = (editor: Editor): EditorMenuItem<"underline"> => ({
 
 export const StrikeThroughItem = (editor: Editor): EditorMenuItem<"strikethrough"> => ({
   key: "strikethrough",
-  name: "Strikethrough",
+  name: "editor_ui.marks.strikethrough",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.STRIKETHROUGH),
   command: () => toggleStrike(editor),
   icon: StrikethroughIcon,
@@ -144,7 +145,7 @@ export const StrikeThroughItem = (editor: Editor): EditorMenuItem<"strikethrough
 
 export const BulletListItem = (editor: Editor): EditorMenuItem<"bulleted-list"> => ({
   key: "bulleted-list",
-  name: "Bulleted list",
+  name: "editor_ui.blocks.bulleted_list",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.BULLET_LIST),
   command: () => toggleBulletList(editor),
   icon: ListIcon,
@@ -152,7 +153,7 @@ export const BulletListItem = (editor: Editor): EditorMenuItem<"bulleted-list"> 
 
 export const NumberedListItem = (editor: Editor): EditorMenuItem<"numbered-list"> => ({
   key: "numbered-list",
-  name: "Numbered list",
+  name: "editor_ui.blocks.numbered_list",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.ORDERED_LIST),
   command: () => toggleOrderedList(editor),
   icon: ListOrderedIcon,
@@ -160,7 +161,7 @@ export const NumberedListItem = (editor: Editor): EditorMenuItem<"numbered-list"
 
 export const TodoListItem = (editor: Editor): EditorMenuItem<"to-do-list"> => ({
   key: "to-do-list",
-  name: "To-do list",
+  name: "editor_ui.blocks.todo_list",
   isActive: () => editor.isActive(CORE_EXTENSIONS.TASK_ITEM),
   command: () => toggleTaskList(editor),
   icon: CheckSquare,
@@ -168,7 +169,7 @@ export const TodoListItem = (editor: Editor): EditorMenuItem<"to-do-list"> => ({
 
 export const QuoteItem = (editor: Editor): EditorMenuItem<"quote"> => ({
   key: "quote",
-  name: "Quote",
+  name: "editor_ui.blocks.quote",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.BLOCKQUOTE),
   command: () => toggleBlockquote(editor),
   icon: TextQuote,
@@ -176,7 +177,7 @@ export const QuoteItem = (editor: Editor): EditorMenuItem<"quote"> => ({
 
 export const CodeItem = (editor: Editor): EditorMenuItem<"code"> => ({
   key: "code",
-  name: "Code",
+  name: "editor_ui.blocks.code",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.CODE_INLINE) || editor?.isActive(CORE_EXTENSIONS.CODE_BLOCK),
   command: () => toggleCodeBlock(editor),
   icon: CodeIcon,
@@ -184,7 +185,7 @@ export const CodeItem = (editor: Editor): EditorMenuItem<"code"> => ({
 
 export const TableItem = (editor: Editor): EditorMenuItem<"table"> => ({
   key: "table",
-  name: "Table",
+  name: "editor_ui.blocks.table",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.TABLE),
   command: () => insertTableCommand(editor),
   icon: TableIcon,
@@ -192,7 +193,7 @@ export const TableItem = (editor: Editor): EditorMenuItem<"table"> => ({
 
 export const ImageItem = (editor: Editor): EditorMenuItem<"image"> => ({
   key: "image",
-  name: "Image",
+  name: "editor_ui.blocks.image",
   isActive: () => editor?.isActive(CORE_EXTENSIONS.IMAGE) || editor?.isActive(CORE_EXTENSIONS.CUSTOM_IMAGE),
   command: () => insertImage({ editor, event: "insert", pos: editor.state.selection.from }),
   icon: ImageIcon,
@@ -201,7 +202,7 @@ export const ImageItem = (editor: Editor): EditorMenuItem<"image"> => ({
 export const HorizontalRuleItem = (editor: Editor): EditorMenuItem<"divider"> =>
   ({
     key: "divider",
-    name: "Divider",
+    name: "editor_ui.blocks.divider",
     isActive: () => editor?.isActive(CORE_EXTENSIONS.HORIZONTAL_RULE),
     command: () => insertHorizontalRule(editor),
     icon: MinusSquare,
@@ -210,7 +211,7 @@ export const HorizontalRuleItem = (editor: Editor): EditorMenuItem<"divider"> =>
 export const LinkItem = (editor: Editor): EditorMenuItem<"link"> =>
   ({
     key: "link",
-    name: "Link",
+    name: "editor_ui.blocks.link",
     isActive: () => editor?.isActive("link"),
 
     command: (props) => {
@@ -224,7 +225,7 @@ export const LinkItem = (editor: Editor): EditorMenuItem<"link"> =>
 
 export const TextColorItem = (editor: Editor): EditorMenuItem<"text-color"> => ({
   key: "text-color",
-  name: "Color",
+  name: "editor_ui.colors.color",
   isActive: (props) => editor.isActive(CORE_EXTENSIONS.CUSTOM_COLOR, { color: props?.color }),
   command: (props) => {
     if (!props) return;
@@ -235,7 +236,7 @@ export const TextColorItem = (editor: Editor): EditorMenuItem<"text-color"> => (
 
 export const BackgroundColorItem = (editor: Editor): EditorMenuItem<"background-color"> => ({
   key: "background-color",
-  name: "Background color",
+  name: "editor_ui.colors.background_color",
   isActive: (props) => editor.isActive(CORE_EXTENSIONS.CUSTOM_COLOR, { backgroundColor: props?.color }),
   command: (props) => {
     if (!props) return;
@@ -246,7 +247,7 @@ export const BackgroundColorItem = (editor: Editor): EditorMenuItem<"background-
 
 export const TextAlignItem = (editor: Editor): EditorMenuItem<"text-align"> => ({
   key: "text-align",
-  name: "Text align",
+  name: "editor_ui.align.label",
   isActive: (props) => editor.isActive({ textAlign: props?.alignment }),
   command: (props) => {
     if (!props) return;

@@ -61,7 +61,7 @@ export const LeaveProjectModal = observer(function LeaveProjectModal(props: ILea
 
     if (data) {
       if (data.projectName === project?.name) {
-        if (data.confirmLeave === "Leave Project") {
+        if (data.confirmLeave === t("project.leave_modal.confirm_phrase")) {
           router.push(`/${workspaceSlug}/projects`);
           return leaveProject(workspaceSlug.toString(), project.id)
             .then(() => {
@@ -119,13 +119,15 @@ export const LeaveProjectModal = observer(function LeaveProjectModal(props: ILea
 
         <div className="text-secondary">
           <p className="text-13 break-words">
-            Enter the project name <span className="font-medium text-primary">{project?.name}</span> to continue:
+            {t("project.leave_modal.enter_project_name_prefix")}{" "}
+            <span className="font-medium text-primary">{project?.name}</span>{" "}
+            {t("project.leave_modal.enter_project_name_suffix")}
           </p>
           <Controller
             control={control}
             name="projectName"
             rules={{
-              required: "Label title is required",
+              required: t("project.leave_modal.project_name_required"),
             }}
             render={({ field: { value, onChange, ref } }) => (
               <Input
@@ -145,7 +147,9 @@ export const LeaveProjectModal = observer(function LeaveProjectModal(props: ILea
 
         <div className="text-secondary">
           <p className="text-13">
-            To confirm, type <span className="font-medium text-primary">Leave Project</span> below:
+            {t("project.delete_modal.confirm_prefix")}{" "}
+            <span className="font-medium text-primary">{t("project.leave_modal.confirm_phrase")}</span>{" "}
+            {t("project.delete_modal.confirm_suffix")}
           </p>
           <Controller
             control={control}
@@ -159,7 +163,7 @@ export const LeaveProjectModal = observer(function LeaveProjectModal(props: ILea
                 onChange={onChange}
                 ref={ref}
                 hasError={Boolean(errors.confirmLeave)}
-                placeholder="Enter 'leave project'"
+                placeholder={t("project.leave_modal.confirm_placeholder")}
                 className="mt-2 w-full"
               />
             )}
@@ -167,10 +171,10 @@ export const LeaveProjectModal = observer(function LeaveProjectModal(props: ILea
         </div>
         <div className="flex justify-end gap-2">
           <Button variant="secondary" size="lg" onClick={handleClose}>
-            Cancel
+            {t("common.cancel")}
           </Button>
           <Button variant="error-fill" size="lg" type="submit" loading={isSubmitting}>
-            {isSubmitting ? "Leaving..." : t("leave_project")}
+            {isSubmitting ? t("common.leaving") : t("leave_project")}
           </Button>
         </div>
       </form>

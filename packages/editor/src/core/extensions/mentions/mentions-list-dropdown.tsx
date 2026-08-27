@@ -13,6 +13,7 @@ import { debounce } from "lodash-es";
 import { useOutsideClickDetector } from "@plane/hooks";
 import { cn } from "@plane/utils";
 // helpers
+import { useTranslation } from "@plane/i18n";
 import { DROPDOWN_NAVIGATION_KEYS, getNextValidIndex } from "@/helpers/tippy";
 // types
 import type { TMentionHandler, TMentionSection, TMentionSuggestion } from "@/types";
@@ -23,6 +24,8 @@ export type MentionsListDropdownProps = SuggestionProps<TMentionSection, TMentio
   };
 
 export const MentionsListDropdown = forwardRef(function MentionsListDropdown(props: MentionsListDropdownProps, ref) {
+  // translation
+  const { t } = useTranslation();
   const { command, query, searchCallback, onClose } = props;
   // states
   const [sections, setSections] = useState<TMentionSection[]>([]);
@@ -158,7 +161,7 @@ export const MentionsListDropdown = forwardRef(function MentionsListDropdown(pro
         }}
       >
         {isLoading ? (
-          <div className="text-center text-13 text-placeholder">Loading...</div>
+          <div className="text-center text-13 text-placeholder">{t("editor_ui.mentions.loading")}</div>
         ) : sections.length ? (
           sections.map((section, sectionIndex) => (
             <div key={section.key} className="space-y-2">
@@ -200,7 +203,7 @@ export const MentionsListDropdown = forwardRef(function MentionsListDropdown(pro
             </div>
           ))
         ) : (
-          <div className="text-center text-13 text-placeholder">No results</div>
+          <div className="text-center text-13 text-placeholder">{t("editor_ui.mentions.no_results")}</div>
         )}
       </div>
     </>

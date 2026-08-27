@@ -579,7 +579,9 @@
         "workspace_name_special_characters": "O nome do espaço de trabalho não pode conter caracteres especiais como < > \" [ ] * ^ ! # %",
         "workspace_name_allowed_characters": "O nome do espaço de trabalho só pode conter letras, números, espaços, hifens e sublinhados",
         "workspace_name_alphanumeric_required": "O nome do espaço de trabalho deve conter pelo menos uma letra ou um número"
-      }
+      },
+      "cover_image_process_failed": "Não foi possível processar a imagem de capa",
+      "cover_image_upload_failed": "Não foi possível enviar a imagem de capa"
     },
     "update_link": "Atualizar link",
     "attach": "Anexar",
@@ -782,7 +784,17 @@
     "invalid_filter": "Filtro inválido",
     "invalid_filter_tooltip": "Esta condição de filtro não é mais válida. A propriedade pode ter sido excluída ou seu acesso a ela pode ter mudado.",
     "add_view": "Adicionar visualização",
-    "add_sticky": "Adicionar Sticky"
+    "add_sticky": "Adicionar Sticky",
+    "open_color_picker": "Abrir o seletor de cores",
+    "emoji": "Emoji",
+    "icon": "Ícone",
+    "dismiss_banner": "Dispensar o aviso",
+    "add_reaction": "Adicionar reação",
+    "contrast_adjust_note": "As cores serão ajustadas para garantir contraste suficiente.",
+    "leaving": "Saindo...",
+    "restoring": "Restaurando",
+    "removing": "Removendo...",
+    "project_name_max_length": "O nome do projeto deve ter menos de 255 caracteres"
   },
   "chart": {
     "x_axis": "Eixo X",

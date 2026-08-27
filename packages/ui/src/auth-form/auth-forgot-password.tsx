@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import { useTranslation } from "@plane/i18n";
 import { cn } from "../utils";
 
 export interface AuthForgotPasswordProps {
@@ -17,9 +18,11 @@ export interface AuthForgotPasswordProps {
 export function AuthForgotPassword({
   onForgotPassword,
   className = "",
-  text = "Forgot your password?",
+  text,
   disabled = false,
 }: AuthForgotPasswordProps) {
+  const { t } = useTranslation();
+
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     if (!disabled && onForgotPassword) {
@@ -41,7 +44,7 @@ export function AuthForgotPassword({
         className
       )}
     >
-      {text}
+      {text ?? t("auth.common.forgot_password")}
     </button>
   );
 }

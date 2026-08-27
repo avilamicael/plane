@@ -47,7 +47,7 @@ export function ArchiveCycleModal(props: Props) {
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Archive success",
+          title: t("cycle.toasts.archive.success.title"),
           message: t("cycle.toasts.archive.success.message"),
         });
         onClose();
@@ -67,16 +67,14 @@ export function ArchiveCycleModal(props: Props) {
   return (
     <ModalCore isOpen={isOpen} handleClose={onClose} position={EModalPosition.CENTER} width={EModalWidth.LG}>
       <div className="px-5 py-4">
-        <h3 className="text-18 font-medium 2xl:text-20">Archive cycle {cycleName}</h3>
-        <p className="mt-3 text-13 text-secondary">
-          Are you sure you want to archive the cycle? All your archives can be restored later.
-        </p>
+        <h3 className="text-18 font-medium 2xl:text-20">{t("cycle.archive_modal.title", { name: cycleName })}</h3>
+        <p className="mt-3 text-13 text-secondary">{t("cycle.archive_modal.description")}</p>
         <div className="mt-3 flex justify-end gap-2">
           <Button variant="secondary" size="lg" onClick={onClose}>
-            Cancel
+            {t("common.cancel")}
           </Button>
           <Button variant="primary" size="lg" tabIndex={1} onClick={handleArchiveCycle} loading={isArchiving}>
-            {isArchiving ? "Archiving" : "Archive"}
+            {isArchiving ? t("common.archiving") : t("common.archive")}
           </Button>
         </div>
       </div>

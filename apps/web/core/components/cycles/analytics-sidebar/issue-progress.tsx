@@ -34,12 +34,12 @@ type Options = {
 };
 
 export const cycleEstimateOptions: Options[] = [
-  { value: "issues", label: "Work items" },
-  { value: "points", label: "Estimates" },
+  { value: "issues", label: "cycle.progress.estimate_options.work_items" },
+  { value: "points", label: "cycle.progress.estimate_options.estimates" },
 ];
 export const cycleChartOptions: Options[] = [
-  { value: "burndown", label: "Burn-down" },
-  { value: "burnup", label: "Burn-up" },
+  { value: "burndown", label: "cycle.progress.chart_options.burn_down" },
+  { value: "burnup", label: "cycle.progress.chart_options.burn_up" },
 ];
 
 export const validateCycleSnapshot = (cycleDetails: ICycle | null): ICycle | null => {

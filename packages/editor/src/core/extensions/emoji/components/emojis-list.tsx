@@ -9,6 +9,7 @@ import type { SuggestionKeyDownProps, SuggestionProps } from "@tiptap/suggestion
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 // plane imports
 import { useOutsideClickDetector } from "@plane/hooks";
+import { useTranslation } from "@plane/i18n";
 import { cn } from "@plane/utils";
 
 export type EmojiItem = {
@@ -32,6 +33,8 @@ export const EmojisListDropdown = forwardRef(function EmojisListDropdown(
   ref: React.ForwardedRef<EmojiListRef>
 ) {
   const { items, command, query, onClose, forceOpen = false } = props;
+  // translation
+  const { t } = useTranslation();
   // states
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -172,7 +175,7 @@ export const EmojisListDropdown = forwardRef(function EmojisListDropdown(
             );
           })
         ) : (
-          <div className="py-2 text-center text-13 text-placeholder">No emojis found</div>
+          <div className="py-2 text-center text-13 text-placeholder">{t("editor_ui.emoji.no_emojis_found")}</div>
         )}
       </div>
     </>

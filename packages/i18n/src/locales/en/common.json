@@ -579,7 +579,9 @@
         "workspace_name_special_characters": "Workspace names cannot contain special characters such as < > \" [ ] * ^ ! # %",
         "workspace_name_allowed_characters": "Workspace names can only contain letters, numbers, spaces, hyphens and underscores",
         "workspace_name_alphanumeric_required": "Workspace name must contain at least one letter or number"
-      }
+      },
+      "cover_image_process_failed": "Failed to process cover image",
+      "cover_image_upload_failed": "Failed to upload cover image"
     },
     "update_link": "Update link",
     "attach": "Attach",
@@ -782,7 +784,17 @@
     "invalid_filter": "Invalid filter",
     "invalid_filter_tooltip": "This filter condition is no longer valid. The property may have been deleted or your access to it may have changed.",
     "add_view": "Add view",
-    "add_sticky": "Add sticky"
+    "add_sticky": "Add sticky",
+    "open_color_picker": "Open color picker",
+    "emoji": "Emoji",
+    "icon": "Icon",
+    "dismiss_banner": "Dismiss banner",
+    "add_reaction": "Add reaction",
+    "contrast_adjust_note": "Colors will be adjusted to ensure sufficient contrast.",
+    "leaving": "Leaving...",
+    "restoring": "Restoring",
+    "removing": "Removing...",
+    "project_name_max_length": "Project name should be less than 255 characters"
   },
   "chart": {
     "x_axis": "X-axis",

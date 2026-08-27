@@ -6,6 +6,7 @@
 
 import { useMemo, useCallback } from "react";
 import { Tabs } from "@base-ui-components/react";
+import { useTranslation } from "@plane/i18n";
 import { Popover } from "../popover";
 import { cn } from "../utils/classname";
 import { convertPlacementToSideAndAlign } from "../utils/placement";
@@ -15,6 +16,7 @@ import { emojiToString, EmojiIconPickerTypes } from "./helper";
 import { IconRoot } from "./icon/icon-root";
 
 export function EmojiPicker(props: TCustomEmojiPicker) {
+  const { t } = useTranslation();
   const {
     isOpen,
     handleToggle,
@@ -28,7 +30,7 @@ export function EmojiPicker(props: TCustomEmojiPicker) {
     onChange,
     placement = "bottom-start",
     searchDisabled = false,
-    searchPlaceholder = "Search",
+    searchPlaceholder,
     iconType = "lucide",
     side = "bottom",
     align = "start",
@@ -70,18 +72,18 @@ export function EmojiPicker(props: TCustomEmojiPicker) {
       [
         {
           key: "emoji",
-          label: "Emoji",
+          label: t("common.emoji"),
           content: (
             <EmojiRoot
               onChange={handleEmojiChange}
-              searchPlaceholder={searchPlaceholder}
+              searchPlaceholder={searchPlaceholder ?? t("common.search.label")}
               searchDisabled={searchDisabled}
             />
           ),
         },
         {
           key: "icon",
-          label: "Icon",
+          label: t("common.icon"),
           content: (
             <IconRoot
               defaultColor={defaultIconColor}
@@ -96,7 +98,7 @@ export function EmojiPicker(props: TCustomEmojiPicker) {
         label: tab.label,
         content: tab.content,
       })),
-    [defaultIconColor, searchDisabled, searchPlaceholder, iconType, handleEmojiChange, handleIconChange]
+    [defaultIconColor, searchDisabled, searchPlaceholder, iconType, handleEmojiChange, handleIconChange, t]
   );
 
   return (

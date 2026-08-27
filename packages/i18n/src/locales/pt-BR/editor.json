@@ -61,5 +61,146 @@
       "use_this": "Usar este",
       "refine": "Refinar"
     }
+  },
+  "editor_ui": {
+    "blocks": {
+      "text": "Texto",
+      "text_description": "É só começar a digitar em texto simples.",
+      "heading_1": "Título 1",
+      "heading_1_description": "Título de seção grande.",
+      "heading_2": "Título 2",
+      "heading_2_description": "Título de seção médio.",
+      "heading_3": "Título 3",
+      "heading_3_description": "Título de seção pequeno.",
+      "heading_4": "Título 4",
+      "heading_5": "Título 5",
+      "heading_6": "Título 6",
+      "numbered_list": "Lista numerada",
+      "numbered_list_description": "Criar uma lista numerada.",
+      "bulleted_list": "Lista com marcadores",
+      "bulleted_list_description": "Criar uma lista com marcadores.",
+      "todo_list": "Lista de tarefas",
+      "todo_list_description": "Criar uma lista de tarefas.",
+      "table": "Tabela",
+      "table_description": "Criar uma tabela",
+      "quote": "Citação",
+      "quote_description": "Registrar uma citação.",
+      "code": "Código",
+      "code_description": "Registrar um trecho de código.",
+      "callout": "Destaque",
+      "callout_description": "Inserir um destaque",
+      "divider": "Divisor",
+      "divider_description": "Separar blocos visualmente.",
+      "emoji": "Emoji",
+      "emoji_description": "Inserir um emoji",
+      "image": "Imagem",
+      "image_description": "Inserir uma imagem",
+      "link": "Link",
+      "multiple": "Vários",
+      "heading_4_description": "Título de seção pequeno.",
+      "heading_5_description": "Título de seção pequeno.",
+      "heading_6_description": "Título de seção pequeno."
+    },
+    "marks": {
+      "bold": "Negrito",
+      "italic": "Itálico",
+      "underline": "Sublinhado",
+      "strikethrough": "Tachado"
+    },
+    "colors": {
+      "label": "Cores",
+      "color": "Cor",
+      "text_colors": "Cores do texto",
+      "background_colors": "Cores de fundo",
+      "text_color": "Cor do texto",
+      "background_color": "Cor de fundo",
+      "change_text_color": "Alterar a cor do texto",
+      "change_background_color": "Alterar a cor de fundo",
+      "default": "Padrão",
+      "default_background": "Fundo padrão",
+      "names": {
+        "gray": "Cinza",
+        "peach": "Pêssego",
+        "pink": "Rosa",
+        "orange": "Laranja",
+        "green": "Verde",
+        "light_blue": "Azul-claro",
+        "dark_blue": "Azul-escuro",
+        "purple": "Roxo"
+      }
+    },
+    "align": {
+      "label": "Alinhamento do texto",
+      "align": "Alinhar",
+      "left": "Alinhar à esquerda",
+      "center": "Centralizar",
+      "right": "Alinhar à direita",
+      "left_short": "Esquerda",
+      "center_short": "Centro",
+      "right_short": "Direita"
+    },
+    "fonts": {
+      "sans_serif": "Sem serifa",
+      "serif": "Com serifa",
+      "mono": "Monoespaçada"
+    },
+    "table": {
+      "insert_above": "Inserir acima",
+      "insert_below": "Inserir abaixo",
+      "insert_left": "Inserir à esquerda",
+      "insert_right": "Inserir à direita",
+      "duplicate": "Duplicar",
+      "clear_contents": "Limpar conteúdo",
+      "delete": "Excluir",
+      "header_row": "Linha de cabeçalho",
+      "header_column": "Coluna de cabeçalho",
+      "insert_columns": "Inserir colunas",
+      "insert_rows": "Inserir linhas"
+    },
+    "block_menu": {
+      "delete": "Excluir",
+      "duplicate": "Duplicar",
+      "fit_to_width": "Ajustar à largura"
+    },
+    "image": {
+      "download": "Baixar",
+      "download_image": "Baixar imagem",
+      "fullscreen_viewer": "Visualizador de imagem em tela cheia",
+      "close_viewer": "Fechar o visualizador de imagem",
+      "zoom_in": "Aproximar",
+      "zoom_out": "Afastar",
+      "open_in_new_tab": "Abrir a imagem em uma nova aba",
+      "view_full_screen": "Ver em tela cheia",
+      "view_image_full_screen": "Ver a imagem em tela cheia",
+      "retry": "Tentar novamente",
+      "retry_duplication": "Tentar duplicar novamente",
+      "error_loading": "Erro ao carregar a imagem",
+      "uploading": "Enviando...",
+      "drop_here": "Solte a imagem aqui",
+      "add_image": "Adicionar uma imagem"
+    },
+    "code": {
+      "copy_code": "Copiar código"
+    },
+    "link": {
+      "enter_or_paste_link": "Digite ou cole um link",
+      "enter_or_paste_url": "Digite ou cole a URL",
+      "text_to_display": "Digite o texto a ser exibido",
+      "url_label": "URL",
+      "text_label": "Texto",
+      "remove_link": "Remover link"
+    },
+    "mentions": {
+      "loading": "Carregando...",
+      "no_results": "Nenhum resultado"
+    },
+    "emoji": {
+      "no_emojis_found": "Nenhum emoji encontrado"
+    },
+    "connection": {
+      "authentication_failed": "Falha na autenticação",
+      "manually_disconnected": "Desconectado manualmente",
+      "server_forced_close": "O servidor encerrou a conexão"
+    }
   }
 }

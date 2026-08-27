@@ -5,6 +5,7 @@
  */
 
 import React from "react";
+import { useTranslation } from "@plane/i18n";
 import { cn } from "../utils";
 import type { TBannerVariant } from "./helper";
 import {
@@ -50,6 +51,7 @@ export const Banner = React.forwardRef(function Banner(
   }: BannerProps,
   ref: React.ForwardedRef<HTMLDivElement>
 ) {
+  const { t } = useTranslation();
   // Handle dismissal
   const handleDismiss = () => {
     if (onDismiss) {
@@ -83,7 +85,7 @@ export const Banner = React.forwardRef(function Banner(
     if (!dismissible) return null;
 
     return (
-      <button onClick={handleDismiss} className={cn(dismissStyling)} aria-label="Dismiss banner">
+      <button onClick={handleDismiss} className={cn(dismissStyling)} aria-label={t("common.dismiss_banner")}>
         <svg
           width="16"
           height="16"

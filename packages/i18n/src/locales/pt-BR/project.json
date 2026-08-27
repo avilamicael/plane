@@ -439,11 +439,19 @@
       "archive": {
         "error": {
           "message": "Não foi possível arquivar o projeto. Tente novamente."
+        },
+        "success": {
+          "title": "Projeto arquivado",
+          "message": "{name} foi arquivado com sucesso"
         }
       },
       "restore": {
         "error": {
           "message": "Não foi possível restaurar o projeto. Tente novamente."
+        },
+        "success": {
+          "title": "Projeto restaurado",
+          "message": "Você encontra {name} na sua lista de projetos."
         }
       },
       "leave": {
@@ -487,11 +495,42 @@
       "anyone_with_link_can_access": "Qualquer pessoa com o link pode acessar"
     },
     "join": {
-      "title": "Entrar no projeto?"
+      "title": "Entrar no projeto?",
+      "description_prefix": "Tem certeza de que deseja entrar no projeto",
+      "description_suffix": "? Clique no botão \"Entrar no projeto\" abaixo para continuar.",
+      "button": "Entrar no projeto",
+      "joining": "Entrando..."
     },
     "card": {
       "created_on": "Criado em {date}",
       "no_members_yet": "Ainda sem membros"
+    },
+    "delete_modal": {
+      "confirm_prefix": "Para confirmar, digite",
+      "confirm_suffix": "abaixo:",
+      "confirm_phrase": "excluir meu projeto",
+      "confirm_placeholder": "Digite \"excluir meu projeto\""
+    },
+    "leave_modal": {
+      "enter_project_name_prefix": "Digite o nome do projeto",
+      "enter_project_name_suffix": "para continuar:",
+      "confirm_phrase": "Sair do projeto",
+      "confirm_placeholder": "Digite \"Sair do projeto\"",
+      "project_name_required": "O nome do projeto é obrigatório"
+    },
+    "archive_restore_modal": {
+      "archive_title": "Arquivar {name}",
+      "restore_title": "Restaurar {name}",
+      "archive_description": "Este projeto e seus itens de trabalho, ciclos, módulos e páginas serão arquivados. Os itens de trabalho não aparecerão na busca. Apenas administradores do projeto podem restaurá-lo.",
+      "restore_description": "Restaurar um projeto o reativa e o torna visível para todos os membros. Tem certeza de que deseja continuar?"
+    },
+    "remove_member_modal": {
+      "leave_title": "Sair do projeto?",
+      "remove_title": "Remover {name}?",
+      "leave_description_prefix": "Tem certeza de que deseja sair do projeto",
+      "leave_description_suffix": "? Você poderá entrar novamente se for convidado ou se o projeto for público.",
+      "remove_description_prefix": "Tem certeza de que deseja remover o membro",
+      "remove_description_suffix": "? Essa pessoa deixará de ter acesso a este projeto. Esta ação não pode ser desfeita."
     }
   }
 }

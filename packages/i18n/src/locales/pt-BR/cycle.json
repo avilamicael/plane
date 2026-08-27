@@ -25,6 +25,9 @@
       "create": {
         "success": {
           "message": "Ciclo criado com sucesso."
+        },
+        "error": {
+          "message": "Erro ao criar o ciclo. Tente novamente."
         }
       },
       "delete": {
@@ -34,7 +37,8 @@
       },
       "archive": {
         "success": {
-          "message": "Seus arquivos podem ser encontrados nos arquivos do projeto."
+          "message": "Seus arquivos podem ser encontrados nos arquivos do projeto.",
+          "title": "Ciclo arquivado"
         },
         "error": {
           "message": "Não foi possível arquivar o ciclo. Tente novamente."
@@ -58,6 +62,26 @@
         "error": {
           "message": "Não foi possível adicionar os itens de trabalho selecionados ao ciclo. Tente novamente."
         }
+      },
+      "update": {
+        "error": {
+          "message": "Erro ao atualizar o ciclo. Tente novamente."
+        }
+      }
+    },
+    "archive_modal": {
+      "title": "Arquivar o ciclo {name}",
+      "description": "Tem certeza de que deseja arquivar o ciclo? Tudo o que você arquiva pode ser restaurado depois."
+    },
+    "completed_not_editable": "Ciclos concluídos não podem ser editados.",
+    "progress": {
+      "estimate_options": {
+        "work_items": "Itens de trabalho",
+        "estimates": "Estimativas"
+      },
+      "chart_options": {
+        "burn_down": "Burn-down",
+        "burn_up": "Burn-up"
       }
     }
   },

@@ -34,9 +34,19 @@
       "invite_members": {
         "title": "Invite members",
         "sub_heading": "Invite members to work on your project.",
-        "select_co_worker": "Select co-worker"
+        "select_co_worker": "Select co-worker",
+        "select_member_required": "Please select a member",
+        "select_role_required": "Select Role",
+        "select_role": "Select role"
       },
-      "guest_access": "Guest access"
+      "guest_access": "Guest access",
+      "errors": {
+        "cannot_leave_yet": "You can’t leave this project yet.",
+        "cannot_remove_yet": "You can't remove the member from this project yet.",
+        "cannot_change_role_yet": "You can’t change this role yet.",
+        "role_update_failed": "An error occurred while updating member role. Please try again.",
+        "role_required": "Role is required."
+      }
     },
     "states": {
       "heading": "States",
@@ -464,6 +474,11 @@
         "toggle_description": "Organize work items by milestone deadlines."
       },
       "toasts": {
+        "loading": "Updating project feature...",
+        "success": "Project feature updated successfully.",
+        "error": "Something went wrong while updating project feature. Please try again."
+      },
+      "toast": {
         "loading": "Updating project feature...",
         "success": "Project feature updated successfully.",
         "error": "Something went wrong while updating project feature. Please try again."

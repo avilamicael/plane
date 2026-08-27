@@ -25,6 +25,9 @@
       "create": {
         "success": {
           "message": "Cycle created successfully."
+        },
+        "error": {
+          "message": "Error in creating cycle. Please try again."
         }
       },
       "delete": {
@@ -34,7 +37,8 @@
       },
       "archive": {
         "success": {
-          "message": "Your archives can be found in project archives."
+          "message": "Your archives can be found in project archives.",
+          "title": "Archive success"
         },
         "error": {
           "message": "Cycle could not be archived. Please try again."
@@ -58,6 +62,26 @@
         "error": {
           "message": "Selected work items could not be added to the cycle. Please try again."
         }
+      },
+      "update": {
+        "error": {
+          "message": "Error in updating cycle. Please try again."
+        }
+      }
+    },
+    "archive_modal": {
+      "title": "Archive cycle {name}",
+      "description": "Are you sure you want to archive the cycle? All your archives can be restored later."
+    },
+    "completed_not_editable": "Completed cycles are not editable.",
+    "progress": {
+      "estimate_options": {
+        "work_items": "Work items",
+        "estimates": "Estimates"
+      },
+      "chart_options": {
+        "burn_down": "Burn-down",
+        "burn_up": "Burn-up"
       }
     }
   },

@@ -41,6 +41,7 @@ export type ExtraPropsForCommand<T extends TEditorCommands> = T extends keyof TC
 export type ToolbarMenuItem<T extends TEditorCommands = TEditorCommands> = {
   itemKey: T;
   renderKey: string;
+  /** Chave i18n — traduza com t(item.name) no ponto de renderização. */
   name: string;
   icon: LucideIcon;
   shortcut?: string[];
@@ -49,20 +50,20 @@ export type ToolbarMenuItem<T extends TEditorCommands = TEditorCommands> = {
 };
 
 export const TYPOGRAPHY_ITEMS: ToolbarMenuItem<"text" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6">[] = [
-  { itemKey: "text", renderKey: "text", name: "Text", icon: CaseSensitive, editors: ["document"] },
-  { itemKey: "h1", renderKey: "h1", name: "Heading 1", icon: Heading1, editors: ["document"] },
-  { itemKey: "h2", renderKey: "h2", name: "Heading 2", icon: Heading2, editors: ["document"] },
-  { itemKey: "h3", renderKey: "h3", name: "Heading 3", icon: Heading3, editors: ["document"] },
-  { itemKey: "h4", renderKey: "h4", name: "Heading 4", icon: Heading4, editors: ["document"] },
-  { itemKey: "h5", renderKey: "h5", name: "Heading 5", icon: Heading5, editors: ["document"] },
-  { itemKey: "h6", renderKey: "h6", name: "Heading 6", icon: Heading6, editors: ["document"] },
+  { itemKey: "text", renderKey: "text", name: "editor_ui.blocks.text", icon: CaseSensitive, editors: ["document"] },
+  { itemKey: "h1", renderKey: "h1", name: "editor_ui.blocks.heading_1", icon: Heading1, editors: ["document"] },
+  { itemKey: "h2", renderKey: "h2", name: "editor_ui.blocks.heading_2", icon: Heading2, editors: ["document"] },
+  { itemKey: "h3", renderKey: "h3", name: "editor_ui.blocks.heading_3", icon: Heading3, editors: ["document"] },
+  { itemKey: "h4", renderKey: "h4", name: "editor_ui.blocks.heading_4", icon: Heading4, editors: ["document"] },
+  { itemKey: "h5", renderKey: "h5", name: "editor_ui.blocks.heading_5", icon: Heading5, editors: ["document"] },
+  { itemKey: "h6", renderKey: "h6", name: "editor_ui.blocks.heading_6", icon: Heading6, editors: ["document"] },
 ];
 
 export const TEXT_ALIGNMENT_ITEMS: ToolbarMenuItem<"text-align">[] = [
   {
     itemKey: "text-align",
     renderKey: "text-align-left",
-    name: "Left align",
+    name: "editor_ui.align.left",
     icon: AlignLeft,
     shortcut: ["Cmd", "Shift", "L"],
     editors: ["lite", "document"],
@@ -73,7 +74,7 @@ export const TEXT_ALIGNMENT_ITEMS: ToolbarMenuItem<"text-align">[] = [
   {
     itemKey: "text-align",
     renderKey: "text-align-center",
-    name: "Center align",
+    name: "editor_ui.align.center",
     icon: AlignCenter,
     shortcut: ["Cmd", "Shift", "E"],
     editors: ["lite", "document"],
@@ -84,7 +85,7 @@ export const TEXT_ALIGNMENT_ITEMS: ToolbarMenuItem<"text-align">[] = [
   {
     itemKey: "text-align",
     renderKey: "text-align-right",
-    name: "Right align",
+    name: "editor_ui.align.right",
     icon: AlignRight,
     shortcut: ["Cmd", "Shift", "R"],
     editors: ["lite", "document"],
@@ -98,7 +99,7 @@ const BASIC_MARK_ITEMS: ToolbarMenuItem<"bold" | "italic" | "underline" | "strik
   {
     itemKey: "bold",
     renderKey: "bold",
-    name: "Bold",
+    name: "editor_ui.marks.bold",
     icon: Bold,
     shortcut: ["Cmd", "B"],
     editors: ["lite", "document"],
@@ -106,7 +107,7 @@ const BASIC_MARK_ITEMS: ToolbarMenuItem<"bold" | "italic" | "underline" | "strik
   {
     itemKey: "italic",
     renderKey: "italic",
-    name: "Italic",
+    name: "editor_ui.marks.italic",
     icon: Italic,
     shortcut: ["Cmd", "I"],
     editors: ["lite", "document"],
@@ -114,7 +115,7 @@ const BASIC_MARK_ITEMS: ToolbarMenuItem<"bold" | "italic" | "underline" | "strik
   {
     itemKey: "underline",
     renderKey: "underline",
-    name: "Underline",
+    name: "editor_ui.marks.underline",
     icon: Underline,
     shortcut: ["Cmd", "U"],
     editors: ["lite", "document"],
@@ -122,7 +123,7 @@ const BASIC_MARK_ITEMS: ToolbarMenuItem<"bold" | "italic" | "underline" | "strik
   {
     itemKey: "strikethrough",
     renderKey: "strikethrough",
-    name: "Strikethrough",
+    name: "editor_ui.marks.strikethrough",
     icon: Strikethrough,
     shortcut: ["Cmd", "Shift", "S"],
     editors: ["lite", "document"],
@@ -133,7 +134,7 @@ const LIST_ITEMS: ToolbarMenuItem<"bulleted-list" | "numbered-list" | "to-do-lis
   {
     itemKey: "bulleted-list",
     renderKey: "bulleted-list",
-    name: "Bulleted list",
+    name: "editor_ui.blocks.bulleted_list",
     icon: List,
     shortcut: ["Cmd", "Shift", "7"],
     editors: ["lite", "document"],
@@ -141,7 +142,7 @@ const LIST_ITEMS: ToolbarMenuItem<"bulleted-list" | "numbered-list" | "to-do-lis
   {
     itemKey: "numbered-list",
     renderKey: "numbered-list",
-    name: "Numbered list",
+    name: "editor_ui.blocks.numbered_list",
     icon: ListOrdered,
     shortcut: ["Cmd", "Shift", "8"],
     editors: ["lite", "document"],
@@ -149,7 +150,7 @@ const LIST_ITEMS: ToolbarMenuItem<"bulleted-list" | "numbered-list" | "to-do-lis
   {
     itemKey: "to-do-list",
     renderKey: "to-do-list",
-    name: "To-do list",
+    name: "editor_ui.blocks.todo_list",
     icon: ListTodo,
     shortcut: ["Cmd", "Shift", "9"],
     editors: ["lite", "document"],
@@ -157,13 +158,19 @@ const LIST_ITEMS: ToolbarMenuItem<"bulleted-list" | "numbered-list" | "to-do-lis
 ];
 
 export const USER_ACTION_ITEMS: ToolbarMenuItem<"quote" | "code">[] = [
-  { itemKey: "quote", renderKey: "quote", name: "Quote", icon: TextQuote, editors: ["lite", "document"] },
-  { itemKey: "code", renderKey: "code", name: "Code", icon: Code2, editors: ["lite", "document"] },
+  {
+    itemKey: "quote",
+    renderKey: "quote",
+    name: "editor_ui.blocks.quote",
+    icon: TextQuote,
+    editors: ["lite", "document"],
+  },
+  { itemKey: "code", renderKey: "code", name: "editor_ui.blocks.code", icon: Code2, editors: ["lite", "document"] },
 ];
 
 export const COMPLEX_ITEMS: ToolbarMenuItem<"table" | "image">[] = [
-  { itemKey: "table", renderKey: "table", name: "Table", icon: Table, editors: ["document"] },
-  { itemKey: "image", renderKey: "image", name: "Image", icon: Image, editors: ["lite", "document"] },
+  { itemKey: "table", renderKey: "table", name: "editor_ui.blocks.table", icon: Table, editors: ["document"] },
+  { itemKey: "image", renderKey: "image", name: "editor_ui.blocks.image", icon: Image, editors: ["lite", "document"] },
 ];
 
 export const IMAGE_ITEM = COMPLEX_ITEMS.find((item): item is ToolbarMenuItem<"image"> => item.itemKey === "image")!;
@@ -201,49 +208,49 @@ export const COLORS_LIST: {
 }[] = [
   {
     key: "gray",
-    label: "Gray",
+    label: "editor_ui.colors.names.gray",
     textColor: "var(--editor-colors-gray-text)",
     backgroundColor: "var(--editor-colors-gray-background)",
   },
   {
     key: "peach",
-    label: "Peach",
+    label: "editor_ui.colors.names.peach",
     textColor: "var(--editor-colors-peach-text)",
     backgroundColor: "var(--editor-colors-peach-background)",
   },
   {
     key: "pink",
-    label: "Pink",
+    label: "editor_ui.colors.names.pink",
     textColor: "var(--editor-colors-pink-text)",
     backgroundColor: "var(--editor-colors-pink-background)",
   },
   {
     key: "orange",
-    label: "Orange",
+    label: "editor_ui.colors.names.orange",
     textColor: "var(--editor-colors-orange-text)",
     backgroundColor: "var(--editor-colors-orange-background)",
   },
   {
     key: "green",
-    label: "Green",
+    label: "editor_ui.colors.names.green",
     textColor: "var(--editor-colors-green-text)",
     backgroundColor: "var(--editor-colors-green-background)",
   },
   {
     key: "light-blue",
-    label: "Light blue",
+    label: "editor_ui.colors.names.light_blue",
     textColor: "var(--editor-colors-light-blue-text)",
     backgroundColor: "var(--editor-colors-light-blue-background)",
   },
   {
     key: "dark-blue",
-    label: "Dark blue",
+    label: "editor_ui.colors.names.dark_blue",
     textColor: "var(--editor-colors-dark-blue-text)",
     backgroundColor: "var(--editor-colors-dark-blue-background)",
   },
   {
     key: "purple",
-    label: "Purple",
+    label: "editor_ui.colors.names.purple",
     textColor: "var(--editor-colors-purple-text)",
     backgroundColor: "var(--editor-colors-purple-background)",
   },
@@ -260,7 +267,7 @@ export const EDITOR_FONT_STYLES: {
   label: string;
   icon: React.FC;
 }[] = [
-  { key: "sans-serif", label: "Sans serif", icon: SansSerifIcon },
-  { key: "serif", label: "Serif", icon: SerifIcon },
-  { key: "monospace", label: "Mono", icon: MonospaceIcon },
+  { key: "sans-serif", label: "editor_ui.fonts.sans_serif", icon: SansSerifIcon },
+  { key: "serif", label: "editor_ui.fonts.serif", icon: SerifIcon },
+  { key: "monospace", label: "editor_ui.fonts.mono", icon: MonospaceIcon },
 ];

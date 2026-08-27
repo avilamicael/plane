@@ -34,9 +34,19 @@
       "invite_members": {
         "title": "Convidar membros",
         "sub_heading": "Convide membros para trabalhar em seu projeto.",
-        "select_co_worker": "Selecionar colega de trabalho"
+        "select_co_worker": "Selecionar colega de trabalho",
+        "select_member_required": "Selecione um membro",
+        "select_role_required": "Selecione um cargo",
+        "select_role": "Selecionar cargo"
       },
-      "guest_access": "Acesso de convidados"
+      "guest_access": "Acesso de convidados",
+      "errors": {
+        "cannot_leave_yet": "Você ainda não pode sair deste projeto.",
+        "cannot_remove_yet": "Você ainda não pode remover este membro do projeto.",
+        "cannot_change_role_yet": "Você ainda não pode alterar este cargo.",
+        "role_update_failed": "Ocorreu um erro ao atualizar o cargo do membro. Tente novamente.",
+        "role_required": "O cargo é obrigatório."
+      }
     },
     "states": {
       "heading": "Estados",
@@ -467,6 +477,11 @@
         "loading": "Atualizando recurso do projeto...",
         "success": "Recurso do projeto atualizado com sucesso.",
         "error": "Algo deu errado ao atualizar o recurso do projeto. Por favor, tente novamente."
+      },
+      "toast": {
+        "loading": "Atualizando recurso do projeto...",
+        "success": "Recurso do projeto atualizado com sucesso.",
+        "error": "Algo deu errado ao atualizar o recurso do projeto. Tente novamente."
       }
     },
     "project_updates": {

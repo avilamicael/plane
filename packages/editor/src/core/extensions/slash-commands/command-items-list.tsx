@@ -24,6 +24,8 @@ import {
   Table,
   TextQuote,
 } from "lucide-react";
+// plane imports
+import { i18nInstance } from "@plane/i18n";
 // constants
 import { COLORS_LIST } from "@/constants/common";
 // helpers
@@ -65,8 +67,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "text",
             key: "text",
-            title: "Text",
-            description: "Just start typing with plain text.",
+            title: i18nInstance.t("editor_ui.blocks.text"),
+            description: i18nInstance.t("editor_ui.blocks.text_description"),
             searchTerms: ["p", "paragraph"],
             icon: <CaseSensitive className="size-3.5" />,
             command: ({ editor, range }) => setText(editor, range),
@@ -74,8 +76,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h1",
             key: "h1",
-            title: "Heading 1",
-            description: "Big section heading.",
+            title: i18nInstance.t("editor_ui.blocks.heading_1"),
+            description: i18nInstance.t("editor_ui.blocks.heading_1_description"),
             searchTerms: ["title", "big", "large"],
             icon: <Heading1 className="size-3.5" />,
             command: ({ editor, range }) => toggleHeading(editor, 1, range),
@@ -83,8 +85,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h2",
             key: "h2",
-            title: "Heading 2",
-            description: "Medium section heading.",
+            title: i18nInstance.t("editor_ui.blocks.heading_2"),
+            description: i18nInstance.t("editor_ui.blocks.heading_2_description"),
             searchTerms: ["subtitle", "medium"],
             icon: <Heading2 className="size-3.5" />,
             command: ({ editor, range }) => toggleHeading(editor, 2, range),
@@ -92,8 +94,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h3",
             key: "h3",
-            title: "Heading 3",
-            description: "Small section heading.",
+            title: i18nInstance.t("editor_ui.blocks.heading_3"),
+            description: i18nInstance.t("editor_ui.blocks.heading_3_description"),
             searchTerms: ["subtitle", "small"],
             icon: <Heading3 className="size-3.5" />,
             command: ({ editor, range }) => toggleHeading(editor, 3, range),
@@ -101,8 +103,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h4",
             key: "h4",
-            title: "Heading 4",
-            description: "Small section heading.",
+            title: i18nInstance.t("editor_ui.blocks.heading_4"),
+            description: i18nInstance.t("editor_ui.blocks.heading_4_description"),
             searchTerms: ["subtitle", "small"],
             icon: <Heading4 className="size-3.5" />,
             command: ({ editor, range }) => toggleHeading(editor, 4, range),
@@ -110,8 +112,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h5",
             key: "h5",
-            title: "Heading 5",
-            description: "Small section heading.",
+            title: i18nInstance.t("editor_ui.blocks.heading_5"),
+            description: i18nInstance.t("editor_ui.blocks.heading_5_description"),
             searchTerms: ["subtitle", "small"],
             icon: <Heading5 className="size-3.5" />,
             command: ({ editor, range }) => toggleHeading(editor, 5, range),
@@ -119,8 +121,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "h6",
             key: "h6",
-            title: "Heading 6",
-            description: "Small section heading.",
+            title: i18nInstance.t("editor_ui.blocks.heading_6"),
+            description: i18nInstance.t("editor_ui.blocks.heading_6_description"),
             searchTerms: ["subtitle", "small"],
             icon: <Heading6 className="size-3.5" />,
             command: ({ editor, range }) => toggleHeading(editor, 6, range),
@@ -129,8 +131,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "numbered-list",
             key: "numbered-list",
-            title: "Numbered list",
-            description: "Create a numbered list.",
+            title: i18nInstance.t("editor_ui.blocks.numbered_list"),
+            description: i18nInstance.t("editor_ui.blocks.numbered_list_description"),
             searchTerms: ["ordered"],
             icon: <ListOrdered className="size-3.5" />,
             command: ({ editor, range }) => toggleOrderedList(editor, range),
@@ -138,8 +140,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "bulleted-list",
             key: "bulleted-list",
-            title: "Bulleted list",
-            description: "Create a bulleted list.",
+            title: i18nInstance.t("editor_ui.blocks.bulleted_list"),
+            description: i18nInstance.t("editor_ui.blocks.bulleted_list_description"),
             searchTerms: ["unordered", "point"],
             icon: <List className="size-3.5" />,
             command: ({ editor, range }) => toggleBulletList(editor, range),
@@ -147,8 +149,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "to-do-list",
             key: "to-do-list",
-            title: "To-do list",
-            description: "Create a to-do list.",
+            title: i18nInstance.t("editor_ui.blocks.todo_list"),
+            description: i18nInstance.t("editor_ui.blocks.todo_list_description"),
             searchTerms: ["todo", "task", "list", "check", "checkbox"],
             icon: <ListTodo className="size-3.5" />,
             command: ({ editor, range }) => toggleTaskList(editor, range),
@@ -156,8 +158,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "table",
             key: "table",
-            title: "Table",
-            description: "Create a table",
+            title: i18nInstance.t("editor_ui.blocks.table"),
+            description: i18nInstance.t("editor_ui.blocks.table_description"),
             searchTerms: ["table", "cell", "db", "data", "tabular"],
             icon: <Table className="size-3.5" />,
             command: ({ editor, range }) => insertTableCommand(editor, range),
@@ -165,8 +167,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "quote",
             key: "quote",
-            title: "Quote",
-            description: "Capture a quote.",
+            title: i18nInstance.t("editor_ui.blocks.quote"),
+            description: i18nInstance.t("editor_ui.blocks.quote_description"),
             searchTerms: ["blockquote"],
             icon: <TextQuote className="size-3.5" />,
             command: ({ editor, range }) => toggleBlockquote(editor, range),
@@ -174,8 +176,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "code",
             key: "code",
-            title: "Code",
-            description: "Capture a code snippet.",
+            title: i18nInstance.t("editor_ui.blocks.code"),
+            description: i18nInstance.t("editor_ui.blocks.code_description"),
             searchTerms: ["codeblock"],
             icon: <Code2 className="size-3.5" />,
             command: ({ editor, range }) => editor.chain().focus().deleteRange(range).toggleCodeBlock().run(),
@@ -183,17 +185,17 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "callout",
             key: "callout",
-            title: "Callout",
+            title: i18nInstance.t("editor_ui.blocks.callout"),
             icon: <MessageSquareText className="size-3.5" />,
-            description: "Insert callout",
+            description: i18nInstance.t("editor_ui.blocks.callout_description"),
             searchTerms: ["callout", "comment", "message", "info", "alert"],
             command: ({ editor, range }: CommandProps) => insertCallout(editor, range),
           },
           {
             commandKey: "divider",
             key: "divider",
-            title: "Divider",
-            description: "Visually divide blocks.",
+            title: i18nInstance.t("editor_ui.blocks.divider"),
+            description: i18nInstance.t("editor_ui.blocks.divider_description"),
             searchTerms: ["line", "divider", "horizontal", "rule", "separate"],
             icon: <MinusSquare className="size-3.5" />,
             command: ({ editor, range }) => editor.chain().focus().deleteRange(range).setHorizontalRule().run(),
@@ -201,8 +203,8 @@ export const getSlashCommandFilteredSections =
           {
             commandKey: "emoji",
             key: "emoji",
-            title: "Emoji",
-            description: "Insert an emoji",
+            title: i18nInstance.t("editor_ui.blocks.emoji"),
+            description: i18nInstance.t("editor_ui.blocks.emoji_description"),
             searchTerms: ["emoji", "icons", "reaction", "emoticon", "emotags"],
             icon: <Smile className="size-3.5" />,
             command: ({ editor, range }) => {
@@ -213,13 +215,13 @@ export const getSlashCommandFilteredSections =
       },
       {
         key: "text-colors",
-        title: "Colors",
+        title: i18nInstance.t("editor_ui.colors.label"),
         items: [
           {
             commandKey: "text-color",
             key: "text-color-default",
-            title: "Default",
-            description: "Change text color",
+            title: i18nInstance.t("editor_ui.colors.default"),
+            description: i18nInstance.t("editor_ui.colors.change_text_color"),
             searchTerms: ["color", "text", "default"],
             icon: <ALargeSmall className="size-3.5 text-primary" />,
             command: ({ editor, range }) => toggleTextColor(undefined, editor, range),
@@ -229,9 +231,9 @@ export const getSlashCommandFilteredSections =
               ({
                 commandKey: "text-color",
                 key: `text-color-${color.key}`,
-                title: color.label,
-                description: "Change text color",
-                searchTerms: ["color", "text", color.label],
+                title: i18nInstance.t(color.label),
+                description: i18nInstance.t("editor_ui.colors.change_text_color"),
+                searchTerms: ["color", "text", color.key],
 
                 icon: (
                   <ALargeSmall
@@ -249,13 +251,13 @@ export const getSlashCommandFilteredSections =
       },
       {
         key: "background-colors",
-        title: "Background colors",
+        title: i18nInstance.t("editor_ui.colors.background_colors"),
         items: [
           {
             commandKey: "background-color",
             key: "background-color-default",
-            title: "Default background",
-            description: "Change background color",
+            title: i18nInstance.t("editor_ui.colors.default_background"),
+            description: i18nInstance.t("editor_ui.colors.change_background_color"),
             searchTerms: ["color", "bg", "background", "default"],
             icon: <ALargeSmall className="size-3.5" />,
             iconContainerStyle: {
@@ -270,9 +272,9 @@ export const getSlashCommandFilteredSections =
               ({
                 commandKey: "background-color",
                 key: `background-color-${color.key}`,
-                title: color.label,
-                description: "Change background color",
-                searchTerms: ["color", "bg", "background", color.label],
+                title: i18nInstance.t(color.label),
+                description: i18nInstance.t("editor_ui.colors.change_background_color"),
+                searchTerms: ["color", "bg", "background", color.key],
                 icon: <ALargeSmall className="size-3.5" />,
 
                 iconContainerStyle: {
@@ -292,9 +294,9 @@ export const getSlashCommandFilteredSections =
       internalAdditionalOptions.push({
         commandKey: "image",
         key: "image",
-        title: "Image",
+        title: i18nInstance.t("editor_ui.blocks.image"),
         icon: <ImageIcon className="size-3.5" />,
-        description: "Insert an image",
+        description: i18nInstance.t("editor_ui.blocks.image_description"),
         searchTerms: ["img", "photo", "picture", "media", "upload"],
         command: ({ editor, range }: CommandProps) => insertImage({ editor, event: "insert", range }),
         section: "general",

@@ -7,6 +7,7 @@
 import * as React from "react";
 import { AnimatedCounter } from "../animated-counter";
 import { stringToEmoji } from "../emoji-icon-picker";
+import { useTranslation } from "@plane/i18n";
 import { AddReactionIcon } from "../icons";
 import { Tooltip } from "../tooltip";
 import { cn } from "../utils";
@@ -106,8 +107,10 @@ const EmojiReactionButton = React.forwardRef(function EmojiReactionButton(
   { onAddReaction, className, ...props }: EmojiReactionButtonProps,
   ref: React.ForwardedRef<HTMLButtonElement>
 ) {
+  const { t } = useTranslation();
+
   return (
-    <Tooltip tooltipContent="Add reaction">
+    <Tooltip tooltipContent={t("common.add_reaction")}>
       <IconButton
         ref={ref}
         icon={AddReactionIcon}

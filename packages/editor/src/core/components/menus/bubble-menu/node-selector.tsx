@@ -5,6 +5,8 @@
  */
 
 import type { Editor } from "@tiptap/react";
+// plane imports
+import { useTranslation } from "@plane/i18n";
 
 import { CheckIcon, ChevronDownIcon } from "@plane/propel/icons";
 // plane utils
@@ -37,6 +39,8 @@ type Props = {
 
 export function BubbleMenuNodeSelector(props: Props) {
   const { editor } = props;
+  // translation
+  const { t } = useTranslation();
   // floating ui
   const { options, getReferenceProps, getFloatingProps } = useFloatingMenu({});
   const { context } = options;
@@ -56,7 +60,7 @@ export function BubbleMenuNodeSelector(props: Props) {
   ] as EditorMenuItem<TEditorCommands>[];
 
   const activeItem = items.filter((item) => item.isActive()).pop() ?? {
-    name: "Multiple",
+    name: "editor_ui.blocks.multiple",
   };
 
   return (
@@ -72,7 +76,7 @@ export function BubbleMenuNodeSelector(props: Props) {
       }}
       menuButton={
         <>
-          <span>{activeItem?.name}</span>
+          <span>{activeItem?.name ? t(activeItem.name) : ""}</span>
           <ChevronDownIcon className="size-3 shrink-0" />
         </>
       }
@@ -99,7 +103,7 @@ export function BubbleMenuNodeSelector(props: Props) {
           >
             <div className="flex items-center space-x-2">
               <item.icon className="size-3 flex-shrink-0" />
-              <span>{item.name}</span>
+              <span>{t(item.name)}</span>
             </div>
             {activeItem.name === item.name && <CheckIcon className="size-3 flex-shrink-0 text-tertiary" />}
           </button>
